@@ -3,12 +3,18 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight, BadgeCheck } from "lucide-react";
 import { caseStudyProofSignals, caseStudyShowcaseItems, homepageCaseStudies } from "@/lib/case-study-showcase";
 import styles from "./case-study-body.module.css";
+import HomepageCaseStories from "./HomepageCaseStories";
 
 type CaseStudyShowcaseProps = {
   variant?: "home" | "results";
 };
 
 export default function CaseStudyShowcase({ variant = "results" }: CaseStudyShowcaseProps) {
+  if (variant === "home") return <HomepageCaseStories />;
+  return <CaseStudyResults variant={variant} />;
+}
+
+function CaseStudyResults({ variant = "results" }: CaseStudyShowcaseProps) {
   const isHome = variant === "home";
   const studies = isHome ? homepageCaseStudies : caseStudyShowcaseItems;
 
