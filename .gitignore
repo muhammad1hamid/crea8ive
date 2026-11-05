@@ -31,5 +31,12 @@ project/assets/Resturants/
 **/*.log
 **/*.tsbuildinfo
 **/.taste-skill/
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.sqlite*
+**/*.db
+**/*.jsonl
 backups/
 tmp/

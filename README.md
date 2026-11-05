@@ -1,4 +1,30 @@
-# WordPress SEO Workflow
+# Crea8iv Media Website
+
+The active website is the Next.js, React and TypeScript application in `frontend/`.
+The latest source is connected to [muhammad1hamid/crea8ive](https://github.com/muhammad1hamid/crea8ive) on the `main` branch.
+
+## Run locally
+
+Use Node.js 20.9 or newer, then run:
+
+```bash
+cd frontend
+npm ci
+npm run dev -- --hostname 127.0.0.1 --port 4321
+```
+
+Open [the local website](http://127.0.0.1:4321/). See `frontend/README.md` for environment configuration, hosting and release checks.
+
+```bash
+npm run typecheck
+npm run lint
+npm run verify:site-data
+npm run build -- --webpack
+```
+
+The repository includes the application source, public assets, server-side code, project documentation and supplementary legacy tools. Installed dependencies, generated builds, local environment settings and enquiry records are kept outside Git.
+
+## Legacy WordPress SEO workflow
 
 This workspace is connected to the live `crea8ivmedia.com` WordPress site through the REST API.
 

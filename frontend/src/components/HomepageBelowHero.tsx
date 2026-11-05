@@ -23,6 +23,7 @@ import type { ReactNode } from "react";
 import LocationExperience from "@/components/LocationExperience";
 import { BUSINESS_DETAILS } from "@/lib/site-config";
 import HomepageClientStories from "./HomepageClientStories";
+import HomepageCreativeShowcase from "./HomepageCreativeShowcase";
 import { CLIENT_LOGOS } from "@/lib/client-logos";
 import { FOUNDER } from "@/lib/authority-data";
 import EvidenceMedia from "@/components/EvidenceMedia";
@@ -157,36 +158,7 @@ export default function HomepageBelowHero({ selectedWork, caseStudies, editorial
 }
 
 function CreativeWork() {
-  return (
-    <section className={`${styles.creative} relative border-b border-white/[0.08] bg-[#070605] px-6 py-20 sm:px-8 lg:px-10 lg:py-24`}>
-      <div className="relative mx-auto max-w-[1440px]">
-        <SectionIntro
-          eyebrow="The work"
-          title="Brand identities, campaigns and content"
-          copy="Explore identity systems, product creative and social content made for real businesses."
-        />
-        <div className={`${styles.creativeRail} home-creative-rail mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3`}>
-          {visualSystemCards.map((card) => (
-            <article key={card.title} className="group overflow-hidden border border-white/[0.1] bg-black">
-              <div className="relative aspect-[4/3] overflow-hidden bg-white/[0.04]">
-                <EvidenceMedia
-                  src={card.image}
-                  alt={card.alt}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 46vw, 25vw"
-                  className="object-contain"
-                />
-              </div>
-              <div className="p-5">
-                <h3 className="font-syne text-2xl leading-tight text-white">{card.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-white/60">{card.body}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-        <Link href="/results/" className="home-lux-link mt-8 w-fit">Browse All Work <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link>
-      </div>
-    </section>
-  );
+  return <HomepageCreativeShowcase projects={visualSystemCards} />;
 }
 
 function SectionIntro({ eyebrow, title, copy, titleId }: { eyebrow: string; title: string; copy: string; titleId?: string }) {
