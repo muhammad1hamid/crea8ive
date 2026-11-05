@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "Valid Qatar enquiry saved",
+    "Retries return same reference",
+    "Reject invalid consent",
+    "Reject invalid service",
+    "Reject invalid language",
+    "Reject invalid phone",
+    "Reject invalid website",
+    "Reject invalid honeypot",
+    "Reject wrong origin",
+    "Enforce body byte limit",
+    "Accept Arabic characters within field limit",
+    "Persist Qatar market and attribution",
+    "Duplicate stores one row"
+  ],
+  "passed": 13,
+  "scope": "Isolated local PHP/SQLite only"
+}

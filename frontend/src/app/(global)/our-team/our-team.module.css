@@ -1,0 +1,176 @@
+.page {
+  --team-bg: #060605;
+  --team-surface: #0c0c0b;
+  --team-ink: #fcfaee;
+  --team-muted: rgba(252, 250, 238, 0.64);
+  --team-faint: rgba(252, 250, 238, 0.38);
+  --team-line: rgba(252, 250, 238, 0.14);
+  --team-orange: #ff6801;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--team-bg);
+  color: var(--team-ink);
+}
+
+.hero,
+.statement,
+.disciplineSection,
+.workSection,
+.contactSection { position: relative; }
+
+.hero { padding: 9.5rem 2rem 7rem; }
+.heroRule { position: absolute; inset: 0; pointer-events: none; opacity: 0.45; background-image: linear-gradient(to right, transparent calc(50% - 0.5px), var(--team-line) 50%, transparent calc(50% + 0.5px)); }
+.heroInner,
+.sectionInner,
+.contactInner { position: relative; width: min(100%, 1320px); margin: 0 auto; }
+
+.breadcrumb,
+.heroDetails,
+.sectionLabel,
+.stageIndex,
+.captionLabel,
+.eyebrow { font-family: var(--font-orbitron, "Inter", sans-serif); letter-spacing: 0.16em; text-transform: uppercase; }
+.breadcrumb { display: flex; gap: 0.65rem; margin-bottom: 4rem; color: var(--team-faint); font-size: 0.65rem; }
+.breadcrumb a { transition: color 180ms ease; }
+.breadcrumb a:hover { color: var(--team-orange); }
+.breadcrumb [aria-current="page"] { color: var(--team-ink); }
+
+.heroGrid { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.85fr); gap: clamp(3rem, 8vw, 9rem); align-items: end; }
+.eyebrow { display: inline-flex; align-items: center; gap: 0.6rem; margin: 0; color: var(--team-orange); font-size: 0.65rem; font-weight: 700; }
+.hero h1,
+.statement h2,
+.sectionHeader h2,
+.workGrid h2,
+.contactInner h2 { margin: 1.5rem 0 0; font-family: var(--font-syne, "Inter", sans-serif); font-weight: 500; letter-spacing: -0.025em; line-height: 0.98; }
+.hero h1 { max-width: 780px; font-size: clamp(3.4rem, 7vw, 7.8rem); }
+.hero h1 em,
+.statement h2 em,
+.sectionHeader h2 em,
+.workGrid h2 em { color: var(--team-orange); font-style: normal; }
+.heroIntro { max-width: 620px; margin: 2rem 0 0; color: var(--team-muted); font-family: var(--font-inter, "Inter", sans-serif); font-size: clamp(1rem, 1.4vw, 1.2rem); line-height: 1.8; }
+.heroActions { display: flex; flex-wrap: wrap; gap: 1.2rem; align-items: center; margin-top: 2.3rem; }
+.primaryButton { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; min-height: 3.2rem; border: 1px solid var(--team-orange); border-radius: 999px; background: var(--team-orange); padding: 0.8rem 1.25rem; color: #1a0b03; font-family: var(--font-orbitron, "Inter", sans-serif); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; transition: transform 180ms ease, box-shadow 180ms ease; }
+.primaryButton:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(255, 104, 1, 0.22); }
+.primaryButton svg,
+.secondaryLink svg,
+.textLink svg,
+.emailLink svg { width: 1rem; height: 1rem; }
+.secondaryLink,
+.textLink { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--team-ink); font-family: var(--font-orbitron, "Inter", sans-serif); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; transition: color 180ms ease; }
+.secondaryLink:hover,
+.textLink:hover { color: var(--team-orange); }
+.heroDetails { display: flex; flex-wrap: wrap; gap: 1.25rem 2rem; margin-top: 4rem; color: var(--team-faint); font-size: 0.58rem; line-height: 1.5; }
+.heroDetails span { display: inline-flex; align-items: center; gap: 0.5rem; }
+.heroDetails svg { width: 0.9rem; height: 0.9rem; color: var(--team-orange); }
+.statusDot { width: 0.4rem; height: 0.4rem; border-radius: 50%; background: #58d49e; box-shadow: 0 0 0 4px rgba(88, 212, 158, 0.12); }
+
+.founderStage { position: relative; max-width: 650px; justify-self: end; width: 100%; }
+.stageIndex { margin-bottom: 0.8rem; color: var(--team-orange); font-size: 0.6rem; }
+.stageIndex span { margin: 0 0.3rem; color: var(--team-faint); }
+.founderImageFrame { position: relative; aspect-ratio: 1.18 / 1; overflow: hidden; border: 1px solid var(--team-line); background: var(--team-surface); }
+.founderImageFrame::after { position: absolute; inset: 0; border: 1px solid rgba(255, 104, 1, 0.32); transform: translate(12px, 12px); content: ""; pointer-events: none; }
+.founderImage { object-fit: cover; object-position: center; filter: saturate(0.88) contrast(1.04); }
+.founderCaption { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; border: 1px solid var(--team-line); border-top: 0; background: var(--team-surface); padding: 1.2rem 1.35rem; }
+.captionLabel { margin: 0; color: var(--team-orange); font-size: 0.58rem; }
+.founderCaption h2 { margin: 0.5rem 0 0; font-family: var(--font-syne, "Inter", sans-serif); font-size: clamp(1.35rem, 2.2vw, 2rem); font-weight: 500; }
+.founderCaption a { display: grid; width: 2.75rem; height: 2.75rem; place-items: center; border: 1px solid var(--team-line); border-radius: 50%; transition: border-color 180ms ease, color 180ms ease; }
+.founderCaption a:hover { border-color: var(--team-orange); color: var(--team-orange); }
+
+.statement { border-block: 1px solid var(--team-line); background: var(--team-surface); padding: 6rem 2rem; }
+.sectionLabel { display: flex; gap: 1rem; color: var(--team-faint); font-size: 0.6rem; }
+.sectionLabel span:first-child { color: var(--team-orange); }
+.statementGrid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 7rem; margin-top: 2.5rem; }
+.statement h2 { margin-top: 0; font-size: clamp(2.5rem, 4.8vw, 5.3rem); }
+.statementGrid > div { max-width: 580px; padding-top: 0.5rem; }
+.statementGrid p,
+.sectionHeader > p,
+.workIntro,
+.contactAction > p { margin: 0; color: var(--team-muted); font-family: var(--font-inter, "Inter", sans-serif); font-size: 1.02rem; line-height: 1.85; }
+.statementGrid p + p { margin-top: 1.4rem; }
+
+.disciplineSection { padding: 7rem 2rem; }
+.sectionHeader { display: flex; align-items: flex-end; justify-content: space-between; gap: 3rem; }
+.sectionHeader h2 { font-size: clamp(2.8rem, 5vw, 5.5rem); }
+.sectionHeader > p { max-width: 390px; }
+.disciplineGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin-top: 4.5rem; border: 1px solid var(--team-line); background: var(--team-line); }
+.disciplineCard { min-height: 225px; background: var(--team-bg); padding: 1.8rem; transition: background 180ms ease; }
+.disciplineCard:hover { background: var(--team-surface); }
+.cardTop { display: flex; align-items: center; justify-content: space-between; color: var(--team-orange); font-family: var(--font-orbitron, "Inter", sans-serif); font-size: 0.65rem; }
+.cardTop svg { width: 1.3rem; height: 1.3rem; stroke-width: 1.4; }
+.disciplineCard h3 { margin: 2.9rem 0 0; font-family: var(--font-syne, "Inter", sans-serif); font-size: 1.35rem; font-weight: 500; }
+.disciplineCard p { margin: 0.8rem 0 0; color: var(--team-muted); font-family: var(--font-inter, "Inter", sans-serif); font-size: 0.88rem; line-height: 1.65; }
+
+.workSection { border-block: 1px solid var(--team-line); background: var(--team-surface); padding: 7rem 2rem; }
+.workGrid { display: grid; grid-template-columns: 1fr 0.8fr; gap: 7rem; align-items: end; }
+.workGrid h2 { font-size: clamp(2.8rem, 5vw, 5.3rem); }
+.workIntro { max-width: 600px; margin-top: 2rem; }
+.textLink { margin-top: 2rem; color: var(--team-orange); }
+.principlesPanel { border-top: 1px solid var(--team-orange); padding-top: 1.3rem; }
+.principlesPanel ul { display: grid; gap: 0; margin: 2rem 0 0; padding: 0; list-style: none; }
+.principlesPanel li { display: flex; align-items: flex-start; gap: 0.9rem; border-bottom: 1px solid var(--team-line); padding: 1.05rem 0; color: var(--team-ink); font-family: var(--font-inter, "Inter", sans-serif); font-size: 0.95rem; line-height: 1.45; }
+.principlesPanel li svg { width: 1rem; height: 1rem; flex: 0 0 auto; margin-top: 0.15rem; color: var(--team-orange); }
+
+.contactSection { padding: 7rem 2rem 8rem; }
+.contactInner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 5rem; align-items: end; border-top: 1px solid var(--team-orange); padding-top: 2rem; }
+.contactInner h2 { max-width: 760px; font-size: clamp(2.8rem, 5.5vw, 6rem); }
+.contactAction { max-width: 410px; }
+.contactAction .primaryButton { margin-top: 1.8rem; }
+.emailLink { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.5rem; color: var(--team-muted); font-family: var(--font-inter, "Inter", sans-serif); font-size: 0.9rem; transition: color 180ms ease; }
+.emailLink:hover { color: var(--team-orange); }
+
+:global(html[data-theme="light"]) .page { --team-bg: #fcfaee; --team-surface: #f4edde; --team-ink: #073c33; --team-muted: rgba(12, 84, 70, 0.78); --team-faint: rgba(12, 84, 70, 0.58); --team-line: rgba(12, 84, 70, 0.18); }
+:global(html[data-theme="light"]) .founderImage { filter: saturate(0.82) contrast(1.02); }
+:global(html[data-theme="light"]) .primaryButton { color: #fffaf0; }
+
+@media (max-width: 900px) {
+  .hero { padding: 8.5rem 1.25rem 5rem; }
+  .heroRule { background-image: none; }
+  .heroGrid,
+  .statementGrid,
+  .workGrid,
+  .contactInner { grid-template-columns: 1fr; gap: 3.5rem; }
+  .founderStage { max-width: none; justify-self: stretch; }
+  .sectionInner,
+  .contactInner { width: 100%; }
+  .statement,
+  .disciplineSection,
+  .workSection,
+  .contactSection { padding-inline: 1.25rem; }
+  .sectionHeader { display: grid; gap: 1.5rem; }
+  .disciplineGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  .breadcrumb { margin-bottom: 3rem; }
+  .hero h1 { font-size: clamp(3.1rem, 15vw, 5rem); }
+  .heroIntro { font-size: 0.98rem; line-height: 1.7; }
+  .heroActions { align-items: stretch; flex-direction: column; }
+  .primaryButton { width: 100%; }
+  .secondaryLink { justify-content: center; min-height: 2.8rem; }
+  .heroDetails { margin-top: 2.5rem; }
+  .founderImageFrame { aspect-ratio: 1 / 1.05; }
+  .founderImageFrame::after { transform: translate(7px, 7px); }
+  .founderCaption { padding: 1rem; }
+  .disciplineGrid { grid-template-columns: 1fr; margin-top: 3rem; }
+  .disciplineCard { min-height: 0; padding: 1.35rem; }
+  .disciplineCard h3 { margin-top: 2rem; }
+  .statement,
+  .disciplineSection,
+  .workSection,
+  .contactSection { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+  .statement h2,
+  .sectionHeader h2,
+  .workGrid h2,
+  .contactInner h2 { font-size: clamp(2.6rem, 12vw, 4.2rem); }
+  .contactInner { gap: 2.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton,
+  .founderCaption a,
+  .disciplineCard,
+  .breadcrumb a,
+  .secondaryLink,
+  .textLink,
+  .emailLink { transition: none; }
+}

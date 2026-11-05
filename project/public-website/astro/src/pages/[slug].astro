@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CaseStudyPreview from "../components/CaseStudyPreview.astro";
+import ContactBoost from "../components/ContactBoost.astro";
+import GrowthSystemSection from "../components/GrowthSystemSection.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
+import ProofStrip from "../components/ProofStrip.astro";
+import ServiceConversionPanel from "../components/ServiceConversionPanel.astro";
+import ServiceToolPanel from "../components/ServiceToolPanel.astro";
+import pages from "../data/pages.json";
+import { prepareSnapshotHtml } from "../data/content";
+import { serviceEnhancements } from "../data/growth";
+
+export function getStaticPaths() {
+  return pages.filter((page) => page.slug !== "home").map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+const { page } = Astro.props;
+const description = page.seo?.description || page.excerpt.replace(/<[^>]+>/g, " ").trim().slice(0, 160);
+const image = page.seo?.og_image?.[0]?.url;
+const content = prepareSnapshotHtml(page.content);
+const isServicePage = Boolean(serviceEnhancements[page.slug]);
+const schemaItems = [
+  ...(isServicePage
+    ? [{
+      "@type": "Service",
+      name: page.title,
+      description,
+      provider: { "@type": "LocalBusiness", name: "Crea8iv Media" },
+      areaServed: ["Rawalpindi", "Islamabad", "Pakistan"],
+      url: `https://crea8ivmedia.com${page.link}`,
+    }]
+    : []),
+  ...(page.slug === "faqs"
+    ? [{
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How does Crea8iv Media start a digital marketing project?",
+          acceptedAnswer: { "@type": "Answer", text: "Crea8iv starts with a growth audit, then maps the right mix of ads, Google Maps, website, content, automation, and reporting." },
+        },
+        {
+          "@type": "Question",
+          name: "Which cities does Crea8iv Media serve?",
+          acceptedAnswer: { "@type": "Answer", text: "Crea8iv Media serves Rawalpindi, Islamabad, Bahria Town, DHA Islamabad, and Pakistan-wide businesses." },
+        },
+      ],
+    }]
+    : []),
+];
+---
+<BaseLayout title={page.seo?.title || page.title} description={description} canonical={page.link} image={image} schemaItems={schemaItems}>
+  <article class="wordpress-content min-h-screen pt-28" set:html={content} />
+  {isServicePage && <ServiceConversionPanel slug={page.slug} />}
+  {isServicePage && <ServiceToolPanel slug={page.slug} />}
+  {["growth-systems", "our-services"].includes(page.slug) && <GrowthSystemSection />}
+  {["results", "khushal-salon"].includes(page.slug) && <CaseStudyPreview />}
+  {["results", "website-development", "branding-and-creative", "content-creation"].includes(page.slug) && <PortfolioPreview />}
+  {["contact", "consultation", "pricing", "faqs"].includes(page.slug) && <ContactBoost />}
+  {["about", "our-team"].includes(page.slug) && <ProofStrip />}
+</BaseLayout>

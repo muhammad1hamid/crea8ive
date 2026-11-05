@@ -1,0 +1,47 @@
+[
+  {
+    "path": "/qa/",
+    "status": 200,
+    "passed": true
+  },
+  {
+    "path": "/qa/ar/",
+    "status": 200,
+    "passed": true
+  },
+  {
+    "path": "/qa/services/seo/",
+    "status": 200,
+    "passed": true
+  },
+  {
+    "path": "/qa/ar/services/seo/",
+    "status": 200,
+    "passed": true
+  },
+  {
+    "path": "/qa/does-not-exist/",
+    "status": 404,
+    "passed": true
+  },
+  {
+    "path": "/enquiries/submit.php",
+    "status": 503,
+    "passed": true
+  },
+  {
+    "path": "/enquiries/submit%2ephp",
+    "status": 503,
+    "passed": true
+  },
+  {
+    "path": "/qa/no-source.php",
+    "status": 404,
+    "passed": true
+  },
+  {
+    "path": "/website-portfolio/buildscape/",
+    "status": 200,
+    "passed": true
+  }
+]

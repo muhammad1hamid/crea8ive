@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "width": 375,
+  "visitors": 2000,
+  "expectedNetQar": 3000,
+  "stickyOverlay": false
+}

@@ -1,0 +1,18 @@
+/* Shared surfaces are neutral; imagery and deliberate actions carry colour. */
+#main-content { background:var(--page-bg); }
+#main-content :where(.lux-card,.home-service-tile,.home-plan-card,.home-industry-card,.home-process-step),
+.home-website-proof a[class*="card"] {
+  box-shadow:inset 0 1px 0 var(--border-soft),0 12px 30px var(--shadow-deep);
+  transition:border-color .2s ease,box-shadow .2s ease;
+}
+@media(hover:hover) and (pointer:fine) {
+  #main-content :where(.lux-card,.home-service-tile,.home-plan-card,.home-industry-card,.home-process-step):hover,
+  .home-website-proof a[class*="card"]:hover {
+    border-color:var(--border-interactive);
+    box-shadow:inset 0 1px 0 var(--border-soft),0 16px 36px var(--shadow-deep);
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  #main-content :where(.lux-card,.home-service-tile,.home-plan-card,.home-industry-card,.home-process-step),
+  .home-website-proof a[class*="card"] { transition:none; }
+}

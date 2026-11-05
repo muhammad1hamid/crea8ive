@@ -1,0 +1,133 @@
+/* Scope presentation changes to imported pages; leave snapshot content intact. */
+.legacy-content.legacy-content {
+  --white: var(--text-primary);
+  --white-soft: var(--text-secondary);
+  --muted: var(--text-secondary);
+  --orange-soft: var(--text-secondary);
+  --orange-glow: var(--text-primary);
+  --panel: var(--surface-raised);
+  --panel-strong: var(--surface-raised);
+  --line-strong: var(--border-soft);
+  color: var(--text-primary) !important;
+}
+
+/* Elementor forces white on every descendant, even in light mode. */
+.legacy-content :is(p, li, span, label, td, div, a, button) {
+  color: var(--text-secondary) !important;
+}
+
+html body:has(.legacy-content) {
+  background: var(--body-background);
+}
+
+body:has(.legacy-content)::after {
+  display: none;
+}
+
+.legacy-content :is(.hero-stage, .cta-box, .cta-shell, .cm-contact-card, .cm-info-card, .cm-form-box, .cm-form, .price-card, .liability-card, .browser-frame, .speed-card, .mobile-preview, .hero-preview, .hero-metric) {
+  background: var(--surface-raised);
+  border-color: var(--border-soft);
+  box-shadow: 0 16px 44px var(--shadow-deep);
+}
+
+.legacy-content :is(.cm-contact-section, .cm-pricing-section) {
+  background: var(--page-bg);
+}
+
+.legacy-content :is(.cm-price-visual, .cm-ai-visual) {
+  background: var(--surface-raised);
+}
+
+.legacy-content :is(.cm-price-visual, .cm-ai-visual)::after {
+  background: none;
+}
+
+.legacy-content :is(.wire-line, .wire-button.secondary) {
+  background: var(--border-interactive);
+}
+
+.legacy-content .wire-card {
+  background: var(--section-bg);
+  border-color: var(--border-soft);
+}
+
+.legacy-content :is(.hero-stage, .cta-box, .cta-shell)::before,
+.legacy-content :is(.hero-stage, .cta-box, .cta-shell)::after {
+  background: none;
+  box-shadow: none;
+}
+
+.legacy-content :is(.eyebrow, .micro-label, .build-no, .include-chip, .price-tag, .faq-tag, .hero-metric strong) {
+  color: var(--icon-color);
+  text-shadow: none;
+}
+
+.legacy-content :is(.hero-copy h1 span, .section-title span) {
+  color: var(--text-primary);
+  text-shadow: none;
+}
+
+.legacy-content :is(.btn-primary, .cm-submit, .cm-btn-primary, .cm-btn-main, .cm-price-btn, .cm-cta-btn) {
+  background: var(--action-bg);
+  color: var(--action-text) !important;
+  border-color: var(--action-bg);
+  box-shadow: 0 8px 24px var(--shadow-deep);
+}
+
+.legacy-content :is(.btn-primary, .cm-submit, .cm-btn-primary, .cm-btn-main, .cm-price-btn, .cm-cta-btn) :is(span, svg) {
+  color: var(--action-text) !important;
+}
+
+.legacy-content :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--text-primary) !important;
+}
+
+.legacy-content :is(.btn-secondary, .cm-btn-line, .hero-tags li, .include-chip, .faq-tag) {
+  background: var(--surface-1);
+  color: var(--text-secondary);
+  border-color: var(--border-soft);
+}
+
+.legacy-content :is(p, li, label, input, select, textarea) {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.legacy-content :is(.section-copy, .hero-copy p, .liability-card p, .build-card p, .include-card p, .price-card p, .faq-answer, .cta-copy p) {
+  color: var(--text-secondary) !important;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* Below-hero sections share a restrained component scale; hero selectors stay locked. */
+.legacy-content :is(.build-card, .include-card, .liability-card, .faq-item, .price-card, .cm-info-card, .cm-form-box) {
+  border-radius:8px;
+  box-shadow:none;
+  border-color:var(--border-soft);
+}
+.legacy-content :is(.build-card, .include-card, .liability-card) h3 {
+  font-size:1.25rem;
+  line-height:1.35;
+  letter-spacing:0;
+}
+.legacy-content :is(.cm-info-card, .cm-form-box) {
+  background:var(--surface-raised);
+}
+.legacy-content :is(input,select,textarea):focus-visible {
+  outline:2px solid var(--service-colour,#79baff);
+  outline-offset:3px;
+}
+
+.legacy-content :is(.cm-plan,.cm-service) {
+  border-radius:8px;
+  box-shadow:none;
+  border-color:var(--border-soft);
+}
+.legacy-content .cm-service {
+  gap:14px;
+  padding:20px;
+}
+.legacy-content .cm-service h3 {
+  font-size:18px;
+  line-height:1.4;
+}

@@ -1,0 +1,2481 @@
+{
+  "generatedAt": "2026-07-13T09:03:12.204Z",
+  "assets": [
+    {
+      "id": "blog-covers-2026-premium/output/contact-sheet.jpg",
+      "name": "contact-sheet",
+      "label": "Contact Sheet",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/contact-sheet.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/digital-marketing-agency-rawalpindi.jpg",
+      "name": "digital-marketing-agency-rawalpindi",
+      "label": "Digital Marketing Agency Rawalpindi",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/digital-marketing-agency-rawalpindi.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/digital-marketing-agency-rawalpindi-premium-cover.webp",
+      "name": "digital-marketing-agency-rawalpindi-premium-cover",
+      "label": "Digital Marketing Agency Rawalpindi Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/digital-marketing-agency-rawalpindi-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/digital-marketing-cost-pakistan.webp",
+      "name": "digital-marketing-cost-pakistan",
+      "label": "Digital Marketing Cost Pakistan",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/digital-marketing-cost-pakistan.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/digital-marketing-cost-pakistan-premium-cover.webp",
+      "name": "digital-marketing-cost-pakistan-premium-cover",
+      "label": "Digital Marketing Cost Pakistan Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/digital-marketing-cost-pakistan-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/facebook-ads-cost-pakistan.webp",
+      "name": "facebook-ads-cost-pakistan",
+      "label": "Facebook Ads Cost Pakistan",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/facebook-ads-cost-pakistan.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/facebook-ads-cost-pakistan-premium-cover.webp",
+      "name": "facebook-ads-cost-pakistan-premium-cover",
+      "label": "Facebook Ads Cost Pakistan Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/facebook-ads-cost-pakistan-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/facebook-instagram-ads-pakistan-guide.jpg",
+      "name": "facebook-instagram-ads-pakistan-guide",
+      "label": "Facebook Instagram Ads Pakistan Guide",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/facebook-instagram-ads-pakistan-guide.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/facebook-instagram-ads-pakistan-guide-premium-cover.webp",
+      "name": "facebook-instagram-ads-pakistan-guide-premium-cover",
+      "label": "Facebook Instagram Ads Pakistan Guide Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/facebook-instagram-ads-pakistan-guide-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/get-the-most-out-of-the-creativity.webp",
+      "name": "get-the-most-out-of-the-creativity",
+      "label": "Get The Most Out Of The Creativity",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/get-the-most-out-of-the-creativity.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/get-the-most-out-of-the-creativity-premium-cover.webp",
+      "name": "get-the-most-out-of-the-creativity-premium-cover",
+      "label": "Get The Most Out Of The Creativity Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/get-the-most-out-of-the-creativity-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/google-ads-small-business-pakistan.jpg",
+      "name": "google-ads-small-business-pakistan",
+      "label": "Google Ads Small Business Pakistan",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/google-ads-small-business-pakistan.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/google-ads-small-business-pakistan-premium-cover.webp",
+      "name": "google-ads-small-business-pakistan-premium-cover",
+      "label": "Google Ads Small Business Pakistan Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/google-ads-small-business-pakistan-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/google-ads-vs-facebook-ads-pakistan.jpg",
+      "name": "google-ads-vs-facebook-ads-pakistan",
+      "label": "Google Ads Vs Facebook Ads Pakistan",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/google-ads-vs-facebook-ads-pakistan.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/google-ads-vs-facebook-ads-pakistan-premium-cover.webp",
+      "name": "google-ads-vs-facebook-ads-pakistan-premium-cover",
+      "label": "Google Ads Vs Facebook Ads Pakistan Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/google-ads-vs-facebook-ads-pakistan-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/google-ai-overviews-ads-in-pakistan-cover.jpg",
+      "name": "google-ai-overviews-ads-in-pakistan-cover",
+      "label": "Google Ai Overviews Ads In Pakistan Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/google-ai-overviews-ads-in-pakistan-cover.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/google-ai-overviews-ads-in-pakistan-cover.webp",
+      "name": "google-ai-overviews-ads-in-pakistan-cover",
+      "label": "Google Ai Overviews Ads In Pakistan Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/google-ai-overviews-ads-in-pakistan-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/google-business-profile-for-restaurants-in-islamabad-full-setup-guide-premium-cover.webp",
+      "name": "google-business-profile-for-restaurants-in-islamabad-full-setup-guide-premium-cover",
+      "label": "Google Business Profile For Restaurants In Islamabad Full Setup Guide Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/google-business-profile-for-restaurants-in-islamabad-full-setup-guide-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/google-business-profile-optimization-checklist.jpg",
+      "name": "google-business-profile-optimization-checklist",
+      "label": "Google Business Profile Optimization Checklist",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/google-business-profile-optimization-checklist.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/google-business-profile-optimization-checklist-premium-cover.webp",
+      "name": "google-business-profile-optimization-checklist-premium-cover",
+      "label": "Google Business Profile Optimization Checklist Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/google-business-profile-optimization-checklist-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/google-business-profile-restaurants-islamabad-base.jpg",
+      "name": "google-business-profile-restaurants-islamabad-base",
+      "label": "Google Business Profile Restaurants Islamabad Base",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/google-business-profile-restaurants-islamabad-base.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/google-business-profile-restaurants-islamabad-base-2.jpg",
+      "name": "google-business-profile-restaurants-islamabad-base-2",
+      "label": "Google Business Profile Restaurants Islamabad Base 2",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/google-business-profile-restaurants-islamabad-base-2.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/how-to-get-more-google-reviews.jpg",
+      "name": "how-to-get-more-google-reviews",
+      "label": "How To Get More Google Reviews",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/how-to-get-more-google-reviews.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/how-to-get-more-google-reviews-premium-cover.webp",
+      "name": "how-to-get-more-google-reviews-premium-cover",
+      "label": "How To Get More Google Reviews Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/how-to-get-more-google-reviews-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/influencer-marketing-trends-2023-what-you-need-to-know-premium-cover.webp",
+      "name": "influencer-marketing-trends-2023-what-you-need-to-know-premium-cover",
+      "label": "Influencer Marketing Trends 2023 What You Need To Know Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/influencer-marketing-trends-2023-what-you-need-to-know-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/instagram-marketing-pakistan.jpg",
+      "name": "instagram-marketing-pakistan",
+      "label": "Instagram Marketing Pakistan",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/instagram-marketing-pakistan.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/instagram-marketing-pakistan-premium-cover.webp",
+      "name": "instagram-marketing-pakistan-premium-cover",
+      "label": "Instagram Marketing Pakistan Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/instagram-marketing-pakistan-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/local-seo-google-maps-pakistan-guide.jpg",
+      "name": "local-seo-google-maps-pakistan-guide",
+      "label": "Local Seo Google Maps Pakistan Guide",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/local-seo-google-maps-pakistan-guide.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/local-seo-google-maps-pakistan-guide-premium-cover.webp",
+      "name": "local-seo-google-maps-pakistan-guide-premium-cover",
+      "label": "Local Seo Google Maps Pakistan Guide Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/local-seo-google-maps-pakistan-guide-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/pakistan-digital-marketing-statistics-2026.jpg",
+      "name": "pakistan-digital-marketing-statistics-2026",
+      "label": "Pakistan Digital Marketing Statistics 2026",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/pakistan-digital-marketing-statistics-2026.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/pakistan-digital-marketing-statistics-2026-premium-cover.webp",
+      "name": "pakistan-digital-marketing-statistics-2026-premium-cover",
+      "label": "Pakistan Digital Marketing Statistics 2026 Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/pakistan-digital-marketing-statistics-2026-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/rank-google-maps-rawalpindi-islamabad.webp",
+      "name": "rank-google-maps-rawalpindi-islamabad",
+      "label": "Rank Google Maps Rawalpindi Islamabad",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/rank-google-maps-rawalpindi-islamabad.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/rank-google-maps-rawalpindi-islamabad-premium-cover.webp",
+      "name": "rank-google-maps-rawalpindi-islamabad-premium-cover",
+      "label": "Rank Google Maps Rawalpindi Islamabad Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/rank-google-maps-rawalpindi-islamabad-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/seo-services-pakistan.jpg",
+      "name": "seo-services-pakistan",
+      "label": "Seo Services Pakistan",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/seo-services-pakistan.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/seo-services-pakistan-premium-cover.webp",
+      "name": "seo-services-pakistan-premium-cover",
+      "label": "Seo Services Pakistan Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/seo-services-pakistan-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/seo-which-digital-advertising-strategy-is-right-for-you-premium-cover.webp",
+      "name": "seo-which-digital-advertising-strategy-is-right-for-you-premium-cover",
+      "label": "Seo Which Digital Advertising Strategy Is Right For You Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/seo-which-digital-advertising-strategy-is-right-for-you-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/social-media-marketing-strategies-for-small-business-premium-cover.webp",
+      "name": "social-media-marketing-strategies-for-small-business-premium-cover",
+      "label": "Social Media Marketing Strategies For Small Business Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/social-media-marketing-strategies-for-small-business-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source-photo-sheet.jpg",
+      "name": "source-photo-sheet",
+      "label": "Source Photo Sheet",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source-photo-sheet.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/source-photo-sheet-small.jpg",
+      "name": "source-photo-sheet-small",
+      "label": "Source Photo Sheet Small",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source-photo-sheet-small.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/the-ai-automation-blueprint-for-marketing-2026-guide.jpg",
+      "name": "the-ai-automation-blueprint-for-marketing-2026-guide",
+      "label": "The Ai Automation Blueprint For Marketing 2026 Guide",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/the-ai-automation-blueprint-for-marketing-2026-guide.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/the-ai-automation-blueprint-for-marketing-2026-guide-premium-cover.webp",
+      "name": "the-ai-automation-blueprint-for-marketing-2026-guide-premium-cover",
+      "label": "The Ai Automation Blueprint For Marketing 2026 Guide Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/the-ai-automation-blueprint-for-marketing-2026-guide-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/website-cost-pakistan.jpg",
+      "name": "website-cost-pakistan",
+      "label": "Website Cost Pakistan",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/website-cost-pakistan.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/website-cost-pakistan-premium-cover.webp",
+      "name": "website-cost-pakistan-premium-cover",
+      "label": "Website Cost Pakistan Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/website-cost-pakistan-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/whatsapp-business-marketing-pakistan.jpg",
+      "name": "whatsapp-business-marketing-pakistan",
+      "label": "Whatsapp Business Marketing Pakistan",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/whatsapp-business-marketing-pakistan.jpg"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/whatsapp-business-marketing-pakistan-premium-cover.webp",
+      "name": "whatsapp-business-marketing-pakistan-premium-cover",
+      "label": "Whatsapp Business Marketing Pakistan Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/whatsapp-business-marketing-pakistan-premium-cover.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/source/whatsapp-leads-facebook-ads.webp",
+      "name": "whatsapp-leads-facebook-ads",
+      "label": "Whatsapp Leads Facebook Ads",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Source"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/source/whatsapp-leads-facebook-ads.webp"
+    },
+    {
+      "id": "blog-covers-2026-premium/output/whatsapp-leads-facebook-ads-premium-cover.webp",
+      "name": "whatsapp-leads-facebook-ads-premium-cover",
+      "label": "Whatsapp Leads Facebook Ads Premium Cover",
+      "category": "Blog Covers 2026 Premium",
+      "folder": [
+        "Output"
+      ],
+      "kind": "image",
+      "extension": "webp",
+      "src": "/portfolio-assets/blog-covers-2026-premium/output/whatsapp-leads-facebook-ads-premium-cover.webp"
+    },
+    {
+      "id": "Brand Guidlines/C03 Brand Guildlines.pdf",
+      "name": "C03 Brand Guildlines",
+      "label": "C03 Brand Guildlines",
+      "category": "Brand Guidelines",
+      "folder": [],
+      "kind": "pdf",
+      "extension": "pdf",
+      "src": "/portfolio-assets/Brand%20Guidlines/C03%20Brand%20Guildlines.pdf",
+      "posterSrc": "/portfolio-optimized/Brand%20Guidlines/C03%20Brand%20Guildlines-cover.webp",
+      "posterWidth": 1600,
+      "posterHeight": 2400
+    },
+    {
+      "id": "Brand Guidlines/CO3 Uniform Shirt Design.pdf",
+      "name": "CO3 Uniform Shirt Design",
+      "label": "CO3 Uniform Shirt Design",
+      "category": "Brand Guidelines",
+      "folder": [],
+      "kind": "pdf",
+      "extension": "pdf",
+      "src": "/portfolio-assets/Brand%20Guidlines/CO3%20Uniform%20Shirt%20Design.pdf",
+      "posterSrc": "/portfolio-optimized/Brand%20Guidlines/CO3%20Uniform%20Shirt%20Design-cover.webp",
+      "posterWidth": 1600,
+      "posterHeight": 1343
+    },
+    {
+      "id": "Brand Guidlines/dac .png",
+      "name": "dac ",
+      "label": "Dac",
+      "category": "Brand Guidelines",
+      "folder": [],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Brand%20Guidlines/dac%20.png",
+      "optimizedSrc": "/portfolio-optimized/Brand%20Guidlines/dac%20.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Brand Guidlines/dac brand guildekines.png",
+      "name": "dac brand guildekines",
+      "label": "Dac Brand Guildekines",
+      "category": "Brand Guidelines",
+      "folder": [],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Brand%20Guidlines/dac%20brand%20guildekines.png",
+      "optimizedSrc": "/portfolio-optimized/Brand%20Guidlines/dac%20brand%20guildekines.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Brand Guidlines/Dac Mother day.png",
+      "name": "Dac Mother day",
+      "label": "Dac Mother Day",
+      "category": "Brand Guidelines",
+      "folder": [],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Brand%20Guidlines/Dac%20Mother%20day.png",
+      "optimizedSrc": "/portfolio-optimized/Brand%20Guidlines/Dac%20Mother%20day.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2843
+    },
+    {
+      "id": "Brand Guidlines/Home Studio logo guidlines.pdf.pdf",
+      "name": "Home Studio logo guidlines.pdf",
+      "label": "Home Studio Logo Guidlines.Pdf",
+      "category": "Brand Guidelines",
+      "folder": [],
+      "kind": "pdf",
+      "extension": "pdf",
+      "src": "/portfolio-assets/Brand%20Guidlines/Home%20Studio%20logo%20guidlines.pdf.pdf",
+      "posterSrc": "/portfolio-optimized/Brand%20Guidlines/Home%20Studio%20logo%20guidlines.pdf-cover.webp",
+      "posterWidth": 1600,
+      "posterHeight": 5625
+    },
+    {
+      "id": "Brand Guidlines/The Smile Xperts Brand Guidline.pdf.pdf",
+      "name": "The Smile Xperts Brand Guidline.pdf",
+      "label": "The Smile Xperts Brand Guidline.Pdf",
+      "category": "Brand Guidelines",
+      "folder": [],
+      "kind": "pdf",
+      "extension": "pdf",
+      "src": "/portfolio-assets/Brand%20Guidlines/The%20Smile%20Xperts%20Brand%20Guidline.pdf.pdf",
+      "posterSrc": "/portfolio-optimized/Brand%20Guidlines/The%20Smile%20Xperts%20Brand%20Guidline.pdf-cover.webp",
+      "posterWidth": 1600,
+      "posterHeight": 900
+    },
+    {
+      "id": "E commerce/Grid Preview/,,.jpeg",
+      "name": ",,",
+      "label": ",,",
+      "category": "E Commerce",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/E%20commerce/Grid%20Preview/%2C%2C.jpeg",
+      "optimizedSrc": "/portfolio-optimized/E%20commerce/Grid%20Preview/%2C%2C.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2127
+    },
+    {
+      "id": "E commerce/Grid Preview/,,,.jpeg",
+      "name": ",,,",
+      "label": ",,,",
+      "category": "E Commerce",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/E%20commerce/Grid%20Preview/%2C%2C%2C.jpeg",
+      "optimizedSrc": "/portfolio-optimized/E%20commerce/Grid%20Preview/%2C%2C%2C.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2845
+    },
+    {
+      "id": "E commerce/Grid Preview/WhatsApp Image 2026-06-28 at 1.02.53 AM.jpeg",
+      "name": "WhatsApp Image 2026-06-28 at 1.02.53 AM",
+      "label": "WhatsApp Image 2026 06 28 At 1.02.53 AM",
+      "category": "E Commerce",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/E%20commerce/Grid%20Preview/WhatsApp%20Image%202026-06-28%20at%201.02.53%20AM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/E%20commerce/Grid%20Preview/WhatsApp%20Image%202026-06-28%20at%201.02.53%20AM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2116
+    },
+    {
+      "id": "E commerce/Grid Preview/WhatsApp Image 2026-06-28 at 1.15.24 AM.jpeg",
+      "name": "WhatsApp Image 2026-06-28 at 1.15.24 AM",
+      "label": "WhatsApp Image 2026 06 28 At 1.15.24 AM",
+      "category": "E Commerce",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/E%20commerce/Grid%20Preview/WhatsApp%20Image%202026-06-28%20at%201.15.24%20AM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/E%20commerce/Grid%20Preview/WhatsApp%20Image%202026-06-28%20at%201.15.24%20AM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2839
+    },
+    {
+      "id": "Health Clinics/images/1.png",
+      "name": "1",
+      "label": "1",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/1.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/1.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Health Clinics/images/2.png",
+      "name": "2",
+      "label": "2",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/2.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/2.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Health Clinics/images/3.jpg",
+      "name": "3",
+      "label": "3",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/Health%20Clinics/images/3.jpg",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/3.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Health Clinics/images/4.jpg",
+      "name": "4",
+      "label": "4",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/Health%20Clinics/images/4.jpg",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/4.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Health Clinics/images/6.jpg",
+      "name": "6",
+      "label": "6",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/Health%20Clinics/images/6.jpg",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/6.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Health Clinics/images/7.jpg",
+      "name": "7",
+      "label": "7",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/Health%20Clinics/images/7.jpg",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/7.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Health Clinics/Reels/animation reels/Ai Character animated Reel 01.mov",
+      "name": "Ai Character animated Reel 01",
+      "label": "Ai Character Animated Reel 01",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Animation Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/animation%20reels/Ai%20Character%20animated%20Reel%2001.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Ai%20Character%20animated%20Reel%2001-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Ai%20Character%20animated%20Reel%2001-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Health Clinics/Reels/animation reels/Ai Character Reel 02 .mov",
+      "name": "Ai Character Reel 02 ",
+      "label": "Ai Character Reel 02",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Animation Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/animation%20reels/Ai%20Character%20Reel%2002%20.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Ai%20Character%20Reel%2002%20-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Ai%20Character%20Reel%2002%20-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Health Clinics/Reels/animation reels/Ai Character reel 03.mov",
+      "name": "Ai Character reel 03",
+      "label": "Ai Character Reel 03",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Animation Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/animation%20reels/Ai%20Character%20reel%2003.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Ai%20Character%20reel%2003-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Ai%20Character%20reel%2003-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Health Clinics/Reels/animation reels/Animated reel 03.1 .mov",
+      "name": "Animated reel 03.1 ",
+      "label": "Animated Reel 03.1",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Animation Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/animation%20reels/Animated%20reel%2003.1%20.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animated%20reel%2003.1%20-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animated%20reel%2003.1%20-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Health Clinics/Reels/animation reels/Animated wisdom teeth reel 06.mov",
+      "name": "Animated wisdom teeth reel 06",
+      "label": "Animated Wisdom Teeth Reel 06",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Animation Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/animation%20reels/Animated%20wisdom%20teeth%20reel%2006.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animated%20wisdom%20teeth%20reel%2006-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animated%20wisdom%20teeth%20reel%2006-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Health Clinics/Reels/animation reels/Animation Reel 01 TSE.mov",
+      "name": "Animation Reel 01 TSE",
+      "label": "Animation Reel 01 TSE",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Animation Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/animation%20reels/Animation%20Reel%2001%20TSE.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animation%20Reel%2001%20TSE-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animation%20Reel%2001%20TSE-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Health Clinics/Reels/animation reels/Animation Reel 02 TSE.mov",
+      "name": "Animation Reel 02 TSE",
+      "label": "Animation Reel 02 TSE",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Animation Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/animation%20reels/Animation%20Reel%2002%20TSE.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animation%20Reel%2002%20TSE-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animation%20Reel%2002%20TSE-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Health Clinics/Reels/animation reels/Animation reel 04 .mov",
+      "name": "Animation reel 04 ",
+      "label": "Animation Reel 04",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Animation Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/animation%20reels/Animation%20reel%2004%20.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animation%20reel%2004%20-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animation%20reel%2004%20-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Health Clinics/Reels/animation reels/Animation Reel 05 TSE.mov",
+      "name": "Animation Reel 05 TSE",
+      "label": "Animation Reel 05 TSE",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Animation Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/animation%20reels/Animation%20Reel%2005%20TSE.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animation%20Reel%2005%20TSE-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/animation%20reels/Animation%20Reel%2005%20TSE-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Health Clinics/Reels/clinic reels/reel 03 implant .mov",
+      "name": "reel 03 implant ",
+      "label": "Reel 03 Implant",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Clinic Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/clinic%20reels/reel%2003%20implant%20.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/clinic%20reels/reel%2003%20implant%20-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/clinic%20reels/reel%2003%20implant%20-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2843
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 124604.png",
+      "name": "Screenshot 2026-06-30 124604",
+      "label": "Screenshot 2026 06 30 124604",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20124604.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20124604.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1994
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 124619.png",
+      "name": "Screenshot 2026-06-30 124619",
+      "label": "Screenshot 2026 06 30 124619",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20124619.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20124619.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2008
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 124638.png",
+      "name": "Screenshot 2026-06-30 124638",
+      "label": "Screenshot 2026 06 30 124638",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20124638.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20124638.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1994
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 124652.png",
+      "name": "Screenshot 2026-06-30 124652",
+      "label": "Screenshot 2026 06 30 124652",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20124652.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20124652.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2002
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 124704.png",
+      "name": "Screenshot 2026-06-30 124704",
+      "label": "Screenshot 2026 06 30 124704",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20124704.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20124704.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2003
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 124719.png",
+      "name": "Screenshot 2026-06-30 124719",
+      "label": "Screenshot 2026 06 30 124719",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20124719.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20124719.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1989
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 124730.png",
+      "name": "Screenshot 2026-06-30 124730",
+      "label": "Screenshot 2026 06 30 124730",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20124730.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20124730.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1999
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 124745.png",
+      "name": "Screenshot 2026-06-30 124745",
+      "label": "Screenshot 2026 06 30 124745",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20124745.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20124745.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2008
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 140812.png",
+      "name": "Screenshot 2026-06-30 140812",
+      "label": "Screenshot 2026 06 30 140812",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20140812.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20140812.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2016
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 140859.png",
+      "name": "Screenshot 2026-06-30 140859",
+      "label": "Screenshot 2026 06 30 140859",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20140859.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20140859.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2006
+    },
+    {
+      "id": "Health Clinics/images/Screenshot 2026-06-30 140931.png",
+      "name": "Screenshot 2026-06-30 140931",
+      "label": "Screenshot 2026 06 30 140931",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/Screenshot%202026-06-30%20140931.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/Screenshot%202026-06-30%20140931.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1999
+    },
+    {
+      "id": "Health Clinics/images/the smile xperts details post.png",
+      "name": "the smile xperts details post",
+      "label": "The Smile Xperts Details Post",
+      "category": "Health Clinics",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Health%20Clinics/images/the%20smile%20xperts%20details%20post.png",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/images/the%20smile%20xperts%20details%20post.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2134
+    },
+    {
+      "id": "Health Clinics/Reels/clinic reels/The Smile Xperts Reel 03.mov",
+      "name": "The Smile Xperts Reel 03",
+      "label": "The Smile Xperts Reel 03",
+      "category": "Health Clinics",
+      "folder": [
+        "Reels",
+        "Clinic Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Health%20Clinics/Reels/clinic%20reels/The%20Smile%20Xperts%20Reel%2003.mov",
+      "posterSrc": "/portfolio-optimized/Health%20Clinics/Reels/clinic%20reels/The%20Smile%20Xperts%20Reel%2003-poster.webp",
+      "playSrc": "/portfolio-optimized/Health%20Clinics/Reels/clinic%20reels/The%20Smile%20Xperts%20Reel%2003-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Health Clinics/Grid preview/WhatsApp Image 2026-06-28 at 12.48.59 AM.jpeg",
+      "name": "WhatsApp Image 2026-06-28 at 12.48.59 AM",
+      "label": "WhatsApp Image 2026 06 28 At 12.48.59 AM",
+      "category": "Health Clinics",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Health%20Clinics/Grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.48.59%20AM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/Grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.48.59%20AM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2816
+    },
+    {
+      "id": "Health Clinics/Grid preview/WhatsApp Image 2026-06-28 at 12.52.51 AM.jpeg",
+      "name": "WhatsApp Image 2026-06-28 at 12.52.51 AM",
+      "label": "WhatsApp Image 2026 06 28 At 12.52.51 AM",
+      "category": "Health Clinics",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Health%20Clinics/Grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.52.51%20AM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/Grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.52.51%20AM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2845
+    },
+    {
+      "id": "Health Clinics/Grid preview/WhatsApp Image 2026-06-28 at 12.52.52 AM.jpeg",
+      "name": "WhatsApp Image 2026-06-28 at 12.52.52 AM",
+      "label": "WhatsApp Image 2026 06 28 At 12.52.52 AM",
+      "category": "Health Clinics",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Health%20Clinics/Grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.52.52%20AM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Health%20Clinics/Grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.52.52%20AM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2127
+    },
+    {
+      "id": "Interiors & Architects /Images /4e9ff3cb-936d-483f-9504-a3bb2e3c6edc.png",
+      "name": "4e9ff3cb-936d-483f-9504-a3bb2e3c6edc",
+      "label": "4e9ff3cb 936d 483f 9504 A3bb2e3c6edc",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/4e9ff3cb-936d-483f-9504-a3bb2e3c6edc.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/4e9ff3cb-936d-483f-9504-a3bb2e3c6edc.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of 0fca2039-ad17-44de-bfa4-1e463e2557cb.png",
+      "name": "Copy of 0fca2039-ad17-44de-bfa4-1e463e2557cb",
+      "label": "Copy Of 0fca2039 Ad17 44de Bfa4 1e463e2557cb",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%200fca2039-ad17-44de-bfa4-1e463e2557cb.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%200fca2039-ad17-44de-bfa4-1e463e2557cb.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of 367661fd-68e9-4095-9e4b-89085ab5f597.png",
+      "name": "Copy of 367661fd-68e9-4095-9e4b-89085ab5f597",
+      "label": "Copy Of 367661fd 68e9 4095 9e4b 89085ab5f597",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20367661fd-68e9-4095-9e4b-89085ab5f597.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20367661fd-68e9-4095-9e4b-89085ab5f597.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of 8c628892-d72c-4df1-a5ef-335a9599a15d.png",
+      "name": "Copy of 8c628892-d72c-4df1-a5ef-335a9599a15d",
+      "label": "Copy Of 8c628892 D72c 4df1 A5ef 335a9599a15d",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%208c628892-d72c-4df1-a5ef-335a9599a15d.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%208c628892-d72c-4df1-a5ef-335a9599a15d.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2110
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of 93f625fc-1874-4634-be0f-187ca299cd4c.png",
+      "name": "Copy of 93f625fc-1874-4634-be0f-187ca299cd4c",
+      "label": "Copy Of 93f625fc 1874 4634 Be0f 187ca299cd4c",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%2093f625fc-1874-4634-be0f-187ca299cd4c.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%2093f625fc-1874-4634-be0f-187ca299cd4c.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of bf7fe692-5f6e-4367-bea1-9fadf2d3635c.png",
+      "name": "Copy of bf7fe692-5f6e-4367-bea1-9fadf2d3635c",
+      "label": "Copy Of Bf7fe692 5f6e 4367 Bea1 9fadf2d3635c",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20bf7fe692-5f6e-4367-bea1-9fadf2d3635c.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20bf7fe692-5f6e-4367-bea1-9fadf2d3635c.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Fb Cover.png",
+      "name": "Copy of Fb Cover",
+      "label": "Copy Of Fb Cover",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Fb%20Cover.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Fb%20Cover.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 703
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Linkedin Cover.png",
+      "name": "Copy of Linkedin Cover",
+      "label": "Copy Of Linkedin Cover",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Linkedin%20Cover.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Linkedin%20Cover.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 272
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 01.png",
+      "name": "Copy of Post 01",
+      "label": "Copy Of Post 01",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%2001.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%2001.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of post 02.png",
+      "name": "Copy of post 02",
+      "label": "Copy Of Post 02",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20post%2002.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20post%2002.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of post 04.png",
+      "name": "Copy of post 04",
+      "label": "Copy Of Post 04",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20post%2004.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20post%2004.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of post 05.png",
+      "name": "Copy of post 05",
+      "label": "Copy Of Post 05",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20post%2005.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20post%2005.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of post 06.png",
+      "name": "Copy of post 06",
+      "label": "Copy Of Post 06",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20post%2006.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20post%2006.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of post 07.png",
+      "name": "Copy of post 07",
+      "label": "Copy Of Post 07",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20post%2007.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20post%2007.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 1.png",
+      "name": "Copy of Post 1",
+      "label": "Copy Of Post 1",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%201.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%201.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 1 2.png",
+      "name": "Copy of Post 1 2",
+      "label": "Copy Of Post 1 2",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%201%202.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%201%202.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 2 2.png",
+      "name": "Copy of Post 2 2",
+      "label": "Copy Of Post 2 2",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%202%202.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%202%202.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 2a.png",
+      "name": "Copy of Post 2a",
+      "label": "Copy Of Post 2a",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%202a.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%202a.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 3.png",
+      "name": "Copy of Post 3",
+      "label": "Copy Of Post 3",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%203.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%203.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 3 2.png",
+      "name": "Copy of Post 3 2",
+      "label": "Copy Of Post 3 2",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%203%202.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%203%202.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 4 2.png",
+      "name": "Copy of Post 4 2",
+      "label": "Copy Of Post 4 2",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%204%202.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%204%202.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 5.png",
+      "name": "Copy of Post 5",
+      "label": "Copy Of Post 5",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%205.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%205.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 6.png",
+      "name": "Copy of Post 6",
+      "label": "Copy Of Post 6",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%206.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%206.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 7.png",
+      "name": "Copy of Post 7",
+      "label": "Copy Of Post 7",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%207.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%207.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 8.png",
+      "name": "Copy of Post 8",
+      "label": "Copy Of Post 8",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%208.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%208.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Post 9.png",
+      "name": "Copy of Post 9",
+      "label": "Copy Of Post 9",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%209.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Post%209.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Interiors & Architects /Reels/Copy of Reel 1.mp4",
+      "name": "Copy of Reel 1",
+      "label": "Copy Of Reel 1",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mp4",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Reels/Copy%20of%20Reel%201.mp4",
+      "posterSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Reels/Copy%20of%20Reel%201-poster.webp",
+      "playSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Reels/Copy%20of%20Reel%201-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2845
+    },
+    {
+      "id": "Interiors & Architects /Reels/Copy of Reel 2.mp4",
+      "name": "Copy of Reel 2",
+      "label": "Copy Of Reel 2",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mp4",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Reels/Copy%20of%20Reel%202.mp4",
+      "posterSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Reels/Copy%20of%20Reel%202-poster.webp",
+      "playSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Reels/Copy%20of%20Reel%202-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2845
+    },
+    {
+      "id": "Interiors & Architects /Reels/Copy of Reel 3.mp4",
+      "name": "Copy of Reel 3",
+      "label": "Copy Of Reel 3",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mp4",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Reels/Copy%20of%20Reel%203.mp4",
+      "posterSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Reels/Copy%20of%20Reel%203-poster.webp",
+      "playSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Reels/Copy%20of%20Reel%203-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2845
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Story 1.png",
+      "name": "Copy of Story 1",
+      "label": "Copy Of Story 1",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Story%201.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Story%201.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2845
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Story 2.png",
+      "name": "Copy of Story 2",
+      "label": "Copy Of Story 2",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Story%202.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Story%202.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2845
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Story 3.png",
+      "name": "Copy of Story 3",
+      "label": "Copy Of Story 3",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Story%203.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Story%203.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2845
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Story 4.png",
+      "name": "Copy of Story 4",
+      "label": "Copy Of Story 4",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Story%204.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Story%204.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2845
+    },
+    {
+      "id": "Interiors & Architects /Images /Copy of Story 6.png",
+      "name": "Copy of Story 6",
+      "label": "Copy Of Story 6",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Story%206.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Copy%20of%20Story%206.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2845
+    },
+    {
+      "id": "Interiors & Architects /grid preview/coworking grid.jpg",
+      "name": "coworking grid",
+      "label": "Coworking Grid",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/grid%20preview/coworking%20grid.jpg",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/grid%20preview/coworking%20grid.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2264
+    },
+    {
+      "id": "Interiors & Architects /HN Architects I Portfolio (2).pdf",
+      "name": "HN Architects I Portfolio (2)",
+      "label": "HN Architects I Portfolio (2)",
+      "category": "Interiors & Architects",
+      "folder": [],
+      "kind": "pdf",
+      "extension": "pdf",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/HN%20Architects%20I%20Portfolio%20(2).pdf",
+      "posterSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/HN%20Architects%20I%20Portfolio%20(2)-cover.webp",
+      "posterWidth": 1600,
+      "posterHeight": 2263
+    },
+    {
+      "id": "Interiors & Architects /Images /Home Studio June Meta Campaigns 2026.pdf",
+      "name": "Home Studio June Meta Campaigns 2026",
+      "label": "Home Studio June Meta Campaigns 2026",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "pdf",
+      "extension": "pdf",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/Home%20Studio%20June%20Meta%20Campaigns%202026.pdf",
+      "posterSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/Home%20Studio%20June%20Meta%20Campaigns%202026-cover.webp",
+      "posterWidth": 1600,
+      "posterHeight": 1600
+    },
+    {
+      "id": "Interiors & Architects /Images /HOME STUDIO post 03.png",
+      "name": "HOME STUDIO post 03",
+      "label": "HOME STUDIO Post 03",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/HOME%20STUDIO%20post%2003.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/HOME%20STUDIO%20post%2003.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Interiors & Architects /Images /hs post -5.png",
+      "name": "hs post -5",
+      "label": "Hs Post 5",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/hs%20post%20-5.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/hs%20post%20-5.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Interiors & Architects /Images /HS POST 02 REEL.png",
+      "name": "HS POST 02 REEL",
+      "label": "HS POST 02 REEL",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/HS%20POST%2002%20REEL.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/HS%20POST%2002%20REEL.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2843
+    },
+    {
+      "id": "Interiors & Architects /Images /post 01 hs .png",
+      "name": "post 01 hs ",
+      "label": "Post 01 Hs",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/post%2001%20hs%20.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/post%2001%20hs%20.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Interiors & Architects /Images /post 02 hs .png",
+      "name": "post 02 hs ",
+      "label": "Post 02 Hs",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/post%2002%20hs%20.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/post%2002%20hs%20.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Interiors & Architects /Images /post aa.png",
+      "name": "post aa",
+      "label": "Post Aa",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/post%20aa.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/post%20aa.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2134
+    },
+    {
+      "id": "Interiors & Architects /Images /post design .png",
+      "name": "post design ",
+      "label": "Post Design",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/post%20design%20.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/post%20design%20.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Interiors & Architects /Images /post hs 04.png",
+      "name": "post hs 04",
+      "label": "Post Hs 04",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/post%20hs%2004.png",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/post%20hs%2004.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Interiors & Architects /grid preview/pp.jpeg",
+      "name": "pp",
+      "label": "Pp",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/grid%20preview/pp.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/grid%20preview/pp.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2853
+    },
+    {
+      "id": "Interiors & Architects /Images /WhatsApp Image 2026-05-30 at 17.10.42.jpeg",
+      "name": "WhatsApp Image 2026-05-30 at 17.10.42",
+      "label": "WhatsApp Image 2026 05 30 At 17.10.42",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/Images%20/WhatsApp%20Image%202026-05-30%20at%2017.10.42.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/Images%20/WhatsApp%20Image%202026-05-30%20at%2017.10.42.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Interiors & Architects /grid preview/WhatsApp Image 2026-06-28 at 12.34.54 AM.jpeg",
+      "name": "WhatsApp Image 2026-06-28 at 12.34.54 AM",
+      "label": "WhatsApp Image 2026 06 28 At 12.34.54 AM",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.34.54%20AM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.34.54%20AM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2837
+    },
+    {
+      "id": "Interiors & Architects /grid preview/WhatsApp Image 2026-06-28 at 12.34.55 AM.jpeg",
+      "name": "WhatsApp Image 2026-06-28 at 12.34.55 AM",
+      "label": "WhatsApp Image 2026 06 28 At 12.34.55 AM",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.34.55%20AM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.34.55%20AM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2129
+    },
+    {
+      "id": "Interiors & Architects /grid preview/WhatsApp Image 2026-06-28 at 12.40.03 AM.jpeg",
+      "name": "WhatsApp Image 2026-06-28 at 12.40.03 AM",
+      "label": "WhatsApp Image 2026 06 28 At 12.40.03 AM",
+      "category": "Interiors & Architects",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Interiors%20%26%20Architects%20/grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.40.03%20AM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Interiors%20%26%20Architects%20/grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.40.03%20AM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2853
+    },
+    {
+      "id": "Logo/cre8iv.png",
+      "name": "cre8iv",
+      "label": "Cre8iv",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Logo/cre8iv.png",
+      "optimizedSrc": "/portfolio-optimized/Logo/cre8iv.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/Elegant Dibaj calligraphy on black.png",
+      "name": "Elegant Dibaj calligraphy on black",
+      "label": "Elegant Dibaj Calligraphy On Black",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Logo/Elegant%20Dibaj%20calligraphy%20on%20black.png",
+      "optimizedSrc": "/portfolio-optimized/Logo/Elegant%20Dibaj%20calligraphy%20on%20black.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/hs logo.png",
+      "name": "hs logo",
+      "label": "Hs Logo",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Logo/hs%20logo.png",
+      "optimizedSrc": "/portfolio-optimized/Logo/hs%20logo.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/new logo.png",
+      "name": "new logo",
+      "label": "New Logo",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Logo/new%20logo.png",
+      "optimizedSrc": "/portfolio-optimized/Logo/new%20logo.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/PF LOGO Black .png",
+      "name": "PF LOGO Black ",
+      "label": "PF LOGO Black",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Logo/PF%20LOGO%20Black%20.png",
+      "optimizedSrc": "/portfolio-optimized/Logo/PF%20LOGO%20Black%20.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/the smile xperts logo.png",
+      "name": "the smile xperts logo",
+      "label": "The Smile Xperts Logo",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Logo/the%20smile%20xperts%20logo.png",
+      "optimizedSrc": "/portfolio-optimized/Logo/the%20smile%20xperts%20logo.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/WhatsApp Image 2026-07-13 at 12.12.52 PM.jpeg",
+      "name": "WhatsApp Image 2026-07-13 at 12.12.52 PM",
+      "label": "WhatsApp Image 2026 07 13 At 12.12.52 PM",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Logo/WhatsApp%20Image%202026-07-13%20at%2012.12.52%20PM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Logo/WhatsApp%20Image%202026-07-13%20at%2012.12.52%20PM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/WhatsApp Image 2026-07-13 at 12.12.52 PM (1).jpeg",
+      "name": "WhatsApp Image 2026-07-13 at 12.12.52 PM (1)",
+      "label": "WhatsApp Image 2026 07 13 At 12.12.52 PM (1)",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Logo/WhatsApp%20Image%202026-07-13%20at%2012.12.52%20PM%20(1).jpeg",
+      "optimizedSrc": "/portfolio-optimized/Logo/WhatsApp%20Image%202026-07-13%20at%2012.12.52%20PM%20(1).webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/WhatsApp Image 2026-07-13 at 12.12.52 PM (2).jpeg",
+      "name": "WhatsApp Image 2026-07-13 at 12.12.52 PM (2)",
+      "label": "WhatsApp Image 2026 07 13 At 12.12.52 PM (2)",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Logo/WhatsApp%20Image%202026-07-13%20at%2012.12.52%20PM%20(2).jpeg",
+      "optimizedSrc": "/portfolio-optimized/Logo/WhatsApp%20Image%202026-07-13%20at%2012.12.52%20PM%20(2).webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/WhatsApp Image 2026-07-13 at 12.12.53 PM.jpeg",
+      "name": "WhatsApp Image 2026-07-13 at 12.12.53 PM",
+      "label": "WhatsApp Image 2026 07 13 At 12.12.53 PM",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Logo/WhatsApp%20Image%202026-07-13%20at%2012.12.53%20PM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Logo/WhatsApp%20Image%202026-07-13%20at%2012.12.53%20PM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/WhatsApp Image 2026-07-13 at 12.12.53 PM (1).jpeg",
+      "name": "WhatsApp Image 2026-07-13 at 12.12.53 PM (1)",
+      "label": "WhatsApp Image 2026 07 13 At 12.12.53 PM (1)",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Logo/WhatsApp%20Image%202026-07-13%20at%2012.12.53%20PM%20(1).jpeg",
+      "optimizedSrc": "/portfolio-optimized/Logo/WhatsApp%20Image%202026-07-13%20at%2012.12.53%20PM%20(1).webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1600
+    },
+    {
+      "id": "Logo/Wordmark Black Logo (1).png",
+      "name": "Wordmark Black Logo (1)",
+      "label": "Wordmark Black Logo (1)",
+      "category": "Logo",
+      "folder": [],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Logo/Wordmark%20Black%20Logo%20(1).png",
+      "optimizedSrc": "/portfolio-optimized/Logo/Wordmark%20Black%20Logo%20(1).webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 209
+    },
+    {
+      "id": "Resturants/grid preview/Blaster Ramadan grid.jpg",
+      "name": "Blaster Ramadan grid",
+      "label": "Blaster Ramadan Grid",
+      "category": "Restaurants",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpg",
+      "src": "/portfolio-assets/Resturants/grid%20preview/Blaster%20Ramadan%20grid.jpg",
+      "optimizedSrc": "/portfolio-optimized/Resturants/grid%20preview/Blaster%20Ramadan%20grid.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 667
+    },
+    {
+      "id": "Resturants/images/bubble soda post.png",
+      "name": "bubble soda post",
+      "label": "Bubble Soda Post",
+      "category": "Restaurants",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Resturants/images/bubble%20soda%20post.png",
+      "optimizedSrc": "/portfolio-optimized/Resturants/images/bubble%20soda%20post.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Resturants/Reels/C03 Mint lemonade reel.mp4",
+      "name": "C03 Mint lemonade reel",
+      "label": "C03 Mint Lemonade Reel",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mp4",
+      "src": "/portfolio-assets/Resturants/Reels/C03%20Mint%20lemonade%20reel.mp4",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/C03%20Mint%20lemonade%20reel-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/C03%20Mint%20lemonade%20reel-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2845
+    },
+    {
+      "id": "Resturants/images/ChatGPT Image Jul 6, 2026, 02_49_36 PM.png",
+      "name": "ChatGPT Image Jul 6, 2026, 02_49_36 PM",
+      "label": "ChatGPT Image Jul 6, 2026, 02 49 36 PM",
+      "category": "Restaurants",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Resturants/images/ChatGPT%20Image%20Jul%206%2C%202026%2C%2002_49_36%20PM.png",
+      "optimizedSrc": "/portfolio-optimized/Resturants/images/ChatGPT%20Image%20Jul%206%2C%202026%2C%2002_49_36%20PM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Resturants/images/ChatGPT Image Jul 6, 2026, 02_50_20 PM.png",
+      "name": "ChatGPT Image Jul 6, 2026, 02_50_20 PM",
+      "label": "ChatGPT Image Jul 6, 2026, 02 50 20 PM",
+      "category": "Restaurants",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Resturants/images/ChatGPT%20Image%20Jul%206%2C%202026%2C%2002_50_20%20PM.png",
+      "optimizedSrc": "/portfolio-optimized/Resturants/images/ChatGPT%20Image%20Jul%206%2C%202026%2C%2002_50_20%20PM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Resturants/images/ChatGPT Image Jul 6, 2026, 02_53_31 PM.png",
+      "name": "ChatGPT Image Jul 6, 2026, 02_53_31 PM",
+      "label": "ChatGPT Image Jul 6, 2026, 02 53 31 PM",
+      "category": "Restaurants",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Resturants/images/ChatGPT%20Image%20Jul%206%2C%202026%2C%2002_53_31%20PM.png",
+      "optimizedSrc": "/portfolio-optimized/Resturants/images/ChatGPT%20Image%20Jul%206%2C%202026%2C%2002_53_31%20PM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Resturants/images/ChatGPT Image Jul 6, 2026, 03_00_44 PM.png",
+      "name": "ChatGPT Image Jul 6, 2026, 03_00_44 PM",
+      "label": "ChatGPT Image Jul 6, 2026, 03 00 44 PM",
+      "category": "Restaurants",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Resturants/images/ChatGPT%20Image%20Jul%206%2C%202026%2C%2003_00_44%20PM.png",
+      "optimizedSrc": "/portfolio-optimized/Resturants/images/ChatGPT%20Image%20Jul%206%2C%202026%2C%2003_00_44%20PM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Resturants/Reels/Chocolate Icecream Reel.mov",
+      "name": "Chocolate Icecream Reel",
+      "label": "Chocolate Icecream Reel",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Resturants/Reels/Chocolate%20Icecream%20Reel.mov",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/Chocolate%20Icecream%20Reel-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/Chocolate%20Icecream%20Reel-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Resturants/images/CO3 boba drink post.png",
+      "name": "CO3 boba drink post",
+      "label": "CO3 Boba Drink Post",
+      "category": "Restaurants",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Resturants/images/CO3%20boba%20drink%20post.png",
+      "optimizedSrc": "/portfolio-optimized/Resturants/images/CO3%20boba%20drink%20post.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Resturants/Reels/CO3 Mocktail reel.mp4",
+      "name": "CO3 Mocktail reel",
+      "label": "CO3 Mocktail Reel",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mp4",
+      "src": "/portfolio-assets/Resturants/Reels/CO3%20Mocktail%20reel.mp4",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/CO3%20Mocktail%20reel-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/CO3%20Mocktail%20reel-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2845
+    },
+    {
+      "id": "Resturants/Reels/CO3 oreo shake reel.mp4",
+      "name": "CO3 oreo shake reel",
+      "label": "CO3 Oreo Shake Reel",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mp4",
+      "src": "/portfolio-assets/Resturants/Reels/CO3%20oreo%20shake%20reel.mp4",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/CO3%20oreo%20shake%20reel-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/CO3%20oreo%20shake%20reel-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2845
+    },
+    {
+      "id": "Resturants/Reels/CO3 reel 01.mov",
+      "name": "CO3 reel 01",
+      "label": "CO3 Reel 01",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Resturants/Reels/CO3%20reel%2001.mov",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/CO3%20reel%2001-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/CO3%20reel%2001-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Resturants/Reels/CO3 REEL 02.mov",
+      "name": "CO3 REEL 02",
+      "label": "CO3 REEL 02",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Resturants/Reels/CO3%20REEL%2002.mov",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/CO3%20REEL%2002-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/CO3%20REEL%2002-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Resturants/Reels/co3 reel 03.mov",
+      "name": "co3 reel 03",
+      "label": "Co3 Reel 03",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Resturants/Reels/co3%20reel%2003.mov",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/co3%20reel%2003-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/co3%20reel%2003-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Resturants/Reels/co3 reel 05.mov",
+      "name": "co3 reel 05",
+      "label": "Co3 Reel 05",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Resturants/Reels/co3%20reel%2005.mov",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/co3%20reel%2005-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/co3%20reel%2005-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Resturants/Reels/co3 reel o4.mov",
+      "name": "co3 reel o4",
+      "label": "Co3 Reel O4",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Resturants/Reels/co3%20reel%20o4.mov",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/co3%20reel%20o4-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/co3%20reel%20o4-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Resturants/images/Co3 soda post.png",
+      "name": "Co3 soda post",
+      "label": "Co3 Soda Post",
+      "category": "Restaurants",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Resturants/images/Co3%20soda%20post.png",
+      "optimizedSrc": "/portfolio-optimized/Resturants/images/Co3%20soda%20post.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Resturants/images/CO3 Summer drinks post.png",
+      "name": "CO3 Summer drinks post",
+      "label": "CO3 Summer Drinks Post",
+      "category": "Restaurants",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Resturants/images/CO3%20Summer%20drinks%20post.png",
+      "optimizedSrc": "/portfolio-optimized/Resturants/images/CO3%20Summer%20drinks%20post.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Resturants/Reels/ICED Matcha Making Reel.mov",
+      "name": "ICED Matcha Making Reel",
+      "label": "ICED Matcha Making Reel",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Resturants/Reels/ICED%20Matcha%20Making%20Reel.mov",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/ICED%20Matcha%20Making%20Reel-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/ICED%20Matcha%20Making%20Reel-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Resturants/Reels/ICED Matcha Reel.mov",
+      "name": "ICED Matcha Reel",
+      "label": "ICED Matcha Reel",
+      "category": "Restaurants",
+      "folder": [
+        "Reels"
+      ],
+      "kind": "video",
+      "extension": "mov",
+      "src": "/portfolio-assets/Resturants/Reels/ICED%20Matcha%20Reel.mov",
+      "posterSrc": "/portfolio-optimized/Resturants/Reels/ICED%20Matcha%20Reel-poster.webp",
+      "playSrc": "/portfolio-optimized/Resturants/Reels/ICED%20Matcha%20Reel-play.mp4",
+      "posterWidth": 1600,
+      "posterHeight": 2846
+    },
+    {
+      "id": "Resturants/images/mocktail soda post.png",
+      "name": "mocktail soda post",
+      "label": "Mocktail Soda Post",
+      "category": "Restaurants",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Resturants/images/mocktail%20soda%20post.png",
+      "optimizedSrc": "/portfolio-optimized/Resturants/images/mocktail%20soda%20post.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Resturants/images/summer post.png",
+      "name": "summer post",
+      "label": "Summer Post",
+      "category": "Restaurants",
+      "folder": [
+        "Images"
+      ],
+      "kind": "image",
+      "extension": "png",
+      "src": "/portfolio-assets/Resturants/images/summer%20post.png",
+      "optimizedSrc": "/portfolio-optimized/Resturants/images/summer%20post.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 2000
+    },
+    {
+      "id": "Resturants/grid preview/WhatsApp Image 2026-06-28 at 12.52.52 AM.jpeg",
+      "name": "WhatsApp Image 2026-06-28 at 12.52.52 AM",
+      "label": "WhatsApp Image 2026 06 28 At 12.52.52 AM",
+      "category": "Restaurants",
+      "folder": [
+        "Grid Preview"
+      ],
+      "kind": "image",
+      "extension": "jpeg",
+      "src": "/portfolio-assets/Resturants/grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.52.52%20AM.jpeg",
+      "optimizedSrc": "/portfolio-optimized/Resturants/grid%20preview/WhatsApp%20Image%202026-06-28%20at%2012.52.52%20AM.webp",
+      "optimizedWidth": 1600,
+      "optimizedHeight": 1408
+    }
+  ]
+}

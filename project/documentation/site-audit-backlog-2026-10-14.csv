@@ -1,0 +1,17 @@
+Priority,Phase,Task,Evidence,CodeArea,Acceptance
+P1,1,Repair client Organization industry field,5 invalid items,frontend/src/components/PremiumCaseStudyPage.tsx,Supported properties with visible industry context
+P1,1,Correct directory schema representation,10 tools hub app items,frontend/src/app/(global)/tools/page.tsx,Truthful collection and linked page entries
+P1,1,Review standalone app rich-result eligibility,10 individual tools and 1 software app,frontend/src/app/(global)/tools/[slug]/page.tsx,No invented ratings or prices
+P1,1,Replace private Blogger navigation,Shared link redirects to sign-in,frontend/src/lib/social-links.ts,Public useful destination
+P1,1,Validate 188 external-link checks,90 sampled pages repeat shared links,frontend/src/lib/client-logos.ts,Confirmed failures corrected and bot blocks classified
+P1,2,Repair early session capture,18-second delayed analytics,frontend/src/components/DeferredAnalytics.tsx,Short visits and first actions measured once
+P1,2,Verify event collector on static hosting,Live GET returns 404,frontend/src/lib/analytics-events.ts,Supported POST delivery with no personal data
+P1,2,Verify GTM GA4 and Meta initialization,Direct GA4 plus GTM and conditional fbq,frontend/src/components/DeferredAnalytics.tsx,One page view and event per real action
+P2,3,Strengthen contextual internal links,6 HTML URLs with one incoming link,Service and article data,Relevant incoming links and verified intent
+P2,3,Review machine-resource sitemap policy,2 flagged Markdown URLs,frontend/src/app/sitemap.ts,Deliberate HTML and machine-resource discovery
+P2,4,Pilot tool card and carousel polish,Current nested frames and clamped copy,frontend/src/components/tools/ToolCard.tsx,Readable media and accessible controls on mobile
+P2,4,Verify mobile CTA overlay behaviour,Sticky CTA and assistant widgets,frontend/src/components/DeferredSiteWidgets.tsx,No blocked fields or carousel controls
+P2,5,Reduce measured markup repetition,Homepage 375894 HTML bytes,Shared layouts and carousels,Lower payload with stable content and measured CWV
+P2,5,Validate HSTS deployment policy,2 audit notices,Hosting headers,Consistent tested HTTPS policy
+P3,1,Add Organization image,Optional Rich Results warning,frontend/src/components/SiteSchema.tsx,Supported accessible image
+P3,3,Review H1 and title equality,6 heuristic warnings,Page metadata,Intent-led titles without cosmetic score chasing

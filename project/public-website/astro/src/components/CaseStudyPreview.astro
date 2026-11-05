@@ -1,0 +1,40 @@
+---
+import { caseStudies } from "../data/growth";
+---
+<section class="bg-black px-6 py-20 text-white">
+  <div class="mx-auto max-w-[1400px]">
+    <div class="max-w-3xl">
+      <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">Results System</p>
+      <h2 class="mt-5 font-orbitron text-3xl font-bold leading-tight sm:text-5xl">
+        Build trust with results by industry, not generic promises.
+      </h2>
+      <p class="mt-5 text-lg leading-8 text-white/70">
+        Crea8iv's strongest proof should be organized around the way buyers choose agencies: by industry, problem,
+        channel, and outcome.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-5 md:grid-cols-2">
+      {caseStudies.map((study) => (
+        <article class="grid overflow-hidden border border-white/10 bg-white/[.03] lg:grid-cols-[.9fr_1.1fr]">
+          <img src={study.image} alt={study.title} class="h-full min-h-64 w-full object-cover" loading="lazy" decoding="async" />
+          <div class="p-6">
+            <p class="font-orbitron text-xs uppercase tracking-[.25em] text-brand">{study.industry}</p>
+            <h3 class="mt-3 font-orbitron text-2xl font-semibold">{study.title}</h3>
+            <p class="mt-3 text-sm font-semibold text-white">{study.result}</p>
+            <p class="mt-3 text-sm leading-6 text-white/65">{study.summary}</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              {study.services.map((service) => (
+                <span class="border border-white/10 px-3 py-2 text-xs text-white/70">{service}</span>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <a href="/results/" class="mt-10 inline-flex border border-brand px-5 py-3 font-orbitron text-xs uppercase tracking-wide hover:bg-brand">
+      Explore Results
+    </a>
+  </div>
+</section>

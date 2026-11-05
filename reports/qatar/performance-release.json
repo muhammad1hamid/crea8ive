@@ -1,0 +1,251 @@
+{
+  "scope": "Local unthrottled headless Chromium, 375px, external analytics blocked; not production field data or Lighthouse score",
+  "buildFirstLoadJs": "108 kB (Next build estimate)",
+  "rows": [
+    {
+      "route": "/qa/",
+      "vitals": {
+        "lcp": 192,
+        "cls": 0
+      },
+      "domContentLoaded": 84.89999999850988,
+      "resources": [
+        {
+          "path": "/img/logo.webp",
+          "bytes": 24346,
+          "duration": 14.200000002980232
+        },
+        {
+          "path": "/_next/static/css/073269917b33ddc8.css",
+          "bytes": 10411,
+          "duration": 14
+        },
+        {
+          "path": "/_next/static/chunks/webpack-717b85e5e5eedd8d.js",
+          "bytes": 3929,
+          "duration": 16.600000001490116
+        },
+        {
+          "path": "/_next/static/chunks/7544-a1c310f0d238efc1.js",
+          "bytes": 124584,
+          "duration": 17.899999998509884
+        },
+        {
+          "path": "/_next/static/chunks/5d3ed24e-d2adb4e0ef201363.js",
+          "bytes": 172835,
+          "duration": 17.800000000745058
+        },
+        {
+          "path": "/_next/static/chunks/main-app-5f7afb22487d5750.js",
+          "bytes": 463,
+          "duration": 18.199999999254942
+        },
+        {
+          "path": "/_next/static/chunks/6533-10f9238311fa2a26.js",
+          "bytes": 13308,
+          "duration": 19.5
+        },
+        {
+          "path": "/_next/static/chunks/7748-1443873d94f284f6.js",
+          "bytes": 41943,
+          "duration": 19.599999997764826
+        },
+        {
+          "path": "/_next/static/chunks/app/(qatar-en)/qa/%5B%5B...path%5D%5D/page-ab7abe54f2e51243.js",
+          "bytes": 157,
+          "duration": 19.699999999254942
+        },
+        {
+          "path": "/_next/static/chunks/app/(qatar-ar)/layout-4f637925417128a1.js",
+          "bytes": 6274,
+          "duration": 20.699999999254942
+        },
+        {
+          "path": "/favicon.ico",
+          "bytes": 2830,
+          "duration": 56.80000000074506
+        }
+      ]
+    },
+    {
+      "route": "/qa/ar/",
+      "vitals": {
+        "lcp": 144,
+        "cls": 0
+      },
+      "domContentLoaded": 99.89999999850988,
+      "resources": [
+        {
+          "path": "/img/logo.webp",
+          "bytes": 24346,
+          "duration": 7.199999999254942
+        },
+        {
+          "path": "/_next/static/css/073269917b33ddc8.css",
+          "bytes": 10411,
+          "duration": 7
+        },
+        {
+          "path": "/_next/static/chunks/webpack-717b85e5e5eedd8d.js",
+          "bytes": 3929,
+          "duration": 9.800000000745058
+        },
+        {
+          "path": "/_next/static/chunks/main-app-5f7afb22487d5750.js",
+          "bytes": 463,
+          "duration": 10.5
+        },
+        {
+          "path": "/_next/static/chunks/7544-a1c310f0d238efc1.js",
+          "bytes": 124584,
+          "duration": 10.400000002235174
+        },
+        {
+          "path": "/_next/static/chunks/5d3ed24e-d2adb4e0ef201363.js",
+          "bytes": 172835,
+          "duration": 10
+        },
+        {
+          "path": "/_next/static/chunks/6533-10f9238311fa2a26.js",
+          "bytes": 13308,
+          "duration": 10.599999997764826
+        },
+        {
+          "path": "/_next/static/chunks/7748-1443873d94f284f6.js",
+          "bytes": 41943,
+          "duration": 10.600000001490116
+        },
+        {
+          "path": "/_next/static/chunks/app/(qatar-ar)/qa/ar/%5B%5B...path%5D%5D/page-5a1df61db3720029.js",
+          "bytes": 157,
+          "duration": 10.700000002980232
+        },
+        {
+          "path": "/_next/static/chunks/app/(qatar-ar)/layout-4f637925417128a1.js",
+          "bytes": 6274,
+          "duration": 12.900000002235174
+        }
+      ]
+    },
+    {
+      "route": "/qa/contact/",
+      "vitals": {
+        "lcp": 152,
+        "cls": 0
+      },
+      "domContentLoaded": 112.89999999850988,
+      "resources": [
+        {
+          "path": "/img/logo.webp",
+          "bytes": 24346,
+          "duration": 7.899999998509884
+        },
+        {
+          "path": "/_next/static/css/073269917b33ddc8.css",
+          "bytes": 10411,
+          "duration": 7.699999999254942
+        },
+        {
+          "path": "/_next/static/chunks/webpack-717b85e5e5eedd8d.js",
+          "bytes": 3929,
+          "duration": 10.5
+        },
+        {
+          "path": "/_next/static/chunks/main-app-5f7afb22487d5750.js",
+          "bytes": 463,
+          "duration": 11.399999998509884
+        },
+        {
+          "path": "/_next/static/chunks/6533-10f9238311fa2a26.js",
+          "bytes": 13308,
+          "duration": 11.5
+        },
+        {
+          "path": "/_next/static/chunks/7748-1443873d94f284f6.js",
+          "bytes": 41943,
+          "duration": 11.599999997764826
+        },
+        {
+          "path": "/_next/static/chunks/7544-a1c310f0d238efc1.js",
+          "bytes": 124584,
+          "duration": 11.300000000745058
+        },
+        {
+          "path": "/_next/static/chunks/5d3ed24e-d2adb4e0ef201363.js",
+          "bytes": 172835,
+          "duration": 11.099999997764826
+        },
+        {
+          "path": "/_next/static/chunks/app/(qatar-en)/qa/%5B%5B...path%5D%5D/page-ab7abe54f2e51243.js",
+          "bytes": 157,
+          "duration": 11.600000001490116
+        },
+        {
+          "path": "/_next/static/chunks/app/(qatar-ar)/layout-4f637925417128a1.js",
+          "bytes": 6274,
+          "duration": 12
+        }
+      ]
+    },
+    {
+      "route": "/qa/services/seo/",
+      "vitals": {
+        "lcp": 144,
+        "cls": 0
+      },
+      "domContentLoaded": 97.30000000074506,
+      "resources": [
+        {
+          "path": "/_next/static/css/073269917b33ddc8.css",
+          "bytes": 10411,
+          "duration": 5.800000000745058
+        },
+        {
+          "path": "/img/logo.webp",
+          "bytes": 24346,
+          "duration": 5.900000002235174
+        },
+        {
+          "path": "/_next/static/chunks/webpack-717b85e5e5eedd8d.js",
+          "bytes": 3929,
+          "duration": 9.600000001490116
+        },
+        {
+          "path": "/_next/static/chunks/7544-a1c310f0d238efc1.js",
+          "bytes": 124584,
+          "duration": 10.600000001490116
+        },
+        {
+          "path": "/_next/static/chunks/5d3ed24e-d2adb4e0ef201363.js",
+          "bytes": 172835,
+          "duration": 10.199999999254942
+        },
+        {
+          "path": "/_next/static/chunks/main-app-5f7afb22487d5750.js",
+          "bytes": 463,
+          "duration": 10.699999999254942
+        },
+        {
+          "path": "/_next/static/chunks/6533-10f9238311fa2a26.js",
+          "bytes": 13308,
+          "duration": 10.899999998509884
+        },
+        {
+          "path": "/_next/static/chunks/7748-1443873d94f284f6.js",
+          "bytes": 41943,
+          "duration": 10.899999998509884
+        },
+        {
+          "path": "/_next/static/chunks/app/(qatar-en)/qa/%5B%5B...path%5D%5D/page-ab7abe54f2e51243.js",
+          "bytes": 157,
+          "duration": 11.399999998509884
+        },
+        {
+          "path": "/_next/static/chunks/app/(qatar-ar)/layout-4f637925417128a1.js",
+          "bytes": 6274,
+          "duration": 11.5
+        }
+      ]
+    }
+  ]
+}

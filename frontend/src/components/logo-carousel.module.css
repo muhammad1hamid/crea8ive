@@ -1,0 +1,18 @@
+.carousel { min-width:0; width:100%; max-width:100%; overflow:hidden; }
+.viewport { max-width:100%; overflow-x:auto; scrollbar-width:none; cursor:grab; touch-action:pan-x pan-y; padding:20px 0; }
+.viewport::-webkit-scrollbar { display:none; }
+.viewport:active { cursor:grabbing; }
+.viewport:focus-visible { outline:2px solid #ff6801; outline-offset:3px; }
+.track, .group { display:flex; width:max-content; }
+.group { gap:20px; padding-right:20px; }
+.logo { width:116px; height:116px; display:flex; flex:none; align-items:center; justify-content:center; border-radius:50%; padding:0; overflow:hidden; background:#fff; border:1px solid var(--border-soft); box-shadow:0 8px 20px #0002; }
+.logo img { width:100%; height:100%; object-fit:contain; border-radius:50%; padding:17%; background:#fff; pointer-events:none; }
+.logo:focus-visible { outline:3px solid #ff6801; outline-offset:4px; }
+.compact .logo { width:128px; height:128px; padding:0; border-radius:50%; border:1px solid #e1e6e9; box-shadow:0 8px 24px #0003,0 1px 0 #fff inset; }
+.compact .logo img { border-radius:50%; padding:3%; }
+.compact .viewport {
+  --logo-fade:clamp(20px,5vw,64px);
+  mask-image:linear-gradient(to right,transparent,#000 var(--logo-fade),#000 calc(100% - var(--logo-fade)),transparent);
+}
+.compact:has(.viewport:focus-visible) { outline:2px solid var(--crea8iv-orange); outline-offset:3px; }
+@media(max-width:639px) { .logo { width:96px; height:96px; padding:0; } .compact .logo { width:104px; height:104px; } .group { gap:14px; padding-right:14px; } }

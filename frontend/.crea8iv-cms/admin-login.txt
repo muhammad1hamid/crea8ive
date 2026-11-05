@@ -1,0 +1,6 @@
+Crea8iv Media Admin Login
+URL: https://crea8ivmedia.com/admin/login/
+Email: owner@crea8ivmedia.com
+Password: 732186b2fd6c662fa0cfb53a
+
+Keep this file private.

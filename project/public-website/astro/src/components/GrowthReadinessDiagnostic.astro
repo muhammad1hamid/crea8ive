@@ -1,0 +1,150 @@
+---
+const paths = [
+  {
+    key: "visibility",
+    label: "Low visibility",
+    title: "Get found first",
+    focus: "Google Maps, SEO, AI visibility, and service-page clarity.",
+    href: "/tools/local-seo-audit/",
+    cta: "Run Local SEO Audit",
+    steps: ["Profile clarity", "Service signals", "Reviews", "Local content"],
+  },
+  {
+    key: "traffic",
+    label: "Need more leads",
+    title: "Build paid demand",
+    focus: "Meta Ads, Google Ads, landing paths, and conversion tracking.",
+    href: "/tools/marketing-roi-calculator/",
+    cta: "Estimate Marketing ROI",
+    steps: ["Offer", "Audience", "Creative", "Tracking"],
+  },
+  {
+    key: "conversion",
+    label: "Traffic not converting",
+    title: "Fix the website path",
+    focus: "Website speed, trust proof, CTAs, forms, WhatsApp, and mobile UX.",
+    href: "/tools/website-performance-checker/",
+    cta: "Check Website Performance",
+    steps: ["Message", "Trust", "CTA", "Follow-up"],
+  },
+  {
+    key: "followup",
+    label: "Leads going cold",
+    title: "Recover missed opportunities",
+    focus: "WhatsApp replies, CRM stages, reminders, reviews, and reporting.",
+    href: "/marketing-automation/",
+    cta: "Automate Follow-Up",
+    steps: ["Route", "Reply", "Remind", "Review"],
+  },
+];
+---
+<section id="growth-readiness-diagnostic" class="bg-[#080808] px-6 py-20 text-white" aria-labelledby="growth-diagnostic-title">
+  <div class="mx-auto max-w-[1400px]">
+    <div class="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-end">
+      <div>
+        <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">Growth Readiness Diagnostic</p>
+        <h2 id="growth-diagnostic-title" class="mt-5 font-orbitron text-3xl font-bold leading-tight sm:text-5xl">
+          Show visitors the right next step before they contact you.
+        </h2>
+        <p class="mt-5 text-lg leading-8 text-white/70">
+          This keeps the current design direction, but adds an interactive decision layer: prospects identify the growth problem, then move into the right audit, calculator, or service page.
+        </p>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-2">
+        {paths.map((path, index) => (
+          <button
+            type="button"
+            class={`diagnostic-trigger border p-5 text-left transition ${index === 0 ? "border-brand bg-brand/10" : "border-white/10 bg-black hover:border-brand/60"}`}
+            data-path={path.key}
+            aria-pressed={index === 0 ? "true" : "false"}
+          >
+            <span class="font-orbitron text-xs uppercase tracking-[.22em] text-brand">0{index + 1}</span>
+            <span class="mt-3 block font-orbitron text-lg font-semibold">{path.label}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div class="mt-10 grid gap-6 lg:grid-cols-[1fr_.9fr]">
+      <div class="relative overflow-hidden border border-white/10 bg-black p-6">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(254,106,9,.22),transparent_28%),radial-gradient(circle_at_18%_82%,rgba(255,255,255,.08),transparent_24%)]"></div>
+        <div class="relative">
+          <p class="font-orbitron text-xs uppercase tracking-[.25em] text-white/50">Recommended path</p>
+          <h3 id="diagnostic-title" class="mt-4 font-orbitron text-3xl font-bold">Get found first</h3>
+          <p id="diagnostic-focus" class="mt-4 max-w-2xl text-base leading-7 text-white/65">Google Maps, SEO, AI visibility, and service-page clarity.</p>
+          <div id="diagnostic-steps" class="mt-8 grid gap-3 sm:grid-cols-4">
+            {paths[0].steps.map((step, index) => (
+              <div class="border border-white/10 bg-white/[.035] p-4">
+                <p class="font-orbitron text-xs text-brand">0{index + 1}</p>
+                <p class="mt-2 text-sm text-white/75">{step}</p>
+              </div>
+            ))}
+          </div>
+          <a id="diagnostic-link" href="/tools/local-seo-audit/" class="mt-8 inline-flex border border-brand bg-brand px-6 py-3 font-orbitron text-xs uppercase tracking-wide text-white">
+            Run Local SEO Audit
+          </a>
+        </div>
+      </div>
+
+      <div class="border border-white/10 bg-black p-6">
+        <p class="font-orbitron text-xs uppercase tracking-[.25em] text-brand">Visual System Logic</p>
+        <div class="mt-6 space-y-4">
+          {["Attract", "Capture", "Convert", "Automate", "Report"].map((stage, index) => (
+            <div class="grid grid-cols-[6.5rem_1fr] items-center gap-4">
+              <span class="font-orbitron text-sm uppercase tracking-wide text-white">{stage}</span>
+              <div class="h-2 bg-white/10">
+                <div class="h-full bg-brand" style={`width:${95 - index * 12}%`}></div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p class="mt-6 text-sm leading-7 text-white/55">
+          The visual layer should explain the system in seconds while the existing SEO copy, headings, schema, URLs, and internal links remain intact.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline define:vars={{ paths }}>
+    const root = document.getElementById("growth-readiness-diagnostic");
+    if (root) {
+      const title = root.querySelector("#diagnostic-title");
+      const focus = root.querySelector("#diagnostic-focus");
+      const link = root.querySelector("#diagnostic-link");
+      const steps = root.querySelector("#diagnostic-steps");
+      const triggers = root.querySelectorAll(".diagnostic-trigger");
+
+      const render = (key) => {
+        const selected = paths.find((path) => path.key === key) || paths[0];
+        if (title) title.textContent = selected.title;
+        if (focus) focus.textContent = selected.focus;
+        if (link) {
+          link.textContent = selected.cta;
+          link.setAttribute("href", selected.href);
+        }
+        if (steps) {
+          steps.innerHTML = selected.steps
+            .map((step, index) => `
+              <div class="border border-white/10 bg-white/[.035] p-4">
+                <p class="font-orbitron text-xs text-brand">0${index + 1}</p>
+                <p class="mt-2 text-sm text-white/75">${step}</p>
+              </div>
+            `)
+            .join("");
+        }
+        triggers.forEach((trigger) => {
+          const isActive = trigger.getAttribute("data-path") === selected.key;
+          trigger.setAttribute("aria-pressed", String(isActive));
+          trigger.classList.toggle("border-brand", isActive);
+          trigger.classList.toggle("bg-brand/10", isActive);
+          trigger.classList.toggle("border-white/10", !isActive);
+          trigger.classList.toggle("bg-black", !isActive);
+        });
+      };
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener("click", () => render(trigger.getAttribute("data-path")));
+      });
+    }
+  </script>
+</section>

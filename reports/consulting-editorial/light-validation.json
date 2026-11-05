@@ -1,0 +1,44 @@
+[
+  {
+    "route": "/case-studies/buildscape/",
+    "width": 390,
+    "overflow": false,
+    "color": "rgb(155, 61, 0)",
+    "linkColor": "rgb(255, 172, 112)"
+  },
+  {
+    "route": "/blog/lead-generation-for-builders-and-architects-in-pakistan/",
+    "width": 390,
+    "overflow": false,
+    "color": "rgb(155, 61, 0)",
+    "linkColor": "rgb(255, 172, 112)"
+  },
+  {
+    "route": "/syed-qamar-abbas/",
+    "width": 390,
+    "overflow": false,
+    "color": "rgb(69, 69, 69)",
+    "linkColor": "rgb(255, 172, 112)"
+  },
+  {
+    "route": "/case-studies/buildscape/",
+    "width": 1440,
+    "overflow": false,
+    "color": "rgb(155, 61, 0)",
+    "linkColor": "rgb(255, 172, 112)"
+  },
+  {
+    "route": "/blog/lead-generation-for-builders-and-architects-in-pakistan/",
+    "width": 1440,
+    "overflow": false,
+    "color": "rgb(155, 61, 0)",
+    "linkColor": "rgb(255, 172, 112)"
+  },
+  {
+    "route": "/syed-qamar-abbas/",
+    "width": 1440,
+    "overflow": false,
+    "color": "rgb(69, 69, 69)",
+    "linkColor": "rgb(255, 172, 112)"
+  }
+]

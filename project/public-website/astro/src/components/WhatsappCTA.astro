@@ -1,0 +1,19 @@
+---
+import { WHATSAPP_MESSAGE, WHATSAPP_NUMBER } from "../data/growth";
+const waHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+---
+<div class="fixed bottom-5 right-5 z-50 flex max-w-[230px] flex-col items-end gap-3">
+  <div class="hidden border border-white/10 bg-black/90 px-4 py-3 text-right shadow-2xl backdrop-blur md:block">
+    <p class="text-sm font-bold text-white">Chat with Crea8iv Media</p>
+    <p class="mt-1 text-xs text-white/60">Usually replies within business hours</p>
+  </div>
+  <a
+    href={waHref}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Crea8iv Media on WhatsApp"
+    class="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-lg font-bold text-white shadow-[0_0_35px_rgba(37,211,102,.45)]"
+  >
+    WA
+  </a>
+</div>

@@ -1,0 +1,40 @@
+---
+import { NAV } from "../data/site";
+---
+<header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
+  <div class="mx-auto flex h-24 max-w-[1600px] items-center justify-between px-6">
+    <a href="/" class="font-orbitron text-xl font-bold tracking-widest text-white">CREA<span class="text-brand">8</span>IV</a>
+    <nav class="hidden items-center gap-4 lg:flex" aria-label="Primary navigation">
+      {NAV.map((item) => "children" in item ? (
+        <details class="group relative">
+          <summary class="cursor-pointer list-none font-orbitron text-[10px] uppercase tracking-wider text-white/80 hover:text-brand xl:text-[11px]">{item.label}</summary>
+          <div class="absolute left-1/2 top-8 w-80 -translate-x-1/2 border border-brand bg-black/95 p-2 shadow-2xl">
+            {item.children.map(([label, href]) => <a href={href} class="block px-4 py-3 font-orbitron text-[11px] uppercase tracking-wide text-white/80 hover:bg-white/10 hover:text-brand">{label}</a>)}
+          </div>
+        </details>
+      ) : <a href={item.href} class="font-orbitron text-[10px] uppercase tracking-wider text-white/80 hover:text-brand xl:text-[11px]">{item.label}</a>)}
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="/consultation/" class="hidden border border-brand bg-brand px-5 py-3 font-orbitron text-xs font-semibold uppercase tracking-wide text-white md:inline-flex">Book Free Strategy Call</a>
+      <button
+        data-menu-toggle
+        class="rounded-full border border-white/20 px-4 py-2 text-white lg:hidden"
+        type="button"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="mobile-navigation"
+      >
+        Menu
+      </button>
+    </div>
+  </div>
+  <div data-mobile-backdrop class="fixed inset-x-0 bottom-0 top-24 hidden bg-black/50 lg:hidden" aria-hidden="true"></div>
+  <nav id="mobile-navigation" data-mobile-menu class="relative hidden border-t border-white/10 bg-black px-6 py-4 lg:hidden" aria-label="Mobile navigation">
+    {NAV.map((item) => (
+      <>
+        <a data-mobile-link href={item.href} class="block py-3 font-orbitron text-sm uppercase tracking-wide text-white/80">{item.label}</a>
+        {"children" in item && item.children.map(([label, href]) => <a data-mobile-link href={href} class="block border-l border-white/10 py-2 pl-4 text-sm text-white/60">{label}</a>)}
+      </>
+    ))}
+  </nav>
+</header>

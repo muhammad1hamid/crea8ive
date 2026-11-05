@@ -1,0 +1,61 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Crea8iv Media — static site caching & compression (Hostinger / LiteSpeed)
+# Additive only: no rewrites, safe alongside existing docroot content.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Compression (LiteSpeed serves Brotli automatically when DEFLATE is on) ──
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+  AddOutputFilterByType DEFLATE application/json application/ld+json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml font/ttf font/otf application/vnd.ms-fontobject
+</IfModule>
+
+# ── Caching ──
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # HTML: always revalidate so deploys show up immediately
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/xml "access plus 1 hour"
+  ExpiresByType text/xml "access plus 1 hour"
+
+  # Images & media: long-lived
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/avif "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/gif "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType video/mp4 "access plus 30 days"
+  ExpiresByType audio/mpeg "access plus 30 days"
+
+  # Fonts: immutable in practice
+  ExpiresByType font/woff2 "access plus 365 days"
+  ExpiresByType font/woff "access plus 365 days"
+  ExpiresByType font/ttf "access plus 365 days"
+
+  # CSS/JS default; JSON covers the mirrored lottie animations
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType text/javascript "access plus 7 days"
+  ExpiresByType application/json "access plus 7 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Astro build assets and mirrored vendor files are content-hashed — cache forever.
+  <If "%{REQUEST_URI} =~ m#^/(_astro|assets/mirror|_next/static)/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+
+  # HTML must always be revalidated.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # Fonts may be fetched cross-context.
+  <FilesMatch "\.(woff2?|ttf|otf)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>

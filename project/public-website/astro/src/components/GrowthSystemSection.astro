@@ -1,0 +1,35 @@
+---
+import { serviceGroups } from "../data/growth";
+---
+<section class="bg-black px-6 py-20 text-white">
+  <div class="mx-auto max-w-[1400px]">
+    <div class="max-w-3xl">
+      <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">Crea8iv Growth System</p>
+      <h2 class="mt-5 font-orbitron text-3xl font-bold leading-tight sm:text-5xl">
+        One connected system for visibility, traffic, conversion, and follow-up.
+      </h2>
+      <p class="mt-5 text-lg leading-8 text-white/70">
+        Most businesses do not need random posting or disconnected campaigns. They need a system where Google, ads,
+        content, website pages, WhatsApp, and reporting all work toward the same lead goal.
+      </p>
+      <a href="/tools/" class="mt-6 inline-flex font-orbitron text-xs uppercase tracking-wide text-brand">Check Your Digital Visibility →</a>
+    </div>
+
+    <div class="mt-12 grid gap-5 lg:grid-cols-4">
+      {serviceGroups.map((group, index) => (
+        <article class="border border-white/10 bg-white/[.03] p-6">
+          <p class="font-orbitron text-xs uppercase tracking-[.25em] text-brand">0{index + 1}</p>
+          <h3 class="mt-4 font-orbitron text-xl font-semibold">{group.name}</h3>
+          <div class="mt-6 space-y-4">
+            {group.services.map((service) => (
+              <a href={service.href} class="block border-t border-white/10 pt-4 hover:text-brand">
+                <span class="block font-orbitron text-sm uppercase tracking-wide">{service.title}</span>
+                <span class="mt-2 block text-sm leading-6 text-white/65">{service.outcome}</span>
+              </a>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

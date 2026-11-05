@@ -1,0 +1,129 @@
+{
+  "rows": [
+    {
+      "route": "/",
+      "width": 375,
+      "status": 200,
+      "title": "Digital Marketing Agency in Rawalpindi | Crea8iv",
+      "h1": "Growth systems for ambitious brands.",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "title": "Digital Marketing Agency in Rawalpindi | Crea8iv",
+      "h1": "Growth systems for ambitious brands.",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/"
+    },
+    {
+      "route": "/qa/",
+      "width": 375,
+      "status": 200,
+      "title": "Digital Marketing & AI Growth Agency in Qatar | Crea8iv Media",
+      "h1": "Growth systemsbuilt for Qatar.",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/qa/"
+    },
+    {
+      "route": "/qa/",
+      "width": 1440,
+      "status": 200,
+      "title": "Digital Marketing & AI Growth Agency in Qatar | Crea8iv Media",
+      "h1": "Growth systemsbuilt for Qatar.",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/qa/"
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 375,
+      "status": 200,
+      "title": "التسويق الرقمي والنمو بالذكاء الاصطناعي في قطر | Crea8iv Media",
+      "h1": "منظومات نمومصمّمة من أجل قطر.",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/qa/ar/"
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 1440,
+      "status": 200,
+      "title": "التسويق الرقمي والنمو بالذكاء الاصطناعي في قطر | Crea8iv Media",
+      "h1": "منظومات نمومصمّمة من أجل قطر.",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/qa/ar/"
+    },
+    {
+      "route": "/qa/contact/?service=seo",
+      "width": 375,
+      "status": 200,
+      "title": "Book a Qatar Growth Audit | Crea8iv Media",
+      "h1": "What should your next stage of growth look like?",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/qa/contact/",
+      "service": "seo"
+    },
+    {
+      "route": "/qa/contact/?service=seo",
+      "width": 1440,
+      "status": 200,
+      "title": "Book a Qatar Growth Audit | Crea8iv Media",
+      "h1": "What should your next stage of growth look like?",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/qa/contact/",
+      "service": "seo"
+    },
+    {
+      "route": "/qa/ar/contact/",
+      "width": 375,
+      "status": 200,
+      "title": "اطلب مراجعة نمو لشركتك في قطر | Crea8iv Media",
+      "h1": "ما الخطوة التالية المناسبة لنمو شركتك؟",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/qa/ar/contact/",
+      "service": ""
+    },
+    {
+      "route": "/qa/ar/contact/",
+      "width": 1440,
+      "status": 200,
+      "title": "اطلب مراجعة نمو لشركتك في قطر | Crea8iv Media",
+      "h1": "ما الخطوة التالية المناسبة لنمو شركتك؟",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/qa/ar/contact/",
+      "service": ""
+    },
+    {
+      "route": "/about/",
+      "width": 375,
+      "status": 200,
+      "title": "About Crea8iv Media | Rawalpindi SEO, Ads, Creative & Automation Team",
+      "h1": "We build digital marketing that feels engineered for impact",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/about/"
+    },
+    {
+      "route": "/about/",
+      "width": 1440,
+      "status": 200,
+      "title": "About Crea8iv Media | Rawalpindi SEO, Ads, Creative & Automation Team",
+      "h1": "We build digital marketing that feels engineered for impact",
+      "overflow": false,
+      "broken": [],
+      "canonical": "https://crea8ivmedia.com/about/"
+    }
+  ],
+  "errors": []
+}

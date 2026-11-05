@@ -1,0 +1,259 @@
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Crea8iv Media — static export caching & compression (Hostinger / LiteSpeed)
+# Additive only: redirects plus caching, safe to ship with the exported site.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Canonical blog URLs ──
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Qatar consolidation: keep in sync with src/data/qatar-redirects.json.
+  RewriteRule ^qa/about/?$ /company-verification/ [R=301,L,NE]
+  RewriteRule ^qa/ai-visibility/aeo/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ai-visibility/chatgpt/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ai-visibility/entity-seo/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ai-visibility/gemini/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ai-visibility/geo/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ai-visibility/google-ai-overviews/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ai-visibility/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ai-visibility/llmo/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ai-visibility/perplexity/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ai-visibility/seo-vs-aeo-vs-geo-vs-llmo/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/answers/?$ /qatar/?%{QUERY_STRING}#faq [R=301,L,NE]
+  RewriteRule ^qa/ar/about/?$ /company-verification/ [R=301,L,NE]
+  RewriteRule ^qa/ar/contact/?$ /qatar/?%{QUERY_STRING}#partnership-enquiry [R=301,L,NE]
+  RewriteRule ^qa/ar/content-production/?$ /content-creation/ [R=301,L,NE]
+  RewriteRule ^qa/ar/?$ /qatar/ [R=301,L,NE]
+  RewriteRule ^qa/ar/industries/real-estate/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/ar/industries/restaurants-hospitality/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/ar/services/ai-automation/?$ /marketing-automation/ [R=301,L,NE]
+  RewriteRule ^qa/ar/services/ai-visibility/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ar/services/digital-marketing/?$ /growth-systems/ [R=301,L,NE]
+  RewriteRule ^qa/ar/services/google-ads/?$ /qatar/?%{QUERY_STRING}#google-ads [R=301,L,NE]
+  RewriteRule ^qa/ar/services/?$ /qatar/?%{QUERY_STRING}#services [R=301,L,NE]
+  RewriteRule ^qa/ar/services/seo/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/ar/services/social-media-management/?$ /social-media-management/ [R=301,L,NE]
+  RewriteRule ^qa/ar/services/web-development/?$ /qatar/?%{QUERY_STRING}#web-development [R=301,L,NE]
+  RewriteRule ^qa/ar/services/whatsapp-automation/?$ /marketing-automation/ [R=301,L,NE]
+  RewriteRule ^qa/automation/?$ /marketing-automation/ [R=301,L,NE]
+  RewriteRule ^qa/contact/?$ /qatar/?%{QUERY_STRING}#partnership-enquiry [R=301,L,NE]
+  RewriteRule ^qa/content-production/?$ /content-creation/ [R=301,L,NE]
+  RewriteRule ^qa/doha/?$ /qatar/ [R=301,L,NE]
+  RewriteRule ^qa/?$ /qatar/ [R=301,L,NE]
+  RewriteRule ^qa/industries/architecture-interiors/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/industries/beauty-aesthetics/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/industries/construction/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/industries/dental-clinics/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/industries/ecommerce/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/industries/healthcare/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/industries/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/industries/professional-services/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/industries/real-estate/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/industries/restaurants-hospitality/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/insights/ai-agents-qatar/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/insights/ai-visibility-qatar/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/insights/arabic-seo-qatar/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/insights/brand-authority-qatar/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/insights/chatgpt-business-discovery-qatar/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/insights/construction-marketing-qatar/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/insights/dental-marketing-qatar/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/insights/digital-marketing-cost-qatar/?$ /pricing/ [R=301,L,NE]
+  RewriteRule ^qa/insights/google-ads-qatar/?$ /qatar/?%{QUERY_STRING}#google-ads [R=301,L,NE]
+  RewriteRule ^qa/insights/?$ /blog/ [R=301,L,NE]
+  RewriteRule ^qa/insights/interior-architecture-marketing-qatar/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/insights/lead-response-qatar/?$ /marketing-automation/ [R=301,L,NE]
+  RewriteRule ^qa/insights/local-seo-qatar/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/insights/meta-ads-qatar/?$ /qatar/?%{QUERY_STRING}#google-ads [R=301,L,NE]
+  RewriteRule ^qa/insights/qatar-growth-stack/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/insights/real-estate-marketing-qatar/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/insights/restaurant-marketing-qatar/?$ /qatar/?%{QUERY_STRING}#industries [R=301,L,NE]
+  RewriteRule ^qa/insights/seo-aeo-geo-llmo-qatar/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/insights/seo-qatar-guide/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/insights/website-development-cost-qatar/?$ /pricing/ [R=301,L,NE]
+  RewriteRule ^qa/insights/whatsapp-automation-qatar/?$ /marketing-automation/ [R=301,L,NE]
+  RewriteRule ^qa/pricing/?$ /pricing/ [R=301,L,NE]
+  RewriteRule ^qa/research/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/services/ai-automation/?$ /marketing-automation/ [R=301,L,NE]
+  RewriteRule ^qa/services/ai-visibility/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/services/branding/?$ /branding-and-creative/ [R=301,L,NE]
+  RewriteRule ^qa/services/content-creation/?$ /content-creation/ [R=301,L,NE]
+  RewriteRule ^qa/services/crm-automation/?$ /marketing-automation/ [R=301,L,NE]
+  RewriteRule ^qa/services/custom-software/?$ /software-development/ [R=301,L,NE]
+  RewriteRule ^qa/services/digital-marketing/?$ /growth-systems/ [R=301,L,NE]
+  RewriteRule ^qa/services/ecommerce-development/?$ /website-development/ [R=301,L,NE]
+  RewriteRule ^qa/services/geo-aeo-llmo/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/services/google-ads/?$ /qatar/?%{QUERY_STRING}#google-ads [R=301,L,NE]
+  RewriteRule ^qa/services/google-business-profile/?$ /google-business-profile-growth/ [R=301,L,NE]
+  RewriteRule ^qa/services/?$ /qatar/?%{QUERY_STRING}#services [R=301,L,NE]
+  RewriteRule ^qa/services/local-seo/?$ /google-business-profile-growth/ [R=301,L,NE]
+  RewriteRule ^qa/services/meta-ads/?$ /meta-ads/ [R=301,L,NE]
+  RewriteRule ^qa/services/photography/?$ /content-creation/ [R=301,L,NE]
+  RewriteRule ^qa/services/saas-development/?$ /software-development/ [R=301,L,NE]
+  RewriteRule ^qa/services/seo/?$ /qatar/?%{QUERY_STRING}#ai-visibility [R=301,L,NE]
+  RewriteRule ^qa/services/social-media-management/?$ /social-media-management/ [R=301,L,NE]
+  RewriteRule ^qa/services/video-production/?$ /content-creation/ [R=301,L,NE]
+  RewriteRule ^qa/services/web-development/?$ /qatar/?%{QUERY_STRING}#web-development [R=301,L,NE]
+  RewriteRule ^qa/services/whatsapp-automation/?$ /marketing-automation/ [R=301,L,NE]
+  RewriteRule ^qa/software/?$ /software-development/ [R=301,L,NE]
+  RewriteRule ^qa/tools/ai-visibility-checker/?$ /tools/ [R=301,L,NE]
+  RewriteRule ^qa/tools/?$ /tools/ [R=301,L,NE]
+  RewriteRule ^qa/tools/lead-response-calculator/?$ /tools/ [R=301,L,NE]
+  RewriteRule ^qa/tools/local-seo-audit/?$ /tools/ [R=301,L,NE]
+  RewriteRule ^qa/tools/seo-audit/?$ /tools/ [R=301,L,NE]
+  RewriteRule ^qa/tools/website-roi-calculator/?$ /tools/ [R=301,L,NE]
+  RewriteRule ^sitemap-qatar\.xml/?$ /sitemap.xml [R=301,L,NE]
+
+  # Unknown Qatar paths cannot expose stale files left by an additive deploy.
+  RewriteRule ^qa(?:/|$) - [R=404,L]
+
+  # Repair legacy internal links to their current canonical destinations.
+  RewriteRule ^blog/local-seo-google-maps-pakistan-guide/?$ /blog/google-business-profile-optimization-checklist/ [R=301,L]
+  RewriteRule ^blog/google-ads-vs-facebook-ads-pakistan/?$ /blog/facebook-instagram-ads-pakistan-guide/ [R=301,L]
+  RewriteRule ^seo/?$ /ai-search-optimization/ [R=301,L]
+  RewriteRule ^digital-marketing-agency-rawalpindi/?$ / [R=301,L]
+  RewriteRule ^get-the-most-out-og-the-creativity/?$ /blog/get-the-most-out-of-the-creativity/ [R=301,L]
+  RewriteRule ^influencer-marketing-trends-2023-what-you-need-know/?$ /blog/influencer-marketing-trends-2023-what-you-need-to-know/ [R=301,L]
+  RewriteRule ^seo-which-digital-advertis-ing-strategy-is-right-for-you/?$ /blog/seo-which-digital-advertising-strategy-is-right-for-you/ [R=301,L]
+
+  # Portfolio now uses collection grids; retire individual portfolio posts.
+  RewriteRule ^website-portfolio/buildscape/?$ /case-studies/buildscape/ [R=301,L]
+  RewriteRule ^website-portfolio/[^/]+/?$ /website-portfolio/ [R=301,L]
+  RewriteRule ^results/[^/]+/?$ /results/ [R=301,L]
+
+  # Canonical host consolidation from the GSC audit.
+  RewriteCond %{HTTP_HOST} ^www\.crea8ivmedia\.com$ [NC]
+  RewriteRule ^(.*)$ https://crea8ivmedia.com/$1 [R=301,L,NE]
+
+  # GSC cleanup: historical hacked/spam gambling URLs should leave the index.
+  # Returning 410 is a stronger signal than serving a generic 404 forever.
+  RewriteRule (casino|slots?|blackjack|roulette|poker|baccarat|bookmaker|sportsbook|gambl|wager|jackpot|bingo|keno|craps|scratch-cards|fruit-machine|rummy|andar-bahar|sic-bo|megaways|zimpler|neosurf|flexepin|paysafe|paysafecard|payid|unlimluck|dream-catcher|cash-spins|free-spins|spin-palace|withdrawal|no-deposit|deposit-bonus|pay-by-mobile|online-bonus|online-slot|slot-machine|real-money|bank-holiday|low-volatility|turbonino|zoome|vulkanvegas|vicibet|goodman|casperspins|wirecard|trustly|ezugi) - [G,L,NC]
+
+  # Retired WooCommerce/archive surfaces from the old WordPress site.
+  RewriteRule ^(product|product-tag|author|tag|category)/ - [G,L,NC]
+
+  # Useful legacy URLs that should consolidate into current canonical pages.
+  RewriteRule ^services/?$ /our-services/ [R=301,L]
+  RewriteRule ^about-us/?$ /about/ [R=301,L]
+  RewriteRule ^team/?$ /our-team/ [R=301,L]
+  RewriteRule ^academy/?$ /courses/ [R=301,L]
+  RewriteRule ^plans/?$ /pricing/ [R=301,L]
+  RewriteRule ^(book-a-call|strategy-call)/?$ /consultation/ [R=301,L]
+  RewriteRule ^(growth|growth-system|lead-generation)/?$ /growth-systems/ [R=301,L]
+  RewriteRule ^(facebook-ads|instagram-ads|facebook-instagram-ads|meta-ads-management)/?$ /meta-ads/ [R=301,L]
+  RewriteRule ^(google-ads-management|ppc-management)/?$ /google-ads/ [R=301,L]
+  RewriteRule ^(local-seo|gbp|google-business-profile)/?$ /google-business-profile-growth/ [R=301,L]
+  RewriteRule ^(website-design|web-development)/?$ /website-development/ [R=301,L]
+  RewriteRule ^(branding|brand-identity)/?$ /branding-and-creative/ [R=301,L]
+  RewriteRule ^content-creation-services/?$ /content-creation/ [R=301,L]
+  RewriteRule ^social-media-marketing/?$ /social-media-management/ [R=301,L]
+  RewriteRule ^automation/?$ /marketing-automation/ [R=301,L]
+  RewriteRule ^digital-marketing-cost-pakistan/?$ /pricing/ [R=301,L]
+  RewriteRule ^influencer-marketing-trends-2023-what-you-need-to-know/?$ /blog/influencer-marketing-trends-2023-what-you-need-to-know/ [R=301,L]
+  RewriteRule ^services/explore-it-solution-services/?$ /software-development/ [R=301,L]
+
+  # PatientFlow runs as a separate application; preserve the existing bridge
+  # when the marketing site is deployed as a static Hostinger export.
+  RewriteRule ^clinic/?$ https://patientflow.crea8ivmedia.com/login [R=302,L,NE]
+  RewriteRule ^clinic/(.*)$ https://patientflow.crea8ivmedia.com/$1 [R=302,L,NE]
+
+  # Retired WordPress ID URLs such as /?p=4211 are still visible in Google.
+  # Strip those query strings so legacy indexed URLs consolidate into the
+  # canonical static pages instead of keeping parameter duplicates alive.
+  RewriteCond %{QUERY_STRING} (^|&)(p|page_id|attachment_id)=[0-9]+(&|$) [NC]
+  RewriteRule ^$ /? [R=301,L]
+  RewriteCond %{QUERY_STRING} (^|&)(p|page_id|attachment_id)=[0-9]+(&|$) [NC]
+  RewriteRule ^(.+)$ /$1? [R=301,L]
+
+  RewriteRule ^best-digital-marketing-agency-in-rawalpindi-how-to-choose-in-2026/?$ /blog/best-digital-marketing-agency-in-rawalpindi-how-to-choose-in-2026/ [R=301,L]
+  RewriteRule ^google-ads-cost-in-pakistan-for-doctors-clinics-and-aesthetic-brands/?$ /blog/google-ads-cost-in-pakistan-for-doctors-clinics-and-aesthetic-brands/ [R=301,L]
+  RewriteRule ^google-ai-overviews-ads-in-pakistan-what-businesses-need-to-know/?$ /blog/google-ai-overviews-ads-in-pakistan-what-businesses-need-to-know/ [R=301,L]
+  RewriteRule ^google-business-profile-for-restaurants-in-islamabad-full-setup-guide/?$ /blog/google-business-profile-for-restaurants-in-islamabad-full-setup-guide/ [R=301,L]
+  RewriteRule ^how-real-estate-businesses-in-pakistan-get-leads-from-facebook-ads/?$ /blog/how-real-estate-businesses-in-pakistan-get-leads-from-facebook-ads/ [R=301,L]
+  RewriteRule ^seo-cost-in-pakistan-what-businesses-should-actually-expect-to-pay/?$ /blog/seo-cost-in-pakistan-what-businesses-should-actually-expect-to-pay/ [R=301,L]
+</IfModule>
+
+# ── Pinterest/feed-reader RSS feed: force the correct Content-Type ──
+# Static export ('output: export') means Hostinger/LiteSpeed — not Next.js —
+# decides the served Content-Type, based on file extension. Both files have a
+# plain .xml extension, so without this they'd serve as application/xml (see
+# sitemap.xml) instead of the application/rss+xml Pinterest's RSS auto-publish
+# and most feed readers expect.
+<Files "rss.xml">
+  ForceType application/rss+xml
+</Files>
+<Files "feed.xml">
+  ForceType application/rss+xml
+</Files>
+
+# ── Compression (LiteSpeed serves Brotli automatically when DEFLATE is on) ──
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+  AddOutputFilterByType DEFLATE application/json application/ld+json application/xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE image/svg+xml font/ttf font/otf application/vnd.ms-fontobject
+</IfModule>
+
+# ── Caching ──
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # HTML (and the derived text/xml docs): always revalidate so deploys show up
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/xml "access plus 1 hour"
+  ExpiresByType text/xml "access plus 1 hour"
+  # RSS feed (rss.xml / feed.xml) — matches the route's `revalidate = 3600`.
+  ExpiresByType application/rss+xml "access plus 1 hour"
+
+  # Images & media: long-lived static assets for mobile repeat visits.
+  ExpiresByType image/webp "access plus 365 days"
+  ExpiresByType image/avif "access plus 365 days"
+  ExpiresByType image/png "access plus 365 days"
+  ExpiresByType image/jpeg "access plus 365 days"
+  ExpiresByType image/gif "access plus 365 days"
+  ExpiresByType image/svg+xml "access plus 365 days"
+  ExpiresByType image/x-icon "access plus 365 days"
+  ExpiresByType video/mp4 "access plus 365 days"
+  ExpiresByType audio/mpeg "access plus 365 days"
+
+  # Fonts: immutable in practice
+  ExpiresByType font/woff2 "access plus 365 days"
+  ExpiresByType font/woff "access plus 365 days"
+  ExpiresByType font/ttf "access plus 365 days"
+
+  # CSS/JS default (non-hashed files like /lottie-player.js)
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType text/javascript "access plus 30 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=86400" "expr=%{HTTPS} == 'on'"
+  # Next.js build assets are content-hashed — cache forever.
+  <If "%{REQUEST_URI} =~ m#^/_next/static/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+
+  # Public media files are stable across deploys and expensive on mobile.
+  <FilesMatch "\.(avif|webp|png|jpe?g|gif|svg|ico|mp4|webm|mp3|wav)$">
+    Header set Cache-Control "public, max-age=31536000"
+  </FilesMatch>
+
+  # HTML must always be revalidated.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # RSS feed — short public cache, matches the route's `revalidate = 3600`.
+  <FilesMatch "^(rss|feed)\.xml$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+
+  # Fonts are fetched cross-context by the WP stylesheets.
+  <FilesMatch "\.(woff2?|ttf|otf)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>

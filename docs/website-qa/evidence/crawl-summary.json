@@ -1,0 +1,36 @@
+{
+  "total": 266,
+  "html": 238,
+  "broken": [
+    {
+      "requested": "https://crea8ivmedia.com/qa-audit-nonexistent-20261014/",
+      "url": "https://crea8ivmedia.com/qa-audit-nonexistent-20261014/",
+      "status": 404,
+      "contentType": "text/html",
+      "ms": 125,
+      "bytes": 5282,
+      "title": "404: This page could not be found.",
+      "robots": "noindex",
+      "h1": [
+        "404"
+      ],
+      "headings": [
+        "This page could not be found."
+      ],
+      "og": {},
+      "links": [],
+      "images": [],
+      "schema": [],
+      "headers": {
+        "content-security-policy": "upgrade-insecure-requests",
+        "x-frame-options": null,
+        "strict-transport-security": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "cache-control": "no-cache, must-revalidate",
+        "x-robots-tag": null
+      },
+      "challenge": false
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import ProofStrip from "../components/ProofStrip.astro";
+import GrowthSystemSection from "../components/GrowthSystemSection.astro";
+import GrowthReadinessDiagnostic from "../components/GrowthReadinessDiagnostic.astro";
+import CaseStudyPreview from "../components/CaseStudyPreview.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
+import ToolsDiscovery from "../components/ToolsDiscovery.astro";
+import PremiumVisualProof from "../components/PremiumVisualProof.astro";
+import pages from "../data/pages.json";
+import { prepareSnapshotHtml } from "../data/content";
+const home = pages.find((page) => page.slug === "home");
+const content = prepareSnapshotHtml((home?.content ?? "").replace(/<section class="cm-hero-ai"[\s\S]*?<\/section>/, ""));
+const schemaItems = [
+  {
+    "@type": "WebSite",
+    name: "Crea8iv Media",
+    url: "https://crea8ivmedia.com",
+    description: home?.seo?.description,
+  },
+  {
+    "@type": "Service",
+    name: "Digital Growth Systems",
+    provider: { "@type": "LocalBusiness", name: "Crea8iv Media" },
+    areaServed: ["Rawalpindi", "Islamabad", "Pakistan"],
+    serviceType: ["Meta Ads", "Google Ads", "Google Business Profile", "Website Development", "Content Creation", "Marketing Automation"],
+  },
+];
+---
+<BaseLayout title={home?.seo?.title} description={home?.seo?.description} canonical="/" schemaItems={schemaItems}>
+  <Hero />
+  <ProofStrip />
+  <GrowthSystemSection />
+  <GrowthReadinessDiagnostic />
+  <ToolsDiscovery />
+  <PremiumVisualProof />
+  <CaseStudyPreview />
+  <PortfolioPreview />
+  <article class="wordpress-content" set:html={content} />
+</BaseLayout>

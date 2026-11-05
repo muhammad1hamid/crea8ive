@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "EN failure shown",
+    "Business goal satisfies backend requirements when details omitted",
+    "Service and entry attribution preserved",
+    "Correct form language",
+    "EN success requires backend acknowledgement",
+    "AR failure shown",
+    "Business goal satisfies backend requirements when details omitted",
+    "Service and entry attribution preserved",
+    "Correct form language",
+    "AR success requires backend acknowledgement"
+  ],
+  "scope": "Mocked local endpoint for browser error/retry/success and payload verification. No actual lead or production submission."
+}

@@ -1,0 +1,125 @@
+{
+  "rows": [
+    {
+      "route": "/qa/",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/work/",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/work/",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/work/",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/work/qatar-production/",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "cards": 12,
+      "violations": []
+    },
+    {
+      "route": "/qa/work/qatar-production/",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "cards": 12,
+      "violations": []
+    },
+    {
+      "route": "/qa/work/qatar-production/",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "cards": 12,
+      "violations": []
+    },
+    {
+      "route": "/qa/content-production/",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/content-production/",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    },
+    {
+      "route": "/qa/content-production/",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "cards": 3,
+      "violations": []
+    }
+  ],
+  "errors": []
+}

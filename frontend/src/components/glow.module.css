@@ -1,0 +1,180 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   GLOW BACKGROUND — glow.module.css
+   Luxury "ember glow": 3 large, blurred orange/amber radial orbs that slowly
+   drift, pulse and rotate behind page content. Pure CSS keyframes (no JS, no
+   canvas) for buttery performance on mobile + desktop.
+   Variables come from :root (globals.css); fallbacks kept here so the module is
+   self-contained.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.glow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  /* Isolate the orb blur into its own compositor layer so it never repaints the
+     surrounding content. */
+  isolation: isolate;
+}
+
+/* Shared orb base ───────────────────────────────────────────────────────── */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  /* The ONLY heavy filter — promoted to the GPU via will-change/translateZ. */
+  filter: blur(80px);
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Orb 1 — 600×400, top-left-center, orange core → transparent. Figure-8 drift. */
+.orb1 {
+  width: 600px;
+  height: 400px;
+  top: 6%;
+  left: 10%;
+  opacity: var(--glow-opacity-max, 0.45);
+  background: radial-gradient(
+    ellipse at center,
+    var(--glow-primary, #FF6801) 0%,
+    rgba(242, 106, 33, 0.38) 38%,
+    transparent 70%
+  );
+  animation: float-1 35s ease-in-out infinite alternate;
+}
+
+/* Orb 2 — 500×500, bottom-right, amber core → transparent. CCW drift. */
+.orb2 {
+  width: 500px;
+  height: 500px;
+  bottom: 4%;
+  right: 6%;
+  opacity: var(--glow-opacity-max, 0.45);
+  background: radial-gradient(
+    circle at center,
+    var(--glow-secondary, #c45a10) 0%,
+    rgba(196, 90, 16, 0.34) 44%,
+    transparent 70%
+  );
+  animation: float-2 28s ease-in-out infinite alternate;
+}
+
+/* Orb 3 — 400×300, dead center, very low opacity. Vertical pulse + tiny drift. */
+.orb3 {
+  width: 400px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  opacity: 0.3;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(242, 106, 33, 0.55) 0%,
+    rgba(196, 90, 16, 0.2) 50%,
+    transparent 72%
+  );
+  /* Baseline keeps it centred; keyframes animate around this. */
+  transform: translate(-50%, -50%) translateZ(0);
+  animation: float-3 42s ease-in-out infinite alternate;
+}
+
+/* ── KEYFRAMES ──────────────────────────────────────────────────────────────
+   Each loops slowly with ease-in-out + alternate, so motion eases at both ends
+   and gently retraces — reads as soft, organic "breathing" rather than a loop. */
+
+/* Slow figure-8 drift with a gentle pulse + rotation. */
+@keyframes float-1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: var(--glow-opacity-min, 0.15);
+  }
+  25% {
+    transform: translate(7%, -4%) rotate(4deg) scale(1.08);
+    opacity: var(--glow-opacity-max, 0.45);
+  }
+  50% {
+    transform: translate(11%, 7%) rotate(-2deg) scale(1.02);
+    opacity: var(--glow-opacity-min, 0.15);
+  }
+  75% {
+    transform: translate(3%, 3%) rotate(3deg) scale(1.1);
+    opacity: var(--glow-opacity-max, 0.45);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: var(--glow-opacity-min, 0.15);
+  }
+}
+
+/* Counter-clockwise drift, brighter at the far end. */
+@keyframes float-2 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: var(--glow-opacity-min, 0.15);
+  }
+  33% {
+    transform: translate(-7%, -5%) rotate(-5deg) scale(1.07);
+    opacity: var(--glow-opacity-max, 0.45);
+  }
+  66% {
+    transform: translate(-3%, -9%) rotate(-10deg) scale(1.01);
+    opacity: var(--glow-opacity-min, 0.15);
+  }
+  100% {
+    transform: translate(2%, -2%) rotate(-15deg) scale(1.05);
+    opacity: var(--glow-opacity-max, 0.45);
+  }
+}
+
+/* Vertical pulse + slight horizontal drift, kept low-opacity throughout.
+   translate(-50%, -50%) is preserved so the orb stays centred while it breathes. */
+@keyframes float-3 {
+  0% {
+    transform: translate(-50%, -50%) scale(0.92);
+    opacity: 0.18;
+  }
+  50% {
+    transform: translate(-46%, -58%) scale(1.14);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.92);
+    opacity: 0.18;
+  }
+}
+
+/* ── MOBILE OPTIMISATION (< 768px) ──────────────────────────────────────────
+   Reduce orb footprint ~40% and soften the blur proportionally so the smaller
+   orbs don't wash out — keeps the effect cheap on mobile GPUs. */
+@media (max-width: 767px) {
+  .orb {
+    filter: blur(56px);
+  }
+  .orb1 {
+    width: 360px;
+    height: 240px;
+  }
+  .orb2 {
+    width: 300px;
+    height: 300px;
+  }
+  .orb3 {
+    width: 240px;
+    height: 180px;
+  }
+}
+
+/* ── REDUCED MOTION ─────────────────────────────────────────────────────────
+   Honour the OS preference: freeze every orb at a calm, mid-brightness state. */
+@media (prefers-reduced-motion: reduce) {
+  .orb1,
+  .orb2,
+  .orb3 {
+    animation: none !important;
+  }
+  .orb1,
+  .orb2 {
+    opacity: 0.28;
+  }
+}

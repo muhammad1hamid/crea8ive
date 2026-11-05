@@ -1,0 +1,30 @@
+---
+import { PLATFORM_LINKS, SITE_URL, SOCIAL_PROFILES } from "../data/site";
+
+interface Props {
+  items?: unknown[];
+}
+
+const baseSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Crea8iv Media",
+  url: SITE_URL,
+  telephone: "+92-313-5147935",
+  email: "crea8ivmedia@gmail.com",
+  description:
+    "Crea8iv Media is a Rawalpindi and Islamabad growth systems agency for Meta Ads, Google Ads, Google Business Profile, SEO, websites, content, automation, and reporting.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Office No 01, 1st Floor, Plaza 54, Phase 4 Civic Center",
+    addressLocality: "Bahria Town, Rawalpindi",
+    postalCode: "46220",
+    addressCountry: "PK",
+  },
+  areaServed: ["Rawalpindi", "Islamabad", "Bahria Town", "DHA Islamabad", "Pakistan"],
+  sameAs: [...SOCIAL_PROFILES, ...PLATFORM_LINKS.map((platform) => platform.href)],
+};
+
+const graph = [baseSchema, ...(Astro.props.items ?? [])];
+---
+<script is:inline type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@graph": graph })} />

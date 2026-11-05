@@ -1,0 +1,32 @@
+[
+  {
+    "route": "/",
+    "width": 375,
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "violations": []
+  },
+  {
+    "route": "/qa/",
+    "width": 375,
+    "violations": []
+  },
+  {
+    "route": "/qa/",
+    "width": 1440,
+    "violations": []
+  },
+  {
+    "route": "/qa/ar/",
+    "width": 375,
+    "violations": []
+  },
+  {
+    "route": "/qa/ar/",
+    "width": 1440,
+    "violations": []
+  }
+]

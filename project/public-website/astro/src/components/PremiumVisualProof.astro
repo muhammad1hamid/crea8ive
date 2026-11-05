@@ -1,0 +1,77 @@
+---
+const visualCards = [
+  {
+    title: "Service hero visuals",
+    text: "Hyper-realistic conceptual scenes for each service, designed to make the offer understandable before the visitor reads the full page.",
+    image: "/assets/mirror/images.unsplash.com/photo-1460925895917-afdab827c52f-92ec1e923ff6.jpg",
+    alt: "Marketing dashboard concept for service hero visuals",
+  },
+  {
+    title: "Audit and calculator cards",
+    text: "Clean dashboard-style visuals for ROI, website performance, local SEO, AI visibility, and ad budget tools.",
+    image: "/assets/mirror/images.unsplash.com/photo-1551288049-bebda4e38f71-be7fc5559c0d.jpg",
+    alt: "Analytics dashboard concept for growth calculators",
+  },
+  {
+    title: "Industry scenario images",
+    text: "Realistic business scenes for clinics, salons, restaurants, real estate, ecommerce, and service brands.",
+    image: "/assets/mirror/images.unsplash.com/photo-1629909613654-28e377c37b09-3776f433a183.jpg",
+    alt: "Healthcare business scene for industry visual cards",
+  },
+  {
+    title: "Case study proof areas",
+    text: "Concept images can support the story, but result sections stay grounded in real screenshots and verified metrics.",
+    image: "/assets/mirror/images.unsplash.com/photo-1454165804606-c3d57bc86b40-280a767ece86.jpg",
+    alt: "Business team reviewing campaign results",
+  },
+];
+
+const rules = [
+  "Keep existing SEO titles, headings, URLs, schema, and internal links intact.",
+  "Use WebP images with descriptive filenames, dimensions, lazy loading, and natural alt text.",
+  "Do not put important keywords only inside images; keep SEO copy in HTML.",
+  "Never use fake dashboards, fake client screenshots, fake metrics, or fake testimonials.",
+];
+---
+<section class="bg-black px-6 py-20 text-white" aria-labelledby="premium-visual-proof-title">
+  <div class="mx-auto max-w-[1400px]">
+    <div class="grid gap-10 lg:grid-cols-[.85fr_1.15fr] lg:items-end">
+      <div>
+        <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">SEO-Safe Premium Image System</p>
+        <h2 id="premium-visual-proof-title" class="mt-5 font-orbitron text-3xl font-bold leading-tight sm:text-5xl">
+          More visual, more premium, without changing the identity.
+        </h2>
+        <p class="mt-5 text-lg leading-8 text-white/70">
+          The design remains Crea8iv: dark, sharp, orange-accented, and growth-focused. The upgrade adds conceptual visuals where they clarify services, tools, industries, and proof.
+        </p>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-2">
+        {rules.map((rule) => (
+          <div class="border border-white/10 bg-white/[.03] p-5 text-sm leading-6 text-white/70">{rule}</div>
+        ))}
+      </div>
+    </div>
+
+    <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+      {visualCards.map((card) => (
+        <article class="group overflow-hidden border border-white/10 bg-[#080808]">
+          <div class="aspect-[4/3] overflow-hidden bg-white/5">
+            <img
+              src={card.image}
+              alt={card.alt}
+              width="640"
+              height="480"
+              loading="lazy"
+              decoding="async"
+              class="h-full w-full object-cover opacity-80 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
+            />
+          </div>
+          <div class="p-5">
+            <h3 class="font-orbitron text-lg font-semibold">{card.title}</h3>
+            <p class="mt-3 text-sm leading-6 text-white/62">{card.text}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

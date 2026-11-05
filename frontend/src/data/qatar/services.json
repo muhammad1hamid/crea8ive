@@ -1,0 +1,602 @@
+[
+  {
+    "slug": "digital-marketing",
+    "name": "Digital Marketing",
+    "summary": "Bring acquisition, content and follow-up into one plan.",
+    "problem": "A Qatar business can have active social accounts and advertising yet no reliable view of which enquiries become customers. We connect the offer, audience, landing page and sales handoff before expanding spend.",
+    "audience": "Owner-led businesses and marketing teams coordinating several suppliers.",
+    "deliverables": [
+      "Channel and customer-journey audit",
+      "English and Arabic intent map",
+      "Campaign and content priorities",
+      "Landing-page conversion plan",
+      "CRM stage definitions and monthly review"
+    ],
+    "process": [
+      "Map the commercial goal",
+      "Choose the first acquisition journey",
+      "Launch with tested tracking",
+      "Review qualified opportunities, not just traffic"
+    ],
+    "metrics": "Qualified enquiry rate, cost per qualified lead and accepted proposals.",
+    "faq": {
+      "question": "Can we retain our existing suppliers?",
+      "answer": "Yes. We can define shared briefs, tracking and handoff rules while your existing specialists continue delivery."
+    },
+    "related": [
+      "google-ads",
+      "seo",
+      "crm-automation"
+    ]
+  },
+  {
+    "slug": "seo",
+    "name": "SEO",
+    "summary": "Help the right buyers discover and understand your business.",
+    "problem": "Qatar service searches may express the same need in English, Arabic or a local place name. A single broad homepage cannot answer every buying question. We map intent to useful pages and remove technical obstacles to discovery.",
+    "audience": "Service businesses with an existing website and a clear offer.",
+    "deliverables": [
+      "Technical crawl and indexation review",
+      "Service and bilingual keyword map",
+      "Metadata and internal-link improvements",
+      "Content briefs with evidence requirements",
+      "Search Console measurement plan"
+    ],
+    "process": [
+      "Audit indexing and demand",
+      "Prioritize commercial pages",
+      "Implement content and technical fixes",
+      "Review search queries and enquiries"
+    ],
+    "metrics": "Non-brand qualified search visits and organic enquiries, alongside index coverage.",
+    "faq": {
+      "question": "Do you guarantee first position?",
+      "answer": "No. Search results depend on competition and search-engine decisions. We agree deliverables, evidence and reporting rather than a guaranteed position."
+    },
+    "related": [
+      "local-seo",
+      "ai-visibility",
+      "web-development"
+    ]
+  },
+  {
+    "slug": "ai-visibility",
+    "name": "AI Visibility",
+    "summary": "Make your expertise easier to find, understand and cite.",
+    "problem": "A business may rank for its name but be absent from questions that buyers ask AI systems. We review public business facts, topic coverage and supporting evidence, then track a repeatable sample of relevant questions.",
+    "audience": "Specialist firms with genuine expertise, original work and a website they can improve.",
+    "deliverables": [
+      "Entity and source audit",
+      "Buyer-question research",
+      "Answer-first service content",
+      "Evidence and citation planning",
+      "Dated prompt observation register"
+    ],
+    "process": [
+      "Record the starting evidence",
+      "Correct entity inconsistencies",
+      "Publish useful supported answers",
+      "Repeat the same prompt sample with context"
+    ],
+    "metrics": "Observed mentions, linked citations and assisted enquiries; results may vary between sessions.",
+    "faq": {
+      "question": "Can you place us inside ChatGPT?",
+      "answer": "No placement is guaranteed. We improve public sources and measure observations without promising recommendation or inclusion."
+    },
+    "related": [
+      "geo-aeo-llmo",
+      "seo",
+      "content-creation"
+    ]
+  },
+  {
+    "slug": "geo-aeo-llmo",
+    "name": "GEO, AEO & LLMO",
+    "summary": "Turn complex expertise into clear, supported answers.",
+    "problem": "Terms such as GEO and LLMO overlap, making it easy to buy duplicate deliverables. We define one content and technical scope that supports search and answer systems, with explicit evidence for each business claim.",
+    "audience": "B2B brands comparing AI search proposals or consolidating an existing SEO program.",
+    "deliverables": [
+      "SEO versus AEO/GEO/LLMO scope map",
+      "Answer and entity templates",
+      "Source attribution rules",
+      "Structured-data review",
+      "Measurement protocol"
+    ],
+    "process": [
+      "Define questions and scope",
+      "Audit source credibility",
+      "Build concise answer sections",
+      "Validate and observe citations"
+    ],
+    "metrics": "Question coverage, factual consistency and recorded citations rather than an invented AI rank.",
+    "faq": {
+      "question": "Are these separate ranking systems we can control?",
+      "answer": "No. The terms describe optimization practices. Each platform decides what to retrieve, summarize and cite."
+    },
+    "related": [
+      "ai-visibility",
+      "seo",
+      "content-creation"
+    ]
+  },
+  {
+    "slug": "local-seo",
+    "name": "Local SEO",
+    "summary": "Connect local discovery with a credible customer visit.",
+    "problem": "A search for a clinic, restaurant or showroom needs more than a city keyword. Buyers need accurate services, opening information, genuine location evidence and a clear route to enquiry. We build that local information consistently.",
+    "audience": "Businesses with an eligible real location or qualifying service-area operation.",
+    "deliverables": [
+      "Location and eligibility review",
+      "Local landing-page content",
+      "Directory consistency checks",
+      "Review-request workflow",
+      "Maps and website action reporting"
+    ],
+    "process": [
+      "Verify business representation",
+      "Fix local information",
+      "Strengthen service and location pages",
+      "Measure calls, visits and enquiries"
+    ],
+    "metrics": "Relevant profile actions and qualified local enquiries, with attribution limits explained.",
+    "faq": {
+      "question": "Can you create a listing for a virtual Qatar office?",
+      "answer": "We do not create a listing merely to gain rankings. Eligibility and business representation must satisfy the platform requirements."
+    },
+    "related": [
+      "google-business-profile",
+      "seo",
+      "whatsapp-automation"
+    ]
+  },
+  {
+    "slug": "google-business-profile",
+    "name": "Google Business Profile",
+    "summary": "Make your eligible business profile accurate and useful.",
+    "problem": "Incorrect hours, weak service descriptions or an unclear booking path can undermine a prospect who has already found you. We focus on the information a customer needs before calling, booking or visiting.",
+    "audience": "Qatar businesses eligible to represent a genuine customer-facing or service-area operation.",
+    "deliverables": [
+      "Eligibility and ownership checklist",
+      "Category and service review",
+      "Hours and contact accuracy",
+      "Approved photo plan",
+      "Review-response and reporting process"
+    ],
+    "process": [
+      "Confirm eligibility and access",
+      "Correct profile details",
+      "Add genuine business evidence",
+      "Maintain and review customer actions"
+    ],
+    "metrics": "Profile interactions, website referrals and booked enquiries, not guaranteed map-pack position.",
+    "faq": {
+      "question": "Can you remove every negative review?",
+      "answer": "No. We help respond constructively and flag content through the available platform process where appropriate; removal is not guaranteed."
+    },
+    "related": [
+      "local-seo",
+      "photography",
+      "crm-automation"
+    ]
+  },
+  {
+    "slug": "google-ads",
+    "name": "Google Ads",
+    "summary": "Turn high-intent searches into measurable opportunities.",
+    "problem": "A Doha service campaign can spend on broad queries or send buyers to a general homepage. We align search intent, offer, location settings and landing-page action so sales can distinguish a useful lead from a click.",
+    "audience": "Businesses ready to fund both media and a tested enquiry-handling process.",
+    "deliverables": [
+      "Search intent and negative-keyword plan",
+      "Campaign and ad-group structure",
+      "English/Arabic creative briefs",
+      "Landing-page recommendations",
+      "Conversion and lead-quality reporting"
+    ],
+    "process": [
+      "Check offer and unit economics",
+      "Build focused campaigns",
+      "Test conversion capture",
+      "Refine queries using qualified-lead feedback"
+    ],
+    "metrics": "Cost per qualified enquiry, booked consultation and accepted opportunity. Media spend is separate.",
+    "faq": {
+      "question": "Is advertising spend included?",
+      "answer": "No. Platform media spend, management, production and landing-page work are separately scoped so you can compare total acquisition cost."
+    },
+    "related": [
+      "web-development",
+      "crm-automation",
+      "digital-marketing"
+    ]
+  },
+  {
+    "slug": "meta-ads",
+    "name": "Meta Ads",
+    "summary": "Connect creative testing to lead quality.",
+    "problem": "A low-cost form submission is not necessarily a buyer. Qatar campaigns need an offer, audience and follow-up process that filter unsuitable enquiries while making it easy for serious prospects to respond.",
+    "audience": "Brands with a clear offer and capacity to respond to new enquiries.",
+    "deliverables": [
+      "Audience and offer hypotheses",
+      "Creative testing matrix",
+      "Lead form or landing-page setup",
+      "Retargeting plan where appropriate",
+      "Sales-quality feedback loop"
+    ],
+    "process": [
+      "Define a qualified lead",
+      "Prepare distinct creative concepts",
+      "Test controlled variations",
+      "Allocate spend by downstream quality"
+    ],
+    "metrics": "Qualified conversations and sales appointments alongside cost per lead.",
+    "faq": {
+      "question": "Should we boost posts or build campaigns?",
+      "answer": "Choose by objective and measurement needs. A campaign structure is usually more useful when you need controlled testing and a defined conversion journey."
+    },
+    "related": [
+      "content-creation",
+      "video-production",
+      "whatsapp-automation"
+    ]
+  },
+  {
+    "slug": "social-media-management",
+    "name": "Social Media Management",
+    "summary": "Give every channel a clear editorial purpose.",
+    "problem": "Posting the same visual everywhere can leave your brand active but indistinct. We build a Qatar-facing content rhythm around buyer questions, real work and useful proof, with language and approval workflows agreed in advance.",
+    "audience": "Service and retail brands that need consistent, accountable content delivery.",
+    "deliverables": [
+      "Channel role and audience plan",
+      "Monthly editorial calendar",
+      "English/Arabic copy workflow",
+      "Design and short-video briefs",
+      "Community-response guidelines"
+    ],
+    "process": [
+      "Audit channels and audience",
+      "Agree themes and formats",
+      "Produce and approve content",
+      "Review useful engagement and enquiries"
+    ],
+    "metrics": "Relevant conversations, profile-to-site journeys and content-assisted enquiries.",
+    "faq": {
+      "question": "How many posts are included?",
+      "answer": "Volume depends on the approved plan, production needs and languages. We specify formats, quantities and revisions in the proposal."
+    },
+    "related": [
+      "content-creation",
+      "photography",
+      "branding"
+    ]
+  },
+  {
+    "slug": "content-creation",
+    "name": "Content Creation",
+    "summary": "Build a library of useful, recognisable brand content.",
+    "problem": "A Qatar buyer may encounter your business through a reel, a proposal and a service page before making contact. Inconsistent claims and visuals across those touchpoints make the offer harder to understand.",
+    "audience": "Businesses needing coordinated website, campaign and social content.",
+    "deliverables": [
+      "Content pillars and messaging",
+      "Shoot and asset plan",
+      "Campaign copy and visual briefs",
+      "Reels and reusable edits",
+      "Usage-rights and approval register"
+    ],
+    "process": [
+      "Agree audience and message",
+      "Plan capture and copy",
+      "Produce format-specific assets",
+      "Review performance and refresh"
+    ],
+    "metrics": "Content reuse, qualified engagement and the conversion journeys supported by each asset.",
+    "faq": {
+      "question": "Can you work from our existing assets?",
+      "answer": "Yes. We first check quality, ownership and suitability, then identify the capture or copy needed to fill the gaps."
+    },
+    "related": [
+      "video-production",
+      "photography",
+      "social-media-management"
+    ]
+  },
+  {
+    "slug": "video-production",
+    "name": "Video Production",
+    "summary": "Shape the story before the shoot.",
+    "problem": "A beautiful film can still miss its commercial purpose. We begin with who should watch, what they need to understand and where the video will run, then plan production and post-production around that decision.",
+    "audience": "Corporate, tourism, event and luxury brands commissioning purposeful video.",
+    "deliverables": [
+      "Creative treatment and script",
+      "Shot list and production plan",
+      "Capture scope and crew requirements",
+      "Editing, color and sound scope",
+      "Platform-specific deliverables and usage terms"
+    ],
+    "process": [
+      "Brief the message and audience",
+      "Approve treatment and logistics",
+      "Capture and edit",
+      "Review, clear rights and deliver"
+    ],
+    "metrics": "Approved deliverables, audience retention and campaign actions where tracking is available.",
+    "faq": {
+      "question": "How are production rights handled?",
+      "answer": "Usage rights, credits, publication permissions and delivery formats are defined in the written scope before production begins."
+    },
+    "related": [
+      "content-creation",
+      "photography",
+      "meta-ads"
+    ]
+  },
+  {
+    "slug": "photography",
+    "name": "Photography",
+    "summary": "Create images that help customers judge the real offer.",
+    "problem": "Product details, interiors and event moments require different capture plans. We define where each image will be used so a Qatar shoot produces a usable library rather than a collection with uncertain rights and inconsistent framing.",
+    "audience": "Retailers, venues, professional firms and event teams.",
+    "deliverables": [
+      "Image-use and shot-list planning",
+      "Product, portrait, interior or event scope",
+      "Lighting and capture plan",
+      "Selection and retouching",
+      "Web and print exports with usage terms"
+    ],
+    "process": [
+      "Plan purpose and permissions",
+      "Capture against the shot list",
+      "Select and retouch",
+      "Deliver named, organized assets"
+    ],
+    "metrics": "Coverage of required uses, delivery quality and asset reuse.",
+    "faq": {
+      "question": "Can we use photographs in paid ads?",
+      "answer": "Usage rights must be agreed in the proposal, including talent, locations and third-party material. We do not assume every image is cleared for advertising."
+    },
+    "related": [
+      "branding",
+      "content-creation",
+      "video-production"
+    ]
+  },
+  {
+    "slug": "branding",
+    "name": "Branding",
+    "summary": "Make the business easier to recognize and choose.",
+    "problem": "A growing Qatar business may have several versions of its logo, different Arabic and English naming and inconsistent proposal materials. We create a practical identity system teams can apply across channels.",
+    "audience": "New ventures and established businesses needing a coherent identity.",
+    "deliverables": [
+      "Positioning and message hierarchy",
+      "Bilingual naming presentation review",
+      "Visual identity system",
+      "Typography, color and layout rules",
+      "Launch templates and brand guidelines"
+    ],
+    "process": [
+      "Research audience and alternatives",
+      "Define the brand direction",
+      "Develop and test applications",
+      "Document and hand over"
+    ],
+    "metrics": "Consistency across customer touchpoints and usable brand assets, not an invented brand-value score.",
+    "faq": {
+      "question": "Will you redesign our logo automatically?",
+      "answer": "No. We first assess the existing identity. A refresh, extension or complete redesign is scoped only when it solves an agreed problem."
+    },
+    "related": [
+      "web-development",
+      "content-creation",
+      "social-media-management"
+    ]
+  },
+  {
+    "slug": "web-development",
+    "name": "Website Development",
+    "summary": "Build a fast, clear path from discovery to enquiry.",
+    "problem": "A website serving Qatar needs clear offers, usable mobile forms and intentional English/Arabic journeys. We connect content, performance and lead routing before adding decorative features.",
+    "audience": "Service firms, corporate teams and businesses replacing a fragmented website.",
+    "deliverables": [
+      "Information architecture and conversion copy",
+      "Responsive interface design",
+      "SEO-ready page templates",
+      "Accessible bilingual implementation",
+      "Forms, analytics and handover documentation"
+    ],
+    "process": [
+      "Map the buying journey",
+      "Prototype priority pages",
+      "Build and test integrations",
+      "Launch against agreed acceptance checks"
+    ],
+    "metrics": "Qualified enquiries, task completion and field performance, not just a design approval.",
+    "faq": {
+      "question": "Can you preserve our current search URLs?",
+      "answer": "Yes. We inventory current URLs, retain useful ones and specify redirects for agreed changes before launch."
+    },
+    "related": [
+      "seo",
+      "crm-automation",
+      "ecommerce-development"
+    ]
+  },
+  {
+    "slug": "ecommerce-development",
+    "name": "E-commerce Development",
+    "summary": "Make products easier to find, compare and buy.",
+    "problem": "Qatar shoppers need clear product information, delivery terms and an understandable checkout. We map catalog, payment and fulfillment requirements before choosing the storefront architecture.",
+    "audience": "Retailers building or improving an online store.",
+    "deliverables": [
+      "Catalog and navigation model",
+      "Product-page content structure",
+      "Checkout and payment integration scope",
+      "Delivery and returns presentation",
+      "Commerce analytics and operational handover"
+    ],
+    "process": [
+      "Audit catalog and operations",
+      "Design product and checkout journeys",
+      "Build integrations and test orders",
+      "Review purchase friction"
+    ],
+    "metrics": "Checkout completion, contribution margin and repeat purchase; estimates require your actual costs.",
+    "faq": {
+      "question": "Can you connect our payment provider?",
+      "answer": "We assess its supported integration and your account eligibility. Provider approval, fees and settlement terms remain separate from development."
+    },
+    "related": [
+      "web-development",
+      "meta-ads",
+      "crm-automation"
+    ]
+  },
+  {
+    "slug": "ai-automation",
+    "name": "AI Automation",
+    "summary": "Automate a defined workflow with human oversight.",
+    "problem": "When enquiries arrive through several channels, staff can repeat data entry and lose ownership of the next step. We map the workflow, identify safe automation points and define where a person must take over.",
+    "audience": "Teams with a repeatable process, clear owners and accessible systems.",
+    "deliverables": [
+      "Workflow and exception map",
+      "Data-access and permission design",
+      "Agent or rules-based prototype",
+      "Human handoff and failure handling",
+      "Monitoring and operating guide"
+    ],
+    "process": [
+      "Map the current process",
+      "Choose a bounded pilot",
+      "Test normal and failure cases",
+      "Measure and expand deliberately"
+    ],
+    "metrics": "Time to first action, unresolved exceptions and manual work avoided.",
+    "faq": {
+      "question": "Does every workflow need AI?",
+      "answer": "No. Deterministic rules are often better for routing, reminders and validation. AI is used where interpretation adds value and can be checked."
+    },
+    "related": [
+      "whatsapp-automation",
+      "crm-automation",
+      "custom-software"
+    ]
+  },
+  {
+    "slug": "whatsapp-automation",
+    "name": "WhatsApp Automation",
+    "summary": "Keep useful conversations moving toward a human decision.",
+    "problem": "A customer may ask about availability after office hours and receive no clear next step. We design consent-aware qualification, routing and follow-up, with a visible handoff for questions automation should not answer.",
+    "audience": "Businesses handling recurring sales or booking questions through WhatsApp.",
+    "deliverables": [
+      "Conversation and opt-in design",
+      "Business platform integration scope",
+      "Qualification and routing rules",
+      "Approved follow-up templates",
+      "Human handoff and reporting"
+    ],
+    "process": [
+      "Map frequent questions",
+      "Confirm platform and consent requirements",
+      "Test conversation branches",
+      "Review missed and escalated enquiries"
+    ],
+    "metrics": "Acknowledgement time, qualified conversations and successful handoffs.",
+    "faq": {
+      "question": "Can it message everyone in our contact list?",
+      "answer": "No. Messaging must respect customer permission and current platform policies. We scope consent, opt-out handling and permitted messaging before activation."
+    },
+    "related": [
+      "crm-automation",
+      "ai-automation",
+      "digital-marketing"
+    ]
+  },
+  {
+    "slug": "crm-automation",
+    "name": "CRM Automation",
+    "summary": "Give every enquiry an owner and a next action.",
+    "problem": "A spreadsheet can list leads without showing which person should respond or why a deal stalled. We define stages and ownership that reflect your Qatar sales process, then automate the routine transitions.",
+    "audience": "Sales teams managing consultations, viewings, proposals or renewals.",
+    "deliverables": [
+      "Pipeline and field design",
+      "Lead-source mapping",
+      "Assignment and task rules",
+      "Follow-up and escalation workflows",
+      "Sales reporting and handover"
+    ],
+    "process": [
+      "Map sales decisions",
+      "Clean and map approved data",
+      "Configure pipeline and rules",
+      "Test ownership and exceptions"
+    ],
+    "metrics": "Unassigned leads, overdue actions, stage conversion and proposal turnaround.",
+    "faq": {
+      "question": "Must we replace our CRM?",
+      "answer": "Not necessarily. We review the current tool and integrations first; a migration is proposed only with a clear reason and separate data plan."
+    },
+    "related": [
+      "whatsapp-automation",
+      "custom-software",
+      "google-ads"
+    ]
+  },
+  {
+    "slug": "custom-software",
+    "name": "Custom Software",
+    "summary": "Build around the workflow your team actually needs.",
+    "problem": "Disconnected portals and manual reporting can make a growing Qatar operation hard to manage. We turn a defined business workflow into software with clear roles, integration boundaries and acceptance criteria.",
+    "audience": "Businesses whose requirements exceed a well-configured existing product.",
+    "deliverables": [
+      "Discovery and requirements model",
+      "User roles and access design",
+      "Working prototype",
+      "Application and API development",
+      "Testing, documentation and support scope"
+    ],
+    "process": [
+      "Validate the build-versus-buy decision",
+      "Prototype the critical workflow",
+      "Deliver in reviewable increments",
+      "Test and hand over operations"
+    ],
+    "metrics": "Task completion, reliability and operating cost against the original business case.",
+    "faq": {
+      "question": "Can you integrate existing systems?",
+      "answer": "Yes, subject to API access and vendor constraints. We document data ownership, error handling and ongoing integration costs before implementation."
+    },
+    "related": [
+      "saas-development",
+      "crm-automation",
+      "web-development"
+    ]
+  },
+  {
+    "slug": "saas-development",
+    "name": "SaaS Development",
+    "summary": "Validate the product before scaling the platform.",
+    "problem": "A SaaS idea needs a clear user problem and delivery model before subscriptions, dashboards and AI features. We help define the smallest useful product, test the main journey and plan a maintainable architecture.",
+    "audience": "Founders and established businesses creating a recurring software product.",
+    "deliverables": [
+      "Product discovery and MVP scope",
+      "Tenant and permission model",
+      "Core workflow and billing integration scope",
+      "Usage instrumentation",
+      "Release, support and iteration plan"
+    ],
+    "process": [
+      "Define users and value",
+      "Prototype and validate",
+      "Build the agreed MVP",
+      "Measure activation and improve"
+    ],
+    "metrics": "Activation, repeated use, support burden and retention using actual product data.",
+    "faq": {
+      "question": "Do you guarantee product-market fit?",
+      "answer": "No. We provide product and engineering work with explicit hypotheses and acceptance criteria. Market demand must be tested with real users."
+    },
+    "related": [
+      "custom-software",
+      "ai-automation",
+      "web-development"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "requests": [],
+  "queue": [
+    [
+      "event",
+      "consulting_referral",
+      {
+        "source_page": "/blog/lead-generation-for-builders-and-architects-in-pakistan/",
+        "content_type": "article",
+        "consulting_discipline": "acquisition",
+        "link_placement": "business_decision",
+        "destination": "https://syedqamarabbas.com/expertise/customer-acquisition/",
+        "intent": "learn",
+        "transport_type": "beacon"
+      }
+    ]
+  ],
+  "note": "GA collection requests intercepted locally; no synthetic consultation was sent. This does not verify receipt in GA4 reports.",
+  "referralRequests": 0,
+  "singleQueuedEvent": true
+}

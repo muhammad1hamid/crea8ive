@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "Static Arabic page served",
+    "Unknown Qatar route returns 404",
+    "Node returns explicit unavailable without PHP origin",
+    "Node proxies PHP validation status",
+    "No PHP/source disclosure /enquiries/submit%2ephp",
+    "No PHP/source disclosure /enquiries/%73ubmit.php",
+    "No PHP/source disclosure /enquiries/submit.php",
+    "No PHP/source disclosure /%2e%2e/server.mjs",
+    "No PHP/source disclosure /%00"
+  ],
+  "passed": 9
+}

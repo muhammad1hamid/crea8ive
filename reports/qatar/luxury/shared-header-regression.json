@@ -1,0 +1,179 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "route": "/",
+      "menu": "Solutions",
+      "links": [
+        "/growth-systems/",
+        "/growth-systems/",
+        "/meta-ads/",
+        "/google-ads/",
+        "/google-business-profile-growth/",
+        "/website-development/",
+        "/social-media-management/",
+        "/content-creation/",
+        "/branding-and-creative/",
+        "/marketing-automation/",
+        "/ai-search-optimization/",
+        "/answers/",
+        "/industries/",
+        "/ai-visibility-targets/",
+        "/ai-visibility-growth/",
+        "/ai-visibility-content-roadmap/",
+        "/ai-citation-sources/",
+        "/compare/",
+        "/playbooks/"
+      ]
+    },
+    {
+      "route": "/",
+      "menu": "Platforms",
+      "links": [
+        "/patientflow/",
+        "https://xtempora.org/projects/examflow",
+        "https://xtempora.org/",
+        "/tools/",
+        "/platforms/"
+      ]
+    },
+    {
+      "route": "/",
+      "menu": "Results",
+      "links": [
+        "/results/",
+        "/results/",
+        "/case-studies/",
+        "/website-portfolio/",
+        "/results/#archive",
+        "/clients/"
+      ]
+    },
+    {
+      "route": "/",
+      "menu": "About",
+      "links": [
+        "/about/",
+        "/about/",
+        "/company-verification/",
+        "/our-team/",
+        "/syed-qamar-abbas/",
+        "/guides/",
+        "/industries/",
+        "/ai-visibility-targets/",
+        "/ai-visibility-growth/",
+        "/ai-visibility-content-roadmap/",
+        "/ai-citation-sources/",
+        "/ai-visibility-deployment-checklist/",
+        "/compare/",
+        "/playbooks/",
+        "/courses/",
+        "/consultation/",
+        "/careers/",
+        "/contact/"
+      ]
+    },
+    {
+      "route": "/qa/",
+      "menu": "Solutions",
+      "links": [
+        "/qa/services/",
+        "/qa/services/digital-marketing/",
+        "/qa/services/ai-visibility/",
+        "/qa/services/seo/",
+        "/qa/services/google-ads/",
+        "/qa/services/meta-ads/",
+        "/qa/services/social-media-management/",
+        "/qa/services/web-development/",
+        "/qa/content-production/",
+        "/qa/services/ai-automation/",
+        "/qa/services/whatsapp-automation/",
+        "/qa/industries/",
+        "/qa/services/"
+      ]
+    },
+    {
+      "route": "/qa/",
+      "menu": "Platforms",
+      "links": [
+        "/patientflow/",
+        "https://xtempora.org/projects/examflow",
+        "https://xtempora.org/",
+        "/qa/tools/",
+        "/platforms/"
+      ]
+    },
+    {
+      "route": "/qa/",
+      "menu": "Results",
+      "links": [
+        "/qa/work/",
+        "/qa/work/qatar-production/",
+        "/case-studies/",
+        "/website-portfolio/"
+      ]
+    },
+    {
+      "route": "/qa/",
+      "menu": "About",
+      "links": [
+        "/qa/about/",
+        "/qa/about/",
+        "/qa/contact/",
+        "/qa/tools/",
+        "/company-verification/"
+      ]
+    },
+    {
+      "route": "/qa/ar/",
+      "menu": "الحلول",
+      "links": [
+        "/qa/ar/services/",
+        "/qa/ar/services/digital-marketing/",
+        "/qa/ar/services/ai-visibility/",
+        "/qa/ar/services/seo/",
+        "/qa/ar/services/google-ads/",
+        "/qa/services/meta-ads/",
+        "/qa/ar/services/social-media-management/",
+        "/qa/ar/services/web-development/",
+        "/qa/ar/content-production/",
+        "/qa/ar/services/ai-automation/",
+        "/qa/ar/services/whatsapp-automation/",
+        "/qa/industries/",
+        "/qa/ar/services/"
+      ]
+    },
+    {
+      "route": "/qa/ar/",
+      "menu": "المنصات · EN",
+      "links": [
+        "/patientflow/",
+        "https://xtempora.org/projects/examflow",
+        "https://xtempora.org/",
+        "/qa/tools/",
+        "/platforms/"
+      ]
+    },
+    {
+      "route": "/qa/ar/",
+      "menu": "الأعمال · EN",
+      "links": [
+        "/qa/work/",
+        "/qa/work/qatar-production/",
+        "/case-studies/",
+        "/website-portfolio/"
+      ]
+    },
+    {
+      "route": "/qa/ar/",
+      "menu": "من نحن",
+      "links": [
+        "/qa/ar/about/",
+        "/qa/ar/about/",
+        "/qa/ar/contact/",
+        "/qa/tools/",
+        "/company-verification/"
+      ]
+    }
+  ]
+}

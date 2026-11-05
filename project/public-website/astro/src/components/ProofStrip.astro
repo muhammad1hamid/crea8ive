@@ -1,0 +1,13 @@
+---
+import { proofStats } from "../data/growth";
+---
+<section class="bg-[#080808] px-6 py-8 text-white">
+  <div class="mx-auto grid max-w-[1400px] gap-3 md:grid-cols-4">
+    {proofStats.map((item) => (
+      <div class="border border-white/10 bg-white/[.03] p-5">
+        <p class="font-orbitron text-2xl font-bold text-brand">{item.value}</p>
+        <p class="mt-2 text-sm leading-6 text-white/70">{item.label}</p>
+      </div>
+    ))}
+  </div>
+</section>

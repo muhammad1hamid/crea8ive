@@ -1,0 +1,2915 @@
+{
+  "generatedAt": "2026-10-09T00:00:00+05:00",
+  "summary": {
+    "total": 69,
+    "byStatus": {
+      "IMPROVE": 28,
+      "MERGE": 10,
+      "REDIRECT_CANDIDATE": 4,
+      "IMPROVE_AS_SPOKE": 27
+    },
+    "byCluster": {
+      "Brand, Social and Creative": 10,
+      "Local SEO and Google Business Profile": 15,
+      "SEO and AI Visibility": 17,
+      "Paid Ads and Acquisition": 7,
+      "Website Development": 16,
+      "Founder and Entity Authority": 3,
+      "Automation and Funnels": 1
+    }
+  },
+  "mergeGroups": [
+    {
+      "id": "local-seo-restaurants-reviews",
+      "targetSlug": "google-business-profile-for-restaurants-in-islamabad-full-setup-guide",
+      "reason": "Restaurant GBP setup, optimization checklist, and review-growth posts overlap and should support one stronger restaurant local SEO guide.",
+      "slugs": [
+        "google-business-profile-for-restaurants-in-islamabad-full-setup-guide",
+        "google-business-profile-optimization-checklist-for-restaurants-in-islamabad",
+        "how-restaurants-in-islamabad-can-get-more-google-reviews"
+      ]
+    },
+    {
+      "id": "google-reviews-local-seo",
+      "targetSlug": "google-business-profile-optimization-checklist",
+      "reason": "Generic review and GBP checklist content should become one stronger evergreen local SEO checklist.",
+      "slugs": [
+        "google-business-profile-optimization-checklist",
+        "how-to-get-more-google-reviews"
+      ]
+    },
+    {
+      "id": "founder-entity-trust",
+      "targetSlug": "who-founded-crea8iv-media-syed-qamar-abbas",
+      "reason": "Founder profile, founder story, and entity trust posts should reinforce one canonical founder/entity authority asset.",
+      "slugs": [
+        "who-founded-crea8iv-media-syed-qamar-abbas",
+        "founder-pages-ai-search-entity-seo-business-trust",
+        "what-syed-qamar-abbas-builds-at-crea8iv-media",
+        "crea8iv-media-founder-story-syed-qamar-abbas"
+      ]
+    },
+    {
+      "id": "ai-search-foundations",
+      "targetSlug": "what-is-ai-search-optimization",
+      "reason": "AI SEO definitions are useful, but many short definition posts compete. Keep one hub and use the rest as supporting sections or redirects.",
+      "slugs": [
+        "future-of-ai-search-2026",
+        "what-is-ai-search-optimization",
+        "geo-vs-seo",
+        "aeo-vs-seo",
+        "llmo-explained",
+        "ai-visibility-strategy",
+        "how-businesses-get-mentioned-by-chatgpt",
+        "ai-citation-optimization-guide",
+        "knowledge-graph-for-local-businesses",
+        "semantic-search-in-2026",
+        "ai-overviews-complete-guide",
+        "why-websites-lose-ai-visibility",
+        "top-ai-search-ranking-factors",
+        "building-ai-authority"
+      ]
+    },
+    {
+      "id": "website-development-buying-guide",
+      "targetSlug": "modern-business-website-checklist",
+      "reason": "Website buying, redesign, platform, speed, maintenance, and security articles should become a hub-and-spoke cluster instead of isolated posts.",
+      "slugs": [
+        "best-website-design-company-in-islamabad-what-to-look-for",
+        "website-vs-landing-page",
+        "custom-website-vs-wordpress",
+        "nextjs-vs-wordpress",
+        "laravel-vs-wordpress",
+        "why-cheap-websites-fail",
+        "website-mistakes-that-kill-sales",
+        "modern-business-website-checklist",
+        "core-web-vitals-guide",
+        "mobile-first-website-design",
+        "website-speed-optimization",
+        "ux-vs-ui",
+        "website-security-checklist",
+        "website-maintenance-guide",
+        "why-businesses-need-custom-websites",
+        "website-redesign-checklist"
+      ]
+    },
+    {
+      "id": "meta-ads-pakistan",
+      "targetSlug": "facebook-instagram-ads-pakistan-guide",
+      "reason": "Meta Ads, boosted posts, real estate lead generation, and budget posts should link into one stronger paid social guide.",
+      "slugs": [
+        "facebook-instagram-ads-pakistan-guide",
+        "how-real-estate-businesses-in-pakistan-get-leads-from-facebook-ads",
+        "how-much-should-a-business-spend-on-meta-ads-in-pakistan",
+        "boosted-posts-vs-facebook-ads-pakistan"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "file": "2026-06-23-best-digital-marketing-agency-in-rawalpindi.md",
+      "slug": "best-digital-marketing-agency-in-rawalpindi-how-to-choose-in-2026",
+      "title": "Best Digital Marketing Agency in Rawalpindi: How to Choose in 2026",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-06-23 10:00 PKT",
+      "updatedDate": "2026-08-01 10:00 PKT",
+      "wordCount": 1745,
+      "h2Count": 13,
+      "h3Count": 16,
+      "faqCount": 4,
+      "internalLinkCount": 19,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "brand-social",
+        "label": "Brand, Social and Creative",
+        "pillar": "Supporting Expertise",
+        "terms": [
+          "instagram",
+          "social media",
+          "influencer",
+          "creative marketing",
+          "brand"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/best-digital-marketing-agency-in-rawalpindi-how-to-choose-in-2026/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation."
+        ]
+      }
+    },
+    {
+      "file": "2026-06-26-google-ads-cost-in-pakistan-for-doctors-clinics-and-aesthetic-brands.md",
+      "slug": "google-ads-cost-in-pakistan-for-doctors-clinics-and-aesthetic-brands",
+      "title": "Google Ads Cost in Pakistan for Doctors, Clinics, and Aesthetic Brands",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-06-26 10:00 PKT",
+      "updatedDate": "2026-08-01 10:00 PKT",
+      "wordCount": 1571,
+      "h2Count": 11,
+      "h3Count": 17,
+      "faqCount": 4,
+      "internalLinkCount": 8,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/google-ads-cost-in-pakistan-for-doctors-clinics-and-aesthetic-brands/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-06-30-seo-cost-in-pakistan-what-businesses-should-actually-expect-to-pay.md",
+      "slug": "seo-cost-in-pakistan-what-businesses-should-actually-expect-to-pay",
+      "title": "How Much Does SEO Cost in Pakistan? 2026 Guide",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-06-30 10:00 PKT",
+      "updatedDate": "2026-08-01 10:00 PKT",
+      "wordCount": 1487,
+      "h2Count": 12,
+      "h3Count": 12,
+      "faqCount": 4,
+      "internalLinkCount": 6,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "brand-social",
+        "label": "Brand, Social and Creative",
+        "pillar": "Supporting Expertise",
+        "terms": [
+          "instagram",
+          "social media",
+          "influencer",
+          "creative marketing",
+          "brand"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/seo-cost-in-pakistan-what-businesses-should-actually-expect-to-pay/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-03-google-business-profile-for-restaurants-in-islamabad-full-setup-guide.md",
+      "slug": "google-business-profile-for-restaurants-in-islamabad-full-setup-guide",
+      "title": "Google Business Profile for Restaurants in Islamabad: Full Setup Guide",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-03 10:00 PKT",
+      "updatedDate": "2026-10-09 12:00 PKT",
+      "wordCount": 1245,
+      "h2Count": 17,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 6,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 8,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/google-business-profile-for-restaurants-in-islamabad-full-setup-guide/",
+        "reasons": [
+          "Canonical hub for merge group: local-seo-restaurants-reviews.",
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-05-google-ai-overviews-ads-in-pakistan-what-businesses-need-to-know.md",
+      "slug": "google-ai-overviews-ads-in-pakistan-what-businesses-need-to-know",
+      "title": "Google AI Overviews Are Now Showing Ads in Pakistan: What Every Business Needs to Know",
+      "category": "SEO",
+      "status": "Published",
+      "publishDate": "2026-07-05 10:00 PKT",
+      "updatedDate": "",
+      "wordCount": 1659,
+      "h2Count": 10,
+      "h3Count": 11,
+      "faqCount": 6,
+      "internalLinkCount": 7,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 6,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/google-ai-overviews-ads-in-pakistan-what-businesses-need-to-know/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-07-how-real-estate-businesses-in-pakistan-get-leads-from-facebook-ads.md",
+      "slug": "how-real-estate-businesses-in-pakistan-get-leads-from-facebook-ads",
+      "title": "How Real Estate Businesses in Pakistan Get Leads from Facebook Ads",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-07 10:00 PKT",
+      "updatedDate": "",
+      "wordCount": 1068,
+      "h2Count": 14,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 7,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 4,
+      "cluster": {
+        "id": "ads-acquisition",
+        "label": "Paid Ads and Acquisition",
+        "pillar": "Google Ads + Customer Acquisition",
+        "terms": [
+          "google ads",
+          "facebook ads",
+          "instagram ads",
+          "meta ads",
+          "ppc",
+          "boosted",
+          "lead generation",
+          "digital advertising"
+        ]
+      },
+      "action": {
+        "status": "MERGE",
+        "priority": "Medium",
+        "target": "/blog/facebook-instagram-ads-pakistan-guide/",
+        "reasons": [
+          "Meta Ads, boosted posts, real estate lead generation, and budget posts should link into one stronger paid social guide."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-10-best-website-design-company-in-islamabad-what-to-look-for.md",
+      "slug": "best-website-design-company-in-islamabad-what-to-look-for",
+      "title": "Best Website Design Company in Islamabad: What to Look For",
+      "category": "Web Development",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-10 10:00 PKT",
+      "updatedDate": "2026-08-01 10:00 PKT",
+      "wordCount": 874,
+      "h2Count": 12,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 7,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "MERGE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Website buying, redesign, platform, speed, maintenance, and security articles should become a hub-and-spoke cluster instead of isolated posts."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-11-google-search-console-social-platforms-pakistan-businesses.md",
+      "slug": "google-search-console-social-platforms-pakistan-businesses",
+      "title": "Google Search Console Now Tracks Instagram, TikTok, YouTube and X Visibility: What Pakistan Businesses Should Do",
+      "category": "SEO",
+      "status": "Published",
+      "publishDate": "2026-07-11 10:00 PKT",
+      "updatedDate": "",
+      "wordCount": 1490,
+      "h2Count": 9,
+      "h3Count": 11,
+      "faqCount": 6,
+      "internalLinkCount": 5,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "brand-social",
+        "label": "Brand, Social and Creative",
+        "pillar": "Supporting Expertise",
+        "terms": [
+          "instagram",
+          "social media",
+          "influencer",
+          "creative marketing",
+          "brand"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/google-search-console-social-platforms-pakistan-businesses/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-facebook-instagram-ads-pakistan-guide.md",
+      "slug": "facebook-instagram-ads-pakistan-guide",
+      "title": "Facebook & Instagram Ads in Pakistan: The Complete Guide (2026)",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 11:20 PKT",
+      "updatedDate": "2026-09-19 10:00 PKT",
+      "wordCount": 944,
+      "h2Count": 18,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 2,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 3,
+      "cluster": {
+        "id": "ads-acquisition",
+        "label": "Paid Ads and Acquisition",
+        "pillar": "Google Ads + Customer Acquisition",
+        "terms": [
+          "google ads",
+          "facebook ads",
+          "instagram ads",
+          "meta ads",
+          "ppc",
+          "boosted",
+          "lead generation",
+          "digital advertising"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/facebook-instagram-ads-pakistan-guide/",
+        "reasons": [
+          "Canonical hub for merge group: meta-ads-pakistan.",
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-get-the-most-out-of-the-creativity.md",
+      "slug": "get-the-most-out-of-the-creativity",
+      "title": "How to Get More Value From Creative Marketing",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 11:25 PKT",
+      "updatedDate": "2026-09-19 10:00 PKT",
+      "wordCount": 988,
+      "h2Count": 18,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 3,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 3,
+      "cluster": {
+        "id": "brand-social",
+        "label": "Brand, Social and Creative",
+        "pillar": "Supporting Expertise",
+        "terms": [
+          "instagram",
+          "social media",
+          "influencer",
+          "creative marketing",
+          "brand"
+        ]
+      },
+      "action": {
+        "status": "REDIRECT_CANDIDATE",
+        "priority": "High",
+        "target": "/blog/",
+        "reasons": [
+          "Generic/supporting topic with weak authority value compared with service-led or research-led assets."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-google-business-profile-optimization-checklist-for-restaurants-in-islamabad.md",
+      "slug": "google-business-profile-optimization-checklist-for-restaurants-in-islamabad",
+      "title": "Google Business Profile Optimization Checklist for Restaurants in Islamabad",
+      "category": "SEO",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 12:00 PKT",
+      "updatedDate": "",
+      "wordCount": 624,
+      "h2Count": 12,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 4,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 3,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "MERGE",
+        "priority": "Medium",
+        "target": "/blog/google-business-profile-for-restaurants-in-islamabad-full-setup-guide/",
+        "reasons": [
+          "Restaurant GBP setup, optimization checklist, and review-growth posts overlap and should support one stronger restaurant local SEO guide."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-google-business-profile-optimization-checklist.md",
+      "slug": "google-business-profile-optimization-checklist",
+      "title": "Google Business Profile Optimization Checklist (2026)",
+      "category": "SEO",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 11:15 PKT",
+      "updatedDate": "2026-10-09 12:00 PKT",
+      "wordCount": 1048,
+      "h2Count": 23,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 8,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 9,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/google-business-profile-optimization-checklist/",
+        "reasons": [
+          "Canonical hub for merge group: google-reviews-local-seo.",
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-how-restaurants-in-islamabad-can-get-more-google-reviews.md",
+      "slug": "how-restaurants-in-islamabad-can-get-more-google-reviews",
+      "title": "How Restaurants in Islamabad Can Get More Google Reviews",
+      "category": "SEO",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 12:05 PKT",
+      "updatedDate": "2026-09-19 10:00 PKT",
+      "wordCount": 936,
+      "h2Count": 16,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 4,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 3,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "MERGE",
+        "priority": "Medium",
+        "target": "/blog/google-business-profile-for-restaurants-in-islamabad-full-setup-guide/",
+        "reasons": [
+          "Restaurant GBP setup, optimization checklist, and review-growth posts overlap and should support one stronger restaurant local SEO guide."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-how-to-get-more-google-reviews.md",
+      "slug": "how-to-get-more-google-reviews",
+      "title": "How to Get More Google Reviews (Step-by-Step, 2026)",
+      "category": "SEO",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 11:10 PKT",
+      "updatedDate": "",
+      "wordCount": 635,
+      "h2Count": 13,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 3,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 3,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "MERGE",
+        "priority": "Medium",
+        "target": "/blog/google-business-profile-optimization-checklist/",
+        "reasons": [
+          "Generic review and GBP checklist content should become one stronger evergreen local SEO checklist."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-influencer-marketing-trends-2023-what-you-need-to-know.md",
+      "slug": "influencer-marketing-trends-2023-what-you-need-to-know",
+      "title": "Influencer Marketing Trends Brands Need to Know in 2026",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 11:35 PKT",
+      "updatedDate": "2026-09-19 10:00 PKT",
+      "wordCount": 949,
+      "h2Count": 17,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 1,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 3,
+      "cluster": {
+        "id": "brand-social",
+        "label": "Brand, Social and Creative",
+        "pillar": "Supporting Expertise",
+        "terms": [
+          "instagram",
+          "social media",
+          "influencer",
+          "creative marketing",
+          "brand"
+        ]
+      },
+      "action": {
+        "status": "REDIRECT_CANDIDATE",
+        "priority": "High",
+        "target": "/blog/",
+        "reasons": [
+          "Generic/supporting topic with weak authority value compared with service-led or research-led assets."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-instagram-marketing-pakistan.md",
+      "slug": "instagram-marketing-pakistan",
+      "title": "Instagram Marketing in Pakistan: Strategy Guide for Businesses (2026)",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 11:05 PKT",
+      "updatedDate": "",
+      "wordCount": 618,
+      "h2Count": 11,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 2,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 4,
+      "cluster": {
+        "id": "brand-social",
+        "label": "Brand, Social and Creative",
+        "pillar": "Supporting Expertise",
+        "terms": [
+          "instagram",
+          "social media",
+          "influencer",
+          "creative marketing",
+          "brand"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/instagram-marketing-pakistan/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-pakistan-digital-marketing-statistics-2026.md",
+      "slug": "pakistan-digital-marketing-statistics-2026",
+      "title": "Pakistan Digital Marketing Statistics 2026: Data & Benchmarks",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 11:00 PKT",
+      "updatedDate": "",
+      "wordCount": 768,
+      "h2Count": 11,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 4,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 4,
+      "cluster": {
+        "id": "brand-social",
+        "label": "Brand, Social and Creative",
+        "pillar": "Supporting Expertise",
+        "terms": [
+          "instagram",
+          "social media",
+          "influencer",
+          "creative marketing",
+          "brand"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/pakistan-digital-marketing-statistics-2026/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-seo-which-digital-advertising-strategy-is-right-for-you.md",
+      "slug": "seo-which-digital-advertising-strategy-is-right-for-you",
+      "title": "Which Digital Advertising Strategy Is Right for Your Business?",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 11:30 PKT",
+      "updatedDate": "2026-09-19 10:00 PKT",
+      "wordCount": 952,
+      "h2Count": 15,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 4,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 4,
+      "cluster": {
+        "id": "ads-acquisition",
+        "label": "Paid Ads and Acquisition",
+        "pillar": "Google Ads + Customer Acquisition",
+        "terms": [
+          "google ads",
+          "facebook ads",
+          "instagram ads",
+          "meta ads",
+          "ppc",
+          "boosted",
+          "lead generation",
+          "digital advertising"
+        ]
+      },
+      "action": {
+        "status": "REDIRECT_CANDIDATE",
+        "priority": "High",
+        "target": "/blog/",
+        "reasons": [
+          "Generic/supporting topic with weak authority value compared with service-led or research-led assets."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-social-media-marketing-strategies-for-small-business.md",
+      "slug": "social-media-marketing-strategies-for-small-business",
+      "title": "Social Media Marketing Strategies for Small Businesses",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-13 11:40 PKT",
+      "updatedDate": "2026-09-19 10:00 PKT",
+      "wordCount": 929,
+      "h2Count": 16,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 3,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 3,
+      "cluster": {
+        "id": "brand-social",
+        "label": "Brand, Social and Creative",
+        "pillar": "Supporting Expertise",
+        "terms": [
+          "instagram",
+          "social media",
+          "influencer",
+          "creative marketing",
+          "brand"
+        ]
+      },
+      "action": {
+        "status": "REDIRECT_CANDIDATE",
+        "priority": "High",
+        "target": "/blog/",
+        "reasons": [
+          "Generic/supporting topic with weak authority value compared with service-led or research-led assets."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-13-who-founded-crea8iv-media-syed-qamar-abbas.md",
+      "slug": "who-founded-crea8iv-media-syed-qamar-abbas",
+      "title": "Who Founded Crea8iv Media? The Verified Founder Profile of Syed Qamar Abbas",
+      "category": "SEO",
+      "status": "Scheduled",
+      "publishDate": "2026-07-13 10:00 PKT",
+      "updatedDate": "",
+      "wordCount": 878,
+      "h2Count": 9,
+      "h3Count": 5,
+      "faqCount": 5,
+      "internalLinkCount": 8,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "founder-entity",
+        "label": "Founder and Entity Authority",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "founder",
+          "syed qamar abbas",
+          "entity",
+          "business trust"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/who-founded-crea8iv-media-syed-qamar-abbas/",
+        "reasons": [
+          "Canonical hub for merge group: founder-entity-trust.",
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-14-how-dentists-in-rawalpindi-can-rank-on-google-maps.md",
+      "slug": "how-dentists-in-rawalpindi-can-rank-on-google-maps",
+      "title": "How Dentists in Rawalpindi Can Rank on Google Maps",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-14 10:00 PKT",
+      "updatedDate": "",
+      "wordCount": 776,
+      "h2Count": 13,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 3,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 3,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/how-dentists-in-rawalpindi-can-rank-on-google-maps/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-15-google-conversational-search-ads-pakistan-businesses.md",
+      "slug": "google-conversational-search-ads-pakistan-businesses",
+      "title": "Google Is Betting Bigger on Conversational Search Ads: What Pakistan Businesses Should Change Now",
+      "category": "SEO",
+      "status": "Published",
+      "publishDate": "2026-07-15 10:00 PKT",
+      "updatedDate": "",
+      "wordCount": 1548,
+      "h2Count": 9,
+      "h3Count": 11,
+      "faqCount": 6,
+      "internalLinkCount": 9,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "brand-social",
+        "label": "Brand, Social and Creative",
+        "pillar": "Supporting Expertise",
+        "terms": [
+          "instagram",
+          "social media",
+          "influencer",
+          "creative marketing",
+          "brand"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/google-conversational-search-ads-pakistan-businesses/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-17-lead-generation-for-builders-and-architects-in-pakistan.md",
+      "slug": "lead-generation-for-builders-and-architects-in-pakistan",
+      "title": "Lead Generation for Builders and Architects in Pakistan",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-17 10:00 PKT",
+      "updatedDate": "2026-08-01 10:00 PKT",
+      "wordCount": 838,
+      "h2Count": 12,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 7,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "ads-acquisition",
+        "label": "Paid Ads and Acquisition",
+        "pillar": "Google Ads + Customer Acquisition",
+        "terms": [
+          "google ads",
+          "facebook ads",
+          "instagram ads",
+          "meta ads",
+          "ppc",
+          "boosted",
+          "lead generation",
+          "digital advertising"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/lead-generation-for-builders-and-architects-in-pakistan/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-19-founder-pages-ai-search-entity-seo-business-trust.md",
+      "slug": "founder-pages-ai-search-entity-seo-business-trust",
+      "title": "Why Founder Pages Matter for AI Search, Entity SEO and Business Trust",
+      "category": "SEO",
+      "status": "Published",
+      "publishDate": "2026-07-19 10:00 PKT",
+      "updatedDate": "",
+      "wordCount": 921,
+      "h2Count": 10,
+      "h3Count": 5,
+      "faqCount": 5,
+      "internalLinkCount": 7,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "founder-entity",
+        "label": "Founder and Entity Authority",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "founder",
+          "syed qamar abbas",
+          "entity",
+          "business trust"
+        ]
+      },
+      "action": {
+        "status": "MERGE",
+        "priority": "Medium",
+        "target": "/blog/who-founded-crea8iv-media-syed-qamar-abbas/",
+        "reasons": [
+          "Founder profile, founder story, and entity trust posts should reinforce one canonical founder/entity authority asset."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-21-how-much-should-a-business-spend-on-meta-ads-in-pakistan.md",
+      "slug": "how-much-should-a-business-spend-on-meta-ads-in-pakistan",
+      "title": "How Much Should a Business Spend on Meta Ads in Pakistan?",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-27 10:00 PKT",
+      "updatedDate": "2026-08-05 10:00 PKT",
+      "wordCount": 1046,
+      "h2Count": 9,
+      "h3Count": 11,
+      "faqCount": 4,
+      "internalLinkCount": 7,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "ads-acquisition",
+        "label": "Paid Ads and Acquisition",
+        "pillar": "Google Ads + Customer Acquisition",
+        "terms": [
+          "google ads",
+          "facebook ads",
+          "instagram ads",
+          "meta ads",
+          "ppc",
+          "boosted",
+          "lead generation",
+          "digital advertising"
+        ]
+      },
+      "action": {
+        "status": "MERGE",
+        "priority": "Medium",
+        "target": "/blog/facebook-instagram-ads-pakistan-guide/",
+        "reasons": [
+          "Meta Ads, boosted posts, real estate lead generation, and budget posts should link into one stronger paid social guide."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-24-whatsapp-automation-for-clinics-booking-follow-up-and-reminders.md",
+      "slug": "whatsapp-automation-for-clinics-booking-follow-up-and-reminders",
+      "title": "WhatsApp Automation for Clinics: Booking, Follow-Up, and Reminders",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-24 10:00 PKT",
+      "updatedDate": "2026-08-01 10:00 PKT",
+      "wordCount": 953,
+      "h2Count": 11,
+      "h3Count": 8,
+      "faqCount": 4,
+      "internalLinkCount": 8,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "automation-funnels",
+        "label": "Automation and Funnels",
+        "pillar": "Google Ads + Customer Acquisition",
+        "terms": [
+          "automation",
+          "whatsapp",
+          "crm",
+          "follow-up",
+          "booking"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/whatsapp-automation-for-clinics-booking-follow-up-and-reminders/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-25-what-syed-qamar-abbas-builds-at-crea8iv-media.md",
+      "slug": "what-syed-qamar-abbas-builds-at-crea8iv-media",
+      "title": "What Syed Qamar Abbas Builds at Crea8iv Media: AI Marketing, SEO and Automation Systems",
+      "category": "SEO",
+      "status": "Scheduled",
+      "publishDate": "2026-07-25 10:00 PKT",
+      "updatedDate": "",
+      "wordCount": 885,
+      "h2Count": 10,
+      "h3Count": 5,
+      "faqCount": 5,
+      "internalLinkCount": 7,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "MERGE",
+        "priority": "Medium",
+        "target": "/blog/who-founded-crea8iv-media-syed-qamar-abbas/",
+        "reasons": [
+          "Founder profile, founder story, and entity trust posts should reinforce one canonical founder/entity authority asset."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-28-local-seo-for-salons-and-aesthetic-clinics-in-pakistan.md",
+      "slug": "local-seo-for-salons-and-aesthetic-clinics-in-pakistan",
+      "title": "Local SEO for Salons and Aesthetic Clinics in Pakistan",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-07-29 10:00 PKT",
+      "updatedDate": "2026-10-09 12:00 PKT",
+      "wordCount": 906,
+      "h2Count": 12,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 9,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 11,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/local-seo-for-salons-and-aesthetic-clinics-in-pakistan/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-31-crea8iv-media-founder-story-syed-qamar-abbas.md",
+      "slug": "crea8iv-media-founder-story-syed-qamar-abbas",
+      "title": "The Crea8iv Media Founder Story: Building a Systems-First Digital Agency in Rawalpindi",
+      "category": "SEO",
+      "status": "Scheduled",
+      "publishDate": "2026-07-31 10:00 PKT",
+      "updatedDate": "",
+      "wordCount": 908,
+      "h2Count": 11,
+      "h3Count": 5,
+      "faqCount": 5,
+      "internalLinkCount": 6,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "founder-entity",
+        "label": "Founder and Entity Authority",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "founder",
+          "syed qamar abbas",
+          "entity",
+          "business trust"
+        ]
+      },
+      "action": {
+        "status": "MERGE",
+        "priority": "Medium",
+        "target": "/blog/who-founded-crea8iv-media-syed-qamar-abbas/",
+        "reasons": [
+          "Founder profile, founder story, and entity trust posts should reinforce one canonical founder/entity authority asset."
+        ]
+      }
+    },
+    {
+      "file": "2026-07-31-google-ads-vs-seo-for-small-businesses-in-pakistan-which-first.md",
+      "slug": "google-ads-vs-seo-for-small-businesses-in-pakistan-which-first",
+      "title": "Google Ads vs SEO for Small Businesses in Pakistan: Which First?",
+      "category": "Digital Marketing",
+      "status": "Scheduled",
+      "publishDate": "2026-08-02 10:00 PKT",
+      "updatedDate": "2026-08-07 10:00 PKT",
+      "wordCount": 1026,
+      "h2Count": 13,
+      "h3Count": 7,
+      "faqCount": 4,
+      "internalLinkCount": 7,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "ads-acquisition",
+        "label": "Paid Ads and Acquisition",
+        "pillar": "Google Ads + Customer Acquisition",
+        "terms": [
+          "google ads",
+          "facebook ads",
+          "instagram ads",
+          "meta ads",
+          "ppc",
+          "boosted",
+          "lead generation",
+          "digital advertising"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/google-ads-vs-seo-for-small-businesses-in-pakistan-which-first/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-05-the-future-of-ai-search-in-2026.md",
+      "slug": "future-of-ai-search-2026",
+      "title": "The Future of AI Search in 2026",
+      "category": "AI Search Optimization",
+      "status": "Drafted",
+      "publishDate": "2026-08-05 12:00 PKT",
+      "updatedDate": "",
+      "wordCount": 4679,
+      "h2Count": 21,
+      "h3Count": 35,
+      "faqCount": 10,
+      "internalLinkCount": 1,
+      "externalLinkCount": 6,
+      "frontmatterInternalLinks": 8,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-06-what-is-ai-search-optimization.md",
+      "slug": "what-is-ai-search-optimization",
+      "title": "What Is AI Search Optimization?",
+      "category": "AI Search Optimization",
+      "status": "Drafted",
+      "publishDate": "2026-08-06 12:00 PKT",
+      "updatedDate": "2026-10-08 18:00 PKT",
+      "wordCount": 3481,
+      "h2Count": 18,
+      "h3Count": 30,
+      "faqCount": 8,
+      "internalLinkCount": 10,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 14,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Canonical hub for merge group: ai-search-foundations.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-07-geo-vs-seo.md",
+      "slug": "geo-vs-seo",
+      "title": "GEO vs SEO",
+      "category": "AI Search Optimization",
+      "status": "Published",
+      "publishDate": "2026-08-07 12:02 PKT",
+      "updatedDate": "",
+      "wordCount": 3502,
+      "h2Count": 17,
+      "h3Count": 32,
+      "faqCount": 7,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 8,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-08-aeo-vs-seo.md",
+      "slug": "aeo-vs-seo",
+      "title": "AEO vs SEO",
+      "category": "AI Search Optimization",
+      "status": "Published",
+      "publishDate": "2026-08-08 12:00 PKT",
+      "updatedDate": "2026-08-09 12:42 PKT",
+      "wordCount": 3978,
+      "h2Count": 19,
+      "h3Count": 29,
+      "faqCount": 7,
+      "internalLinkCount": 1,
+      "externalLinkCount": 5,
+      "frontmatterInternalLinks": 7,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-10-llmo-explained.md",
+      "slug": "llmo-explained",
+      "title": "LLMO Explained",
+      "category": "AI Search Optimization",
+      "status": "Published",
+      "publishDate": "2026-08-10 12:00 PKT",
+      "updatedDate": "2026-08-13 21:07 PKT",
+      "wordCount": 3006,
+      "h2Count": 16,
+      "h3Count": 19,
+      "faqCount": 6,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 8,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-12-ai-visibility-strategy.md",
+      "slug": "ai-visibility-strategy",
+      "title": "AI Visibility Strategy",
+      "category": "AI Search Optimization",
+      "status": "Published",
+      "publishDate": "2026-08-12 12:00 PKT",
+      "updatedDate": "2026-08-13 21:07 PKT",
+      "wordCount": 2735,
+      "h2Count": 19,
+      "h3Count": 15,
+      "faqCount": 6,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 7,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-12-boosted-posts-vs-facebook-ads-pakistan.md",
+      "slug": "boosted-posts-vs-facebook-ads-pakistan",
+      "title": "Boosted Posts vs Facebook Ads in Pakistan",
+      "category": "Digital Marketing",
+      "status": "Draft Ready",
+      "publishDate": "2026-08-12 14:53 PKT",
+      "updatedDate": "2026-08-12 14:53 PKT",
+      "wordCount": 855,
+      "h2Count": 7,
+      "h3Count": 7,
+      "faqCount": 3,
+      "internalLinkCount": 2,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 3,
+      "cluster": {
+        "id": "ads-acquisition",
+        "label": "Paid Ads and Acquisition",
+        "pillar": "Google Ads + Customer Acquisition",
+        "terms": [
+          "google ads",
+          "facebook ads",
+          "instagram ads",
+          "meta ads",
+          "ppc",
+          "boosted",
+          "lead generation",
+          "digital advertising"
+        ]
+      },
+      "action": {
+        "status": "MERGE",
+        "priority": "Medium",
+        "target": "/blog/facebook-instagram-ads-pakistan-guide/",
+        "reasons": [
+          "Meta Ads, boosted posts, real estate lead generation, and budget posts should link into one stronger paid social guide."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-14-how-businesses-get-mentioned-by-chatgpt.md",
+      "slug": "how-businesses-get-mentioned-by-chatgpt",
+      "title": "How Businesses Get Mentioned by ChatGPT",
+      "category": "AI Search Optimization",
+      "status": "Published",
+      "publishDate": "2026-08-14 12:00 PKT",
+      "updatedDate": "2026-08-14 12:12 PKT",
+      "wordCount": 3370,
+      "h2Count": 16,
+      "h3Count": 26,
+      "faqCount": 6,
+      "internalLinkCount": 6,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 8,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-17-ai-citation-optimization-guide.md",
+      "slug": "ai-citation-optimization-guide",
+      "title": "AI Citation Optimization Guide",
+      "category": "AI Search Optimization",
+      "status": "publish",
+      "publishDate": "2026-08-17 12:00 PKT",
+      "updatedDate": "2026-08-18 22:26 PKT",
+      "wordCount": 3372,
+      "h2Count": 21,
+      "h3Count": 32,
+      "faqCount": 8,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 11,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-19-knowledge-graph-for-local-businesses.md",
+      "slug": "knowledge-graph-for-local-businesses",
+      "title": "Knowledge Graph for Local Businesses",
+      "category": "AI Search Optimization",
+      "status": "publish",
+      "publishDate": "2026-08-19 12:00 PKT",
+      "updatedDate": "2026-08-22 12:04 PKT",
+      "wordCount": 3386,
+      "h2Count": 17,
+      "h3Count": 35,
+      "faqCount": 7,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 9,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-21-semantic-search-in-2026.md",
+      "slug": "semantic-search-in-2026",
+      "title": "Semantic Search in 2026",
+      "category": "AI Search Optimization",
+      "status": "publish",
+      "publishDate": "2026-08-21 12:00 PKT",
+      "updatedDate": "2026-08-22 12:04 PKT",
+      "wordCount": 3484,
+      "h2Count": 24,
+      "h3Count": 28,
+      "faqCount": 8,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 10,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-24-ai-overviews-complete-guide.md",
+      "slug": "ai-overviews-complete-guide",
+      "title": "AI Overviews Complete Guide",
+      "category": "AI Search Optimization",
+      "status": "publish",
+      "publishDate": "2026-08-24 12:00 PKT",
+      "updatedDate": "2026-08-24 12:03 PKT",
+      "wordCount": 3699,
+      "h2Count": 19,
+      "h3Count": 30,
+      "faqCount": 7,
+      "internalLinkCount": 11,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 12,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-26-why-websites-lose-ai-visibility.md",
+      "slug": "why-websites-lose-ai-visibility",
+      "title": "Why Websites Lose AI Visibility",
+      "category": "AI Search Optimization",
+      "status": "publish",
+      "publishDate": "2026-08-26 12:00 PKT",
+      "updatedDate": "2026-08-26 12:00 PKT",
+      "wordCount": 3345,
+      "h2Count": 24,
+      "h3Count": 17,
+      "faqCount": 8,
+      "internalLinkCount": 14,
+      "externalLinkCount": 7,
+      "frontmatterInternalLinks": 14,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-28-top-ai-search-ranking-factors.md",
+      "slug": "top-ai-search-ranking-factors",
+      "title": "Top AI Search Ranking Factors",
+      "category": "AI Search Optimization",
+      "status": "publish",
+      "publishDate": "2026-08-28 12:00 PKT",
+      "updatedDate": "2026-08-28 12:00 PKT",
+      "wordCount": 3449,
+      "h2Count": 27,
+      "h3Count": 12,
+      "faqCount": 8,
+      "internalLinkCount": 10,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 15,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-08-31-building-ai-authority.md",
+      "slug": "building-ai-authority",
+      "title": "Building AI Authority",
+      "category": "AI Search Optimization",
+      "status": "publish",
+      "publishDate": "2026-08-31 00:20 PKT",
+      "updatedDate": "2026-08-31 00:20 PKT",
+      "wordCount": 3293,
+      "h2Count": 26,
+      "h3Count": 8,
+      "faqCount": 8,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 17,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/what-is-ai-search-optimization/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the ai-search-foundations hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-02-website-vs-landing-page.md",
+      "slug": "website-vs-landing-page",
+      "title": "Website vs Landing Page",
+      "category": "Web Development",
+      "status": "publish",
+      "publishDate": "2026-09-02 12:00 PKT",
+      "updatedDate": "2026-09-02 12:00 PKT",
+      "wordCount": 3290,
+      "h2Count": 17,
+      "h3Count": 30,
+      "faqCount": 8,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 8,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-04-custom-website-vs-wordpress.md",
+      "slug": "custom-website-vs-wordpress",
+      "title": "Custom Website vs WordPress",
+      "category": "Web Development",
+      "status": "publish",
+      "publishDate": "2026-09-04 12:00 PKT",
+      "updatedDate": "2026-09-04 12:00 PKT",
+      "wordCount": 3905,
+      "h2Count": 20,
+      "h3Count": 21,
+      "faqCount": 8,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 8,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-07-nextjs-vs-wordpress.md",
+      "slug": "nextjs-vs-wordpress",
+      "title": "Next.js vs WordPress",
+      "category": "Web Development",
+      "status": "publish",
+      "publishDate": "2026-09-07 11:00 PKT",
+      "updatedDate": "2026-09-07 11:10 PKT",
+      "wordCount": 3199,
+      "h2Count": 25,
+      "h3Count": 28,
+      "faqCount": 9,
+      "internalLinkCount": 1,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 7,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-09-laravel-vs-wordpress.md",
+      "slug": "laravel-vs-wordpress",
+      "title": "Laravel vs WordPress",
+      "category": "Web Development",
+      "status": "publish",
+      "publishDate": "2026-09-09 12:00 PKT",
+      "updatedDate": "2026-09-12 12:20 PKT",
+      "wordCount": 2711,
+      "h2Count": 20,
+      "h3Count": 8,
+      "faqCount": 6,
+      "internalLinkCount": 5,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 7,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-11-why-cheap-websites-fail.md",
+      "slug": "why-cheap-websites-fail",
+      "title": "Why Cheap Websites Fail",
+      "category": "Web Development",
+      "status": "publish",
+      "publishDate": "2026-09-11 12:00 PKT",
+      "updatedDate": "2026-09-12 12:20 PKT",
+      "wordCount": 2362,
+      "h2Count": 20,
+      "h3Count": 6,
+      "faqCount": 6,
+      "internalLinkCount": 5,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 7,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-14-local-seo-ranking-factors-rawalpindi-2026.md",
+      "slug": "local-seo-ranking-factors-rawalpindi-2026",
+      "title": "Local SEO Ranking Factors for Rawalpindi Businesses in 2026",
+      "category": "SEO",
+      "status": "Draft Ready",
+      "publishDate": "2026-09-14 12:30 PKT",
+      "updatedDate": "2026-10-09 12:00 PKT",
+      "wordCount": 1138,
+      "h2Count": 15,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 8,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 9,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/local-seo-ranking-factors-rawalpindi-2026/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-14-website-mistakes-that-kill-sales.md",
+      "slug": "website-mistakes-that-kill-sales",
+      "title": "Website Mistakes That Kill Sales",
+      "category": "Web Development",
+      "status": "publish",
+      "publishDate": "2026-09-14 12:00 PKT",
+      "updatedDate": "",
+      "wordCount": 3141,
+      "h2Count": 10,
+      "h3Count": 20,
+      "faqCount": 5,
+      "internalLinkCount": 4,
+      "externalLinkCount": 4,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-16-google-business-profile-clinics-islamabad-rawalpindi.md",
+      "slug": "google-business-profile-clinics-islamabad-rawalpindi",
+      "title": "Google Business Profile Optimization for Clinics in Islamabad and Rawalpindi",
+      "category": "SEO",
+      "status": "Draft Ready",
+      "publishDate": "2026-09-16 12:30 PKT",
+      "updatedDate": "2026-10-09 12:00 PKT",
+      "wordCount": 985,
+      "h2Count": 15,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 3,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 10,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/google-business-profile-clinics-islamabad-rawalpindi/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-16-modern-business-website-checklist.md",
+      "slug": "modern-business-website-checklist",
+      "title": "Modern Business Website Checklist",
+      "category": "Web Development",
+      "status": "publish",
+      "publishDate": "2026-09-16 12:00 PKT",
+      "updatedDate": "2026-10-08 18:00 PKT",
+      "wordCount": 2330,
+      "h2Count": 18,
+      "h3Count": 13,
+      "faqCount": 6,
+      "internalLinkCount": 14,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 14,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Canonical hub for merge group: website-development-buying-guide.",
+          "Needs freshness review and current-year validation."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-18-core-web-vitals-guide.md",
+      "slug": "core-web-vitals-guide",
+      "title": "Core Web Vitals Guide",
+      "category": "Web Development",
+      "status": "publish",
+      "publishDate": "2026-09-18 12:00 PKT",
+      "updatedDate": "",
+      "wordCount": 4296,
+      "h2Count": 16,
+      "h3Count": 16,
+      "faqCount": 4,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 8,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-18-restaurants-islamabad-google-maps-visibility.md",
+      "slug": "restaurants-islamabad-google-maps-visibility",
+      "title": "How Restaurants in Islamabad Can Improve Google Maps Visibility Without Discounts",
+      "category": "SEO",
+      "status": "Draft Ready",
+      "publishDate": "2026-09-18 12:30 PKT",
+      "updatedDate": "2026-09-19 10:30 PKT",
+      "wordCount": 1018,
+      "h2Count": 16,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 3,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/restaurants-islamabad-google-maps-visibility/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-21-mobile-first-website-design.md",
+      "slug": "mobile-first-website-design",
+      "title": "Mobile First Website Design",
+      "category": "Web Development",
+      "status": "publish",
+      "publishDate": "2026-09-21 12:00 PKT",
+      "updatedDate": "",
+      "wordCount": 4248,
+      "h2Count": 16,
+      "h3Count": 16,
+      "faqCount": 4,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 8,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-23-website-speed-optimization.md",
+      "slug": "website-speed-optimization",
+      "title": "Website Speed Optimization",
+      "category": "Web Development",
+      "status": "publish",
+      "publishDate": "2026-09-23 12:00 PKT",
+      "updatedDate": "",
+      "wordCount": 4375,
+      "h2Count": 16,
+      "h3Count": 16,
+      "faqCount": 4,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 8,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-25-ux-vs-ui.md",
+      "slug": "ux-vs-ui",
+      "title": "UX vs UI: What Actually Makes a Business Website Work",
+      "category": "Website Development",
+      "status": "published",
+      "publishDate": "2026-09-25 12:00",
+      "updatedDate": "2026-09-26 12:00",
+      "wordCount": 2517,
+      "h2Count": 16,
+      "h3Count": 12,
+      "faqCount": 5,
+      "internalLinkCount": 1,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 0,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-28-website-security-checklist.md",
+      "slug": "website-security-checklist",
+      "title": "Website Security Checklist: Protect Your Business Site Before It Becomes a Problem",
+      "category": "Website Development",
+      "status": "published",
+      "publishDate": "2026-09-28 12:00",
+      "updatedDate": "2026-09-28 12:00",
+      "wordCount": 2995,
+      "h2Count": 15,
+      "h3Count": 20,
+      "faqCount": 5,
+      "internalLinkCount": 4,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 0,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-09-30-website-maintenance-guide.md",
+      "slug": "website-maintenance-guide",
+      "title": "Website Maintenance Guide: Keep Your Business Site Fast, Safe and Reliable",
+      "category": "Website Development",
+      "status": "published",
+      "publishDate": "2026-09-30 12:00",
+      "updatedDate": "2026-09-30 12:00",
+      "wordCount": 3035,
+      "h2Count": 16,
+      "h3Count": 22,
+      "faqCount": 5,
+      "internalLinkCount": 9,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 0,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-10-02-why-businesses-need-custom-websites.md",
+      "slug": "why-businesses-need-custom-websites",
+      "title": "Why Businesses Need Custom Websites: The Case for a Site Built Around Growth",
+      "category": "Website Development",
+      "status": "published",
+      "publishDate": "2026-10-02 12:00",
+      "updatedDate": "2026-10-02 12:00",
+      "wordCount": 2956,
+      "h2Count": 16,
+      "h3Count": 10,
+      "faqCount": 5,
+      "internalLinkCount": 7,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 0,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-10-05-website-redesign-checklist.md",
+      "slug": "website-redesign-checklist",
+      "title": "Website Redesign Checklist",
+      "category": "Website Development",
+      "status": "published",
+      "publishDate": "2026-10-05 12:00",
+      "updatedDate": "2026-10-05 12:00",
+      "wordCount": 3763,
+      "h2Count": 18,
+      "h3Count": 21,
+      "faqCount": 6,
+      "internalLinkCount": 0,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 0,
+      "cluster": {
+        "id": "website-development",
+        "label": "Website Development",
+        "pillar": "Website Development",
+        "terms": [
+          "website",
+          "web design",
+          "wordpress",
+          "nextjs",
+          "next.js",
+          "laravel",
+          "core web vitals",
+          "speed",
+          "ui",
+          "ux",
+          "security",
+          "redesign"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE_AS_SPOKE",
+        "priority": "High",
+        "target": "/blog/modern-business-website-checklist/",
+        "reasons": [
+          "Keep as a supporting spoke, but strengthen internal links and make its relationship to the website-development-buying-guide hub explicit."
+        ]
+      }
+    },
+    {
+      "file": "2026-10-07-complete-local-seo-guide.md",
+      "slug": "complete-local-seo-guide",
+      "title": "Complete Local SEO Guide",
+      "category": "SEO",
+      "status": "published",
+      "publishDate": "2026-10-07 12:00",
+      "updatedDate": "2026-10-09 12:00 PKT",
+      "wordCount": 2934,
+      "h2Count": 18,
+      "h3Count": 16,
+      "faqCount": 5,
+      "internalLinkCount": 11,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 0,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/complete-local-seo-guide/",
+        "reasons": [
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-10-09-google-business-profile-optimization.md",
+      "slug": "google-business-profile-optimization",
+      "title": "Google Business Profile Optimization: A Practical Guide for 2026",
+      "category": "Local SEO",
+      "status": "published",
+      "publishDate": "2026-10-09 12:00",
+      "updatedDate": "2026-10-10 12:00 PKT",
+      "wordCount": 2935,
+      "h2Count": 16,
+      "h3Count": 15,
+      "faqCount": 5,
+      "internalLinkCount": 5,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 0,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/google-business-profile-optimization/",
+        "reasons": [
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    },
+    {
+      "file": "2026-10-12-local-ranking-factors.md",
+      "slug": "local-ranking-factors",
+      "title": "Local Ranking Factors: What Moves Local Visibility in 2026",
+      "category": "Local SEO",
+      "status": "published",
+      "publishDate": "2026-10-12 12:00",
+      "updatedDate": "2026-10-12 12:00 PKT",
+      "wordCount": 2616,
+      "h2Count": 11,
+      "h3Count": 19,
+      "faqCount": 8,
+      "internalLinkCount": 6,
+      "externalLinkCount": 1,
+      "frontmatterInternalLinks": 0,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/local-ranking-factors/",
+        "reasons": [
+          "Needs freshness review and current-year validation."
+        ]
+      }
+    },
+    {
+      "file": "2026-10-14-anatomy-ai-ready-business-website.md",
+      "slug": "anatomy-ai-ready-business-website",
+      "title": "The Anatomy of an AI-Ready Business Website",
+      "category": "Website Development",
+      "status": "published",
+      "publishDate": "2026-10-14 00:00",
+      "updatedDate": "2026-10-14 00:00 PKT",
+      "wordCount": 1385,
+      "h2Count": 11,
+      "h3Count": 4,
+      "faqCount": 4,
+      "internalLinkCount": 4,
+      "externalLinkCount": 2,
+      "frontmatterInternalLinks": 5,
+      "cluster": {
+        "id": "seo-ai-visibility",
+        "label": "SEO and AI Visibility",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "ai",
+          "aeo",
+          "geo",
+          "llmo",
+          "chatgpt",
+          "citation",
+          "overview",
+          "semantic",
+          "knowledge graph",
+          "search optimization"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/anatomy-ai-ready-business-website/",
+        "reasons": [
+          "Needs more depth, original examples, screenshots, data, or clearer methodology.",
+          "Needs freshness review and current-year validation."
+        ]
+      }
+    },
+    {
+      "file": "2026-10-14-google-maps-ranking.md",
+      "slug": "google-maps-ranking",
+      "title": "Google Maps Ranking: A Practical Guide for Local Businesses",
+      "category": "Local SEO",
+      "status": "published",
+      "publishDate": "2026-10-14 12:00",
+      "updatedDate": "2026-10-14 12:00 PKT",
+      "wordCount": 3240,
+      "h2Count": 15,
+      "h3Count": 23,
+      "faqCount": 7,
+      "internalLinkCount": 6,
+      "externalLinkCount": 1,
+      "frontmatterInternalLinks": 0,
+      "cluster": {
+        "id": "local-seo-gbp",
+        "label": "Local SEO and Google Business Profile",
+        "pillar": "SEO + AI Visibility",
+        "terms": [
+          "google business profile",
+          "google maps",
+          "local seo",
+          "google reviews",
+          "near me",
+          "restaurants",
+          "dentists",
+          "salons",
+          "clinics"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "High",
+        "target": "/blog/google-maps-ranking/",
+        "reasons": [
+          "Needs freshness review and current-year validation."
+        ]
+      }
+    },
+    {
+      "file": "2026-10-16-technical-seo-checklist.md",
+      "slug": "technical-seo-checklist",
+      "title": "Technical SEO Checklist: A Practical Guide for 2026",
+      "category": "SEO",
+      "status": "published",
+      "publishDate": "2026-10-16 12:00",
+      "updatedDate": "2026-10-17 12:00 PKT",
+      "wordCount": 2904,
+      "h2Count": 15,
+      "h3Count": 19,
+      "faqCount": 5,
+      "internalLinkCount": 5,
+      "externalLinkCount": 0,
+      "frontmatterInternalLinks": 0,
+      "cluster": {
+        "id": "brand-social",
+        "label": "Brand, Social and Creative",
+        "pillar": "Supporting Expertise",
+        "terms": [
+          "instagram",
+          "social media",
+          "influencer",
+          "creative marketing",
+          "brand"
+        ]
+      },
+      "action": {
+        "status": "IMPROVE",
+        "priority": "Medium",
+        "target": "/blog/technical-seo-checklist/",
+        "reasons": [
+          "Needs freshness review and current-year validation.",
+          "Needs at least one authoritative supporting citation for factual claims."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "gzip round-trip identical",
+    "Vary header",
+    "gzip q=0 respected",
+    "HEAD has no body",
+    "WebP not recompressed"
+  ],
+  "htmlBytes": 356050,
+  "gzipBytes": 51907
+}

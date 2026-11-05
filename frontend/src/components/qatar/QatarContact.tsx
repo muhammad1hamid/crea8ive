@@ -1,0 +1,50 @@
+'use client';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
+import { COMPANY, QATAR_CONTACT } from '@/data/company';
+import services from '@/data/qatar/services.json';
+import { qatarEvent } from './QatarEvents';
+const arabicServices=['التسويق الرقمي','تحسين محركات البحث','الظهور في الذكاء الاصطناعي','GEO / AEO / LLMO','البحث المحلي','ملف النشاط التجاري على Google','إعلانات Google','إعلانات Meta','إدارة التواصل الاجتماعي','صناعة المحتوى','إنتاج الفيديو','التصوير','الهوية والعلامة التجارية','تطوير المواقع','التجارة الإلكترونية','أتمتة الذكاء الاصطناعي','أتمتة واتساب','أتمتة إدارة العملاء','البرمجيات المخصصة','تطوير SaaS'];
+export default function QatarContact({ar=false}:{ar?:boolean}){
+ const [status,setStatus]=useState<'idle'|'saving'|'success'|'error'>('idle');const [message,setMessage]=useState('');
+ const [selectedService,setSelectedService]=useState('');
+ // Query parameters are browser state and initialize this client-only legacy form after hydration.
+ // eslint-disable-next-line react-hooks/set-state-in-effect
+ useEffect(()=>{const requested=new URLSearchParams(window.location.search).get('service');if(requested&&(requested==='complete-growth-system'||services.some(s=>s.slug===requested)))setSelectedService(requested);},[]);
+ const requestId=useRef('');const started=useRef(false);
+ const text=(en:string,arabic:string)=>ar?arabic:en;
+ function start(){if(!started.current){started.current=true;qatarEvent('qatar_form_start');}}
+ async function submit(e:FormEvent<HTMLFormElement>){
+  e.preventDefault();if(status==='saving')return;const form=e.currentTarget;if(!form.reportValidity())return;
+  const data=new FormData(form);const query=new URLSearchParams(window.location.search);requestId.current ||= crypto.randomUUID();
+  let entry:Record<string,string>={};try{entry=JSON.parse(sessionStorage.getItem('crea8iv-qatar-entry')||'{}');}catch{}
+  const attribution=Object.fromEntries(['source','medium','campaign','content'].map(k=>[k,(query.get(`utm_${k}`)||entry[k]||'').slice(0,150)]));
+  let referrer='';try{referrer=document.referrer?new URL(document.referrer).origin:'';}catch{}
+  setStatus('saving');setMessage('');
+  try{
+   const response=await fetch('/enquiries/submit.php',{method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(15000),body:JSON.stringify({...Object.fromEntries(data),requirements:String(data.get('requirements')||'').trim()||String(data.get('goal')||''),...attribution,consent:data.get('consent')==='on',country:'qatar',type:'project',language:ar?'ar-QA':'en-QA',page:window.location.pathname,landing_page:entry.landing_page||window.location.pathname,referrer:entry.referrer||referrer,requestId:requestId.current})});
+   const result=await response.json();if(!response.ok||result.ok!==true||typeof result.reference!=='string')throw new Error('not_saved');
+   setStatus('success');setMessage(text(`Your enquiry is saved. Reference: ${result.reference}. Our team will contact you to arrange the next step. An appointment is not yet confirmed.`,`تم حفظ طلبك. الرقم المرجعي: ${result.reference}. سيتواصل معك الفريق لترتيب الخطوة التالية. لم يتم تأكيد موعد بعد.`));
+   qatarEvent('qatar_form_submit',{service:String(data.get('service'))});
+  }catch{setStatus('error');setMessage(text(`We could not confirm your enquiry was saved. Please retry, or email ${QATAR_CONTACT.email}.`,`تعذّر تأكيد حفظ الطلب. أعد المحاولة أو راسلنا على ${QATAR_CONTACT.email}.`));}
+ }
+ if(status==='success')return <div className="qa-notice" role="status"><h2>{text('Thank you.','شكراً لك.')}</h2><p>{message}</p><a href={ar?'/qa/ar/':'/qa/'}>{text('Return to Qatar home','العودة إلى صفحة قطر')}</a></div>;
+ return <>
+ <p className="qa-form-note">{text('Required fields are marked *. This form is for business enquiries. Do not include payment details, passwords or patient information.','الحقول المطلوبة مميّزة بعلامة *. هذا النموذج للاستفسارات التجارية. يرجى عدم إرسال بيانات الدفع أو كلمات المرور أو معلومات المرضى.')}</p>
+ <form className="qa-form" toolname={ar?'submitQatarGrowthEnquiryArabic':'submitQatarGrowthEnquiry'} tooldescription={text('Submits a Qatar market growth audit enquiry to Crea8iv Media for business follow-up.','يرسل طلب مراجعة نمو لسوق قطر إلى Crea8iv Media للمتابعة التجارية.')} onSubmit={submit} onFocusCapture={start}>
+ <label className="qa-field">{text('Your name *','الاسم *')}<input name="name" required maxLength={120} autoComplete="name" toolparamdescription={text('The full name of the person submitting the Qatar business enquiry.','الاسم الكامل لمقدم طلب الأعمال في قطر.')}/></label>
+ <label className="qa-field">{text('Company *','الشركة *')}<input name="company" required maxLength={160} autoComplete="organization" toolparamdescription={text('The company or brand that needs Qatar market growth support.','الشركة أو العلامة التجارية التي تحتاج إلى دعم نمو في سوق قطر.')}/></label>
+ <label className="qa-field">{text('Phone with country code *','رقم الهاتف مع رمز الدولة *')}<input name="phone" type="tel" required maxLength={30} pattern={String.raw`[+]?[0-9 \(\)\-]{7,30}`} placeholder="+974 …" autoComplete="tel" dir="ltr" toolparamdescription={text('A business phone number with country code for follow-up.','رقم هاتف للأعمال مع رمز الدولة للمتابعة.')}/><small>{text('A Qatar or international business number is accepted.','يُقبل رقم أعمال قطري أو دولي.')}</small></label>
+ <label className="qa-field">{text('Email *','البريد الإلكتروني *')}<input name="email" type="email" required maxLength={254} autoComplete="email" dir="ltr" toolparamdescription={text('The email address Crea8iv Media should use for follow-up.','البريد الإلكتروني الذي تستخدمه Crea8iv Media للمتابعة.')}/></label>
+ <label className="qa-field">{text('Website','الموقع الإلكتروني')}<input name="website" type="url" maxLength={500} placeholder="https://" autoComplete="url" dir="ltr" toolparamdescription={text('The company website or public profile URL, if available.','رابط موقع الشركة أو ملفها العام إن وجد.')}/></label>
+ <label className="qa-field">{text('Service required *','الخدمة المطلوبة *')}<select name="service" required value={selectedService} onChange={e=>setSelectedService(e.target.value)} toolparamdescription={text('The primary Qatar market service the business is requesting.','الخدمة الأساسية المطلوبة لسوق قطر.')}><option value="" disabled>{text('Choose a service','اختر الخدمة')}</option>{services.map((s,i)=><option key={s.slug} value={s.slug}>{ar?arabicServices[i]:s.name}</option>)}<option value="complete-growth-system">{text('Complete Growth System','منظومة نمو متكاملة')}</option></select></label>
+ <label className="qa-field">{text('Monthly marketing budget *','ميزانية التسويق الشهرية *')}<select name="budget" required defaultValue="" toolparamdescription={text('The expected monthly marketing budget range in QAR.','نطاق ميزانية التسويق الشهرية المتوقعة بالريال القطري.')}><option value="" disabled>{text('Choose a QAR range','اختر النطاق بالريال القطري')}</option><option value="under-5000">{text('Under QAR 5,000','أقل من ٥٬٠٠٠ ر.ق')}</option><option value="5000-15000">QAR 5,000–15,000</option><option value="15000-30000">QAR 15,000–30,000</option><option value="over-30000">{text('Over QAR 30,000','أكثر من ٣٠٬٠٠٠ ر.ق')}</option><option value="scope-first">{text('Help me define the scope first','أحتاج إلى تحديد النطاق أولاً')}</option></select></label>
+ <label className="qa-field">{text('Preferred contact method *','طريقة التواصل المفضلة *')}<select name="preferredContact" required defaultValue="email" toolparamdescription={text('The preferred follow-up channel: email, phone, or WhatsApp.','قناة المتابعة المفضلة: البريد الإلكتروني أو الهاتف أو واتساب.')}><option value="email">{text('Email','البريد الإلكتروني')}</option><option value="phone">{text('Phone','الهاتف')}</option><option value="whatsapp">{text('WhatsApp','واتساب')}</option></select></label>
+ <label className="qa-field qa-full">{text('Main business goal *','الهدف التجاري الرئيسي *')}<input name="goal" required maxLength={500} placeholder={text('For example: more qualified property viewings','مثال: زيادة معاينات العقارات مع عملاء مؤهلين')} toolparamdescription={text('The main business outcome the company wants from Qatar market growth work.','النتيجة التجارية الرئيسية المطلوبة من العمل على نمو سوق قطر.')}/></label>
+ <label className="qa-field qa-full">{text('Additional details (optional)','تفاصيل إضافية (اختياري)')}<textarea name="requirements" rows={3} maxLength={4000} toolparamdescription={text('Optional additional project context, requirements, timeline, or constraints.','سياق إضافي اختياري عن المشروع أو المتطلبات أو الجدول الزمني أو القيود.')}/></label>
+ <div hidden aria-hidden="true"><label>Leave empty<input name="website_check" tabIndex={-1} autoComplete="off"/></label></div>
+ <label className="qa-consent qa-full"><input type="checkbox" name="consent" required toolparamdescription={text('Consent for Crea8iv Media to store the Qatar enquiry and contact the sender through the selected method.','الموافقة على حفظ الطلب والتواصل مع المرسل بالطريقة المختارة.')}/><span>{text('I agree to Crea8iv storing this enquiry and contacting me about it through my selected method, as explained in the ','أوافق على حفظ هذا الطلب والتواصل معي بشأنه عبر الطريقة التي اخترتها، وفقاً لـ ')}<a href="/privacy-policy/">{text('Privacy Policy','سياسة الخصوصية')}</a>.</span></label>
+ {status==='error'&&<p role="alert" className="qa-notice qa-full">{message}</p>}
+ <button className="qa-button" disabled={status==='saving'}>{status==='saving'?text('Saving enquiry…','جارٍ حفظ الطلب…'):text('Request My Qatar Growth Audit','اطلب مراجعة نمو لشركتي في قطر')}</button>
+ <p className="qa-form-note">{text('Prefer a conversation?','تفضّل التواصل المباشر؟')} <a className="qa-text-link" href={QATAR_CONTACT.whatsapp}>{ar?QATAR_CONTACT.labelAr:QATAR_CONTACT.label}</a><br/>{text('Official email:','البريد الرسمي:')} <a href={`mailto:${COMPANY.qatarEmail||COMPANY.email}`}>{COMPANY.qatarEmail||COMPANY.email}</a></p>
+ </form></>;
+}

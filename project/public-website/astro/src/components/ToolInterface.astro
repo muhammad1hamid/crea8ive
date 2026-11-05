@@ -1,0 +1,618 @@
+---
+import type { ToolPage } from "../data/tools";
+
+interface Props {
+  tool: ToolPage;
+}
+
+const { tool } = Astro.props;
+const auditModes = new Set(["ai-visibility", "local-seo", "seo-audit", "website-performance"]);
+const isAudit = auditModes.has(tool.mode);
+const isSchema = tool.mode === "schema-generator";
+
+const moneyFields: Record<string, { name: string; label: string; value: string; type?: string; suffix?: string }[]> = {
+  "marketing-roi": [
+    { name: "spend", label: "Marketing spend", value: "100000" },
+    { name: "leads", label: "Leads generated", value: "120" },
+    { name: "closeRate", label: "Lead-to-customer rate", value: "12", suffix: "%" },
+    { name: "saleValue", label: "Average sale value", value: "25000" },
+    { name: "margin", label: "Gross margin", value: "55", suffix: "%" },
+  ],
+  "meta-ads": [
+    { name: "budget", label: "Monthly budget", value: "150000" },
+    { name: "cpl", label: "Average cost per lead", value: "1200" },
+    { name: "closeRate", label: "Lead-to-customer rate", value: "10", suffix: "%" },
+    { name: "customerValue", label: "Average customer value", value: "30000" },
+  ],
+  "google-ads": [
+    { name: "budget", label: "Monthly budget", value: "200000" },
+    { name: "cpc", label: "Average CPC", value: "180" },
+    { name: "landingRate", label: "Landing-page conversion rate", value: "6", suffix: "%" },
+    { name: "closeRate", label: "Lead-to-sale rate", value: "18", suffix: "%" },
+    { name: "saleValue", label: "Average sale value", value: "35000" },
+  ],
+  "patient-retention": [
+    { name: "inactivePatients", label: "Inactive patients", value: "1000" },
+    { name: "treatmentValue", label: "Average treatment value", value: "12000" },
+    { name: "bookingRate", label: "Expected booking rate", value: "4", suffix: "%" },
+    { name: "monthlyCost", label: "Monthly system/campaign cost", value: "65000" },
+  ],
+  "website-roi": [
+    { name: "visitors", label: "Monthly visitors", value: "3000" },
+    { name: "currentRate", label: "Current conversion rate", value: "1", suffix: "%" },
+    { name: "targetRate", label: "Target conversion rate", value: "2.5", suffix: "%" },
+    { name: "closeRate", label: "Lead-to-sale rate", value: "15", suffix: "%" },
+    { name: "customerValue", label: "Average customer value", value: "30000" },
+  ],
+};
+
+const fields = moneyFields[tool.mode] ?? [];
+---
+<section class="bg-black px-6 py-16 text-white" id="use-tool">
+  <div class="mx-auto grid max-w-[1400px] gap-8 lg:grid-cols-[.92fr_1.08fr]">
+    <div>
+      <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">Use the Tool</p>
+      <h2 class="mt-5 font-orbitron text-3xl font-bold leading-tight sm:text-4xl">{tool.name}</h2>
+      <p class="mt-4 text-base leading-7 text-white/70">{tool.interpretation}</p>
+      <div class="mt-6 grid gap-3">
+        {tool.checks.map((item) => (
+          <div class="border border-white/10 bg-white/[.03] p-4 text-sm leading-6 text-white/70">{item}</div>
+        ))}
+      </div>
+    </div>
+
+    <div class="border border-white/10 bg-[#080808] p-5 sm:p-7">
+      <form data-tool-form data-mode={tool.mode} data-tool-name={tool.name} class="grid gap-5">
+        {isAudit && (
+          <>
+            <div class="grid gap-4 md:grid-cols-2">
+              <label class="grid gap-2 text-sm text-white/70">
+                Website URL
+                <input name="website" type="url" placeholder="https://example.com" class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand" required />
+              </label>
+              <label class="grid gap-2 text-sm text-white/70">
+                Brand / business name
+                <input name="brand" type="text" placeholder="Business name" class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand" required />
+              </label>
+              <label class="grid gap-2 text-sm text-white/70">
+                Industry
+                <input name="industry" type="text" placeholder="Clinic, restaurant, real estate..." class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand" />
+              </label>
+              <label class="grid gap-2 text-sm text-white/70">
+                Location
+                <input name="location" type="text" placeholder="Rawalpindi, Islamabad..." class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand" />
+              </label>
+            </div>
+            <label class="grid gap-2 text-sm text-white/70">
+              Primary services or page focus
+              <textarea name="services" rows="3" placeholder="List the main services, offers, or page goal" class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand"></textarea>
+            </label>
+            <div data-audit-checks class="grid gap-3 md:grid-cols-2"></div>
+          </>
+        )}
+
+        {!isAudit && !isSchema && (
+          <>
+            {tool.mode === "meta-ads" && (
+              <label class="grid gap-2 text-sm text-white/70">
+                Industry
+                <select name="industry" class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand">
+                  <option>Local services</option>
+                  <option>Healthcare / clinic</option>
+                  <option>Salon / aesthetics</option>
+                  <option>Restaurant</option>
+                  <option>Real estate</option>
+                  <option>Ecommerce</option>
+                </select>
+              </label>
+            )}
+            <div class="grid gap-4 md:grid-cols-2">
+              {fields.map((field) => (
+                <label class="grid gap-2 text-sm text-white/70">
+                  {field.label}
+                  <span class="flex border border-white/10 bg-black focus-within:border-brand">
+                    <input name={field.name} type="number" step="any" value={field.value} class="min-w-0 flex-1 bg-transparent px-4 py-3 text-white outline-none" required />
+                    {field.suffix && <span class="grid place-items-center px-3 text-white/45">{field.suffix}</span>}
+                  </span>
+                </label>
+              ))}
+            </div>
+          </>
+        )}
+
+        {isSchema && (
+          <>
+            <label class="grid gap-2 text-sm text-white/70">
+              Schema type
+              <select name="schemaType" class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand">
+                <option>Organization</option>
+                <option>LocalBusiness</option>
+                <option>Person</option>
+                <option>Service</option>
+                <option>Article</option>
+                <option>FAQPage</option>
+                <option>BreadcrumbList</option>
+              </select>
+            </label>
+            <div class="grid gap-4 md:grid-cols-2">
+              <label class="grid gap-2 text-sm text-white/70">Name <input name="name" type="text" class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand" required /></label>
+              <label class="grid gap-2 text-sm text-white/70">URL <input name="url" type="url" class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand" placeholder="https://example.com/page/" /></label>
+              <label class="grid gap-2 text-sm text-white/70">Description <input name="description" type="text" class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand" /></label>
+              <label class="grid gap-2 text-sm text-white/70">Image URL <input name="image" type="url" class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand" /></label>
+            </div>
+            <label class="grid gap-2 text-sm text-white/70">
+              Details, FAQs, or breadcrumbs
+              <textarea name="details" rows="5" placeholder="For FAQPage use one Q: question / A: answer per pair. For BreadcrumbList use one URL and label per line." class="border border-white/10 bg-black px-4 py-3 text-white outline-none focus:border-brand"></textarea>
+            </label>
+          </>
+        )}
+
+        <button type="submit" class="border border-brand bg-brand px-6 py-3 font-orbitron text-xs uppercase tracking-wide text-white">Show My Result</button>
+      </form>
+
+      <section data-tool-result class="mt-8 hidden border-t border-white/10 pt-8" aria-live="polite">
+        <div class="grid gap-4 md:grid-cols-[180px_1fr]">
+          <div class="border border-brand/60 bg-brand/10 p-5">
+            <p class="font-orbitron text-xs uppercase tracking-wide text-brand" data-result-label>Score</p>
+            <p class="mt-3 font-orbitron text-4xl font-bold text-white" data-result-score></p>
+          </div>
+          <div>
+            <h3 class="font-orbitron text-2xl font-semibold" data-result-title></h3>
+            <p class="mt-3 text-sm leading-6 text-white/70" data-result-summary></p>
+            <div class="mt-5 grid gap-3 sm:grid-cols-2" data-result-metrics></div>
+          </div>
+        </div>
+
+        <div class="mt-6 grid gap-5 lg:grid-cols-3">
+          <div>
+            <h4 class="font-orbitron text-sm uppercase tracking-wide text-brand">What's Working</h4>
+            <ul class="mt-3 grid gap-2 text-sm leading-6 text-white/70" data-result-working></ul>
+          </div>
+          <div>
+            <h4 class="font-orbitron text-sm uppercase tracking-wide text-brand">What Hurts Visibility</h4>
+            <ul class="mt-3 grid gap-2 text-sm leading-6 text-white/70" data-result-problems></ul>
+          </div>
+          <div>
+            <h4 class="font-orbitron text-sm uppercase tracking-wide text-brand">Fix First</h4>
+            <ul class="mt-3 grid gap-2 text-sm leading-6 text-white/70" data-result-actions></ul>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button type="button" data-share-result class="border border-white/15 px-4 py-3 font-orbitron text-xs uppercase tracking-wide text-white">Share Result</button>
+          <button type="button" data-download-report class="border border-white/15 px-4 py-3 font-orbitron text-xs uppercase tracking-wide text-white">Download Report</button>
+          <button type="button" data-rerun-tool class="border border-white/15 px-4 py-3 font-orbitron text-xs uppercase tracking-wide text-white">Rerun Tool</button>
+          <a href={tool.serviceHref} class="border border-brand px-4 py-3 font-orbitron text-xs uppercase tracking-wide text-brand">{tool.serviceLabel}</a>
+        </div>
+
+        <form data-lead-form class="mt-8 grid gap-4 border border-white/10 bg-black p-5">
+          <div>
+            <h4 class="font-orbitron text-xl font-semibold">Get the detailed report</h4>
+            <p class="mt-2 text-sm leading-6 text-white/60">The primary result is free. Share your details only if you want Crea8iv Media to review the context.</p>
+          </div>
+          <div class="grid gap-4 md:grid-cols-2">
+            <label class="grid gap-2 text-sm text-white/70">Name <input name="leadName" type="text" class="border border-white/10 bg-[#080808] px-4 py-3 text-white outline-none focus:border-brand" required /></label>
+            <label class="grid gap-2 text-sm text-white/70">Work email <input name="leadEmail" type="email" class="border border-white/10 bg-[#080808] px-4 py-3 text-white outline-none focus:border-brand" required /></label>
+            <label class="grid gap-2 text-sm text-white/70">Website <input name="leadWebsite" type="url" class="border border-white/10 bg-[#080808] px-4 py-3 text-white outline-none focus:border-brand" /></label>
+            <label class="grid gap-2 text-sm text-white/70">Phone / WhatsApp <input name="leadPhone" type="tel" class="border border-white/10 bg-[#080808] px-4 py-3 text-white outline-none focus:border-brand" /></label>
+          </div>
+          <label class="flex gap-3 text-xs leading-5 text-white/60">
+            <input name="consent" type="checkbox" class="mt-1" required />
+            I agree to share this tool result with Crea8iv Media for follow-up about my detailed report.
+          </label>
+          <button type="submit" class="border border-brand bg-brand px-6 py-3 font-orbitron text-xs uppercase tracking-wide text-white">Send My Detailed Report</button>
+          <p class="hidden text-sm text-brand" data-lead-status></p>
+        </form>
+      </section>
+    </div>
+  </div>
+</section>
+
+<script>
+  // @ts-nocheck
+  const auditProfiles = {
+    "ai-visibility": [
+      ["entity", "Entity Clarity", "Brand name, industry, location, and services are stated clearly on key pages.", 12],
+      ["entity", "Entity Clarity", "About/contact pages identify the organization with consistent facts.", 10],
+      ["schema", "Structured Data", "Organization, LocalBusiness, Service, Article, or FAQ schema is present where appropriate.", 13],
+      ["content", "Content Readiness", "Service pages answer buyer questions in clear sections.", 11],
+      ["content", "Content Readiness", "FAQ/question content exists and matches real customer questions.", 9],
+      ["technical", "Technical Accessibility", "Important content is readable HTML, not hidden only in images or scripts.", 10],
+      ["technical", "Technical Accessibility", "Robots and sitemap do not block important pages.", 9],
+      ["authority", "Citation Readiness", "Official profiles and third-party references use consistent names and URLs.", 10],
+      ["authority", "Authority Signals", "Case studies, authors, credentials, or proof are visible.", 8],
+      ["entity", "Entity Clarity", "Competitors and category context are understandable from the page copy.", 8],
+    ],
+    "local-seo": [
+      ["website", "Website", "Business name, address, and phone are easy to find.", 12],
+      ["local", "Local Relevance", "Target city/location appears naturally in title, headings, or body copy.", 12],
+      ["entity", "Entity Signals", "LocalBusiness schema or equivalent structured business data is present.", 12],
+      ["trust", "Trust", "Reviews, testimonials, photos, or case examples support trust.", 10],
+      ["website", "Website", "Contact, WhatsApp, directions, or booking actions are visible on mobile.", 11],
+      ["local", "Local Relevance", "Services have clear pages or sections connected to the target location.", 11],
+      ["technical", "Technical SEO", "The site uses HTTPS and has no obvious indexability blockers.", 10],
+      ["conversion", "Conversion Readiness", "Calls, forms, or WhatsApp actions are trackable conversion paths.", 9],
+      ["trust", "Trust", "Map, service area, hours, or local proof are visible.", 7],
+      ["entity", "Entity Signals", "External profiles use consistent NAP and website URL.", 6],
+    ],
+    "seo-audit": [
+      ["technical", "Technical SEO", "The page uses HTTPS and a clean canonical URL.", 11],
+      ["onpage", "On-Page SEO", "Title tag is specific, unique, and within a sensible length.", 11],
+      ["onpage", "On-Page SEO", "Meta description explains the page and encourages a useful click.", 9],
+      ["onpage", "On-Page SEO", "There is one clear H1 and a logical heading hierarchy.", 10],
+      ["schema", "Schema", "Relevant structured data is present and matches visible content.", 10],
+      ["content", "Content", "The page has useful depth, examples, and clear answers.", 12],
+      ["links", "Internal Linking", "Important related pages are linked with natural anchors.", 9],
+      ["performance", "Performance", "Images are compressed and the mobile viewport is configured.", 9],
+      ["technical", "Technical SEO", "Robots, sitemap, and indexability look correct.", 10],
+      ["ai", "AI Search Readiness", "Entity facts, FAQs, and structured sections are easy to extract.", 9],
+    ],
+    "website-performance": [
+      ["mobile", "Mobile", "The page is comfortable to scan and use on mobile.", 14],
+      ["conversion", "Conversion", "Primary CTA is visible without hunting.", 12],
+      ["conversion", "Conversion", "Contact paths are low-friction: WhatsApp, call, form, or booking.", 12],
+      ["ux", "UX", "Navigation is simple and does not overwhelm the visitor.", 9],
+      ["trust", "Trust", "Proof, case studies, testimonials, credentials, or portfolio are visible.", 11],
+      ["performance", "Performance", "Images, video, and scripts are not obviously slowing first interaction.", 10],
+      ["accessibility", "Accessibility", "Text contrast, labels, focus states, and tap targets are usable.", 10],
+      ["ux", "UX", "The page hierarchy makes the offer, audience, and next step obvious.", 10],
+      ["trust", "Trust", "Pricing, process, guarantees, or expectation-setting reduce doubt.", 6],
+      ["mobile", "Mobile", "No popups or overlays block basic mobile interaction.", 6],
+    ],
+  };
+
+  const actionMap = {
+    entity: "Clarify brand, service, location, and official profile facts on core pages.",
+    schema: "Add valid JSON-LD that matches visible page content.",
+    content: "Expand thin sections with direct answers, FAQs, examples, and buyer-specific context.",
+    technical: "Review crawlability, canonical, robots, sitemap, mobile viewport, and indexability basics.",
+    authority: "Add proof, case studies, author/company details, and consistent third-party citations.",
+    website: "Make NAP, contact actions, and important local landing-page content easier to find.",
+    local: "Strengthen service plus city copy and internal links to relevant local pages.",
+    trust: "Add credible proof such as reviews, portfolio work, photos, process, and real contact details.",
+    conversion: "Reduce contact friction and make the next step obvious above the fold.",
+    onpage: "Rewrite metadata and headings around the real page intent.",
+    links: "Add contextual links to services, tools, case studies, and helpful resources.",
+    performance: "Compress media, lazy-load non-critical assets, and reduce heavy scripts.",
+    ai: "Use semantic headings, concise answer blocks, and structured data for machine readability.",
+    mobile: "Test common phone widths and fix layout, tap target, and blocked-scroll issues.",
+    ux: "Simplify the journey from problem recognition to action.",
+    accessibility: "Label inputs, preserve keyboard focus, and improve contrast/tap targets.",
+  };
+
+  const money = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
+  const pct = (value) => `${Number(value).toFixed(value % 1 ? 1 : 0)}%`;
+  const num = (formData, key) => Math.max(0, Number(formData.get(key) || 0));
+  const currency = (value) => `PKR ${money.format(Math.round(value || 0))}`;
+
+  function listItem(text) {
+    const li = document.createElement("li");
+    li.textContent = text;
+    return li;
+  }
+
+  function metric(label, value) {
+    return `<div class="border border-white/10 bg-black p-4"><p class="text-xs uppercase tracking-wide text-white/45">${label}</p><p class="mt-2 font-orbitron text-xl text-white">${value}</p></div>`;
+  }
+
+  function renderAuditChecks(form, mode) {
+    const host = form.querySelector("[data-audit-checks]");
+    const checks = auditProfiles[mode] || [];
+    if (!host) return;
+    host.innerHTML = checks.map(([category, label, text, weight], index) => `
+      <label class="flex gap-3 border border-white/10 bg-black p-4 text-sm leading-6 text-white/70">
+        <input type="checkbox" name="check-${index}" data-category="${category}" data-label="${label}" data-text="${text}" data-weight="${weight}" class="mt-1">
+        <span>${text}</span>
+      </label>
+    `).join("");
+  }
+
+  function grade(score) {
+    if (score >= 85) return "Strong foundation";
+    if (score >= 70) return "Good, with clear gaps";
+    if (score >= 50) return "Needs focused improvement";
+    return "Major fixes needed";
+  }
+
+  function calculateAudit(form, formData, mode, toolName) {
+    let total = 0;
+    let earned = 0;
+    const categoryTotals = {};
+    const categoryEarned = {};
+    const working = [];
+    const problems = [];
+
+    form.querySelectorAll("[data-weight]").forEach((input) => {
+      const weight = Number(input.dataset.weight || 0);
+      const category = input.dataset.category || "general";
+      const label = input.dataset.label || category;
+      const text = input.dataset.text || "";
+      total += weight;
+      categoryTotals[label] = (categoryTotals[label] || 0) + weight;
+      if (input.checked) {
+        earned += weight;
+        categoryEarned[label] = (categoryEarned[label] || 0) + weight;
+        working.push(text);
+      } else {
+        problems.push({ category, text });
+      }
+    });
+
+    const urlBonus = String(formData.get("website") || "").startsWith("https://") ? 4 : 0;
+    const detailBonus = ["brand", "industry", "location", "services"].filter((key) => String(formData.get(key) || "").trim().length > 2).length;
+    const score = Math.min(100, Math.round(((earned + urlBonus + detailBonus) / (total + 8)) * 100));
+    const actions = problems.slice(0, 5).map((item) => actionMap[item.category] || item.text);
+    const metrics = Object.keys(categoryTotals).map((label) => {
+      const categoryScore = Math.round(((categoryEarned[label] || 0) / categoryTotals[label]) * 100);
+      return { label, value: `${categoryScore}/100` };
+    });
+
+    return {
+      label: "Score",
+      score: `${score}/100`,
+      title: `${toolName}: ${grade(score)}`,
+      summary: `${formData.get("brand") || "This website"} scored ${score}/100 based on the visible signals you selected. Use the priority actions below before requesting a deeper crawl or manual review.`,
+      metrics,
+      working: working.slice(0, 5),
+      problems: problems.slice(0, 5).map((item) => item.text),
+      actions: [...new Set(actions)].slice(0, 5),
+    };
+  }
+
+  function calculateMoney(mode, formData) {
+    if (mode === "marketing-roi") {
+      const spend = num(formData, "spend");
+      const leads = num(formData, "leads");
+      const customers = leads * (num(formData, "closeRate") / 100);
+      const revenue = customers * num(formData, "saleValue");
+      const grossProfit = revenue * (num(formData, "margin") / 100);
+      const profit = grossProfit - spend;
+      const roas = spend ? revenue / spend : 0;
+      const roi = spend ? (profit / spend) * 100 : 0;
+      return {
+        label: "ROI",
+        score: pct(roi),
+        title: roi >= 0 ? "Marketing is above break-even" : "Marketing is below break-even",
+        summary: `At these assumptions, ${money.format(leads)} leads create about ${money.format(customers)} customers and ${currency(revenue)} in revenue.`,
+        metrics: [
+          { label: "Revenue", value: currency(revenue) },
+          { label: "Cost per lead", value: currency(spend / Math.max(leads, 1)) },
+          { label: "CAC", value: currency(spend / Math.max(customers, 1)) },
+          { label: "ROAS", value: `${roas.toFixed(2)}x` },
+          { label: "Estimated profit", value: currency(profit) },
+          { label: "Break-even customers", value: money.format(Math.ceil(spend / Math.max(num(formData, "saleValue") * (num(formData, "margin") / 100), 1))) },
+        ],
+        working: ["You can now see the link between spend, leads, close rate, and margin."],
+        problems: roi < 0 ? ["The estimated profit is negative at these assumptions."] : ["The model still depends on accurate tracking and sales reporting."],
+        actions: ["Improve close rate, reduce CPL, raise average order value, or focus budget on the highest-intent channels."],
+      };
+    }
+    if (mode === "meta-ads") {
+      const budget = num(formData, "budget");
+      const cpl = num(formData, "cpl");
+      const leads = budget / Math.max(cpl, 1);
+      const customers = leads * (num(formData, "closeRate") / 100);
+      const revenue = customers * num(formData, "customerValue");
+      const roas = budget ? revenue / budget : 0;
+      const breakEvenCpl = (num(formData, "customerValue") * (num(formData, "closeRate") / 100));
+      return {
+        label: "ROAS",
+        score: `${roas.toFixed(2)}x`,
+        title: roas >= 2 ? "Meta Ads economics look promising" : "Meta Ads assumptions need tightening",
+        summary: `${currency(budget)} could generate about ${money.format(leads)} leads and ${money.format(customers)} customers at the current assumptions.`,
+        metrics: [
+          { label: "Estimated leads", value: money.format(leads) },
+          { label: "Estimated customers", value: money.format(customers) },
+          { label: "CAC", value: currency(budget / Math.max(customers, 1)) },
+          { label: "Revenue", value: currency(revenue) },
+          { label: "Break-even CPL", value: currency(breakEvenCpl) },
+        ],
+        working: ["The inputs make budget, CPL, close rate, and customer value visible."],
+        problems: cpl > breakEvenCpl ? ["Your average CPL is above the estimated break-even CPL."] : ["Results still depend on creative, offer, audience, and follow-up speed."],
+        actions: ["Test stronger offers and creatives, track WhatsApp/form leads, and speed up follow-up before scaling spend."],
+      };
+    }
+    if (mode === "google-ads") {
+      const budget = num(formData, "budget");
+      const clicks = budget / Math.max(num(formData, "cpc"), 1);
+      const leads = clicks * (num(formData, "landingRate") / 100);
+      const customers = leads * (num(formData, "closeRate") / 100);
+      const revenue = customers * num(formData, "saleValue");
+      const roas = budget ? revenue / budget : 0;
+      const breakEvenCpc = num(formData, "saleValue") * (num(formData, "landingRate") / 100) * (num(formData, "closeRate") / 100);
+      return {
+        label: "ROAS",
+        score: `${roas.toFixed(2)}x`,
+        title: roas >= 2 ? "Search economics look workable" : "Search economics need improvement",
+        summary: `${currency(budget)} buys about ${money.format(clicks)} clicks, ${money.format(leads)} leads, and ${money.format(customers)} customers at these assumptions.`,
+        metrics: [
+          { label: "Clicks", value: money.format(clicks) },
+          { label: "Leads", value: money.format(leads) },
+          { label: "Customers", value: money.format(customers) },
+          { label: "CPA", value: currency(budget / Math.max(customers, 1)) },
+          { label: "Revenue", value: currency(revenue) },
+          { label: "Break-even CPC", value: currency(breakEvenCpc) },
+        ],
+        working: ["Search intent is modeled separately from landing page and sales conversion."],
+        problems: num(formData, "cpc") > breakEvenCpc ? ["Average CPC is above the estimated break-even CPC."] : ["Keyword quality and landing-page relevance still need validation."],
+        actions: ["Improve landing-page conversion, add negative keywords, track calls/forms, and focus spend on the highest-intent queries."],
+      };
+    }
+    if (mode === "patient-retention") {
+      const appointments = num(formData, "inactivePatients") * (num(formData, "bookingRate") / 100);
+      const revenue = appointments * num(formData, "treatmentValue");
+      const cost = num(formData, "monthlyCost");
+      const net = revenue - cost;
+      return {
+        label: "ROI Multiple",
+        score: `${(revenue / Math.max(cost, 1)).toFixed(2)}x`,
+        title: "Patient reactivation estimate",
+        summary: `${money.format(appointments)} potential appointments could recover about ${currency(revenue)} before campaign/system cost.`,
+        metrics: [
+          { label: "Appointments", value: money.format(appointments) },
+          { label: "Recovered revenue", value: currency(revenue) },
+          { label: "Net return", value: currency(net) },
+          { label: "Monthly cost", value: currency(cost) },
+        ],
+        working: ["The model focuses on inactive patient database value and campaign cost."],
+        problems: ["This is not a medical claim or a guaranteed booking forecast."],
+        actions: ["Segment inactive patients, confirm consent, write useful recall messaging, and route replies into a fast booking workflow."],
+      };
+    }
+    const visitors = num(formData, "visitors");
+    const currentLeads = visitors * (num(formData, "currentRate") / 100);
+    const targetLeads = visitors * (num(formData, "targetRate") / 100);
+    const extraCustomers = (targetLeads - currentLeads) * (num(formData, "closeRate") / 100);
+    const monthlyRevenue = extraCustomers * num(formData, "customerValue");
+    return {
+      label: "Monthly Upside",
+      score: currency(monthlyRevenue),
+      title: "Estimated cost of lost website leads",
+      summary: `Moving from ${pct(num(formData, "currentRate"))} to ${pct(num(formData, "targetRate"))} could add ${money.format(targetLeads - currentLeads)} leads each month.`,
+      metrics: [
+        { label: "Current leads", value: money.format(currentLeads) },
+        { label: "Potential leads", value: money.format(targetLeads) },
+        { label: "Additional customers", value: money.format(extraCustomers) },
+        { label: "Monthly revenue difference", value: currency(monthlyRevenue) },
+        { label: "Annual revenue difference", value: currency(monthlyRevenue * 12) },
+      ],
+      working: ["You can now quantify why conversion rate matters before buying more traffic."],
+      problems: ["The estimate depends on accurate analytics and lead-to-sale tracking."],
+      actions: ["Improve CTA clarity, mobile speed, trust proof, form friction, and follow-up tracking."],
+    };
+  }
+
+  function schemaOutput(formData) {
+    const type = formData.get("schemaType");
+    const name = String(formData.get("name") || "").trim();
+    const url = String(formData.get("url") || "").trim();
+    const description = String(formData.get("description") || "").trim();
+    const image = String(formData.get("image") || "").trim();
+    const details = String(formData.get("details") || "").trim();
+    const base = { "@context": "https://schema.org", "@type": type, name };
+    if (url) base.url = url;
+    if (description) base.description = description;
+    if (image) base.image = image;
+    if (type === "LocalBusiness") base.address = { "@type": "PostalAddress", addressCountry: "PK" };
+    if (type === "Service") base.provider = { "@type": "Organization", name };
+    if (type === "Article") base.headline = name;
+    if (type === "FAQPage") {
+      const lines = details.split(/\n+/);
+      const entities = [];
+      for (let i = 0; i < lines.length; i += 2) {
+        const q = (lines[i] || "").replace(/^Q:\s*/i, "").trim();
+        const a = (lines[i + 1] || "").replace(/^A:\s*/i, "").trim();
+        if (q && a) entities.push({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } });
+      }
+      base.mainEntity = entities;
+    }
+    if (type === "BreadcrumbList") {
+      base.itemListElement = details.split(/\n+/).filter(Boolean).map((line, index) => {
+        const [label, itemUrl] = line.split("|").map((part) => part.trim());
+        return { "@type": "ListItem", position: index + 1, name: label || `Step ${index + 1}`, item: itemUrl || url };
+      });
+    }
+    const json = JSON.stringify(base, null, 2);
+    return {
+      label: "JSON-LD",
+      score: "Ready",
+      title: `${type} schema generated`,
+      summary: "Copy this starter JSON-LD, place it on the matching page, and validate it before publishing. Only keep fields that match visible, supportable content.",
+      metrics: [{ label: "Schema type", value: type }, { label: "Required name", value: name ? "Provided" : "Missing" }],
+      working: ["The output avoids fake ratings, reviews, prices, and unsupported claims.", "Generated JSON-LD is visible below."],
+      problems: name ? ["Validate the JSON-LD and confirm it matches visible page content."] : ["Name is required for a useful schema entity."],
+      actions: ["Copy the JSON-LD, add it to the page, validate it, and update it when page facts change."],
+      json,
+    };
+  }
+
+  function renderResult(root, result) {
+    root.classList.remove("hidden");
+    root.querySelector("[data-result-label]").textContent = result.label;
+    root.querySelector("[data-result-score]").textContent = result.score;
+    root.querySelector("[data-result-title]").textContent = result.title;
+    root.querySelector("[data-result-summary]").textContent = result.summary;
+    root.querySelector("[data-result-metrics]").innerHTML = result.metrics.map((item) => metric(item.label, item.value)).join("");
+    ["working", "problems", "actions"].forEach((key) => {
+      const list = root.querySelector(`[data-result-${key}]`);
+      list.innerHTML = "";
+      (result[key] || []).forEach((item) => list.appendChild(listItem(item)));
+    });
+    if (result.json) {
+      const pre = document.createElement("pre");
+      pre.className = "mt-6 overflow-auto border border-white/10 bg-black p-4 text-xs leading-5 text-white/75";
+      pre.textContent = "<scr" + `ipt type="application/ld+json">\n${result.json}\n</scr` + "ipt>";
+      root.querySelector("[data-result-metrics]").insertAdjacentElement("afterend", pre);
+    }
+    root.dataset.report = [
+      result.title,
+      result.summary,
+      "",
+      ...result.metrics.map((item) => `${item.label}: ${item.value}`),
+      "",
+      "Fix first:",
+      ...(result.actions || []),
+    ].join("\n");
+    root.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  document.querySelectorAll("[data-tool-form]").forEach((form) => {
+    const mode = form.dataset.mode;
+    const toolName = form.dataset.toolName;
+    renderAuditChecks(form, mode);
+    const resultRoot = form.parentElement.querySelector("[data-tool-result]");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formData = new FormData(form);
+      const result = auditProfiles[mode]
+        ? calculateAudit(form, formData, mode, toolName)
+        : mode === "schema-generator"
+          ? schemaOutput(formData)
+          : calculateMoney(mode, formData);
+      resultRoot.dataset.tool = toolName;
+      renderResult(resultRoot, result);
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "free_tool_result", tool_name: toolName, result_label: result.label, result_score: result.score });
+    });
+  });
+
+  document.querySelectorAll("[data-tool-result]").forEach((root) => {
+    root.querySelector("[data-share-result]")?.addEventListener("click", async () => {
+      const text = `${root.dataset.tool}: ${root.querySelector("[data-result-score]").textContent}. ${root.querySelector("[data-result-title]").textContent}`;
+      if (navigator.share) await navigator.share({ title: root.dataset.tool, text, url: location.href });
+      else await navigator.clipboard.writeText(`${text} ${location.href}`);
+    });
+    root.querySelector("[data-download-report]")?.addEventListener("click", () => {
+      const blob = new Blob([`${root.dataset.tool}\n${new Date().toLocaleDateString()}\n\n${root.dataset.report}`], { type: "text/plain" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `${String(root.dataset.tool || "free-tool").toLowerCase().replace(/[^a-z0-9]+/g, "-")}-report.txt`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    root.querySelector("[data-rerun-tool]")?.addEventListener("click", () => {
+      root.classList.add("hidden");
+      document.querySelector("[data-tool-form]")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    root.querySelector("[data-lead-form]")?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formData = new FormData(event.currentTarget);
+      const message = [
+        `Free tool report request: ${root.dataset.tool}`,
+        `Name: ${formData.get("leadName")}`,
+        `Email: ${formData.get("leadEmail")}`,
+        `Website: ${formData.get("leadWebsite") || "Not provided"}`,
+        `Phone: ${formData.get("leadPhone") || "Not provided"}`,
+        `Result: ${root.querySelector("[data-result-score]").textContent}`,
+        `Context: ${root.querySelector("[data-result-title]").textContent}`,
+        `Page: ${location.href}`,
+      ].join("\n");
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "free_tool_lead", tool_name: root.dataset.tool, result_score: root.querySelector("[data-result-score]").textContent });
+      const status = root.querySelector("[data-lead-status]");
+      status.textContent = "Opening WhatsApp with your report context.";
+      status.classList.remove("hidden");
+      window.open(`https://wa.me/923135147935?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+    });
+  });
+</script>

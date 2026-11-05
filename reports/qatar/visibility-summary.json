@@ -1,0 +1,8 @@
+{
+  "observations": 0,
+  "mentions": null,
+  "citations": null,
+  "platforms": {},
+  "source": "data/qatar/observations.csv",
+  "note": "Counts describe the recorded sample only. No observations does not mean zero visibility."
+}

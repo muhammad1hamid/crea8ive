@@ -1,0 +1,17 @@
+.footer { border-top:1px solid var(--border-soft); background:var(--section-bg); color:var(--text-primary); }
+.footer .grid { align-items:start; gap:40px; }
+.footer h3 { font-size:13px; line-height:1.5; letter-spacing:0; text-transform:none; color:var(--text-primary); }
+.footer .companyLinks { gap:0 20px; }
+.companyLinks li { align-items:flex-start; }
+.companyLinks li > span { display:none; }
+.companyLinks a { display:flex; min-height:44px; align-items:center; line-height:1.45; padding-block:8px; }
+.footer :global(.footer-platform-links) { gap:0 24px; }
+.footer :global(.footer-platform-link) { min-height:84px; border:0; border-bottom:1px solid var(--border-soft); border-radius:0; padding:16px 0; background:none; transform:none; }
+.footer :global(.footer-platform-purpose) { margin-top:6px; line-height:1.5; }
+.footer .review { border:0; border-top:1px solid var(--border-soft); border-radius:0; background:none; padding:20px 0 0; }
+.footer form { min-width:0; flex-direction:column; }
+.footer form input { min-height:48px; font-size:16px; border-radius:6px; }
+.footer form button { min-height:48px; align-self:flex-start; border-radius:6px; background:var(--action-bg); color:var(--action-text); box-shadow:none; }
+.footer a:focus-visible,.footer button:focus-visible { outline:2px solid var(--crea8iv-focus); outline-offset:3px; }
+@media(min-width:1280px) { .footer .grid { grid-template-columns:1fr 1.6fr 1.1fr 1fr; gap:32px; } }
+@media(max-width:767px) { .footer > div:first-child { padding-block:48px; } .footer .grid { gap:32px; } }

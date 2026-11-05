@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "seo:publish": "node scripts/seo_publish_pipeline.mjs",
+    "seo:deploy:check": "bash scripts/deploy_to_hostinger.sh --check"
+  },
+  "dependencies": {
+    "puppeteer": "^25.1.0"
+  }
+}

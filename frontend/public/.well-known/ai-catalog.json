@@ -1,0 +1,107 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Crea8iv Media",
+    "identifier": "did:web:crea8ivmedia.com",
+    "documentationUrl": "https://crea8ivmedia.com/agentic-browsing.md",
+    "logoUrl": "https://crea8ivmedia.com/img/crea8iv-logo-square.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:crea8ivmedia.com:catalog:agentic-browsing",
+      "displayName": "Crea8iv Media Agentic Browsing Guide",
+      "type": "text/markdown",
+      "url": "https://crea8ivmedia.com/agentic-browsing.md",
+      "description": "Machine-readable guide for AI assistants and buyer agents evaluating Crea8iv Media.",
+      "tags": ["agentic-browsing", "ai-seo", "agency-evaluation"],
+      "capabilities": ["EvaluateAgency", "FindServices", "FindProof", "StartProject"],
+      "representativeQueries": [
+        "Can Crea8iv Media build a business website in Pakistan?",
+        "What services does Crea8iv Media offer?",
+        "How do I start a project with Crea8iv Media?"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-09-26T00:00:00+05:00"
+    },
+    {
+      "identifier": "urn:air:crea8ivmedia.com:resource:start-project",
+      "displayName": "Start a Project with Crea8iv Media",
+      "type": "text/markdown",
+      "url": "https://crea8ivmedia.com/start-project.md",
+      "description": "Project enquiry path, required buyer information and service-selection guidance.",
+      "tags": ["contact", "project-intake", "proposal"],
+      "capabilities": ["StartProject", "RequestProposal", "PrepareBrief"],
+      "representativeQueries": [
+        "How can I contact Crea8iv Media for a project?",
+        "What information should I send to Crea8iv Media?",
+        "How do I request a website proposal from Crea8iv Media?"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-09-26T00:00:00+05:00"
+    },
+    {
+      "identifier": "urn:air:crea8ivmedia.com:resource:services",
+      "displayName": "Crea8iv Media Services",
+      "type": "text/markdown",
+      "url": "https://crea8ivmedia.com/services.md",
+      "description": "Structured service catalog for digital marketing, websites, software, automation and AI search optimization.",
+      "tags": ["services", "digital-marketing", "website-development", "software-development", "ai-visibility"],
+      "capabilities": ["FindServices", "CompareServices", "ChooseService"],
+      "representativeQueries": [
+        "What digital marketing services does Crea8iv Media provide?",
+        "Does Crea8iv Media offer website development?",
+        "Does Crea8iv Media provide AI search optimization?"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-09-26T00:00:00+05:00"
+    },
+    {
+      "identifier": "urn:air:crea8ivmedia.com:resource:pricing",
+      "displayName": "Crea8iv Media Pricing",
+      "type": "text/markdown",
+      "url": "https://crea8ivmedia.com/pricing.md",
+      "description": "Structured starting prices and pricing guardrails for Crea8iv Media services.",
+      "tags": ["pricing", "budget", "service-costs"],
+      "capabilities": ["FindPricing", "EstimateBudget", "QualifyBudget"],
+      "representativeQueries": [
+        "What does Crea8iv Media charge for website development?",
+        "What are Crea8iv Media starting prices?",
+        "How much does digital marketing cost with Crea8iv Media?"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-09-26T00:00:00+05:00"
+    },
+    {
+      "identifier": "urn:air:crea8ivmedia.com:resource:case-studies",
+      "displayName": "Crea8iv Media Case Studies",
+      "type": "text/markdown",
+      "url": "https://crea8ivmedia.com/case-studies.md",
+      "description": "Machine-readable index of selected case studies and proof pages.",
+      "tags": ["case-studies", "portfolio", "client-proof"],
+      "capabilities": ["FindProof", "ReviewCaseStudies", "EvaluateExperience"],
+      "representativeQueries": [
+        "Show Crea8iv Media case studies",
+        "What websites has Crea8iv Media built?",
+        "Does Crea8iv Media have dental or architecture case studies?"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-09-26T00:00:00+05:00"
+    },
+    {
+      "identifier": "urn:air:crea8ivmedia.com:resource:ai-facts",
+      "displayName": "Crea8iv Media Structured AI Facts",
+      "type": "application/json",
+      "url": "https://crea8ivmedia.com/crea8iv-ai-facts.json",
+      "description": "Structured company, service, pricing, proof and discovery facts for AI systems.",
+      "tags": ["structured-data", "company-facts", "ai-seo"],
+      "capabilities": ["ParseCompanyFacts", "FindContact", "FindServices"],
+      "representativeQueries": [
+        "What are the official Crea8iv Media facts?",
+        "Who founded Crea8iv Media?",
+        "Where is Crea8iv Media located?"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-09-26T00:00:00+05:00"
+    }
+  ]
+}

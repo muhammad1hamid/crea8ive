@@ -1,0 +1,42 @@
+---
+import { portfolioItems } from "../data/growth";
+
+interface Props {
+  title?: string;
+  intro?: string;
+}
+
+const {
+  title = "Visual proof that makes the work easy to trust.",
+  intro = "Browse the Crea8iv work by output type: websites, graphics, reels, and lead-generation campaigns.",
+} = Astro.props;
+---
+<section class="bg-[#0d0d0d] px-6 py-20 text-white">
+  <div class="mx-auto max-w-[1400px]">
+    <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <div class="max-w-3xl">
+        <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">Portfolio</p>
+        <h2 class="mt-5 font-orbitron text-3xl font-bold leading-tight sm:text-5xl">{title}</h2>
+        <p class="mt-5 text-lg leading-8 text-white/70">{intro}</p>
+      </div>
+      <a href="/portfolio/" class="inline-flex w-fit border border-brand px-5 py-3 font-orbitron text-xs uppercase tracking-wide text-white hover:bg-brand">
+        View Portfolio
+      </a>
+    </div>
+
+    <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+      {portfolioItems.map((item) => (
+        <a href={item.href} class="group block overflow-hidden border border-white/10 bg-black">
+          <div class="aspect-[4/3] overflow-hidden bg-white/5">
+            <img src={item.image} alt={item.title} class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
+          </div>
+          <div class="p-6">
+            <p class="font-orbitron text-xs uppercase tracking-[.25em] text-brand">{item.type}</p>
+            <h3 class="mt-3 font-orbitron text-xl font-semibold">{item.title}</h3>
+            <p class="mt-3 text-sm leading-6 text-white/65">{item.detail}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+.env.local
+frontend/live-snapshot/
+backups/local-design-before-live-restore-*/
+__pycache__/
+
+# macOS + build/QA junk
+.DS_Store
+reports/browser-pilot/
+frontend/.next.corrupt-*/
+frontend/.next-*/
+frontend/qa-*.png
+frontend/public/portfolio-assets/
+project/assets/Brand Guidlines/
+project/assets/E commerce/
+project/assets/Health Clinics/
+project/assets/Interiors & Architects /
+project/assets/Logo/
+project/assets/Resturants/
+
+# Source repository: generated installs, local runtime state and secrets stay local.
+**/node_modules/
+**/.next*/
+**/.astro/
+**/dist/
+**/out/
+**/.cache/
+**/.env*
+!**/.env.example
+!**/.env.sample
+!**/.env.template
+**/*.log
+**/*.tsbuildinfo
+**/.taste-skill/
+backups/
+tmp/

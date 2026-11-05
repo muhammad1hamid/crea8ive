@@ -1,0 +1,84 @@
+{
+  "name": "crea8iv-media-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "start:static": "node server.mjs",
+    "start:next": "next start",
+    "lint": "eslint src scripts next.config.js eslint.config.mjs --max-warnings=6",
+    "export": "NODE_ENV=production CREA8IV_STATIC_EXPORT=true EXPORT=true node scripts/static-export.mjs",
+    "verify:release": "node scripts/verify-release.mjs",
+    "verify:standards": "node scripts/verify-code-standards.mjs",
+    "verify:site-data": "node scripts/verify-site-data.mjs",
+    "verify:audit-schema": "python3 ../scripts/verify_audit_schema.py",
+    "qa:audit-ui": "node scripts/qa-audit-upgrades.mjs",
+    "qa:browser": "node --test scripts/qa-browser-policy.test.mjs && node scripts/qa-release-browser.mjs",
+    "qa:colour": "node scripts/qa-colour-system.mjs",
+    "qa:service-design": "node scripts/qa-service-design.mjs",
+    "qa:agency-body": "node scripts/qa-agency-body.mjs",
+    "qa:hero-lock": "node scripts/qa-hero-lock.mjs",
+    "qa:visual-release": "node scripts/qa-visual-release.mjs",
+    "qa:home-composition": "node scripts/qa-home-composition.mjs",
+    "qa:release": "npm run verify:standards && npm run verify:site-data && npm run lint && npm run typecheck && npm run export && npm run verify:release && npm run verify:audit-schema && npm run verify:qatar && npm run verify:portfolio-assets",
+    "audit:static": "node scripts/audit-static-site.mjs",
+    "release:static": "npm run export && npm run verify:release",
+    "hostinger:build": "npm run build",
+    "hostinger:build:static": "npm run export",
+    "admin:hash": "node scripts/create-admin-password-hash.mjs",
+    "admin:secrets": "node scripts/create-admin-secrets.mjs",
+    "admin:seed-growth-plan": "node scripts/seed-growth-plan.mjs",
+    "preflight:seo": "node scripts/seo-migration-preflight.mjs",
+    "prebuild": "node scripts/sync-company-facts.mjs",
+    "preexport": "node scripts/sync-company-facts.mjs",
+    "verify:qatar": "node scripts/verify-qatar.mjs",
+    "verify:markets": "node scripts/verify-market-migration.mjs",
+    "verify:portfolio-assets": "node scripts/verify-portfolio-assets.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.qatar-check.json"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.42.0",
+    "graphql": "^16.11.0",
+    "graphql-request": "^7.2.0",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.23",
+    "lucide-react": "^1.17.0",
+    "motion": "^12.42.0",
+    "next": "16.4.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "^3.6.0",
+    "three": "^0.185.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.57",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/three": "^0.185.0",
+    "autoprefixer": "^10.6.1",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.3",
+    "postcss": "^8.5.29",
+    "puppeteer": "^25.1.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.8.3"
+  },
+  "overrides": {
+    "@next/eslint-plugin-next": {
+      "glob": "^10.5.0"
+    },
+    "eslint": {
+      "minimatch": {
+        "brace-expansion": "^1.1.21"
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CaseStudyPreview from "./CaseStudyPreview.astro";
+import ContactBoost from "./ContactBoost.astro";
+import PortfolioPreview from "./PortfolioPreview.astro";
+import ProofStrip from "./ProofStrip.astro";
+import ServiceConversionPanel from "./ServiceConversionPanel.astro";
+import ServiceToolPanel from "./ServiceToolPanel.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  eyebrow: string;
+  headline: string;
+  intro: string;
+  bullets?: string[];
+  sections?: { title: string; body: string; items: string[] }[];
+  showPortfolio?: boolean;
+  showCases?: boolean;
+  enhancementSlug?: string;
+}
+
+const {
+  title,
+  description,
+  eyebrow,
+  headline,
+  intro,
+  bullets = [],
+  sections = [],
+  showPortfolio = false,
+  showCases = false,
+  enhancementSlug,
+} = Astro.props;
+
+const schemaItems = [{
+  "@type": "WebPage",
+  name: title,
+  description,
+  url: `https://crea8ivmedia.com${Astro.url.pathname}`,
+}];
+---
+<BaseLayout title={title} description={description} canonical={Astro.url.pathname} schemaItems={schemaItems}>
+  <section class="relative bg-black px-6 pb-20 pt-40 text-white">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_25%,rgba(254,106,9,.25),transparent_34%)]"></div>
+    <div class="relative mx-auto max-w-[1400px]">
+      <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">{eyebrow}</p>
+      <h1 class="mt-6 max-w-5xl font-orbitron text-4xl font-bold leading-tight sm:text-6xl">{headline}</h1>
+      <p class="mt-6 max-w-3xl text-lg leading-8 text-white/70">{intro}</p>
+      {bullets.length > 0 && (
+        <div class="mt-10 grid gap-3 md:grid-cols-3">
+          {bullets.map((item) => (
+            <div class="border border-white/10 bg-white/[.03] p-5 text-sm leading-6 text-white/75">{item}</div>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <ProofStrip />
+
+  {sections.length > 0 && (
+    <section class="bg-[#080808] px-6 py-20 text-white">
+      <div class="mx-auto grid max-w-[1400px] gap-6 lg:grid-cols-3">
+        {sections.map((section) => (
+          <article class="border border-white/10 bg-black p-6">
+            <h2 class="font-orbitron text-2xl font-semibold">{section.title}</h2>
+            <p class="mt-4 text-sm leading-6 text-white/65">{section.body}</p>
+            <ul class="mt-6 grid gap-3">
+              {section.items.map((item) => (
+                <li class="border-t border-white/10 pt-3 text-sm text-white/75">{item}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {enhancementSlug && <ServiceConversionPanel slug={enhancementSlug} />}
+  {enhancementSlug && <ServiceToolPanel slug={enhancementSlug} />}
+  {showPortfolio && <PortfolioPreview />}
+  {showCases && <CaseStudyPreview />}
+  <ContactBoost />
+</BaseLayout>

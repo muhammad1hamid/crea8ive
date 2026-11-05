@@ -1,0 +1,60 @@
+export type Market = {
+  slug: string; name: string; locale: string; heading: string; intro: string;
+  website: string; ads: string; search: string; collaboration: string; question: string; answer: string;
+};
+
+// Only editorially prepared English hubs are public. Arabic, Germany and city
+// pages require their own reviewed content before entering this registry.
+export const markets: Market[] = [
+  { slug: 'us', name: 'United States', locale: 'en-US', heading: 'Digital delivery for US businesses with ambitious acquisition goals.',
+    intro: 'Connect a clear website offer, tightly scoped Google Search campaigns and useful search content. Crea8iv Media works remotely from Rawalpindi, Pakistan, with US businesses seeking a coordinated delivery partner rather than disconnected suppliers.',
+    website: 'Define whether the website serves one state, several service areas or a national audience before designing its navigation. Separate service enquiries from recruitment and support requests, and give internal teams a clear way to review content and releases.',
+    ads: 'Agree on the states, service radius and qualified lead definition before allocating spend. Separate national research queries from local purchase intent; review search terms and lead quality together instead of treating every form submission as a sale.',
+    search: 'Build service and location information around the areas the business actually serves. Publish evidence-backed answers to comparison, scope and buying questions, with consistent company facts for search engines and AI retrieval.',
+    collaboration: 'US time zones differ substantially. We agree a named stakeholder, meeting window and asynchronous review process at kickoff; round-the-clock availability is not assumed.',
+    question: 'Can you coordinate with our US marketing team?', answer: 'Yes. We can work to an agreed brief alongside your internal team. Access, approval responsibilities, release dates and reporting definitions are documented before delivery.' },
+  { slug: 'uk', name: 'United Kingdom', locale: 'en-GB', heading: 'Websites and acquisition journeys for UK businesses.',
+    intro: 'Build a joined-up path from a service search to a credible proposal enquiry. Our Pakistan-based team supports UK businesses with website development, Google Ads and SEO that puts the buyer’s questions before marketing terminology.',
+    website: 'Use British English, clear service coverage and a practical enquiry journey. For professional services, present scope, process and relevant work together so a buyer can assess fit before requesting a proposal.',
+    ads: 'Structure campaigns around the services and geographic areas you can fulfil. Align advert promises with landing-page copy, exclude irrelevant search terms and distinguish qualified enquiries from low-intent downloads.',
+    search: 'Organise service pages, useful buying guides and company information into a crawlable structure. Review regional wording and genuine service coverage without creating a page for every town.',
+    collaboration: 'Meeting windows are agreed around UK time, including seasonal clock changes. Written briefs and consolidated feedback keep decisions clear between calls.',
+    question: 'Can you work with an existing website and brand?', answer: 'Yes. Discovery determines what to retain, what needs a technical repair and where a redesign is justified. The proposal separates one-off delivery from ongoing support.' },
+  { slug: 'canada', name: 'Canada', locale: 'en-CA', heading: 'A clearer digital journey for Canadian service businesses.',
+    intro: 'Crea8iv Media connects website development, Google Ads and search visibility for businesses serving Canadian markets. Engagements are delivered remotely from Pakistan, with the target provinces, language needs and enquiry process agreed up front.',
+    website: 'Make province and service-area coverage explicit. Scope English and French content separately where needed, with reviewed translations and distinct URLs rather than an automatic language overlay.',
+    ads: 'Separate service areas and language audiences where the brief calls for it. Define what makes an enquiry commercially useful, then connect campaign reviews with the team handling those enquiries.',
+    search: 'Use accurate province, city and business information where it helps customers. Avoid publishing French pages without editorial review; a smaller set of useful English pages is preferable to unmaintained translations.',
+    collaboration: 'Canada spans multiple time zones. We confirm your team’s local time and a recurring review window, with written progress updates between meetings.',
+    question: 'Does the initial engagement include French content?', answer: 'Not automatically. French research, translation and native review need an explicit scope and content owner before publication. English delivery does not imply bilingual coverage.' },
+  { slug: 'australia', name: 'Australia', locale: 'en-AU', heading: 'High-performance websites and search acquisition for Australian businesses.',
+    intro: 'Support the journey from a mobile search to a useful business enquiry. Crea8iv Media offers an integrated website, Google Ads and SEO engagement, delivered from Pakistan with Australian service coverage and stakeholder review built into the brief.',
+    website: 'Prioritise readable service information, lightweight imagery and straightforward quote requests on mobile. State service radius and availability accurately; do not suggest nationwide fulfilment when a business serves a limited area.',
+    ads: 'Separate service territories, campaign goals and enquiry destinations. Coordinate ad schedules with the client’s actual response capacity and assess lead quality alongside cost, not click volume alone.',
+    search: 'Connect core services to genuine geographic coverage and helpful project questions. Technical crawlability, accurate business identity and original project evidence provide the foundation for search and AI discovery.',
+    collaboration: 'Australian time zones and daylight saving vary by state. Project meetings are scheduled for the client’s stated location, with asynchronous approvals available between calls.',
+    question: 'Can you improve a site without replacing its entire platform?', answer: 'Yes. We first inspect the current platform, content and tracking. A focused improvement programme may be more appropriate than a rebuild; the recommendation follows the audit.' },
+  { slug: 'uae', name: 'United Arab Emirates', locale: 'en-AE', heading: 'Digital systems for UAE businesses serving more than one audience.',
+    intro: 'Connect an English-first website, intent-led advertising and clear business information across the customer journey. Crea8iv Media serves UAE businesses remotely from Pakistan; this is a service market, not a claimed UAE office.',
+    website: 'For construction, healthcare and professional services, organise work examples and enquiry paths around the decision a visitor needs to make. Scope Arabic layouts and editorial review separately, including right-to-left navigation and forms.',
+    ads: 'Define emirate coverage, audience languages and the enquiry destination before launching. Distinguish property, service and B2B research intent, and route prospects to a relevant offer rather than a generic homepage.',
+    search: 'Keep business identity consistent across the website and eligible profiles. Publish useful service answers and original evidence; location pages must reflect actual coverage without implying a Dubai or Abu Dhabi office.',
+    collaboration: 'Agree the review calendar, stakeholder responsibilities and content approvals before production. Bilingual work requires named reviewers rather than automated translation alone.',
+    question: 'Can English and Arabic be delivered together?', answer: 'They can be scoped together, with separate content review and RTL testing. This market page is currently English; it does not advertise an unpublished Arabic version.' },
+  { slug: 'saudi-arabia', name: 'Saudi Arabia', locale: 'en-SA', heading: 'Structured digital delivery for businesses serving Saudi Arabia.',
+    intro: 'Turn complex services into clear pages, purposeful campaigns and a practical enquiry process. Our Rawalpindi-based team supports Saudi-facing businesses through an agreed remote delivery scope, without claiming a local office.',
+    website: 'For supplier-led and professional-service journeys, make capabilities, project scope and procurement contact routes easy to find. Plan Arabic content ownership and RTL components before adding a second language.',
+    ads: 'Separate genuine buying intent from broad research queries. Agree geographic coverage, campaign language, account access and the sales handover process; use qualified lead feedback to guide optimisation.',
+    search: 'Create service explanations and direct answers that reflect the company’s actual capabilities. English and Arabic search questions need independent research, supported facts and consistent organisation details.',
+    collaboration: 'We agree meeting times, approval owners and the client’s working calendar at kickoff. Procurement and supplier-onboarding requirements should be shared before the proposal is finalised.',
+    question: 'Can you support supplier onboarding?', answer: 'We can provide current business information and agree deliverables, invoicing and acceptance criteria. Country-specific legal or procurement requirements must be reviewed by the client’s appropriate advisers.' },
+  { slug: 'qatar', name: 'Qatar', locale: 'en-QA', heading: 'Website development, Google Ads and AI visibility for Qatar businesses.',
+    intro: 'Crea8iv Media helps Qatar-facing businesses connect their website, search presence and enquiry journey. This is part of our main agency website, with delivery based in Rawalpindi, Pakistan. No Qatar office or local business number is claimed.',
+    website: 'A construction supplier, architecture studio and dental clinic need different evidence and enquiry paths. We organise services, project or practitioner information and contact options around that decision, with mobile usability and maintainable content at the centre.',
+    ads: 'Agree whether the campaign serves Doha, a defined service area or wider Qatar. Match search intent to the right landing page, review negative keywords and track confirmed enquiries separately from clicks on WhatsApp or a booking button.',
+    search: 'Connect technical SEO, clear company facts and helpful answers in a single programme. English and Arabic buyer questions should be researched separately. AEO focuses on direct answers; GEO and LLMO concern generative discovery. None guarantees a citation or recommendation.',
+    collaboration: 'Our Pakistan delivery team agrees a Qatar-time review window with your business. Scope, content ownership, access permissions and sales follow-up responsibilities are documented before work starts.',
+    question: 'Is Crea8iv Media based in Qatar?', answer: 'The published delivery base is Rawalpindi, Pakistan. Qatar is a market we serve. Current contracting information is available on our company-verification page; no Qatar office, registration or local phone number is implied.' },
+];
+export const getMarket = (slug: string) => markets.find(m => m.slug === slug);
+export const marketLanguages = Object.fromEntries(markets.map(m => [m.locale, `https://crea8ivmedia.com/${m.slug}/`]));

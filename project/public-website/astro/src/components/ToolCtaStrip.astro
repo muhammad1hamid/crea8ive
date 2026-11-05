@@ -1,0 +1,19 @@
+---
+import { toolsBySlug } from "../data/tools";
+
+interface Props {
+  slug: string;
+  kicker?: string;
+}
+
+const tool = toolsBySlug[Astro.props.slug];
+const kicker = Astro.props.kicker ?? "Free Tool";
+---
+{tool && (
+  <aside class="border border-brand/60 bg-brand/10 p-5 text-white">
+    <p class="font-orbitron text-[10px] uppercase tracking-[.25em] text-brand">{kicker}</p>
+    <h3 class="mt-3 font-orbitron text-xl font-semibold">{tool.name}</h3>
+    <p class="mt-3 text-sm leading-6 text-white/70">{tool.benefit}</p>
+    <a href={`/tools/${tool.slug}/`} class="mt-5 inline-flex font-orbitron text-xs uppercase tracking-wide text-brand">Run the free check →</a>
+  </aside>
+)}

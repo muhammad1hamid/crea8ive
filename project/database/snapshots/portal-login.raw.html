@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#111111"/>
+<base href="/"/>
+<meta name="csrf-token" content="3be94c8ac5214dc817a425a0ca363e7406d7769d39365fab131103ba40844c93"/><link rel="icon" type="image/jpeg" href="assets/brand/brand_1778656855.jpeg?v=1778656855"/><link rel="apple-touch-icon" href="assets/brand/brand_1778656855.jpeg?v=1778656855"/><title>Crea8iv Media Portal</title>
+<link rel="stylesheet" href="assets/css/index.css?v=1779720191"/>
+<style>:root{--brand:#ff7b00;--brand-2:#dd6808;--brand-dark:#111111;}</style>
+</head>
+<body>
+<div class="bg-shapes">
+  <div class="shape s1"></div>
+  <div class="shape s2"></div>
+  <div class="shape s3"></div>
+</div>
+
+<div class="wrap">
+  <div class="card">
+    <!-- Logo -->
+    <div class="logo-area">
+      <div class="logo-icon">
+        <img src="assets/brand/brand_1778656855.jpeg?v=1778656855" alt="Logo" style="width:64px;height:64px;object-fit:contain"/>      </div>
+      <div class="brand-name">Crea8iv Media</div>
+      <div class="brand-sub">
+        Staff &amp; Client Portal              </div>
+          </div>
+
+    <!-- Tabs -->
+    <div class="tab-row">
+      <button class="tab-btn active" onclick="switchTab('login')">🔑 Sign In</button>
+      <button class="tab-btn " onclick="switchTab('register')">🚀 Get Started</button>
+    </div>
+
+    <!-- Timeout / Success messages (global) -->
+        
+    <!-- ── LOGIN TAB ──────────────────────────────────────────── -->
+    <div class="tab-pane active" id="pane-login">
+      
+      <form method="POST">
+        <input type="hidden" name="csrf_token" value="3be94c8ac5214dc817a425a0ca363e7406d7769d39365fab131103ba40844c93"/>        <input type="hidden" name="tab" value="login"/>
+                <div>
+          <label class="label">Username</label>
+          <div class="input-wrap">
+            <span class="input-icon">👤</span>
+            <input class="input" type="text" name="username" placeholder="Enter your username"
+                   required autofocus value=""/>
+          </div>
+        </div>
+        <div>
+          <label class="label">Password</label>
+          <div class="input-wrap">
+            <span class="input-icon">🔒</span>
+            <input class="input" type="password" name="password" placeholder="Enter your password" required/>
+          </div>
+        </div>
+        <button class="btn" type="submit">Sign In →</button>
+        <button type="button" class="btn-ghost" onclick="switchTab('register')">New here? Register your business →</button>
+      </form>
+    </div>
+
+    <!-- ── REGISTER TAB ───────────────────────────────────────── -->
+    <div class="tab-pane " id="pane-register">
+
+      
+            <div class="offer-banner">
+        <div class="offer-tag">🎁 New Client Offer</div>
+        <div class="offer-title">Get a Detailed Audit & Action Plan</div>
+        <div class="offer-sub">Share your Instagram, website, or any social media link. We review your current presence first, then unlock a tailored action plan and the right growth options.</div>
+        <div class="offer-items">
+          <span class="offer-item">🔎 Social Audit</span>
+          <span class="offer-item">📈 Action Plan</span>
+          <span class="offer-item">💬 Strategy Review</span>
+        </div>
+      </div>
+
+      <div class="plan-locked-note">Plans stay hidden until you submit your business details and social link.</div>
+
+      <form method="POST">
+        <input type="hidden" name="csrf_token" value="3be94c8ac5214dc817a425a0ca363e7406d7769d39365fab131103ba40844c93"/>        <input type="hidden" name="tab" value="register"/>
+        <input type="hidden" name="register_step" value="lead"/>
+        
+        <div class="input-row">
+          <div>
+            <label class="label">Your Name *</label>
+            <div class="input-wrap">
+              <span class="input-icon">👤</span>
+              <input class="input" type="text" name="reg_name" placeholder="Full name"
+                     required value=""/>
+            </div>
+          </div>
+          <div>
+            <label class="label">Business Name *</label>
+            <div class="input-wrap">
+              <span class="input-icon">🏢</span>
+              <input class="input" type="text" name="reg_business" placeholder="Your business"
+                     required value=""/>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div>
+            <label class="label">Phone / WhatsApp *</label>
+            <div class="input-wrap">
+              <span class="input-icon">📱</span>
+              <input class="input" type="tel" name="reg_phone" placeholder="+92 3XX XXXXXXX"
+                     required value=""/>
+            </div>
+          </div>
+          <div>
+            <label class="label">Email (optional)</label>
+            <div class="input-wrap">
+              <span class="input-icon">✉️</span>
+              <input class="input" type="email" name="reg_email" placeholder="you@business.com"
+                     value=""/>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label class="label">Instagram / Website / Social Link *</label>
+          <div class="input-wrap">
+            <span class="input-icon">🔗</span>
+            <input class="input" type="text" name="reg_social" placeholder="Instagram handle, website, Facebook page, or any social link"
+                   required value=""/>
+          </div>
+        </div>
+
+        <div>
+          <label class="label">Business / Marketing Requirements</label>
+          <textarea class="req-box" name="reg_requirements" placeholder="Tell us about your business goals, audience, current problems, and what you want us to improve."></textarea>
+        </div>
+
+        <button class="btn" type="submit">🚀 Get My Audit & Action Plan →</button>
+        <button type="button" class="btn-ghost" onclick="switchTab('login')">Already have an account? Sign in</button>
+      </form>
+          </div>
+
+  </div>
+
+  <div class="footer">
+    © 2026 Crea8iv Media ·
+    <a href="#">crea8ivmedia.com</a>
+    <br>
+    <a class="wa-cta" href="https://wa.me/923001234567" target="_blank">
+      💬 WhatsApp Support
+    </a>
+  </div>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  document.querySelector('[onclick="switchTab(\''+tab+'\')"]').classList.add('active');
+  document.getElementById('pane-'+tab).classList.add('active');
+}
+// Activate correct tab on load
+(function(){
+  const t = 'login';
+  if (t === 'register') switchTab('register');
+})();
+</script>
+</body>
+</html>

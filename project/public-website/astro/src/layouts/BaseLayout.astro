@@ -1,0 +1,207 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SchemaJson from "../components/SchemaJson.astro";
+import WhatsappCTA from "../components/WhatsappCTA.astro";
+import { SITE_URL } from "../data/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  image?: string;
+  schemaItems?: unknown[];
+}
+const {
+  title = "Digital Marketing Agency Rawalpindi | Crea8iv Media",
+  description = "Crea8iv Media builds lead generation systems using digital marketing, software and AI automation.",
+  canonical = SITE_URL,
+  image = "/assets/crea8iv-media-vector.png",
+  schemaItems = [],
+} = Astro.props;
+const absoluteCanonical = new URL(canonical, SITE_URL).toString();
+const absoluteImage = new URL(image, SITE_URL).toString();
+
+const FONTS_CSS =
+  "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    {/* Google Tag Manager — as high in <head> as possible. */}
+    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-54X5M7K3');</script>
+    {/* End Google Tag Manager */}
+    {/* Microsoft Clarity */}
+    <script is:inline>
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "xnu42t9hxh");
+    </script>
+    {/* End Microsoft Clarity */}
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={absoluteCanonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={absoluteCanonical} />
+    <meta property="og:image" content={absoluteImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{title}</title>
+    <meta name="p:domain_verify" content="c179487d20076357518abbf90129eaf8" />
+    <SchemaJson items={schemaItems} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    {/* Font CSS loads without blocking first paint (flipped to media="all" by
+        the inline script in <body>); display=swap paints text immediately. */}
+    <link rel="stylesheet" href={FONTS_CSS} media="print" data-async-css />
+    <noscript><link rel="stylesheet" href={FONTS_CSS} /></noscript>
+    {/* Analytics stubs only — tiny inline queues so no pageview/lead event is
+        lost. The heavy gtag.js / fbevents.js payloads are injected after the
+        window `load` event (see loader script in <body>). */}
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4T16NR75HT');
+      !function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[]}(window);
+      fbq('init', '1368855895308448');
+      fbq('track', 'PageView');
+    </script>
+  </head>
+  <body>
+    {/* Google Tag Manager (noscript) */}
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54X5M7K3"
+        height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe>
+    </noscript>
+    {/* End Google Tag Manager (noscript) */}
+    <Header />
+    <main><slot /></main>
+    <WhatsappCTA />
+    <Footer />
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=1368855895308448&ev=PageView&noscript=1"
+        alt=""
+      /></noscript
+    >
+    <script>
+      // @ts-nocheck
+      (() => {
+        const toggle = document.querySelector("[data-menu-toggle]");
+        const menu = document.querySelector("[data-mobile-menu]");
+        const backdrop = document.querySelector("[data-mobile-backdrop]");
+        if (!toggle || !menu) return;
+        let lastFocused = null;
+
+        function setOpen(open) {
+          toggle.setAttribute("aria-expanded", String(open));
+          menu.classList.toggle("hidden", !open);
+          backdrop?.classList.toggle("hidden", !open);
+          document.body.style.overflow = open ? "hidden" : "";
+          if (open) {
+            lastFocused = document.activeElement;
+            menu.querySelector("a, button")?.focus({ preventScroll: true });
+          } else if (lastFocused instanceof HTMLElement) {
+            lastFocused.focus({ preventScroll: true });
+          }
+        }
+
+        toggle.addEventListener("click", () => {
+          setOpen(toggle.getAttribute("aria-expanded") !== "true");
+        });
+
+        menu.querySelectorAll("[data-mobile-link]").forEach((link) => {
+          link.addEventListener("click", () => setOpen(false));
+        });
+
+        backdrop?.addEventListener("click", () => setOpen(false));
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") setOpen(false);
+        });
+
+        document.addEventListener("click", (event) => {
+          if (toggle.getAttribute("aria-expanded") !== "true") return;
+          const target = event.target;
+          if (target instanceof Node && !menu.contains(target) && !toggle.contains(target)) setOpen(false);
+        });
+
+        addEventListener("resize", () => {
+          if (matchMedia("(min-width: 1024px)").matches) setOpen(false);
+        });
+      })();
+    </script>
+    <script is:inline>
+      // Flip async stylesheets (fonts above + any data-async-css links inside
+      // the WordPress snapshot content) to media="all" once loaded.
+      document.querySelectorAll('link[data-async-css]').forEach(function (l) {
+        var go = function () { l.media = 'all'; };
+        l.sheet ? go() : l.addEventListener('load', go);
+      });
+
+      // Lottie animations: the 376KB player script and each animation's JSON
+      // load only when a <lottie-player> approaches the viewport — they no
+      // longer compete with first paint. prepareSnapshotHtml renames src to
+      // data-src and strips the eager player <script> from the content.
+      (function () {
+        var players = [].slice.call(document.querySelectorAll('lottie-player[data-src]'));
+        if (!players.length) return;
+        var injected = false;
+        function inject() {
+          if (injected) return;
+          injected = true;
+          var s = document.createElement('script');
+          s.src = '/assets/mirror/unpkg.com/lottie-player-26a93af529b1.js';
+          s.async = true;
+          document.body.appendChild(s);
+        }
+        function activate(el) {
+          inject();
+          var src = el.getAttribute('data-src');
+          if (src) { el.setAttribute('src', src); el.removeAttribute('data-src'); }
+        }
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) { io.unobserve(e.target); activate(e.target); }
+            });
+          }, { rootMargin: '600px 0px' });
+          players.forEach(function (p) { io.observe(p); });
+        } else {
+          addEventListener('load', function () { players.forEach(activate); });
+        }
+      })();
+
+      // Third-party analytics — fetched shortly after `load`, off the critical path.
+      (function () {
+        function add(src) {
+          var s = document.createElement('script');
+          s.src = src;
+          s.async = true;
+          document.head.appendChild(s);
+        }
+        function go() {
+          setTimeout(function () {
+            add('https://www.googletagmanager.com/gtag/js?id=G-4T16NR75HT');
+            add('https://connect.facebook.net/en_US/fbevents.js');
+          }, 800);
+        }
+        document.readyState === 'complete' ? go() : addEventListener('load', go);
+      })();
+    </script>
+  </body>
+</html>

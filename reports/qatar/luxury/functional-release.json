@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "ROI illustrative calculation",
+    "Negative numeric input invalid",
+    "Response workload calculation",
+    "ai-visibility-checker returns ungated result",
+    "ai-visibility-checker analytics emits start and complete",
+    "seo-audit returns ungated result",
+    "seo-audit analytics emits start and complete",
+    "local-seo-audit returns ungated result",
+    "local-seo-audit analytics emits start and complete",
+    "Attribution retained",
+    "Empty form blocks submission",
+    "Backend failure shown without success",
+    "English enquiry persists with reference",
+    "Submit event only after success",
+    "Arabic enquiry persists with reference",
+    "Arabic language switch maps to matching English service",
+    "Mobile menu expands",
+    "Keyboard focus remains usable"
+  ],
+  "passed": 18,
+  "scope": "Local browser, isolated PHP storage; no external analytics requests"
+}

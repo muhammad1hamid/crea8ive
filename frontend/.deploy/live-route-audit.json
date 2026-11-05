@@ -1,0 +1,1642 @@
+{
+  "checkedAt": "2026-10-17T20:08:27.603Z",
+  "total": 267,
+  "failures": [
+    {
+      "url": "https://crea8ivmedia.com/results/restaurants/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/seo/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/digital-marketing-agency-rawalpindi/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/seo-cost-in-pakistan-what-businesses-should-actually-expect-to-pay/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/results/logo-identity/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/results/brand-guidelines/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/healthcare/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/restaurants/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "results": [
+    {
+      "url": "https://crea8ivmedia.com/ai-visibility-targets/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-visibility-targets/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/about/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/about/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-citation-sources/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-citation-sources/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-visibility-deployment-checklist/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-visibility-deployment-checklist/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-search-optimization/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-search-optimization/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-visibility-growth/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-visibility-growth/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-visibility-content-roadmap/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-visibility-content-roadmap/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/academy-education-marketing-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/academy-education-marketing-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/ai-software-automation-company-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/ai-software-automation-company-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/architecture-interior-marketing-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/architecture-interior-marketing-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/best-website-development-company-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/best-website-development-company-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/branding-creative-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/branding-creative-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/clinic-dental-marketing-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/clinic-dental-marketing-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/content-creation-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/content-creation-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/custom-software-development-company-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/custom-software-development-company-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/digital-marketing-consultation-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/digital-marketing-consultation-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/ecommerce-retail-marketing-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/ecommerce-retail-marketing-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/google-business-profile-growth-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/google-business-profile-growth-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/google-ads-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/google-ads-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/meta-ads-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/meta-ads-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/real-estate-lead-generation-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/real-estate-lead-generation-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/restaurant-marketing-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/restaurant-marketing-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/social-media-management-company-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/social-media-management-company-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/restaurant-architecture-clinic-websites-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/restaurant-architecture-clinic-websites-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/website-development-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/website-development-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers/website-development-rawalpindi-islamabad/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers/website-development-rawalpindi-islamabad/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/australia/ai-visibility-seo/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/australia/ai-visibility-seo/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/australia/google-ads-management/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/australia/google-ads-management/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/australia/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/australia/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/australia/sydney/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/australia/sydney/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/australia/web-development/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/australia/web-development/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/aeo-vs-seo/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/aeo-vs-seo/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/best-digital-marketing-agency-in-rawalpindi-how-to-choose-in-2026/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/best-digital-marketing-agency-in-rawalpindi-how-to-choose-in-2026/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/best-website-design-company-in-islamabad-what-to-look-for/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/best-website-design-company-in-islamabad-what-to-look-for/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/ai-citation-optimization-guide/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/ai-citation-optimization-guide/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/anatomy-ai-ready-business-website/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/anatomy-ai-ready-business-website/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/ai-visibility-strategy/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/ai-visibility-strategy/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/ai-overviews-complete-guide/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/ai-overviews-complete-guide/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/boosted-posts-vs-facebook-ads-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/boosted-posts-vs-facebook-ads-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/building-ai-authority/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/building-ai-authority/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/core-web-vitals-guide/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/core-web-vitals-guide/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/complete-local-seo-guide/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/complete-local-seo-guide/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/crea8iv-media-founder-story-syed-qamar-abbas/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/crea8iv-media-founder-story-syed-qamar-abbas/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/facebook-instagram-ads-pakistan-guide/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/facebook-instagram-ads-pakistan-guide/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/founder-pages-ai-search-entity-seo-business-trust/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/founder-pages-ai-search-entity-seo-business-trust/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/custom-website-vs-wordpress/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/custom-website-vs-wordpress/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/future-of-ai-search-2026/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/future-of-ai-search-2026/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/get-the-most-out-of-the-creativity/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/get-the-most-out-of-the-creativity/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/geo-vs-seo/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/geo-vs-seo/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-ads-cost-in-pakistan-for-doctors-clinics-and-aesthetic-brands/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-ads-cost-in-pakistan-for-doctors-clinics-and-aesthetic-brands/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-ads-vs-seo-for-small-businesses-in-pakistan-which-first/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-ads-vs-seo-for-small-businesses-in-pakistan-which-first/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-ai-overviews-ads-in-pakistan-what-businesses-need-to-know/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-ai-overviews-ads-in-pakistan-what-businesses-need-to-know/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-business-profile-clinics-islamabad-rawalpindi/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-business-profile-clinics-islamabad-rawalpindi/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-business-profile-for-restaurants-in-islamabad-full-setup-guide/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-business-profile-for-restaurants-in-islamabad-full-setup-guide/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-business-profile-optimization-checklist/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-business-profile-optimization-checklist/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-business-profile-optimization-checklist-for-restaurants-in-islamabad/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-business-profile-optimization-checklist-for-restaurants-in-islamabad/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-conversational-search-ads-pakistan-businesses/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-conversational-search-ads-pakistan-businesses/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-business-profile-optimization/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-business-profile-optimization/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-search-console-social-platforms-pakistan-businesses/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-search-console-social-platforms-pakistan-businesses/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/google-maps-ranking/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/google-maps-ranking/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/how-businesses-get-mentioned-by-chatgpt/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/how-businesses-get-mentioned-by-chatgpt/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/how-dentists-in-rawalpindi-can-rank-on-google-maps/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/how-dentists-in-rawalpindi-can-rank-on-google-maps/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/how-much-should-a-business-spend-on-meta-ads-in-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/how-much-should-a-business-spend-on-meta-ads-in-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/how-restaurants-in-islamabad-can-get-more-google-reviews/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/how-restaurants-in-islamabad-can-get-more-google-reviews/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/how-to-get-more-google-reviews/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/how-to-get-more-google-reviews/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/how-real-estate-businesses-in-pakistan-get-leads-from-facebook-ads/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/how-real-estate-businesses-in-pakistan-get-leads-from-facebook-ads/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/influencer-marketing-trends-2023-what-you-need-to-know/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/influencer-marketing-trends-2023-what-you-need-to-know/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/instagram-marketing-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/instagram-marketing-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/knowledge-graph-for-local-businesses/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/knowledge-graph-for-local-businesses/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/lead-generation-for-builders-and-architects-in-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/lead-generation-for-builders-and-architects-in-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/laravel-vs-wordpress/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/laravel-vs-wordpress/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/llmo-explained/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/llmo-explained/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/local-ranking-factors/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/local-ranking-factors/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/local-seo-for-salons-and-aesthetic-clinics-in-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/local-seo-for-salons-and-aesthetic-clinics-in-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/local-seo-ranking-factors-rawalpindi-2026/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/local-seo-ranking-factors-rawalpindi-2026/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/mobile-first-website-design/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/mobile-first-website-design/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/modern-business-website-checklist/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/modern-business-website-checklist/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/page/2/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/page/2/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/nextjs-vs-wordpress/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/nextjs-vs-wordpress/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/page/3/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/page/3/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/restaurants-islamabad-google-maps-visibility/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/restaurants-islamabad-google-maps-visibility/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/pakistan-digital-marketing-statistics-2026/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/pakistan-digital-marketing-statistics-2026/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/seo-cost-in-pakistan-what-businesses-should-actually-expect-to-pay/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/seo-cost-in-pakistan-what-businesses-should-actually-expect-to-pay/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/seo-which-digital-advertising-strategy-is-right-for-you/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/seo-which-digital-advertising-strategy-is-right-for-you/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/semantic-search-in-2026/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/semantic-search-in-2026/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/social-media-marketing-strategies-for-small-business/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/social-media-marketing-strategies-for-small-business/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/top-ai-search-ranking-factors/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/top-ai-search-ranking-factors/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/technical-seo-checklist/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/technical-seo-checklist/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/ux-vs-ui/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/ux-vs-ui/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/website-maintenance-guide/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/website-maintenance-guide/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/website-mistakes-that-kill-sales/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/website-mistakes-that-kill-sales/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/website-security-checklist/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/website-security-checklist/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/website-redesign-checklist/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/website-redesign-checklist/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/website-vs-landing-page/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/website-vs-landing-page/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/what-syed-qamar-abbas-builds-at-crea8iv-media/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/what-syed-qamar-abbas-builds-at-crea8iv-media/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/website-speed-optimization/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/website-speed-optimization/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/what-is-ai-search-optimization/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/what-is-ai-search-optimization/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/whatsapp-automation-for-clinics-booking-follow-up-and-reminders/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/whatsapp-automation-for-clinics-booking-follow-up-and-reminders/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/who-founded-crea8iv-media-syed-qamar-abbas/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/who-founded-crea8iv-media-syed-qamar-abbas/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/why-websites-lose-ai-visibility/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/why-websites-lose-ai-visibility/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/why-cheap-websites-fail/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/why-cheap-websites-fail/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/blog/why-businesses-need-custom-websites/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/blog/why-businesses-need-custom-websites/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/branding-and-creative/islamabad/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/branding-and-creative/islamabad/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/branding-and-creative/pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/branding-and-creative/pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/branding-and-creative/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/branding-and-creative/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/branding-and-creative/rawalpindi/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/branding-and-creative/rawalpindi/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/canada/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/canada/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/canada/ai-visibility-seo/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/canada/ai-visibility-seo/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/canada/google-ads-management/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/canada/google-ads-management/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/canada/web-development/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/canada/web-development/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/case-studies/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/canada/toronto/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/canada/toronto/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/careers/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/careers/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/buildscape/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/case-studies/buildscape/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/black-petals/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/case-studies/black-petals/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/co3-premium-liquid-shop/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/case-studies/co3-premium-liquid-shop/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/company-verification/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/company-verification/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/the-smile-xperts/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/case-studies/the-smile-xperts/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/clients/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/clients/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/hassan-nawaz-architects/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/case-studies/hassan-nawaz-architects/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/home-studio-interiors/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/case-studies/home-studio-interiors/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/compare/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/compare/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/compare/saas-mvp-vs-full-software-product-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/compare/saas-mvp-vs-full-software-product-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/compare/custom-software-vs-off-the-shelf-tools-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/compare/custom-software-vs-off-the-shelf-tools-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/compare/website-developer-vs-growth-agency-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/compare/website-developer-vs-growth-agency-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/compare/website-development-company-vs-freelancer-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/compare/website-development-company-vs-freelancer-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/compare/wordpress-vs-custom-website-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/compare/wordpress-vs-custom-website-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/consultation/pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/consultation/pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/consultation/islamabad/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/consultation/islamabad/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/consultation/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/consultation/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/consultation/rawalpindi/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/consultation/rawalpindi/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/contact/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/contact/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/content-creation/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/content-creation/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/content-creation/islamabad/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/content-creation/islamabad/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/content-creation/rawalpindi/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/content-creation/rawalpindi/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/faqs/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/faqs/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/content-creation/pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/content-creation/pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/courses/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/courses/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/google-ads/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/google-ads/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/google-ads/pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/google-ads/pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/google-ads/islamabad/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/google-ads/islamabad/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/google-ads/rawalpindi/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/google-ads/rawalpindi/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/google-business-profile-growth/islamabad/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/google-business-profile-growth/islamabad/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/google-business-profile-growth/pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/google-business-profile-growth/pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/google-business-profile-growth/rawalpindi/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/google-business-profile-growth/rawalpindi/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/google-business-profile-growth/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/google-business-profile-growth/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/growth-systems/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/growth-systems/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/guides/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/guides/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/guides/custom-software-development-company-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/guides/custom-software-development-company-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/guides/best-website-development-company-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/guides/best-website-development-company-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/industries/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/industries/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/guides/website-development-cost-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/guides/website-development-cost-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/industries/architects-interiors/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/industries/architects-interiors/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/howrahshah/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/howrahshah/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/industries/clinics-dental/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/industries/clinics-dental/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/industries/ecommerce-retail/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/industries/ecommerce-retail/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/industries/education-academies/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/industries/education-academies/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/industries/real-estate-builders/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/industries/real-estate-builders/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/industries/restaurants-cafes/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/industries/restaurants-cafes/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/marketing-automation/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/marketing-automation/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/locations/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/locations/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/meta-ads/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/meta-ads/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/khushal-salon/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/khushal-salon/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/meta-ads/islamabad/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/meta-ads/islamabad/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/meta-ads/pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/meta-ads/pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/meta-ads/rawalpindi/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/meta-ads/rawalpindi/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/our-team/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/our-team/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/patientflow/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/patientflow/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/platforms/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/platforms/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/our-services/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/our-services/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/playbooks/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/playbooks/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/playbooks/ai-visibility-business-website-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/playbooks/ai-visibility-business-website-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/playbooks/plan-business-website-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/playbooks/plan-business-website-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/privacy-policy/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/privacy-policy/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/playbooks/plan-custom-software-mvp-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/playbooks/plan-custom-software-mvp-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/playbooks/website-redesign-seo-migration-pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/playbooks/website-redesign-seo-migration-pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/pricing/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/pricing/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/research/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/research/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/results/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/results/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/qatar/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/qatar/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/saudi-arabia/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/saudi-arabia/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/saudi-arabia/ai-visibility-seo/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/saudi-arabia/ai-visibility-seo/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/saudi-arabia/riyadh/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/saudi-arabia/riyadh/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/saudi-arabia/google-ads-management/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/saudi-arabia/google-ads-management/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/saudi-arabia/web-development/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/saudi-arabia/web-development/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/social-media-management/islamabad/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/social-media-management/islamabad/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/social-media-management/pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/social-media-management/pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/social-media-management/rawalpindi/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/social-media-management/rawalpindi/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/social-media-management/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/social-media-management/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/software-development/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/software-development/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/software-development/ai-software/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/software-development/ai-software/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/software-development/crm/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/software-development/crm/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/software-development/custom-software/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/software-development/custom-software/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/software-products/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/software-products/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/software-development/pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/software-development/pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/software-development/saas/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/software-development/saas/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/syed-qamar-abbas/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/syed-qamar-abbas/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/terms-and-conditions/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/terms-and-conditions/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/google-ads-budget-calculator/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/google-ads-budget-calculator/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/ai-visibility-checker/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/ai-visibility-checker/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/local-seo-audit/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/local-seo-audit/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/patient-retention-roi-calculator/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/patient-retention-roi-calculator/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/marketing-roi-calculator/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/marketing-roi-calculator/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/meta-ads-budget-calculator/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/meta-ads-budget-calculator/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/schema-markup-generator/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/schema-markup-generator/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/seo-audit/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/seo-audit/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/website-performance-checker/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/website-performance-checker/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/uae/ai-visibility-seo/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/uae/ai-visibility-seo/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/tools/website-roi-calculator/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/tools/website-roi-calculator/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/uae/dubai/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/uae/dubai/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/uae/google-ads-management/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/uae/google-ads-management/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/uae/web-development/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/uae/web-development/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/uk/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/uk/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/uk/ai-visibility-seo/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/uk/ai-visibility-seo/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/uk/london/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/uk/london/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/uae/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/uae/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/uk/google-ads-management/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/uk/google-ads-management/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/uk/web-development/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/uk/web-development/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/us/ai-visibility-seo/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/us/ai-visibility-seo/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/us/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/us/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/us/google-ads-management/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/us/google-ads-management/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/us/new-york/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/us/new-york/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-development/ecommerce/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-development/ecommerce/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/us/web-development/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/us/web-development/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-development/architecture/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-development/architecture/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-development/clinics/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-development/clinics/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-development/interiors/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-development/interiors/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-development/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-development/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-development/pakistan/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-development/pakistan/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-development/islamabad/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-development/islamabad/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-citation-sources.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-citation-sources.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-development.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-development.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/llms.txt",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/llms.txt",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-development/rawalpindi/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-development/rawalpindi/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-portfolio/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-portfolio/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/software-development.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/software-development.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/website-development/restaurants/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/website-development/restaurants/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/industry-pages.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/industry-pages.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/services.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/services.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/portfolio.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/portfolio.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/pricing.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/pricing.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/answers.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/answers.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/research.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/research.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-visibility-content-roadmap.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-visibility-content-roadmap.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/crea8iv-ai-facts.json",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/crea8iv-ai-facts.json",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-visibility-tracker-template.csv",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-visibility-tracker-template.csv",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-visibility-tracker-template.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-visibility-tracker-template.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/deployment-ai-visibility-checklist.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/deployment-ai-visibility-checklist.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/sitemap.xml",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/sitemap.xml",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-visibility-growth-plan.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-visibility-growth-plan.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/ai-visibility-targets.md",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/ai-visibility-targets.md",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/results/health-clinics/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/results/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/results/restaurants/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/seo/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/digital-marketing-agency-rawalpindi/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/seo-cost-in-pakistan-what-businesses-should-actually-expect-to-pay/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/results/logo-identity/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/results/brand-guidelines/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/healthcare/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/restaurants/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://crea8ivmedia.com/patientflow/demo.html",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/patientflow/demo.html",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/real-estate-architecture/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/case-studies/real-estate-architecture/",
+      "ok": true
+    },
+    {
+      "url": "https://crea8ivmedia.com/case-studies/salons/",
+      "status": 200,
+      "final": "https://crea8ivmedia.com/case-studies/salons/",
+      "ok": true
+    }
+  ]
+}

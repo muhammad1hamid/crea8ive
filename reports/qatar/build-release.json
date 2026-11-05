@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-20",
+  "node": "24.19.0",
+  "next": "14.2.33",
+  "staticBuild": "passed",
+  "runtimeBuild": "passed",
+  "typecheck": "passed",
+  "eslint": "passed with no warnings",
+  "phpSyntax": "passed",
+  "existingReleaseVerifier": "303 routes, 0 missing, 0 duplicate titles",
+  "sourceMode": "snapshot; no secret files used",
+  "export": "/private/tmp/crea8iv-qatar-build/frontend/out",
+  "deployed": false,
+  "sourceSha256": {
+    "src/data/company.json": "539e6ba8d0317c5fe61adbb663a1a2ffa1bab0ae81997e58a4b648adbc94d605",
+    "src/data/qatar/catalogue.ts": "ac226ebdfeb0548bcd9fa4a3eea8cc1843906f13b9a54a66afbee8d59cc0b4dd",
+    "src/data/qatar/services.json": "4f33695b31a368e47378d19cfcebc19fe1f1dff78ec330ad119dcfe6699381f7",
+    "src/data/qatar/industries.json": "468606e94065b6f9f57116357262df6871dc6ee6a274a2eea5914ec8eb00d71d",
+    "src/data/qatar/articles.json": "41a4960d8493a420e229853fd87fe32b84a4c8bb5f2e95a41ed113ccf5c4a541",
+    "src/data/qatar/arabic.json": "977d833b25dc187b5d6ab0170de4d5cc8e140d976a92b110ca4b829cec792aa3",
+    "src/components/qatar/QatarPage.tsx": "9211d6ee473b60a8decd01ab5132bc7871fd644d397b5a6ef01f99c724fd0969",
+    "src/components/qatar/QatarContact.tsx": "b1234804a865628a6d691bdc8edbc1bcab226da476711ccf3a8a6bdd0b3de79a",
+    "src/middleware.ts": "fda64964276694595923ed2874dcb2cf3a77e6a0c6f2a55505c9e7ca9ca75fb9",
+    "public/enquiries/submit.php": "a0f7b5ede0769f5545dc5b8a526c556b8f934caad943d433689c247d839a99e8",
+    "server.mjs": "3f333c44c64b14d3c23b5920df882592329a90da3703b2d100d4cea2bf15694a"
+  }
+}

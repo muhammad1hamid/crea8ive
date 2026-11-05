@@ -1,0 +1,33 @@
+{
+  "samples": 90,
+  "overflows": [],
+  "broken": [],
+  "accessibility": [],
+  "errors": [],
+  "functional": [
+    {
+      "name": "Contextual service preselection",
+      "pass": true
+    },
+    {
+      "name": "Unknown service rejected",
+      "pass": true
+    },
+    {
+      "name": "WhatsApp stage works without JavaScript",
+      "pass": true
+    },
+    {
+      "name": "Visible headline without JavaScript",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion hero",
+      "pass": true
+    },
+    {
+      "name": "Keyboard stage disclosure",
+      "pass": true
+    }
+  ]
+}

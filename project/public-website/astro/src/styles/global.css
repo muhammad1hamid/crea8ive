@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Metric-matched fallbacks so text renders in Arial at the SAME size/line
+   height while the web fonts load — eliminates the font-swap layout shift
+   (was the whole CLS score: the hero reflowed and pushed the robot image).
+   Values computed from the actual Orbitron/Inter glyph advances vs Arial. */
+@font-face {
+  font-family: "Orbitron Fallback";
+  src: local("Arial");
+  size-adjust: 126.5%;
+  ascent-override: 79.92%;
+  descent-override: 19.21%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial");
+  size-adjust: 107.48%;
+  ascent-override: 90.14%;
+  descent-override: 22.44%;
+  line-gap-override: 0%;
+}
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #030303; color: #fff; font-family: Inter, "Inter Fallback", Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+.wordpress-content { overflow: hidden; }
+.wordpress-content img { max-width: 100%; height: auto; }
+.wordpress-content + section,
+.wordpress-content ~ section { position: relative; z-index: 1; }
+input,
+select,
+textarea,
+button { font: inherit; }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+.animate-float { animation: float 6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; } }

@@ -1,0 +1,6 @@
+/* Form completion takes priority over persistent conversion chrome. */
+body:has(input:focus,select:focus,textarea:focus) [data-quick-contact],
+body:has(input:focus,select:focus,textarea:focus) [data-assistant-root]:not(:has([role="dialog"])) {
+  visibility:hidden;
+  pointer-events:none;
+}

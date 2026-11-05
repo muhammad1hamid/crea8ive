@@ -1,0 +1,132 @@
+/* Homepage bands share a dark palette, including the former white sections. */
+.mixed.mixed > section:not([data-home-process]):not([data-home-journey]):not([data-home-buyer]):not([data-home-orbit]):not([data-home-closing]):not([data-home-stories]):not([data-home-work]) {
+  --agency-canvas:#181818;
+  --agency-raised:#242424;
+  --agency-line:#48433f;
+  --page-bg:var(--agency-canvas);
+  --section-bg:var(--agency-canvas);
+  --surface-solid:var(--agency-raised);
+  --surface-raised:#202020;
+  --surface-1:var(--agency-raised);
+  --surface-2:var(--surface-raised);
+  --card-bg:var(--agency-raised);
+  --card-highlight:rgb(255 255 255 / .05);
+  --green-soft:var(--agency-raised);
+  --line:var(--agency-line);
+  --border-soft:var(--agency-line);
+  --text-primary:#f5f7f9;
+  --text-strong:var(--text-primary);
+  --text-secondary:#cbc6c1;
+  --text-soft:var(--text-secondary);
+  --support-text:var(--text-secondary);
+  --icon-color:var(--crea8iv-orange);
+  --accent-text:var(--crea8iv-orange);
+  --home-orange:var(--crea8iv-orange);
+  --home-cream:var(--text-primary);
+  --home-line:var(--agency-line);
+  --shadow-card:0 8px 22px rgb(0 0 0 / .12);
+  --shadow-deep:rgb(0 0 0 / .12);
+  --surface-sheen:rgb(255 208 168 / .085);
+  background:linear-gradient(110deg,rgb(255 147 71 / .065),transparent 46%,rgb(255 147 71 / .025)),var(--section-bg) !important;
+  color:var(--text-primary);
+  border-color:var(--agency-line) !important;
+  color-scheme:dark;
+}
+
+.mixed.mixed > :global(.tools-discovery-section) { --service-colour:#65d6ca; }
+
+/* Legacy light-mode utilities must follow the band's palette, not the page's. */
+:global(html[data-theme]) .mixed > section :where(h2, h3, h4, strong, dd) {
+  color:var(--text-primary) !important;
+}
+:global(html[data-theme]) .mixed > section :where(p, li, small, dt, [class*="text-white/"]) {
+  color:var(--text-secondary) !important;
+}
+:global(html[data-theme]) .mixed > section :global(:where(.home-lux-eyebrow, .portfolio-kicker)) {
+  color:var(--icon-color) !important;
+}
+:global(html[data-theme]) .mixed > section :global(:where(.home-lux-link, .portfolio-text-link)) {
+  color:var(--text-primary) !important;
+  background:transparent;
+}
+:global(html[data-theme]) .mixed > section :global(:where(.home-lux-button, .home-lux-button *)) {
+  color:#1a0b02 !important;
+}
+:global(html[data-theme]) .mixed > section :where([class*="border-white/"]) {
+  border-color:var(--agency-line) !important;
+}
+:global(html[data-theme]) .mixed > section :where([class*="bg-black/"]) {
+  background:var(--agency-raised) !important;
+}
+:global(html[data-theme]) .mixed > section :global(:where(.home-founder-mark, .home-proof-metric, .home-trust-signal-strip, .home-trust-signal-strip > div)) {
+  background:var(--agency-raised) !important;
+  box-shadow:none !important;
+}
+:global(html[data-theme]) .mixed > section :global(.home-process-step) {
+  background:none !important;
+  box-shadow:none !important;
+}
+
+:global(html[data-theme]) .mixed [data-service-tone="web"] { --service-colour:#f2bb8e; }
+:global(html[data-theme]) .mixed [data-service-tone="search"] { --service-colour:#65d6ca; }
+:global(html[data-theme]) .mixed [data-service-tone="ads"] { --service-colour:#f5cf67; }
+:global(html[data-theme]) .mixed [data-service-tone="brand"] { --service-colour:#f2bb8e; }
+:global(html[data-theme]) .mixed [data-service-tone="social"] { --service-colour:#e8c5a5; }
+:global(html[data-theme]) .mixed [data-service-tone="automation"] { --service-colour:#dfc5a7; }
+:global(html[data-theme]) .mixed [data-service-tone="local"] { --service-colour:#7ed7a1; }
+:global(html[data-theme]) .mixed [data-service-tone="content"] { --service-colour:#f5a18e; }
+:global(html[data-theme]) .mixed [data-service-tone="growth"] { --service-colour:#e8c5a5; }
+
+:global(html[data-theme]) .mixed > section [data-service-tone] :global(:where(.tone-link, .home-tile-cta)) { color:var(--service-colour) !important; }
+:global(html[data-theme]) .mixed > section :global(:where(.home-industry-chips span, .home-industry-number, .home-process-signal-row span, .home-founder-card-badge)) { color:var(--text-secondary) !important; }
+.mixed > section[data-home-surface="light"] :global(.diagnostic-grid a > span:last-child) { color:var(--service-colour); }
+
+:global(html[data-theme]) .mixed :global(.home-website-proof) [data-accent="teal"] { --project-colour:#65d6ca; }
+:global(html[data-theme]) .mixed :global(.home-website-proof) [data-accent="red"] { --project-colour:#f59898; }
+:global(html[data-theme]) .mixed :global(.home-website-proof) [data-accent="gold"] { --project-colour:#e6c588; }
+:global(html[data-theme]) .mixed :global(.home-service-icon) {
+  color:#f2bb8e !important;
+  background:rgb(242 187 142 / .08) !important;
+  border:1px solid rgb(242 187 142 / .25);
+  box-shadow:inset 0 1px 0 rgb(255 224 197 / .12);
+}
+:global(html[data-theme]) .mixed :global(.home-service-index) { color:#b5a79b; opacity:1; }
+:global(html[data-theme]) .mixed :global(.home-lux-button) {
+  background:var(--crea8iv-orange) !important;
+  border-color:var(--crea8iv-orange) !important;
+  box-shadow:inset 0 1px 0 rgb(255 255 255 / .4),0 6px 18px rgb(0 0 0 / .15);
+}
+
+/* Broad, quiet warmth keeps the background branded without decorative orbs. */
+:global(html[data-theme]) .mixed > section :global(:where(.home-premium-signal, .home-conversion-action, .home-industry-card, .tool-card, .case-study-rail article, [data-project])) {
+  background:linear-gradient(115deg,var(--surface-sheen),transparent 44%),var(--card-bg) !important;
+  box-shadow:inset 0 1px 0 var(--surface-sheen),var(--shadow-card) !important;
+}
+.mixed :global([data-project]) { border-color:rgb(242 187 142 / .24) !important; }
+.mixed > section :global(:where(.home-premium-signal, .home-conversion-action, .home-industry-card, .tool-card, .case-study-rail article)) {
+  transition:border-color 180ms ease,box-shadow 180ms ease;
+}
+.mixed > section :global(:where(.home-service-card, .home-creative-rail article, .diagnostic-grid > a, [data-project], .tool-card)) {
+  transition:transform 200ms var(--crea8iv-ease),border-color 200ms ease,box-shadow 200ms ease;
+}
+.mixed > section :global(:where(.home-service-card, .home-creative-rail article, .diagnostic-grid > a, [data-project], .case-study-rail article):focus-within) {
+  border-color:#f2bb8e !important;
+  box-shadow:inset 0 1px 0 rgb(255 221 191 / .2),0 0 0 1px rgb(242 187 142 / .3) !important;
+}
+.mixed :global(.case-study-rail) { padding-top:6px; }
+.mixed > section :where(a, button):focus-visible { outline:2px solid var(--icon-color); outline-offset:4px; }
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  :global(html[data-theme]) .mixed > section :global(:is(.home-service-card, .home-creative-rail article, .diagnostic-grid > a, [data-project], .case-study-rail article, .home-conversion-action, .tool-card):hover) {
+    transform:translateY(-4px);
+    border-color:#e7b184 !important;
+    background:linear-gradient(115deg,rgb(255 208 168 / .14),transparent 60%),var(--card-bg) !important;
+    box-shadow:inset 0 1px 0 rgb(255 221 191 / .22),0 12px 26px rgb(0 0 0 / .3),0 0 0 1px rgb(242 187 142 / .12) !important;
+  }
+  .mixed > section :global(:where(.home-conversion-action, .tool-card):hover) {
+    box-shadow:inset 0 1px 0 var(--surface-sheen),0 12px 26px rgb(25 40 48 / .12) !important;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .mixed > section :global(:where(.home-premium-signal, .home-conversion-action, .home-industry-card, .tool-card, .case-study-rail article)) { transition:none; }
+  .mixed > section :global(:where(.home-service-card, .home-creative-rail article, .diagnostic-grid > a, [data-project], .tool-card)) { transition:none; transform:none; }
+}

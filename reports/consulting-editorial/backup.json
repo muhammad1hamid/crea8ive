@@ -1,0 +1,8 @@
+{
+  "createdAt": "2026-09-30T19:20:05.051Z",
+  "archive": "crea8iv-editorial-backup-2026-09-30T19-20-01-604Z.tar.gz",
+  "documents": 517,
+  "manifest": "deploy-manifest.txt",
+  "verification": "Backup verified: /home/u700603111/crea8iv-editorial-backup-2026-09-30T19-20-01-604Z.tar.gz",
+  "rollback": "Extract this archive into the configured public_html directory. Do not delete old hashed assets. Newly added hashed assets can remain unused."
+}

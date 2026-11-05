@@ -1,0 +1,38 @@
+{
+  "base": "http://localhost:3014",
+  "results": [
+    {
+      "viewport": {
+        "w": 1440,
+        "h": 1000,
+        "label": "1440"
+      },
+      "status": 200,
+      "h1": "Black Petals: Scaling NYC Flower Delivery Visibility, Traffic and Revenue",
+      "canonical": "https://crea8ivmedia.com/case-studies/black-petals/",
+      "overflow": 0,
+      "hasRevenue": true,
+      "hasAds": true,
+      "hasAeo": true,
+      "images": 20,
+      "totalImages": 68
+    },
+    {
+      "viewport": {
+        "w": 390,
+        "h": 844,
+        "label": "390"
+      },
+      "status": 200,
+      "h1": "Black Petals: Scaling NYC Flower Delivery Visibility, Traffic and Revenue",
+      "canonical": "https://crea8ivmedia.com/case-studies/black-petals/",
+      "overflow": 0,
+      "hasRevenue": true,
+      "hasAds": true,
+      "hasAeo": true,
+      "images": 20,
+      "totalImages": 68
+    }
+  ],
+  "failures": []
+}

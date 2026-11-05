@@ -1,0 +1,27 @@
+---
+import type { ToolPage } from "../data/tools";
+
+interface Props {
+  tool: ToolPage;
+  compact?: boolean;
+}
+
+const { tool, compact = false } = Astro.props;
+---
+<article
+  class="tool-card group flex h-full flex-col border border-white/10 bg-white/[.035] p-5 transition hover:border-brand/70 hover:bg-brand/10"
+  data-category={tool.category}
+>
+  <div class="flex items-start justify-between gap-4">
+    <span class="grid h-12 w-12 shrink-0 place-items-center border border-brand/60 bg-black font-orbitron text-xs font-bold text-brand">
+      {tool.icon}
+    </span>
+    <span class="border border-white/10 px-3 py-1 font-orbitron text-[10px] uppercase tracking-wide text-white/60">{tool.category}</span>
+  </div>
+  <h3 class="mt-5 font-orbitron text-xl font-semibold leading-tight text-white">{tool.name}</h3>
+  <p class="mt-3 text-sm leading-6 text-white/65">{tool.benefit}</p>
+  {!compact && <p class="mt-4 text-xs leading-5 text-white/45">{tool.inputSummary}</p>}
+  <a href={`/tools/${tool.slug}/`} class="mt-6 inline-flex font-orbitron text-xs uppercase tracking-wide text-brand group-hover:text-white">
+    Use Free Tool →
+  </a>
+</article>

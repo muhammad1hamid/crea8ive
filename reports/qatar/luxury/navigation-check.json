@@ -1,0 +1,113 @@
+{
+  "rows": [
+    {
+      "route": "/qa/",
+      "width": 375,
+      "overflow": false,
+      "violations": [],
+      "closed": true,
+      "focusRestored": true
+    },
+    {
+      "route": "/qa/",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/qa/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/qa/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/qa/",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/qa/",
+      "width": 1440,
+      "overflow": false,
+      "links": [
+        "/qa/services/",
+        "/qa/services/digital-marketing/",
+        "/qa/services/ai-visibility/",
+        "/qa/services/seo/",
+        "/qa/services/google-ads/",
+        "/qa/services/meta-ads/",
+        "/qa/services/social-media-management/",
+        "/qa/services/web-development/",
+        "/qa/content-production/",
+        "/qa/services/ai-automation/",
+        "/qa/services/whatsapp-automation/",
+        "/qa/industries/",
+        "/qa/services/"
+      ],
+      "violations": []
+    },
+    {
+      "route": "/qa/",
+      "width": 1920,
+      "overflow": false
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 375,
+      "overflow": false,
+      "violations": [],
+      "closed": true,
+      "focusRestored": true
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 1440,
+      "overflow": false,
+      "links": [
+        "/qa/ar/services/",
+        "/qa/ar/services/digital-marketing/",
+        "/qa/ar/services/ai-visibility/",
+        "/qa/ar/services/seo/",
+        "/qa/ar/services/google-ads/",
+        "/qa/services/meta-ads/",
+        "/qa/ar/services/social-media-management/",
+        "/qa/ar/services/web-development/",
+        "/qa/ar/content-production/",
+        "/qa/ar/services/ai-automation/",
+        "/qa/ar/services/whatsapp-automation/",
+        "/qa/industries/",
+        "/qa/ar/services/"
+      ],
+      "violations": []
+    },
+    {
+      "route": "/qa/ar/",
+      "width": 1920,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

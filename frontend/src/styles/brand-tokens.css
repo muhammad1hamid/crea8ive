@@ -1,0 +1,12 @@
+/* Shared identity; market layouts own composition and typography scale. */
+:root {
+  --crea8iv-orange: #ff6801;
+  --crea8iv-ink: #080808;
+  --crea8iv-paper: #fcfaee;
+  --crea8iv-focus: #ffb27a;
+  --crea8iv-ease: cubic-bezier(.16, 1, .3, 1);
+  --crea8iv-touch: 44px;
+  --crea8iv-radius: 8px;
+  --crea8iv-reading-leading: 1.65;
+  --crea8iv-motion-fast: 180ms;
+}

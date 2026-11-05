@@ -1,0 +1,15 @@
+reports/qatar/baseline.json
+reports/qatar/routes.csv
+project/documentation/company-registration-trust-strategy-2026-09-09.md
+frontend/src/lib/site-config.ts
+frontend/src/lib/company-registration.ts
+frontend/public/crea8iv-ai-facts.json
+project/documentation/registration-sales-copy.md
+frontend/src/components/pages/NativeMarketingPage.tsx
+frontend/public/service-answer-briefs.md
+frontend/public/answers.md
+frontend/public/ai-citation-sources.md
+frontend/public/llms.txt
+project/documentation/blog-drafts/2026-08-19-knowledge-graph-for-local-businesses.md
+frontend/src/app/[slug]/page.tsx
+frontend/src/app/company-verification/page.tsx

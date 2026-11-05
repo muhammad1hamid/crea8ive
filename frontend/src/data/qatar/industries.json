@@ -1,0 +1,249 @@
+[
+  {
+    "slug": "real-estate",
+    "name": "Real Estate",
+    "summary": "Turn property interest into a qualified viewing.",
+    "problem": "A buyer comparing a Doha apartment with a Lusail development needs different information from an investor comparing rental potential. Separate those journeys before choosing creative or keywords.",
+    "journey": "Project or area discovery → listing review → budget and purpose → agent conversation → viewing → offer",
+    "visibility": "Publish accurate availability, unit details, location context and clear agent contact. Keep sold or withdrawn stock from generating avoidable enquiries.",
+    "trust": "Use approved property imagery, floor plans and factual project information. Explain whether you represent a developer, an agency or a specific listing.",
+    "automation": "Record purchase/rental intent, budget band, preferred area and timing; assign the right agent and schedule a viewing. Send reminders only with permission.",
+    "content": "Property walk-throughs, area explainers, purchase-process questions and clearly dated availability updates.",
+    "metrics": [
+      "Qualified viewing rate",
+      "Agent response time",
+      "Cost per attended viewing",
+      "Viewing-to-offer progression"
+    ],
+    "services": [
+      "seo",
+      "google-ads",
+      "video-production",
+      "whatsapp-automation",
+      "crm-automation"
+    ],
+    "faq": {
+      "question": "Should every project have a landing page?",
+      "answer": "Only when there is useful, distinct information and a maintained offer. Repeated pages with a different area name create confusion and maintenance debt."
+    }
+  },
+  {
+    "slug": "construction",
+    "name": "Construction",
+    "summary": "Make technical capability easier for procurement teams to evaluate.",
+    "problem": "A construction buyer may shortlist suppliers long before requesting a quote. A Qatar-facing website should explain project types, service boundaries and evidence that supports procurement decisions.",
+    "journey": "Capability research → relevant project review → technical enquiry → scope discussion → tender/proposal → procurement decision",
+    "visibility": "Build pages around actual capabilities and project sectors, with contact paths for technical and commercial enquiries.",
+    "trust": "Use approved project roles, dates and scope. Separate main-contractor, subcontractor and consultant experience; do not imply certifications you cannot document.",
+    "automation": "Route enquiries by discipline, contract size and project stage. Track document requests and assign proposal deadlines to named owners.",
+    "content": "Project methodology, quality-control processes, documented case studies and explainers of common scope decisions.",
+    "metrics": [
+      "Qualified tender invitations",
+      "Proposal turnaround",
+      "Technical enquiry quality",
+      "Shortlist-to-award progression"
+    ],
+    "services": [
+      "web-development",
+      "seo",
+      "photography",
+      "crm-automation"
+    ],
+    "faq": {
+      "question": "Can marketing replace supplier qualification?",
+      "answer": "No. Marketing can make evidence easier to evaluate. Procurement qualification and approvals must be supported by the business itself."
+    }
+  },
+  {
+    "slug": "architecture-interiors",
+    "name": "Architecture & Interiors",
+    "summary": "Move from visual inspiration to a well-qualified design brief.",
+    "problem": "A prospect may admire an interior photograph without understanding your scope, fees or project fit. In Qatar, explain the property type, delivery approach and consultation process before asking for a detailed brief.",
+    "journey": "Inspiration → scope and budget → consultation → site visit → proposal",
+    "visibility": "Organize work by project type and services, not only by image style. Make fit-out, design-only and supervision boundaries clear.",
+    "trust": "Credit photographers, collaborators and your precise role. Obtain permission before publishing private residences or identifiable client details.",
+    "automation": "Capture property type, location, approximate budget and timing, then schedule a consultation and prompt proposal follow-up.",
+    "content": "Before-and-after work with consent, material choices, design decisions and clear explanations of project stages.",
+    "metrics": [
+      "Qualified consultations",
+      "Site-visit attendance",
+      "Proposal acceptance",
+      "Time from brief to proposal"
+    ],
+    "services": [
+      "branding",
+      "photography",
+      "web-development",
+      "meta-ads",
+      "crm-automation"
+    ],
+    "faq": {
+      "question": "Should we publish a fixed price per square metre?",
+      "answer": "Only if it accurately reflects a defined scope. Explain what is included and where materials, approvals or site conditions change the quote."
+    }
+  },
+  {
+    "slug": "dental-clinics",
+    "name": "Dental Clinics",
+    "summary": "Help patients choose a consultation and keep the booking journey clear.",
+    "problem": "A person searching for a dental service needs trustworthy information and a practical booking path. Keep clinical claims reviewed by the clinic and separate marketing qualification from medical advice.",
+    "journey": "Service search → clinic and clinician information → booking enquiry → staff confirmation → appointment → permitted follow-up",
+    "visibility": "Create accurate service pages and an eligible business profile. Explain appointment steps, opening hours and contact choices.",
+    "trust": "Use clinic-approved clinician credentials and consented content. Do not invent outcomes, treatment guarantees or patient testimonials.",
+    "automation": "Route appointment requests to staff, send permitted reminders and record cancellation/rescheduling. Automation should not diagnose or recommend treatment.",
+    "content": "Clinic-reviewed service explanations, visit preparation, facility information and answers about booking logistics.",
+    "metrics": [
+      "Confirmed appointments",
+      "Attendance rate",
+      "Time to booking response",
+      "Cost per attended consultation"
+    ],
+    "services": [
+      "local-seo",
+      "google-ads",
+      "web-development",
+      "whatsapp-automation",
+      "crm-automation"
+    ],
+    "faq": {
+      "question": "Can a WhatsApp agent answer clinical questions?",
+      "answer": "Use it for approved administrative information and handoff. Clinical questions should go to an appropriately qualified professional."
+    }
+  },
+  {
+    "slug": "healthcare",
+    "name": "Healthcare",
+    "summary": "Make service navigation and appointment access easier.",
+    "problem": "A healthcare group can have many departments and locations with different booking rules. Give Qatar patients and referring organizations accurate routing information without turning marketing copy into medical guidance.",
+    "journey": "Department discovery → provider information → eligibility/logistics → staff triage → confirmed booking",
+    "visibility": "Map departments, real locations and referral pathways to distinct, maintained pages.",
+    "trust": "Use reviewed credentials and service information. Set a publication owner for updates and protect patient information in media and forms.",
+    "automation": "Route administrative requests by department and preferred contact method. Avoid collecting medical histories in a general marketing lead form.",
+    "content": "Facility access, appointment preparation, referral administration and approved provider introductions.",
+    "metrics": [
+      "Correctly routed requests",
+      "Administrative response time",
+      "Booking completion",
+      "Unresolved enquiries"
+    ],
+    "services": [
+      "web-development",
+      "local-seo",
+      "crm-automation",
+      "content-creation"
+    ],
+    "faq": {
+      "question": "Can we collect patient details through the marketing form?",
+      "answer": "Collect only what is necessary for an administrative enquiry. Clinical records require a separately designed, reviewed and secured workflow."
+    }
+  },
+  {
+    "slug": "restaurants-hospitality",
+    "name": "Restaurants & Hospitality",
+    "summary": "Connect discovery with a visit, booking or repeat order.",
+    "problem": "A diner comparing places in Doha may need a current menu, location, opening hours and a clear booking option. A hotel event enquiry needs a different path with capacity, dates and requirements.",
+    "journey": "Discovery → menu or venue review → directions/booking/order → visit → permitted retention follow-up",
+    "visibility": "Keep genuine locations, hours and menu information consistent. Separate dining, delivery and event enquiries.",
+    "trust": "Use actual food and venue photography, accurate offer conditions and genuine customer feedback.",
+    "automation": "Route bookings by date and party size; confirm with staff. Build consent-based follow-up for repeat visits rather than messaging every past contact.",
+    "content": "Menu highlights, venue tours, seasonal offers with exact dates, dining logistics and event-space walkthroughs.",
+    "metrics": [
+      "Confirmed bookings",
+      "Booking attendance",
+      "Repeat visits where measurable",
+      "Cost per profitable order"
+    ],
+    "services": [
+      "google-business-profile",
+      "photography",
+      "social-media-management",
+      "meta-ads",
+      "whatsapp-automation"
+    ],
+    "faq": {
+      "question": "Should offers change during Ramadan or events?",
+      "answer": "Plan around your real trading hours, capacity and customer needs. Publish accurate dates and conditions rather than assuming every audience follows the same pattern."
+    }
+  },
+  {
+    "slug": "beauty-aesthetics",
+    "name": "Beauty & Aesthetics",
+    "summary": "Match enquiries with the right service and booking process.",
+    "problem": "A salon appointment and a medical aesthetics consultation have different information needs. Build service journeys that clarify who provides the service, how booking works and what information staff should confirm.",
+    "journey": "Service discovery → evidence and suitability information → booking request → staff confirmation → appointment → follow-up",
+    "visibility": "Separate salon services from clinician-led services. Keep service availability and real location details current.",
+    "trust": "Use consented imagery and reviewed claims. Do not imply guaranteed results or publish before-and-after material without approval.",
+    "automation": "Capture requested service and appointment preference, then hand off suitability questions. Reminders and rebooking prompts need permission.",
+    "content": "Service introductions, staff profiles, venue experience and administrative booking FAQs.",
+    "metrics": [
+      "Confirmed bookings",
+      "Cancellation rate",
+      "Response time",
+      "Repeat booking rate"
+    ],
+    "services": [
+      "local-seo",
+      "meta-ads",
+      "content-creation",
+      "whatsapp-automation"
+    ],
+    "faq": {
+      "question": "Can ads promise a specific treatment result?",
+      "answer": "Avoid unsupported promises. Have qualified clinic staff review any medical service claims and applicable advertising requirements before use."
+    }
+  },
+  {
+    "slug": "ecommerce",
+    "name": "E-commerce",
+    "summary": "Connect acquisition with profitable fulfillment.",
+    "problem": "A campaign can produce orders that are expensive to deliver or frequently cancelled. A Qatar growth plan should connect product margin, delivery coverage and checkout experience before scaling media.",
+    "journey": "Product discovery → comparison → cart → checkout → fulfillment → repeat purchase",
+    "visibility": "Improve category structure, product detail and delivery/returns information so shoppers can decide before checkout.",
+    "trust": "Use genuine product imagery and accurate stock/offer conditions. Explain who handles support and returns.",
+    "automation": "Connect order status, customer support routing and permission-based retention; reconcile campaign reporting with completed orders.",
+    "content": "Product demonstrations, comparisons using verified specifications, customer-use guidance and delivery explainers.",
+    "metrics": [
+      "Contribution after media and fulfillment",
+      "Checkout completion",
+      "Cancellation/return rate",
+      "Repeat purchase"
+    ],
+    "services": [
+      "ecommerce-development",
+      "google-ads",
+      "meta-ads",
+      "crm-automation"
+    ],
+    "faq": {
+      "question": "Should we optimize for revenue alone?",
+      "answer": "No. Include product margin, refunds, payment costs and fulfillment when judging whether a campaign can scale."
+    }
+  },
+  {
+    "slug": "professional-services",
+    "name": "Professional Services",
+    "summary": "Turn specialist expertise into a credible commercial conversation.",
+    "problem": "Consultancies and B2B firms often sell work that cannot be understood from a short service list. Explain the decision you help a Qatar client make, the evidence you use and what the engagement delivers.",
+    "journey": "Problem research → expert/service evaluation → initial brief → discovery → scoped proposal → engagement",
+    "visibility": "Map pages to specific buyer problems and procurement questions. Avoid broad claims such as being the best without supporting evidence.",
+    "trust": "Publish approved case scope, qualifications and useful analysis. Clearly separate illustrative scenarios from delivered results.",
+    "automation": "Qualify company type, decision context, timing and budget; route the brief to the right specialist and track proposal follow-up.",
+    "content": "Practical buyer guides, methodology explainers, sector perspectives and permission-cleared case studies.",
+    "metrics": [
+      "Qualified discovery calls",
+      "Proposal acceptance",
+      "Sales cycle length",
+      "Source of retained clients"
+    ],
+    "services": [
+      "ai-visibility",
+      "seo",
+      "web-development",
+      "crm-automation"
+    ],
+    "faq": {
+      "question": "How much expertise should we share free?",
+      "answer": "Publish enough to help a buyer understand the problem and judge your approach. Reserve tailored diagnosis and implementation for the agreed engagement."
+    }
+  }
+]

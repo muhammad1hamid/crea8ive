@@ -1,0 +1,94 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ToolCard from "../../components/ToolCard.astro";
+import { TOOL_CATEGORIES, tools } from "../../data/tools";
+
+const schemaItems = [
+  {
+    "@type": "CollectionPage",
+    name: "Free Growth Tools",
+    description: "Free tools for SEO, AI visibility, local search, advertising, website conversion, ROI, and healthcare growth.",
+    url: "https://crea8ivmedia.com/tools/",
+    mainEntity: tools.map((tool) => ({
+      "@type": "WebApplication",
+      name: tool.name,
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      url: `https://crea8ivmedia.com/tools/${tool.slug}/`,
+      description: tool.benefit,
+    })),
+  },
+  {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://crea8ivmedia.com/" },
+      { "@type": "ListItem", position: 2, name: "Free Growth Tools", item: "https://crea8ivmedia.com/tools/" },
+    ],
+  },
+];
+---
+<BaseLayout
+  title="Free Growth Tools | SEO, AI Visibility, Ads & ROI Calculators"
+  description="Use free Crea8iv Media tools for SEO audits, AI visibility, local SEO, Meta Ads, Google Ads, website ROI, conversion checks, and schema markup."
+  canonical="/tools/"
+  schemaItems={schemaItems}
+>
+  <section class="relative bg-black px-6 pb-20 pt-40 text-white">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_25%,rgba(254,106,9,.25),transparent_34%)]"></div>
+    <div class="relative mx-auto max-w-[1400px]">
+      <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">Free Growth Tools</p>
+      <h1 class="mt-6 max-w-5xl font-orbitron text-4xl font-bold leading-tight sm:text-6xl">Audit. Measure. Improve. Grow.</h1>
+      <p class="mt-6 max-w-3xl text-lg leading-8 text-white/70">
+        Practical tools for SEO, AI visibility, advertising, local search, conversion and business growth.
+        Get the primary result first, then request a detailed review only if it helps.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-[#080808] px-6 py-16 text-white" data-tool-directory>
+    <div class="mx-auto max-w-[1400px]">
+      <div class="flex flex-wrap gap-3" role="list" aria-label="Tool categories">
+        {TOOL_CATEGORIES.map((category) => (
+          <button
+            type="button"
+            class="border border-white/15 px-4 py-2 font-orbitron text-xs uppercase tracking-wide text-white/70 data-[active=true]:border-brand data-[active=true]:bg-brand data-[active=true]:text-white"
+            data-tool-filter={category}
+            data-active={category === "All" ? "true" : "false"}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
+      <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        {tools.map((tool) => <ToolCard tool={tool} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-black px-6 py-16 text-white">
+    <div class="mx-auto grid max-w-[1400px] gap-8 lg:grid-cols-[.9fr_1.1fr]">
+      <div>
+        <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">Why This Hub Exists</p>
+        <h2 class="mt-5 font-orbitron text-3xl font-bold leading-tight sm:text-4xl">Useful tools build better buying decisions.</h2>
+      </div>
+      <div class="grid gap-4 text-sm leading-7 text-white/70 md:grid-cols-2">
+        <p>These tools are built for business owners who want to understand the numbers and visibility signals before spending more on ads, SEO, web design, or automation.</p>
+        <p>Audit-style tools are honest about their limits: this static site does not query private Google Business Profile data, AI platforms, or full crawlers. It scores the signals you can verify and then shows the next best actions.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const directory = document.querySelector("[data-tool-directory]");
+  directory?.querySelectorAll("[data-tool-filter]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const category = button.getAttribute("data-tool-filter");
+      directory.querySelectorAll("[data-tool-filter]").forEach((item) => item.setAttribute("data-active", String(item === button)));
+      directory.querySelectorAll("[data-category]").forEach((card) => {
+        card.classList.toggle("hidden", category !== "All" && card.getAttribute("data-category") !== category);
+      });
+    });
+  });
+</script>

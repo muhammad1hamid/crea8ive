@@ -1,0 +1,139 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ToolCard from "../../components/ToolCard.astro";
+import ToolInterface from "../../components/ToolInterface.astro";
+import { SITE_URL } from "../../data/site";
+import { tools, toolsBySlug } from "../../data/tools";
+
+export function getStaticPaths() {
+  return tools.map((tool) => ({ params: { slug: tool.slug }, props: { tool } }));
+}
+
+const { tool } = Astro.props;
+const relatedTools = tool.relatedTools.map((slug) => toolsBySlug[slug]).filter(Boolean);
+const schemaItems = [
+  {
+    "@type": "WebPage",
+    name: tool.name,
+    description: tool.description,
+    url: `${SITE_URL}/tools/${tool.slug}/`,
+  },
+  {
+    "@type": "WebApplication",
+    name: tool.name,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    url: `${SITE_URL}/tools/${tool.slug}/`,
+    description: tool.benefit,
+    provider: { "@type": "LocalBusiness", name: "Crea8iv Media", url: SITE_URL },
+  },
+  {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Free Growth Tools", item: `${SITE_URL}/tools/` },
+      { "@type": "ListItem", position: 3, name: tool.name, item: `${SITE_URL}/tools/${tool.slug}/` },
+    ],
+  },
+  {
+    "@type": "FAQPage",
+    mainEntity: tool.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  },
+];
+---
+<BaseLayout title={tool.title} description={tool.description} canonical={`/tools/${tool.slug}/`} schemaItems={schemaItems}>
+  <section class="relative bg-black px-6 pb-16 pt-40 text-white">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_75%_28%,rgba(254,106,9,.25),transparent_34%)]"></div>
+    <div class="relative mx-auto grid max-w-[1400px] gap-10 lg:grid-cols-[1fr_.72fr]">
+      <div>
+        <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">{tool.category} Tool</p>
+        <h1 class="mt-6 max-w-5xl font-orbitron text-4xl font-bold leading-tight sm:text-6xl">{tool.name}</h1>
+        <p class="mt-6 max-w-3xl text-lg leading-8 text-white/70">{tool.description}</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#use-tool" class="border border-brand bg-brand px-6 py-3 font-orbitron text-xs uppercase tracking-wide text-white">Use Free Tool →</a>
+          <a href="/tools/" class="border border-white/20 px-6 py-3 font-orbitron text-xs uppercase tracking-wide text-white">All Tools</a>
+        </div>
+      </div>
+      <aside class="border border-white/10 bg-white/[.03] p-6">
+        <p class="font-orbitron text-xs uppercase tracking-wide text-brand">What You Need</p>
+        <p class="mt-4 text-sm leading-6 text-white/70">{tool.inputSummary}</p>
+        <a href={tool.serviceHref} class="mt-6 inline-flex text-sm text-brand">Related service: {tool.serviceLabel}</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="bg-[#080808] px-6 py-16 text-white">
+    <div class="mx-auto grid max-w-[1400px] gap-5 lg:grid-cols-3">
+      <article class="border border-white/10 bg-black p-6">
+        <h2 class="font-orbitron text-2xl font-semibold">What the tool checks</h2>
+        <ul class="mt-6 grid gap-3">
+          {tool.checks.map((item) => <li class="border-t border-white/10 pt-3 text-sm leading-6 text-white/70">{item}</li>)}
+        </ul>
+      </article>
+      <article class="border border-white/10 bg-black p-6">
+        <h2 class="font-orbitron text-2xl font-semibold">How it works</h2>
+        <ol class="mt-6 grid gap-3">
+          {tool.howItWorks.map((item, index) => <li class="border-t border-white/10 pt-3 text-sm leading-6 text-white/70">{index + 1}. {item}</li>)}
+        </ol>
+      </article>
+      <article class="border border-white/10 bg-black p-6">
+        <h2 class="font-orbitron text-2xl font-semibold">Who it is for</h2>
+        <ul class="mt-6 grid gap-3">
+          {tool.audience.map((item) => <li class="border-t border-white/10 pt-3 text-sm leading-6 text-white/70">{item}</li>)}
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <ToolInterface tool={tool} />
+
+  <section class="bg-[#080808] px-6 py-16 text-white">
+    <div class="mx-auto grid max-w-[1400px] gap-8 lg:grid-cols-[.8fr_1.2fr]">
+      <div>
+        <p class="font-orbitron text-xs uppercase tracking-[.3em] text-brand">Interpretation</p>
+        <h2 class="mt-5 font-orbitron text-3xl font-bold leading-tight sm:text-4xl">What the result means</h2>
+        <p class="mt-5 text-base leading-7 text-white/70">{tool.interpretation}</p>
+      </div>
+      <div class="grid gap-4 md:grid-cols-2">
+        <div class="border border-white/10 bg-black p-5">
+          <h3 class="font-orbitron text-lg font-semibold">Relevant Resources</h3>
+          <div class="mt-5 grid gap-3">
+            {tool.resourceLinks.map((link) => <a href={link.href} class="text-sm text-white/70 hover:text-brand">{link.label}</a>)}
+          </div>
+        </div>
+        <div class="border border-white/10 bg-black p-5">
+          <h3 class="font-orbitron text-lg font-semibold">Relevant Service</h3>
+          <p class="mt-4 text-sm leading-6 text-white/65">Need implementation help after the result?</p>
+          <a href={tool.serviceHref} class="mt-5 inline-flex font-orbitron text-xs uppercase tracking-wide text-brand">{tool.serviceLabel} →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-black px-6 py-16 text-white">
+    <div class="mx-auto max-w-[1400px]">
+      <h2 class="font-orbitron text-3xl font-bold">Related tools</h2>
+      <div class="mt-8 grid gap-5 md:grid-cols-3">
+        {relatedTools.map((related) => <ToolCard tool={related} compact />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#080808] px-6 py-16 text-white">
+    <div class="mx-auto max-w-[1000px]">
+      <h2 class="font-orbitron text-3xl font-bold">FAQs</h2>
+      <div class="mt-8 grid gap-4">
+        {tool.faqs.map((faq) => (
+          <details class="border border-white/10 bg-black p-5">
+            <summary class="cursor-pointer font-orbitron text-lg">{faq.question}</summary>
+            <p class="mt-4 text-sm leading-6 text-white/70">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
