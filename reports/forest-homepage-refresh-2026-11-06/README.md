@@ -4,7 +4,7 @@ Implemented the six requested homepage changes, following the approved “Growth
 
 ## Delivered
 
-- Problem-led services, work library, connected journey and journal backgrounds are `#064B3B` in both themes. Copy is ivory on green. Light folder faces, service popups and connected-journey cards retain their own readable light palettes.
+- Following the user’s theme clarification, problem-led services, work library, connected journey and journal backgrounds are `#064B3B` only in light mode. Dark mode retains its previous charcoal/brown backgrounds and ambient gradients. Copy is ivory on light-mode green; light folder faces, service popups and connected-journey cards keep readable light palettes.
 - Three new 16:10 creative-work mockups fill their image areas at desktop, tablet and mobile sizes. Original artwork and case-study links are preserved.
 - The closing CTA is a forest-green rounded card in both themes, with three desktop zones, orange italic headline emphasis, a separate transparent laptop graphic, orange project action and outlined WhatsApp action.
 - Mobile order is copy, visual, question, primary/secondary actions and case-study link. All exact CTA text and destinations are unchanged.
@@ -15,8 +15,9 @@ Implemented the six requested homepage changes, following the approved “Growth
 | Check | Result |
 | --- | --- |
 | Local preview | http://127.0.0.1:4321/ |
-| 320 / 390 / 768 / 1440px, both themes | Passed — 48 section/viewport checks plus 8 final CTA layout checks |
-| Four green sections | Computed background `rgb(6, 75, 59)` at every checked size/theme |
+| 320 / 390 / 768 / 1440px, both themes | Passed — 32 final theme/section checks plus 8 CTA layout checks; regenerated creative cards also checked at all four widths |
+| Four green sections | Light mode: computed background `rgb(6, 75, 59)` at every checked size |
+| Restored dark surfaces | Services `#171513` with original ambient gradients; library `#111411`; connected journey `#0B0B0C` with original gradients; journal `#181818` with original warm gradient |
 | Images / overflow | Selected images decoded; no page overflow; creative media remains 16:10 |
 | Content and navigation | All 14 direct homepage sections retain normalized text and link destinations |
 | SEO baseline | Title, description, canonical, H1 and JSON-LD unchanged |
@@ -32,7 +33,7 @@ Implemented the six requested homepage changes, following the approved “Growth
 
 The export-only `verify:portfolio-assets` command expects an `out/` static release, which is absent for this local Next.js build. It reported missing export paths; the equivalent public-source path check and browser image decodes passed. No static export or deployment was requested. The build retains the existing eight WordPress filesystem tracing warnings and Tailwind module-format notice.
 
-Two visual review rounds were completed. The first corrected CTA headline line breaks and the scale of its mobile corner accent. A final small journal label colour adjustment improves contrast on green. Read-only browser requests were restricted to local static content. No production forms, WhatsApp messages or backend delivery were triggered. Motion harness timing was corrected to use an active tab, observed animation clocks and instant test scrolling; these were test readiness issues.
+Three visual review rounds were completed, including the final light-only theme clarification. The first corrected CTA headline line breaks and the scale of its mobile corner accent. The journal label uses a lighter orange only on light-mode green to improve contrast. Read-only browser requests were restricted to local static content. No production forms, WhatsApp messages or backend delivery were triggered. Motion harness timing was corrected to use an active tab, observed animation clocks and instant test scrolling; these were test readiness issues.
 
 ## Previews
 
@@ -46,5 +47,9 @@ Two visual review rounds were completed. The first corrected CTA headline line b
 - [Work library](light-1440-home-work-library.png)
 - [Connected journey](light-1440-home-how-it-connects.png)
 - [Journal](light-1440-home-insights-section.png)
+- [Restored dark services](dark-1440-home-problem-services.png)
+- [Restored dark work library](dark-1440-home-work-library.png)
+- [Restored dark connected journey](dark-1440-home-how-it-connects.png)
+- [Restored dark journal](dark-1440-home-insights-section.png)
 
 [Generated asset paths, reference inputs and exact final prompts](asset-prompts.md).

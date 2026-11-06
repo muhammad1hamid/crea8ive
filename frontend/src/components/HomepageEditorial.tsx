@@ -48,7 +48,7 @@ export default function HomepageEditorial({ posts }: { posts: WPPost[] }) {
                     imageAlt=""
                     badge={`0${index + 1} / 0${recentPosts.length}`}
                     tags={[post.topic]}
-                    surface="#064B3B"
+                    surface="var(--journal-ground, #181818)"
                   />
                 </article>
               ))}

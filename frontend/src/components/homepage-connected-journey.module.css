@@ -1,5 +1,5 @@
 .section.section.section {
-  --journey-ground: #064b3b;
+  --journey-ground: #0b0b0c;
   --journey-card: #121213;
   --journey-ink: #f7f5f2;
   --journey-copy: #d0cbc5;
@@ -14,7 +14,7 @@
   overflow: hidden;
   scroll-margin-top: 100px;
   padding: 60px 40px 64px !important;
-  background: var(--journey-ground) !important;
+  background: radial-gradient(ellipse at 0 0, rgb(255 104 1 / .08), transparent 38%), radial-gradient(ellipse at 100% 100%, rgb(255 104 1 / .06), transparent 34%), linear-gradient(125deg, #101011, var(--journey-ground) 60%);
   color: var(--journey-ink);
   color-scheme: dark;
 }

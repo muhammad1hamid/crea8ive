@@ -10,6 +10,7 @@
       "width": 1440,
       "selector": "#home-problem-services",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/assets/crea8iv-media-vector-hero-840.webp",
@@ -112,6 +113,7 @@
       "width": 1440,
       "selector": "#home-work-library",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp",
@@ -443,82 +445,9 @@
     {
       "theme": "light",
       "width": 1440,
-      "selector": "#home-creative-work",
-      "background": "rgb(255, 247, 237)",
-      "images": [
-        {
-          "src": "/img/homepage/creative-work/co3-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 435,
-          "height": 272
-        },
-        {
-          "src": "/img/homepage/creative-work/venn-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 435,
-          "height": 272
-        },
-        {
-          "src": "/img/homepage/creative-work/ajwad-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 435,
-          "height": 272
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "The work",
-          "color": "rgb(165, 69, 6)"
-        },
-        {
-          "tag": "H2",
-          "text": "Brand identities, campaigns and con",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "Explore identity systems, product c",
-          "color": "rgb(69, 71, 61)"
-        },
-        {
-          "tag": "H3",
-          "text": "CO3 Premium brand identity",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "The visual identity and guidelines ",
-          "color": "rgb(69, 71, 61)"
-        },
-        {
-          "tag": "H3",
-          "text": "Venn Dental social content",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "Social creative that presents a con",
-          "color": "rgb(69, 71, 61)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": true,
-      "clip": {
-        "x": 0,
-        "y": 6555.3125,
-        "width": 1440,
-        "height": 686.109375
-      }
-    },
-    {
-      "theme": "light",
-      "width": 1440,
       "selector": "#home-how-it-connects",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/homepage/connected-journey/01-discover.webp",
@@ -607,6 +536,7 @@
       "width": 1440,
       "selector": ".home-insights-section",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/wp-content/uploads/2026/10/website-redesign-checklist-blog-thumbnail.webp",
@@ -678,59 +608,10 @@
     },
     {
       "theme": "light",
-      "width": 1440,
-      "selector": "#home-project-enquiry",
-      "background": "rgb(247, 241, 232)",
-      "images": [
-        {
-          "src": "/img/homepage/closing/growth-laptop.webp",
-          "ok": true,
-          "fit": "fill",
-          "width": 351,
-          "height": 234
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "Let’s talk about what’s next",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "H2",
-          "text": "You’ve built something worth choosi",
-          "color": "rgb(255, 248, 239)"
-        },
-        {
-          "tag": "P",
-          "text": "Tell us what you want to improve. W",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "What are you trying to improve righ",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "Prefer to see the work first? Explo",
-          "color": "rgb(213, 226, 217)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": false,
-      "clip": {
-        "x": 0,
-        "y": 13936.8125,
-        "width": 1440,
-        "height": 639.984375
-      }
-    },
-    {
-      "theme": "light",
       "width": 768,
       "selector": "#home-problem-services",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/assets/crea8iv-media-vector-hero-840.webp",
@@ -833,6 +714,7 @@
       "width": 768,
       "selector": "#home-work-library",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp",
@@ -1164,82 +1046,9 @@
     {
       "theme": "light",
       "width": 768,
-      "selector": "#home-creative-work",
-      "background": "rgb(255, 247, 237)",
-      "images": [
-        {
-          "src": "/img/homepage/creative-work/co3-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 338,
-          "height": 211
-        },
-        {
-          "src": "/img/homepage/creative-work/venn-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 338,
-          "height": 211
-        },
-        {
-          "src": "/img/homepage/creative-work/ajwad-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 338,
-          "height": 211
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "The work",
-          "color": "rgb(165, 69, 6)"
-        },
-        {
-          "tag": "H2",
-          "text": "Brand identities, campaigns and con",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "Explore identity systems, product c",
-          "color": "rgb(69, 71, 61)"
-        },
-        {
-          "tag": "H3",
-          "text": "CO3 Premium brand identity",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "The visual identity and guidelines ",
-          "color": "rgb(69, 71, 61)"
-        },
-        {
-          "tag": "H3",
-          "text": "Venn Dental social content",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "Social creative that presents a con",
-          "color": "rgb(69, 71, 61)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": true,
-      "clip": {
-        "x": 0,
-        "y": 7373.53125,
-        "width": 768,
-        "height": 1150.59375
-      }
-    },
-    {
-      "theme": "light",
-      "width": 768,
       "selector": "#home-how-it-connects",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/homepage/connected-journey/01-discover.webp",
@@ -1328,6 +1137,7 @@
       "width": 768,
       "selector": ".home-insights-section",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/wp-content/uploads/2026/10/website-redesign-checklist-blog-thumbnail.webp",
@@ -1399,59 +1209,10 @@
     },
     {
       "theme": "light",
-      "width": 768,
-      "selector": "#home-project-enquiry",
-      "background": "rgb(247, 241, 232)",
-      "images": [
-        {
-          "src": "/img/homepage/closing/growth-laptop.webp",
-          "ok": true,
-          "fit": "fill",
-          "width": 276,
-          "height": 184
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "Let’s talk about what’s next",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "H2",
-          "text": "You’ve built something worth choosi",
-          "color": "rgb(255, 248, 239)"
-        },
-        {
-          "tag": "P",
-          "text": "Tell us what you want to improve. W",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "What are you trying to improve righ",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "Prefer to see the work first? Explo",
-          "color": "rgb(213, 226, 217)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": false,
-      "clip": {
-        "x": 0,
-        "y": 16932.078125,
-        "width": 768,
-        "height": 689.640625
-      }
-    },
-    {
-      "theme": "light",
       "width": 390,
       "selector": "#home-problem-services",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/assets/crea8iv-media-vector-hero-840.webp",
@@ -1554,6 +1315,7 @@
       "width": 390,
       "selector": "#home-work-library",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp",
@@ -1885,82 +1647,9 @@
     {
       "theme": "light",
       "width": 390,
-      "selector": "#home-creative-work",
-      "background": "rgb(255, 247, 237)",
-      "images": [
-        {
-          "src": "/img/homepage/creative-work/co3-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 340,
-          "height": 213
-        },
-        {
-          "src": "/img/homepage/creative-work/venn-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 340,
-          "height": 213
-        },
-        {
-          "src": "/img/homepage/creative-work/ajwad-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 340,
-          "height": 213
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "The work",
-          "color": "rgb(165, 69, 6)"
-        },
-        {
-          "tag": "H2",
-          "text": "Brand identities, campaigns and con",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "Explore identity systems, product c",
-          "color": "rgb(69, 71, 61)"
-        },
-        {
-          "tag": "H3",
-          "text": "CO3 Premium brand identity",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "The visual identity and guidelines ",
-          "color": "rgb(69, 71, 61)"
-        },
-        {
-          "tag": "H3",
-          "text": "Venn Dental social content",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "Social creative that presents a con",
-          "color": "rgb(69, 71, 61)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": true,
-      "clip": {
-        "x": 0,
-        "y": 8691.25,
-        "width": 390,
-        "height": 1560.828125
-      }
-    },
-    {
-      "theme": "light",
-      "width": 390,
       "selector": "#home-how-it-connects",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/homepage/connected-journey/01-discover.webp",
@@ -2049,6 +1738,7 @@
       "width": 390,
       "selector": ".home-insights-section",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/wp-content/uploads/2026/10/website-redesign-checklist-blog-thumbnail.webp",
@@ -2120,59 +1810,10 @@
     },
     {
       "theme": "light",
-      "width": 390,
-      "selector": "#home-project-enquiry",
-      "background": "rgb(247, 241, 232)",
-      "images": [
-        {
-          "src": "/img/homepage/closing/growth-laptop.webp",
-          "ok": true,
-          "fit": "fill",
-          "width": 322,
-          "height": 215
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "Let’s talk about what’s next",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "H2",
-          "text": "You’ve built something worth choosi",
-          "color": "rgb(255, 248, 239)"
-        },
-        {
-          "tag": "P",
-          "text": "Tell us what you want to improve. W",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "What are you trying to improve righ",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "Prefer to see the work first? Explo",
-          "color": "rgb(213, 226, 217)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": false,
-      "clip": {
-        "x": 0,
-        "y": 22638.03125,
-        "width": 390,
-        "height": 1059.546875
-      }
-    },
-    {
-      "theme": "light",
       "width": 320,
       "selector": "#home-problem-services",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/assets/crea8iv-media-vector-hero-840.webp",
@@ -2275,6 +1916,7 @@
       "width": 320,
       "selector": "#home-work-library",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp",
@@ -2606,82 +2248,9 @@
     {
       "theme": "light",
       "width": 320,
-      "selector": "#home-creative-work",
-      "background": "rgb(255, 247, 237)",
-      "images": [
-        {
-          "src": "/img/homepage/creative-work/co3-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 278,
-          "height": 174
-        },
-        {
-          "src": "/img/homepage/creative-work/venn-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 278,
-          "height": 174
-        },
-        {
-          "src": "/img/homepage/creative-work/ajwad-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 278,
-          "height": 174
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "The work",
-          "color": "rgb(165, 69, 6)"
-        },
-        {
-          "tag": "H2",
-          "text": "Brand identities, campaigns and con",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "Explore identity systems, product c",
-          "color": "rgb(69, 71, 61)"
-        },
-        {
-          "tag": "H3",
-          "text": "CO3 Premium brand identity",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "The visual identity and guidelines ",
-          "color": "rgb(69, 71, 61)"
-        },
-        {
-          "tag": "H3",
-          "text": "Venn Dental social content",
-          "color": "rgb(28, 36, 28)"
-        },
-        {
-          "tag": "P",
-          "text": "Social creative that presents a con",
-          "color": "rgb(69, 71, 61)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": true,
-      "clip": {
-        "x": 0,
-        "y": 8854.671875,
-        "width": 320,
-        "height": 1484.484375
-      }
-    },
-    {
-      "theme": "light",
-      "width": 320,
       "selector": "#home-how-it-connects",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/homepage/connected-journey/01-discover.webp",
@@ -2770,6 +2339,7 @@
       "width": 320,
       "selector": ".home-insights-section",
       "background": "rgb(6, 75, 59)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/wp-content/uploads/2026/10/website-redesign-checklist-blog-thumbnail.webp",
@@ -2840,56 +2410,6 @@
       }
     },
     {
-      "theme": "light",
-      "width": 320,
-      "selector": "#home-project-enquiry",
-      "background": "rgb(247, 241, 232)",
-      "images": [
-        {
-          "src": "/img/homepage/closing/growth-laptop.webp",
-          "ok": true,
-          "fit": "fill",
-          "width": 260,
-          "height": 173
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "Let’s talk about what’s next",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "H2",
-          "text": "You’ve built something worth choosi",
-          "color": "rgb(255, 248, 239)"
-        },
-        {
-          "tag": "P",
-          "text": "Tell us what you want to improve. W",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "What are you trying to improve righ",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "Prefer to see the work first? Explo",
-          "color": "rgb(213, 226, 217)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": false,
-      "clip": {
-        "x": 0,
-        "y": 22965.03125,
-        "width": 320,
-        "height": 1058.171875
-      }
-    },
-    {
       "theme": "dark",
       "seoSame": true,
       "contentDiff": []
@@ -2898,7 +2418,8 @@
       "theme": "dark",
       "width": 1440,
       "selector": "#home-problem-services",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(23, 21, 19)",
+      "backgroundImage": "radial-gradient(at 75% 25%, rgba(8, 72, 56, 0.2), rgba(0, 0, 0, 0) 52%), radial-gradient(at 0px 100%, rgba(8, 72, 56, 0.14), rgba(0, 0, 0, 0) 36%), linear-gradient(120deg, rgb(23, 20, 17), rgb(16, 20, 18) 63%, rgb(25, 20, 17))",
       "images": [
         {
           "src": "/assets/crea8iv-media-vector-hero-840.webp",
@@ -3000,7 +2521,8 @@
       "theme": "dark",
       "width": 1440,
       "selector": "#home-work-library",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(17, 20, 17)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp",
@@ -3332,82 +2854,9 @@
     {
       "theme": "dark",
       "width": 1440,
-      "selector": "#home-creative-work",
-      "background": "rgb(20, 20, 17)",
-      "images": [
-        {
-          "src": "/img/homepage/creative-work/co3-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 435,
-          "height": 272
-        },
-        {
-          "src": "/img/homepage/creative-work/venn-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 435,
-          "height": 272
-        },
-        {
-          "src": "/img/homepage/creative-work/ajwad-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 435,
-          "height": 272
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "The work",
-          "color": "rgb(255, 176, 120)"
-        },
-        {
-          "tag": "H2",
-          "text": "Brand identities, campaigns and con",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "Explore identity systems, product c",
-          "color": "rgb(222, 213, 199)"
-        },
-        {
-          "tag": "H3",
-          "text": "CO3 Premium brand identity",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "The visual identity and guidelines ",
-          "color": "rgb(222, 213, 199)"
-        },
-        {
-          "tag": "H3",
-          "text": "Venn Dental social content",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "Social creative that presents a con",
-          "color": "rgb(222, 213, 199)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": true,
-      "clip": {
-        "x": 0,
-        "y": 6555.3125,
-        "width": 1440,
-        "height": 686.109375
-      }
-    },
-    {
-      "theme": "dark",
-      "width": 1440,
       "selector": "#home-how-it-connects",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(11, 11, 12)",
+      "backgroundImage": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.08), rgba(0, 0, 0, 0) 38%), radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 34%), linear-gradient(125deg, rgb(16, 16, 17), rgb(11, 11, 12) 60%)",
       "images": [
         {
           "src": "/img/homepage/connected-journey/01-discover.webp",
@@ -3495,7 +2944,8 @@
       "theme": "dark",
       "width": 1440,
       "selector": ".home-insights-section",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(24, 24, 24)",
+      "backgroundImage": "linear-gradient(110deg, rgba(255, 147, 71, 0.067), rgba(0, 0, 0, 0) 46%, rgba(255, 147, 71, 0.024)), none",
       "images": [
         {
           "src": "/wp-content/uploads/2026/10/website-redesign-checklist-blog-thumbnail.webp",
@@ -3523,37 +2973,37 @@
         {
           "tag": "H2",
           "text": "Better questions lead to better dec",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "Explore practical perspectives on w",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "Website Redesign Checklist",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "Use this website redesign checklist",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "What Is AI Search Optimization?",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "What is AI search optimization? Lea",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "Website vs Landing Page",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         }
       ],
       "overflow": [],
@@ -3567,59 +3017,10 @@
     },
     {
       "theme": "dark",
-      "width": 1440,
-      "selector": "#home-project-enquiry",
-      "background": "rgb(17, 21, 19)",
-      "images": [
-        {
-          "src": "/img/homepage/closing/growth-laptop.webp",
-          "ok": true,
-          "fit": "fill",
-          "width": 351,
-          "height": 234
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "Let’s talk about what’s next",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "H2",
-          "text": "You’ve built something worth choosi",
-          "color": "rgb(255, 248, 239)"
-        },
-        {
-          "tag": "P",
-          "text": "Tell us what you want to improve. W",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "What are you trying to improve righ",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "Prefer to see the work first? Explo",
-          "color": "rgb(213, 226, 217)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": false,
-      "clip": {
-        "x": 0,
-        "y": 13936.8125,
-        "width": 1440,
-        "height": 639.984375
-      }
-    },
-    {
-      "theme": "dark",
       "width": 768,
       "selector": "#home-problem-services",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(23, 21, 19)",
+      "backgroundImage": "radial-gradient(at 75% 25%, rgba(8, 72, 56, 0.2), rgba(0, 0, 0, 0) 52%), radial-gradient(at 0px 100%, rgba(8, 72, 56, 0.14), rgba(0, 0, 0, 0) 36%), linear-gradient(120deg, rgb(23, 20, 17), rgb(16, 20, 18) 63%, rgb(25, 20, 17))",
       "images": [
         {
           "src": "/assets/crea8iv-media-vector-hero-840.webp",
@@ -3721,7 +3122,8 @@
       "theme": "dark",
       "width": 768,
       "selector": "#home-work-library",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(17, 20, 17)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp",
@@ -4053,82 +3455,9 @@
     {
       "theme": "dark",
       "width": 768,
-      "selector": "#home-creative-work",
-      "background": "rgb(20, 20, 17)",
-      "images": [
-        {
-          "src": "/img/homepage/creative-work/co3-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 338,
-          "height": 211
-        },
-        {
-          "src": "/img/homepage/creative-work/venn-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 338,
-          "height": 211
-        },
-        {
-          "src": "/img/homepage/creative-work/ajwad-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 338,
-          "height": 211
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "The work",
-          "color": "rgb(255, 176, 120)"
-        },
-        {
-          "tag": "H2",
-          "text": "Brand identities, campaigns and con",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "Explore identity systems, product c",
-          "color": "rgb(222, 213, 199)"
-        },
-        {
-          "tag": "H3",
-          "text": "CO3 Premium brand identity",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "The visual identity and guidelines ",
-          "color": "rgb(222, 213, 199)"
-        },
-        {
-          "tag": "H3",
-          "text": "Venn Dental social content",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "Social creative that presents a con",
-          "color": "rgb(222, 213, 199)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": true,
-      "clip": {
-        "x": 0,
-        "y": 7373.53125,
-        "width": 768,
-        "height": 1150.59375
-      }
-    },
-    {
-      "theme": "dark",
-      "width": 768,
       "selector": "#home-how-it-connects",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(11, 11, 12)",
+      "backgroundImage": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.08), rgba(0, 0, 0, 0) 38%), radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 34%), linear-gradient(125deg, rgb(16, 16, 17), rgb(11, 11, 12) 60%)",
       "images": [
         {
           "src": "/img/homepage/connected-journey/01-discover.webp",
@@ -4216,7 +3545,8 @@
       "theme": "dark",
       "width": 768,
       "selector": ".home-insights-section",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(24, 24, 24)",
+      "backgroundImage": "linear-gradient(110deg, rgba(255, 147, 71, 0.067), rgba(0, 0, 0, 0) 46%, rgba(255, 147, 71, 0.024)), none",
       "images": [
         {
           "src": "/wp-content/uploads/2026/10/website-redesign-checklist-blog-thumbnail.webp",
@@ -4244,37 +3574,37 @@
         {
           "tag": "H2",
           "text": "Better questions lead to better dec",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "Explore practical perspectives on w",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "Website Redesign Checklist",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "Use this website redesign checklist",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "What Is AI Search Optimization?",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "What is AI search optimization? Lea",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "Website vs Landing Page",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         }
       ],
       "overflow": [],
@@ -4288,59 +3618,10 @@
     },
     {
       "theme": "dark",
-      "width": 768,
-      "selector": "#home-project-enquiry",
-      "background": "rgb(17, 21, 19)",
-      "images": [
-        {
-          "src": "/img/homepage/closing/growth-laptop.webp",
-          "ok": true,
-          "fit": "fill",
-          "width": 276,
-          "height": 184
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "Let’s talk about what’s next",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "H2",
-          "text": "You’ve built something worth choosi",
-          "color": "rgb(255, 248, 239)"
-        },
-        {
-          "tag": "P",
-          "text": "Tell us what you want to improve. W",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "What are you trying to improve righ",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "Prefer to see the work first? Explo",
-          "color": "rgb(213, 226, 217)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": false,
-      "clip": {
-        "x": 0,
-        "y": 16964.078125,
-        "width": 768,
-        "height": 689.640625
-      }
-    },
-    {
-      "theme": "dark",
       "width": 390,
       "selector": "#home-problem-services",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(23, 21, 19)",
+      "backgroundImage": "radial-gradient(at 75% 25%, rgba(8, 72, 56, 0.2), rgba(0, 0, 0, 0) 52%), radial-gradient(at 0px 100%, rgba(8, 72, 56, 0.14), rgba(0, 0, 0, 0) 36%), linear-gradient(120deg, rgb(23, 20, 17), rgb(16, 20, 18) 63%, rgb(25, 20, 17))",
       "images": [
         {
           "src": "/assets/crea8iv-media-vector-hero-840.webp",
@@ -4442,7 +3723,8 @@
       "theme": "dark",
       "width": 390,
       "selector": "#home-work-library",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(17, 20, 17)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp",
@@ -4774,82 +4056,9 @@
     {
       "theme": "dark",
       "width": 390,
-      "selector": "#home-creative-work",
-      "background": "rgb(20, 20, 17)",
-      "images": [
-        {
-          "src": "/img/homepage/creative-work/co3-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 340,
-          "height": 213
-        },
-        {
-          "src": "/img/homepage/creative-work/venn-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 340,
-          "height": 213
-        },
-        {
-          "src": "/img/homepage/creative-work/ajwad-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 340,
-          "height": 213
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "The work",
-          "color": "rgb(255, 176, 120)"
-        },
-        {
-          "tag": "H2",
-          "text": "Brand identities, campaigns and con",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "Explore identity systems, product c",
-          "color": "rgb(222, 213, 199)"
-        },
-        {
-          "tag": "H3",
-          "text": "CO3 Premium brand identity",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "The visual identity and guidelines ",
-          "color": "rgb(222, 213, 199)"
-        },
-        {
-          "tag": "H3",
-          "text": "Venn Dental social content",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "Social creative that presents a con",
-          "color": "rgb(222, 213, 199)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": true,
-      "clip": {
-        "x": 0,
-        "y": 8691.25,
-        "width": 390,
-        "height": 1560.828125
-      }
-    },
-    {
-      "theme": "dark",
-      "width": 390,
       "selector": "#home-how-it-connects",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(11, 11, 12)",
+      "backgroundImage": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.08), rgba(0, 0, 0, 0) 38%), radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 34%), linear-gradient(125deg, rgb(16, 16, 17), rgb(11, 11, 12) 60%)",
       "images": [
         {
           "src": "/img/homepage/connected-journey/01-discover.webp",
@@ -4937,7 +4146,8 @@
       "theme": "dark",
       "width": 390,
       "selector": ".home-insights-section",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(24, 24, 24)",
+      "backgroundImage": "linear-gradient(110deg, rgba(255, 147, 71, 0.067), rgba(0, 0, 0, 0) 46%, rgba(255, 147, 71, 0.024)), none",
       "images": [
         {
           "src": "/wp-content/uploads/2026/10/website-redesign-checklist-blog-thumbnail.webp",
@@ -4965,37 +4175,37 @@
         {
           "tag": "H2",
           "text": "Better questions lead to better dec",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "Explore practical perspectives on w",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "Website Redesign Checklist",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "Use this website redesign checklist",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "What Is AI Search Optimization?",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "What is AI search optimization? Lea",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "Website vs Landing Page",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         }
       ],
       "overflow": [],
@@ -5009,59 +4219,10 @@
     },
     {
       "theme": "dark",
-      "width": 390,
-      "selector": "#home-project-enquiry",
-      "background": "rgb(17, 21, 19)",
-      "images": [
-        {
-          "src": "/img/homepage/closing/growth-laptop.webp",
-          "ok": true,
-          "fit": "fill",
-          "width": 322,
-          "height": 215
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "Let’s talk about what’s next",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "H2",
-          "text": "You’ve built something worth choosi",
-          "color": "rgb(255, 248, 239)"
-        },
-        {
-          "tag": "P",
-          "text": "Tell us what you want to improve. W",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "What are you trying to improve righ",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "Prefer to see the work first? Explo",
-          "color": "rgb(213, 226, 217)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": false,
-      "clip": {
-        "x": 0,
-        "y": 22702.03125,
-        "width": 390,
-        "height": 1059.546875
-      }
-    },
-    {
-      "theme": "dark",
       "width": 320,
       "selector": "#home-problem-services",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(23, 21, 19)",
+      "backgroundImage": "radial-gradient(at 75% 25%, rgba(8, 72, 56, 0.2), rgba(0, 0, 0, 0) 52%), radial-gradient(at 0px 100%, rgba(8, 72, 56, 0.14), rgba(0, 0, 0, 0) 36%), linear-gradient(120deg, rgb(23, 20, 17), rgb(16, 20, 18) 63%, rgb(25, 20, 17))",
       "images": [
         {
           "src": "/assets/crea8iv-media-vector-hero-840.webp",
@@ -5163,7 +4324,8 @@
       "theme": "dark",
       "width": 320,
       "selector": "#home-work-library",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(17, 20, 17)",
+      "backgroundImage": "none",
       "images": [
         {
           "src": "/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp",
@@ -5495,82 +4657,9 @@
     {
       "theme": "dark",
       "width": 320,
-      "selector": "#home-creative-work",
-      "background": "rgb(20, 20, 17)",
-      "images": [
-        {
-          "src": "/img/homepage/creative-work/co3-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 278,
-          "height": 174
-        },
-        {
-          "src": "/img/homepage/creative-work/venn-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 278,
-          "height": 174
-        },
-        {
-          "src": "/img/homepage/creative-work/ajwad-landscape-v2.webp",
-          "ok": true,
-          "fit": "cover",
-          "width": 278,
-          "height": 174
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "The work",
-          "color": "rgb(255, 176, 120)"
-        },
-        {
-          "tag": "H2",
-          "text": "Brand identities, campaigns and con",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "Explore identity systems, product c",
-          "color": "rgb(222, 213, 199)"
-        },
-        {
-          "tag": "H3",
-          "text": "CO3 Premium brand identity",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "The visual identity and guidelines ",
-          "color": "rgb(222, 213, 199)"
-        },
-        {
-          "tag": "H3",
-          "text": "Venn Dental social content",
-          "color": "rgb(249, 241, 230)"
-        },
-        {
-          "tag": "P",
-          "text": "Social creative that presents a con",
-          "color": "rgb(222, 213, 199)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": true,
-      "clip": {
-        "x": 0,
-        "y": 8854.671875,
-        "width": 320,
-        "height": 1484.484375
-      }
-    },
-    {
-      "theme": "dark",
-      "width": 320,
       "selector": "#home-how-it-connects",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(11, 11, 12)",
+      "backgroundImage": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.08), rgba(0, 0, 0, 0) 38%), radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 34%), linear-gradient(125deg, rgb(16, 16, 17), rgb(11, 11, 12) 60%)",
       "images": [
         {
           "src": "/img/homepage/connected-journey/01-discover.webp",
@@ -5658,7 +4747,8 @@
       "theme": "dark",
       "width": 320,
       "selector": ".home-insights-section",
-      "background": "rgb(6, 75, 59)",
+      "background": "rgb(24, 24, 24)",
+      "backgroundImage": "linear-gradient(110deg, rgba(255, 147, 71, 0.067), rgba(0, 0, 0, 0) 46%, rgba(255, 147, 71, 0.024)), none",
       "images": [
         {
           "src": "/wp-content/uploads/2026/10/website-redesign-checklist-blog-thumbnail.webp",
@@ -5686,37 +4776,37 @@
         {
           "tag": "H2",
           "text": "Better questions lead to better dec",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "Explore practical perspectives on w",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "Website Redesign Checklist",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "Use this website redesign checklist",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "What Is AI Search Optimization?",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         },
         {
           "tag": "P",
           "text": "What is AI search optimization? Lea",
-          "color": "rgb(213, 226, 217)"
+          "color": "rgb(203, 198, 193)"
         },
         {
           "tag": "H3",
           "text": "Website vs Landing Page",
-          "color": "rgb(255, 248, 239)"
+          "color": "rgb(245, 247, 249)"
         }
       ],
       "overflow": [],
@@ -5726,56 +4816,6 @@
         "y": 20215.15625,
         "width": 320,
         "height": 1822.953125
-      }
-    },
-    {
-      "theme": "dark",
-      "width": 320,
-      "selector": "#home-project-enquiry",
-      "background": "rgb(17, 21, 19)",
-      "images": [
-        {
-          "src": "/img/homepage/closing/growth-laptop.webp",
-          "ok": true,
-          "fit": "fill",
-          "width": 260,
-          "height": 173
-        }
-      ],
-      "text": [
-        {
-          "tag": "P",
-          "text": "Let’s talk about what’s next",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "H2",
-          "text": "You’ve built something worth choosi",
-          "color": "rgb(255, 248, 239)"
-        },
-        {
-          "tag": "P",
-          "text": "Tell us what you want to improve. W",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "What are you trying to improve righ",
-          "color": "rgb(213, 226, 217)"
-        },
-        {
-          "tag": "P",
-          "text": "Prefer to see the work first? Explo",
-          "color": "rgb(213, 226, 217)"
-        }
-      ],
-      "overflow": [],
-      "sectionOverflow": false,
-      "clip": {
-        "x": 0,
-        "y": 23029.03125,
-        "width": 320,
-        "height": 1058.171875
       }
     }
   ],

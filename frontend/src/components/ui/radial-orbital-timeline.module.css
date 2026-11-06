@@ -12,13 +12,12 @@
   --text-secondary: var(--orbit-copy);
 }
 .section.section.section {
-  --orbit-ground: #064b3b;
   position: relative;
   isolation: isolate;
   overflow: hidden;
   scroll-margin-top: 100px;
   padding: 56px 40px 64px !important;
-  background: var(--orbit-ground) !important;
+  background: radial-gradient(ellipse at 75% 25%, rgb(8 72 56 / .20), transparent 52%), radial-gradient(ellipse at 0 100%, rgb(8 72 56 / .14), transparent 36%), linear-gradient(120deg, #171411, #101412 63%, #191411);
   color: var(--orbit-ink);
   color-scheme: dark;
 }
