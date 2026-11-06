@@ -1,0 +1,507 @@
+{
+  "viewportCases": [
+    {
+      "theme": "light",
+      "width": 320,
+      "enhanced": "false",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 50,
+      "heroHeight": 786,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "enhanced": "false",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 50,
+      "heroHeight": 825,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "enhanced": "false",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 50,
+      "heroHeight": 836,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "enhanced": "false",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 50,
+      "heroHeight": 846,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "light",
+      "width": 430,
+      "enhanced": "false",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 50,
+      "heroHeight": 872,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "enhanced": "true",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 56,
+      "heroHeight": 2350,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "enhanced": "true",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 56,
+      "heroHeight": 2350,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "enhanced": "true",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 56,
+      "heroHeight": 2350,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "enhanced": "false",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 50,
+      "heroHeight": 786,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "enhanced": "false",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 50,
+      "heroHeight": 825,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "enhanced": "false",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 50,
+      "heroHeight": 836,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "enhanced": "false",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 50,
+      "heroHeight": 846,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "dark",
+      "width": 430,
+      "enhanced": "false",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 50,
+      "heroHeight": 872,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "enhanced": "true",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 56,
+      "heroHeight": 2350,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "enhanced": "true",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 56,
+      "heroHeight": 2350,
+      "viewport": 1000,
+      "firstImage": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "enhanced": "true",
+      "overflow": 0,
+      "h1": [
+        "Our Work in Action."
+      ],
+      "links": [
+        "/case-studies/buildscape/",
+        "/case-studies/co3-premium-liquid-shop/",
+        "/case-studies/home-studio-interiors/",
+        "/case-studies/the-smile-xperts/",
+        "/clients/",
+        "/case-studies/stw-movers-barcelona/",
+        "/case-studies/black-petals/"
+      ],
+      "cta": "/contact/",
+      "ctaHeight": 56,
+      "heroHeight": 2350,
+      "viewport": 1000,
+      "firstImage": true
+    }
+  ],
+  "interactions": [
+    {
+      "theme": "light",
+      "railNextEndLeft": true
+    },
+    {
+      "theme": "dark",
+      "railNextEndLeft": true
+    },
+    {
+      "nativeScroll": 500,
+      "reverse": 0,
+      "depthChanged": true,
+      "parallax": true,
+      "stickyReleaseY": 0
+    },
+    {
+      "theme": "light",
+      "reduced": {
+        "enhanced": "false",
+        "height": 1000,
+        "cards": 0,
+        "rail": "grid"
+      }
+    },
+    {
+      "theme": "dark",
+      "reduced": {
+        "enhanced": "false",
+        "height": 1000,
+        "cards": 0,
+        "rail": "grid"
+      }
+    },
+    {
+      "width": 320,
+      "noJS": {
+        "height": 786,
+        "links": 10
+      }
+    },
+    {
+      "width": 1440,
+      "noJS": {
+        "height": 900,
+        "links": 10
+      }
+    },
+    {
+      "shortLayout": {
+        "ctaBottom": 522.796875,
+        "view": 700,
+        "overflow": 0
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "/img/portfolio/websites/buildscape/buildscape-production-desktop-20260927.webp",
+      "bytes": 153960,
+      "status": 200
+    },
+    {
+      "path": "/img/homepage/creative-work/co3-landscape-v2.webp",
+      "bytes": 155882,
+      "status": 200
+    },
+    {
+      "path": "/img/case-studies/home-studio-interiors/proof/home-studio-live-desktop-2026.webp",
+      "bytes": 46630,
+      "status": 200
+    },
+    {
+      "path": "/img/case-studies/the-smile-xperts/the-smile-xperts-social-preview.png",
+      "bytes": 557607,
+      "status": 200
+    },
+    {
+      "path": "/img/homepage/creative-work/ajwad-landscape-v2.webp",
+      "bytes": 269706,
+      "status": 200
+    },
+    {
+      "path": "/img/portfolio/websites/stw-movers/stw-desktop-20261019.webp",
+      "bytes": 152714,
+      "status": 200
+    },
+    {
+      "path": "/img/case-studies/black-petals/black-petals-live-desktop.webp",
+      "bytes": 227504,
+      "status": 200
+    }
+  ],
+  "runtimeFailures": [],
+  "protectedDifferences": [
+    {
+      "theme": "light",
+      "width": 390,
+      "fields": [
+        "footer"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "fields": [
+        "footer"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "fields": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "fields": [
+        "footer"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "fields": [
+        "footer"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "fields": []
+    }
+  ],
+  "note": "See README for off-screen footer measurement differences and compiler/export limitations."
+}

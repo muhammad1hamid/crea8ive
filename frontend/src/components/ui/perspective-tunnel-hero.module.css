@@ -1,0 +1,114 @@
+.hero {
+  --tunnel-ground:#0d1210; --tunnel-ink:#fff8ef; --tunnel-copy:#c0c8c1;
+  --tunnel-orange:var(--crea8iv-orange,#ff6801); --tunnel-green:#064b3b;
+  --tunnel-card:#18201b; --tunnel-line:rgb(221 231 220 / .17); --tunnel-muted:#8eaa9b;
+  position:relative; isolation:isolate; background:var(--tunnel-ground); color:var(--tunnel-ink);
+}
+.sticky { position:relative; display:grid; grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr); align-items:center; gap:30px; min-height:100svh; max-width:1680px; margin-inline:auto; padding:132px 64px 100px; }
+.hero::before { content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; background:radial-gradient(ellipse at 82% 22%,rgb(6 75 59 / .26),transparent 55%); }
+.copy {position:relative;z-index:2;max-width:560px;}
+.copy .eyebrow {display:flex;align-items:center;gap:13px;margin:0 0 28px;color:var(--tunnel-orange);font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;}
+.eyebrow::before {content:"";width:26px;height:2px;background:var(--tunnel-orange);}
+.copy h1 {margin:0;color:var(--tunnel-ink);font-family:var(--font-primary),sans-serif;font-size:80px;font-weight:700;line-height:1.03;letter-spacing:0;}
+.copy h1 em {display:inline-block;color:var(--tunnel-orange);font-family:Georgia,"Times New Roman",serif;font-weight:400;font-style:italic;}
+.copy .description {max-width:40ch;margin:30px 0 0;color:var(--tunnel-copy);font-size:17px;line-height:1.8;}
+.cta {display:inline-flex;align-items:center;justify-content:space-between;gap:32px;min-height:56px;margin-top:32px;padding:15px 23px;border:1px solid var(--tunnel-orange);border-radius:999px;background:var(--tunnel-orange);color:#171a13;font-size:15px;font-weight:700;line-height:1.4;text-decoration:none;transition:transform 200ms ease,box-shadow 200ms ease;}
+.cta svg {flex:none;transition:transform 200ms ease;}
+.disciplines {display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:40px;color:var(--tunnel-muted);font-size:11px;font-weight:500;line-height:1.6;}
+.disciplines span+span::before {content:"/";margin-right:18px;color:var(--tunnel-orange);opacity:.6;}
+.showcase {position:relative;min-width:0;align-self:center;}
+.visual {position:relative;isolation:isolate;height:min(65svh,670px);min-height:460px;overflow:clip;}
+.depthGuides {position:absolute;inset:0;pointer-events:none;}
+.depthGuides i {position:absolute;inset:15% 13%;border:1px solid var(--tunnel-line);border-radius:30%;transform:rotate(-14deg);opacity:.45;}
+.depthGuides i:nth-child(2) {inset:30% 28%;border-style:dashed;opacity:.55;}
+.depthGuides span {position:absolute;right:22%;top:20%;width:5px;height:5px;border-radius:50%;background:var(--tunnel-orange);box-shadow:0 0 12px rgb(255 104 1 / .2);}
+.tunnel {display:none;position:absolute;inset:0;}
+.camera {position:absolute;inset:0;perspective:1100px;perspective-origin:50% 50%;}
+.space {position:absolute;inset:0;transform-style:preserve-3d;}
+.tunnelCard {position:absolute;left:50%;top:50%;display:grid;grid-template-rows:minmax(0,1fr) auto;aspect-ratio:4/3;overflow:hidden;border:1px solid var(--tunnel-line);border-radius:18px;background:var(--tunnel-card);box-shadow:0 16px 36px rgb(0 0 0 / .24);text-decoration:none;transform-style:preserve-3d;backface-visibility:hidden;will-change:transform,opacity;}
+.projectImage {position:relative;min-height:0;overflow:hidden;background:var(--tunnel-card);}
+.projectImage img {object-fit:contain;transition:transform 450ms ease;}
+.projectImage[data-kind="creative"] img {object-fit:cover;}
+.cardCaption {position:relative;display:grid;grid-template-columns:minmax(0,1fr) 20px;gap:5px 10px;padding:13px 15px 15px;background:var(--tunnel-card);}
+.cardCaption>span {grid-column:1/3;color:var(--tunnel-copy);font-size:10px;font-weight:500;line-height:1.4;}
+.cardCaption strong {color:var(--tunnel-ink);font-size:17px;font-weight:600;line-height:1.2;}
+.cardCaption svg {align-self:center;color:var(--tunnel-orange);}
+.railExperience {position:relative;padding-top:30px;}
+.rail {position:relative;display:grid;grid-auto-flow:column;grid-auto-columns:85%;gap:18px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:10px 0 22px;}
+.rail::-webkit-scrollbar {display:none;}
+.railCard {display:grid;grid-template-rows:minmax(0,1fr) auto;min-width:0;aspect-ratio:4/3;border:1px solid var(--tunnel-line);border-radius:18px;overflow:hidden;background:var(--tunnel-card);box-shadow:0 12px 26px rgb(0 0 0 / .14);text-decoration:none;scroll-snap-align:start;}
+.railControls {display:flex;align-items:center;gap:8px;padding-top:4px;}
+.railControls>span:first-child {margin-right:auto;color:var(--tunnel-ink);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;}
+.railControls>span:first-child>span {color:var(--tunnel-copy);font-weight:400;}
+.railControls .swipeHint {display:flex;align-items:center;gap:8px;margin-right:8px;color:var(--tunnel-muted);font-size:11px;}
+.railControls button {display:grid;place-items:center;flex:none;width:44px;height:44px;border:1px solid var(--tunnel-line);border-radius:50%;background:transparent;color:var(--tunnel-ink);}
+.railControls button:disabled {opacity:.35;}
+.projectNavigation {display:none;position:relative;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-top:1px solid var(--tunnel-line);}
+.projectIndex {display:flex;gap:1px;}
+.projectIndex button {display:grid;place-items:center;width:44px;height:44px;border:0;background:transparent;color:var(--tunnel-muted);font-size:11px;font-variant-numeric:tabular-nums;}
+.projectIndex button[aria-current="true"] {color:var(--tunnel-orange);}
+.projectIndex button[aria-current="true"]>span {border-bottom:1px solid currentColor;padding-block:7px;}
+.currentProject {display:inline-flex;align-items:center;gap:10px;min-height:44px;color:var(--tunnel-ink);font-size:13px;font-weight:600;line-height:1.4;text-decoration:none;}
+.currentProject svg {flex:none;color:var(--tunnel-orange);}
+.scrollCue {position:absolute;bottom:30px;left:64px;display:flex;align-items:center;gap:12px;min-height:44px;color:var(--tunnel-copy);font-size:10px;font-weight:600;letter-spacing:.15em;line-height:1.4;text-decoration:none;text-transform:uppercase;}
+.scrollLine {position:relative;display:block;width:1px;height:28px;overflow:hidden;background:var(--tunnel-line);}
+.scrollLine::after {content:"";position:absolute;inset:0 0 50%;background:var(--tunnel-orange);}
+.cornerNote {position:absolute;bottom:46px;right:64px;color:var(--tunnel-muted);font-size:9px;letter-spacing:.14em;}
+.srOnly {position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+.hero a:focus-visible,.hero button:focus-visible,.rail:focus-visible {outline:2px solid var(--tunnel-orange);outline-offset:5px;}
+:global(html[data-theme="light"]) .hero {--tunnel-ground:#fff8f1;--tunnel-ink:#142d24;--tunnel-copy:#4e5d51;--tunnel-card:#fffcf7;--tunnel-line:rgb(6 75 59 / .18);--tunnel-muted:#496455;}
+:global(html[data-theme="light"]) .hero::before {background:radial-gradient(ellipse at 85% 20%,rgb(6 75 59 / .08),transparent 55%);}
+@media(min-width:768px) and (prefers-reduced-motion:no-preference) {
+  .hero[data-enhanced="true"] {height:235svh;}
+  .hero[data-enhanced="true"] .sticky {position:sticky;top:0;height:100svh;}
+  .hero[data-enhanced="true"] .tunnel {display:block;}
+  .hero[data-enhanced="true"] .railExperience {display:none;}
+  .hero[data-enhanced="true"] .projectNavigation {display:flex;}
+  .hero[data-in-view="true"] .scrollLine::after {animation:tunnel-scroll-cue 2.8s ease-in-out infinite;}
+}
+@keyframes tunnel-scroll-cue {0%,100%{transform:translateY(-5px);opacity:.35}50%{transform:translateY(16px);opacity:1}}
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {.cta:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgb(0 0 0 / .15)}.cta:hover svg{transform:translate(2px,-2px)}.tunnelCard:hover,.railCard:hover{border-color:var(--tunnel-orange)}.tunnelCard:hover img,.railCard:hover img{transform:scale(1.025)}}
+@media(max-width:1199px) {
+  .sticky {padding:126px 40px 100px;gap:20px;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);}
+  .copy h1 {font-size:64px;}
+  .copy .description {font-size:16px;}
+  .visual {min-height:400px;height:60svh;}
+  .projectNavigation {flex-direction:column;align-items:flex-start;gap:0;}
+  .projectIndex button {width:44px;}
+  .disciplines {max-width:35ch;}
+  .scrollCue {left:40px;}.cornerNote{right:40px;}
+}
+@media(min-width:768px) and (max-height:760px) {
+  .sticky {padding-top:110px;padding-bottom:80px;}
+  .copy h1 {font-size:64px;}
+  .copy .eyebrow {margin-bottom:20px;}
+  .copy .description {margin-top:20px;font-size:16px;}
+  .cta {margin-top:24px;}
+  .disciplines {margin-top:24px;}
+  .visual {height:50svh;min-height:310px;}
+  .projectNavigation {padding-block:8px;}
+  .scrollCue {bottom:18px;}.cornerNote{bottom:34px;}
+}
+@media(max-width:767px) {
+  .hero {height:auto;}
+  .sticky {display:block;height:auto;min-height:0;padding:112px 24px 28px;}
+  .copy {max-width:540px;}
+  .copy .eyebrow {margin-bottom:20px;font-size:11px;}
+  .copy h1 {font-size:48px;line-height:1.04;}
+  .copy .description {max-width:43ch;margin-top:22px;font-size:15px;line-height:1.7;}
+  .cta {min-height:50px;margin-top:23px;padding:13px 21px;font-size:14px;}
+  .disciplines {display:none;}
+  .showcase {margin-top:24px;}
+  .visual {height:auto;min-height:0;overflow:visible;}
+  .depthGuides {display:none;}
+  .railExperience {padding-top:0;}
+  .rail {grid-auto-columns:86%;gap:14px;width:calc(100% + 24px);padding:10px 24px 18px 0;}
+  .railCard {aspect-ratio:1.28;}
+  .cardCaption strong {font-size:18px;}
+  .cardCaption>span {font-size:11px;}
+  .scrollCue {position:relative;left:auto;bottom:auto;justify-content:center;width:fit-content;margin:24px auto 0;}
+  .scrollLine {height:20px;}
+  .cornerNote {display:none;}
+}
+@media(max-width:359px) {.sticky{padding-inline:20px;padding-top:104px}.copy h1{font-size:43px}.rail{width:calc(100% + 20px);padding-right:20px}.railControls .swipeHint{font-size:10px;margin-right:3px}.railControls{gap:5px}.cardCaption{padding:12px}.cardCaption strong{font-size:17px}}
+@media(prefers-reduced-motion:reduce) {.hero{height:auto}.sticky{position:relative}.cta,.cta svg,.projectImage img{transition:none}.tunnel{display:none!important}.projectNavigation{display:none!important}.railExperience{display:block!important}.scrollLine::after{animation:none!important}}
