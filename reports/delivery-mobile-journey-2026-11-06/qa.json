@@ -1,0 +1,3140 @@
+{
+  "results": [
+    {
+      "theme": "light",
+      "width": 320,
+      "height": 1252.953125,
+      "pageOverflow": false,
+      "heading": {
+        "x": 20,
+        "y": 54.390625,
+        "w": 280,
+        "h": 261.265625
+      },
+      "headingTypography": [
+        {
+          "font": "700 11px / 16.5px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "16.5px"
+        },
+        {
+          "font": "700 29px / 34.8px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "34.8px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "rgb(255, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -100.328125,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.328125,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.328125,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.328125,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 20,
+        "y": 1140.5625,
+        "w": 280,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13867.328125,
+        "width": 320,
+        "height": 1252.953125
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 36,
+            "y": 600.765625,
+            "w": 264,
+            "h": 314.5625
+          },
+          "summary": {
+            "x": 37,
+            "y": 601.765625,
+            "w": 262,
+            "h": 85.1875
+          },
+          "body": {
+            "x": 37,
+            "y": 686.953125,
+            "w": 262,
+            "h": 227.375
+          },
+          "paragraph": {
+            "x": 53,
+            "y": 686.953125,
+            "w": 230,
+            "h": 102.375
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 36,
+            "y": 699.953125,
+            "w": 264,
+            "h": 314.5625
+          },
+          "summary": {
+            "x": 37,
+            "y": 700.953125,
+            "w": 262,
+            "h": 85.1875
+          },
+          "body": {
+            "x": 37,
+            "y": 786.140625,
+            "w": 262,
+            "h": 227.375
+          },
+          "paragraph": {
+            "x": 53,
+            "y": 786.140625,
+            "w": 230,
+            "h": 102.375
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 36,
+            "y": 799.140625,
+            "w": 264,
+            "h": 263.96875
+          },
+          "summary": {
+            "x": 37,
+            "y": 800.140625,
+            "w": 262,
+            "h": 85.1875
+          },
+          "body": {
+            "x": 37,
+            "y": 885.328125,
+            "w": 262,
+            "h": 176.78125
+          },
+          "paragraph": {
+            "x": 53,
+            "y": 885.328125,
+            "w": 230,
+            "h": 76.78125
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 36,
+            "y": 898.328125,
+            "w": 264,
+            "h": 314.5625
+          },
+          "summary": {
+            "x": 37,
+            "y": 899.328125,
+            "w": 262,
+            "h": 85.1875
+          },
+          "body": {
+            "x": 37,
+            "y": 984.515625,
+            "w": 262,
+            "h": 227.375
+          },
+          "paragraph": {
+            "x": 53,
+            "y": 984.515625,
+            "w": 230,
+            "h": 102.375
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1252.953125,
+      "heightReduction": 709
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "height": 1207.84375,
+      "pageOverflow": false,
+      "heading": {
+        "x": 24,
+        "y": 54.390625,
+        "w": 312,
+        "h": 247.953125
+      },
+      "headingTypography": [
+        {
+          "font": "700 12px / 18px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "18px"
+        },
+        {
+          "font": "700 32px / 38.4px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "38.4px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "rgb(255, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -100.15625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.15625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.15625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.15625,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 24,
+        "y": 1095.453125,
+        "w": 312,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13701.15625,
+        "width": 360,
+        "height": 1207.84375
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 40,
+            "y": 562.640625,
+            "w": 296,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 563.640625,
+            "w": 294,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 653.4375,
+            "w": 294,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 653.4375,
+            "w": 258,
+            "h": 76.78125
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 40,
+            "y": 666.4375,
+            "w": 296,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 667.4375,
+            "w": 294,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 757.234375,
+            "w": 294,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 757.234375,
+            "w": 258,
+            "h": 76.78125
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 40,
+            "y": 770.234375,
+            "w": 296,
+            "h": 242.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 771.234375,
+            "w": 294,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 861.03125,
+            "w": 294,
+            "h": 151.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 861.03125,
+            "w": 258,
+            "h": 51.1875
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 40,
+            "y": 874.03125,
+            "w": 296,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 875.03125,
+            "w": 294,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 964.828125,
+            "w": 294,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 964.828125,
+            "w": 258,
+            "h": 76.78125
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1207.84375,
+      "heightReduction": 798
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "height": 1169.453125,
+      "pageOverflow": false,
+      "heading": {
+        "x": 24,
+        "y": 54.390625,
+        "w": 327,
+        "h": 209.5625
+      },
+      "headingTypography": [
+        {
+          "font": "700 12px / 18px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "18px"
+        },
+        {
+          "font": "700 32px / 38.4px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "38.4px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "rgb(255, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -99.515625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.515625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.515625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.515625,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 24,
+        "y": 1057.0625,
+        "w": 327,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13586.515625,
+        "width": 375,
+        "height": 1169.453125
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 40,
+            "y": 523.609375,
+            "w": 311,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 524.609375,
+            "w": 309,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 614.40625,
+            "w": 309,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 614.40625,
+            "w": 273,
+            "h": 76.78125
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 40,
+            "y": 627.40625,
+            "w": 311,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 628.40625,
+            "w": 309,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 718.203125,
+            "w": 309,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 718.203125,
+            "w": 273,
+            "h": 76.78125
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 40,
+            "y": 731.203125,
+            "w": 311,
+            "h": 242.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 732.203125,
+            "w": 309,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 822,
+            "w": 309,
+            "h": 151.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 822,
+            "w": 273,
+            "h": 51.1875
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 40,
+            "y": 835,
+            "w": 311,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 836,
+            "w": 309,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 925.796875,
+            "w": 309,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 925.796875,
+            "w": 273,
+            "h": 76.78125
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1169.453125,
+      "heightReduction": 833
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "height": 1169.453125,
+      "pageOverflow": false,
+      "heading": {
+        "x": 24,
+        "y": 54.390625,
+        "w": 342,
+        "h": 209.5625
+      },
+      "headingTypography": [
+        {
+          "font": "700 12px / 18px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "18px"
+        },
+        {
+          "font": "700 32px / 38.4px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "38.4px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "rgb(255, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -100.0625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.0625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.0625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.0625,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 24,
+        "y": 1057.0625,
+        "w": 342,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13480.0625,
+        "width": 390,
+        "height": 1169.453125
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 40,
+            "y": 524.15625,
+            "w": 326,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 525.15625,
+            "w": 324,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 614.953125,
+            "w": 324,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 614.953125,
+            "w": 288,
+            "h": 76.78125
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 40,
+            "y": 627.953125,
+            "w": 326,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 628.953125,
+            "w": 324,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 718.75,
+            "w": 324,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 718.75,
+            "w": 288,
+            "h": 76.78125
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 40,
+            "y": 731.75,
+            "w": 326,
+            "h": 242.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 732.75,
+            "w": 324,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 822.546875,
+            "w": 324,
+            "h": 151.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 822.546875,
+            "w": 288,
+            "h": 51.1875
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 40,
+            "y": 835.546875,
+            "w": 326,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 836.546875,
+            "w": 324,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 926.34375,
+            "w": 324,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 926.34375,
+            "w": 288,
+            "h": 76.78125
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1169.453125,
+      "heightReduction": 867
+    },
+    {
+      "theme": "light",
+      "width": 430,
+      "height": 1143.859375,
+      "pageOverflow": false,
+      "heading": {
+        "x": 24,
+        "y": 54.390625,
+        "w": 382,
+        "h": 209.5625
+      },
+      "headingTypography": [
+        {
+          "font": "700 12px / 18px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "18px"
+        },
+        {
+          "font": "700 32px / 38.4px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "38.4px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "rgb(255, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -99.984375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.984375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.984375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.984375,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 30,
+        "y": 1031.46875,
+        "w": 370,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13338.984375,
+        "width": 430,
+        "height": 1143.859375
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 40,
+            "y": 524.078125,
+            "w": 366,
+            "h": 267.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 525.078125,
+            "w": 364,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 614.875,
+            "w": 364,
+            "h": 176.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 614.875,
+            "w": 328,
+            "h": 51.1875
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 40,
+            "y": 627.875,
+            "w": 366,
+            "h": 267.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 628.875,
+            "w": 364,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 718.671875,
+            "w": 364,
+            "h": 176.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 718.671875,
+            "w": 328,
+            "h": 51.1875
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 40,
+            "y": 731.671875,
+            "w": 366,
+            "h": 242.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 732.671875,
+            "w": 364,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 822.46875,
+            "w": 364,
+            "h": 151.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 822.46875,
+            "w": 328,
+            "h": 51.1875
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 40,
+            "y": 835.46875,
+            "w": 366,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 836.46875,
+            "w": 364,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 926.265625,
+            "w": 364,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 926.265625,
+            "w": 328,
+            "h": 76.78125
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1143.859375,
+      "heightReduction": 934
+    },
+    {
+      "theme": "light",
+      "width": 566,
+      "height": 1118.265625,
+      "pageOverflow": false,
+      "heading": {
+        "x": 24,
+        "y": 54.390625,
+        "w": 518,
+        "h": 183.96875
+      },
+      "headingTypography": [
+        {
+          "font": "700 12px / 18px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "18px"
+        },
+        {
+          "font": "700 32px / 38.4px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "38.4px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "rgb(255, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -100.109375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.109375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.109375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.109375,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 98,
+        "y": 1005.875,
+        "w": 370,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13098.109375,
+        "width": 566,
+        "height": 1118.265625
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 40,
+            "y": 498.609375,
+            "w": 502,
+            "h": 267.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 499.609375,
+            "w": 500,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 589.40625,
+            "w": 500,
+            "h": 176.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 589.40625,
+            "w": 464,
+            "h": 51.1875
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 40,
+            "y": 602.40625,
+            "w": 502,
+            "h": 267.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 603.40625,
+            "w": 500,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 693.203125,
+            "w": 500,
+            "h": 176.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 693.203125,
+            "w": 464,
+            "h": 51.1875
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 40,
+            "y": 706.203125,
+            "w": 502,
+            "h": 183.890625
+          },
+          "summary": {
+            "x": 41,
+            "y": 707.203125,
+            "w": 500,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 797,
+            "w": 500,
+            "h": 92.09375
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 797,
+            "w": 464,
+            "h": 25.59375
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 40,
+            "y": 810,
+            "w": 502,
+            "h": 267.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 811,
+            "w": 500,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 900.796875,
+            "w": 500,
+            "h": 176.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 900.796875,
+            "w": 464,
+            "h": 51.1875
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1118.265625,
+      "heightReduction": 1220
+    },
+    {
+      "theme": "light",
+      "width": 700,
+      "height": 1187.03125,
+      "pageOverflow": false,
+      "heading": {
+        "x": 32,
+        "y": 54.390625,
+        "w": 636,
+        "h": 221.25
+      },
+      "headingTypography": [
+        {
+          "font": "700 15px / 22.5px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "22.5px"
+        },
+        {
+          "font": "700 40px / 47.2px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "47.2px"
+        },
+        {
+          "font": "18px / 29.7px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "29.7px"
+        }
+      ],
+      "background": "rgb(255, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 32,
+          "y": 311.640625,
+          "w": 308,
+          "h": 350.5
+        },
+        {
+          "x": 360,
+          "y": 311.640625,
+          "w": 308,
+          "h": 350.5
+        },
+        {
+          "x": 32,
+          "y": 682.140625,
+          "w": 308,
+          "h": 350.5
+        },
+        {
+          "x": 360,
+          "y": 682.140625,
+          "w": 308,
+          "h": 350.5
+        }
+      ],
+      "cta": {
+        "x": 199.796875,
+        "y": 1068.640625,
+        "w": 300.40625,
+        "h": 64
+      },
+      "clip": {
+        "x": 0,
+        "y": 13494.875,
+        "width": 700,
+        "height": 1187.03125
+      },
+      "desktopTabletPixelIdentical": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "height": 1241.09375,
+      "pageOverflow": false,
+      "heading": {
+        "x": 32,
+        "y": 64,
+        "w": 704,
+        "h": 221.25
+      },
+      "headingTypography": [
+        {
+          "font": "700 15px / 22.5px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "22.5px"
+        },
+        {
+          "font": "700 40px / 47.2px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "47.2px"
+        },
+        {
+          "font": "18px / 29.7px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "29.7px"
+        }
+      ],
+      "background": "rgb(255, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 32,
+          "y": 321.25,
+          "w": 342,
+          "h": 367.921875
+        },
+        {
+          "x": 394,
+          "y": 321.25,
+          "w": 342,
+          "h": 367.921875
+        },
+        {
+          "x": 32,
+          "y": 709.171875,
+          "w": 342,
+          "h": 367.921875
+        },
+        {
+          "x": 394,
+          "y": 709.171875,
+          "w": 342,
+          "h": 367.921875
+        }
+      ],
+      "cta": {
+        "x": 233.796875,
+        "y": 1113.09375,
+        "w": 300.40625,
+        "h": 64
+      },
+      "clip": {
+        "x": 0,
+        "y": 13288.21875,
+        "width": 768,
+        "height": 1241.09375
+      },
+      "desktopTabletPixelIdentical": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "height": 1261.9375,
+      "pageOverflow": false,
+      "heading": {
+        "x": 32,
+        "y": 72,
+        "w": 960,
+        "h": 144.375
+      },
+      "headingTypography": [
+        {
+          "font": "700 15px / 22.5px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "22.5px"
+        },
+        {
+          "font": "700 40px / 47.2px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "47.2px"
+        },
+        {
+          "font": "18px / 29.7px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "29.7px"
+        }
+      ],
+      "background": "rgb(255, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 32,
+          "y": 252.375,
+          "w": 470,
+          "h": 408.78125
+        },
+        {
+          "x": 522,
+          "y": 252.375,
+          "w": 470,
+          "h": 408.78125
+        },
+        {
+          "x": 32,
+          "y": 681.15625,
+          "w": 470,
+          "h": 408.78125
+        },
+        {
+          "x": 522,
+          "y": 681.15625,
+          "w": 470,
+          "h": 408.78125
+        }
+      ],
+      "cta": {
+        "x": 361.796875,
+        "y": 1125.9375,
+        "w": 300.40625,
+        "h": 64
+      },
+      "clip": {
+        "x": 0,
+        "y": 10376.4375,
+        "width": 1024,
+        "height": 1261.9375
+      },
+      "desktopTabletPixelIdentical": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "height": 1080.234375,
+      "pageOverflow": false,
+      "heading": {
+        "x": 110,
+        "y": 86.390625,
+        "w": 1220,
+        "h": 151.453125
+      },
+      "headingTypography": [
+        {
+          "font": "700 15px / 22.5px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "22.5px"
+        },
+        {
+          "font": "700 46px / 54.28px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "54.28px"
+        },
+        {
+          "font": "18px / 29.7px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "29.7px"
+        }
+      ],
+      "background": "rgb(255, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 40,
+          "y": 273.84375,
+          "w": 670,
+          "h": 300
+        },
+        {
+          "x": 730,
+          "y": 273.84375,
+          "w": 670,
+          "h": 300
+        },
+        {
+          "x": 40,
+          "y": 593.84375,
+          "w": 670,
+          "h": 300
+        },
+        {
+          "x": 730,
+          "y": 593.84375,
+          "w": 670,
+          "h": 300
+        }
+      ],
+      "cta": {
+        "x": 569.796875,
+        "y": 929.84375,
+        "w": 300.40625,
+        "h": 64
+      },
+      "clip": {
+        "x": 0,
+        "y": 10266.171875,
+        "width": 1440,
+        "height": 1080.234375
+      },
+      "desktopTabletPixelIdentical": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "height": 1252.953125,
+      "pageOverflow": false,
+      "heading": {
+        "x": 20,
+        "y": 54.390625,
+        "w": 280,
+        "h": 261.265625
+      },
+      "headingTypography": [
+        {
+          "font": "700 11px / 16.5px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "16.5px"
+        },
+        {
+          "font": "700 29px / 34.8px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "34.8px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.05), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, rgb(13, 13, 15) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -100.328125,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.328125,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.328125,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.328125,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 20,
+        "y": 1140.5625,
+        "w": 280,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13867.328125,
+        "width": 320,
+        "height": 1252.953125
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 36,
+            "y": 600.765625,
+            "w": 264,
+            "h": 314.5625
+          },
+          "summary": {
+            "x": 37,
+            "y": 601.765625,
+            "w": 262,
+            "h": 85.1875
+          },
+          "body": {
+            "x": 37,
+            "y": 686.953125,
+            "w": 262,
+            "h": 227.375
+          },
+          "paragraph": {
+            "x": 53,
+            "y": 686.953125,
+            "w": 230,
+            "h": 102.375
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 36,
+            "y": 699.953125,
+            "w": 264,
+            "h": 314.5625
+          },
+          "summary": {
+            "x": 37,
+            "y": 700.953125,
+            "w": 262,
+            "h": 85.1875
+          },
+          "body": {
+            "x": 37,
+            "y": 786.140625,
+            "w": 262,
+            "h": 227.375
+          },
+          "paragraph": {
+            "x": 53,
+            "y": 786.140625,
+            "w": 230,
+            "h": 102.375
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 36,
+            "y": 799.140625,
+            "w": 264,
+            "h": 263.96875
+          },
+          "summary": {
+            "x": 37,
+            "y": 800.140625,
+            "w": 262,
+            "h": 85.1875
+          },
+          "body": {
+            "x": 37,
+            "y": 885.328125,
+            "w": 262,
+            "h": 176.78125
+          },
+          "paragraph": {
+            "x": 53,
+            "y": 885.328125,
+            "w": 230,
+            "h": 76.78125
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 36,
+            "y": 898.328125,
+            "w": 264,
+            "h": 314.5625
+          },
+          "summary": {
+            "x": 37,
+            "y": 899.328125,
+            "w": 262,
+            "h": 85.1875
+          },
+          "body": {
+            "x": 37,
+            "y": 984.515625,
+            "w": 262,
+            "h": 227.375
+          },
+          "paragraph": {
+            "x": 53,
+            "y": 984.515625,
+            "w": 230,
+            "h": 102.375
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1252.953125,
+      "heightReduction": 773
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "height": 1207.84375,
+      "pageOverflow": false,
+      "heading": {
+        "x": 24,
+        "y": 54.390625,
+        "w": 312,
+        "h": 247.953125
+      },
+      "headingTypography": [
+        {
+          "font": "700 12px / 18px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "18px"
+        },
+        {
+          "font": "700 32px / 38.4px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "38.4px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.05), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, rgb(13, 13, 15) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -100.15625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.15625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.15625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.15625,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 24,
+        "y": 1095.453125,
+        "w": 312,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13701.15625,
+        "width": 360,
+        "height": 1207.84375
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 40,
+            "y": 562.640625,
+            "w": 296,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 563.640625,
+            "w": 294,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 653.4375,
+            "w": 294,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 653.4375,
+            "w": 258,
+            "h": 76.78125
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 40,
+            "y": 666.4375,
+            "w": 296,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 667.4375,
+            "w": 294,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 757.234375,
+            "w": 294,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 757.234375,
+            "w": 258,
+            "h": 76.78125
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 40,
+            "y": 770.234375,
+            "w": 296,
+            "h": 242.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 771.234375,
+            "w": 294,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 861.03125,
+            "w": 294,
+            "h": 151.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 861.03125,
+            "w": 258,
+            "h": 51.1875
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 40,
+            "y": 874.03125,
+            "w": 296,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 875.03125,
+            "w": 294,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 964.828125,
+            "w": 294,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 964.828125,
+            "w": 258,
+            "h": 76.78125
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1207.84375,
+      "heightReduction": 862
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "height": 1169.453125,
+      "pageOverflow": false,
+      "heading": {
+        "x": 24,
+        "y": 54.390625,
+        "w": 327,
+        "h": 209.5625
+      },
+      "headingTypography": [
+        {
+          "font": "700 12px / 18px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "18px"
+        },
+        {
+          "font": "700 32px / 38.4px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "38.4px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.05), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, rgb(13, 13, 15) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -99.515625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.515625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.515625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.515625,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 24,
+        "y": 1057.0625,
+        "w": 327,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13586.515625,
+        "width": 375,
+        "height": 1169.453125
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 40,
+            "y": 523.609375,
+            "w": 311,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 524.609375,
+            "w": 309,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 614.40625,
+            "w": 309,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 614.40625,
+            "w": 273,
+            "h": 76.78125
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 40,
+            "y": 627.40625,
+            "w": 311,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 628.40625,
+            "w": 309,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 718.203125,
+            "w": 309,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 718.203125,
+            "w": 273,
+            "h": 76.78125
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 40,
+            "y": 731.203125,
+            "w": 311,
+            "h": 242.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 732.203125,
+            "w": 309,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 822,
+            "w": 309,
+            "h": 151.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 822,
+            "w": 273,
+            "h": 51.1875
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 40,
+            "y": 835,
+            "w": 311,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 836,
+            "w": 309,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 925.796875,
+            "w": 309,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 925.796875,
+            "w": 273,
+            "h": 76.78125
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1169.453125,
+      "heightReduction": 897
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "height": 1169.453125,
+      "pageOverflow": false,
+      "heading": {
+        "x": 24,
+        "y": 54.390625,
+        "w": 342,
+        "h": 209.5625
+      },
+      "headingTypography": [
+        {
+          "font": "700 12px / 18px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "18px"
+        },
+        {
+          "font": "700 32px / 38.4px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "38.4px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.05), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, rgb(13, 13, 15) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -100.0625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.0625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.0625,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.0625,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 24,
+        "y": 1057.0625,
+        "w": 342,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13480.0625,
+        "width": 390,
+        "height": 1169.453125
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 40,
+            "y": 524.15625,
+            "w": 326,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 525.15625,
+            "w": 324,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 614.953125,
+            "w": 324,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 614.953125,
+            "w": 288,
+            "h": 76.78125
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 40,
+            "y": 627.953125,
+            "w": 326,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 628.953125,
+            "w": 324,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 718.75,
+            "w": 324,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 718.75,
+            "w": 288,
+            "h": 76.78125
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 40,
+            "y": 731.75,
+            "w": 326,
+            "h": 242.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 732.75,
+            "w": 324,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 822.546875,
+            "w": 324,
+            "h": 151.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 822.546875,
+            "w": 288,
+            "h": 51.1875
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 40,
+            "y": 835.546875,
+            "w": 326,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 836.546875,
+            "w": 324,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 926.34375,
+            "w": 324,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 926.34375,
+            "w": 288,
+            "h": 76.78125
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1169.453125,
+      "heightReduction": 931
+    },
+    {
+      "theme": "dark",
+      "width": 430,
+      "height": 1143.859375,
+      "pageOverflow": false,
+      "heading": {
+        "x": 24,
+        "y": 54.390625,
+        "w": 382,
+        "h": 209.5625
+      },
+      "headingTypography": [
+        {
+          "font": "700 12px / 18px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "18px"
+        },
+        {
+          "font": "700 32px / 38.4px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "38.4px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.05), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, rgb(13, 13, 15) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -99.984375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.984375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.984375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -99.984375,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 30,
+        "y": 1031.46875,
+        "w": 370,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13338.984375,
+        "width": 430,
+        "height": 1143.859375
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 40,
+            "y": 524.078125,
+            "w": 366,
+            "h": 267.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 525.078125,
+            "w": 364,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 614.875,
+            "w": 364,
+            "h": 176.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 614.875,
+            "w": 328,
+            "h": 51.1875
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 40,
+            "y": 627.875,
+            "w": 366,
+            "h": 267.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 628.875,
+            "w": 364,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 718.671875,
+            "w": 364,
+            "h": 176.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 718.671875,
+            "w": 328,
+            "h": 51.1875
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 40,
+            "y": 731.671875,
+            "w": 366,
+            "h": 242.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 732.671875,
+            "w": 364,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 822.46875,
+            "w": 364,
+            "h": 151.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 822.46875,
+            "w": 328,
+            "h": 51.1875
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 40,
+            "y": 835.46875,
+            "w": 366,
+            "h": 293.578125
+          },
+          "summary": {
+            "x": 41,
+            "y": 836.46875,
+            "w": 364,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 926.265625,
+            "w": 364,
+            "h": 201.78125
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 926.265625,
+            "w": 328,
+            "h": 76.78125
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1143.859375,
+      "heightReduction": 998
+    },
+    {
+      "theme": "dark",
+      "width": 566,
+      "height": 1118.265625,
+      "pageOverflow": false,
+      "heading": {
+        "x": 24,
+        "y": 54.390625,
+        "w": 518,
+        "h": 183.96875
+      },
+      "headingTypography": [
+        {
+          "font": "700 12px / 18px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "18px"
+        },
+        {
+          "font": "700 32px / 38.4px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "38.4px"
+        },
+        {
+          "font": "16px / 25.6px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "background": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.05), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, rgb(13, 13, 15) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 0,
+          "y": -100.109375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.109375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.109375,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "x": 0,
+          "y": -100.109375,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "cta": {
+        "x": 98,
+        "y": 1005.875,
+        "w": 370,
+        "h": 58
+      },
+      "clip": {
+        "x": 0,
+        "y": 13098.109375,
+        "width": 566,
+        "height": 1118.265625
+      },
+      "panelStates": [
+        {
+          "index": 0,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Understand",
+          "description": "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+          "box": {
+            "x": 40,
+            "y": 498.609375,
+            "w": 502,
+            "h": 267.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 499.609375,
+            "w": 500,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 589.40625,
+            "w": 500,
+            "h": 176.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 589.40625,
+            "w": 464,
+            "h": 51.1875
+          },
+          "background": "rgb(252, 250, 238)",
+          "bodyColor": "rgb(53, 75, 60)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 1,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Plan",
+          "description": "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+          "box": {
+            "x": 40,
+            "y": 602.40625,
+            "w": 502,
+            "h": 267.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 603.40625,
+            "w": 500,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 693.203125,
+            "w": 500,
+            "h": 176.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 693.203125,
+            "w": 464,
+            "h": 51.1875
+          },
+          "background": "rgb(219, 208, 190)",
+          "bodyColor": "rgb(53, 67, 56)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 2,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Build & Launch",
+          "description": "We design, create, implement, test and release the agreed work.",
+          "box": {
+            "x": 40,
+            "y": 706.203125,
+            "w": 502,
+            "h": 183.890625
+          },
+          "summary": {
+            "x": 41,
+            "y": 707.203125,
+            "w": 500,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 797,
+            "w": 500,
+            "h": 92.09375
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 797,
+            "w": 464,
+            "h": 25.59375
+          },
+          "background": "rgb(255, 104, 1)",
+          "bodyColor": "rgb(20, 43, 34)",
+          "bodyFont": "16px",
+          "overflow": []
+        },
+        {
+          "index": 3,
+          "open": true,
+          "expanded": "true",
+          "hidden": "false",
+          "inert": false,
+          "title": "Learn & Improve",
+          "description": "Where ongoing management is included, we review performance and refine the next actions.",
+          "box": {
+            "x": 40,
+            "y": 810,
+            "w": 502,
+            "h": 267.984375
+          },
+          "summary": {
+            "x": 41,
+            "y": 811,
+            "w": 500,
+            "h": 89.796875
+          },
+          "body": {
+            "x": 41,
+            "y": 900.796875,
+            "w": 500,
+            "h": 176.1875
+          },
+          "paragraph": {
+            "x": 59,
+            "y": 900.796875,
+            "w": 464,
+            "h": 51.1875
+          },
+          "background": "rgb(6, 75, 59)",
+          "bodyColor": "rgb(213, 226, 217)",
+          "bodyFont": "16px",
+          "overflow": []
+        }
+      ],
+      "mobileHeight": 1118.265625,
+      "heightReduction": 1284
+    },
+    {
+      "theme": "dark",
+      "width": 700,
+      "height": 1219.03125,
+      "pageOverflow": false,
+      "heading": {
+        "x": 32,
+        "y": 54.390625,
+        "w": 636,
+        "h": 221.25
+      },
+      "headingTypography": [
+        {
+          "font": "700 15px / 22.5px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "22.5px"
+        },
+        {
+          "font": "700 40px / 47.2px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "47.2px"
+        },
+        {
+          "font": "18px / 29.7px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "29.7px"
+        }
+      ],
+      "background": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.05), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, rgb(13, 13, 15) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 32,
+          "y": 311.640625,
+          "w": 308,
+          "h": 366.5
+        },
+        {
+          "x": 360,
+          "y": 311.640625,
+          "w": 308,
+          "h": 366.5
+        },
+        {
+          "x": 32,
+          "y": 698.140625,
+          "w": 308,
+          "h": 366.5
+        },
+        {
+          "x": 360,
+          "y": 698.140625,
+          "w": 308,
+          "h": 366.5
+        }
+      ],
+      "cta": {
+        "x": 199.796875,
+        "y": 1100.640625,
+        "w": 300.40625,
+        "h": 64
+      },
+      "clip": {
+        "x": 0,
+        "y": 13494.875,
+        "width": 700,
+        "height": 1219.03125
+      },
+      "desktopTabletPixelIdentical": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "height": 1273.09375,
+      "pageOverflow": false,
+      "heading": {
+        "x": 32,
+        "y": 64,
+        "w": 704,
+        "h": 221.25
+      },
+      "headingTypography": [
+        {
+          "font": "700 15px / 22.5px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "22.5px"
+        },
+        {
+          "font": "700 40px / 47.2px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "47.2px"
+        },
+        {
+          "font": "18px / 29.7px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "29.7px"
+        }
+      ],
+      "background": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.05), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, rgb(13, 13, 15) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 32,
+          "y": 321.25,
+          "w": 342,
+          "h": 383.921875
+        },
+        {
+          "x": 394,
+          "y": 321.25,
+          "w": 342,
+          "h": 383.921875
+        },
+        {
+          "x": 32,
+          "y": 725.171875,
+          "w": 342,
+          "h": 383.921875
+        },
+        {
+          "x": 394,
+          "y": 725.171875,
+          "w": 342,
+          "h": 383.921875
+        }
+      ],
+      "cta": {
+        "x": 233.796875,
+        "y": 1145.09375,
+        "w": 300.40625,
+        "h": 64
+      },
+      "clip": {
+        "x": 0,
+        "y": 13288.21875,
+        "width": 768,
+        "height": 1273.09375
+      },
+      "desktopTabletPixelIdentical": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "height": 1293.9375,
+      "pageOverflow": false,
+      "heading": {
+        "x": 32,
+        "y": 72,
+        "w": 960,
+        "h": 144.375
+      },
+      "headingTypography": [
+        {
+          "font": "700 15px / 22.5px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "22.5px"
+        },
+        {
+          "font": "700 40px / 47.2px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "47.2px"
+        },
+        {
+          "font": "18px / 29.7px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "29.7px"
+        }
+      ],
+      "background": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.05), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, rgb(13, 13, 15) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 32,
+          "y": 252.375,
+          "w": 470,
+          "h": 424.78125
+        },
+        {
+          "x": 522,
+          "y": 252.375,
+          "w": 470,
+          "h": 424.78125
+        },
+        {
+          "x": 32,
+          "y": 697.15625,
+          "w": 470,
+          "h": 424.78125
+        },
+        {
+          "x": 522,
+          "y": 697.15625,
+          "w": 470,
+          "h": 424.78125
+        }
+      ],
+      "cta": {
+        "x": 361.796875,
+        "y": 1157.9375,
+        "w": 300.40625,
+        "h": 64
+      },
+      "clip": {
+        "x": 0,
+        "y": 10376.4375,
+        "width": 1024,
+        "height": 1293.9375
+      },
+      "desktopTabletPixelIdentical": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "height": 1080.234375,
+      "pageOverflow": false,
+      "heading": {
+        "x": 110,
+        "y": 86.390625,
+        "w": 1220,
+        "h": 151.453125
+      },
+      "headingTypography": [
+        {
+          "font": "700 15px / 22.5px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "22.5px"
+        },
+        {
+          "font": "700 46px / 54.28px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "54.28px"
+        },
+        {
+          "font": "18px / 29.7px \"Josefin Sans\", Inter, Arial, Helvetica, sans-serif",
+          "lineHeight": "29.7px"
+        }
+      ],
+      "background": "radial-gradient(at 0px 0px, rgba(255, 104, 1, 0.06), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, radial-gradient(at 100% 100%, rgba(255, 104, 1, 0.05), rgba(0, 0, 0, 0) 36%) repeat scroll 0% 0% / auto padding-box border-box, rgb(13, 13, 15) none repeat scroll 0% 0% / auto padding-box border-box",
+      "originalCards": [
+        {
+          "x": 40,
+          "y": 273.84375,
+          "w": 670,
+          "h": 300
+        },
+        {
+          "x": 730,
+          "y": 273.84375,
+          "w": 670,
+          "h": 300
+        },
+        {
+          "x": 40,
+          "y": 593.84375,
+          "w": 670,
+          "h": 300
+        },
+        {
+          "x": 730,
+          "y": 593.84375,
+          "w": 670,
+          "h": 300
+        }
+      ],
+      "cta": {
+        "x": 569.796875,
+        "y": 929.84375,
+        "w": 300.40625,
+        "h": 64
+      },
+      "clip": {
+        "x": 0,
+        "y": 10266.171875,
+        "width": 1440,
+        "height": 1080.234375
+      },
+      "desktopTabletPixelIdentical": true
+    }
+  ],
+  "errors": [],
+  "originalCopyHeadingCtaAndDesktopAssetsPreserved": true,
+  "otherSectionsAndSeoUnchanged": true,
+  "keyboard": true
+}

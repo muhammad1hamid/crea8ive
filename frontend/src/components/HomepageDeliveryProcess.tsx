@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import ProcessCardReveal from "./ProcessCardReveal";
+import MobileProjectJourney from "./MobileProjectJourney";
 import styles from "./homepage-delivery-process.module.css";
 
 const steps = [
@@ -60,6 +61,7 @@ export default function HomepageDeliveryProcess() {
             </li>
           ))}
         </ProcessCardReveal>
+        <MobileProjectJourney stages={steps.map(({ title, description }) => ({ title, description }))} />
         <div className={styles.action}>
           <Link href="/contact/" prefetch={false} className={styles.cta}>
             Discuss Your Project <ArrowUpRight size={21} aria-hidden="true" />

@@ -129,7 +129,7 @@
   .heading h2 { margin-top: 16px; font-size: 32px; line-height: 1.2; }
   .heading em::after { bottom: -6px; height: 3px; }
   .heading .lead { margin-top: 22px; font-size: 16px; line-height: 1.6; }
-  .grid { grid-template-columns: minmax(0, 1fr); gap: 18px; margin-top: 28px; }
+  .grid { display: none; }
   .card { border-radius: 21px; }
   .copy { padding: 24px 23px 8px; }
   .copy h3 { font-size: 27px; }

@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "theme": "light",
+      "touch": true,
+      "heightAnimation": true,
+      "rapidSwitches": true,
+      "progressTracksSelection": true,
+      "allFourStates": true,
+      "reducedMotionCancelsAnimation": true,
+      "noAutomaticSwitching": true
+    },
+    {
+      "theme": "dark",
+      "touch": true,
+      "heightAnimation": true,
+      "rapidSwitches": true,
+      "progressTracksSelection": true,
+      "allFourStates": true,
+      "reducedMotionCancelsAnimation": true,
+      "noAutomaticSwitching": true
+    }
+  ],
+  "nativeNoJavaScriptFallback": true,
+  "errors": []
+}
