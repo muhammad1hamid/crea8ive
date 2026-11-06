@@ -28,6 +28,7 @@ import EvidenceMedia from "@/components/EvidenceMedia";
 import styles from "./agency-body.module.css";
 import surfaces from "./homepage-surfaces.module.css";
 import industryStyles from "./industry-showcase.module.css";
+import IndustryMobileCarousel from "./IndustryMobileCarousel";
 import orbitStyles from "./ui/radial-orbital-timeline.module.css";
 
 const selectedClientLogos = [
@@ -237,7 +238,7 @@ function IndustrySystems() {
             <Link href="/industries/" className="home-lux-link">Explore Industries <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link>
           </div>
         </div>
-        <div className={industryStyles.gallery}>
+        <IndustryMobileCarousel count={industries.length}>
           {industries.map((industry, index) => {
             const Icon = industry.icon;
             return (
@@ -265,7 +266,7 @@ function IndustrySystems() {
               </article>
             );
           })}
-        </div>
+        </IndustryMobileCarousel>
       </div>
     </section>
   );

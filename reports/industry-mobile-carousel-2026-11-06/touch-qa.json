@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "theme": "light",
+      "nativeHorizontalTouch": true,
+      "nativeVerticalTouch": true,
+      "noDialogOnSwipe": true,
+      "allFiveReachable": true,
+      "normalAndReducedMotion": true,
+      "noAutoplay": true
+    },
+    {
+      "theme": "dark",
+      "nativeHorizontalTouch": true,
+      "nativeVerticalTouch": true,
+      "noDialogOnSwipe": true,
+      "allFiveReachable": true,
+      "normalAndReducedMotion": true,
+      "noAutoplay": true
+    }
+  ],
+  "noJavaScriptNativeFallback": true
+}
