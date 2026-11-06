@@ -1,4 +1,5 @@
-.section {
+:global(#home-industries).section {
+  padding-block: 48px !important;
   border-top: 1px solid rgb(255 255 255 / .12);
   border-bottom: 1px solid rgb(255 255 255 / .12);
 }
@@ -15,12 +16,12 @@
   grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
   align-items: end;
   gap: clamp(30px, 6vw, 100px);
-  margin-bottom: 38px;
+  margin-bottom: 24px;
 }
 
 .heading h2 {
   max-width: 760px;
-  margin-top: 16px;
+  margin-top: 12px;
   font-family: var(--font-primary), sans-serif;
   font-size: clamp(34px, 3.7vw, 54px);
   line-height: 1.13;
@@ -33,12 +34,12 @@
   line-height: 1.7;
 }
 
-.headingAside :global(.home-lux-link) { margin-top: 18px; }
+.headingAside :global(.home-lux-link) { margin-top: 14px; }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 20px;
+  gap: 16px 20px;
 }
 
 .mobileNav { display: none; }
@@ -47,7 +48,7 @@
   position: relative;
   grid-column: span 2;
   min-width: 0;
-  min-height: 345px;
+  min-height: 320px;
   overflow: hidden;
   isolation: isolate;
   border: 1px solid rgb(255 255 255 / .16);
@@ -58,10 +59,10 @@
 
 .card:nth-child(-n + 2) {
   grid-column: span 3;
-  min-height: 420px;
+  min-height: 360px;
 }
 
-.card:nth-child(3) { min-height: 390px; }
+.card:nth-child(3) { min-height: 340px; }
 
 .card::before {
   position: absolute;
@@ -205,21 +206,24 @@
 }
 
 @media (max-width: 1023px) {
-  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  :global(#home-industries).section { padding-block: 44px !important; }
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 16px; }
   .card,
-  .card:nth-child(-n + 2) { grid-column: span 1; min-height: 355px; }
+  .card:nth-child(-n + 2),
+  .card:nth-child(3) { grid-column: span 1; min-height: 320px; }
   .card:last-child { grid-column: span 2; }
-  .heading { grid-template-columns: 1fr; gap: 18px; }
+  .heading { grid-template-columns: 1fr; gap: 14px; }
   .headingAside { display: flex; justify-content: space-between; align-items: end; gap: 24px; }
   .headingAside :global(.home-lux-link) { flex: none; margin-top: 0; }
 }
 
 @media (max-width: 639px) {
-  .heading { margin-bottom: 28px; }
+  :global(#home-industries).section { padding-block: 36px !important; }
+  .heading { margin-bottom: 20px; }
   .heading h2 { font-size: clamp(30px, 8vw, 38px); }
   .headingAside { display: block; }
   .headingAside > p { font-size: 15px; }
-  .headingAside :global(.home-lux-link) { margin-top: 18px; }
+  .headingAside :global(.home-lux-link) { margin-top: 14px; }
   .mobileNav { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; margin-bottom: 12px; }
   .counter { color: var(--text-primary, #fcfaee); font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
   .counter > span { color: var(--text-primary, #fcfaee) !important; }
@@ -240,7 +244,7 @@
     gap: 14px;
     width: calc(100% + 48px);
     margin-inline: -24px;
-    padding: 4px 16px 18px;
+    padding: 4px 16px 14px;
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
@@ -250,13 +254,13 @@
   .gallery::-webkit-scrollbar { display: none; }
   .card,
   .card:nth-child(-n + 2),
-  .card:last-child { display: flex; flex-direction: column; grid-column: auto; min-height: 0; padding-top: 190px; scroll-snap-align: start; }
+  .card:last-child { display: flex; flex-direction: column; grid-column: auto; min-height: 0; padding-top: 170px; scroll-snap-align: start; }
   .card:nth-child(3) { min-height: 0; }
   .card[data-industry-active] { border-color: rgb(255 104 1 / .65); }
   .topline { top: 14px; left: 14px; max-width: calc(100% - 82px); padding: 7px 10px; }
   .media :global(button > span) { top: 14px; right: 14px; width: 44px; height: 44px; }
   .cardShade { background: linear-gradient(180deg, rgb(5 7 8 / .16) 0%, transparent 24%, rgb(5 7 8 / .55) 48%, rgb(5 7 8 / .91) 74%, #050708 100%); }
-  .cardLink { position: relative; inset: auto; min-height: 0; margin-top: auto; gap: 12px; padding: 20px 18px; }
+  .cardLink { position: relative; inset: auto; min-height: 0; margin-top: auto; gap: 12px; padding: 18px; }
   .cardTitle { align-items: flex-start; gap: 8px; }
   .cardTitle > svg { margin-top: 2px; }
   .cardTitle h3 { font-size: 21px; line-height: 1.2; }

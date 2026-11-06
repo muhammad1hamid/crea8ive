@@ -1,0 +1,20 @@
+[
+  {
+    "theme": "light",
+    "allFiveIndustries": true,
+    "carouselButtons": true,
+    "keyboardNavigation": true,
+    "enlargementEscapeFocusReturn": true,
+    "faqExpansion": true,
+    "noOverflow": true
+  },
+  {
+    "theme": "dark",
+    "allFiveIndustries": true,
+    "carouselButtons": true,
+    "keyboardNavigation": true,
+    "enlargementEscapeFocusReturn": true,
+    "faqExpansion": true,
+    "noOverflow": true
+  }
+]

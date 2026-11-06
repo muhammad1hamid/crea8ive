@@ -1,0 +1,1062 @@
+{
+  "results": [
+    {
+      "theme": "light",
+      "width": 320,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(255, 248, 241)"
+        }
+      ],
+      "industryBefore": 977.25,
+      "industryAfter": 896.46875,
+      "reduction": 81,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(255, 248, 241)"
+        }
+      ],
+      "industryBefore": 929.03125,
+      "industryAfter": 844.25,
+      "reduction": 85,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(255, 248, 241)"
+        }
+      ],
+      "industryBefore": 929.03125,
+      "industryAfter": 844.25,
+      "reduction": 85,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(255, 248, 241)"
+        }
+      ],
+      "industryBefore": 933.109375,
+      "industryAfter": 848.328125,
+      "reduction": 85,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 430,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(255, 248, 241)"
+        }
+      ],
+      "industryBefore": 918.796875,
+      "industryAfter": 834.015625,
+      "reduction": 85,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(255, 248, 241)"
+        }
+      ],
+      "industryBefore": 1532.375,
+      "industryAfter": 1310.375,
+      "reduction": 222,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(255, 248, 241)"
+        }
+      ],
+      "industryBefore": 1188.75,
+      "industryAfter": 1008.75,
+      "reduction": 180,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(255, 248, 241)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(6, 75, 59)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(255, 248, 241)"
+        }
+      ],
+      "industryBefore": 1263.390625,
+      "industryAfter": 1054.609375,
+      "reduction": 209,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(23, 19, 17)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(23, 21, 19)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(20, 22, 19)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(20, 20, 17)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(11, 11, 12)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(13, 13, 15)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(21, 21, 19)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(17, 21, 19)"
+        }
+      ],
+      "industryBefore": 977.25,
+      "industryAfter": 896.46875,
+      "reduction": 81,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(23, 19, 17)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(23, 21, 19)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(20, 22, 19)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(20, 20, 17)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(11, 11, 12)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(13, 13, 15)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(21, 21, 19)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(17, 21, 19)"
+        }
+      ],
+      "industryBefore": 929.03125,
+      "industryAfter": 844.25,
+      "reduction": 85,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(23, 19, 17)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(23, 21, 19)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(20, 22, 19)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(20, 20, 17)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(11, 11, 12)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(13, 13, 15)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(21, 21, 19)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(17, 21, 19)"
+        }
+      ],
+      "industryBefore": 929.03125,
+      "industryAfter": 844.25,
+      "reduction": 85,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(23, 19, 17)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(23, 21, 19)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(20, 22, 19)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(20, 20, 17)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(11, 11, 12)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(13, 13, 15)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(21, 21, 19)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(17, 21, 19)"
+        }
+      ],
+      "industryBefore": 933.109375,
+      "industryAfter": 848.328125,
+      "reduction": 85,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 430,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(23, 19, 17)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(23, 21, 19)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(20, 22, 19)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(20, 20, 17)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(11, 11, 12)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(13, 13, 15)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(21, 21, 19)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(17, 21, 19)"
+        }
+      ],
+      "industryBefore": 918.796875,
+      "industryAfter": 834.015625,
+      "reduction": 85,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(23, 19, 17)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(23, 21, 19)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(20, 22, 19)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(20, 20, 17)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(11, 11, 12)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(13, 13, 15)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(21, 21, 19)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(17, 21, 19)"
+        }
+      ],
+      "industryBefore": 1532.375,
+      "industryAfter": 1310.375,
+      "reduction": 222,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(23, 19, 17)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(23, 21, 19)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(20, 22, 19)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(20, 20, 17)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(11, 11, 12)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(13, 13, 15)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(21, 21, 19)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(17, 21, 19)"
+        }
+      ],
+      "industryBefore": 1188.75,
+      "industryAfter": 1008.75,
+      "reduction": 180,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "sequence": [
+        {
+          "section": "home-client-logos",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-buyers-decide",
+          "background": "rgb(23, 19, 17)"
+        },
+        {
+          "section": "home-problem-services",
+          "background": "rgb(23, 21, 19)"
+        },
+        {
+          "section": "featured-case-studies",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-selected-work",
+          "background": "rgb(20, 22, 19)"
+        },
+        {
+          "section": "home-creative-work",
+          "background": "rgb(20, 20, 17)"
+        },
+        {
+          "section": "home-how-it-connects",
+          "background": "rgb(11, 11, 12)"
+        },
+        {
+          "section": "home-industries",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "home-founder-office",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-client-stories",
+          "background": "rgb(17, 20, 17)"
+        },
+        {
+          "section": "home-delivery-process",
+          "background": "rgb(13, 13, 15)"
+        },
+        {
+          "section": "home-insights",
+          "background": "rgb(24, 24, 24)"
+        },
+        {
+          "section": "homepage-faq",
+          "background": "rgb(21, 21, 19)"
+        },
+        {
+          "section": "home-project-enquiry",
+          "background": "rgb(17, 21, 19)"
+        }
+      ],
+      "industryBefore": 1263.390625,
+      "industryAfter": 1054.609375,
+      "reduction": 209,
+      "overflow": false
+    }
+  ],
+  "diffs": [],
+  "errors": []
+}

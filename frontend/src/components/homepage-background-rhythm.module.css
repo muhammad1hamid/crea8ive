@@ -1,0 +1,106 @@
+/* Light-theme chapter rhythm only. Hero/footer sit outside this wrapper.
+   Reuse the existing orbit green and buyer-section cream; never retheme cards. */
+:global(html[data-theme="light"]) .homepage {
+  --homepage-rhythm-green: #064b3b;
+  --homepage-rhythm-cream: #fff8f1;
+}
+
+/* Selected Portfolio contains the website preview, work library and creative
+   showcase. Insights and FAQs likewise form one continuous colour chapter. */
+:global(html[data-theme="light"]) .homepage :global(:is(
+  #home-client-logos,
+  #home-problem-services,
+  #home-selected-work,
+  #home-work-library,
+  #home-creative-work,
+  #home-industries,
+  #home-client-stories,
+  #home-insights,
+  #homepage-faq
+)) {
+  background: var(--homepage-rhythm-green) !important;
+}
+
+:global(html[data-theme="light"]) .homepage > :global(:is(
+  #home-buyers-decide,
+  #featured-case-studies,
+  #home-how-it-connects,
+  #home-founder-office,
+  #home-delivery-process,
+  #home-project-enquiry
+)) {
+  background: var(--homepage-rhythm-cream) !important;
+}
+
+/* Only exposed copy follows the new surface. No inherited card tokens,
+   button fills, accent colours, type sizes or image treatments are changed. */
+:global(html[data-theme="light"]) .homepage :global(:is(
+  #website-proof-heading,
+  #home-selected-work > div > div:first-child > div:first-child > p,
+  #home-selected-work > div > div:first-child a,
+  #home-creative-heading,
+  #home-creative-work > div > div:first-child > a,
+  #home-evidence-heading,
+  #home-client-stories > div > div:first-child > p:first-child,
+  #home-client-stories a[href="/case-studies/"],
+  #home-faq-heading
+)) {
+  color: #fff8ef !important;
+}
+
+:global(html[data-theme="light"]) .homepage :global(:is(
+  #home-creative-work > div > div:first-child > div > p:first-child,
+  #homepage-faq > div > div:first-child > p:first-child
+)) {
+  color: #fff8ef !important;
+}
+
+:global(html[data-theme="light"]) .homepage :global(:is(
+  #home-creative-heading em,
+  #home-faq-heading em
+)) {
+  color: var(--crea8iv-orange) !important;
+}
+
+:global(html[data-theme="light"]) .homepage :global(:is(
+  #home-selected-work > div > div:first-child > div:last-child > p,
+  #home-creative-work > div > div:first-child > div > p:last-child,
+  #home-client-stories > div > div:first-child > p:last-child,
+  #homepage-faq > div > div:first-child > p:last-of-type
+)) {
+  color: #d5e2d9 !important;
+}
+
+/* The mobile featured project already has a cream card. Preserve its original
+   dark copy; only the unframed project information above that breakpoint needs
+   cream text against the new outer green surface. */
+@media (min-width: 640px) {
+  :global(html[data-theme="light"]) .homepage :global(:is(
+    #home-selected-work [data-featured-project] > div:last-child > p:first-child,
+    #home-selected-work [data-featured-project] > div:last-child h3
+  )) {
+    color: #fff8ef !important;
+  }
+
+  :global(html[data-theme="light"]) .homepage :global(:is(
+    #home-selected-work [data-featured-project] > div:last-child > p:not(:first-child),
+    #home-selected-work [data-featured-project] > div:last-child li
+  )) {
+    color: #d5e2d9 !important;
+  }
+}
+
+/* Connected Growth moves from green to cream; its five cards keep their own
+   existing backgrounds, copy colours and orange connecting line. */
+:global(html[data-theme="light"]) .homepage :global(:is(
+  #home-connected-title,
+  #home-how-it-connects [data-journey-heading] > p
+)) {
+  color: #171513 !important;
+}
+
+:global(html[data-theme="light"]) .homepage :global(:is(
+  #home-how-it-connects [data-journey-heading] > div > p
+)) {
+  color: #45403b !important;
+}

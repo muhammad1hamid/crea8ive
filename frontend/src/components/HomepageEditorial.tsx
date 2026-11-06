@@ -24,7 +24,7 @@ export default function HomepageEditorial({ posts }: { posts: WPPost[] }) {
 
   return (
     <>
-      <section data-home-insights className={`home-insights-section px-6 py-16 sm:px-8 lg:px-10 lg:py-24 ${styles.insights}`} aria-labelledby="home-insights-heading">
+      <section id="home-insights" data-home-insights className={`home-insights-section px-6 py-16 sm:px-8 lg:px-10 lg:py-24 ${styles.insights}`} aria-labelledby="home-insights-heading">
         <div className={styles.inner}>
           <div className={styles.headingRow}>
             <div>

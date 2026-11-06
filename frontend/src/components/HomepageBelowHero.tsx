@@ -27,6 +27,7 @@ import { CLIENT_LOGOS } from "@/lib/client-logos";
 import EvidenceMedia from "@/components/EvidenceMedia";
 import styles from "./agency-body.module.css";
 import surfaces from "./homepage-surfaces.module.css";
+import rhythm from "./homepage-background-rhythm.module.css";
 import industryStyles from "./industry-showcase.module.css";
 import IndustryMobileCarousel from "./IndustryMobileCarousel";
 import orbitStyles from "./ui/radial-orbital-timeline.module.css";
@@ -134,7 +135,7 @@ const visualSystemCards = [
 
 export default function HomepageBelowHero({ selectedWork, caseStudies, editorial }: { selectedWork?: ReactNode; caseStudies?: ReactNode; editorial?: ReactNode }) {
   return (
-    <div data-home-palette="dark" className={`home-luxury-story brand-site-shell overflow-hidden bg-[#050403] text-white ${styles.story} ${surfaces.mixed}`}>
+    <div data-home-palette="dark" className={`home-luxury-story brand-site-shell overflow-hidden bg-[#050403] text-white ${styles.story} ${surfaces.mixed} ${rhythm.homepage}`}>
       <IdentitySystems />
       <CustomerReality />
       <ProblemLedServices />
@@ -182,7 +183,7 @@ function Ambient() {
 
 function IdentitySystems() {
   return (
-    <section data-home-surface="light" className="home-logo-marquee relative border-y border-white/[0.08] px-6 py-16 sm:px-8 lg:px-10 lg:py-20">
+    <section id="home-client-logos" data-home-surface="light" className="home-logo-marquee relative border-y border-white/[0.08] px-6 py-16 sm:px-8 lg:px-10 lg:py-20">
       <Ambient />
       <div className="relative mx-auto max-w-[1440px]">
         <SectionIntro eyebrow="Selected clients" title="Good company to be in." copy="Meet some of the businesses we work with—and the different challenges we help them solve." />
@@ -226,7 +227,7 @@ function ProblemLedServices() {
 
 function IndustrySystems() {
   return (
-    <section className={`home-industry-systems ${industryStyles.section} relative px-6 sm:px-8 lg:px-10`} aria-labelledby="home-industry-heading">
+    <section id="home-industries" className={`home-industry-systems ${industryStyles.section} relative px-6 sm:px-8 lg:px-10`} aria-labelledby="home-industry-heading">
       <div className={industryStyles.inner}>
         <div className={industryStyles.heading}>
           <div>
