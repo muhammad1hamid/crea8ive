@@ -137,12 +137,12 @@ export default function RadialOrbitalTimeline({ intro, timelineData }: RadialOrb
           onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setKeyboardFocused(false); }}>
           <div className={styles.ring} aria-hidden="true" />
           <Image className={styles.mascot} src="/assets/crea8iv-media-vector-hero-840.webp"
-            width={420} height={630} sizes="(max-width: 420px) 110px, 180px" loading="lazy" alt="Crea8iv Media robot mascot" />
+            width={420} height={630} sizes="(max-width: 420px) 125px, 210px" loading="lazy" alt="Crea8iv Media robot mascot" />
           <div ref={revolveRef} className={styles.nodesOrbit}>
             {timelineData.map((service, index) => {
               const angle = (-120 + (360 / timelineData.length) * index) * Math.PI / 180;
-              const x = 50 + 37 * Math.cos(angle);
-              const y = 50 + 37 * Math.sin(angle);
+              const x = 50 + 40 * Math.cos(angle);
+              const y = 50 + 40 * Math.sin(angle);
               const active = index === activeIndex;
               return (
                 <div key={service.href} className={styles.node} data-selected={active} data-service-tone={service.tone}
@@ -151,7 +151,7 @@ export default function RadialOrbitalTimeline({ intro, timelineData }: RadialOrb
                     <button className={styles.nodeButton} type="button" data-orbit-node={service.name}
                       aria-label={"Explore " + service.name + " services"} aria-expanded={active} aria-haspopup="dialog"
                       aria-controls={id + "-service-" + index} onClick={event => selectService(index, event.currentTarget)}>
-                      <Image className={styles.nodeIcon} src={service.iconSrc} alt="" width={512} height={512} sizes="68px" loading="lazy" />
+                      <Image className={styles.nodeIcon} src={service.iconSrc} alt="" width={512} height={512} sizes="(max-width: 420px) 56px, (max-width: 767px) 66px, (max-width: 1279px) 76px, 84px" loading="lazy" />
                       <span className={styles.nodeLabel}>{service.name}</span>
                     </button>
                   </div>

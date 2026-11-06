@@ -68,10 +68,8 @@
   transition: transform 260ms cubic-bezier(.22,1,.36,1), box-shadow 260ms ease, border-color 260ms ease;
 }
 .glass::after { content: ""; position: absolute; z-index: -1; inset: 0; border-radius: inherit; background: radial-gradient(ellipse at 8% 100%, rgb(var(--card-glow) / .19), transparent 58%); pointer-events: none; }
-.visual { position: relative; aspect-ratio: 7 / 5; overflow: hidden; margin: 8px 8px 0; border-radius: 20px; background: #3a2a45; box-shadow: 0 8px 18px rgb(0 0 0 / .15); }
-.visual img { object-fit: cover; object-position: 50% 38%; transition: transform 650ms cubic-bezier(.22,1,.36,1); }
-.card[data-buyer-stage="check"] .visual img { object-position: 50% 65%; }
-.card[data-buyer-stage="decide"] .visual img { object-position: 100% 50%; }
+.visual { position: relative; aspect-ratio: 7 / 5; overflow: hidden; margin: 8px 8px 0; border-radius: 20px; background: #e6dccb; box-shadow: 0 8px 18px rgb(0 0 0 / .15); }
+.visual img { object-fit: cover; object-position: center; transition: transform 650ms cubic-bezier(.22,1,.36,1); }
 .cardCopy { min-height: 270px; padding: 24px 26px 28px; }
 .cardTop { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
 .number { color: var(--card-accent) !important; font-size: 45px; font-weight: 700 !important; line-height: 1; font-variant-numeric: tabular-nums; }

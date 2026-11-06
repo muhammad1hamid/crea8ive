@@ -1,0 +1,1077 @@
+{
+  "results": [
+    {
+      "theme": "light",
+      "width": 1440,
+      "selector": "#home-buyers-decide",
+      "height": 961.296875,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/homepage/buyer-journey/01-find-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/02-check-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/03-decide-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 1324.78125,
+        "width": 1440,
+        "height": 961.296875
+      }
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "selector": "#home-problem-services",
+      "height": 776,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/assets/crea8iv-media-vector-hero-840.webp",
+          "ok": true,
+          "fit": "fill"
+        },
+        {
+          "src": "/img/homepage/service-orbit/01-strategy.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/02-seo-ai.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/03-websites.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/04-branding.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/05-paid-ads.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/06-automation.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 2286.078125,
+        "width": 1440,
+        "height": 776
+      }
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "selector": "#featured-case-studies",
+      "height": 1099.875,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/portfolio/websites/buildscape/buildscape-production-desktop-20260927.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/home-studio-interiors/proof/home-studio-live-desktop-2026.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/black-petals/black-petals-live-desktop.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 3062.078125,
+        "width": 1440,
+        "height": 1099.875
+      }
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "orbit": {
+        "stage": {
+          "width": 640,
+          "height": 640
+        },
+        "icon": {
+          "width": 84,
+          "height": 84
+        },
+        "robot": {
+          "width": 210,
+          "height": 315
+        },
+        "panel": {
+          "width": 278,
+          "height": 310
+        }
+      }
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "selector": "#home-buyers-decide",
+      "height": 1433.75,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/homepage/buyer-journey/01-find-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/02-check-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/03-decide-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 1282.03125,
+        "width": 768,
+        "height": 1433.75
+      }
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "selector": "#home-problem-services",
+      "height": 1034,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/assets/crea8iv-media-vector-hero-840.webp",
+          "ok": true,
+          "fit": "fill"
+        },
+        {
+          "src": "/img/homepage/service-orbit/01-strategy.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/02-seo-ai.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/03-websites.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/04-branding.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/05-paid-ads.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/06-automation.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 2715.78125,
+        "width": 768,
+        "height": 1034
+      }
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "selector": "#featured-case-studies",
+      "height": 1106.3125,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/portfolio/websites/buildscape/buildscape-production-desktop-20260927.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/home-studio-interiors/proof/home-studio-live-desktop-2026.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/black-petals/black-petals-live-desktop.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 3749.78125,
+        "width": 768,
+        "height": 1106.3125
+      }
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "orbit": {
+        "stage": {
+          "width": 560,
+          "height": 560
+        },
+        "icon": {
+          "width": 84,
+          "height": 84
+        },
+        "robot": {
+          "width": 201.59375,
+          "height": 302.390625
+        },
+        "panel": {
+          "width": 278,
+          "height": 310
+        }
+      }
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "selector": "#home-buyers-decide",
+      "height": 1986.453125,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/homepage/buyer-journey/01-find-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/02-check-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/03-decide-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 1617.796875,
+        "width": 390,
+        "height": 1986.453125
+      }
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "selector": "#home-problem-services",
+      "height": 862.828125,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/assets/crea8iv-media-vector-hero-840.webp",
+          "ok": true,
+          "fit": "fill"
+        },
+        {
+          "src": "/img/homepage/service-orbit/01-strategy.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/02-seo-ai.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/03-websites.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/04-branding.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/05-paid-ads.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/06-automation.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 3604.25,
+        "width": 390,
+        "height": 862.828125
+      }
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "selector": "#featured-case-studies",
+      "height": 1230.65625,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/portfolio/websites/buildscape/buildscape-production-desktop-20260927.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/home-studio-interiors/proof/home-studio-live-desktop-2026.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/black-petals/black-petals-live-desktop.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 4467.078125,
+        "width": 390,
+        "height": 1230.65625
+      }
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "orbit": {
+        "stage": {
+          "width": 342,
+          "height": 342
+        },
+        "icon": {
+          "width": 56,
+          "height": 56
+        },
+        "robot": {
+          "width": 123.109375,
+          "height": 184.65625
+        },
+        "panel": {
+          "width": 278,
+          "height": 269.53125
+        }
+      }
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "selector": "#home-buyers-decide",
+      "height": 1916.609375,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/homepage/buyer-journey/01-find-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/02-check-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/03-decide-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 1653.140625,
+        "width": 320,
+        "height": 1916.609375
+      }
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "selector": "#home-problem-services",
+      "height": 814.65625,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/assets/crea8iv-media-vector-hero-840.webp",
+          "ok": true,
+          "fit": "fill"
+        },
+        {
+          "src": "/img/homepage/service-orbit/01-strategy.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/02-seo-ai.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/03-websites.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/04-branding.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/05-paid-ads.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/06-automation.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 3569.75,
+        "width": 320,
+        "height": 814.65625
+      }
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "selector": "#featured-case-studies",
+      "height": 1272.15625,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/portfolio/websites/buildscape/buildscape-production-desktop-20260927.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/home-studio-interiors/proof/home-studio-live-desktop-2026.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/black-petals/black-petals-live-desktop.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 4384.40625,
+        "width": 320,
+        "height": 1272.15625
+      }
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "orbit": {
+        "stage": {
+          "width": 280,
+          "height": 280
+        },
+        "icon": {
+          "width": 56,
+          "height": 56
+        },
+        "robot": {
+          "width": 100.796875,
+          "height": 151.1875
+        },
+        "panel": {
+          "width": 246,
+          "height": 215.59375
+        }
+      }
+    },
+    {
+      "theme": "light",
+      "seoAndProtectedSections": true,
+      "projectContentAndLinks": true,
+      "keyboardNavigation": true,
+      "cardSelectionFocus": true,
+      "enlargementEscapeFocus": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "selector": "#home-buyers-decide",
+      "height": 961.296875,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/homepage/buyer-journey/01-find-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/02-check-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/03-decide-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 1324.78125,
+        "width": 1440,
+        "height": 961.296875
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "selector": "#home-problem-services",
+      "height": 776,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/assets/crea8iv-media-vector-hero-840.webp",
+          "ok": true,
+          "fit": "fill"
+        },
+        {
+          "src": "/img/homepage/service-orbit/01-strategy.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/02-seo-ai.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/03-websites.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/04-branding.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/05-paid-ads.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/06-automation.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 2286.078125,
+        "width": 1440,
+        "height": 776
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "selector": "#featured-case-studies",
+      "height": 1099.875,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/portfolio/websites/buildscape/buildscape-production-desktop-20260927.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/home-studio-interiors/proof/home-studio-live-desktop-2026.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/black-petals/black-petals-live-desktop.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 3062.078125,
+        "width": 1440,
+        "height": 1099.875
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "orbit": {
+        "stage": {
+          "width": 640,
+          "height": 640
+        },
+        "icon": {
+          "width": 84,
+          "height": 84
+        },
+        "robot": {
+          "width": 210,
+          "height": 315
+        },
+        "panel": {
+          "width": 278,
+          "height": 310
+        }
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "selector": "#home-buyers-decide",
+      "height": 1433.75,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/homepage/buyer-journey/01-find-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/02-check-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/03-decide-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 1282.03125,
+        "width": 768,
+        "height": 1433.75
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "selector": "#home-problem-services",
+      "height": 1034,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/assets/crea8iv-media-vector-hero-840.webp",
+          "ok": true,
+          "fit": "fill"
+        },
+        {
+          "src": "/img/homepage/service-orbit/01-strategy.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/02-seo-ai.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/03-websites.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/04-branding.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/05-paid-ads.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/06-automation.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 2715.78125,
+        "width": 768,
+        "height": 1034
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "selector": "#featured-case-studies",
+      "height": 1106.3125,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/portfolio/websites/buildscape/buildscape-production-desktop-20260927.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/home-studio-interiors/proof/home-studio-live-desktop-2026.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/black-petals/black-petals-live-desktop.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 3749.78125,
+        "width": 768,
+        "height": 1106.3125
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "orbit": {
+        "stage": {
+          "width": 560,
+          "height": 560
+        },
+        "icon": {
+          "width": 84,
+          "height": 84
+        },
+        "robot": {
+          "width": 201.59375,
+          "height": 302.390625
+        },
+        "panel": {
+          "width": 278,
+          "height": 310
+        }
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "selector": "#home-buyers-decide",
+      "height": 1986.453125,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/homepage/buyer-journey/01-find-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/02-check-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/03-decide-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 1617.796875,
+        "width": 390,
+        "height": 1986.453125
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "selector": "#home-problem-services",
+      "height": 862.828125,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/assets/crea8iv-media-vector-hero-840.webp",
+          "ok": true,
+          "fit": "fill"
+        },
+        {
+          "src": "/img/homepage/service-orbit/01-strategy.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/02-seo-ai.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/03-websites.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/04-branding.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/05-paid-ads.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/06-automation.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 3604.25,
+        "width": 390,
+        "height": 862.828125
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "selector": "#featured-case-studies",
+      "height": 1230.65625,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/portfolio/websites/buildscape/buildscape-production-desktop-20260927.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/home-studio-interiors/proof/home-studio-live-desktop-2026.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/black-petals/black-petals-live-desktop.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 4467.078125,
+        "width": 390,
+        "height": 1230.65625
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "orbit": {
+        "stage": {
+          "width": 342,
+          "height": 342
+        },
+        "icon": {
+          "width": 56,
+          "height": 56
+        },
+        "robot": {
+          "width": 123.109375,
+          "height": 184.65625
+        },
+        "panel": {
+          "width": 278,
+          "height": 269.53125
+        }
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "selector": "#home-buyers-decide",
+      "height": 1916.609375,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/homepage/buyer-journey/01-find-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/02-check-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        },
+        {
+          "src": "/img/homepage/buyer-journey/03-decide-brand-v2.webp",
+          "ok": true,
+          "fit": "cover"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 1653.140625,
+        "width": 320,
+        "height": 1916.609375
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "selector": "#home-problem-services",
+      "height": 814.65625,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/assets/crea8iv-media-vector-hero-840.webp",
+          "ok": true,
+          "fit": "fill"
+        },
+        {
+          "src": "/img/homepage/service-orbit/01-strategy.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/02-seo-ai.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/03-websites.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/04-branding.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/05-paid-ads.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/homepage/service-orbit/06-automation.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 3569.75,
+        "width": 320,
+        "height": 814.65625
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "selector": "#featured-case-studies",
+      "height": 1272.15625,
+      "overflow": false,
+      "images": [
+        {
+          "src": "/img/portfolio/websites/buildscape/buildscape-production-desktop-20260927.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/home-studio-interiors/proof/home-studio-live-desktop-2026.webp",
+          "ok": true,
+          "fit": "contain"
+        },
+        {
+          "src": "/img/case-studies/black-petals/black-petals-live-desktop.webp",
+          "ok": true,
+          "fit": "contain"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 4384.40625,
+        "width": 320,
+        "height": 1272.15625
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "orbit": {
+        "stage": {
+          "width": 280,
+          "height": 280
+        },
+        "icon": {
+          "width": 56,
+          "height": 56
+        },
+        "robot": {
+          "width": 100.796875,
+          "height": 151.1875
+        },
+        "panel": {
+          "width": 246,
+          "height": 215.59375
+        }
+      }
+    },
+    {
+      "theme": "dark",
+      "seoAndProtectedSections": true,
+      "projectContentAndLinks": true,
+      "keyboardNavigation": true,
+      "cardSelectionFocus": true,
+      "enlargementEscapeFocus": true
+    }
+  ],
+  "errors": []
+}

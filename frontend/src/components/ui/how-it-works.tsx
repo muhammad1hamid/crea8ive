@@ -15,12 +15,12 @@ export interface HowItWorksProps {
 }
 
 const stages = [
-  { label: "FIND", tone: "find", image: "01-find", alt: "A hand positioning a purple chess king on a circular target among white chess pieces.", icon: Search, href: "/ai-search-optimization/" },
-  { label: "CHECK", tone: "check", image: "02-check", alt: "A hand choosing a purple checkmark button along a decision path with selection cards and a target.", icon: ShieldCheck, href: "/our-services/" },
-  { label: "DECIDE", tone: "decide", image: "03-decide", alt: "A white chess knight beside a strategy board, orange and purple books and chess pieces.", icon: Zap, href: "#home-how-it-connects" },
+  { label: "FIND", tone: "find", image: "01-find-brand-v2", alt: "An orange-handled magnifying lens highlights a forest-green business marker among ivory storefronts.", icon: Search, href: "/ai-search-optimization/" },
+  { label: "CHECK", tone: "check", image: "02-check-brand-v2", alt: "A forest-green checkmark shield beside glass evidence tiles and an orange inspection lens.", icon: ShieldCheck, href: "/our-services/" },
+  { label: "DECIDE", tone: "decide", image: "03-decide-brand-v2", alt: "A hand presses an orange confirmation button beside a green path leading to a conversation.", icon: Zap, href: "#home-how-it-connects" },
 ];
 
-/** Supplied artwork and server-rendered copy form one three-stage buyer journey. */
+/** Brand-coloured conceptual artwork supports the server-rendered buyer journey. */
 export default function HowItWorks({ features, className }: HowItWorksProps) {
   return (
     <div className={cn(styles.board, className)}>

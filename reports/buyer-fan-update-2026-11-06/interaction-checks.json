@@ -1,0 +1,36 @@
+{
+  "mouseDrag": {
+    "selected": "home-studio-interiors",
+    "centred": true,
+    "noAccidentalEnlargement": true
+  },
+  "reducedDuringTransition": true,
+  "circularNext": true,
+  "circularPrevious": true,
+  "noJavaScript": [
+    {
+      "id": "buildscape",
+      "visible": true,
+      "links": 2
+    },
+    {
+      "id": "home-studio-interiors",
+      "visible": true,
+      "links": 2
+    },
+    {
+      "id": "black-petals",
+      "visible": true,
+      "links": 2
+    }
+  ],
+  "touchSwipe": {
+    "selected": "home-studio-interiors",
+    "centred": true
+  },
+  "verticalTouch": {
+    "before": 4682,
+    "after": 4803,
+    "selected": "home-studio-interiors"
+  }
+}
