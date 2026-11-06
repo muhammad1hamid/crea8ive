@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-06",
+  "mode": "Built-in image_gen.imagegen; new generation with transparent_background=true",
+  "prompt": "Use case: stylized-concept. Asset type: premium decorative Q&A object for the left column of a marketing agency FAQ section, used on both dark charcoal and warm cream website surfaces. Primary request: two sculptural folded-paper conversation cards, one deep forest green card standing behind on the left with a large elegant warm-ivory serif capital 'Q', one warm-ivory card in front on the right with a large elegant forest-green serif capital 'A'. The cards have soft folded corners and gently curved lower edges, refined tactile paper grain, believable thickness and polished product-photography quality. Composition: tightly composed landscape still life, entire objects visible, slightly elevated three-quarter view; green Q card slightly taller, ivory A card leaning forward, generous clean silhouette. A very fine understated elliptical ring in muted green and brand orange arcs around the base. Three tiny orange accent strokes at upper right. Palette: forest green #234332, warm ivory #F3E6CF, brand orange #FF6801. Lighting: warm soft studio light, restrained natural contact shadow, no strong glow. Background: truly transparent alpha, no floor plane or rectangular background. Text verbatim: only 'Q' and 'A', each one large serif letter on its respective card. No other words, website UI, border frame, branding, watermark or extra objects. Premium editorial, quiet and sophisticated, not clipart, not plastic cartoon.",
+  "finalPath": "frontend/public/img/homepage/faq/folded-qa.webp",
+  "originalDimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "finalDimensions": {
+    "width": 900,
+    "height": 600
+  },
+  "bytes": 84846,
+  "optimization": "Sharp resize and WebP encode at quality 90 with alpha quality 100; no visual editing; generated alpha retained.",
+  "usage": "Decorative Q/A object, hidden from assistive technology. Questions, heading and answers are real HTML text."
+}

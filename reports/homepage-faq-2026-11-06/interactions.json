@@ -1,0 +1,55 @@
+{
+  "opening": {
+    "animations": [
+      {
+        "duration": 180,
+        "playState": "running"
+      },
+      {
+        "duration": 180,
+        "playState": "running"
+      },
+      {
+        "duration": 180,
+        "playState": "running"
+      },
+      {
+        "duration": 180,
+        "playState": "running"
+      },
+      {
+        "duration": 180,
+        "playState": "running"
+      },
+      {
+        "duration": 180,
+        "playState": "running"
+      },
+      {
+        "duration": 220,
+        "playState": "running"
+      },
+      {
+        "duration": 280,
+        "playState": "running"
+      },
+      {
+        "duration": 320,
+        "playState": "running"
+      }
+    ],
+    "expanded": "true"
+  },
+  "reduced": {
+    "animations": 0,
+    "expanded": "false",
+    "open": false
+  },
+  "independentItems": true,
+  "theme": "rgb(29, 33, 27)",
+  "noJs": {
+    "open": true,
+    "answer": true,
+    "questions": 6
+  }
+}
