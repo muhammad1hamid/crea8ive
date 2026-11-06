@@ -8,10 +8,19 @@
 .stage[data-enhanced="true"] .card {position:absolute;top:24px;left:50%;width:var(--fan-card-width);margin-left:calc(var(--fan-card-width) / -2);will-change:transform;}
 .card[data-active="true"] {border-color:var(--case-orange);box-shadow:0 16px 35px rgb(0 0 0 / .22),0 0 0 1px rgb(255 104 1 / .15);}
 .stage[data-enhanced="true"] .card:not([data-active="true"]) {filter:brightness(.68) saturate(.82);}
-.media {position:relative;display:grid;place-items:center;aspect-ratio:10/7;margin:10px 10px 0;border-radius:16px;overflow:hidden;background:var(--case-frame);}
+.media {position:relative;display:grid;place-items:center;aspect-ratio:10/7;margin:10px 10px 0;border-radius:16px;overflow:hidden;background:var(--case-frame);container-type:size;isolation:isolate;}
 .media img {display:block;width:100%;height:100%;object-fit:contain;user-select:none;pointer-events:none;}
-.media>button {width:100%;height:100%;cursor:zoom-in;}
-.media>button:focus-visible {outline:3px solid var(--case-orange)!important;outline-offset:-5px!important;}
+.media .backdrop {object-fit:cover;filter:blur(14px);transform:scale(1.15);opacity:.38;z-index:-1;}
+.browserWindow {position:relative;overflow:hidden;width:calc(100% - 16px);border:1px solid var(--case-line);border-radius:10px;background:var(--case-card);box-shadow:0 6px 16px rgb(0 0 0 / .2);}
+@supports(height:1cqh) {.browserWindow{width:min(calc(100% - 16px),calc((100cqh - 32px) * var(--screen-ratio)));}}
+.browserChrome {display:flex;align-items:center;gap:4px;height:15px;padding-inline:7px;background:var(--case-card);border-bottom:1px solid var(--case-line);}
+.browserChrome i {width:4px;height:4px;flex:none;border-radius:50%;background:var(--case-line);}
+.browserChrome i:first-child {background:var(--case-orange);}
+.browserChrome span {width:44%;height:4px;margin-inline:auto;border-radius:3px;background:var(--case-line);opacity:.7;}
+.browserScreen {position:relative;width:100%;aspect-ratio:var(--screen-ratio);background:var(--case-frame);}
+.browserScreen>img {position:absolute;inset:0;}
+.browserScreen>button {width:100%;height:100%;cursor:zoom-in;}
+.browserScreen>button:focus-visible {outline:3px solid var(--case-orange)!important;outline-offset:-5px!important;}
 .caption {position:relative;min-height:129px;padding:20px 25px 23px;}
 .card.card .badge {display:inline-flex;max-width:100%;padding:5px 10px;border-radius:999px;background:var(--case-badge);color:var(--case-badge-ink)!important;font-size:11px;font-weight:700!important;line-height:1.4;}
 .caption h3 {margin:12px 0 0;color:var(--case-ink)!important;font-size:29px;font-weight:700!important;line-height:1.13;}

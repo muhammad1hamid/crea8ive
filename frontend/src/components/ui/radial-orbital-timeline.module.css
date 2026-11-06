@@ -37,6 +37,7 @@
 .layout { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0,.46fr) minmax(0,.54fr); align-items: center; gap: 52px; max-width: 1440px; margin-inline: auto; }
 .layout::before { content: ""; position: absolute; z-index: -1; bottom: -360px; left: -360px; width: 460px; height: 460px; border-radius: 50%; border: 1px solid rgb(64 138 103 / .25); background: radial-gradient(circle at 65% 25%, rgb(8 72 56 / .20), transparent 75%); pointer-events: none; }
 .copy { min-width: 0; max-width: 600px; }
+.copyText { display: contents; }
 .copy .eyebrow { display: flex; align-items: center; gap: 12px; margin: 0; color: var(--orbit-ink) !important; font-size: 15px; font-weight: 600 !important; line-height: 1.5; }
 .eyebrow::before, .eyebrow::after { content: ""; width: 29px; height: 2px; border-radius: 2px; background: var(--orbit-orange); }
 .copy h2 { margin: 19px 0 0; font-size: 42px; font-weight: 700 !important; line-height: 1.22; text-wrap: balance; }
@@ -157,6 +158,12 @@
   .section::before { top: -275px; left: -230px; }
   .section::after { right: -245px; bottom: -245px; }
   .layout { gap: 22px; }
+  .copy { display: grid; grid-column: 1; grid-row: 1 / span 3; grid-template-rows: subgrid; align-self: stretch; max-width: none; text-align: center; }
+  .copyText { display: block; grid-row: 1; min-width: 0; }
+  .copy .eyebrow { justify-content: center; }
+  .copy h2, .copy .intro { margin-inline: auto; }
+  .copy > .cta { grid-row: 3; justify-self: center; align-self: start; margin-top: 0; }
+  .visual { grid-column: 1; grid-row: 2; }
   .copy .eyebrow { gap: 9px; font-size: 13px; }
   .eyebrow::before, .eyebrow::after { width: 22px; }
   .copy h2 { font-size: 31px; line-height: 1.23; }

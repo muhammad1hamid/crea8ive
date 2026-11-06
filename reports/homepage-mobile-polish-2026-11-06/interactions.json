@@ -1,0 +1,22 @@
+[
+  {
+    "theme": "light",
+    "allThreeFullImages": true,
+    "fanKeyboardAndButtons": true,
+    "fullscreenEscapeFocusReturn": true,
+    "serviceDetailsAndEscape": true,
+    "orbitHoverPauseResume": true,
+    "industryCarousel": true,
+    "noOverflow": true
+  },
+  {
+    "theme": "dark",
+    "allThreeFullImages": true,
+    "fanKeyboardAndButtons": true,
+    "fullscreenEscapeFocusReturn": true,
+    "serviceDetailsAndEscape": true,
+    "orbitHoverPauseResume": true,
+    "industryCarousel": true,
+    "noOverflow": true
+  }
+]

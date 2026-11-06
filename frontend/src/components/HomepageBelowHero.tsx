@@ -236,7 +236,7 @@ function IndustrySystems() {
           </div>
           <div className={industryStyles.headingAside}>
             <p>A patient choosing a clinic, a homeowner hiring an architect and a customer ordering online look for different kinds of reassurance. Your marketing should reflect those decisions.</p>
-            <Link href="/industries/" className="home-lux-link">Explore Industries <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link>
+            <Link href="/industries/" className={`home-lux-link ${industryStyles.exploreLink}`}>Explore Industries <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link>
           </div>
         </div>
         <IndustryMobileCarousel count={industries.length}>

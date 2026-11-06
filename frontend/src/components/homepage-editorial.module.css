@@ -24,9 +24,10 @@
 }
 
 @media (max-width: 699px) {
-  .headingRow { display: block; padding-bottom: 29px; }
-  .heading { font-size: clamp(32px, 8.1vw, 40px); }
-  .introAside { gap: 15px; margin-top: 22px; }
+  .headingRow { display: block; padding-bottom: 29px; text-align: center; }
+  .eyebrow { justify-content: center; flex-wrap: wrap; }
+  .heading { margin-inline: auto; font-size: clamp(32px, 8.1vw, 40px); text-wrap: balance; }
+  .introAside { align-items: center; gap: 15px; margin-top: 22px; }
   .introAside p { font-size: 15px; }
   .grid { grid-template-columns: minmax(0, 1fr); gap: 42px; margin-top: 30px; }
   .bottomLine { margin-top: 47px; }

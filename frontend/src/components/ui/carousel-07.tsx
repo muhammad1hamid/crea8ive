@@ -40,10 +40,16 @@ function FanCard({ slide, index, total, progress, config, active, enhanced, choo
   const zIndex = useTransform(offset, value => Math.round(20 - Math.abs(value) * 10));
 
   return <motion.article className={styles.card} data-fan-project={slide.id} data-active={active} aria-labelledby={`fan-title-${slide.id}`} style={{ x, y, rotate, scale, zIndex }}>
-    <div className={styles.media}>
+    <div className={styles.media} style={{ "--screen-ratio": slide.image.width / slide.image.height } as CSSProperties}>
+      <Image className={styles.backdrop} src={slide.image.src} alt="" fill sizes="(max-width: 699px) 80vw, 400px" loading="lazy" aria-hidden="true" />
+      <div className={styles.browserWindow}>
+        <div className={styles.browserChrome} aria-hidden="true"><i /><i /><i /><span /></div>
+        <div className={styles.browserScreen}>
       {(!enhanced || active)
         ? <EvidenceMedia src={slide.image.src} alt={slide.image.alt} sizes="(max-width: 699px) 80vw, 400px" />
         : <Image src={slide.image.src} alt={slide.image.alt} width={slide.image.width} height={slide.image.height} sizes="(max-width: 699px) 70vw, 400px" loading="lazy" />}
+        </div>
+      </div>
     </div>
     <div className={styles.caption}>
       <span className={styles.badge}>{slide.badge}</span>

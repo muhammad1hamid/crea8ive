@@ -267,3 +267,11 @@
  .story :global(.home-logo-marquee .home-lux-heading) { font-size:21px; }
  .story .positioning :global(.home-lux-heading),.story .industries :global(.home-lux-heading),.story .deliveryProof :global(.home-lux-heading) { font-size:24px; }
 }
+
+/* A clearer client introduction on small screens; marquee sizing is unchanged. */
+@media(max-width:767px) {
+ .story :global(#home-client-logos .home-lux-heading) { max-width:24ch; font-size:28px; font-weight:700; line-height:1.2; text-wrap:balance; }
+}
+@media(max-width:359px) {
+ .story :global(#home-client-logos .home-lux-heading) { font-size:25px; }
+}

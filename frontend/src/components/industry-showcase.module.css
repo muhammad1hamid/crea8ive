@@ -219,11 +219,14 @@
 
 @media (max-width: 639px) {
   :global(#home-industries).section { padding-block: 36px !important; }
-  .heading { margin-bottom: 20px; }
+  .inner { display: flex; flex-direction: column; }
+  .heading { display: contents; }
+  .heading > div:first-child { text-align: center; }
   .heading h2 { font-size: clamp(30px, 8vw, 38px); }
-  .headingAside { display: block; }
-  .headingAside > p { font-size: 15px; }
-  .headingAside :global(.home-lux-link) { margin-top: 14px; }
+  .headingAside { display: contents; }
+  .headingAside > p { margin: 16px auto 20px; font-size: 15px; text-align: center; }
+  :global(#home-industries) .exploreLink { order: 1; align-self: center; justify-content: center; min-height: 48px; margin: 12px 0 0; padding: 12px 23px; border-color: #ff6801 !important; background: #ff6801 !important; color: #1a0b02 !important; }
+  :global(#home-industries) .exploreLink > svg { color: inherit !important; }
   .mobileNav { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; margin-bottom: 12px; }
   .counter { color: var(--text-primary, #fcfaee); font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
   .counter > span { color: var(--text-primary, #fcfaee) !important; }

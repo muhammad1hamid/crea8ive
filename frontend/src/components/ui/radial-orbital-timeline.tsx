@@ -121,10 +121,12 @@ export default function RadialOrbitalTimeline({ intro, timelineData }: RadialOrb
   return (
     <ConnectedJourneyMotion className={styles.layout}>
       <div className={styles.copy} data-journey-heading>
+        <div className={styles.copyText}>
         <p className={styles.eyebrow}>Start with the problem</p>
         <h2 id="home-core-services-title">What’s standing between you and your <em>next customer?</em></h2>
         <p className={styles.intro}>{intro}</p>
         <p className={styles.hint}>Select a service to see how it helps.</p>
+        </div>
         <Link href="/our-services/" prefetch={false} className={styles.cta}>
           EXPLORE ALL SERVICES <ArrowUpRight size={20} aria-hidden="true" />
         </Link>
