@@ -1,0 +1,38 @@
+{
+  "running": {
+    "before": {
+      "time": 283.51299999973014,
+      "state": "running",
+      "duration": 60000
+    },
+    "after": {
+      "time": 550.1129999997296,
+      "state": "running",
+      "duration": 60000
+    }
+  },
+  "hoverPaused": true,
+  "selected": {
+    "angle": 270,
+    "scrollY": 2186,
+    "stageY": 156.078125,
+    "panelY": 291.875
+  },
+  "attachedOnScroll": true,
+  "outsideClickResumes": true,
+  "quickSelect": {
+    "angle": 270,
+    "scrollY": 2246,
+    "stageY": 96.078125,
+    "panelY": 231.875
+  },
+  "reduced": {
+    "clock": null,
+    "selected": {
+      "angle": 270,
+      "scrollY": 0,
+      "stageY": 2342.078125,
+      "panelY": 2477.875
+    }
+  }
+}

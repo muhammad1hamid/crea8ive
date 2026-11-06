@@ -1,0 +1,1605 @@
+{
+  "layouts": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "idle": {
+        "nodes": [
+          {
+            "name": "Strategy",
+            "x": 935.015625,
+            "y": 256.625,
+            "angle": 239.99950552383353,
+            "radius": 207.21565254622115
+          },
+          {
+            "name": "SEO & AI",
+            "x": 1142.21875,
+            "y": 256.625,
+            "angle": 299.99675281081625,
+            "radius": 207.20784037127584
+          },
+          {
+            "name": "Websites",
+            "x": 1245.8125,
+            "y": 436.078125,
+            "angle": 0,
+            "radius": 207.1875
+          },
+          {
+            "name": "Branding",
+            "x": 1142.21875,
+            "y": 615.515625,
+            "angle": 60.001086997910136,
+            "radius": 207.19430842885743
+          },
+          {
+            "name": "Paid Ads",
+            "x": 935.015625,
+            "y": 615.515625,
+            "angle": 120.00265483034724,
+            "radius": 207.20212111399974
+          },
+          {
+            "name": "Automation",
+            "x": 831.421875,
+            "y": 436.078125,
+            "angle": 180,
+            "radius": 207.203125
+          }
+        ],
+        "gaps": [
+          60.001086997910136,
+          60.001567832437104,
+          59.99734516965276,
+          59.999505523833534,
+          59.99724728698271,
+          60.00324718918375
+        ],
+        "bounds": {
+          "left": 758.625,
+          "top": 156.078125,
+          "right": 1318.625,
+          "bottom": 716.078125,
+          "width": 560,
+          "height": 560
+        }
+      },
+      "panels": [
+        {
+          "name": "Strategy",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 586.96875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        },
+        {
+          "name": "SEO & AI",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 586.96875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        },
+        {
+          "name": "Websites",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 601.875,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        },
+        {
+          "name": "Branding",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 586.96875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        },
+        {
+          "name": "Paid Ads",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 601.875,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        },
+        {
+          "name": "Automation",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 601.875,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "idle": {
+        "nodes": [
+          {
+            "name": "Strategy",
+            "x": 935.015625,
+            "y": 256.625,
+            "angle": 239.99950552383353,
+            "radius": 207.21565254622115
+          },
+          {
+            "name": "SEO & AI",
+            "x": 1142.21875,
+            "y": 256.625,
+            "angle": 299.99675281081625,
+            "radius": 207.20784037127584
+          },
+          {
+            "name": "Websites",
+            "x": 1245.8125,
+            "y": 436.078125,
+            "angle": 0,
+            "radius": 207.1875
+          },
+          {
+            "name": "Branding",
+            "x": 1142.21875,
+            "y": 615.515625,
+            "angle": 60.001086997910136,
+            "radius": 207.19430842885743
+          },
+          {
+            "name": "Paid Ads",
+            "x": 935.015625,
+            "y": 615.515625,
+            "angle": 120.00265483034724,
+            "radius": 207.20212111399974
+          },
+          {
+            "name": "Automation",
+            "x": 831.421875,
+            "y": 436.078125,
+            "angle": 180,
+            "radius": 207.203125
+          }
+        ],
+        "gaps": [
+          60.001086997910136,
+          60.001567832437104,
+          59.99734516965276,
+          59.999505523833534,
+          59.99724728698271,
+          60.00324718918375
+        ],
+        "bounds": {
+          "left": 758.625,
+          "top": 156.078125,
+          "right": 1318.625,
+          "bottom": 716.078125,
+          "width": 560,
+          "height": 560
+        }
+      },
+      "panels": [
+        {
+          "name": "Strategy",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 586.96875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        },
+        {
+          "name": "SEO & AI",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 586.96875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        },
+        {
+          "name": "Websites",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 601.875,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        },
+        {
+          "name": "Branding",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 586.96875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        },
+        {
+          "name": "Paid Ads",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 601.875,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        },
+        {
+          "name": "Automation",
+          "panel": {
+            "left": 899.625,
+            "top": 291.875,
+            "right": 1177.625,
+            "bottom": 601.875,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 758.625,
+            "top": 156.078125,
+            "right": 1318.625,
+            "bottom": 716.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2186,
+          "closeFocused": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "idle": {
+        "nodes": [
+          {
+            "name": "Strategy",
+            "x": 291.5,
+            "y": 601.5625,
+            "angle": 240.00062719105097,
+            "radius": 185.00350767367223
+          },
+          {
+            "name": "SEO & AI",
+            "x": 476.5,
+            "y": 601.5625,
+            "angle": 299.99937280894903,
+            "radius": 185.00350767367223
+          },
+          {
+            "name": "Websites",
+            "x": 569,
+            "y": 761.78125,
+            "angle": 0,
+            "radius": 185
+          },
+          {
+            "name": "Branding",
+            "x": 476.5,
+            "y": 921.984375,
+            "angle": 59.99820752053671,
+            "radius": 184.98997610618156
+          },
+          {
+            "name": "Paid Ads",
+            "x": 291.5,
+            "y": 921.984375,
+            "angle": 120.00179247946335,
+            "radius": 184.98997610618156
+          },
+          {
+            "name": "Automation",
+            "x": 199,
+            "y": 761.78125,
+            "angle": 180,
+            "radius": 185
+          }
+        ],
+        "gaps": [
+          59.99820752053671,
+          60.00358495892664,
+          59.99820752053665,
+          60.00062719105097,
+          59.99874561789807,
+          60.00062719105097
+        ],
+        "bounds": {
+          "left": 134,
+          "top": 511.78125,
+          "right": 634,
+          "bottom": 1011.78125,
+          "width": 500,
+          "height": 500
+        }
+      },
+      "panels": [
+        {
+          "name": "Strategy",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 934.875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        },
+        {
+          "name": "SEO & AI",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 934.875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        },
+        {
+          "name": "Websites",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 949.78125,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        },
+        {
+          "name": "Branding",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 934.875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        },
+        {
+          "name": "Paid Ads",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 949.78125,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        },
+        {
+          "name": "Automation",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 949.78125,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "idle": {
+        "nodes": [
+          {
+            "name": "Strategy",
+            "x": 291.5,
+            "y": 601.5625,
+            "angle": 240.00062719105097,
+            "radius": 185.00350767367223
+          },
+          {
+            "name": "SEO & AI",
+            "x": 476.5,
+            "y": 601.5625,
+            "angle": 299.99937280894903,
+            "radius": 185.00350767367223
+          },
+          {
+            "name": "Websites",
+            "x": 569,
+            "y": 761.78125,
+            "angle": 0,
+            "radius": 185
+          },
+          {
+            "name": "Branding",
+            "x": 476.5,
+            "y": 921.984375,
+            "angle": 59.99820752053671,
+            "radius": 184.98997610618156
+          },
+          {
+            "name": "Paid Ads",
+            "x": 291.5,
+            "y": 921.984375,
+            "angle": 120.00179247946335,
+            "radius": 184.98997610618156
+          },
+          {
+            "name": "Automation",
+            "x": 199,
+            "y": 761.78125,
+            "angle": 180,
+            "radius": 185
+          }
+        ],
+        "gaps": [
+          59.99820752053671,
+          60.00358495892664,
+          59.99820752053665,
+          60.00062719105097,
+          59.99874561789807,
+          60.00062719105097
+        ],
+        "bounds": {
+          "left": 134,
+          "top": 511.78125,
+          "right": 634,
+          "bottom": 1011.78125,
+          "width": 500,
+          "height": 500
+        }
+      },
+      "panels": [
+        {
+          "name": "Strategy",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 934.875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        },
+        {
+          "name": "SEO & AI",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 934.875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        },
+        {
+          "name": "Websites",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 949.78125,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        },
+        {
+          "name": "Branding",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 934.875,
+            "width": 278,
+            "height": 295.09375
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        },
+        {
+          "name": "Paid Ads",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 949.78125,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        },
+        {
+          "name": "Automation",
+          "panel": {
+            "left": 245,
+            "top": 639.78125,
+            "right": 523,
+            "bottom": 949.78125,
+            "width": 278,
+            "height": 310
+          },
+          "stage": {
+            "left": 134,
+            "top": 511.78125,
+            "right": 634,
+            "bottom": 1011.78125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 2616,
+          "closeFocused": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "idle": {
+        "nodes": [
+          {
+            "name": "Strategy",
+            "x": 131.71875,
+            "y": 624.484375,
+            "angle": 239.9971499237434,
+            "radius": 126.55159675256965
+          },
+          {
+            "name": "SEO & AI",
+            "x": 258.265625,
+            "y": 624.484375,
+            "angle": 299.99672346958243,
+            "radius": 126.54378430291678
+          },
+          {
+            "name": "Websites",
+            "x": 321.53125,
+            "y": 734.078125,
+            "angle": 0,
+            "radius": 126.53125
+          },
+          {
+            "name": "Branding",
+            "x": 258.265625,
+            "y": 843.65625,
+            "angle": 59.99973920292882,
+            "radius": 126.53025245037745
+          },
+          {
+            "name": "Paid Ads",
+            "x": 131.71875,
+            "y": 843.65625,
+            "angle": 120.00638784049227,
+            "radius": 126.5380657354858
+          },
+          {
+            "name": "Automation",
+            "x": 68.453125,
+            "y": 734.078125,
+            "angle": 180,
+            "radius": 126.546875
+          }
+        ],
+        "gaps": [
+          59.99973920292882,
+          60.006648637563444,
+          59.993612159507734,
+          59.99714992374339,
+          59.99957354583904,
+          60.003276530417565
+        ],
+        "bounds": {
+          "left": 24,
+          "top": 563.078125,
+          "right": 366,
+          "bottom": 905.078125,
+          "width": 342,
+          "height": 342
+        }
+      },
+      "panels": [
+        {
+          "name": "Strategy",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        },
+        {
+          "name": "SEO & AI",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        },
+        {
+          "name": "Websites",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        },
+        {
+          "name": "Branding",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        },
+        {
+          "name": "Paid Ads",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        },
+        {
+          "name": "Automation",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "idle": {
+        "nodes": [
+          {
+            "name": "Strategy",
+            "x": 131.71875,
+            "y": 624.484375,
+            "angle": 239.9971499237434,
+            "radius": 126.55159675256965
+          },
+          {
+            "name": "SEO & AI",
+            "x": 258.265625,
+            "y": 624.484375,
+            "angle": 299.99672346958243,
+            "radius": 126.54378430291678
+          },
+          {
+            "name": "Websites",
+            "x": 321.53125,
+            "y": 734.078125,
+            "angle": 0,
+            "radius": 126.53125
+          },
+          {
+            "name": "Branding",
+            "x": 258.265625,
+            "y": 843.65625,
+            "angle": 59.99973920292882,
+            "radius": 126.53025245037745
+          },
+          {
+            "name": "Paid Ads",
+            "x": 131.71875,
+            "y": 843.65625,
+            "angle": 120.00638784049227,
+            "radius": 126.5380657354858
+          },
+          {
+            "name": "Automation",
+            "x": 68.453125,
+            "y": 734.078125,
+            "angle": 180,
+            "radius": 126.546875
+          }
+        ],
+        "gaps": [
+          59.99973920292882,
+          60.006648637563444,
+          59.993612159507734,
+          59.99714992374339,
+          59.99957354583904,
+          60.003276530417565
+        ],
+        "bounds": {
+          "left": 24,
+          "top": 563.078125,
+          "right": 366,
+          "bottom": 905.078125,
+          "width": 342,
+          "height": 342
+        }
+      },
+      "panels": [
+        {
+          "name": "Strategy",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        },
+        {
+          "name": "SEO & AI",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        },
+        {
+          "name": "Websites",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        },
+        {
+          "name": "Branding",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        },
+        {
+          "name": "Paid Ads",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        },
+        {
+          "name": "Automation",
+          "panel": {
+            "left": 56,
+            "top": 660.53125,
+            "right": 334,
+            "bottom": 930.0625,
+            "width": 278,
+            "height": 269.53125
+          },
+          "stage": {
+            "left": 24,
+            "top": 563.078125,
+            "right": 366,
+            "bottom": 905.078125
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3504,
+          "closeFocused": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "idle": {
+        "nodes": [
+          {
+            "name": "Strategy",
+            "x": 108.1875,
+            "y": 626.671875,
+            "angle": 239.99792437552205,
+            "radius": 103.61849841071151
+          },
+          {
+            "name": "SEO & AI",
+            "x": 211.796875,
+            "y": 626.671875,
+            "angle": 299.9945929016747,
+            "radius": 103.61068630409824
+          },
+          {
+            "name": "Websites",
+            "x": 263.59375,
+            "y": 716.40625,
+            "angle": 0,
+            "radius": 103.59375
+          },
+          {
+            "name": "Branding",
+            "x": 211.796875,
+            "y": 806.125,
+            "angle": 60.001086997910136,
+            "radius": 103.59715421442871
+          },
+          {
+            "name": "Paid Ads",
+            "x": 108.1875,
+            "y": 806.125,
+            "angle": 120.00639637642337,
+            "radius": 103.60496734139971
+          },
+          {
+            "name": "Automation",
+            "x": 56.390625,
+            "y": 716.40625,
+            "angle": 180,
+            "radius": 103.609375
+          }
+        ],
+        "gaps": [
+          60.001086997910136,
+          60.00530937851323,
+          59.99360362357663,
+          59.997924375522075,
+          59.99666852615269,
+          60.00540709832529
+        ],
+        "bounds": {
+          "left": 20,
+          "top": 576.40625,
+          "right": 300,
+          "bottom": 856.40625,
+          "width": 280,
+          "height": 280
+        }
+      },
+      "panels": [
+        {
+          "name": "Strategy",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        },
+        {
+          "name": "SEO & AI",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        },
+        {
+          "name": "Websites",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        },
+        {
+          "name": "Branding",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        },
+        {
+          "name": "Paid Ads",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        },
+        {
+          "name": "Automation",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "idle": {
+        "nodes": [
+          {
+            "name": "Strategy",
+            "x": 108.1875,
+            "y": 626.671875,
+            "angle": 239.99792437552205,
+            "radius": 103.61849841071151
+          },
+          {
+            "name": "SEO & AI",
+            "x": 211.796875,
+            "y": 626.671875,
+            "angle": 299.9945929016747,
+            "radius": 103.61068630409824
+          },
+          {
+            "name": "Websites",
+            "x": 263.59375,
+            "y": 716.40625,
+            "angle": 0,
+            "radius": 103.59375
+          },
+          {
+            "name": "Branding",
+            "x": 211.796875,
+            "y": 806.125,
+            "angle": 60.001086997910136,
+            "radius": 103.59715421442871
+          },
+          {
+            "name": "Paid Ads",
+            "x": 108.1875,
+            "y": 806.125,
+            "angle": 120.00639637642337,
+            "radius": 103.60496734139971
+          },
+          {
+            "name": "Automation",
+            "x": 56.390625,
+            "y": 716.40625,
+            "angle": 180,
+            "radius": 103.609375
+          }
+        ],
+        "gaps": [
+          60.001086997910136,
+          60.00530937851323,
+          59.99360362357663,
+          59.997924375522075,
+          59.99666852615269,
+          60.00540709832529
+        ],
+        "bounds": {
+          "left": 20,
+          "top": 576.40625,
+          "right": 300,
+          "bottom": 856.40625,
+          "width": 280,
+          "height": 280
+        }
+      },
+      "panels": [
+        {
+          "name": "Strategy",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        },
+        {
+          "name": "SEO & AI",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        },
+        {
+          "name": "Websites",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        },
+        {
+          "name": "Branding",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        },
+        {
+          "name": "Paid Ads",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        },
+        {
+          "name": "Automation",
+          "panel": {
+            "left": 37,
+            "top": 665.796875,
+            "right": 283,
+            "bottom": 881.390625,
+            "width": 246,
+            "height": 215.59375
+          },
+          "stage": {
+            "left": 20,
+            "top": 576.40625,
+            "right": 300,
+            "bottom": 856.40625
+          },
+          "inline": true,
+          "overflow": false,
+          "links": 1,
+          "scrollY": 3470,
+          "closeFocused": true
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

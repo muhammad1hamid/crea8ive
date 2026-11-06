@@ -1,0 +1,61 @@
+[
+  {
+    "width": 1440,
+    "color": "rgb(255, 180, 125)",
+    "parentColor": "rgb(255, 180, 125)",
+    "scrollHeight": 210,
+    "clientHeight": 202,
+    "ctaVisible": true,
+    "closeVisible": true,
+    "overflow": false,
+    "theme": "dark"
+  },
+  {
+    "width": 1440,
+    "color": "rgb(142, 65, 13)",
+    "parentColor": "rgb(142, 65, 13)",
+    "scrollHeight": 210,
+    "clientHeight": 202,
+    "ctaVisible": true,
+    "closeVisible": true,
+    "overflow": false,
+    "theme": "light"
+  },
+  {
+    "width": 768,
+    "color": "rgb(142, 65, 13)",
+    "parentColor": "rgb(142, 65, 13)",
+    "scrollHeight": 210,
+    "clientHeight": 202,
+    "ctaVisible": true,
+    "closeVisible": true,
+    "overflow": false,
+    "theme": "light"
+  },
+  {
+    "width": 390,
+    "color": "rgb(142, 65, 13)",
+    "parentColor": "rgb(142, 65, 13)",
+    "scrollHeight": 210,
+    "clientHeight": 162,
+    "ctaVisible": true,
+    "closeVisible": true,
+    "overflow": false,
+    "theme": "light"
+  },
+  {
+    "width": 320,
+    "color": "rgb(142, 65, 13)",
+    "parentColor": "rgb(142, 65, 13)",
+    "scrollHeight": 241,
+    "clientHeight": 108,
+    "ctaVisible": true,
+    "closeVisible": true,
+    "overflow": false,
+    "scrolled": {
+      "top": 133,
+      "lastVisible": true
+    },
+    "theme": "light"
+  }
+]
