@@ -12,12 +12,13 @@
   --text-secondary: var(--orbit-copy);
 }
 .section.section.section {
+  --orbit-ground: #064b3b;
   position: relative;
   isolation: isolate;
   overflow: hidden;
   scroll-margin-top: 100px;
   padding: 56px 40px 64px !important;
-  background: radial-gradient(ellipse at 75% 25%, rgb(8 72 56 / .20), transparent 52%), radial-gradient(ellipse at 0 100%, rgb(8 72 56 / .14), transparent 36%), linear-gradient(120deg, #171411, #101412 63%, #191411);
+  background: var(--orbit-ground) !important;
   color: var(--orbit-ink);
   color-scheme: dark;
 }
@@ -118,7 +119,7 @@
   --orbit-shadow: rgb(91 56 26 / .16);
   color-scheme: light;
 }
-:global(html[data-theme="light"]) .section.section.section { background: radial-gradient(ellipse at 0 0, rgb(8 72 56 / .04), transparent 40%), radial-gradient(ellipse at 100% 100%, rgb(244 119 33 / .055), transparent 48%), var(--orbit-ground); }
+:global(html[data-theme="light"]) .section.section.section { --orbit-ground: #064b3b; --orbit-ink: #fff8ef; --orbit-copy: #d5e2d9; background: var(--orbit-ground) !important; }
 :global(html[data-theme="light"]) .section::before { border-color: rgb(8 72 56 / .10); background: rgb(8 72 56 / .07); }
 :global(html[data-theme="light"]) .section::after { border-color: rgb(244 119 33 / .30); background: rgb(244 119 33 / .10); }
 :global(html[data-theme="light"]) .nodeButton { background: linear-gradient(145deg, rgb(255 255 255 / .8), rgb(var(--node-tint) / .045)), #fffaf4; border-color: rgb(var(--node-tint) / .23); box-shadow: inset 0 1px 0 #fff, 0 7px 17px rgb(91 56 26 / .10); }

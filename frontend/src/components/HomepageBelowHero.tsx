@@ -20,7 +20,7 @@ import {
 import { getServiceTone } from "@/lib/service-tones";
 import type { ReactNode } from "react";
 import HomepageFounderOffice from "@/components/HomepageFounderOffice";
-import { BUSINESS_DETAILS } from "@/lib/site-config";
+import HomepageFinalCTA from "./HomepageFinalCTA";
 import HomepageClientStories from "./HomepageClientStories";
 import HomepageCreativeShowcase from "./HomepageCreativeShowcase";
 import { CLIENT_LOGOS } from "@/lib/client-logos";
@@ -29,7 +29,6 @@ import styles from "./agency-body.module.css";
 import surfaces from "./homepage-surfaces.module.css";
 import industryStyles from "./industry-showcase.module.css";
 import orbitStyles from "./ui/radial-orbital-timeline.module.css";
-import closingStyles from "./homepage-final-cta.module.css";
 
 const selectedClientLogos = [
   {
@@ -113,18 +112,21 @@ const visualSystemCards = [
     title: "CO3 Premium brand identity",
     body: "The visual identity and guidelines for CO3 Premium’s drinks brand.",
     image: "/img/case-studies/co3-premium-liquid-shop/co3-brand-guideline-cover.webp",
+    previewImage: "/img/homepage/creative-work/co3-landscape-v2.webp",
     alt: "CO3 Premium brand guidelines and visual applications",
   },
   {
     title: "Venn Dental social content",
     body: "Social creative that presents a consistent identity across the clinic’s posts.",
     image: "/portfolio-optimized/client-social-showcases/venn-dental-instagram-grid-transformation.webp",
+    previewImage: "/img/homepage/creative-work/venn-landscape-v2.webp",
     alt: "Venn Dental social content transformation by Crea8iv Media",
   },
   {
     title: "Ajwad Naturals product content",
     body: "A coordinated series of product visuals for Ajwad Naturals’ social channels.",
     image: "/portfolio-optimized/client-social-showcases/ajwad-naturals-instagram-grid-showcase.webp",
+    previewImage: "/img/homepage/creative-work/ajwad-landscape-v2.webp",
     alt: "Ajwad Naturals social identity and product creative by Crea8iv Media",
   },
 ] as const;
@@ -144,7 +146,7 @@ export default function HomepageBelowHero({ selectedWork, caseStudies, editorial
       <HomepageClientStories />
       <HomepageDeliveryProcess />
       {editorial}
-      <FinalCTA />
+      <HomepageFinalCTA />
     </div>
   );
 }
@@ -264,29 +266,6 @@ function IndustrySystems() {
             );
           })}
         </div>
-      </div>
-    </section>
-  );
-}
-
-function FinalCTA() {
-  const whatsappHref = `https://wa.me/${BUSINESS_DETAILS.phone.replace(/\D/g, "")}?text=${encodeURIComponent("Hi Crea8iv Media, I’d like to discuss a project.")}`;
-  return (
-    <section id="home-project-enquiry" data-home-closing className={`${closingStyles.section} home-final-cta`} aria-labelledby="home-final-cta-title">
-      <div className={closingStyles.card}>
-        <p className={closingStyles.eyebrow}>Let’s talk about what’s next</p>
-        <div className={closingStyles.layout}>
-          <div className={closingStyles.copy}>
-            <h2 id="home-final-cta-title">You’ve built something worth choosing.{" "}<span>Let’s help people see why.</span></h2>
-            <p>Tell us what you want to improve. We’ll help identify the next practical step—whether that starts with your website, visibility, campaigns or customer follow-up.</p>
-          </div>
-          <div className={closingStyles.actions}>
-            <p>What are you trying to improve right now?</p>
-            <Link href="/contact/" prefetch={false} className={closingStyles.primary}>Discuss Your Project <ArrowUpRight size={20} aria-hidden="true" /></Link>
-            <a href={whatsappHref} className={closingStyles.secondary} target="_blank" rel="noopener noreferrer">WhatsApp the Team <ArrowUpRight size={20} aria-hidden="true" /></a>
-          </div>
-        </div>
-        <p className={closingStyles.proof}>Prefer to see the work first? <Link href="/case-studies/" prefetch={false}>Explore our case studies.</Link></p>
       </div>
     </section>
   );

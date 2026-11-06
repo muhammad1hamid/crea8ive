@@ -3,7 +3,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import EvidenceMedia from "./EvidenceMedia";
 import styles from "./homepage-creative-showcase.module.css";
 
-type CreativeProject = { title: string; body: string; image: string; alt: string };
+type CreativeProject = { title: string; body: string; image: string; previewImage?: string; alt: string };
 
 function CreativeProjectCard({ project, index }: { project: CreativeProject; index: number }) {
   const featured = index === 1;
@@ -11,7 +11,7 @@ function CreativeProjectCard({ project, index }: { project: CreativeProject; ind
   const href = index === 0 ? "/case-studies/co3-premium-liquid-shop/" : project.image;
   return <article className={styles.card} data-creative-project={index} data-featured={featured} aria-labelledby={titleId}>
     <div className={styles.media} data-artwork={index}>
-      <EvidenceMedia src={project.image} alt={project.alt} sizes="(max-width: 639px) 88vw, (max-width: 1023px) 45vw, 32vw" />
+      <EvidenceMedia src={project.previewImage ?? project.image} alt={project.alt} sizes="(max-width: 639px) 88vw, (max-width: 1023px) 45vw, 32vw" />
     </div>
     <div className={styles.caption}>
       <div className={styles.projectCopy}>

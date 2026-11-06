@@ -1,5 +1,5 @@
 .section.section.section {
-  --journey-ground: #0b0b0c;
+  --journey-ground: #064b3b;
   --journey-card: #121213;
   --journey-ink: #f7f5f2;
   --journey-copy: #d0cbc5;
@@ -14,7 +14,7 @@
   overflow: hidden;
   scroll-margin-top: 100px;
   padding: 60px 40px 64px !important;
-  background: radial-gradient(ellipse at 0 0, rgb(255 104 1 / .08), transparent 38%), radial-gradient(ellipse at 100% 100%, rgb(255 104 1 / .06), transparent 34%), linear-gradient(125deg, #101011, var(--journey-ground) 60%);
+  background: var(--journey-ground) !important;
   color: var(--journey-ink);
   color-scheme: dark;
 }
@@ -79,15 +79,16 @@
 .cta:focus-visible { outline: 3px solid var(--journey-orange); outline-offset: 5px; }
 
 :global(html[data-theme="light"]) .section.section.section {
-  --journey-ground: #fff8f1;
+  --journey-ground: #064b3b;
   --journey-card: #fffcf8;
-  --journey-ink: #171513;
-  --journey-copy: #45403b;
+  --journey-ink: #fff8ef;
+  --journey-copy: #d5e2d9;
   --journey-border: rgb(50 35 20 / .09);
   --journey-shadow: 0 12px 24px rgb(150 90 39 / .10);
-  background: radial-gradient(ellipse at 0 0, rgb(255 104 1 / .045), transparent 40%), radial-gradient(ellipse at 100% 100%, rgb(255 104 1 / .045), transparent 38%), var(--journey-ground);
+  background: var(--journey-ground) !important;
   color-scheme: light;
 }
+:global(html[data-theme="light"]) .card { --journey-ink: #171513; --journey-copy: #45403b; --text-primary: var(--journey-ink); --text-secondary: var(--journey-copy); }
 :global(html[data-theme="light"]) .section::before,
 :global(html[data-theme="light"]) .section::after { background: rgb(255 104 1 / .035); box-shadow: none; border-color: rgb(255 104 1 / .6); }
 

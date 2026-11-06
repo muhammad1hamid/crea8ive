@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Body copy",
+    "foreground": "#d5e2d9",
+    "background": "#064b3b",
+    "ratio": 7.56,
+    "normalTextAA": true
+  },
+  {
+    "label": "Headings",
+    "foreground": "#fff8ef",
+    "background": "#064b3b",
+    "ratio": 9.59,
+    "normalTextAA": true
+  },
+  {
+    "label": "Journal eyebrow and proof links",
+    "foreground": "#ffab6b",
+    "background": "#064b3b",
+    "ratio": 5.43,
+    "normalTextAA": true
+  },
+  {
+    "label": "Primary action",
+    "foreground": "#131b13",
+    "background": "#ff6801",
+    "ratio": 6.06,
+    "normalTextAA": true
+  }
+]

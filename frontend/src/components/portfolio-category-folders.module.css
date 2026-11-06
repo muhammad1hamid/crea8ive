@@ -1,5 +1,5 @@
 .library {
-  --library-ground: #111411;
+  --library-ground: #064b3b;
   --library-ink: #fcf5e9;
   --library-copy: #ded3c3;
   --library-orange: var(--crea8iv-orange, #ff6801);
@@ -65,7 +65,7 @@
 .gridCard figcaption { display: grid; gap: 6px; padding: 18px; font-size: 14px; line-height: 1.5; }
 .gridCard figcaption span { color: #d7ccbf; }
 
-:global(html[data-theme="light"]) .library { --library-ground: #fff8f1; --library-ink: #0c4433; --library-copy: #4a493e; --library-emphasis: #be4b03; --library-focus: #084838; }
+:global(html[data-theme="light"]) .library { --library-ground: #064b3b; --library-ink: #fff8ef; --library-copy: #d5e2d9; --library-emphasis: var(--library-orange); --library-focus: #ffb47d; }
 :global(html[data-theme="light"]) .library::before { background: #91b6a0; box-shadow: 22px 18px 0 rgb(8 72 56 / .05); }
 :global(html[data-theme="light"]) .library::after { background: #ff8f36; box-shadow: -20px -20px 0 rgb(255 104 1 / .08); }
 :global(html[data-theme="light"]) .dialog { --surface-solid: #fff8f1; --text-strong: #173d2d; --text-soft: #555046; --text-muted: #555046; --border-soft: #d3c7b6; background: #fff8f1; color: #173d2d; border-color: #d3c7b6; color-scheme: light; }

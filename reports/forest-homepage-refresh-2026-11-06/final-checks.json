@@ -1,0 +1,600 @@
+{
+  "layouts": [
+    {
+      "theme": "light",
+      "width": 1440,
+      "text": "Let’s talk about what’s nextYou’ve built something worth choosing. Let’s help people see why.Tell us what you want to improve. We’ll help identify the next practical step—whether that starts with your website, visibility, campaigns or customer follow-up.What are you trying to improve right now?Discuss Your Project WhatsApp the Team Prefer to see the work first? Explore our case studies.",
+      "links": [
+        {
+          "text": "Discuss Your Project",
+          "href": "/contact/"
+        },
+        {
+          "text": "WhatsApp the Team",
+          "href": "https://wa.me/923135147935?text=Hi%20Crea8iv%20Media%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project."
+        },
+        {
+          "text": "Explore our case studies.",
+          "href": "/case-studies/"
+        }
+      ],
+      "cardBackground": "radial-gradient(at 80% 20%, rgba(11, 90, 69, 0.48), rgba(0, 0, 0, 0) 54%), linear-gradient(115deg, rgb(6, 75, 59), rgb(3, 47, 39) 72%, rgb(6, 75, 59))",
+      "headlineColor": "rgb(255, 248, 239)",
+      "emphasisColor": "rgb(255, 104, 1)",
+      "overflow": false,
+      "copy": {
+        "x": 101.46875,
+        "y": 224.8125,
+        "w": 586.59375,
+        "h": 323.984375
+      },
+      "visual": {
+        "x": 712.0625,
+        "y": 300.796875,
+        "w": 279.03125,
+        "h": 234.015625
+      },
+      "actions": {
+        "x": 1015.09375,
+        "y": 278.03125,
+        "w": 323.4375,
+        "h": 279.53125
+      },
+      "proof": {
+        "x": 101.46875,
+        "y": 583.796875,
+        "w": 586.59375,
+        "h": 27
+      },
+      "card": {
+        "x": 40,
+        "y": 163.8125,
+        "w": 1360,
+        "h": 500.984375
+      },
+      "image": {
+        "x": 669.0625,
+        "y": 300.796875,
+        "w": 351.03125,
+        "h": 234.015625
+      },
+      "clip": {
+        "x": 0,
+        "y": 13936.8125,
+        "width": 1440,
+        "height": 644.984375
+      }
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "text": "Let’s talk about what’s nextYou’ve built something worth choosing. Let’s help people see why.Tell us what you want to improve. We’ll help identify the next practical step—whether that starts with your website, visibility, campaigns or customer follow-up.What are you trying to improve right now?Discuss Your Project WhatsApp the Team Prefer to see the work first? Explore our case studies.",
+      "links": [
+        {
+          "text": "Discuss Your Project",
+          "href": "/contact/"
+        },
+        {
+          "text": "WhatsApp the Team",
+          "href": "https://wa.me/923135147935?text=Hi%20Crea8iv%20Media%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project."
+        },
+        {
+          "text": "Explore our case studies.",
+          "href": "/case-studies/"
+        }
+      ],
+      "cardBackground": "radial-gradient(at 80% 20%, rgba(11, 90, 69, 0.48), rgba(0, 0, 0, 0) 54%), linear-gradient(115deg, rgb(6, 75, 59), rgb(3, 47, 39) 72%, rgb(6, 75, 59))",
+      "headlineColor": "rgb(255, 248, 239)",
+      "emphasisColor": "rgb(255, 104, 1)",
+      "overflow": false,
+      "copy": {
+        "x": 69,
+        "y": -1066.921875,
+        "w": 366,
+        "h": 293.640625
+      },
+      "visual": {
+        "x": 455,
+        "y": -1012.109375,
+        "w": 244,
+        "h": 184
+      },
+      "actions": {
+        "x": 69,
+        "y": -745.28125,
+        "w": 630,
+        "h": 128
+      },
+      "proof": {
+        "x": 69,
+        "y": -589.28125,
+        "w": 630,
+        "h": 27
+      },
+      "card": {
+        "x": 32,
+        "y": -1109.921875,
+        "w": 704,
+        "h": 586.640625
+      },
+      "image": {
+        "x": 439,
+        "y": -1012.109375,
+        "w": 276,
+        "h": 184
+      },
+      "clip": {
+        "x": 0,
+        "y": 16932.078125,
+        "width": 768,
+        "height": 694.640625
+      }
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "text": "Let’s talk about what’s nextYou’ve built something worth choosing. Let’s help people see why.Tell us what you want to improve. We’ll help identify the next practical step—whether that starts with your website, visibility, campaigns or customer follow-up.What are you trying to improve right now?Discuss Your Project WhatsApp the Team Prefer to see the work first? Explore our case studies.",
+      "links": [
+        {
+          "text": "Discuss Your Project",
+          "href": "/contact/"
+        },
+        {
+          "text": "WhatsApp the Team",
+          "href": "https://wa.me/923135147935?text=Hi%20Crea8iv%20Media%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project."
+        },
+        {
+          "text": "Explore our case studies.",
+          "href": "/case-studies/"
+        }
+      ],
+      "cardBackground": "radial-gradient(at 80% 20%, rgba(11, 90, 69, 0.48), rgba(0, 0, 0, 0) 54%), linear-gradient(115deg, rgb(6, 75, 59), rgb(3, 47, 39) 72%, rgb(6, 75, 59))",
+      "headlineColor": "rgb(255, 248, 239)",
+      "emphasisColor": "rgb(255, 104, 1)",
+      "overflow": false,
+      "copy": {
+        "x": 46,
+        "y": 173.03125,
+        "w": 298,
+        "h": 380.78125
+      },
+      "visual": {
+        "x": 46,
+        "y": 577.8125,
+        "w": 298,
+        "h": 214.65625
+      },
+      "actions": {
+        "x": 46,
+        "y": 816.46875,
+        "w": 298,
+        "h": 228.78125
+      },
+      "proof": {
+        "x": 46,
+        "y": 1069.25,
+        "w": 298,
+        "h": 49.59375
+      },
+      "card": {
+        "x": 20,
+        "y": 140.03125,
+        "w": 350,
+        "h": 1011.8125
+      },
+      "image": {
+        "x": 34,
+        "y": 577.8125,
+        "w": 322,
+        "h": 214.65625
+      },
+      "clip": {
+        "x": 0,
+        "y": 22638.03125,
+        "width": 390,
+        "height": 1099.8125
+      }
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "text": "Let’s talk about what’s nextYou’ve built something worth choosing. Let’s help people see why.Tell us what you want to improve. We’ll help identify the next practical step—whether that starts with your website, visibility, campaigns or customer follow-up.What are you trying to improve right now?Discuss Your Project WhatsApp the Team Prefer to see the work first? Explore our case studies.",
+      "links": [
+        {
+          "text": "Discuss Your Project",
+          "href": "/contact/"
+        },
+        {
+          "text": "WhatsApp the Team",
+          "href": "https://wa.me/923135147935?text=Hi%20Crea8iv%20Media%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project."
+        },
+        {
+          "text": "Explore our case studies.",
+          "href": "/case-studies/"
+        }
+      ],
+      "cardBackground": "radial-gradient(at 80% 20%, rgba(11, 90, 69, 0.48), rgba(0, 0, 0, 0) 54%), linear-gradient(115deg, rgb(6, 75, 59), rgb(3, 47, 39) 72%, rgb(6, 75, 59))",
+      "headlineColor": "rgb(255, 248, 239)",
+      "emphasisColor": "rgb(255, 104, 1)",
+      "overflow": false,
+      "copy": {
+        "x": 42,
+        "y": 170.03125,
+        "w": 236,
+        "h": 391.46875
+      },
+      "visual": {
+        "x": 42,
+        "y": 585.5,
+        "w": 236,
+        "h": 173.328125
+      },
+      "actions": {
+        "x": 42,
+        "y": 782.828125,
+        "w": 236,
+        "h": 228.78125
+      },
+      "proof": {
+        "x": 42,
+        "y": 1035.609375,
+        "w": 236,
+        "h": 49.59375
+      },
+      "card": {
+        "x": 20,
+        "y": 140.03125,
+        "w": 280,
+        "h": 975.171875
+      },
+      "image": {
+        "x": 30,
+        "y": 585.5,
+        "w": 260,
+        "h": 173.328125
+      },
+      "clip": {
+        "x": 0,
+        "y": 22965.03125,
+        "width": 320,
+        "height": 1063.171875
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "text": "Let’s talk about what’s nextYou’ve built something worth choosing. Let’s help people see why.Tell us what you want to improve. We’ll help identify the next practical step—whether that starts with your website, visibility, campaigns or customer follow-up.What are you trying to improve right now?Discuss Your Project WhatsApp the Team Prefer to see the work first? Explore our case studies.",
+      "links": [
+        {
+          "text": "Discuss Your Project",
+          "href": "/contact/"
+        },
+        {
+          "text": "WhatsApp the Team",
+          "href": "https://wa.me/923135147935?text=Hi%20Crea8iv%20Media%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project."
+        },
+        {
+          "text": "Explore our case studies.",
+          "href": "/case-studies/"
+        }
+      ],
+      "cardBackground": "radial-gradient(at 80% 20%, rgba(11, 90, 69, 0.48), rgba(0, 0, 0, 0) 54%), linear-gradient(115deg, rgb(6, 75, 59), rgb(3, 47, 39) 72%, rgb(6, 75, 59))",
+      "headlineColor": "rgb(255, 248, 239)",
+      "emphasisColor": "rgb(255, 104, 1)",
+      "overflow": false,
+      "copy": {
+        "x": 101.46875,
+        "y": 224.8125,
+        "w": 586.59375,
+        "h": 323.984375
+      },
+      "visual": {
+        "x": 712.0625,
+        "y": 300.796875,
+        "w": 279.03125,
+        "h": 234.015625
+      },
+      "actions": {
+        "x": 1015.09375,
+        "y": 278.03125,
+        "w": 323.4375,
+        "h": 279.53125
+      },
+      "proof": {
+        "x": 101.46875,
+        "y": 583.796875,
+        "w": 586.59375,
+        "h": 27
+      },
+      "card": {
+        "x": 40,
+        "y": 163.8125,
+        "w": 1360,
+        "h": 500.984375
+      },
+      "image": {
+        "x": 669.0625,
+        "y": 300.796875,
+        "w": 351.03125,
+        "h": 234.015625
+      },
+      "clip": {
+        "x": 0,
+        "y": 13936.8125,
+        "width": 1440,
+        "height": 644.984375
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "text": "Let’s talk about what’s nextYou’ve built something worth choosing. Let’s help people see why.Tell us what you want to improve. We’ll help identify the next practical step—whether that starts with your website, visibility, campaigns or customer follow-up.What are you trying to improve right now?Discuss Your Project WhatsApp the Team Prefer to see the work first? Explore our case studies.",
+      "links": [
+        {
+          "text": "Discuss Your Project",
+          "href": "/contact/"
+        },
+        {
+          "text": "WhatsApp the Team",
+          "href": "https://wa.me/923135147935?text=Hi%20Crea8iv%20Media%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project."
+        },
+        {
+          "text": "Explore our case studies.",
+          "href": "/case-studies/"
+        }
+      ],
+      "cardBackground": "radial-gradient(at 80% 20%, rgba(11, 90, 69, 0.48), rgba(0, 0, 0, 0) 54%), linear-gradient(115deg, rgb(6, 75, 59), rgb(3, 47, 39) 72%, rgb(6, 75, 59))",
+      "headlineColor": "rgb(255, 248, 239)",
+      "emphasisColor": "rgb(255, 104, 1)",
+      "overflow": false,
+      "copy": {
+        "x": 69,
+        "y": 191.078125,
+        "w": 366,
+        "h": 293.640625
+      },
+      "visual": {
+        "x": 455,
+        "y": 245.890625,
+        "w": 244,
+        "h": 184
+      },
+      "actions": {
+        "x": 69,
+        "y": 512.71875,
+        "w": 630,
+        "h": 128
+      },
+      "proof": {
+        "x": 69,
+        "y": 668.71875,
+        "w": 630,
+        "h": 27
+      },
+      "card": {
+        "x": 32,
+        "y": 148.078125,
+        "w": 704,
+        "h": 586.640625
+      },
+      "image": {
+        "x": 439,
+        "y": 245.890625,
+        "w": 276,
+        "h": 184
+      },
+      "clip": {
+        "x": 0,
+        "y": 16964.078125,
+        "width": 768,
+        "height": 694.640625
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "text": "Let’s talk about what’s nextYou’ve built something worth choosing. Let’s help people see why.Tell us what you want to improve. We’ll help identify the next practical step—whether that starts with your website, visibility, campaigns or customer follow-up.What are you trying to improve right now?Discuss Your Project WhatsApp the Team Prefer to see the work first? Explore our case studies.",
+      "links": [
+        {
+          "text": "Discuss Your Project",
+          "href": "/contact/"
+        },
+        {
+          "text": "WhatsApp the Team",
+          "href": "https://wa.me/923135147935?text=Hi%20Crea8iv%20Media%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project."
+        },
+        {
+          "text": "Explore our case studies.",
+          "href": "/case-studies/"
+        }
+      ],
+      "cardBackground": "radial-gradient(at 80% 20%, rgba(11, 90, 69, 0.48), rgba(0, 0, 0, 0) 54%), linear-gradient(115deg, rgb(6, 75, 59), rgb(3, 47, 39) 72%, rgb(6, 75, 59))",
+      "headlineColor": "rgb(255, 248, 239)",
+      "emphasisColor": "rgb(255, 104, 1)",
+      "overflow": false,
+      "copy": {
+        "x": 46,
+        "y": 173.03125,
+        "w": 298,
+        "h": 380.78125
+      },
+      "visual": {
+        "x": 46,
+        "y": 577.8125,
+        "w": 298,
+        "h": 214.65625
+      },
+      "actions": {
+        "x": 46,
+        "y": 816.46875,
+        "w": 298,
+        "h": 228.78125
+      },
+      "proof": {
+        "x": 46,
+        "y": 1069.25,
+        "w": 298,
+        "h": 49.59375
+      },
+      "card": {
+        "x": 20,
+        "y": 140.03125,
+        "w": 350,
+        "h": 1011.8125
+      },
+      "image": {
+        "x": 34,
+        "y": 577.8125,
+        "w": 322,
+        "h": 214.65625
+      },
+      "clip": {
+        "x": 0,
+        "y": 22702.03125,
+        "width": 390,
+        "height": 1099.8125
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "text": "Let’s talk about what’s nextYou’ve built something worth choosing. Let’s help people see why.Tell us what you want to improve. We’ll help identify the next practical step—whether that starts with your website, visibility, campaigns or customer follow-up.What are you trying to improve right now?Discuss Your Project WhatsApp the Team Prefer to see the work first? Explore our case studies.",
+      "links": [
+        {
+          "text": "Discuss Your Project",
+          "href": "/contact/"
+        },
+        {
+          "text": "WhatsApp the Team",
+          "href": "https://wa.me/923135147935?text=Hi%20Crea8iv%20Media%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project."
+        },
+        {
+          "text": "Explore our case studies.",
+          "href": "/case-studies/"
+        }
+      ],
+      "cardBackground": "radial-gradient(at 80% 20%, rgba(11, 90, 69, 0.48), rgba(0, 0, 0, 0) 54%), linear-gradient(115deg, rgb(6, 75, 59), rgb(3, 47, 39) 72%, rgb(6, 75, 59))",
+      "headlineColor": "rgb(255, 248, 239)",
+      "emphasisColor": "rgb(255, 104, 1)",
+      "overflow": false,
+      "copy": {
+        "x": 42,
+        "y": 170.03125,
+        "w": 236,
+        "h": 391.46875
+      },
+      "visual": {
+        "x": 42,
+        "y": 585.5,
+        "w": 236,
+        "h": 173.328125
+      },
+      "actions": {
+        "x": 42,
+        "y": 782.828125,
+        "w": 236,
+        "h": 228.78125
+      },
+      "proof": {
+        "x": 42,
+        "y": 1035.609375,
+        "w": 236,
+        "h": 49.59375
+      },
+      "card": {
+        "x": 20,
+        "y": 140.03125,
+        "w": 280,
+        "h": 975.171875
+      },
+      "image": {
+        "x": 30,
+        "y": 585.5,
+        "w": 260,
+        "h": 173.328125
+      },
+      "clip": {
+        "x": 0,
+        "y": 23029.03125,
+        "width": 320,
+        "height": 1063.171875
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "theme": "light",
+      "originalArtworkLinks": true,
+      "imageKeyboardEscapeFocusReturn": true,
+      "folderKeyboardEscapeFocusReturn": true,
+      "compactOrbit": {
+        "w": 278,
+        "h": 310,
+        "heading": "rgb(23, 21, 19)",
+        "body": "rgb(69, 64, 59)"
+      },
+      "ctaTabOrder": true,
+      "focus": {
+        "width": "3px",
+        "color": "rgb(255, 248, 239)"
+      }
+    },
+    {
+      "theme": "dark",
+      "originalArtworkLinks": true,
+      "imageKeyboardEscapeFocusReturn": true,
+      "folderKeyboardEscapeFocusReturn": true,
+      "compactOrbit": {
+        "w": 278,
+        "h": 310,
+        "heading": "rgb(247, 243, 238)",
+        "body": "rgb(214, 206, 197)"
+      },
+      "ctaTabOrder": true,
+      "focus": {
+        "width": "3px",
+        "color": "rgb(255, 248, 239)"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "creative-work/co3-landscape-v2.webp",
+      "width": 1280,
+      "height": 800,
+      "hasAlpha": false,
+      "bytes": 155882
+    },
+    {
+      "file": "creative-work/venn-landscape-v2.webp",
+      "width": 1280,
+      "height": 800,
+      "hasAlpha": false,
+      "bytes": 153980
+    },
+    {
+      "file": "creative-work/ajwad-landscape-v2.webp",
+      "width": 1280,
+      "height": 800,
+      "hasAlpha": false,
+      "bytes": 269706
+    },
+    {
+      "file": "closing/growth-laptop.webp",
+      "width": 960,
+      "height": 640,
+      "hasAlpha": true,
+      "bytes": 57792
+    }
+  ],
+  "motion": {
+    "orbitMoves": true,
+    "hoverPauses": true,
+    "selectedAtTop": 270,
+    "outsideClickResumes": true,
+    "ctaEntranceAnimations": 7,
+    "reducedMotionCancels": true,
+    "ctaHover": "matrix(1, 0, 0, 1, 0, -3)"
+  },
+  "publicAssetCount": 68
+}
