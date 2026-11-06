@@ -72,9 +72,11 @@ export default function HomepageConnectedJourney() {
                     loading="lazy"
                   />
                 </div>
-                <h3>{stage.title}</h3>
-                <span className={styles.accentLine} aria-hidden="true" />
-                <p>{stage.description}</p>
+                <div className={styles.cardCopy}>
+                  <h3>{stage.title}</h3>
+                  <span className={styles.accentLine} aria-hidden="true" />
+                  <p>{stage.description}</p>
+                </div>
               </li>
             ))}
           </ol>

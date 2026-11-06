@@ -66,11 +66,12 @@
   transition: border-color 220ms ease, box-shadow 220ms ease;
 }
 .cardTop { position: relative; height: 56px; }
+.cardCopy { display: contents; }
 .number { display: inline-flex; align-items: center; justify-content: center; min-width: 38px; height: 31px; padding: 5px 9px; border-radius: 11px; background: var(--journey-orange); color: #190e04 !important; font-size: 14px; font-weight: 700 !important; line-height: 1; font-variant-numeric: tabular-nums; }
 .icon { position: absolute; top: -21px; right: -13px; width: 108px; height: 108px; max-width: none; object-fit: contain; transition: transform 450ms cubic-bezier(.22,1,.36,1); }
 .card h3 { margin: 8px 0 0; font-size: 21px; font-weight: 700 !important; line-height: 1.22; }
 .accentLine { display: block; width: 38px; height: 3px; margin-top: 11px; background: var(--journey-orange); }
-.card > p { margin: 13px 0 0; font-size: 15px; line-height: 1.6; }
+.cardCopy > p { margin: 13px 0 0; font-size: 15px; line-height: 1.6; }
 .track { position: absolute; z-index: 0; inset: 0; transform-origin: left center; pointer-events: none; }
 .desktopLine { position: absolute; top: calc(50% - 1px); right: 8%; left: 8%; height: 2px; background: var(--journey-orange); box-shadow: 0 0 6px rgb(255 104 1 / .25); }
 .tabletLine, .mobileLine { display: none; }
@@ -131,16 +132,39 @@
   .intro { margin-top: 25px; }
   .intro p { font-size: 16px; line-height: 1.65; }
   .intro p + p { margin-top: 10px; }
-  .journey { --journey-gap: 24px; margin-top: 28px; }
-  .cards { grid-template-columns: minmax(0, 1fr); }
-  .card { min-height: 240px; padding: 22px 24px 25px; }
-  .cardTop { height: 60px; }
-  .icon { top: -24px; right: -9px; width: 120px; height: 120px; }
-  .card h3 { font-size: 24px; }
-  .card > p { font-size: 16px; line-height: 1.6; }
+  .journey { --journey-gap: 14px; margin-top: 28px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+  .card { min-height: 0; padding: 14px 14px 18px; }
+  .cardTop { height: 56px; }
+  .number { min-width: 31px; height: 26px; padding: 5px 7px; border-radius: 8px; font-size: 12px; }
+  .icon { top: -16px; right: -10px; width: 84px; height: 84px; }
+  .card h3 { font-size: 19px; line-height: 1.25; }
+  .accentLine { width: 30px; margin-top: 8px; }
+  .cardCopy > p { margin-top: 10px; font-size: 14px; line-height: 1.6; }
+
+  /* The last step spans the grid, with its illustration beside the copy. */
+  .card:last-child {
+    --journey-final-icon: 88px;
+    --journey-final-padding: 16px;
+    --journey-final-gap: 12px;
+    display: flex;
+    grid-column: 1 / -1;
+    align-items: center;
+    gap: var(--journey-final-gap);
+    padding: var(--journey-final-padding);
+  }
+  .card:last-child .cardTop { position: static; flex: 0 0 var(--journey-final-icon); height: auto; }
+  .card:last-child .icon { position: static; display: block; width: 100%; height: auto; }
+  .card:last-child .number {
+    position: absolute;
+    top: var(--journey-final-padding);
+    left: calc(var(--journey-final-padding) + var(--journey-final-icon) + var(--journey-final-gap));
+  }
+  .card:last-child .cardCopy { display: block; flex: 1; min-width: 0; padding-top: 36px; }
+  .card:last-child h3 { margin-top: 0; }
   .track { transform-origin: center top; }
   .desktopLine { display: none; }
-  .mobileLine { display: block; position: absolute; top: 30px; bottom: 30px; left: calc(50% - 1px); width: 2px; background: var(--journey-orange); }
+  .mobileLine { display: none; }
   .action { margin-top: 28px; }
   .cta { width: 100%; max-width: 350px; min-height: 56px; padding-inline: 20px; font-size: 16px; }
 }
@@ -148,8 +172,13 @@
 @media (max-width: 359px) {
   .section.section.section { padding-inline: 20px !important; }
   .heading h2 { font-size: 27px; }
-  .card { padding-inline: 21px; }
-  .card h3 { font-size: 23px; }
+  .card { padding-inline: 12px; }
+  .card h3 { font-size: 18px; }
+  .icon { right: -5px; width: 76px; height: 76px; }
+}
+
+@media (max-width: 699px) and (prefers-reduced-motion: no-preference) {
+  .card:active { border-color: rgb(255 104 1 / .65); }
 }
 
 @media (prefers-reduced-motion: reduce) {
