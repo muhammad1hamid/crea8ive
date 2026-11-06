@@ -1,0 +1,1057 @@
+{
+  "layouts": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "height": 1044,
+      "overflow": false,
+      "clipped": [],
+      "images": [
+        {
+          "src": "/assets/syed-qamar-abbas-founder-card.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/digital-strategy.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/search-visibility.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/business-automation.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/office-building.webp",
+          "loaded": true
+        }
+      ],
+      "colors": {
+        "eyebrow": "rgb(255, 104, 1)",
+        "heading": "rgb(247, 243, 236)",
+        "highlight": "rgb(255, 104, 1)",
+        "body": "rgb(200, 194, 185)",
+        "capability": "rgb(247, 243, 236)",
+        "principle": "rgb(247, 243, 236)"
+      },
+      "links": [
+        {
+          "text": "",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 41,
+            "y": 107.09375,
+            "width": 609.9375,
+            "height": 406.625
+          }
+        },
+        {
+          "text": "Meet Crea8iv Media",
+          "href": "/about/",
+          "rect": {
+            "x": 709.9375,
+            "y": 564.90625,
+            "width": 226.421875,
+            "height": 46
+          }
+        },
+        {
+          "text": "Read the Founder Story",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 948.359375,
+            "y": 564.90625,
+            "width": 268.484375,
+            "height": 46
+          }
+        },
+        {
+          "text": "Get directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=33.5511786,73.1250752",
+          "rect": {
+            "x": 40,
+            "y": 918.4375,
+            "width": 167.375,
+            "height": 46
+          }
+        },
+        {
+          "text": "Contact the team",
+          "href": "/contact/",
+          "rect": {
+            "x": 219.375,
+            "y": 918.4375,
+            "width": 186.625,
+            "height": 46
+          }
+        },
+        {
+          "text": "Open in Google Maps",
+          "href": "https://www.google.com/maps/search/?api=1&query=Crea8iv%20Media%2C%20Office%20No%2001%2C%201st%20Floor%2C%20Plaza%2054%2C%20Phase%204%20Civic%20Center%2C%20Bahria%20Town%2C%20Rawalpindi%2046220%2C%20Pakistan",
+          "rect": {
+            "x": 942.828125,
+            "y": 871.78125,
+            "width": 166.203125,
+            "height": 44
+          }
+        }
+      ],
+      "animations": 0,
+      "mapRect": {
+        "x": 691.40625,
+        "y": 704.90625,
+        "width": 225.421875,
+        "height": 265
+      },
+      "portrait": {
+        "x": 40,
+        "y": 106.09375,
+        "width": 611.9375,
+        "height": 475.625
+      },
+      "story": {
+        "x": 709.9375,
+        "y": 76.90625,
+        "width": 690.046875,
+        "height": 534
+      },
+      "keyboard": {
+        "focused": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "height": 1044,
+      "overflow": false,
+      "clipped": [],
+      "images": [
+        {
+          "src": "/assets/syed-qamar-abbas-founder-card.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/digital-strategy.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/search-visibility.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/business-automation.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/office-building.webp",
+          "loaded": true
+        }
+      ],
+      "colors": {
+        "eyebrow": "rgb(186, 73, 0)",
+        "heading": "rgb(25, 23, 20)",
+        "highlight": "rgb(186, 73, 0)",
+        "body": "rgb(101, 93, 85)",
+        "capability": "rgb(247, 243, 236)",
+        "principle": "rgb(25, 23, 20)"
+      },
+      "links": [
+        {
+          "text": "",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 41,
+            "y": 107.09375,
+            "width": 609.9375,
+            "height": 406.625
+          }
+        },
+        {
+          "text": "Meet Crea8iv Media",
+          "href": "/about/",
+          "rect": {
+            "x": 709.9375,
+            "y": 564.90625,
+            "width": 226.421875,
+            "height": 46
+          }
+        },
+        {
+          "text": "Read the Founder Story",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 948.359375,
+            "y": 564.90625,
+            "width": 268.484375,
+            "height": 46
+          }
+        },
+        {
+          "text": "Get directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=33.5511786,73.1250752",
+          "rect": {
+            "x": 40,
+            "y": 918.4375,
+            "width": 167.375,
+            "height": 46
+          }
+        },
+        {
+          "text": "Contact the team",
+          "href": "/contact/",
+          "rect": {
+            "x": 219.375,
+            "y": 918.4375,
+            "width": 186.625,
+            "height": 46
+          }
+        },
+        {
+          "text": "Open in Google Maps",
+          "href": "https://www.google.com/maps/search/?api=1&query=Crea8iv%20Media%2C%20Office%20No%2001%2C%201st%20Floor%2C%20Plaza%2054%2C%20Phase%204%20Civic%20Center%2C%20Bahria%20Town%2C%20Rawalpindi%2046220%2C%20Pakistan",
+          "rect": {
+            "x": 942.828125,
+            "y": 871.78125,
+            "width": 166.203125,
+            "height": 44
+          }
+        }
+      ],
+      "animations": 0,
+      "mapRect": {
+        "x": 691.40625,
+        "y": 704.90625,
+        "width": 225.421875,
+        "height": 265
+      },
+      "portrait": {
+        "x": 40,
+        "y": 106.09375,
+        "width": 611.9375,
+        "height": 475.625
+      },
+      "story": {
+        "x": 709.9375,
+        "y": 76.90625,
+        "width": 690.046875,
+        "height": 534
+      },
+      "keyboard": {
+        "focused": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "height": 1743.703125,
+      "overflow": false,
+      "clipped": [],
+      "images": [
+        {
+          "src": "/assets/syed-qamar-abbas-founder-card.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/digital-strategy.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/search-visibility.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/business-automation.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/office-building.webp",
+          "loaded": true
+        }
+      ],
+      "colors": {
+        "eyebrow": "rgb(255, 104, 1)",
+        "heading": "rgb(247, 243, 236)",
+        "highlight": "rgb(255, 104, 1)",
+        "body": "rgb(200, 194, 185)",
+        "capability": "rgb(247, 243, 236)",
+        "principle": "rgb(247, 243, 236)"
+      },
+      "links": [
+        {
+          "text": "",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 65,
+            "y": 61.5,
+            "width": 638,
+            "height": 425.328125
+          }
+        },
+        {
+          "text": "Meet Crea8iv Media",
+          "href": "/about/",
+          "rect": {
+            "x": 32,
+            "y": 1015.546875,
+            "width": 207.78125,
+            "height": 46
+          }
+        },
+        {
+          "text": "Read the Founder Story",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 251.78125,
+            "y": 1015.546875,
+            "width": 247.921875,
+            "height": 46
+          }
+        },
+        {
+          "text": "Get directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=33.5511786,73.1250752",
+          "rect": {
+            "x": 32,
+            "y": 1342.203125,
+            "width": 167.375,
+            "height": 46
+          }
+        },
+        {
+          "text": "Contact the team",
+          "href": "/contact/",
+          "rect": {
+            "x": 211.375,
+            "y": 1342.203125,
+            "width": 186.625,
+            "height": 46
+          }
+        },
+        {
+          "text": "Open in Google Maps",
+          "href": "https://www.google.com/maps/search/?api=1&query=Crea8iv%20Media%2C%20Office%20No%2001%2C%201st%20Floor%2C%20Plaza%2054%2C%20Phase%204%20Civic%20Center%2C%20Bahria%20Town%2C%20Rawalpindi%2046220%2C%20Pakistan",
+          "rect": {
+            "x": 295,
+            "y": 1586.484375,
+            "width": 166.203125,
+            "height": 44
+          }
+        }
+      ],
+      "animations": 0,
+      "mapRect": {
+        "x": 33,
+        "y": 1416.203125,
+        "width": 233,
+        "height": 265
+      },
+      "portrait": {
+        "x": 64,
+        "y": 60.5,
+        "width": 640,
+        "height": 494.328125
+      },
+      "story": {
+        "x": 32,
+        "y": 588.828125,
+        "width": 704,
+        "height": 472.71875
+      },
+      "keyboard": {
+        "focused": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "height": 1743.703125,
+      "overflow": false,
+      "clipped": [],
+      "images": [
+        {
+          "src": "/assets/syed-qamar-abbas-founder-card.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/digital-strategy.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/search-visibility.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/business-automation.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/office-building.webp",
+          "loaded": true
+        }
+      ],
+      "colors": {
+        "eyebrow": "rgb(186, 73, 0)",
+        "heading": "rgb(25, 23, 20)",
+        "highlight": "rgb(186, 73, 0)",
+        "body": "rgb(101, 93, 85)",
+        "capability": "rgb(247, 243, 236)",
+        "principle": "rgb(25, 23, 20)"
+      },
+      "links": [
+        {
+          "text": "",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 65,
+            "y": 61.5,
+            "width": 638,
+            "height": 425.328125
+          }
+        },
+        {
+          "text": "Meet Crea8iv Media",
+          "href": "/about/",
+          "rect": {
+            "x": 32,
+            "y": 1015.546875,
+            "width": 207.78125,
+            "height": 46
+          }
+        },
+        {
+          "text": "Read the Founder Story",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 251.78125,
+            "y": 1015.546875,
+            "width": 247.921875,
+            "height": 46
+          }
+        },
+        {
+          "text": "Get directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=33.5511786,73.1250752",
+          "rect": {
+            "x": 32,
+            "y": 1342.203125,
+            "width": 167.375,
+            "height": 46
+          }
+        },
+        {
+          "text": "Contact the team",
+          "href": "/contact/",
+          "rect": {
+            "x": 211.375,
+            "y": 1342.203125,
+            "width": 186.625,
+            "height": 46
+          }
+        },
+        {
+          "text": "Open in Google Maps",
+          "href": "https://www.google.com/maps/search/?api=1&query=Crea8iv%20Media%2C%20Office%20No%2001%2C%201st%20Floor%2C%20Plaza%2054%2C%20Phase%204%20Civic%20Center%2C%20Bahria%20Town%2C%20Rawalpindi%2046220%2C%20Pakistan",
+          "rect": {
+            "x": 295,
+            "y": 1586.484375,
+            "width": 166.203125,
+            "height": 44
+          }
+        }
+      ],
+      "animations": 0,
+      "mapRect": {
+        "x": 33,
+        "y": 1416.203125,
+        "width": 233,
+        "height": 265
+      },
+      "portrait": {
+        "x": 64,
+        "y": 60.5,
+        "width": 640,
+        "height": 494.328125
+      },
+      "story": {
+        "x": 32,
+        "y": 588.828125,
+        "width": 704,
+        "height": 472.71875
+      },
+      "keyboard": {
+        "focused": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "height": 2197.015625,
+      "overflow": false,
+      "clipped": [],
+      "images": [
+        {
+          "src": "/assets/syed-qamar-abbas-founder-card.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/digital-strategy.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/search-visibility.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/business-automation.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/office-building.webp",
+          "loaded": true
+        }
+      ],
+      "colors": {
+        "eyebrow": "rgb(255, 104, 1)",
+        "heading": "rgb(247, 243, 236)",
+        "highlight": "rgb(255, 104, 1)",
+        "body": "rgb(200, 194, 185)",
+        "capability": "rgb(247, 243, 236)",
+        "principle": "rgb(247, 243, 236)"
+      },
+      "links": [
+        {
+          "text": "",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 25,
+            "y": 46.15625,
+            "width": 340,
+            "height": 226.65625
+          }
+        },
+        {
+          "text": "Meet Crea8iv Media",
+          "href": "/about/",
+          "rect": {
+            "x": 24,
+            "y": 994.375,
+            "width": 342,
+            "height": 48
+          }
+        },
+        {
+          "text": "Read the Founder Story",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 24,
+            "y": 1053.375,
+            "width": 342,
+            "height": 48
+          }
+        },
+        {
+          "text": "Get directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=33.5511786,73.1250752",
+          "rect": {
+            "x": 24,
+            "y": 1453.3125,
+            "width": 342,
+            "height": 48
+          }
+        },
+        {
+          "text": "Contact the team",
+          "href": "/contact/",
+          "rect": {
+            "x": 24,
+            "y": 1512.3125,
+            "width": 342,
+            "height": 48
+          }
+        },
+        {
+          "text": "Open in Google Maps",
+          "href": "https://www.google.com/maps/search/?api=1&query=Crea8iv%20Media%2C%20Office%20No%2001%2C%201st%20Floor%2C%20Plaza%2054%2C%20Phase%204%20Civic%20Center%2C%20Bahria%20Town%2C%20Rawalpindi%2046220%2C%20Pakistan",
+          "rect": {
+            "x": 46,
+            "y": 2030.78125,
+            "width": 166.203125,
+            "height": 44
+          }
+        }
+      ],
+      "animations": 0,
+      "mapRect": {
+        "x": 25,
+        "y": 1588.3125,
+        "width": 340,
+        "height": 214
+      },
+      "portrait": {
+        "x": 24,
+        "y": 45.15625,
+        "width": 342,
+        "height": 305.5
+      },
+      "story": {
+        "x": 24,
+        "y": 378.65625,
+        "width": 342,
+        "height": 722.71875
+      },
+      "keyboard": {
+        "focused": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "height": 2197.015625,
+      "overflow": false,
+      "clipped": [],
+      "images": [
+        {
+          "src": "/assets/syed-qamar-abbas-founder-card.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/digital-strategy.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/search-visibility.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/business-automation.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/office-building.webp",
+          "loaded": true
+        }
+      ],
+      "colors": {
+        "eyebrow": "rgb(186, 73, 0)",
+        "heading": "rgb(25, 23, 20)",
+        "highlight": "rgb(186, 73, 0)",
+        "body": "rgb(101, 93, 85)",
+        "capability": "rgb(247, 243, 236)",
+        "principle": "rgb(25, 23, 20)"
+      },
+      "links": [
+        {
+          "text": "",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 25,
+            "y": 46.15625,
+            "width": 340,
+            "height": 226.65625
+          }
+        },
+        {
+          "text": "Meet Crea8iv Media",
+          "href": "/about/",
+          "rect": {
+            "x": 24,
+            "y": 994.375,
+            "width": 342,
+            "height": 48
+          }
+        },
+        {
+          "text": "Read the Founder Story",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 24,
+            "y": 1053.375,
+            "width": 342,
+            "height": 48
+          }
+        },
+        {
+          "text": "Get directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=33.5511786,73.1250752",
+          "rect": {
+            "x": 24,
+            "y": 1453.3125,
+            "width": 342,
+            "height": 48
+          }
+        },
+        {
+          "text": "Contact the team",
+          "href": "/contact/",
+          "rect": {
+            "x": 24,
+            "y": 1512.3125,
+            "width": 342,
+            "height": 48
+          }
+        },
+        {
+          "text": "Open in Google Maps",
+          "href": "https://www.google.com/maps/search/?api=1&query=Crea8iv%20Media%2C%20Office%20No%2001%2C%201st%20Floor%2C%20Plaza%2054%2C%20Phase%204%20Civic%20Center%2C%20Bahria%20Town%2C%20Rawalpindi%2046220%2C%20Pakistan",
+          "rect": {
+            "x": 46,
+            "y": 2030.78125,
+            "width": 166.203125,
+            "height": 44
+          }
+        }
+      ],
+      "animations": 0,
+      "mapRect": {
+        "x": 25,
+        "y": 1588.3125,
+        "width": 340,
+        "height": 214
+      },
+      "portrait": {
+        "x": 24,
+        "y": 45.15625,
+        "width": 342,
+        "height": 305.5
+      },
+      "story": {
+        "x": 24,
+        "y": 378.65625,
+        "width": 342,
+        "height": 722.71875
+      },
+      "keyboard": {
+        "focused": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "height": 2323.609375,
+      "overflow": false,
+      "clipped": [],
+      "images": [
+        {
+          "src": "/assets/syed-qamar-abbas-founder-card.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/digital-strategy.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/search-visibility.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/business-automation.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/office-building.webp",
+          "loaded": true
+        }
+      ],
+      "colors": {
+        "eyebrow": "rgb(255, 104, 1)",
+        "heading": "rgb(247, 243, 236)",
+        "highlight": "rgb(255, 104, 1)",
+        "body": "rgb(200, 194, 185)",
+        "capability": "rgb(247, 243, 236)",
+        "principle": "rgb(247, 243, 236)"
+      },
+      "links": [
+        {
+          "text": "",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 21,
+            "y": 46.328125,
+            "width": 278,
+            "height": 185.328125
+          }
+        },
+        {
+          "text": "Meet Crea8iv Media",
+          "href": "/about/",
+          "rect": {
+            "x": 20,
+            "y": 1080.5,
+            "width": 280,
+            "height": 48
+          }
+        },
+        {
+          "text": "Read the Founder Story",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 20,
+            "y": 1139.5,
+            "width": 280,
+            "height": 48
+          }
+        },
+        {
+          "text": "Get directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=33.5511786,73.1250752",
+          "rect": {
+            "x": 20,
+            "y": 1590.4375,
+            "width": 280,
+            "height": 48
+          }
+        },
+        {
+          "text": "Contact the team",
+          "href": "/contact/",
+          "rect": {
+            "x": 20,
+            "y": 1649.4375,
+            "width": 280,
+            "height": 48
+          }
+        },
+        {
+          "text": "Open in Google Maps",
+          "href": "https://www.google.com/maps/search/?api=1&query=Crea8iv%20Media%2C%20Office%20No%2001%2C%201st%20Floor%2C%20Plaza%2054%2C%20Phase%204%20Civic%20Center%2C%20Bahria%20Town%2C%20Rawalpindi%2046220%2C%20Pakistan",
+          "rect": {
+            "x": 38,
+            "y": 2159.546875,
+            "width": 166.203125,
+            "height": 44
+          }
+        }
+      ],
+      "animations": 0,
+      "mapRect": {
+        "x": 21,
+        "y": 1725.4375,
+        "width": 278,
+        "height": 214
+      },
+      "portrait": {
+        "x": 20,
+        "y": 45.328125,
+        "width": 280,
+        "height": 279.015625
+      },
+      "story": {
+        "x": 20,
+        "y": 352.34375,
+        "width": 280,
+        "height": 835.15625
+      },
+      "keyboard": {
+        "focused": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "height": 2323.609375,
+      "overflow": false,
+      "clipped": [],
+      "images": [
+        {
+          "src": "/assets/syed-qamar-abbas-founder-card.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/digital-strategy.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/search-visibility.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/business-automation.webp",
+          "loaded": true
+        },
+        {
+          "src": "/img/homepage/founder-office/office-building.webp",
+          "loaded": true
+        }
+      ],
+      "colors": {
+        "eyebrow": "rgb(186, 73, 0)",
+        "heading": "rgb(25, 23, 20)",
+        "highlight": "rgb(186, 73, 0)",
+        "body": "rgb(101, 93, 85)",
+        "capability": "rgb(247, 243, 236)",
+        "principle": "rgb(25, 23, 20)"
+      },
+      "links": [
+        {
+          "text": "",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 21,
+            "y": 46.328125,
+            "width": 278,
+            "height": 185.328125
+          }
+        },
+        {
+          "text": "Meet Crea8iv Media",
+          "href": "/about/",
+          "rect": {
+            "x": 20,
+            "y": 1080.5,
+            "width": 280,
+            "height": 48
+          }
+        },
+        {
+          "text": "Read the Founder Story",
+          "href": "/syed-qamar-abbas/",
+          "rect": {
+            "x": 20,
+            "y": 1139.5,
+            "width": 280,
+            "height": 48
+          }
+        },
+        {
+          "text": "Get directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=33.5511786,73.1250752",
+          "rect": {
+            "x": 20,
+            "y": 1590.4375,
+            "width": 280,
+            "height": 48
+          }
+        },
+        {
+          "text": "Contact the team",
+          "href": "/contact/",
+          "rect": {
+            "x": 20,
+            "y": 1649.4375,
+            "width": 280,
+            "height": 48
+          }
+        },
+        {
+          "text": "Open in Google Maps",
+          "href": "https://www.google.com/maps/search/?api=1&query=Crea8iv%20Media%2C%20Office%20No%2001%2C%201st%20Floor%2C%20Plaza%2054%2C%20Phase%204%20Civic%20Center%2C%20Bahria%20Town%2C%20Rawalpindi%2046220%2C%20Pakistan",
+          "rect": {
+            "x": 38,
+            "y": 2159.546875,
+            "width": 166.203125,
+            "height": 44
+          }
+        }
+      ],
+      "animations": 0,
+      "mapRect": {
+        "x": 21,
+        "y": 1725.4375,
+        "width": 278,
+        "height": 214
+      },
+      "portrait": {
+        "x": 20,
+        "y": 45.328125,
+        "width": 280,
+        "height": 279.015625
+      },
+      "story": {
+        "x": 20,
+        "y": 352.34375,
+        "width": 280,
+        "height": 835.15625
+      },
+      "keyboard": {
+        "focused": true,
+        "outline": "solid"
+      }
+    }
+  ],
+  "internalLinks": [
+    {
+      "path": "/about/",
+      "status": 200
+    },
+    {
+      "path": "/syed-qamar-abbas/",
+      "status": 200
+    },
+    {
+      "path": "/contact/",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "protected": {
+    "unchanged": true,
+    "sections": 13,
+    "title": "Digital Marketing Agency in Rawalpindi | Crea8iv",
+    "canonical": "https://crea8ivmedia.com/",
+    "h1": [
+      "Your business deservesto be seen. And chosen."
+    ]
+  },
+  "motion": {
+    "moving": [
+      {
+        "playState": "running",
+        "duration": 600
+      },
+      {
+        "playState": "running",
+        "duration": 600
+      },
+      {
+        "playState": "running",
+        "duration": 600
+      },
+      {
+        "playState": "running",
+        "duration": 600
+      },
+      {
+        "playState": "running",
+        "duration": 600
+      },
+      {
+        "playState": "running",
+        "duration": 600
+      },
+      {
+        "playState": "running",
+        "duration": 600
+      },
+      {
+        "playState": "running",
+        "duration": 600
+      },
+      {
+        "playState": "running",
+        "duration": 600
+      },
+      {
+        "playState": "running",
+        "duration": 600
+      }
+    ],
+    "reduced": 0
+  },
+  "noJs": {
+    "links": 6,
+    "visible": true
+  },
+  "map": {
+    "url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s33.5511786,73.1250752!6i15",
+    "text": ""
+  }
+}

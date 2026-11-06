@@ -1,4 +1,3 @@
-import Image from "next/image";
 import LogoCarousel from "@/components/LogoCarousel";
 import HowItWorks from "@/components/ui/how-it-works";
 import HomepageDeliveryProcess from "@/components/HomepageDeliveryProcess";
@@ -20,12 +19,11 @@ import {
 } from "lucide-react";
 import { getServiceTone } from "@/lib/service-tones";
 import type { ReactNode } from "react";
-import LocationExperience from "@/components/LocationExperience";
+import HomepageFounderOffice from "@/components/HomepageFounderOffice";
 import { BUSINESS_DETAILS } from "@/lib/site-config";
 import HomepageClientStories from "./HomepageClientStories";
 import HomepageCreativeShowcase from "./HomepageCreativeShowcase";
 import { CLIENT_LOGOS } from "@/lib/client-logos";
-import { FOUNDER } from "@/lib/authority-data";
 import EvidenceMedia from "@/components/EvidenceMedia";
 import styles from "./agency-body.module.css";
 import surfaces from "./homepage-surfaces.module.css";
@@ -110,12 +108,6 @@ const customerSteps = [
   { title: "They decide", body: "They reach out when the offer feels relevant and the next step is easy.", icon: MessageSquareText, tone: "local" },
 ];
 
-const workingPrinciples = [
-  "Start with the business problem—not a preferred tool.",
-  "Show the work and be precise about the results.",
-  "Create systems that stay useful after launch.",
-];
-
 const visualSystemCards = [
   {
     title: "CO3 Premium brand identity",
@@ -148,7 +140,7 @@ export default function HomepageBelowHero({ selectedWork, caseStudies, editorial
       <CreativeWork />
       <HomepageConnectedJourney />
       <IndustrySystems />
-      <FounderTrust />
+      <HomepageFounderOffice />
       <HomepageClientStories />
       <HomepageDeliveryProcess />
       {editorial}
@@ -273,47 +265,6 @@ function IndustrySystems() {
           })}
         </div>
       </div>
-    </section>
-  );
-}
-
-function FounderTrust() {
-  return (
-    <section data-home-surface="light" className={`${styles.founder} relative border-y border-white/[0.08] px-6 py-20 sm:px-8 lg:px-10 lg:py-28`}>
-      <Ambient />
-      <div className="relative mx-auto grid max-w-[1440px] items-center gap-10 lg:grid-cols-[.86fr_1.14fr]">
-        <RevealCard>
-          <Link href={FOUNDER.canonicalPath} className="home-founder-mark group">
-            <Image
-              src="/assets/syed-qamar-abbas-founder-card.webp"
-              alt="Syed Qamar Abbas, Founder and CEO of Crea8iv Media digital marketing agency"
-              fill
-              sizes="(max-width: 1024px) 100vw, 42vw"
-              className="object-contain"
-              loading="lazy"
-            />
-            <span className="home-founder-card-badge">Founder & CEO</span>
-          </Link>
-        </RevealCard>
-        <div>
-          <SectionIntro
-            eyebrow="The people behind the work"
-            title="We get to know your business before we get to work."
-            copy="Your customers, offer and growth priorities guide what we recommend. Our job is to make each part of your digital presence work harder together—not to sell services you do not need."
-          />
-          <p className="mt-5 max-w-2xl text-base leading-8 text-white/58">
-            Crea8iv Media is a digital marketing and website development agency based in Rawalpindi, Pakistan. Founded by Syed Qamar Abbas, it works across website strategy, search visibility, paid media, creative production and practical business automation.
-          </p>
-          <ul className="mt-5 space-y-2 text-sm leading-7 text-white/65">
-            {workingPrinciples.map((principle) => <li key={principle}>{principle}</li>)}
-          </ul>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/about/" className="home-lux-link">Meet Crea8iv Media <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link>
-            <Link href={FOUNDER.canonicalPath} className="home-lux-link">Read the Founder Story <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link>
-          </div>
-        </div>
-      </div>
-      <LocationExperience variant="compact" />
     </section>
   );
 }
