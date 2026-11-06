@@ -1,0 +1,20 @@
+[
+  {
+    "theme": "light",
+    "touchToggleAllFiveModules": true,
+    "reducedMotion": true,
+    "noOverflow": true
+  },
+  {
+    "theme": "dark",
+    "touchToggleAllFiveModules": true,
+    "reducedMotion": true,
+    "noOverflow": true
+  },
+  {
+    "javascriptDisabled": true,
+    "navigationLinks": 21,
+    "platforms": 14,
+    "allLinksAvailable": true
+  }
+]

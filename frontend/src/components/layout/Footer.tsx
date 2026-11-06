@@ -1,18 +1,34 @@
 'use client';
 
 import { COMPANY } from "@/data/company";
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Globe2, Palette } from 'lucide-react';
-import { BUSINESS_DETAILS } from '@/lib/site-config';
+import { ArrowUpRight, Globe2, Palette } from 'lucide-react';
+import { BUSINESS_DETAILS, GOOGLE_MAPS_PLACE_URL } from '@/lib/site-config';
 import { PLATFORM_LINKS, SOCIAL_LINKS } from '@/lib/social-links';
+import FooterDisclosure from './FooterDisclosure';
+import FooterMobileNavigation from './FooterMobileNavigation';
+import { FOOTER_COMPANY_LINKS } from './footer-navigation';
 import styles from './footer.module.css';
+
+function subscribeFooterViewport(onChange: () => void) {
+  const query = window.matchMedia('(max-width: 767px)');
+  query.addEventListener('change', onChange);
+  return () => query.removeEventListener('change', onChange);
+}
+
+function getFooterViewport(): 'mobile' | 'desktop' | 'server' {
+  return window.matchMedia('(max-width: 767px)').matches ? 'mobile' : 'desktop';
+}
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState('2026');
   const [email, setEmail] = useState('');
   const [subscribeStatus, setSubscribeStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const viewport = useSyncExternalStore(subscribeFooterViewport, getFooterViewport, () => 'server');
+  const mobile = viewport === 'mobile';
+  const ready = viewport !== 'server';
 
   // Keep server and first-client markup identical; refresh the calendar year after hydration.
   useEffect(() => {
@@ -21,13 +37,13 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className={`${styles.footer} site-footer w-full pb-24 lg:pb-0`}>
+    <footer data-mobile-ready={ready} className={`${styles.footer} site-footer w-full pb-24 lg:pb-0`}>
       {/* Main Footer Section */}
       <div className="mx-auto max-w-[1600px] px-6 py-20 lg:px-8">
         <div className={`${styles.grid} grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-8`}>
           
           {/* Column 1: Brand Logo & Description */}
-          <div className="flex flex-col space-y-6">
+          <div className={`${styles.brand} flex flex-col space-y-6`}>
             <Link href="/" className="group inline-flex items-center gap-2.5" aria-label="Crea8iv Media home">
               <Image
                 src="/img/crea8iv-header-dark.webp"
@@ -49,10 +65,10 @@ export default function Footer() {
             <p className="max-w-[280px] font-inter text-sm leading-6 text-white/80">
               Crea8iv Media designs smart digital ecosystems that transform your brand into a consistent, lead-generating machine.
             </p>
-            <div className="max-w-[280px] border-t border-white/[0.08] pt-5">
+            <div className={`${styles.software} max-w-[280px] border-t border-white/[0.08] pt-5`}>
               <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--icon-color)]">Our Software</p>
               <div className="flex flex-wrap gap-x-4 gap-y-2 font-inter text-sm text-white/70">
-                <Link href="/patientflow/" className="transition-colors hover:text-[#FF6801]">PatientFlow</Link>
+                <Link href="/patientflow/" className="transition-colors hover:text-[#FF6801]">PatientFlow<ArrowUpRight className={styles.softwareArrow} size={20} aria-hidden="true" /></Link>
                 <Link href="/software-products/" className="w-full text-xs text-white/45 transition-colors hover:text-[#FF6801]">View all software →</Link>
               </div>
             </div>
@@ -60,33 +76,12 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Company Links */}
-          <div className="flex flex-col">
+          <div className={`${styles.company} flex flex-col`}>
             <h3 className="text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--icon-color)] mb-6">
               Company
             </h3>
             <ul className={`${styles.companyLinks} grid grid-cols-2 gap-x-5 font-inter text-sm text-white/90`}>
-              {[
-                { label: 'FAQs', href: '/faqs' },
-                { label: 'About Us', href: '/about' },
-                { label: 'Founder', href: '/syed-qamar-abbas' },
-                { label: 'Clients', href: '/clients' },
-                { label: 'Website Portfolio', href: '/website-portfolio' },
-                { label: 'AI Search Optimization', href: '/ai-search-optimization' },
-                { label: 'AI Answer Briefs', href: '/answers' },
-                { label: 'Industries', href: '/industries' },
-                { label: 'AI Visibility Targets', href: '/ai-visibility-targets' },
-                { label: 'Deployment Checklist', href: '/ai-visibility-deployment-checklist' },
-                { label: 'Buyer Guides', href: '/guides' },
-                { label: 'Comparisons', href: '/compare' },
-                { label: 'Playbooks', href: '/playbooks' },
-                { label: 'Free Growth Tools', href: '/tools' },
-                { label: 'Our Software', href: '/software-products' },
-                { label: 'Software Development', href: '/software-development' },
-                { label: 'Pricing', href: '/pricing' },
-                { label: 'Our Services', href: '/growth-systems' },
-                { label: 'Careers', href: '/careers' },
-                { label: 'Contact Us', href: '/contact' },
-              ].map((link) => (
+              {FOOTER_COMPANY_LINKS.map((link) => (
                 <li key={link.label} className="flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FF6801] transition-transform group-hover:scale-125" />
                   <Link href={link.href} className="hover:text-[#FF6801] transition-colors">
@@ -95,10 +90,11 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            <FooterMobileNavigation mobile={mobile} ready={ready} />
           </div>
 
           {/* Column 3: Contact Details */}
-          <div className="flex flex-col">
+          <div className={`${styles.contact} flex flex-col`}>
             <h3 className="text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--icon-color)] mb-6">
               Contact
             </h3>
@@ -111,7 +107,8 @@ export default function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </span>
-                <span>{BUSINESS_DETAILS.address}</span>
+                <span className={styles.desktopAddress}>{BUSINESS_DETAILS.address}</span>
+                <a className={styles.mobileAddress} href={GOOGLE_MAPS_PLACE_URL} target="_blank" rel="noopener noreferrer">{BUSINESS_DETAILS.address}</a>
               </li>
               
               {/* Phone */}
@@ -151,13 +148,14 @@ export default function Footer() {
           </div>
 
           {/* Column 4: Newsletter */}
-          <div className="flex flex-col">
+          <div className={`${styles.newsletter} flex flex-col`}>
             <h3 className="text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--icon-color)] mb-6">
               Newsletter
             </h3>
-            <p className="font-inter text-sm text-white/80 mb-5 leading-6 max-w-[280px]">
+            <p id="footer-newsletter-description" className="font-inter text-sm text-white/80 mb-5 leading-6 max-w-[280px]">
               Subscribe to our Newsletter to be updated. We promise not to spam.
             </p>
+            <label htmlFor="footer-newsletter-email" className={styles.emailLabel}>Email address</label>
             <form 
               toolname="subscribeNewsletter"
               tooldescription="Subscribes a visitor to Crea8iv Media updates using their email address."
@@ -174,13 +172,17 @@ export default function Footer() {
               <div className="relative flex-1">
                 <input 
                   name="email"
+                  id="footer-newsletter-email"
                   type="email" 
                   aria-label="Newsletter email address"
+                  aria-describedby={mobile && subscribeStatus === 'error' ? 'footer-newsletter-description footer-newsletter-error' : 'footer-newsletter-description'}
+                  aria-invalid={mobile && subscribeStatus === 'error' ? true : undefined}
                   toolparamdescription="The visitor's email address for receiving Crea8iv Media newsletter updates."
                   autoComplete="email"
                   placeholder="Email Address" 
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => { setEmail(e.target.value); if (mobile && subscribeStatus === 'error') setSubscribeStatus('idle'); }}
+                  onInvalid={() => { if (mobile) setSubscribeStatus('error'); }}
                   className="w-full bg-[#121214] border border-white/10 rounded-full px-5 py-3.5 font-inter text-sm text-white focus:outline-none focus:border-[#FF6801] focus:ring-1 focus:ring-[#FF6801]/50 transition-all placeholder-white/40 shadow-inner"
                   required
                 />
@@ -193,6 +195,7 @@ export default function Footer() {
                 <span className="relative z-10">Subscribe</span>
               </button>
             </form>
+            {mobile && subscribeStatus === 'error' && <p id="footer-newsletter-error" className={styles.formError} role="alert">Please enter a valid email address.</p>}
             {subscribeStatus === 'success' && (
               <p className="mt-3 font-inter text-sm text-[#25D366] animate-fade-in" role="status" aria-live="polite">
                 ✓ Thanks for subscribing!
@@ -202,15 +205,16 @@ export default function Footer() {
 
         </div>
 
-            <div className="mt-10 border-t border-white/[0.08] pt-6">
+            <div className={`${styles.identityOriginal} mt-10 border-t border-white/[0.08] pt-6`}>
               <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--icon-color)]">Identity Work</p>
               <Link href="/clients/" className="inline-flex min-h-11 items-center text-sm text-white/75 hover:text-[#FF6801]">Explore client identities and selected work →</Link>
             </div>
 
-        <div className="mt-14 border-t border-white/[0.08] pt-8">
+        <div className={`${styles.platforms} mt-14 border-t border-white/[0.08] pt-8`}>
+          <FooterDisclosure title="Official platforms" id="footer-platforms" mobile={mobile} ready={ready}>
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <h3 className="text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--icon-color)]">
+              <h3 className={`${styles.platformHeading} text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--icon-color)]`}>
                 Official platforms
               </h3>
               <p className="mt-3 max-w-2xl font-inter text-sm leading-6 text-white/70">
@@ -251,10 +255,11 @@ export default function Footer() {
               </a>
             ))}
           </div>
+          </FooterDisclosure>
         </div>
       </div>
 
-      <div className="mx-auto max-w-[1600px] px-6 pb-6 lg:px-8">
+      <div className={`${styles.businessInfo} mx-auto max-w-[1600px] px-6 pb-6 lg:px-8`}>
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs leading-6 text-white/60">
           <p>{COMPANY.brandName}<span className="block">Pakistan operations · {COMPANY.pakistanEntityType}</span></p>
           <Link href="/locations/" className="inline-flex min-h-11 items-center underline decoration-white/25 underline-offset-4 hover:text-[#FF6801]">International markets · Explore locations ↗</Link>
@@ -262,7 +267,7 @@ export default function Footer() {
         </div>
       </div>
       {/* Bottom Bar Section */}
-      <div className="border-t border-white/[0.06] bg-black">
+      <div className={`${styles.copyright} border-t border-white/[0.06] bg-black`}>
         <div className="mx-auto max-w-[1600px] px-6 py-6 lg:px-8 flex flex-col sm:flex-row sm:flex-wrap items-center justify-between gap-4">
           <p className="font-sans text-center text-sm text-white/60 sm:text-left">
             Copyright © {currentYear} <span className="font-semibold text-white">{BUSINESS_DETAILS.legalName}</span>. All Rights Reserved
