@@ -57,13 +57,13 @@ export const PAGE_SEO_CONTENT: Record<string, PageSeo> = {
     serviceName: "Google Ads Management",
     price: "25000",
     intro:
-      "Google Ads put your business in front of people actively searching for your service in Rawalpindi or Islamabad. Because the intent is high, well-built search campaigns capture buyers at the exact moment they're ready to act — making it one of the highest-ROI channels available.",
+      "Google Ads can reach people actively searching for your service in Rawalpindi, Islamabad and other markets. We connect search intent, relevant ads, landing pages and conversion tracking so you can judge the enquiries your campaign generates.",
     faqs: [
-      { q: "How much do Google Ads cost in Pakistan?", a: "Google Ads management starts from PKR 25,000/month plus ad spend. A typical Rawalpindi or Islamabad business sees strong results with PKR 30,000–50,000/month in ad budget, depending on the service and competition." },
-      { q: "Are Google Ads better than Facebook Ads?", a: "They're different tools. Google Ads capture high-intent buyers searching right now; Meta Ads create demand and retarget. Most businesses win fastest by combining both — we build them to work together." },
-      { q: "How fast do Google Ads start working?", a: "Google Ads can generate calls and leads within days of launch because they target active searchers. We then optimize keywords and bids over the first weeks to lower cost per lead." },
-      { q: "What is a good cost per lead on Google Ads in Pakistan?", a: "It varies by industry, but for most local services a cost per lead of PKR 200–800 is achievable with tight targeting, strong ad copy and a fast landing page." },
-      { q: "Do you build the landing page too?", a: "Yes. A fast, conversion-focused landing page is essential for Google Ads ROI — we build or optimize it so paid clicks turn into real inquiries." },
+      { q: "How much do Google Ads cost in Pakistan?", a: "Management starts from PKR 25,000 per month, with media spend separate. The media budget depends on the service, location, competition and the amount of data needed to evaluate the campaign." },
+      { q: "Are Google Ads better than Facebook Ads?", a: "Google Search reaches people already looking for a service. Meta helps introduce the offer to new audiences and bring previous visitors back. The right mix depends on where your customers are in their buying journey." },
+      { q: "How fast do Google Ads start working?", a: "Ads can begin serving after approval. The timing of enquiries depends on search demand, budget and the landing page. We review search terms, tracking and bids after launch to see what needs adjusting." },
+      { q: "What is a good cost per lead on Google Ads in Pakistan?", a: "A useful target depends on the service, competition and the value of a qualified enquiry. We review the cost and quality of calls and form submissions together before recommending budget changes." },
+      { q: "Do you build the landing page too?", a: "Yes. We can build or improve the landing page so it matches the ad, works on mobile and gives visitors a clear path to call, message or enquire." },
     ],
     relatedLinks: [
       {

@@ -10,7 +10,7 @@ import Link from "next/link";
  * page. The Elementor design above is untouched. Renders nothing for slugs
  * without configured content.
  */
-export default function PageSeoContent({ slug }: { slug: string }) {
+export default function PageSeoContent({ slug, schemaOnly = false }: { slug: string; schemaOnly?: boolean }) {
   const data = PAGE_SEO_CONTENT[slug];
   if (!data) return null;
 
@@ -74,9 +74,12 @@ export default function PageSeoContent({ slug }: { slug: string }) {
     ],
   };
 
+  const schema = <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
+  if (schemaOnly) return schema;
+
   return (
     <div className="native-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {schema}
 
       {/* Hairline divider between the Elementor design and the appended content */}
       <div className="mx-auto my-4 h-px max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" />
