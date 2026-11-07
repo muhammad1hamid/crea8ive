@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import CaseStudyShowcase from "@/components/CaseStudyShowcase";
-import LocalPortfolioArchive from "@/components/LocalPortfolioArchive";
+import ResultsEditorial from "@/components/portfolio/ResultsEditorial";
 import { caseStudyShowcaseItems, showcaseItemToCreativeWork } from "@/lib/case-study-showcase";
 import { websitePortfolioItems } from "@/lib/website-portfolio";
-import PerspectiveTunnelHero from "@/components/ui/perspective-tunnel-hero";
-import { portfolioHeroProjects } from "@/data/portfolio-hero-projects";
 
 export const metadata: Metadata = {
   title: { absolute: "Website Portfolio Pakistan | Crea8iv Media" },
@@ -87,9 +84,7 @@ export default function ResultsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <PerspectiveTunnelHero projects={portfolioHeroProjects} />
-      <CaseStudyShowcase variant="results" />
-      <LocalPortfolioArchive headingLevel="h2" />
+      <ResultsEditorial />
     </>
   );
 }
