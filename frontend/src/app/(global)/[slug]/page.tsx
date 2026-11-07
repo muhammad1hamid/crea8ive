@@ -33,6 +33,8 @@ import { PAGE_METADATA, pageUrl } from "@/lib/seo-metadata";
 import { SOCIAL_LINKS } from "@/lib/social-links";
 import type { WPPost } from "@/types/wordpress";
 import detailStyles from "@/components/service-body.module.css";
+import GrowthSystemsIntro from "../growth-systems/GrowthSystemsIntro";
+import growthStyles from "../growth-systems/growth-systems.module.css";
 
 export const revalidate = 3600;
 
@@ -79,6 +81,7 @@ type SuggestedReadingItem = {
   href: string;
   category: string;
   image: string;
+  description?: string;
 };
 
 const AUTHOR = {
@@ -327,18 +330,21 @@ const SERVICE_SUGGESTED_READING: Record<string, SuggestedReadingItem[]> = {
   "growth-systems": [
     {
       title: "Lead Generation for Builders and Architects in Pakistan",
+      description: "How construction and architecture businesses can build a more reliable enquiry pipeline.",
       href: "/blog/lead-generation-for-builders-and-architects-in-pakistan/",
       category: "Lead Systems",
       image: "/wp-content/uploads/2026/06/digital-marketing-cost-pakistan-premium-cover.webp",
     },
     {
       title: "What Syed Qamar Abbas Builds at Crea8iv Media",
+      description: "A look at the strategy, marketing systems and automation behind the agency’s work.",
       href: "/blog/what-syed-qamar-abbas-builds-at-crea8iv-media/",
       category: "Growth Systems",
       image: "/wp-content/uploads/2026/06/the-ai-automation-blueprint-for-marketing-2026-guide-premium-cover.webp",
     },
     {
       title: "WhatsApp Automation for Clinics: Booking, Follow-Up and Reminders",
+      description: "Practical ways to connect appointment booking, reminders and patient follow-up.",
       href: "/blog/whatsapp-automation-for-clinics-booking-follow-up-and-reminders/",
       category: "Automation",
       image: "/wp-content/uploads/2026/06/whatsapp-business-marketing-pakistan-premium-cover.webp",
@@ -954,13 +960,14 @@ export default async function SlugPage({ params }: SlugPageProps) {
     }
   }
 
-  const pageContentOwnsH1 = type !== "post" && /<h1\b/i.test(contentHtml);
+  const isGrowthSystems = slug === "growth-systems";
+  const pageContentOwnsH1 = isGrowthSystems || (type !== "post" && /<h1\b/i.test(contentHtml));
 
   return (
     <>
-      <WordPressAssets />
+      {!isGrowthSystems && <WordPressAssets />}
       <ContentShell
-        className={detailStyles.page}
+        className={isGrowthSystems ? growthStyles.shell : detailStyles.page}
         title={type === "post" || pageContentOwnsH1 ? undefined : data.title.rendered}
         titleAs={pageContentOwnsH1 ? "div" : "h1"}
       >
@@ -1265,7 +1272,9 @@ export default async function SlugPage({ params }: SlugPageProps) {
               }}
             />
           ) : null}
-          <WordPressContent html={contentHtml} className={`tx-page-content ${detailStyles.legacy}`} fallbackImage={pageFallbackImage} offsetFixedHeader />
+          {isGrowthSystems ? <GrowthSystemsIntro /> : (
+            <WordPressContent html={contentHtml} className={`tx-page-content ${detailStyles.legacy}`} fallbackImage={pageFallbackImage} offsetFixedHeader />
+          )}
           {["about", "contact", "pricing", "consultation"].includes(slug) && <p className="registration-proof mx-auto my-6 max-w-5xl px-6 text-sm text-[#ff9b57]"><Link className="inline-flex min-h-11 items-center underline" href="/company-verification/">Pakistan sole proprietorship · Business information</Link></p>}
           {slug === "contact" && <PartnershipEnquiry />}
           {slug === "contact" ? <LocationExperience className="mt-14" /> : null}
@@ -1299,11 +1308,11 @@ export default async function SlugPage({ params }: SlugPageProps) {
             </section>
           ) : null}
           {serviceVisual ? <ServiceDecisionPath serviceTitle={serviceVisual.eyebrow} /> : null}
-          {serviceVisual ? <ServiceConversionSystem slug={slug} serviceTitle={plainTitle} /> : null}
+          {serviceVisual ? <ServiceConversionSystem slug={slug} serviceTitle={isGrowthSystems ? "Growth Systems" : plainTitle} /> : null}
           <ServiceToolsPanel slug={slug} />
           <ServiceResources slug={slug} />
           {suggestedReading.length ? (
-            <section className="mx-auto mt-14 max-w-[1180px] px-5 sm:px-8 lg:px-10">
+            <section className={isGrowthSystems ? growthStyles.reading : "mx-auto mt-14 max-w-[1180px] px-5 sm:px-8 lg:px-10"}>
               <div className="mb-6 flex items-end justify-between gap-4">
                 <div>
                   <p className="font-orbitron text-[11px] uppercase tracking-[0.18em] text-brand-300">Recommended Reading</p>
@@ -1329,6 +1338,7 @@ export default async function SlugPage({ params }: SlugPageProps) {
                     <div className="p-5">
                       <p className="font-orbitron text-[10px] uppercase tracking-[0.16em] text-brand-300">{item.category}</p>
                       <h3 className="mt-3 font-syne text-lg font-bold leading-tight text-white">{item.title}</h3>
+                      {item.description && <p className={growthStyles.articleSummary}>{item.description}</p>}
                     </div>
                   </Link>
                 ))}
