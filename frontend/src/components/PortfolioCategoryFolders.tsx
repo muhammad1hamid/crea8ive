@@ -1,9 +1,12 @@
 import grids from "@/data/portfolio-grid-assets.json";
 import { websitePortfolioItems } from "@/lib/website-portfolio";
 import WebsitePortfolioGrid from "@/components/WebsitePortfolioGrid";
-import EvidenceMedia from "@/components/EvidenceMedia";
+import PortfolioProjectCard from "@/components/PortfolioProjectCard";
+import { localCaseStudies } from "@/lib/local-case-studies";
+import { resultsCollection } from "@/lib/results-portfolio";
 import PortfolioFolderBrowser, { type PortfolioFolder } from "@/components/PortfolioFolderBrowser";
 import styles from "./portfolio-category-folders.module.css";
+import cardStyles from "./portfolio-project-card.module.css";
 
 export default function PortfolioCategoryFolders() {
   const categories = ["E Commerce", "Health Clinics", "Interiors & Architects", "Restaurants"];
@@ -35,24 +38,23 @@ export default function PortfolioCategoryFolders() {
   ];
 
   const galleries = [
-    <WebsitePortfolioGrid key="websites" />,
+    <WebsitePortfolioGrid key="websites" compact />,
     ...categories.map(category => (
-      <div className={styles.gallery} key={category}>
+      <div className={cardStyles.grid} key={category}>
         {grids.filter(item => item.category === category).map((item, index) => {
           const image = item.optimizedSrc || item.src;
-          const title = /whatsapp|^\W+$|^pp$/i.test(item.label)
+          const project = resultsCollection.find(work => work.id === item.id);
+          const title = project?.title ?? (/whatsapp|^\W+$|^pp$/i.test(item.label)
             ? `${category} social grid ${index + 1}`
-            : item.label;
+            : item.label);
+          const categorySlug = Object.entries(localCaseStudies).find(([, study]) => study.category === category)?.[0];
+          const href = project?.href ?? (categorySlug ? `/case-studies/${categorySlug}/` : image);
           return (
-            <figure className={styles.gridCard} key={item.id}>
-              <div className={styles.gridImage}>
-                <EvidenceMedia src={image} alt={title} sizes="(max-width: 639px) 85vw, (max-width: 1023px) 40vw, 340px" />
-              </div>
-              <figcaption>
-                <strong>{title}</strong>
-                <span>{category} · Social content</span>
-              </figcaption>
-            </figure>
+            <PortfolioProjectCard key={item.id} title={title} category={`${category} · Social content`}
+              image={image} imageAlt={title}
+              imageRatio={item.optimizedWidth / item.optimizedHeight}
+              href={href}
+              linkLabel={project?.href ? project.linkLabel || "View project" : categorySlug ? "Explore category" : "Open artwork"} />
           );
         })}
       </div>
@@ -60,7 +62,7 @@ export default function PortfolioCategoryFolders() {
   ];
 
   return (
-    <section id="home-work-library" className={styles.library} aria-labelledby="work-library-heading">
+    <section id="home-work-library" data-home-work className={styles.library} aria-labelledby="work-library-heading">
       <div className={styles.inner}>
         <div className={styles.heading}>
           <p className={styles.eyebrow}>WORK LIBRARY</p>

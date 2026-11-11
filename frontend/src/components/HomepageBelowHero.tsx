@@ -20,6 +20,7 @@ import HomepageFounderOffice from "@/components/HomepageFounderOffice";
 import HomepageFinalCTA from "./HomepageFinalCTA";
 import HomepageClientStories from "./HomepageClientStories";
 import HomepageCreativeShowcase from "./HomepageCreativeShowcase";
+import PortfolioCategoryFolders from "./PortfolioCategoryFolders";
 import { CLIENT_LOGOS } from "@/lib/client-logos";
 import EvidenceMedia from "@/components/EvidenceMedia";
 import styles from "./agency-body.module.css";
@@ -92,9 +93,9 @@ const industries = [
 ];
 
 const customerSteps = [
-  { title: "They Find You", description: "People search for a solution, and your business shows up at the right time." },
-  { title: "They Check You", description: "They look for credibility, real reviews and proof that you're reliable." },
-  { title: "They Decide", description: "They choose the business that feels most relevant, trustworthy and easy to reach." },
+  { title: "They Find You", description: "People discover you through search, content or ads." },
+  { title: "They Check You", description: "They look at your website, reviews and proof." },
+  { title: "They Decide", description: "They choose the business that feels most trustworthy." },
 ];
 
 const visualSystemCards = [
@@ -128,6 +129,7 @@ export default function HomepageBelowHero({ caseStudies, editorial }: { caseStud
       <CustomerReality />
       <ProblemLedServices />
       {caseStudies}
+      <PortfolioCategoryFolders />
       <CreativeWork />
       <HomepageConnectedJourney />
       <IndustrySystems />

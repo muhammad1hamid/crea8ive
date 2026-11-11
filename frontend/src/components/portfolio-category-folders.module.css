@@ -15,9 +15,7 @@
   color: var(--library-ink);
   scroll-margin-top: 100px;
 }
-.library::before, .library::after { content: ""; position: absolute; z-index: -1; width: 630px; height: 630px; border-radius: 50%; pointer-events: none; }
-.library::before { top: -540px; left: -440px; background: #084838; box-shadow: 22px 18px 0 rgb(8 72 56 / .18); }
-.library::after { right: -550px; bottom: -550px; background: #c75000; box-shadow: -20px -20px 0 rgb(255 104 1 / .08); }
+.library::before, .library::after { content: none; }
 .inner { max-width: 1360px; margin-inline: auto; }
 .heading { max-width: 1050px; margin-inline: auto; text-align: center; }
 .heading .eyebrow { display: flex; align-items: center; justify-content: center; gap: 17px; margin: 0; color: var(--library-ink) !important; font-size: 14px; font-weight: 700 !important; letter-spacing: .13em; line-height: 1.5; }
@@ -65,9 +63,7 @@
 .gridCard figcaption { display: grid; gap: 6px; padding: 18px; font-size: 14px; line-height: 1.5; }
 .gridCard figcaption span { color: #d7ccbf; }
 
-:global(html[data-theme="light"]) .library { --library-ground: #064b3b; --library-ink: #fff8ef; --library-copy: #d5e2d9; --library-emphasis: var(--library-orange); --library-focus: #ffb47d; }
-:global(html[data-theme="light"]) .library::before { background: #91b6a0; box-shadow: 22px 18px 0 rgb(8 72 56 / .05); }
-:global(html[data-theme="light"]) .library::after { background: #ff8f36; box-shadow: -20px -20px 0 rgb(255 104 1 / .08); }
+:global(html[data-theme="light"]) .library { --library-ground: #fff; --library-ink: #191714; --library-copy: #554f47; --library-emphasis: #a84303; --library-focus: #a84303; color-scheme: light; }
 :global(html[data-theme="light"]) .dialog { --surface-solid: #fff8f1; --text-strong: #173d2d; --text-soft: #555046; --text-muted: #555046; --border-soft: #d3c7b6; background: #fff8f1; color: #173d2d; border-color: #d3c7b6; color-scheme: light; }
 :global(html[data-theme="light"]) .dialogHeader { background: #fff8f1f5; border-color: #d3c7b6; }
 :global(html[data-theme="light"]) .dialogHeader button { background: #e8e0d1; }
@@ -94,8 +90,6 @@
 
 @media (max-width: 639px) {
   .library { padding: 44px 24px 42px; }
-  .library::before { top: -585px; left: -505px; }
-  .library::after { right: -585px; bottom: -570px; }
   .heading .eyebrow { gap: 12px; font-size: 12px; }
   .eyebrow::before, .eyebrow::after { width: 22px; height: 2px; }
   .heading h3 { font-size: 31px; margin-top: 20px; }

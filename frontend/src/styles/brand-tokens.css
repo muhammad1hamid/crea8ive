@@ -1,5 +1,16 @@
 /* Shared identity; market layouts own composition and typography scale. */
+@layer brand-typography;
+
 :root {
+  --font-primary: Arial, Helvetica, sans-serif;
+  --font-display: var(--font-primary);
+  --font-accent: var(--font-primary);
+  --font-body: var(--font-primary);
+  --font-orbitron: var(--font-display);
+  --font-inter: var(--font-primary);
+  --font-syne: var(--font-display);
+  --font-weight-primary: 400;
+  --font-weight-heading: 400;
   --crea8iv-orange: #ff6801;
   --crea8iv-ink: #080808;
   --crea8iv-paper: #fcfaee;

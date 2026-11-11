@@ -81,6 +81,7 @@ export function InsightsSection({ id, eyebrow, issue, heading, intro, linkLabel,
                   badge={`0${index + 1} / 0${articles.length}`}
                   tags={[article.topic]}
                   surface="var(--journal-ground, #181818)"
+                  hoverEffect="glow"
                 />
               </article>
             ))}

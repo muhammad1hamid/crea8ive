@@ -35,13 +35,20 @@
 .card:hover .arrow svg,.card:focus-visible .arrow svg { transform: translate(2px,-2px); }
 .card:hover .title,.card:focus-visible .title { color: var(--notched-hover-ink, #ffb27a); }
 
+.glow .coverFrame { border-radius: 24px; transition: box-shadow 220ms ease; }
+.card.glow:is(:hover, :focus-visible) .coverFrame { box-shadow: 0 0 20px rgb(255 168 67 / .16); }
+.card.glow:is(:hover, :focus-visible) :is(.image, .screenFrame, .arrow, .arrow svg) { transform: none; }
+.card.glow:is(:hover, :focus-visible) .arrow { background: var(--notched-arrow, #292929); color: var(--notched-arrow-ink, #f5f7f9) !important; border-color: #ffb27a; }
+
 @media (max-width: 699px) {
   .cover { border-radius: 20px; }
+  .glow .coverFrame { border-radius: 20px; }
   .title { font-size: 23px; }
   .copy { padding-top: 17px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .image,.screenFrame,.arrow,.arrow svg { transition: none; }
+  .glow .coverFrame { transition: none; }
   .card:hover .image,.card:focus-visible .image,.card:hover .screenFrame,.card:focus-visible .screenFrame,.card:hover .arrow,.card:focus-visible .arrow,.card:hover .arrow svg,.card:focus-visible .arrow svg { transform: none; }
 }

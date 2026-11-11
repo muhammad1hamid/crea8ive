@@ -1,4 +1,5 @@
-/* The initial repository hero uses Arial, 600 headings and 400 reading copy.
+/* Reference: Crea8ivMedia/Crea8iv-Media-Website at f9e91b2,
+   frontend/src/components/PremiumHero.css: hero heading uses Arial, weight 400.
    Important declarations in the first layer supersede legacy font overrides. */
 @layer brand-typography {
   body,
@@ -12,8 +13,12 @@
     font-weight: 400 !important;
   }
 
-  body :where(h1, h2, h3, h4, h5, h6, button, summary, th, strong, b) {
+  body :where(h1, h2, h3, h4, h5, h6) {
     font-weight: var(--font-weight-heading) !important;
+  }
+
+  body :where(button, summary, th, strong, b) {
+    font-weight: 600 !important;
   }
 
   body :where(h1, h2, h3, h4, h5, h6, button, summary, th) :where(span, strong, b, em, i) {

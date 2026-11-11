@@ -56,6 +56,10 @@
     var(--homepage-green) !important;
 }
 
+:global(html[data-theme="light"]) .homepage > :global(#home-work-library) {
+  background: #fff !important;
+}
+
 :global(html[data-theme="light"]) .homepage > :global(#home-buyers-decide) {
   --buyer-ink: #191714;
   --buyer-copy: #554f47;

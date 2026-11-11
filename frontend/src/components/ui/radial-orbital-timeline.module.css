@@ -13,8 +13,7 @@
   --node-arrow: rgb(255 129 44 / .15);
   --node-arrow-ink: #ffbc7d;
   --node-shadow: rgb(0 0 0 / .27);
-  --node-active-sheen: radial-gradient(ellipse at 1% 5%, #c85306, transparent 45%);
-  --node-active-glass: linear-gradient(145deg,#74320d,#632506 65%,#a83f01);
+  --node-active-glass: #21382e;
   --section-bg: var(--orbit-ground);
   --text-primary: var(--orbit-ink);
   --text-secondary: var(--orbit-copy);
@@ -163,13 +162,11 @@
 .nodeButton:focus-visible, .motionToggle:focus-visible { outline: 2px solid var(--orbit-accent); outline-offset: 3px; }
 .nodeButton[data-pending="true"] { border-color: var(--orbit-orange); }
 .node[data-selected="true"] .nodeButton {
-  --node-ink: #fffaf1;
-  --node-copy: #fff3e3;
-  --node-divider: rgb(255 218 178 / .58);
-  --node-arrow: #ffd4a2;
-  --node-arrow-ink: #672403;
-  background: var(--node-active-sheen) padding-box, var(--node-active-glass) padding-box, linear-gradient(155deg,#fff3d6,#ffb963 44%,#ff7c1e) border-box;
-  box-shadow: inset 0 2px 10px rgb(255 175 87 / .4), inset 0 -3px 12px rgb(255 119 25 / .48), 0 8px 24px var(--orbit-ring-glow);
+  --node-arrow: rgb(255 104 1 / .1);
+  --node-arrow-ink: var(--orbit-accent);
+  border-color: color-mix(in srgb, var(--orbit-accent) 60%, transparent);
+  background: var(--node-active-glass);
+  box-shadow: 0 5px 16px var(--node-shadow);
 }
 .nodeButton[data-orbit-occluded]:not(:hover):not(:focus-visible) { opacity: .26; box-shadow: none; }
 .motionToggle {
@@ -281,39 +278,18 @@
   --panel-chip: rgb(248 223 182 / .07);
   --panel-edge: rgb(255 188 115 / .35);
   --panel-pill: rgb(244 119 33 / .18);
-  --panel-glass: linear-gradient(145deg, rgb(15 33 24 / .97), rgb(11 25 21 / .98) 58%, rgb(42 27 15 / .98));
-  --panel-border: linear-gradient(135deg, #fff4de, #f47721 24%, #63503b 62%, #ff9b36 100%);
+  --panel-glass: #14271f;
   --panel-shadow: rgb(0 0 0 / .4);
-  --panel-curve: rgb(255 141 37 / .72);
-  --panel-curve-glow: rgb(255 104 1 / .28);
   position: relative;
   isolation: isolate;
   overflow: clip;
   padding: 12px 15px 14px;
-  border: 1px solid transparent;
-  border-radius: 24px;
-  background:
-    radial-gradient(ellipse at 0 0, rgb(244 119 33 / .21), transparent 43%) padding-box,
-    var(--panel-glass) padding-box,
-    var(--panel-border) border-box;
+  border: 1px solid var(--panel-edge);
+  border-radius: 18px;
+  background: var(--panel-glass);
   color: var(--panel-ink);
-  backdrop-filter: blur(14px);
-  box-shadow: inset 0 1px 6px rgb(255 246 222 / .13), 0 16px 34px var(--panel-shadow);
+  box-shadow: 0 12px 28px var(--panel-shadow);
   font-family: var(--font-primary), sans-serif;
-}
-.panel::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: -1px;
-  bottom: -1px;
-  width: 35%;
-  height: 23%;
-  border-top: 1px solid var(--panel-curve);
-  border-top-left-radius: 100%;
-  background: radial-gradient(ellipse at 100% 100%, var(--panel-curve-glow), transparent 78%);
-  box-shadow: 0 -2px 14px var(--panel-curve-glow);
-  pointer-events: none;
 }
 .panelTop { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .serviceName {
@@ -401,7 +377,7 @@
 }
 @media (hover: hover) {
   .panel :is(.close,.specialtyLink):hover { background: var(--panel-pill); border-color: var(--panel-accent); }
-  .specialtyLink:hover, .serviceLink:hover { transform: translateY(-1px); box-shadow: 0 6px 16px var(--panel-curve-glow); }
+  .specialtyLink:hover, .serviceLink:hover { transform: translateY(-1px); box-shadow: 0 4px 12px var(--panel-shadow); }
   .serviceLink:hover svg { transform: translateX(3px); }
 }
 .panel { animation: service-card-in 300ms cubic-bezier(.22,1,.36,1); }
@@ -414,11 +390,8 @@
   --panel-chip: rgb(255 255 255 / .64);
   --panel-edge: rgb(144 87 42 / .26);
   --panel-pill: #ffe3bd;
-  --panel-glass: linear-gradient(145deg, #fffaf4, #fcf4e9 68%, #fff2df);
-  --panel-border: linear-gradient(145deg, #fff, #ffd1a5 55%, #fff 90%);
+  --panel-glass: #fffaf4;
   --panel-shadow: rgb(44 34 23 / .24);
-  --panel-curve: #ef8b48;
-  --panel-curve-glow: rgb(255 104 1 / .19);
   color-scheme: light;
 }
 :global(html[data-theme="light"]) .section.section.section {
@@ -435,8 +408,7 @@
   --node-arrow: #ffe0b9;
   --node-arrow-ink: #8b3500;
   --node-shadow: rgb(131 66 24 / .16);
-  --node-active-sheen: radial-gradient(ellipse at 2% 8%, #f27a15, transparent 36%);
-  --node-active-glass: linear-gradient(145deg,#ae4000,#a43b00 65%,#bc4701);
+  --node-active-glass: #f2eee5;
   color-scheme: light;
 }
 :global(html[data-theme="light"]) .plinth { background: linear-gradient(#ffd7ad 22%,#fd7b18 54%,#f5caa4); }

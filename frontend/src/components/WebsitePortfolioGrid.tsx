@@ -2,8 +2,17 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { websitePortfolioItems } from "@/lib/website-portfolio";
 import styles from "./website-portfolio-grid.module.css";
+import PortfolioProjectCard from "./PortfolioProjectCard";
+import folderStyles from "./portfolio-project-card.module.css";
 
-export default function WebsitePortfolioGrid() {
+export default function WebsitePortfolioGrid({ compact = false }: { compact?: boolean }) {
+  if (compact) return <div className={folderStyles.grid}>
+    {websitePortfolioItems.map(item => <PortfolioProjectCard key={item.slug}
+      title={item.brand} category={item.category} subtitle={item.title} description={item.summary}
+      image={item.image} imageAlt={item.imageAlt} href={item.href} linkLabel={item.linkLabel}
+      imageRatio={item.slug === "buildscape" ? 720 / 500 : 4 / 5}
+      external={/^https?:\/\//.test(item.href)} />)}
+  </div>;
   return <div className={styles.grid}>
     {websitePortfolioItems.map((item) => {
       const external = /^https?:\/\//.test(item.href);

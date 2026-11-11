@@ -21,6 +21,7 @@ export interface NotchedProjectCardProps {
   accentForeground?: string;
   className?: string;
   external?: boolean;
+  hoverEffect?: "zoom" | "glow";
 }
 
 /** A linked editorial cover with a rounded corner cutout for its action. */
@@ -40,6 +41,7 @@ export function NotchedProjectCard({
   accentForeground = "#130902",
   className,
   external = false,
+  hoverEffect = "zoom",
 }: NotchedProjectCardProps) {
   const cardStyle = {
     "--notch-surface": surface,
@@ -48,7 +50,7 @@ export function NotchedProjectCard({
   } as CSSProperties;
 
   return (
-    <Link href={href} className={cn(styles.card, className)} style={cardStyle} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}>
+    <Link href={href} className={cn(styles.card, hoverEffect === "glow" && styles.glow, className)} style={cardStyle} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}>
       <span className={styles.coverFrame}>
         <span className={styles.cover}>
           <Image

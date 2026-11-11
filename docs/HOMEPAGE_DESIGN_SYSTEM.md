@@ -40,7 +40,7 @@ All paths below are relative to the repository root. Source components and their
 
 ## Typography to preserve
 
-The owner restored the initial imported hero typography on 11 November 2026. The initial repository commit `3c8fce1` defines **Arial, Helvetica, sans-serif** in `PremiumHero.css`, with **600** for headings and **400** for reading copy. Use this family throughout the website. `--font-primary`, `--font-display`, `--font-accent` and `--font-body` share it. The legacy `--font-syne`, `--font-orbitron` and `--font-inter` names remain compatibility aliases.
+The owner's reference is `Crea8ivMedia/Crea8iv-Media-Website` at `f9e91b2`. Its `frontend/src/components/PremiumHero.css` defines the hero heading as **Arial, Helvetica, sans-serif**, weight **400**. Match that family and regular weight across headings throughout the website, including the Qatar layouts. Reading copy stays at **400**; buttons, summaries and strong text retain **600**. `--font-primary`, `--font-display`, `--font-accent` and `--font-body` share the family in `src/styles/brand-tokens.css`. The legacy `--font-syne`, `--font-orbitron` and `--font-inter` names remain compatibility aliases. Preserve existing italic emphasis and underlines.
 
 `src/styles/site-typography.css` enforces these weights and the shared family in the first CSS layer, including headings that previously selected a serif. Keep this layer ahead of legacy overrides. Component heading sizes and responsive spacing still come from the relevant homepage pattern.
 
@@ -48,10 +48,10 @@ Use "How buyers decide" as the default hierarchy for new matching sections:
 
 | Role | Existing reference |
 | --- | --- |
-| Section heading | Current buyer journey `.heading h2` uses 52px, weight 600 and 1.15 line-height, with 46px at 1024-1279px, 40px at 768-1023px, 32px below 768px and 28px below 360px. The legacy `how-it-works.module.css` heading remains in use on Locations. |
+| Section heading | Current buyer journey `.heading h2` uses 52px, shared weight 400 and 1.15 line-height, with 46px at 1024-1279px, 40px at 768-1023px, 32px below 768px and 28px below 360px. The legacy `how-it-works.module.css` heading remains in use on Locations. |
 | Heading emphasis | Existing orange italic `<em>` and its underline treatment, where appropriate. Preserve meaning and avoid forcing this into every heading. |
 | Introductory paragraph | `.lead`: 17px / 1.65 on desktop, 16px / 1.65 on mobile; reading copy uses the global 400 weight. |
-| Journey step heading | `.stepTitle h3` uses 32px / 1.2, weight 600 on desktop, 26px at 1024-1279px, 30px on tablet, 27px on mobile and 25px below 360px. |
+| Journey step heading | `.stepTitle h3` uses 32px / 1.2, shared weight 400 on desktop, 26px at 1024-1279px, 30px on tablet, 27px on mobile and 25px below 360px. |
 | Journey description | 16px / 1.6 on desktop, 15px at compact desktop and mobile sizes; weight 400. |
 | Eyebrow, number and stage label | Retain the component's own bold weight, scale, tracking and responsive rules. Do not make paragraph text bold to imitate a heading. |
 

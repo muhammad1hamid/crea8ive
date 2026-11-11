@@ -13,6 +13,7 @@ import './qatar.css';
 import './qatar-luxury.css';
 import './qatar-team.css';
 import './qatar-growth.css';
+import '@/styles/site-typography.css';
 
 export default async function QatarLayout({children,ar=false}:{children:ReactNode;ar?:boolean}) {
  const tracking=await getPublicTrackingSettings();
