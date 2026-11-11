@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageSchema from "@/components/PageSchema";
-import WebsitePortfolioPreview from "@/components/WebsitePortfolioPreview";
 import HomepageEditorial, { homepageFaqs } from "@/components/HomepageEditorial";
 import {
   getFrontPage,
@@ -79,7 +78,7 @@ export default async function HomePage() {
       <PageSchema slug="home" name={PAGE_METADATA.home.title} description={PAGE_METADATA.home.description} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c") }} />
       <HeroSection />
-      <HomepageBelowHero selectedWork={<WebsitePortfolioPreview />} caseStudies={<CaseStudyShowcase variant="home" />} editorial={<HomepageEditorial posts={posts} />} />
+      <HomepageBelowHero caseStudies={<CaseStudyShowcase variant="home" />} editorial={<HomepageEditorial posts={posts} />} />
     </>
   );
 }

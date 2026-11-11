@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Pause, Play, X } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Globe2, Palette, Pause, Play, Search, Target, Workflow, X } from "lucide-react";
 import { useEffect, useId, useLayoutEffect, useRef, useState, type CSSProperties, type Ref } from "react";
 import ConnectedJourneyMotion from "../ConnectedJourneyMotion";
 import styles from "./radial-orbital-timeline.module.css";
@@ -41,18 +41,39 @@ function overlaps(card: DOMRect, popup: DOMRect) {
   return width > 4 && height > 4;
 }
 
-function ServiceDetail({ service, id, closeRef, dismiss }: {
+const serviceSymbols = {
+  Automation: Workflow,
+  Strategy: Target,
+  "SEO & AI": Search,
+  Websites: Globe2,
+  Branding: Palette,
+};
+
+function ServiceIcon({ service, className = "" }: { service: OrbitalService; className?: string }) {
+  const Icon = serviceSymbols[service.name as keyof typeof serviceSymbols];
+  return (
+    <span className={`${styles.simpleIcon} ${className}`} data-service-icon={service.name} aria-hidden="true">
+      {service.name === "Paid Ads" ? <>
+        <Image src="/img/platform-logos/google-ads.webp" alt="" width={28} height={28} />
+        <Image src="/img/platform-logos/meta-ads.webp" alt="" width={28} height={28} />
+      </> : Icon ? <Icon strokeWidth={2} /> : <Image src={service.iconSrc} alt="" width={36} height={36} />}
+    </span>
+  );
+}
+
+function ServiceDetail({ service, id, closeRef, dismiss, modal = false }: {
+  modal?: boolean;
   service: OrbitalService;
   id: string;
   closeRef: Ref<HTMLButtonElement>;
   dismiss: () => void;
 }) {
   return (
-    <article className={styles.panel} data-orbit-service={service.name} role="dialog"
+    <article className={styles.panel} data-orbit-service={service.name} role={modal ? undefined : "dialog"}
       aria-labelledby={id + "-detail-title"} aria-describedby={id + "-detail-description"}>
       <div className={styles.panelTop}>
         <span className={styles.serviceName}>
-          <Image src={service.iconSrc} alt="" width={23} height={23} loading="lazy" />
+          <ServiceIcon service={service} className={styles.panelIcon} />
           {service.name}
         </span>
         <button ref={closeRef} type="button" className={styles.close} aria-label="Close service details" onClick={dismiss}>
@@ -83,6 +104,8 @@ export default function RadialOrbitalTimeline({ intro, timelineData }: RadialOrb
   const stageRef = useRef<HTMLDivElement>(null);
   const revolveRef = useRef<HTMLDivElement>(null);
   const panelsRef = useRef<HTMLDivElement>(null);
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const [compact, setCompact] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const [selection, setSelection] = useState<OrbitSelection | null>(null);
@@ -97,6 +120,34 @@ export default function RadialOrbitalTimeline({ intro, timelineData }: RadialOrb
   const detailIndex = selection && selection.phase !== "aligning" ? selection.index : null;
   const detail = detailIndex === null ? null : timelineData[detailIndex];
   const orbitRunning = inView && pageVisible && !hovered && !keyboardFocused && !isEngaged && !motionPaused;
+
+  useLayoutEffect(() => {
+    const stage = stageRef.current;
+    const revolve = revolveRef.current;
+    if (!stage || !revolve) return;
+    const update = () => setCompact(getComputedStyle(revolve).position !== "absolute");
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(stage);
+    return () => observer.disconnect();
+  }, []);
+
+  useLayoutEffect(() => {
+    const dialog = dialogRef.current;
+    if (!compact || !dialog) return;
+    if (detailIndex !== null && !dialog.open) dialog.showModal();
+    else if (detailIndex === null && dialog.open) {
+      dialog.close();
+      triggerRef.current?.focus({ preventScroll: true });
+    }
+  }, [compact, detailIndex]);
+
+  useEffect(() => {
+    if (!compact || detailIndex === null) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = previous; };
+  }, [compact, detailIndex]);
 
   useEffect(() => {
     const stage = stageRef.current;
@@ -192,9 +243,6 @@ export default function RadialOrbitalTimeline({ intro, timelineData }: RadialOrb
     if (document.activeElement === triggerRef.current || document.activeElement === document.body) {
       close.focus({ preventScroll: true });
     }
-    if (getComputedStyle(panels).position !== "absolute") {
-      panels.scrollIntoView({ block: "nearest", behavior: "instant" });
-    }
   }, [phase, detailIndex]);
 
   useEffect(() => {
@@ -223,7 +271,7 @@ export default function RadialOrbitalTimeline({ intro, timelineData }: RadialOrb
       <div className={styles.copy} data-journey-heading>
         <div className={styles.copyText}>
           <p className={styles.eyebrow}>Start with the problem</p>
-          <h2 id="home-core-services-title">What’s standing between you and your <em>next customer?</em></h2>
+          <h2 id="home-core-services-title">What’s blocking your <em>next customer?</em></h2>
           <p className={styles.intro}>{intro}</p>
           <p className={styles.hint}>Select a service to see how it helps.</p>
         </div>
@@ -257,7 +305,7 @@ export default function RadialOrbitalTimeline({ intro, timelineData }: RadialOrb
                     <button className={styles.nodeButton} type="button" data-orbit-node={service.name} data-pending={pending}
                       aria-labelledby={labelId} aria-describedby={benefitId} aria-expanded={selected && !isClosing} aria-haspopup="dialog"
                       aria-controls={id + "-details"} onClick={event => selectService(index, event.currentTarget)}>
-                      <Image className={styles.nodeIcon} src={service.iconSrc} alt="" width={512} height={512} sizes="(max-width: 1279px) 38px, 52px" loading="lazy" />
+                      <ServiceIcon service={service} className={styles.nodeIcon} />
                       <span className={styles.nodeCopy}>
                         <span id={labelId} className={styles.nodeLabel}>{service.name}</span>
                         <span id={benefitId} className={styles.nodeBenefit}>{service.benefit}</span>
@@ -275,9 +323,20 @@ export default function RadialOrbitalTimeline({ intro, timelineData }: RadialOrb
             {motionPaused ? <Play size={15} aria-hidden="true" /> : <Pause size={15} aria-hidden="true" />}
           </button>
         </div>
-        <div ref={panelsRef} className={styles.panels} id={id + "-details"} hidden={!detail} inert={isClosing}>
-          {detail && <ServiceDetail key={detail.href} service={detail} id={id} closeRef={closeRef} dismiss={dismiss} />}
-        </div>
+        {compact ? (
+          <dialog ref={dialogRef} className={styles.modal} data-orbit-phase={phase} data-lenis-prevent
+            aria-labelledby={id + "-detail-title"} aria-describedby={id + "-detail-description"}
+            onCancel={event => { event.preventDefault(); dismiss(); }}
+            onClick={event => { if (event.target === event.currentTarget) dismiss(); }}>
+            <div ref={panelsRef} className={styles.panels} id={id + "-details"} inert={isClosing}>
+              {detail && <ServiceDetail modal key={detail.href} service={detail} id={id} closeRef={closeRef} dismiss={dismiss} />}
+            </div>
+          </dialog>
+        ) : (
+          <div ref={panelsRef} className={styles.panels} id={id + "-details"} hidden={!detail} inert={isClosing}>
+            {detail && <ServiceDetail key={detail.href} service={detail} id={id} closeRef={closeRef} dismiss={dismiss} />}
+          </div>
+        )}
       </div>
     </ConnectedJourneyMotion>
   );

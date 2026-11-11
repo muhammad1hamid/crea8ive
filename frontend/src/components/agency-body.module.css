@@ -216,7 +216,7 @@
 .story :global(.home-logo-marquee .home-lux-heading) { font-size:22px; margin:0 auto; }
 .story :global(.home-logo-marquee .home-lux-eyebrow) { display:none; }
 .story :global(.home-logo-marquee .home-section-intro > p:last-child) { margin:8px auto 0; font-size:14px; line-height:1.6; }
-.story :global(.home-logo-marquee > div > div:last-child) { margin-top:16px; }
+.story :global(.home-logo-marquee > div > div:last-child) { margin-top:0; }
 .story.story > .services { padding-bottom:48px !important; }
 .story .services :global(#home-core-services-title) { font-weight:600 !important; }
 .story .primaryServices { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }

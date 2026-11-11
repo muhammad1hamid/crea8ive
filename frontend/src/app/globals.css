@@ -1,3 +1,4 @@
+@layer brand-typography;
 @import "tailwindcss";
 @import "../styles/service-colours.css";
 @import "../styles/interaction-clearance.css";
@@ -44,13 +45,15 @@ html[data-theme="dark"] {
   --support-text: #f4faf7;
   --decorative-rgb: 166, 180, 173;
   --focus-color: #ffb27a;
-  --font-primary: "Josefin Sans", "Inter", Arial, Helvetica, sans-serif;
-  --font-display: "Josefin Sans", "Inter", Arial, Helvetica, sans-serif;
-  --font-accent: "Josefin Sans", "Inter", Arial, Helvetica, sans-serif;
+  --font-primary: Arial, Helvetica, sans-serif;
+  --font-display: var(--font-primary);
+  --font-accent: var(--font-primary);
+  --font-body: var(--font-primary);
   --font-orbitron: var(--font-display);
   --font-inter: var(--font-primary);
   --font-syne: var(--font-display);
-  --font-weight-primary: 350;
+  --font-weight-primary: 400;
+  --font-weight-heading: 600;
   --primary: var(--brand-orange);
   --accent: var(--icon-color);
   --bg-dark: #080808;

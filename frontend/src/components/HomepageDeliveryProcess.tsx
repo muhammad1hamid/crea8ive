@@ -4,30 +4,31 @@ import { ArrowUpRight } from "lucide-react";
 import type { ReactNode } from "react";
 import ProcessCardReveal from "./ProcessCardReveal";
 import MobileProjectJourney from "./MobileProjectJourney";
+import HomepageProcessFlow from "./HomepageProcessFlow";
 import styles from "./homepage-delivery-process.module.css";
 
 const steps = [
   {
     title: "Understand",
-    description: "We discuss your goals, audience, current challenges, priorities and practical constraints.",
+    description: "We clarify your goals, audience, challenges, priorities and practical constraints.",
     image: "understand-chameleon",
     alt: "An orange and purple chameleon exploring a fan of colour swatches.",
   },
   {
     title: "Plan",
-    description: "We define the scope, measurable outcomes, key deliverables and responsibilities.",
+    description: "Agree the scope, measures of success, deliverables and responsibilities.",
     image: "plan-chess",
     alt: "A chess knight beside a strategy board with a planned path to a crown.",
   },
   {
     title: "Build & Launch",
-    description: "We design, create, implement, test and release the agreed work.",
+    description: "Design, create, build, test and launch the agreed work.",
     image: "build-launch-rocket",
     alt: "Miniature construction workers assembling an orange and white rocket.",
   },
   {
     title: "Learn & Improve",
-    description: "Where ongoing management is included, we review performance and refine the next actions.",
+    description: "Review results and refine next steps where ongoing management is included.",
     image: "learn-improve-owl",
     alt: "A bespectacled owl studying a book beside an analytics board.",
   },
@@ -66,6 +67,9 @@ export function DeliveryProcess({ id, headingId, eyebrow, heading, intro, steps,
           <h2 id={headingId}>{heading}</h2>
           {intro && <p data-process-lead className={styles.lead}>{intro}</p>}
         </div>
+        {isHome ? (
+          <HomepageProcessFlow steps={steps} />
+        ) : <>
         <ProcessCardReveal className={styles.grid}>
           {steps.map((step, index) => (
             <li key={step.image} className={styles.card}>
@@ -91,6 +95,7 @@ export function DeliveryProcess({ id, headingId, eyebrow, heading, intro, steps,
           idPrefix={isHome ? undefined : id}
           sequence={mobileSequence}
         />
+        </>}
         {showContact && <div className={styles.action}>
           <Link href="/contact/" prefetch={false} className={styles.cta}>
             Discuss Your Project <ArrowUpRight size={21} aria-hidden="true" />

@@ -23,8 +23,9 @@ Pilot mein teen tasks chalayein: visitor apni country dhoondh kar open kare, ser
 
 | Element | Rule |
 | --- | --- |
-| Typography | Josefin Sans ki existing family aur “How buyers decide” ki heading/body hierarchy. Short introductions aur headings centre-aligned jahan fit hon. Long copy, tables aur forms readable alignment mein. |
+| Typography | Original imported hero ki Arial/Helvetica family, headings 600 aur body 400. Puri website par yahi font rahe. “How buyers decide” ki responsive sizing reference hai. Short introductions aur headings centre-aligned jahan fit hon. Long copy, tables aur forms readable alignment mein. |
 | Colour and spacing | Brand orange **#FF6801**, existing dark/light surfaces, cream aur green palette, aur existing responsive spacing. Orange ko primary action aur meaningful emphasis ke liye reserve karein. |
+| Homepage background | Dark mode mein founder aur office section ka shared canvas use karein. Light mode mein pehle wale green sections apni jagah aur original green palette mein rakhein, halkay horizontal gradient ke saath. Buyer Journey light mode mein white ho. Baqi light sections warm cream canvas par hon. Adjacent green sections ki gradient edges match karein aur corner circles aur heavy glow hata kar rakhein. |
 | Cards and buttons | Homepage ki relevant card family aur button treatments reuse karein. Equal padding, consistent image ratio aur aligned actions. Card content lamba ho to responsive layout aur light concision se balance karein. |
 | Images and proof | Relevant client visuals, screenshots aur approved illustrations pehle reuse karein. “How it connects” wale dimensional icons reuse karein. Naya marketing concept chahiye ho to owner ka reference pehle lein. |
 | Editorial patterns | Repeated Insights mein existing notched editorial cards. Case studies mein actual work aur scope clearly dikhayein. Proof, process aur FAQ sections tab use karein jab woh page ka sawal solve karte hon. |

@@ -24,7 +24,7 @@ import { CLIENT_LOGOS } from "@/lib/client-logos";
 import EvidenceMedia from "@/components/EvidenceMedia";
 import styles from "./agency-body.module.css";
 import surfaces from "./homepage-surfaces.module.css";
-import rhythm from "./homepage-background-rhythm.module.css";
+import backdrop from "./homepage-background-rhythm.module.css";
 import industryStyles from "./industry-showcase.module.css";
 import IndustryMobileCarousel from "./IndustryMobileCarousel";
 import orbitStyles from "./ui/radial-orbital-timeline.module.css";
@@ -121,14 +121,13 @@ const visualSystemCards = [
   },
 ] as const;
 
-export default function HomepageBelowHero({ selectedWork, caseStudies, editorial }: { selectedWork?: ReactNode; caseStudies?: ReactNode; editorial?: ReactNode }) {
+export default function HomepageBelowHero({ caseStudies, editorial }: { caseStudies?: ReactNode; editorial?: ReactNode }) {
   return (
-    <div data-home-palette="dark" className={`home-luxury-story brand-site-shell overflow-hidden bg-[#050403] text-white ${styles.story} ${surfaces.mixed} ${rhythm.homepage}`}>
+    <div data-home-palette="dark" className={`home-luxury-story brand-site-shell overflow-hidden text-white ${styles.story} ${surfaces.mixed} ${backdrop.homepage}`}>
       <IdentitySystems />
       <CustomerReality />
       <ProblemLedServices />
       {caseStudies}
-      {selectedWork}
       <CreativeWork />
       <HomepageConnectedJourney />
       <IndustrySystems />
@@ -145,40 +144,11 @@ function CreativeWork() {
   return <HomepageCreativeShowcase projects={visualSystemCards} />;
 }
 
-function SectionIntro({ eyebrow, title, copy, titleId }: { eyebrow: string; title: string; copy: string; titleId?: string }) {
-  return (
-    <RevealCard>
-      <div className="home-section-intro max-w-3xl">
-        <p className="home-lux-eyebrow">{eyebrow}</p>
-        <h2 id={titleId} className="home-lux-heading mt-4">{title}</h2>
-        <p className="mt-5 max-w-2xl text-base leading-8 text-white/58">{copy}</p>
-      </div>
-    </RevealCard>
-  );
-}
-
-function RevealCard({ children, className = "" }: { children: ReactNode; delay?: number; className?: string }) {
-  return <div className={className}>{children}</div>;
-}
-
-function Ambient() {
-  return (
-    <>
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.025)_1px,transparent_1px)] bg-[size:94px_94px] opacity-45" />
-    </>
-  );
-}
-
 function IdentitySystems() {
   return (
-    <section id="home-client-logos" data-home-surface="light" className="home-logo-marquee relative border-y border-white/[0.08] px-4 sm:px-6 lg:px-7">
-      <Ambient />
+    <section id="home-client-logos" data-home-surface="light" aria-label="Selected clients" className="home-logo-marquee relative px-4 sm:px-6 lg:px-7">
       <div className="relative mx-auto max-w-[1480px]">
-        <SectionIntro eyebrow="Selected clients" title="Good company to be in." copy="Meet some of the businesses we work with and see what we help them solve." />
-        <div className="mt-5"><LogoCarousel compact logos={selectedClientLogos} /></div>
-        <div className="mt-4 flex justify-center">
-          <Link href="/case-studies/" className={`home-lux-button ${styles.clientWorkButton}`}>See Client Work <ArrowUpRight size={14} aria-hidden="true" /></Link>
-        </div>
+        <LogoCarousel compact logos={selectedClientLogos} />
       </div>
     </section>
   );
@@ -203,7 +173,7 @@ function ProblemLedServices() {
   return (
     <section id="home-problem-services" data-home-orbit className={orbitStyles.section} aria-labelledby="home-core-services-title">
         <RadialOrbitalTimeline
-          intro="You may need better visibility, a more convincing website or campaigns that attract the right enquiries. Start with the obstacle—not a long list of marketing terms."
+          intro="Get found, build trust and attract the right enquiries. Choose the service that addresses your next growth challenge."
           timelineData={homeOrbitServices}
         />
     </section>

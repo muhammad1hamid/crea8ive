@@ -48,7 +48,7 @@
 }
 .eyebrow::before, .eyebrow::after { content: ""; width: 36px; height: 2px; background: var(--journey-orange); }
 .heading h2 { margin: 18px auto 0; font-size: 36px; font-weight: 700 !important; line-height: 1.22; text-wrap: balance; }
-.heading em { position: relative; display: inline-block; color: var(--journey-orange); font-style: italic; white-space: nowrap; }
+.heading em { position: relative; display: inline-block; color: var(--journey-accent-ink, var(--journey-orange)); font-style: italic; white-space: nowrap; }
 .heading em::after { content: ""; position: absolute; right: 0; bottom: -8px; left: 0; height: 5px; border-radius: 90% 35% 85% 20%; background: var(--journey-orange); transform: rotate(-1deg); }
 .intro { max-width: 1090px; margin: 24px auto 0; }
 .intro p { margin: 3px 0 0; font-size: 16px; line-height: 1.6; }

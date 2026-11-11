@@ -1,67 +1,100 @@
-/* Light-theme chapter rhythm only. Hero/footer sit outside this wrapper.
-   Reuse the existing orbit green and buyer-section cream; never retheme cards. */
-:global(html[data-theme="light"]) .homepage {
-  --homepage-rhythm-green: #064b3b;
-  --homepage-rhythm-cream: #fff8f1;
+/* Dark sections share the founder and office canvas. Light mode retains
+   the approved green chapters, with a quiet horizontal gradient. */
+.homepage {
+  --home-canvas: #111411;
+  --home-entry: #181818;
+  --home-edge-green: rgb(12 84 70 / .20);
+  --home-edge-amber: rgb(255 104 1 / .065);
 }
 
-/* Selected Portfolio contains the website preview, work library and creative
-   showcase. Insights and FAQs likewise form one continuous colour chapter. */
-:global(html[data-theme="light"]) .homepage :global(:is(
+.homepage.homepage.homepage {
+  background:
+    linear-gradient(180deg, var(--home-entry), transparent 180px),
+    radial-gradient(ellipse 58% 45rem at 0 40rem, var(--home-edge-green), transparent),
+    radial-gradient(ellipse 57% 51rem at 100% 34%, var(--home-edge-amber), transparent),
+    radial-gradient(ellipse 64% 58rem at 0 68%, var(--home-edge-green), transparent),
+    radial-gradient(ellipse 56% 54rem at 100% 96%, var(--home-edge-amber), transparent),
+    var(--home-canvas) !important;
+}
+
+:global(html[data-theme="light"]) .homepage {
+  --home-canvas: #f5eee5;
+  --home-entry: var(--brand-cream, #fcfaee);
+  --home-edge-green: rgb(167 188 168 / .24);
+  --home-edge-amber: rgb(255 104 1 / .05);
+  --home-ink: #191714;
+  --home-copy: #554f47;
+  --home-accent-ink: #a84303;
+  --home-rule: rgb(70 55 40 / .24);
+  --homepage-green: #064b3b;
+}
+
+:global(html[data-theme]) .homepage.homepage.homepage > section {
+  background: transparent !important;
+  border-block-width: 0 !important;
+}
+
+/* Suppress legacy full-section ornaments. Card artwork and accents remain local. */
+.homepage.homepage > :where([data-home-journey], [data-home-creative], [data-home-stories], [data-home-faq])::before,
+.homepage.homepage > :where([data-home-journey], [data-home-creative], [data-home-stories], [data-home-faq])::after {
+  content: none;
+}
+
+.homepage > :global(#home-insights) { --journal-ground: var(--home-canvas); }
+
+/* The repeated gradient has identical edges where green sections meet. */
+:global(html[data-theme="light"]) .homepage > :global(:is(
   #home-client-logos,
-  #home-selected-work,
-  #home-work-library,
   #home-creative-work,
   #home-industries,
   #home-client-stories,
   #home-insights,
   #homepage-faq
 )) {
-  background: var(--homepage-rhythm-green) !important;
+  background:
+    linear-gradient(90deg, rgb(255 255 255 / .035), transparent 42%, rgb(0 28 21 / .10)),
+    var(--homepage-green) !important;
 }
 
-:global(html[data-theme="light"]) .homepage > :global(:is(
-  #featured-case-studies,
-  #home-how-it-connects,
-  #home-founder-office,
-  #home-delivery-process,
-  #home-project-enquiry
-)) {
-  background: var(--homepage-rhythm-cream) !important;
+:global(html[data-theme="light"]) .homepage > :global(#home-buyers-decide) {
+  --buyer-ink: #191714;
+  --buyer-copy: #554f47;
+  --buyer-accent-ink: #a84303;
+  background: #fff !important;
+  color-scheme: light;
 }
 
-/* Only exposed copy follows the new surface. No inherited card tokens,
-   button fills, accent colours, type sizes or image treatments are changed. */
+:global(html[data-theme="light"]) .homepage > :global(#home-how-it-connects) {
+  --journey-ink: var(--home-ink);
+  --journey-copy: var(--home-copy);
+  --journey-accent-ink: var(--home-accent-ink);
+}
+
+:global(html[data-theme="light"]) .homepage > :global(#home-industries) {
+  --text-primary: #fff8ef;
+  --text-secondary: #d5e2d9;
+  --icon-color: var(--crea8iv-orange);
+}
+
+:global(html[data-theme="light"]) .homepage > :global(#home-insights) {
+  --journal-ground: var(--homepage-green);
+}
+
+/* Exposed text follows the green canvas. Card palettes remain component-owned. */
 :global(html[data-theme="light"]) .homepage :global(:is(
-  #website-proof-heading,
-  #home-selected-work > div > div:first-child > div:first-child > p,
-  #home-selected-work > div > div:first-child a,
   #home-creative-heading,
   #home-creative-work > div > div:first-child > a,
+  #home-creative-work > div > div:first-child > div > p:first-child,
   #home-evidence-heading,
   #home-client-stories > div > div:first-child > p:first-child,
   #home-client-stories a[href="/case-studies/"],
-  #home-faq-heading
-)) {
-  color: #fff8ef !important;
-}
-
-:global(html[data-theme="light"]) .homepage :global(:is(
-  #home-creative-work > div > div:first-child > div > p:first-child,
+  #home-faq-heading,
   #homepage-faq > div > div:first-child > p:first-child
 )) {
   color: #fff8ef !important;
 }
 
 :global(html[data-theme="light"]) .homepage :global(:is(
-  #home-creative-heading em,
-  #home-faq-heading em
-)) {
-  color: var(--crea8iv-orange) !important;
-}
-
-:global(html[data-theme="light"]) .homepage :global(:is(
-  #home-selected-work > div > div:first-child > div:last-child > p,
   #home-creative-work > div > div:first-child > div > p:last-child,
   #home-client-stories > div > div:first-child > p:last-child,
   #homepage-faq > div > div:first-child > p:last-of-type
@@ -69,36 +102,9 @@
   color: #d5e2d9 !important;
 }
 
-/* The mobile featured project already has a cream card. Preserve its original
-   dark copy; only the unframed project information above that breakpoint needs
-   cream text against the new outer green surface. */
-@media (min-width: 640px) {
-  :global(html[data-theme="light"]) .homepage :global(:is(
-    #home-selected-work [data-featured-project] > div:last-child > p:first-child,
-    #home-selected-work [data-featured-project] > div:last-child h3
-  )) {
-    color: #fff8ef !important;
-  }
-
-  :global(html[data-theme="light"]) .homepage :global(:is(
-    #home-selected-work [data-featured-project] > div:last-child > p:not(:first-child),
-    #home-selected-work [data-featured-project] > div:last-child li
-  )) {
-    color: #d5e2d9 !important;
-  }
-}
-
-/* Connected Growth moves from green to cream; its five cards keep their own
-   existing backgrounds, copy colours and orange connecting line. */
 :global(html[data-theme="light"]) .homepage :global(:is(
-  #home-connected-title,
-  #home-how-it-connects [data-journey-heading] > p
+  #home-creative-heading em,
+  #home-faq-heading em
 )) {
-  color: #171513 !important;
-}
-
-:global(html[data-theme="light"]) .homepage :global(:is(
-  #home-how-it-connects [data-journey-heading] > div > p
-)) {
-  color: #45403b !important;
+  color: var(--crea8iv-orange) !important;
 }

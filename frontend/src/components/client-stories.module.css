@@ -71,6 +71,8 @@
 .cardBody .industry { display: flex; align-items: center; gap: 10px; margin: 0; color: #f8c99e !important; font-size: 13px; font-weight: 600 !important; line-height: 1.4; }
 .industry svg { flex: none; color: var(--stories-orange); }
 .cardBody h3 { margin: 12px 0 0; color: var(--text-primary) !important; font-size: 32px; font-weight: 700 !important; line-height: 1.2; }
+.cardBody .projectContext { margin: 8px 0 0; color: var(--text-secondary) !important; font-size: 13px; line-height: 1.5; }
+.card:not([data-story-position="active"]) .projectContext { display: none; }
 .cardBody .description { margin: 13px 0 0; color: var(--text-secondary) !important; font-size: 16px; line-height: 1.6; }
 .projectActions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; margin-top: 19px; }
 .card:not([data-story-position="active"]) .projectActions { height: 0; margin: 0; overflow: hidden; visibility: hidden; }
@@ -88,8 +90,8 @@
 .indicator > span { display: block; width: 32px; height: 7px; border-radius: 999px; background: #756b5e; transition: background-color 220ms ease, transform 220ms ease; }
 .indicator[aria-current="true"] > span { background: var(--stories-orange); transform: scaleX(1.15); }
 .allCases { grid-column: 3; justify-self: end; padding: 12px 20px; border: 1px solid var(--stories-orange); color: var(--stories-ink) !important; background: transparent; }
-.section .stage:focus-visible, .section button:focus-visible, .section a:focus-visible { outline: 3px solid var(--stories-orange) !important; outline-offset: 5px !important; box-shadow: none !important; }
-.section .previewSelect:focus-visible { outline-offset: -5px !important; }
+.carousel .stage:focus-visible, .carousel button:focus-visible, .carousel a:focus-visible { outline: 3px solid var(--stories-orange) !important; outline-offset: 5px !important; box-shadow: none !important; }
+.carousel .previewSelect:focus-visible { outline-offset: -5px !important; }
 .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 .fallback { display: grid; gap: 24px; margin: 35px 0 0; padding: 0; list-style: none; }
 .fallback a { display: inline-flex; align-items: center; gap: 7px; margin: 10px 20px 0 0; text-decoration: underline; }

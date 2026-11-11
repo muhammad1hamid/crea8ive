@@ -8,8 +8,8 @@
 .heading em { color: var(--journal-emphasis); font-style: normal; }
 .introAside { display: flex; flex-direction: column; align-items: flex-start; gap: 21px; }
 .introAside p { max-width: 49ch; margin: 0; color: var(--text-secondary); font-size: 16px; line-height: 1.65; }
-.allInsights { display: inline-flex; min-height: 44px; align-items: center; gap: 18px; padding: 9px 0; border-bottom: 1px solid #ff6801; color: #f5f7f9; font-size: 13px; font-weight: 700; letter-spacing: .08em; line-height: 1.4; text-decoration: none; text-transform: uppercase; transition: gap 180ms ease, color 180ms ease; }
-.allInsights:hover,.allInsights:focus-visible { gap: 24px; color: #ffb27a; }
+.allInsights { display: inline-flex; min-height: 44px; align-items: center; gap: 18px; padding: 9px 0; border-bottom: 1px solid #ff6801; color: var(--journal-link, #f5f7f9); font-size: 13px; font-weight: 700; letter-spacing: .08em; line-height: 1.4; text-decoration: none; text-transform: uppercase; transition: gap 180ms ease, color 180ms ease; }
+.allInsights:hover,.allInsights:focus-visible { gap: 24px; color: var(--journal-emphasis); }
 .allInsights:focus-visible { outline: 2px solid #ff6801; outline-offset: 5px; }
 .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; margin-top: 39px; }
 .article { min-width: 0; }

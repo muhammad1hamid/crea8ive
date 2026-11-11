@@ -1,4 +1,4 @@
-/* Homepage bands share a dark palette, including the former white sections. */
+/* Fallback card tokens for homepage sections without a dedicated palette. */
 .mixed.mixed > section:not([data-home-process]):not([data-home-journey]):not([data-home-buyer]):not([data-home-orbit]):not([data-home-closing]):not([data-home-stories]):not([data-home-work]):not([data-home-case-story]):not([data-home-creative]):not([data-home-founder]):not([data-home-faq]):not([data-home-insights]) {
   --agency-canvas:#181818;
   --agency-raised:#242424;
@@ -27,9 +27,7 @@
   --shadow-card:0 8px 22px rgb(0 0 0 / .12);
   --shadow-deep:rgb(0 0 0 / .12);
   --surface-sheen:rgb(255 208 168 / .085);
-  background:linear-gradient(110deg,rgb(255 147 71 / .065),transparent 46%,rgb(255 147 71 / .025)),var(--section-bg) !important;
   color:var(--text-primary);
-  border-color:var(--agency-line) !important;
   color-scheme:dark;
 }
 

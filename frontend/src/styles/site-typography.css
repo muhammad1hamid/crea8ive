@@ -1,0 +1,22 @@
+/* The initial repository hero uses Arial, 600 headings and 400 reading copy.
+   Important declarations in the first layer supersede legacy font overrides. */
+@layer brand-typography {
+  body,
+  body :where(h1, h2, h3, h4, h5, h6, div, p, li, a, button, input, textarea,
+    select, option, label, summary, span, strong, b, em, i, small, dd, dt, th, td,
+    figcaption, blockquote, legend) {
+    font-family: var(--font-primary) !important;
+  }
+
+  body :where(p, li, dd, td, input, textarea, select, label, span, small) {
+    font-weight: 400 !important;
+  }
+
+  body :where(h1, h2, h3, h4, h5, h6, button, summary, th, strong, b) {
+    font-weight: var(--font-weight-heading) !important;
+  }
+
+  body :where(h1, h2, h3, h4, h5, h6, button, summary, th) :where(span, strong, b, em, i) {
+    font-weight: inherit !important;
+  }
+}

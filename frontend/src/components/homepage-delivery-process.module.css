@@ -150,3 +150,17 @@
 @media (prefers-reduced-motion: reduce) {
   .card, .artwork img, .cta { transition: none; }
 }
+
+/* The homepage flow has its own compact cards; shared service processes retain their scale. */
+.section[data-home-process] { padding-block: 48px 44px !important; }
+.section[data-home-process] .heading { max-width: 860px; }
+.section[data-home-process] .heading h2 { margin-top: 15px; font-size: 36px; }
+.section[data-home-process] .heading .lead { max-width: 760px; margin: 18px auto 0; font-size: 16px; }
+.section[data-home-process] .action { margin-top: 14px; }
+.section[data-home-process] .cta { min-height: 48px; padding: 12px 24px; font-size: 15px; }
+@media (max-width: 767px) {
+  .section[data-home-process] { padding-block: 40px !important; }
+  .section[data-home-process] .heading h2 { font-size: 28px; }
+  .section[data-home-process] .heading .eyebrow { font-size: 11px; }
+  .section[data-home-process] .heading .lead { font-size: 15px; }
+}

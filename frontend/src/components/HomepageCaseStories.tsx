@@ -11,11 +11,15 @@ export default function HomepageCaseStories() {
   return <CaseStoryStage projects={homepageCaseStudies.map(study => ({
     id: study.id,
     name: study.name,
-    category: `${study.industry} · ${study.market}`,
+    industry: study.industry,
+    market: study.market,
     status: study.statusLabel,
     description: study.eyebrow,
-    caseHref: study.primaryHref,
+    caseStudyHref: study.primaryHref,
     liveHref: study.secondaryHref,
-    screen: screens[study.id],
+    image: screens[study.id]?.src ?? study.image,
+    imageAlt: screens[study.id]?.alt ?? study.imageAlt,
+    imageWidth: screens[study.id]?.width ?? 1440,
+    imageHeight: screens[study.id]?.height ?? 900,
   }))} />;
 }

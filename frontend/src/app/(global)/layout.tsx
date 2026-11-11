@@ -5,6 +5,7 @@ import SiteChrome from '@/components/layout/SiteChrome';
 import { getPublicTrackingSettings } from '@/lib/admin/store';
 import '@/styles/brand-tokens.css';
 import '../globals.css';
+import '@/styles/site-typography.css';
 
 const isHowrahStandalone = process.env.NEXT_PUBLIC_HOWRAH_STANDALONE === 'true';
 const howrahSiteUrl = process.env.NEXT_PUBLIC_HOWRAH_SITE_URL || 'https://antiquewhite-chough-517508.hostingersite.com';

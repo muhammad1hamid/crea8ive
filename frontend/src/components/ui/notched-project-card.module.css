@@ -33,7 +33,7 @@
 .card:hover .screenFrame,.card:focus-visible .screenFrame { transform: scale(1.07); }
 .card.card:hover .arrow,.card.card:focus-visible .arrow { transform: scale(1.04); border-color: var(--card-accent); background: var(--card-accent); color: var(--card-accent-foreground) !important; }
 .card:hover .arrow svg,.card:focus-visible .arrow svg { transform: translate(2px,-2px); }
-.card:hover .title,.card:focus-visible .title { color: #ffb27a; }
+.card:hover .title,.card:focus-visible .title { color: var(--notched-hover-ink, #ffb27a); }
 
 @media (max-width: 699px) {
   .cover { border-radius: 20px; }

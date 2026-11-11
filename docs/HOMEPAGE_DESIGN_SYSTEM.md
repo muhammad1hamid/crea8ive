@@ -40,16 +40,18 @@ All paths below are relative to the repository root. Source components and their
 
 ## Typography to preserve
 
-The configured family is **Josefin Sans**, with `Inter`, Arial, Helvetica and sans-serif fallbacks. Both `--font-primary` and `--font-display` currently use that family. `--font-syne`, `--font-orbitron` and `--font-inter` are compatibility aliases; they do not mean those separate fonts should be introduced.
+The owner restored the initial imported hero typography on 11 November 2026. The initial repository commit `3c8fce1` defines **Arial, Helvetica, sans-serif** in `PremiumHero.css`, with **600** for headings and **400** for reading copy. Use this family throughout the website. `--font-primary`, `--font-display`, `--font-accent` and `--font-body` share it. The legacy `--font-syne`, `--font-orbitron` and `--font-inter` names remain compatibility aliases.
+
+`src/styles/site-typography.css` enforces these weights and the shared family in the first CSS layer, including headings that previously selected a serif. Keep this layer ahead of legacy overrides. Component heading sizes and responsive spacing still come from the relevant homepage pattern.
 
 Use "How buyers decide" as the default hierarchy for new matching sections:
 
 | Role | Existing reference |
 | --- | --- |
-| Section heading | Current buyer journey `.heading h2` uses 52px, weight 700 and 1.15 line-height, with 46px at 1024-1279px, 40px at 768-1023px, 32px below 768px and 28px below 360px. The legacy `how-it-works.module.css` heading remains in use on Locations. |
+| Section heading | Current buyer journey `.heading h2` uses 52px, weight 600 and 1.15 line-height, with 46px at 1024-1279px, 40px at 768-1023px, 32px below 768px and 28px below 360px. The legacy `how-it-works.module.css` heading remains in use on Locations. |
 | Heading emphasis | Existing orange italic `<em>` and its underline treatment, where appropriate. Preserve meaning and avoid forcing this into every heading. |
 | Introductory paragraph | `.lead`: 17px / 1.65 on desktop, 16px / 1.65 on mobile; reading copy uses the global 400 weight. |
-| Journey step heading | `.stepTitle h3` uses 32px / 1.2, weight 700 on desktop, 26px at 1024-1279px, 30px on tablet, 27px on mobile and 25px below 360px. |
+| Journey step heading | `.stepTitle h3` uses 32px / 1.2, weight 600 on desktop, 26px at 1024-1279px, 30px on tablet, 27px on mobile and 25px below 360px. |
 | Journey description | 16px / 1.6 on desktop, 15px at compact desktop and mobile sizes; weight 400. |
 | Eyebrow, number and stage label | Retain the component's own bold weight, scale, tracking and responsive rules. Do not make paragraph text bold to imitate a heading. |
 
@@ -60,11 +62,11 @@ Global rules include `!important` typography overrides. Inspect the complete cas
 ## Colours, surfaces and cards
 
 - Primary brand orange: `--crea8iv-orange` / `--brand-orange`, **#FF6801**. Preserve existing cream, green, dark surfaces, muted copy and focus tokens.
-- The buyer section uses brand orange **#FF6801**, off-white copy and a cinematic forest-green background in both themes, following the owner's 11 November reference.
+- The buyer journey keeps its orange artwork and typography. Its copy uses light ink on the dark canvas and dark ink on the white light-mode section.
 - The buyer journey has three unframed illustrations, numbered headings and a continuous glowing path. Desktop runs horizontally and tablet/mobile below 1024px use a vertical sequence. Preserve the supplied artwork and transparent padding. Entrances and the single light pulse play once and respect reduced motion.
 - Connected cards retain numbered orange badges, dimensional icon images, restrained borders/shadows, 23px radius and connecting rules. Keep their mobile layout and light-theme card contrast.
 - Insights retains the existing 16:10 notched cover, 24px desktop / 20px mobile cover radius, circular action, tags and copy hierarchy. Match the `surface` prop to the surrounding section so the cutout blends correctly.
-- Dark and light themes remain supported. The light homepage has green **#064b3b** and cream **#fff8f1** section rhythm overrides in `homepage-background-rhythm.module.css`. The orbit and cinematic buyer journey own their section palettes. Inspect this layer as well as individual section CSS.
+- `homepage-background-rhythm.module.css` defines the dark homepage canvas using the founder and office palette. Light mode preserves the approved green sections: client logos, creative work, industries, client project evidence, Insights and FAQs. Keep the original green **#064b3b** and a subtle horizontal gradient with matching edges between adjacent green sections. The buyer journey uses a white **#FFFFFF** background in light mode. Other light sections use the warm cream canvas. Keep corner circles and heavy glows removed. Cards and artwork retain their own surfaces.
 - 3D carousel/perspective/tunnel cards are **not** default reusable patterns. This exclusion concerns the card interaction/layout, not the approved 3D-style icon artwork. Do not remove existing instances without a page-specific request.
 
 ## Existing artwork: reuse before generating
@@ -108,3 +110,8 @@ No new image generation is needed merely to prepare a page or this reference gui
 ## Status of this reference
 
 This change records the owner's design direction and maps existing reusable source/assets. It does not alter the homepage, extract embedded components yet, generate artwork, or revamp any route. Actual extraction and visual comparison belong to the first requested page implementation that needs them.
+
+## Homepage clarity updates — 11 November 2026
+
+- The homepage delivery process uses four compact cards with simple colourful icons and grey connectors through their centres. `HomepageProcessFlow.tsx` highlights each card, then passes a soft highlight along its connector to the next step. It pauses offscreen, while the tab is hidden, on desktop hover and through the visible pause control. Reduced motion keeps a static sequence. Desktop reads Understand → Plan → Build & Launch → Learn & Improve from left to right. Compact screens show the same complete sequence vertically. Preserve the qualification that review and refinement depend on ongoing management being included. Other service-page process variants retain their existing presentation.
+- Service selection uses simple colourful icons. Paid Ads displays authentic Google Ads and Meta logos. The other choices use the existing Lucide workflow, target, search, globe and palette symbols with distinct colours. Preserve the service cards, their links, compact dialogs and existing orbit behaviour.
