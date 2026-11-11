@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { animate, motion, useMotionValue, useReducedMotion, useTransform, type MotionValue, type PanInfo } from "motion/react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import EvidenceMedia from "../EvidenceMedia";
 import Image from "next/image";
 import styles from "./carousel-07.module.css";
 
@@ -27,6 +26,17 @@ function FanCard({ slide, index, total, progress, config, active, enhanced, choo
   slide: FanSlide; index: number; total: number; progress: MotionValue<number>; config: FanConfig;
   active: boolean; enhanced: boolean; choose: (returnFocus?: boolean) => void;
 }) {
+  const { src, alt, width, height } = slide.image;
+  const hoverTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  function cancelHover() {
+    if (hoverTimer.current === null) return;
+    clearTimeout(hoverTimer.current);
+    hoverTimer.current = null;
+  }
+  useEffect(() => () => {
+    if (hoverTimer.current !== null) clearTimeout(hoverTimer.current);
+  }, []);
+
   const offset = useTransform(progress, value => {
     let difference = (index - value) % total;
     if (difference > total / 2) difference -= total;
@@ -40,23 +50,27 @@ function FanCard({ slide, index, total, progress, config, active, enhanced, choo
   const zIndex = useTransform(offset, value => Math.round(20 - Math.abs(value) * 10));
 
   return <motion.article className={styles.card} data-fan-project={slide.id} data-active={active} aria-labelledby={`fan-title-${slide.id}`} style={{ x, y, rotate, scale, zIndex }}>
-    <div className={styles.media} style={{ "--screen-ratio": slide.image.width / slide.image.height } as CSSProperties}>
-      <Image className={styles.backdrop} src={slide.image.src} alt="" fill sizes="(max-width: 699px) 80vw, 400px" loading="lazy" aria-hidden="true" />
-      <div className={styles.browserWindow}>
-        <div className={styles.browserChrome} aria-hidden="true"><i /><i /><i /><span /></div>
-        <div className={styles.browserScreen}>
-      {(!enhanced || active)
-        ? <EvidenceMedia src={slide.image.src} alt={slide.image.alt} sizes="(max-width: 699px) 80vw, 400px" />
-        : <Image src={slide.image.src} alt={slide.image.alt} width={slide.image.width} height={slide.image.height} sizes="(max-width: 699px) 70vw, 400px" loading="lazy" />}
-        </div>
-      </div>
+    <div className={styles.media}>
+      <Image src={src} alt={alt} width={width} height={height} sizes="(max-width: 699px) 80vw, (max-width: 1099px) 340px, 400px" loading="lazy" />
     </div>
     <div className={styles.caption}>
       <span className={styles.badge}>{slide.badge}</span>
       <h3 id={`fan-title-${slide.id}`}>{slide.title}</h3>
       <span className={styles.index} aria-hidden="true">{String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}</span>
     </div>
-    {enhanced && !active && <button className={styles.select} onClick={event => choose(event.currentTarget.matches(":focus-visible"))} aria-label={`Show ${slide.title} project`} type="button" />}
+    {enhanced && !active && <button className={styles.select} aria-label={`Show ${slide.title} project`} type="button"
+      onPointerMove={event => {
+        if (event.pointerType !== "mouse" || event.buttons !== 0 || hoverTimer.current !== null) return;
+        const button = event.currentTarget;
+        // Pointer movement, rather than entry caused by a moving card, starts selection.
+        hoverTimer.current = setTimeout(() => {
+          hoverTimer.current = null;
+          if (button.isConnected && button.matches(":hover")) choose();
+        }, 110);
+      }}
+      onPointerLeave={cancelHover}
+      onPointerDown={cancelHover}
+      onClick={event => choose(event.currentTarget.matches(":focus-visible"))} />}
   </motion.article>;
 }
 
@@ -125,8 +139,9 @@ export default function CarouselStacked({ slides }: { slides: FanSlide[] }) {
       onClickCapture={event => { if (dragging.current) { event.preventDefault(); event.stopPropagation(); } }}>
       {slides.map((slide, index) => <FanCard key={slide.id} slide={slide} index={index} total={slides.length} progress={progress} config={config}
         active={active === index} enhanced={enhanced} choose={returnFocus => {
-          if (dragging.current) return;
-          const current = Math.round(progress.get()), delta = wrap(index - wrap(current, slides.length) + Math.floor(slides.length / 2), slides.length) - Math.floor(slides.length / 2);
+          const current = target.current;
+          if (dragging.current || wrap(current, slides.length) === index) return;
+          const delta = wrap(index - wrap(current, slides.length) + Math.floor(slides.length / 2), slides.length) - Math.floor(slides.length / 2);
           select(current + delta);
           if (returnFocus) requestAnimationFrame(() => stage.current?.focus({ preventScroll: true }));
         }} />)}

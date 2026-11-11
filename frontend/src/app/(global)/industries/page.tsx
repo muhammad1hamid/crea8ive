@@ -1,8 +1,27 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowUpRight, Building2 } from "lucide-react";
+import { FaqSection } from "@/components/HomepageFaq";
+import { ResourceClosing, ResourceHeading, ResourceHero } from "@/components/resource/ResourcePage";
+import resource from "@/components/resource/resource-page.module.css";
+import { NotchedProjectCard } from "@/components/ui/notched-project-card";
 import { industryPages } from "@/lib/industry-pages";
 import { SITE_URL } from "@/lib/site-config";
+import styles from "./industries.module.css";
+
+const defaultCover = { image: "/img/services/ad-concepts/growth-system-ad-concept.webp", alt: "Connected growth channels" };
+
+const industryCovers: Record<string, typeof defaultCover> = {
+  "restaurants-cafes": { image: "/img/homepage/creative-work/co3-landscape-v2.webp", alt: "CO3 Premium drinks brand creative" },
+  "clinics-dental": { image: "/img/case-studies/the-smile-xperts/the-smile-xperts-details-post.webp", alt: "The Smile Xperts branded dental care creative" },
+  "architects-interiors": { image: "/img/case-studies/home-studio-interiors/home-studio-social-post.webp", alt: "Home Studio Interiors campaign creative" },
+  "ecommerce-retail": { image: "/img/case-studies/black-petals/black-petals-live-desktop.webp", alt: "Black Petals ecommerce storefront" },
+  "real-estate-builders": { image: "/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp", alt: "Buildscape construction website" },
+  "education-academies": { image: "/img/client-logos/optimized/cake-art-academy.webp", alt: "Cake Art Academy logo" },
+};
+
+const industryFaqs = [
+  { question: "What is an industry growth system?", answer: "It connects the channels a buyer uses to find and evaluate a business with the next action. A restaurant may need menu discovery and ordering, while a clinic may need treatment information, patient trust and an appointment path." },
+  { question: "Where should I start if several services look relevant?", answer: "Start with your industry page and identify where customers get stuck. The service stack explains the role of each channel, and the proof links help you compare examples before choosing a scope." },
+];
 
 export const metadata: Metadata = {
   title: { absolute: "Industry Growth Systems for Pakistan Businesses | Crea8iv Media" },
@@ -52,41 +71,70 @@ function JsonLd() {
 
 export default function IndustriesPage() {
   return (
-    <main className="native-page relative isolate overflow-hidden bg-[#050505] text-white">
+    <main className={resource.page}>
       <JsonLd />
-      <section className="px-6 pb-14 pt-44 lg:px-10 lg:pb-20">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-5">
-            <Building2 className="h-3.5 w-3.5" aria-hidden="true" /> Industry solution pages
-          </p>
-          <h1 className="max-w-4xl font-orbitron text-[clamp(2.35rem,6vw,5.1rem)] font-bold leading-[1.03] tracking-normal text-white">
-            Growth systems shaped around how each business category wins trust.
-          </h1>
-          <p className="mt-6 max-w-3xl font-inter text-lg leading-8 text-white/70">
-            These pages connect Crea8iv Media services with buyer intent for restaurants, clinics, architecture, interiors, ecommerce, real estate and education brands in Pakistan.
-          </p>
-          <div className="mt-9">
-            <Link href="/industry-pages.md" className="portfolio-button">
-              Open machine-readable index <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </div>
+      <ResourceHero
+        id="industries-title"
+        breadcrumb="Industries"
+        eyebrow="Industry growth systems · Pakistan"
+        heading={<>Growth systems built around <em>how your buyers decide.</em></>}
+        intro="A restaurant booking, a clinic appointment and a property enquiry each need a different route to trust. Explore how Crea8iv Media connects websites, local visibility, ads, content, branding and consultation to the needs of your industry."
+        art={{ src: "/img/services/ad-concepts/growth-system-ad-concept.webp", alt: "A connected system linking websites, content, advertising and local discovery", width: 960, height: 540 }}
+        actions={[
+          { href: "#industry-directory", label: "Find your industry" },
+          { href: "/industry-pages.md", label: "Read the industry index" },
+        ]}
+      />
+
+      <section id="industry-directory" className={`${resource.section} ${resource.band}`} aria-labelledby="industry-directory-title">
+        <div className={resource.inner}>
+          <ResourceHeading
+            id="industry-directory-title"
+            eyebrow="Industry directory"
+            heading={<>Find the approach <em>that fits your business.</em></>}
+            intro="Open your industry for the buyer journey, relevant services and examples you can inspect."
+          />
+          <ul className={`${resource.cards} ${styles.directory}`} data-columns="3">
+            {industryPages.map((page) => {
+              const cover = industryCovers[page.slug] ?? defaultCover;
+              return (
+                <li key={page.slug}>
+                  <NotchedProjectCard
+                    href={`/industries/${page.slug}/`}
+                    title={page.title}
+                    description={page.quickAnswer}
+                    image={cover.image}
+                    imageAlt={cover.alt}
+                    tags={[page.eyebrow]}
+                    surface="var(--resource-band)"
+                    className={page.slug === "education-academies" ? `${styles.card} ${styles.logoCover}` : styles.card}
+                  />
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
 
-      <section className="px-6 py-12 lg:px-10">
-        <div className="mx-auto grid max-w-[1180px] gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {industryPages.map((page) => (
-            <Link key={page.slug} href={`/industries/${page.slug}/`} className="lux-card group block h-full p-6 transition hover:border-[#FF6801]/50">
-              <p className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF6801]">{page.eyebrow}</p>
-              <h2 className="mt-4 font-orbitron text-2xl font-semibold leading-tight text-white">{page.title}</h2>
-              <p className="mt-4 font-inter text-sm leading-7 text-white/65">{page.quickAnswer}</p>
-              <span className="mt-6 inline-flex items-center gap-2 font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF6801]">
-                Open industry page <ArrowUpRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <FaqSection
+        id="industries-faq"
+        headingId="industries-faq-title"
+        eyebrow="Choosing a starting point"
+        heading={<>Questions about <em>industry growth.</em></>}
+        description="How to use the directory and choose which part of the customer journey to improve first."
+        items={industryFaqs}
+        centered
+      />
+
+      <ResourceClosing
+        id="industries-next-step"
+        heading={<>Find the gap <em>in your buyer journey.</em></>}
+        intro="Bring your industry, audience and main enquiry goal. We can discuss which changes to your website, search presence or campaigns should come first."
+        actions={[
+          { href: "/consultation/", label: "Discuss your growth plan" },
+          { href: "/results/", label: "Explore client work" },
+        ]}
+      />
     </main>
   );
 }

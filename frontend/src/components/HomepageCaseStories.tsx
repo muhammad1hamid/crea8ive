@@ -14,7 +14,6 @@ export default function HomepageCaseStories() {
     category: `${study.industry} · ${study.market}`,
     status: study.statusLabel,
     description: study.eyebrow,
-    tags: study.serviceTags.slice(0, 3),
     caseHref: study.primaryHref,
     liveHref: study.secondaryHref,
     screen: screens[study.id],

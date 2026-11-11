@@ -20,6 +20,7 @@ export interface NotchedProjectCardProps {
   accent?: string;
   accentForeground?: string;
   className?: string;
+  external?: boolean;
 }
 
 /** A linked editorial cover with a rounded corner cutout for its action. */
@@ -38,6 +39,7 @@ export function NotchedProjectCard({
   accent = "#ff6801",
   accentForeground = "#130902",
   className,
+  external = false,
 }: NotchedProjectCardProps) {
   const cardStyle = {
     "--notch-surface": surface,
@@ -46,7 +48,7 @@ export function NotchedProjectCard({
   } as CSSProperties;
 
   return (
-    <Link href={href} className={cn(styles.card, className)} style={cardStyle}>
+    <Link href={href} className={cn(styles.card, className)} style={cardStyle} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}>
       <span className={styles.coverFrame}>
         <span className={styles.cover}>
           <Image

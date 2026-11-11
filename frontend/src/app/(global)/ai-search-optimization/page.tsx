@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
-import { ServiceConsultingContext } from '@/components/ConsultingContext';
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { ServiceConsultingContext } from "@/components/ConsultingContext";
+import { ConnectedJourneyCard } from "@/components/HomepageConnectedJourney";
+import { DeliveryProcess } from "@/components/HomepageDeliveryProcess";
+import { InsightsSection } from "@/components/HomepageEditorial";
+import { FaqSection } from "@/components/HomepageFaq";
+import actionStyles from "@/components/homepage-final-cta.module.css";
+import { ResourceChecklist, ResourceClosing, ResourceHeading, ResourceHero } from "@/components/resource/ResourcePage";
+import resource from "@/components/resource/resource-page.module.css";
+import serviceStyles from "@/components/resource/service-revamp.module.css";
 import { AI_SEARCH_FAQS, AUTHORITY_TOPICS } from "@/lib/authority-data";
 import { BUSINESS_DETAILS, SITE_URL } from "@/lib/site-config";
+import styles from "./ai-search.module.css";
 
 const PAGE_URL = `${SITE_URL}/ai-search-optimization/`;
 const LAST_UPDATED_ISO = "2026-09-09";
@@ -89,6 +99,30 @@ const AI_SEARCH_SERVICE_FACTS = [
     value: "Connect AI visibility work to consultation, service pages, pricing, tools, and lead capture instead of treating it as a separate content exercise.",
   },
 ] as const;
+
+const factIcons = ["01-discover", "02-explore", "03-trust", "04-enquire"];
+const processArt = ["understand-chameleon", "plan-chess", "build-launch-rocket", "learn-improve-owl"];
+const topicIcons = ["02-seo-ai", "01-strategy", "02-seo-ai", "05-paid-ads", "06-automation", "03-websites"];
+
+const evidenceSignals = [
+  "Consistent organization, local business, website, service, article, person and breadcrumb schema.",
+  "Canonical founder and company pages that make the entity easy to identify.",
+  "Public llms.txt and pricing information for AI assistants and search tools.",
+  "Direct answers supported by strategy, examples and FAQs.",
+  "Visible contact, legal, pricing, location and service information.",
+];
+
+const firstReview = [
+  "Current search, page and entity signals that can be verified.",
+  "Priority fixes for service pages, supporting content and structured data.",
+  "An implementation order tied to leads, trust and discoverability.",
+];
+
+const articles = [
+  { href: "/blog/what-is-ai-search-optimization/", title: "What Is AI Search Optimization?", description: "A plain-English guide to the entities, evidence and technical signals that help search systems understand a business.", image: "/wp-content/uploads/2026/08/what-is-ai-search-optimization-blog-thumbnail-ai-regenerated-v4.webp", topic: "AI search" },
+  { href: "/blog/aeo-vs-seo/", title: "AEO vs SEO", description: "See what answer-first search changes and how it works alongside traditional SEO.", image: "/wp-content/uploads/2026/08/aeo-vs-seo-blog-thumbnail-ai-regenerated-v4.webp", topic: "AEO" },
+  { href: "/blog/geo-vs-seo/", title: "GEO vs SEO", description: "Compare generative-engine optimisation with SEO and decide where citation readiness fits into your plan.", image: "/wp-content/uploads/2026/08/geo-vs-seo-blog-thumbnail-ai-regenerated-v4.webp", topic: "GEO" },
+];
 
 export const metadata: Metadata = {
   title: { absolute: "AI Search Optimization Agency in Pakistan | Crea8iv Media" },
@@ -188,255 +222,144 @@ function JsonLd() {
 
 export default function AiSearchOptimizationPage() {
   return (
-    <div className="native-page">
+    <main className={resource.page}>
       <JsonLd />
-      <section className="px-6 pb-16 pt-36 lg:px-10 lg:pt-44">
-        <div className="mx-auto max-w-[1120px]">
-          <nav className="mb-8 flex flex-wrap items-center gap-2 font-orbitron text-[10px] uppercase tracking-[0.16em] text-white/45" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-brand-300">Home</Link>
-            <span>/</span>
-            <span className="text-white/72">AI Search Optimization</span>
-          </nav>
+      <ResourceHero
+        id="ai-search-title"
+        breadcrumb="AI Search Optimization"
+        eyebrow="AEO, GEO, LLMO and Entity SEO"
+        heading={<>AI Search Optimization <em>for businesses in Pakistan.</em></>}
+        intro="Make your business easier for search engines and AI assistants to understand, summarise and cite accurately. We start with clear first-party answers, consistent business facts, structured data and evidence people can verify."
+        note={<>Last updated <time dateTime={LAST_UPDATED_ISO}>{LAST_UPDATED_LABEL}</time></>}
+        art={{ src: "/img/homepage/service-orbit/02-seo-ai.webp", alt: "A magnifying glass, search bar and AI chip representing search visibility", width: 512, height: 512, cutout: true }}
+        actions={[
+          { href: "/tools/ai-visibility-checker/", label: "Run AI visibility check" },
+          { href: "#readiness", label: "Explore readiness checks" },
+        ]}
+      />
 
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
-            <div>
-              <p className="lux-eyebrow mb-5">AEO, GEO, LLMO and Entity SEO</p>
-              <h1 className="font-syne text-[clamp(2.45rem,5.7vw,5.6rem)] font-bold leading-[0.97] text-white">
-                AI Search Optimization for Businesses in Pakistan
-              </h1>
-              <p className="mt-7 max-w-[780px] font-inter text-lg leading-8 text-white/72">
-                AI search optimization helps businesses become easier for search engines and AI
-                assistants to understand, summarize, and cite accurately. Crea8iv Media approaches
-                this through factual first-party content, entity SEO, structured data, answer-ready
-                pages, internal linking, and consistent brand evidence.
-              </p>
-              <p className="mt-5 max-w-[780px] font-inter text-base leading-8 text-white/66">
-                The objective is not to manipulate AI systems. The objective is to make public
-                information clearer, more useful, and more verifiable for people and machines.
-              </p>
-              <p className="mt-5 font-orbitron text-[11px] uppercase tracking-[0.16em] text-white/45">
-                Last updated: {LAST_UPDATED_LABEL}
-              </p>
-            </div>
-
-            <aside className="lux-card p-6">
-              <p className="font-orbitron text-[11px] uppercase tracking-[0.18em] text-brand-300">Systems Covered</p>
-              <ul className="mt-5 space-y-3">
-                {SYSTEMS.map((system) => (
-                  <li key={system} className="flex gap-3 font-inter text-sm leading-6 text-white/72">
-                    <span className="text-[#FF6801]">-</span>
-                    <span>{system}</span>
-                  </li>
-                ))}
-              </ul>
-            </aside>
+      <section className={`${resource.section} ${resource.band}`} aria-labelledby="ai-search-scope">
+        <div className={resource.inner}>
+          <ResourceHeading
+            id="ai-search-scope"
+            eyebrow="Direct answer"
+            heading={<>What does AI search optimisation <em>include?</em></>}
+            intro="It connects entity SEO, structured data, answer-first content, machine-readable service information, internal links and proof. Together these make it easier to understand what a business offers, who it serves, why it is credible and how buyers can contact it."
+          />
+          <div className={styles.systems}>
+            <h3>Systems covered</h3>
+            <ul>{SYSTEMS.map((system) => <li key={system}>{system}</li>)}</ul>
           </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-12 lg:px-10">
-        <div className="mx-auto max-w-[1120px]">
-          <p className="lux-eyebrow mb-4">Direct Answer</p>
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-start">
-            <div>
-              <h2 className="font-orbitron text-2xl font-bold text-white">What does AI search optimization include?</h2>
-              <p className="mt-4 font-inter text-base leading-7 text-white/70">
-                AI search optimization includes entity SEO, structured data, answer-first content,
-                machine-readable service information, internal linking, proof signals, and conversion
-                paths that help search engines and AI assistants understand what a business offers,
-                who it serves, why it is credible, and how buyers should contact it.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Link href="/tools/ai-visibility-checker/" className="hero-chip rounded-full border border-[#FF6801]/50 bg-[#1a0b02]/60 px-4 py-2.5 text-sm text-white/90 hover:border-[#FF6801]">
-                  Run AI visibility check
-                </Link>
-                <Link href="/consultation/" className="hero-chip rounded-full border border-white/20 bg-white/[0.04] px-4 py-2.5 text-sm text-white/90 hover:border-[#FF6801]/70">
-                  Book consultation
-                </Link>
-              </div>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {AI_SEARCH_SERVICE_FACTS.map((fact) => (
-                <div key={fact.label} className="lux-card p-5">
-                  <h3 className="font-orbitron text-[12px] uppercase tracking-[0.16em] text-brand-300">{fact.label}</h3>
-                  <p className="mt-3 font-inter text-sm leading-6 text-white/66">{fact.value}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-12 lg:px-10">
-        <div className="mx-auto max-w-[1120px]">
-          <p className="lux-eyebrow mb-4">How It Works</p>
-          <h2 className="font-orbitron text-2xl font-bold text-white">The AI visibility operating model</h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            {WORKFLOW.map((item) => (
-              <div key={item.title} className="lux-card p-6">
-                <h3 className="font-orbitron text-lg font-semibold text-white">{item.title}</h3>
-                <p className="mt-3 font-inter text-sm leading-7 text-white/66">{item.body}</p>
-              </div>
+          <ol className={resource.cards} data-columns="4">
+            {AI_SEARCH_SERVICE_FACTS.map(({ label, value }, index) => (
+              <ConnectedJourneyCard key={label} title={label} description={value} image={`/img/homepage/connected-journey/${factIcons[index]}.webp`} number={index + 1} containedIcon />
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
-      <section className="px-6 py-12 lg:px-10">
-        <div className="mx-auto max-w-[1120px]">
-          <p className="lux-eyebrow mb-4">Service Scope</p>
-          <h2 className="font-orbitron text-2xl font-bold text-white">What Crea8iv Media builds for AI search readiness</h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            {AUTHORITY_TOPICS.map((topic) => (
-              <Link key={topic.title} href={topic.href} className="lux-card block p-6 transition hover:border-[#FF6801]/50">
-                <h3 className="font-orbitron text-base font-semibold text-white">{topic.title}</h3>
-                <p className="mt-3 font-inter text-sm leading-6 text-white/64">{topic.description}</p>
-              </Link>
+      <DeliveryProcess
+        id="ai-search-process"
+        headingId="ai-search-process-title"
+        eyebrow="How it works"
+        heading={<>Make the facts <em>easier to find and verify.</em></>}
+        intro="Start with consistent business information. Then connect clear answers, matching schema and evidence that can be reviewed over time."
+        steps={WORKFLOW.map(({ title, body }, index) => ({ title, description: body, image: processArt[index], alt: "" }))}
+        mobileSequence={{ label: "Structured data setup", steps: ["Choose the relevant schema", "Match visible facts", "Link stable identifiers", "Validate the markup"] }}
+      />
+
+      <section id="readiness" className={resource.section} aria-labelledby="ai-readiness-title">
+        <div className={resource.inner}>
+          <ResourceHeading
+            id="ai-readiness-title"
+            eyebrow="AI visibility audit"
+            heading={<>Find the gaps <em>worth fixing first.</em></>}
+            intro="Check whether search systems can identify the business, understand its services, extract useful answers and connect claims to visible evidence."
+          />
+          <ol className={styles.readiness}>
+            {READINESS_CHECKS.map(({ title, body, href, cta }, index) => (
+              <li key={title}>
+                <span className={styles.number} aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+                <div><h3>{title}</h3><p>{body}</p><Link href={href} className={resource.textLink}>{cta} <ArrowUpRight size={17} aria-hidden="true" /></Link></div>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
-      <section className="px-6 py-12 lg:px-10">
-        <div className="mx-auto max-w-[920px]">
-          <p className="lux-eyebrow mb-4">Machine-Readable Trust</p>
-          <h2 className="font-orbitron text-2xl font-bold text-white">Authority signals this site maintains</h2>
-          <ul className="mt-6 space-y-4 font-inter text-base leading-7 text-white/70">
-            <li>Consistent organization, local business, website, service, article, person, and breadcrumb schema.</li>
-            <li>Canonical founder and company pages for entity disambiguation.</li>
-            <li>Public `llms.txt` and pricing information for AI assistants and agentic search tools.</li>
-            <li>Content pages that answer direct questions before expanding into strategy, examples, and FAQs.</li>
-            <li>Visible contact, legal, pricing, location, and service information for trust and verification.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="px-6 py-12 lg:px-10">
-        <div className="mx-auto max-w-[1120px]">
-          <p className="lux-eyebrow mb-4">AI Visibility Audit</p>
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
-            <div>
-              <h2 className="font-orbitron text-2xl font-bold text-white">What should a Pakistan business fix first?</h2>
-              <p className="mt-4 font-inter text-base leading-7 text-white/66">
-                A practical AI search audit should first verify whether AI systems can identify the
-                business, understand the service scope, extract buyer-ready answers, and connect
-                claims to visible proof. Crea8iv Media prioritizes fixes that improve both search
-                visibility and lead quality.
-              </p>
-            </div>
-            <div className="grid gap-4">
-              {READINESS_CHECKS.map((item) => (
-                <Link key={item.title} href={item.href} className="lux-card block p-6 transition hover:border-[#FF6801]/50">
-                  <h3 className="font-orbitron text-[15px] font-semibold text-white">{item.title}</h3>
-                  <p className="mt-3 font-inter text-sm leading-7 text-white/64">{item.body}</p>
-                  <span className="mt-4 inline-flex font-orbitron text-[11px] uppercase tracking-[0.14em] text-brand-300">
-                    {item.cta}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-white/[0.08] bg-[#080706] px-6 py-12 lg:px-10">
-        <div className="mx-auto grid max-w-[1120px] gap-8 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
-          <div>
-            <p className="lux-eyebrow mb-4">Start With Evidence</p>
-            <h2 className="font-orbitron text-2xl font-bold text-white">Plan an AI search project around the gaps that affect visibility</h2>
-            <p className="mt-4 max-w-[720px] font-inter text-base leading-7 text-white/66">
-              An AI visibility audit should show what search systems can already understand about the business, where the evidence is weak, and which commercial pages need the clearest next-step path. It is a practical starting point before committing to ongoing content, technical, or entity work.
-            </p>
-          </div>
-          <div className="lux-card p-6">
-            <p className="font-orbitron text-[11px] uppercase tracking-[0.18em] text-brand-300">A useful first review</p>
-            <ul className="mt-5 space-y-3 font-inter text-sm leading-6 text-white/70">
-              <li>Current search, page, and entity signals that can be verified.</li>
-              <li>Priority fixes for service pages, supporting content, and structured data.</li>
-              <li>A focused implementation order tied to leads, trust, and discoverability.</li>
-            </ul>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Link href="/contact/" className="hero-chip rounded-full border border-[#FF6801]/50 bg-[#1a0b02]/60 px-4 py-2.5 text-sm text-white/90 hover:border-[#FF6801]">
-                Request AI Visibility Audit
-              </Link>
-              <Link href="/pricing/" className="hero-chip rounded-full border border-white/20 bg-white/[0.04] px-4 py-2.5 text-sm text-white/90 hover:border-[#FF6801]/70">
-                View pricing
-              </Link>
-              <Link href="/results/" className="hero-chip rounded-full border border-white/20 bg-white/[0.04] px-4 py-2.5 text-sm text-white/90 hover:border-[#FF6801]/70">
-                View results
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-white/[0.08] bg-[#080706] px-6 py-12 lg:px-10">
-        <div className="mx-auto max-w-[1120px]">
-          <p className="lux-eyebrow mb-4">Supporting Reading</p>
-          <div className="flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
-            <div className="max-w-[760px]">
-              <h2 className="font-orbitron text-2xl font-bold text-white">Recent articles that strengthen this AI search cluster</h2>
-              <p className="mt-4 font-inter text-base leading-7 text-white/66">
-                Internal links work best when service pages and supporting articles reinforce the same entity, trust, and conversion signals.
-              </p>
-            </div>
-            <Link href="/blog/" className="portfolio-text-link">
-              Browse all insights
-            </Link>
-          </div>
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            {[
-              {
-                href: "/blog/what-is-ai-search-optimization/",
-                title: "What Is AI Search Optimization?",
-                body: "Start with a plain-English explanation of the entities, evidence, content, and technical signals that make AI visibility possible.",
-              },
-              {
-                href: "/blog/aeo-vs-seo/",
-                title: "AEO vs SEO",
-                body: "See what answer-first search changes, what classic SEO still controls, and how both systems work together.",
-              },
-              {
-                href: "/blog/geo-vs-seo/",
-                title: "GEO vs SEO",
-                body: "Compare generative-engine optimization with SEO and decide where AI citation readiness belongs in your growth plan.",
-              },
-            ].map((item) => (
-              <Link key={item.href} href={item.href} className="lux-card block p-6 transition hover:border-[#FF6801]/50">
-                <h3 className="font-orbitron text-lg font-semibold text-white">{item.title}</h3>
-                <p className="mt-3 font-inter text-sm leading-7 text-white/64">{item.body}</p>
-              </Link>
+      <section className={`${resource.section} ${resource.band}`} aria-labelledby="ai-topics-title">
+        <div className={resource.inner}>
+          <ResourceHeading
+            id="ai-topics-title"
+            eyebrow="Service scope"
+            heading={<>Connect AI visibility <em>to the wider growth plan.</em></>}
+            intro="Explore the related services and resources that support discovery, measurement and follow-up."
+          />
+          <ol className={`${resource.cards} ${styles.topicCards}`} data-columns="3">
+            {AUTHORITY_TOPICS.map(({ title, description, href }, index) => (
+              <ConnectedJourneyCard key={title} title={title} description={description} image={`/img/homepage/service-orbit/${topicIcons[index]}.webp`} number={index + 1} containedIcon>
+                <Link href={href} className={resource.textLink}>Explore {title} <ArrowUpRight size={16} aria-hidden="true" /></Link>
+              </ConnectedJourneyCard>
             ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className={resource.section} aria-labelledby="ai-evidence-title">
+        <div className={resource.inner}>
+          <ResourceHeading
+            id="ai-evidence-title"
+            eyebrow="Machine-readable trust"
+            heading={<>Keep the sources <em>clear and consistent.</em></>}
+            intro="These are the authority signals this site maintains so people and search systems can check the same information."
+          />
+          <ResourceChecklist items={evidenceSignals} columns={2} />
+          <div className={styles.auditLinks}>
+            <Link href="/case-studies/stw-movers-barcelona/" className={resource.textLink}>STW Movers: search architecture and traveller answers <ArrowUpRight size={17} aria-hidden="true" /></Link>
           </div>
         </div>
       </section>
 
-      <section className="px-6 pb-24 pt-12 lg:px-10">
-        <div className="mx-auto max-w-[860px]">
-          <p className="lux-eyebrow mb-4">AI Search FAQ</p>
-          <h2 className="font-orbitron text-2xl font-bold text-white">Frequently Asked Questions</h2>
-          <div className="mt-6 space-y-4">
-            {AI_SEARCH_FAQS.map((faq) => (
-              <div key={faq.q} className="lux-card p-6">
-                <h3 className="font-orbitron text-[15px] font-semibold text-white">{faq.q}</h3>
-                <p className="mt-2 font-inter text-sm leading-7 text-white/66">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/case-studies/stw-movers-barcelona/" className="inline-flex min-h-11 items-center text-[var(--icon-color)] underline underline-offset-4">
-              STW Movers: search architecture and traveller answers
-            </Link>
-            <Link href="/contact/" className="hero-chip rounded-full border border-[#FF6801]/50 bg-[#1a0b02]/60 px-5 py-3 text-sm text-white/90 hover:border-[#FF6801]">
-              Request AI Visibility Audit
-            </Link>
-            <Link href={`mailto:${BUSINESS_DETAILS.email}`} className="hero-chip rounded-full border border-white/20 bg-white/[0.04] px-5 py-3 text-sm text-white/90 hover:border-[#FF6801]/70">
-              Email Crea8iv Media
-            </Link>
+      <section className={`${resource.section} ${resource.band}`} aria-labelledby="ai-first-review">
+        <div className={resource.inner}>
+          <ResourceHeading
+            id="ai-first-review"
+            eyebrow="Start with evidence"
+            heading={<>Agree an implementation order <em>before committing.</em></>}
+            intro="Use an audit to see what is already clear, where evidence is weak and which commercial pages need a better next step."
+          />
+          <ResourceChecklist items={firstReview} columns={2} />
+          <div className={styles.auditLinks}>
+            <Link href="/consultation/" className={actionStyles.primary}>Book consultation <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <Link href="/pricing/" className={resource.textLink}>View pricing <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <Link href="/results/" className={resource.textLink}>View results <ArrowUpRight size={17} aria-hidden="true" /></Link>
           </div>
         </div>
       </section>
-      <ServiceConsultingContext discipline="search" />
-    </div>
+
+      <InsightsSection id="ai-search-insights" eyebrow="Supporting reading" issue="AI search" heading={<>Learn how <em>AI search and SEO fit together.</em></>} intro="Explore the differences between AI search, answer engines and traditional SEO." linkLabel="Browse all insights" articles={articles} />
+
+      <FaqSection
+        id="ai-search-faq"
+        headingId="ai-search-faq-title"
+        eyebrow="AI search FAQ"
+        heading={<>Frequently asked <em>questions.</em></>}
+        description="What AI search optimisation means, how it relates to SEO and what makes a source easier to cite."
+        items={AI_SEARCH_FAQS.map(({ q, a }) => ({ question: q, answer: a }))}
+        centered
+      />
+
+      <div className={`${resource.inner} ${serviceStyles.consulting}`}><ServiceConsultingContext discipline="search" /></div>
+
+      <ResourceClosing
+        id="ai-search-next-step"
+        heading={<>Plan your <em>AI visibility audit.</em></>}
+        intro="Share your website and the questions buyers ask. We’ll discuss which pages, evidence and technical checks should come first."
+        actions={[
+          { href: "/contact/", label: "Request AI Visibility Audit" },
+          { href: `mailto:${BUSINESS_DETAILS.email}`, label: "Email Crea8iv Media" },
+        ]}
+      />
+    </main>
   );
 }

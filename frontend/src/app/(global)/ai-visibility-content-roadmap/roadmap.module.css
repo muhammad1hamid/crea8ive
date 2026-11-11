@@ -1,0 +1,26 @@
+.assets > li { display: flex; flex-direction: column; }
+.assets:has(details[open]) { align-items: start; }
+.assetContext { margin-top: auto; padding-top: 16px; }
+
+.assetType, .query dt {
+  margin: 0;
+  color: var(--resource-accent);
+  font-size: 13px;
+  font-weight: 700 !important;
+  line-height: 1.5;
+}
+
+.query { margin: 10px 0 0; }
+.query dd {
+  margin: 3px 0 0;
+  color: var(--resource-copy);
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.supportLinks { margin: 0; padding: 0; list-style: none; }
+.supportLinks a { padding-block: 6px; }
+.supportLinks a span { min-width: 0; overflow-wrap: anywhere; }
+
+.planLink { display: flex; justify-content: center; margin-top: 18px; }

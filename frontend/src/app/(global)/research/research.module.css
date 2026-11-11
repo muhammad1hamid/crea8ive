@@ -1,0 +1,69 @@
+.objective {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  max-width: 1080px;
+  margin: 28px auto 0;
+  padding: 1px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--resource-line);
+  list-style: none;
+}
+
+.objective li {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 16px 10px;
+  background: var(--resource-surface);
+  color: var(--resource-ink);
+  font-size: 15px;
+  font-weight: 700 !important;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.objective li span { color: var(--resource-accent); font-size: 12px; font-variant-numeric: tabular-nums; }
+.pillars > li { display: flex; flex-direction: column; }
+.pillars a { align-self: flex-start; margin-top: auto; padding-top: 6px; }
+
+.studyDetails { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--resource-line); }
+.studyStatus {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid var(--resource-line);
+  border-radius: 999px;
+  color: var(--resource-accent);
+  font-size: 12px;
+  font-weight: 700 !important;
+}
+
+.studyDetails p { margin: 10px 0 0; color: var(--resource-copy); font-size: 15px; line-height: 1.6; }
+.studyDetails strong { display: block; margin-bottom: 3px; color: var(--resource-ink); }
+
+.evidenceLayout {
+  display: grid;
+  gap: clamp(24px, 4vw, 54px);
+  max-width: 1060px;
+  margin: clamp(26px, 4vw, 46px) auto 0;
+}
+
+.evidenceLayout h3 { margin: 0; font-size: 22px; font-weight: 700 !important; line-height: 1.3; }
+.assetLinks { margin: 16px 0 0; padding: 0; list-style: none; }
+.assetLinks li { border-top: 1px solid var(--resource-line); }
+.assetLinks a { display: flex; justify-content: space-between; padding-block: 12px; }
+
+@media (min-width: 540px) {
+  .objective { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (min-width: 768px) {
+  .evidenceLayout { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+  .objective { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+}

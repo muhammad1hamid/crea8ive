@@ -12,7 +12,7 @@ const compactBenefits: Record<string, string> = {
   "website-roi-calculator": "Estimate the value of turning more visits into enquiries.",
 };
 
-export default function ToolCard({ tool, compact = false }: { tool: ToolPage; compact?: boolean }) {
+export default function ToolCard({ tool, compact = false, iconImage }: { tool: ToolPage; compact?: boolean; iconImage?: string }) {
   const visual = getToolCardVisual(tool.slug);
   const Icon = { SEO: Search, "AI Visibility": Sparkles, "Local SEO": MapPin, Ads: Calculator, Website: Globe, ROI: Calculator, Healthcare: HeartPulse }[tool.category] || CodeXml;
 
@@ -36,10 +36,12 @@ export default function ToolCard({ tool, compact = false }: { tool: ToolPage; co
       </div>}
       <div className="tool-card-body flex flex-1 flex-col p-5">
       <div className="flex items-start justify-between gap-4">
-        <span className="tone-icon">
-          <Icon className="h-6 w-6" aria-hidden="true" />
-        </span>
-        <span className="rounded-full border border-white/10 px-3 py-1 font-orbitron text-[9px] uppercase tracking-[0.15em] text-white/54">
+        {iconImage ? (
+          <Image src={iconImage} alt="" width={84} height={84} sizes="84px" className="shrink-0 object-contain" data-tool-art />
+        ) : (
+          <span className="tone-icon"><Icon className="h-6 w-6" aria-hidden="true" /></span>
+        )}
+        <span data-tool-category className="rounded-full border border-white/10 px-3 py-1 font-orbitron text-[9px] uppercase tracking-[0.15em] text-white/54">
           {tool.category}
         </span>
       </div>

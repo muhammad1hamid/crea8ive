@@ -1,0 +1,12 @@
+.directory > li { display: flex; min-width: 0; flex-direction: column; }
+.card {
+  --notched-ink: var(--resource-ink);
+  --notched-copy: var(--resource-copy);
+  --notched-tag-line: var(--resource-line);
+  --notched-arrow: var(--resource-surface);
+  --notched-arrow-ink: var(--resource-ink);
+  flex: 1;
+}
+
+.card:is(:hover, :focus-visible) h3 { color: var(--resource-accent); }
+.logoCover img { padding: 20px; background: #f1e7da; object-fit: contain; }

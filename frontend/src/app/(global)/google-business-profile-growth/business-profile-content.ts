@@ -1,0 +1,136 @@
+import type { ServiceRevampConfig } from "@/components/resource/ServiceRevamp";
+import { BUSINESS_DETAILS } from "@/lib/site-config";
+
+export const businessProfileContent: ServiceRevampConfig = {
+  slug: "google-business-profile-growth",
+  hero: {
+    breadcrumb: "Google Business Profile",
+    eyebrow: "Local SEO · Rawalpindi & Islamabad",
+    title: "Make your business easier",
+    accent: "to find on Google Maps.",
+    intro: "Give nearby buyers the details they need to choose you. We optimise your Google Business Profile with accurate services, helpful photos and updates, a review process and clear ways to call, visit or enquire.",
+    image: "/img/services/ad-concepts/google-business-profile-ad-concept.webp",
+    alt: "A map pin surrounded by directions, review and call icons",
+  },
+  actions: [{ href: "#cta", label: "Discuss My Profile" }, { href: "#pricing", label: "See Packages" }],
+  sections: [
+    {
+      id: "google-business-profile-growth-visual-system",
+      eyebrow: "Local growth system",
+      title: "Give local buyers",
+      accent: "a profile they can trust.",
+      intro: "In Rawalpindi, Islamabad, Bahria Town and DHA, customers use Maps to compare services, photos, reviews and opening information before they call or visit.",
+      columns: 4,
+      entries: [
+        { title: "Complete profile audit", description: "Review categories, services, attributes and the profile description for accuracy and gaps.", icon: "connected-journey/01-discover" },
+        { title: "Locally relevant descriptions", description: "Write useful business and service descriptions around the terms local customers search for.", icon: "connected-journey/02-explore" },
+        { title: "Fresh profile photos", description: "Add clear, relevant photos of your location, services and work, with accurate local details.", icon: "service-orbit/04-branding" },
+        { title: "Google posts", description: "Share timely offers, updates and events on the posting schedule agreed for your plan.", icon: "connected-journey/04-enquire" },
+        { title: "Review strategy", description: "Make it easy for customers to share honest feedback with a review link and a simple request process.", icon: "connected-journey/03-trust" },
+        { title: "Profile Q&A", description: "Answer practical buyer questions so customers can check the details before getting in touch.", icon: "connected-journey/04-enquire" },
+        { title: "Business listings", description: "Check that your business name, address and phone are consistent across relevant directories.", icon: "service-orbit/02-seo-ai" },
+        { title: "Monthly reporting", description: "Review available calls, direction requests, profile views and engagement data to plan what to improve.", icon: "connected-journey/05-follow-through" },
+      ],
+    },
+    {
+      id: "profile-industries",
+      anchor: "who-it-helps",
+      eyebrow: "Who it helps",
+      title: "Show up when",
+      accent: "local buyers compare.",
+      columns: 4,
+      numbered: false,
+      entries: [
+        { title: "Restaurants & cafés", description: "Help diners find your hours, offers and location in competitive areas like Bahria Town, DHA, F-10 and G-10.", icon: "connected-journey/01-discover" },
+        { title: "Dental & aesthetic clinics", description: "Show services, reviews and booking information where patients search.", icon: "connected-journey/03-trust" },
+        { title: "Real estate agencies", description: "Make offices and local service coverage easier for property buyers to find.", icon: "founder-office/office-building" },
+        { title: "Interiors & architecture", description: "Show relevant work and make it easy to call or request a consultation.", icon: "service-orbit/04-branding" },
+        { title: "Law firms & consultancies", description: "Give prospects credible business details and clear contact options.", icon: "service-orbit/01-strategy" },
+        { title: "Stores & boutiques", description: "Help shoppers check the location, photos and opening hours before visiting.", icon: "connected-journey/02-explore" },
+        { title: "Salons & spas", description: "Support local discovery with service information, fresh photos and reviews.", icon: "connected-journey/04-enquire" },
+        { title: "Workshops & dealerships", description: "Make categories, directions and phone details clear for urgent searches.", icon: "founder-office/business-automation" },
+      ],
+    },
+  ],
+  process: {
+    title: "From profile audit",
+    accent: "to ongoing updates.",
+    intro: "Start with the profile and local competition, then keep the information useful and review the actions customers take.",
+    steps: [
+      { title: "Audit the profile", description: "Check your categories, services, hours, photos and contact details. Review competing profiles in your area." },
+      { title: "Plan the updates", description: "Agree which profile details, posts and review requests will help local buyers make a decision." },
+      { title: "Optimise the profile", description: "Update profile copy and information, organise fresh images and make calls, directions and enquiries easier to find." },
+      { title: "Review local actions", description: "Check profile activity, calls, views and direction requests, then use the results to plan the next updates." },
+    ],
+    sequence: ["Update business details", "Add services and photos", "Check contact paths", "Publish agreed updates"],
+  },
+  scope: {
+    unit: "/ month",
+    detail: "Choose the level of support based on your existing profile, local competition and the work you need each month.",
+    fit: "For businesses that rely on nearby customers, calls, visits, enquiries and a profile that stays current.",
+    improves: ["Maps visibility", "Review quality", "Profile activity", "Local service information", "Call and direction actions"],
+    firstWeek: ["Audit your profile and categories", "Review local competitors", "Plan your posting and review rhythm"],
+    auditLabel: "Local growth system",
+    packages: [
+      { title: "Basic Growth Setup", price: "PKR 15,000 / month", description: "Profile setup or cleanup with core optimisation and a regular posting rhythm.", features: ["Profile setup or cleanup", "Core optimisation", "4 posts per month", "Basic local signal improvements"] },
+      { title: "Full Optimization", price: "PKR 25,000 / month", description: "Ongoing profile work with weekly updates, review support and monthly reporting.", features: ["Full optimisation", "Weekly posts", "Review generation system", "Monthly reporting"] },
+      { title: "Bundle Level", price: "Included in eligible bundles", description: "Available in Business Boost and Domination bundles for broader local growth support.", features: ["Broader growth stack", "Integrated local strategy", "Higher-touch support", "Multi-channel alignment"] },
+    ],
+  },
+  articles: [
+    { href: "/blog/google-business-profile-for-restaurants-in-islamabad-full-setup-guide/", title: "Google Business Profile for Restaurants in Islamabad: Full Setup Guide", description: "A practical example of profile setup for local restaurant searches.", topic: "Local SEO", image: "/wp-content/uploads/2026/07/google-business-profile-for-restaurants-in-islamabad-full-setup-guide-premium-cover.webp" },
+    { href: "/blog/how-dentists-in-rawalpindi-can-rank-on-google-maps/", title: "How Dentists in Rawalpindi Can Rank on Google Maps", topic: "Google Maps", image: "/wp-content/uploads/2026/06/rank-google-maps-rawalpindi-islamabad-premium-cover.webp" },
+    { href: "/blog/how-restaurants-in-islamabad-can-get-more-google-reviews/", title: "How Restaurants in Islamabad Can Get More Google Reviews", topic: "Reviews", image: "/wp-content/uploads/2026/07/google-reviews-for-restaurants-in-islamabad-cover.webp" },
+  ],
+  resourceSpotlight: {
+    image: "/img/homepage/buyer-journey/01-find-brand-v2.webp",
+    description: "Review your Google Business Profile, local pages and the trust signals nearby customers look for before they get in touch.",
+    intro: "Check your local visibility, then use the guides to decide what to update first.",
+  },
+  links: [
+    {
+      href: "/blog/google-business-profile-optimization-checklist/",
+      label: "Google Business Profile checklist",
+      description: "Review categories, opening hours, reviews and contact details.",
+      icon: "/img/homepage/connected-journey/03-trust.webp",
+    },
+    {
+      href: "/blog/google-business-profile-optimization-checklist-for-restaurants-in-islamabad/",
+      label: "Restaurant profile checklist",
+      description: "Check profile quality, freshness and conversion signals for Islamabad restaurants.",
+      icon: "/img/services/local-profile-resources/restaurant-profile.webp",
+    },
+    {
+      href: "/blog/seo-cost-in-pakistan-what-businesses-should-actually-expect-to-pay/",
+      label: "SEO Cost in Pakistan: 2026 Pricing Guide",
+      description: "Compare local SEO scope, profile work and what affects the monthly cost.",
+      icon: "/img/services/local-profile-resources/seo-pricing.webp",
+    },
+    {
+      href: "/consultation/",
+      label: "Discuss strategy",
+      description: "Talk through your profile, service area and priorities.",
+      icon: "/img/homepage/service-orbit/01-strategy.webp",
+    },
+    {
+      href: "/tools/patient-retention-roi-calculator/",
+      label: "Patient retention ROI calculator",
+      description: "Estimate the appointment and revenue potential of reactivating inactive patients.",
+      icon: "/img/homepage/connected-journey/05-follow-through.webp",
+    },
+  ],
+  faqs: [
+    { question: "Can you optimise an existing Google Business Profile?", answer: "Yes. We review your profile structure, rewrite unclear information, update categories and photos, and plan how your team will handle posts and reviews." },
+    { question: "What if customers do not visit my business address?", answer: "We review the appropriate verification and service-area setup for your business. A business that serves customers at their location can keep its address hidden on the public profile where eligible." },
+    { question: "What affects how quickly the profile improves?", answer: "The existing profile, local competition and consistency of updates affect timing. Early improvements can take several weeks, and competitive categories such as restaurants and clinics can take longer." },
+  ],
+  closing: {
+    title: "Give nearby customers",
+    accent: "a clearer way to find you.",
+    intro: "Share your profile, service area and most important customer action. We’ll discuss the right setup or ongoing support.",
+    actions: [
+      { href: `https://wa.me/${BUSINESS_DETAILS.phone.replace(/\D/g, "")}?text=${encodeURIComponent("Hi Crea8iv Media, I’d like help with my Google Business Profile.")}`, label: "Optimise My Profile", newTab: true },
+      { href: "/contact/", label: "Request a proposal" },
+    ],
+  },
+};

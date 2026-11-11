@@ -5,7 +5,7 @@ import styles from "./case-story-stage.module.css";
 
 type StoryProject = {
   id: string; name: string; category: string; status: string; description: string;
-  tags: string[]; caseHref: string; liveHref?: string;
+  caseHref: string; liveHref?: string;
   screen: { src: string; alt: string; width: number; height: number };
 };
 
@@ -26,12 +26,9 @@ export default function CaseStoryStage({ projects }: { projects: StoryProject[] 
             <p className={styles.status}>{project.status}</p>
             <p className={styles.description}>{project.description}</p>
           </div>
-          <div className={styles.nextSteps}>
-            <ul className={styles.tags} aria-label={`${project.name} services`}>{project.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
-            <div className={styles.actions}>
-              <Link href={project.caseHref} className={styles.caseLink}>Case Study<ArrowUpRight size={17} aria-hidden="true" /></Link>
-              {project.liveHref && <a href={project.liveHref} target="_blank" rel="noopener noreferrer" className={styles.liveLink}>View Website<ArrowUpRight size={17} aria-hidden="true" /></a>}
-            </div>
+          <div className={styles.actions}>
+            <Link href={project.caseHref} className={styles.caseLink}>Case Study<ArrowUpRight size={17} aria-hidden="true" /></Link>
+            {project.liveHref && <a href={project.liveHref} target="_blank" rel="noopener noreferrer" className={styles.liveLink}>View Website<ArrowUpRight size={17} aria-hidden="true" /></a>}
           </div>
         </div>,
       }))} />

@@ -1,8 +1,47 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, BarChart3, CheckCircle2, FileText, Search } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { ConnectedJourneyCard } from "@/components/HomepageConnectedJourney";
+import { FaqSection } from "@/components/HomepageFaq";
+import { ResourceClosing, ResourceDetails, ResourceHeading, ResourceHero } from "@/components/resource/ResourcePage";
+import resourceStyles from "@/components/resource/resource-page.module.css";
 import { aiVisibilityMonitoringCadence, aiVisibilityTargets } from "@/lib/ai-visibility-targets";
 import { SITE_URL } from "@/lib/site-config";
+import styles from "./targets.module.css";
+
+const clusterIcons: Record<string, string> = {
+  "website-development-pakistan": "service-orbit/03-websites",
+  "local-city-growth": "connected-journey/01-discover",
+  "industry-growth-systems": "connected-journey/05-follow-through",
+  "software-ai-automation": "service-orbit/06-automation",
+  "local-seo-google-business-profile": "service-orbit/02-seo-ai",
+  "paid-ads-lead-generation": "service-orbit/05-paid-ads",
+  "branding-content-social": "service-orbit/04-branding",
+  "consultation-strategy": "service-orbit/01-strategy",
+};
+
+const cadence = [
+  { period: "Weekly", icon: "connected-journey/01-discover" },
+  { period: "Monthly", icon: "connected-journey/02-explore" },
+  { period: "Quarterly", icon: "connected-journey/05-follow-through" },
+].map(({ period, icon }) => ({
+  period,
+  icon,
+  tasks: aiVisibilityMonitoringCadence
+    .filter((task) => task.startsWith(`${period}: `))
+    .map((task) => task.slice(period.length + 2)),
+}));
+
+const targetFaqs = [
+  {
+    question: "What queries should Crea8iv Media track for AI visibility?",
+    answer: "Crea8iv Media should track website development, software development, AI automation, Google Business Profile, Meta Ads, Google Ads, branding, content, social media and industry-specific buyer queries in Pakistan.",
+  },
+  {
+    question: "How often should AI visibility be monitored?",
+    answer: "Priority queries should be checked weekly across search and AI answer surfaces, with monthly updates to weak pages, proof links, schema and supporting content.",
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: "AI Visibility Target Queries | Crea8iv Media" },
@@ -47,24 +86,11 @@ function JsonLd() {
       },
       {
         "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "What queries should Crea8iv Media track for AI visibility?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Crea8iv Media should track website development, software development, AI automation, Google Business Profile, Meta Ads, Google Ads, branding, content, social media and industry-specific buyer queries in Pakistan.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How often should AI visibility be monitored?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Priority queries should be checked weekly across search and AI answer surfaces, with monthly updates to weak pages, proof links, schema and supporting content.",
-            },
-          },
-        ],
+        mainEntity: targetFaqs.map(({ question, answer }) => ({
+          "@type": "Question",
+          name: question,
+          acceptedAnswer: { "@type": "Answer", text: answer },
+        })),
       },
     ],
   };
@@ -74,119 +100,126 @@ function JsonLd() {
 
 export default function AiVisibilityTargetsPage() {
   return (
-    <main className="native-page relative isolate overflow-hidden bg-[#050505] text-white">
+    <main className={resourceStyles.page}>
       <JsonLd />
-      <section className="px-6 pb-14 pt-44 lg:px-10 lg:pb-20">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-5">
-            <Search className="h-3.5 w-3.5" aria-hidden="true" /> AI visibility query map
-          </p>
-          <h1 className="max-w-4xl font-orbitron text-[clamp(2.35rem,6vw,5.1rem)] font-bold leading-[1.03] tracking-normal text-white">
-            The search and AI answer targets Crea8iv Media should own.
-          </h1>
-          <p className="mt-6 max-w-3xl font-inter text-lg leading-8 text-white/70">
-            This page organizes the priority query clusters for Crea8iv Media across website development, software, ads, local visibility, content, branding, consultation and industry-specific growth systems in Pakistan.
-          </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Link href="/ai-visibility-targets.md" className="portfolio-button justify-center">
-              Read machine-readable map <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-            <Link
-              href="/ai-search-optimization/"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801]/70 hover:text-[#FF6801]"
-            >
-              AI search optimization <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      <ResourceHero
+        id="visibility-targets-title"
+        breadcrumb="AI Visibility Targets"
+        eyebrow="Crea8iv Media · AI visibility query map"
+        heading={<>Priority queries for <em>search and AI answers.</em></>}
+        intro="See which queries Crea8iv Media prioritises for websites, software, ads, local visibility, content, branding, consultation and industry growth in Pakistan."
+        art={{
+          src: "/img/homepage/buyer-journey/01-find-brand-v2.webp",
+          alt: "A magnifying glass highlights a local business among map pins",
+          width: 1120,
+          height: 800,
+        }}
+        actions={[
+          { href: "#visibility-clusters", label: "Browse query clusters" },
+          { href: "/ai-visibility-targets.md", label: "Read the query map" },
+        ]}
+      />
 
-      <section className="px-6 py-12 lg:px-10" aria-labelledby="clusters-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-4">Priority clusters</p>
-          <h2 id="clusters-heading" className="max-w-3xl font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-            Query groups, source pages and next content actions.
-          </h2>
-          <div className="mt-8 grid gap-5">
+      <section id="visibility-clusters" className={resourceStyles.section} aria-labelledby="clusters-heading">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="clusters-heading"
+            eyebrow="Priority clusters"
+            heading={<>Query groups, source pages <em>and next actions.</em></>}
+            intro="Each cluster shows the priority and primary page. Open its details for buyer intent, target queries, supporting links and planned updates."
+          />
+          <ol className={`${resourceStyles.cards} ${styles.clusters}`}>
             {aiVisibilityTargets.map((target, index) => (
-              <section key={target.slug} className="lux-card p-6">
-                <div className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
-                  <div>
-                    <div className="flex flex-wrap items-center gap-3">
-                      <span className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-white/35">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="rounded-full border border-[#FF6801]/35 bg-[#FF6801]/10 px-3 py-1 font-orbitron text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF6801]">
-                        {target.priority}
-                      </span>
+              <ConnectedJourneyCard
+                key={target.slug}
+                title={target.theme}
+                description={target.directAnswer}
+                image={`/img/homepage/${clusterIcons[target.slug] ?? "connected-journey/01-discover"}.webp`}
+                number={index + 1}
+                containedIcon
+              >
+                <div className={styles.clusterActions}>
+                  <span className={styles.priority}>{target.priority} priority</span>
+                  <Link href={target.primaryUrl} className={resourceStyles.textLink}>
+                    Open primary page <ArrowUpRight size={16} aria-hidden="true" />
+                  </Link>
+                </div>
+                <ResourceDetails label="Queries, sources and next actions">
+                  <div className={styles.detailsBody}>
+                    <div className={styles.fullWidth}>
+                      <h4>Buyer intent</h4>
+                      <p>{target.buyerIntent}</p>
                     </div>
-                    <h3 className="mt-4 font-orbitron text-2xl font-semibold leading-tight text-white">{target.theme}</h3>
-                    <p className="mt-4 font-inter text-sm leading-7 text-white/65">{target.directAnswer}</p>
-                    <Link href={target.primaryUrl} className="mt-6 inline-flex items-center gap-2 font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF6801]">
-                      Open primary page <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-                    </Link>
-                  </div>
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <div className="rounded-[18px] border border-white/10 bg-white/[0.035] p-4">
-                      <p className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-white/42">Target queries</p>
-                      <ul className="mt-4 space-y-3">
-                        {target.targetQueries.map((query) => (
-                          <li key={query} className="flex gap-2 font-inter text-sm leading-6 text-white/68">
-                            <BarChart3 className="mt-1 h-3.5 w-3.5 shrink-0 text-[#FF6801]" aria-hidden="true" />
-                            <span>{query}</span>
+                    <div>
+                      <h4>Target queries</h4>
+                      <ul>{target.targetQueries.map((query) => <li key={query}>{query}</li>)}</ul>
+                    </div>
+                    <div>
+                      <h4>Supporting pages</h4>
+                      <ul className={styles.supportLinks}>
+                        {target.supportingUrls.map(({ href, label }) => (
+                          <li key={href}>
+                            <Link href={href} className={resourceStyles.textLink}>{label} <ArrowUpRight size={15} aria-hidden="true" /></Link>
                           </li>
                         ))}
                       </ul>
                     </div>
-                    <div className="rounded-[18px] border border-white/10 bg-white/[0.035] p-4">
-                      <p className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-white/42">Supporting pages</p>
-                      <ul className="mt-4 space-y-3">
-                        {target.supportingUrls.map((item) => (
-                          <li key={item.href}>
-                            <Link href={item.href} className="inline-flex gap-2 font-inter text-sm leading-6 text-white/68 transition hover:text-[#FF6801]">
-                              <FileText className="mt-1 h-3.5 w-3.5 shrink-0 text-[#FF6801]" aria-hidden="true" />
-                              <span>{item.label}</span>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                    <div className={styles.fullWidth}>
+                      <h4>Next actions</h4>
+                      <ul>{target.nextActions.map((action) => <li key={action}>{action}</li>)}</ul>
                     </div>
                   </div>
-                </div>
-                <div className="mt-6 border-t border-white/10 pt-5">
-                  <p className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-white/42">Next actions</p>
-                  <ul className="mt-4 grid gap-3 md:grid-cols-3">
-                    {target.nextActions.map((action) => (
-                      <li key={action} className="flex gap-2 font-inter text-sm leading-6 text-white/64">
-                        <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-[#FF6801]" aria-hidden="true" />
-                        <span>{action}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </section>
+                </ResourceDetails>
+              </ConnectedJourneyCard>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
-      <section className="px-6 py-14 lg:px-10" aria-labelledby="cadence-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <div className="lux-card p-7 md:p-9">
-            <p className="lux-eyebrow mb-4">Monitoring cadence</p>
-            <h2 id="cadence-heading" className="font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-              The weekly and monthly operating rhythm.
-            </h2>
-            <div className="mt-8 grid gap-4 md:grid-cols-2">
-              {aiVisibilityMonitoringCadence.map((item) => (
-                <div key={item} className="rounded-[18px] border border-white/10 bg-white/[0.035] p-4 font-inter text-sm leading-7 text-white/66">
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
+      <section className={`${resourceStyles.section} ${resourceStyles.band}`} aria-labelledby="cadence-heading">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="cadence-heading"
+            eyebrow="Monitoring cadence"
+            heading={<>Check, update <em>and review.</em></>}
+            intro="The weekly, monthly and quarterly rhythm for monitoring visibility and keeping the supporting pages current."
+          />
+          <ol className={resourceStyles.cards} data-columns="3">
+            {cadence.map(({ period, icon, tasks }, index) => (
+              <ConnectedJourneyCard
+                key={period}
+                title={period}
+                description={tasks[0]}
+                image={`/img/homepage/${icon}.webp`}
+                number={index + 1}
+                containedIcon
+              >
+                {tasks.slice(1).map((task) => <p key={task}>{task}</p>)}
+              </ConnectedJourneyCard>
+            ))}
+          </ol>
         </div>
       </section>
+
+      <FaqSection
+        id="visibility-targets-faq"
+        headingId="visibility-targets-faq-title"
+        eyebrow="Monitoring questions"
+        heading={<>AI visibility <em>FAQs.</em></>}
+        description="What to track and how often to review it."
+        items={targetFaqs}
+        centered
+      />
+
+      <ResourceClosing
+        id="visibility-targets-sources"
+        heading={<>Keep the <em>query map handy.</em></>}
+        intro="Read the machine-readable query map or explore the AI search optimisation service."
+        actions={[
+          { href: "/ai-visibility-targets.md", label: "Read machine-readable map" },
+          { href: "/ai-search-optimization/", label: "AI search optimization" },
+        ]}
+      />
     </main>
   );
 }

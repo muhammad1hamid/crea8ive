@@ -1,8 +1,27 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowUpRight, CheckCircle2, ClipboardCheck } from "lucide-react";
+import { FaqSection } from "@/components/HomepageFaq";
+import { ResourceClosing, ResourceHeading, ResourceHero, ResourceLibraryCard } from "@/components/resource/ResourcePage";
+import resourceStyles from "@/components/resource/resource-page.module.css";
 import { playbookPages } from "@/lib/playbook-pages";
 import { SITE_URL } from "@/lib/site-config";
+
+const playbookIcons: Record<string, string> = {
+  "plan-business-website-pakistan": "service-orbit/03-websites",
+  "website-redesign-seo-migration-pakistan": "connected-journey/03-trust",
+  "plan-custom-software-mvp-pakistan": "service-orbit/06-automation",
+  "ai-visibility-business-website-pakistan": "service-orbit/02-seo-ai",
+};
+
+const playbookFaqs = [
+  {
+    question: "Which playbook should I start with?",
+    answer: "Start with the decision in front of you. Use website planning for a new build, the migration checklist for an existing site, MVP planning for custom software, or the AI visibility checklist to review how your site presents answers and evidence.",
+  },
+  {
+    question: "What does each playbook include?",
+    answer: "Each playbook gives you a step-by-step process, checks for each step, and links to supporting resources you can use to plan or verify the work.",
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: "Website and Software Playbooks Pakistan | Crea8iv Media" },
@@ -67,46 +86,73 @@ function JsonLd() {
 
 export default function PlaybooksPage() {
   return (
-    <main className="native-page relative isolate overflow-hidden bg-[#050505] text-white">
+    <main className={resourceStyles.page}>
       <JsonLd />
-      <section className="px-6 pb-16 pt-44 lg:px-10 lg:pb-20">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-5">
-            <ClipboardCheck className="h-3.5 w-3.5" aria-hidden="true" /> Playbook hub
-          </p>
-          <h1 className="max-w-4xl font-orbitron text-[clamp(2.4rem,6vw,5.2rem)] font-bold leading-[1.03] tracking-normal text-white">
-            Step-by-step digital growth playbooks for Pakistan businesses.
-          </h1>
-          <p className="mt-6 max-w-3xl font-inter text-lg leading-8 text-white/70">
-            These pages turn Crea8iv Media&apos;s website, software and AI visibility process into clear checklists:
-            what to plan, what to verify, what to avoid and which next step makes sense before spending on a build.
-          </p>
+      <ResourceHero
+        id="playbooks-title"
+        breadcrumb="Playbooks"
+        eyebrow="Crea8iv Media · Playbook library"
+        heading={<>Digital growth playbooks <em>for Pakistan businesses.</em></>}
+        intro="Use step-by-step checklists for websites, redesigns, software and AI visibility. See what to plan, what to verify and what to avoid before spending on a build."
+        art={{
+          src: "/img/homepage/service-orbit/01-strategy.webp",
+          alt: "A chess knight, compass and a route marked on a planning sheet",
+          width: 512,
+          height: 512,
+          cutout: true,
+        }}
+        actions={[
+          { href: "#playbook-library", label: "Browse playbooks" },
+          { href: "#playbooks-faq", label: "How to use them" },
+        ]}
+      />
+
+      <section id="playbook-library" className={`${resourceStyles.section} ${resourceStyles.band}`} aria-labelledby="playbook-library-title">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="playbook-library-title"
+            eyebrow="Project checklists"
+            heading={<>Find a playbook <em>for your next decision.</em></>}
+            intro="Plan a new build, protect search visibility during a redesign, scope a software MVP or improve how AI systems understand your website."
+          />
+          <ol className={`${resourceStyles.cards} ${resourceStyles.libraryCards}`}>
+            {playbookPages.map((page, index) => (
+              <ResourceLibraryCard
+                key={page.slug}
+                title={page.title}
+                description={page.summary}
+                image={`/img/homepage/${playbookIcons[page.slug] ?? "service-orbit/01-strategy"}.webp`}
+                number={index + 1}
+                category={page.eyebrow}
+                bestFor={page.bestFor.slice(0, 4)}
+                href={`/playbooks/${page.slug}/`}
+                action="Open playbook"
+                fitColumns={2}
+              />
+            ))}
+          </ol>
         </div>
       </section>
 
-      <section className="px-6 pb-20 lg:px-10">
-        <div className="mx-auto grid max-w-[1180px] gap-5 md:grid-cols-2">
-          {playbookPages.map((page) => (
-            <Link key={page.slug} href={`/playbooks/${page.slug}/`} className="lux-card group block h-full p-6 transition hover:border-[#FF6801]/50">
-              <ClipboardCheck className="h-6 w-6 text-[#FF6801]" aria-hidden="true" />
-              <p className="mt-5 font-orbitron text-[10px] font-bold uppercase tracking-[0.18em] text-[#FF6801]">{page.eyebrow}</p>
-              <h2 className="mt-3 font-orbitron text-xl font-semibold leading-tight text-white">{page.title}</h2>
-              <p className="mt-4 line-clamp-4 font-inter text-sm leading-7 text-white/64">{page.summary}</p>
-              <div className="mt-5 grid gap-2 sm:grid-cols-2">
-                {page.bestFor.slice(0, 4).map((fit) => (
-                  <div key={fit} className="flex gap-2 font-inter text-xs leading-5 text-white/52">
-                    <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#FF6801]" aria-hidden="true" />
-                    <span>{fit}</span>
-                  </div>
-                ))}
-              </div>
-              <span className="mt-6 inline-flex items-center gap-2 font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF6801]">
-                Open playbook <ArrowUpRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <FaqSection
+        id="playbooks-faq"
+        headingId="playbooks-faq-title"
+        eyebrow="Before you start"
+        heading={<>Using the <em>playbooks.</em></>}
+        description="Pick the checklist that fits the decision you are making."
+        items={playbookFaqs}
+        centered
+      />
+
+      <ResourceClosing
+        id="playbooks-next-step"
+        heading={<>Take your checklist <em>into the next conversation.</em></>}
+        intro="Use your playbook to discuss the scope of a project, or explore related service and industry answers."
+        actions={[
+          { href: "/consultation/", label: "Discuss your project" },
+          { href: "/answers/", label: "Browse answer briefs" },
+        ]}
+      />
     </main>
   );
 }

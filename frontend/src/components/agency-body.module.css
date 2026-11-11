@@ -26,9 +26,11 @@
 .story :global(.home-lux-heading) { font-size:36px; line-height:1.2; letter-spacing:0; }
 .story :global(.home-lux-eyebrow) { font-size:11px; letter-spacing:0; text-transform:none; }
 .story :global(.home-service-index), .story :global(.home-industry-number) { font-size:12px; opacity:.6; }
-.story :global(.home-logo-marquee) { padding-block:36px; }
+.story :global(.home-logo-marquee) { padding-block:32px; }
 .story :global(.home-logo-marquee .home-lux-heading) { font-size:28px; }
 .story :global(.home-logo-marquee .home-section-intro) { max-width:none; }
+.story :global(.home-logo-marquee .home-section-intro > p:last-child) { margin-top:8px; font-size:14px; line-height:1.55; }
+.story .clientWorkButton { min-height:44px; padding:8px 15px; font-size:11px; gap:8px; }
 .story :global(.home-logo-card) { box-shadow:none; }
 .story :global(.home-conversion-action) { box-shadow:none; background:var(--agency-raised); }
 .story .positioning :global(.home-premium-signal) {

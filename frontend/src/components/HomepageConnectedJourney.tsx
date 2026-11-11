@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import type { ReactNode } from "react";
 import ConnectedJourneyMotion from "./ConnectedJourneyMotion";
 import styles from "./homepage-connected-journey.module.css";
 
@@ -37,17 +38,64 @@ const stages = [
   },
 ];
 
+export function ConnectedJourneyCard({ title, description, image, imageAlt = "", number, children, containedIcon = false }: {
+  title: string;
+  description: string;
+  image: string;
+  imageAlt?: string;
+  number?: number;
+  children?: ReactNode;
+  containedIcon?: boolean;
+}) {
+  return (
+    <li className={containedIcon ? `${styles.card} ${styles.containedIcon}` : styles.card} data-journey-card>
+      <div className={styles.cardTop}>
+        {number !== undefined && <span className={styles.number} aria-hidden="true">{String(number).padStart(2, "0")}</span>}
+        <Image className={styles.icon} src={image} alt={imageAlt} width={512} height={512} sizes={containedIcon ? "76px" : "112px"} loading="lazy" />
+      </div>
+      <div className={styles.cardCopy}>
+        <h3>{title}</h3>
+        <span className={styles.accentLine} aria-hidden="true" />
+        <p>{description}</p>
+        {children}
+      </div>
+    </li>
+  );
+}
+
 export default function HomepageConnectedJourney() {
   return (
-    <section id="home-how-it-connects" data-home-journey className={styles.section} aria-labelledby="home-connected-title">
+    <ConnectedJourney
+      id="home-how-it-connects"
+      headingId="home-connected-title"
+      eyebrow="HOW IT CONNECTS"
+      heading={<>Your customers don’t experience your business <em>in departments.</em></>}
+      intro={<>
+        <p>They discover you, explore your offer, compare their options and decide whether to enquire.</p>
+        <p>We connect the website, search presence, content, campaigns and follow-up around those moments.</p>
+      </>}
+      stages={stages}
+      action={{ href: "/contact/", label: "See How We Work" }}
+    />
+  );
+}
+
+export function ConnectedJourney({ id, headingId, eyebrow, heading, intro, stages, action }: {
+  id: string;
+  headingId: string;
+  eyebrow: string;
+  heading: ReactNode;
+  intro: ReactNode;
+  stages: readonly { title: string; description: string; image: string; alt?: string }[];
+  action?: { href: string; label: string };
+}) {
+  return (
+    <section id={id} data-home-journey={id === "home-how-it-connects" ? true : undefined} className={styles.section} aria-labelledby={headingId}>
       <ConnectedJourneyMotion className={styles.inner}>
         <div className={styles.heading} data-journey-heading>
-          <p className={styles.eyebrow}>HOW IT CONNECTS</p>
-          <h2 id="home-connected-title">Your customers don’t experience your business <em>in departments.</em></h2>
-          <div className={styles.intro}>
-            <p>They discover you, explore your offer, compare their options and decide whether to enquire.</p>
-            <p>We connect the website, search presence, content, campaigns and follow-up around those moments.</p>
-          </div>
+          <p className={styles.eyebrow}>{eyebrow}</p>
+          <h2 id={headingId}>{heading}</h2>
+          <div className={styles.intro}>{intro}</div>
         </div>
         <div className={styles.journey}>
           <div className={styles.track} data-journey-track aria-hidden="true">
@@ -59,31 +107,20 @@ export default function HomepageConnectedJourney() {
           </div>
           <ol className={styles.cards} aria-label="Connected growth stages">
             {stages.map((stage, index) => (
-              <li key={stage.image} className={styles.card} data-journey-card>
-                <div className={styles.cardTop}>
-                  <span className={styles.number} aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
-                  <Image
-                    className={styles.icon}
-                    src={`/img/homepage/connected-journey/${stage.image}.webp`}
-                    alt={stage.alt}
-                    width={512}
-                    height={512}
-                    sizes="112px"
-                    loading="lazy"
-                  />
-                </div>
-                <div className={styles.cardCopy}>
-                  <h3>{stage.title}</h3>
-                  <span className={styles.accentLine} aria-hidden="true" />
-                  <p>{stage.description}</p>
-                </div>
-              </li>
+              <ConnectedJourneyCard
+                key={stage.image}
+                title={stage.title}
+                description={stage.description}
+                image={`/img/homepage/connected-journey/${stage.image}.webp`}
+                imageAlt={stage.alt}
+                number={index + 1}
+              />
             ))}
           </ol>
         </div>
-        <div className={styles.action}>
-          <Link href="/contact/" prefetch={false} className={styles.cta}>See How We Work <ArrowUpRight size={20} aria-hidden="true" /></Link>
-        </div>
+        {action && <div className={styles.action}>
+          <Link href={action.href} prefetch={false} className={styles.cta}>{action.label} <ArrowUpRight size={20} aria-hidden="true" /></Link>
+        </div>}
       </ConnectedJourneyMotion>
     </section>
   );

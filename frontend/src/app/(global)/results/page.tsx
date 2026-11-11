@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import ResultsEditorial from "@/components/portfolio/ResultsEditorial";
+import PortfolioDepthShowcase from "@/components/portfolio/PortfolioDepthShowcase";
+import { portfolioShowcase } from "@/lib/portfolio-showcase";
 import { caseStudyShowcaseItems, showcaseItemToCreativeWork } from "@/lib/case-study-showcase";
 import { websitePortfolioItems } from "@/lib/website-portfolio";
 
@@ -84,7 +85,7 @@ export default function ResultsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <ResultsEditorial />
+      <PortfolioDepthShowcase work={portfolioShowcase} />
     </>
   );
 }

@@ -1,0 +1,52 @@
+.clusters > li { display: flex; flex-direction: column; }
+.clusters:has(details[open]) { align-items: start; }
+
+.clusterActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 14px;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.priority {
+  padding: 5px 10px;
+  border: 1px solid var(--resource-line);
+  border-radius: 999px;
+  color: var(--resource-accent);
+  font-size: 12px;
+  font-weight: 700 !important;
+  line-height: 1.5;
+}
+
+.detailsBody {
+  display: grid;
+  gap: 18px;
+}
+
+.detailsBody h4 {
+  margin: 0 0 8px;
+  color: var(--resource-ink);
+  font-size: 17px;
+  font-weight: 700 !important;
+  line-height: 1.35;
+}
+
+.detailsBody p, .detailsBody ul {
+  margin: 0;
+  color: var(--resource-copy);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.detailsBody ul { display: grid; gap: 6px; padding-left: 19px; list-style: disc; }
+.detailsBody li::marker { color: var(--resource-accent); }
+.detailsBody .supportLinks { gap: 0; padding-left: 0; list-style: none; }
+.supportLinks a { padding-block: 4px; }
+
+@media (min-width: 1120px) {
+  .detailsBody { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fullWidth { grid-column: 1 / -1; }
+}

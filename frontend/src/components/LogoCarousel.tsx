@@ -10,6 +10,7 @@ export default function LogoCarousel({ compact = false, logos = CLIENT_LOGOS }: 
   const drag = useRef<{ x: number; scroll: number; moved: boolean } | null>(null);
   const [playing, setPlaying] = useState(true);
   const [visible, setVisible] = useState(false);
+  const copies = compact ? [0, 1, 2, 3] : [0, 1, 2];
 
   useEffect(() => {
     const element = row.current;
@@ -77,9 +78,9 @@ export default function LogoCarousel({ compact = false, logos = CLIENT_LOGOS }: 
       onLostPointerCapture={() => { setTimeout(() => { drag.current=null; },0); }}
       onClickCapture={event => { if(drag.current?.moved) { event.preventDefault(); event.stopPropagation(); } }}
       onDragStart={event => event.preventDefault()}>
-      <div className={styles.track}>{[0, 1, 2].map(copy=><div className={styles.group} key={copy} aria-hidden={copy > 0 ? true : undefined}>
+      <div className={styles.track}>{copies.map(copy=><div className={styles.group} key={copy} aria-hidden={copy > 0 ? true : undefined}>
         {logos.map(logo=><a key={logo.name} href={logo.href || "/results/"} target={logo.href?.startsWith("http") ? "_blank" : undefined} rel={logo.href?.startsWith("http") ? "noopener noreferrer" : undefined} tabIndex={copy > 0 ? -1 : undefined} className={styles.logo} title={logo.name}>
-          <Image src={logo.src} alt={`${logo.name} logo`} width={180} height={180} sizes={compact ? "(max-width: 639px) 104px, 128px" : "116px"} loading="lazy" decoding="async" draggable={false} />
+          <Image src={logo.src} alt={`${logo.name} logo`} width={180} height={180} sizes={compact ? "(max-width: 639px) 80px, 96px" : "116px"} loading="lazy" decoding="async" draggable={false} />
         </a>)}
       </div>)}</div>
     </div>

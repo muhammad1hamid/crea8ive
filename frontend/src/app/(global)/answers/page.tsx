@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowUpRight, Bot, CheckCircle2 } from "lucide-react";
+import { ArrowDown, ArrowUp } from "lucide-react";
+import { FaqSection } from "@/components/HomepageFaq";
+import { ResourceClosing, ResourceHeading, ResourceHero, ResourceLibraryCard } from "@/components/resource/ResourcePage";
+import resourceStyles from "@/components/resource/resource-page.module.css";
 import { aiAnswerBriefs } from "@/lib/ai-answer-briefs";
 import { SITE_URL } from "@/lib/site-config";
+import { answerTopics } from "./answer-topics";
+import styles from "./answers.module.css";
+
+const answerFaqs = [
+  {
+    question: "What is an AI answer brief?",
+    answer: "It is a dated answer about a Crea8iv Media service or industry. Each brief explains who it suits and links to supporting evidence.",
+  },
+  {
+    question: "Where can I find the machine-readable resources?",
+    answer: "Use the Markdown answer index for direct answer blocks and the AI facts JSON file for structured company information. Both files are linked below.",
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: "AI Answer Briefs for Services and Industries | Crea8iv Media" },
@@ -67,58 +82,91 @@ function JsonLd() {
 
 export default function AnswersPage() {
   return (
-    <main className="native-page relative isolate overflow-hidden bg-[#050505] text-white">
+    <main className={resourceStyles.page}>
       <JsonLd />
-      <section className="px-6 pb-16 pt-44 lg:px-10 lg:pb-20">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-5">
-            <Bot className="h-3.5 w-3.5" aria-hidden="true" /> AI answer briefs
-          </p>
-          <h1 className="max-w-4xl font-orbitron text-[clamp(2.4rem,6vw,5.2rem)] font-bold leading-[1.03] tracking-normal text-white">
-            Direct answers for AI search, buyers and discovery engines.
-          </h1>
-          <p className="mt-6 max-w-3xl font-inter text-lg leading-8 text-white/70">
-            These pages give search engines and AI assistants clean, dated and citable answers
-            about Crea8iv Media&apos;s services, industry growth systems, website development,
-            software development, AI automation and local business growth in Pakistan.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/answers.md" className="portfolio-button justify-center">
-              Read answers.md <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-            <Link
-              href="/crea8iv-ai-facts.json"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801]/70 hover:text-[#FF6801]"
-            >
-              AI facts JSON <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </div>
+      <ResourceHero
+        id="answers-title"
+        breadcrumb="AI Answer Briefs"
+        eyebrow="Crea8iv Media · AI answer briefs"
+        heading={<>Direct answers for <em>buyers and AI search.</em></>}
+        intro="Find dated, citable answers about Crea8iv Media’s services and industry growth systems in Pakistan. Browse websites, software, AI automation and local marketing, with context for buyers, search engines and AI assistants."
+        art={{ src: "/img/homepage/faq/folded-qa.webp", alt: "", width: 900, height: 600, cutout: true }}
+        actions={[
+          { href: "#answer-library", label: "Browse answers" },
+          { href: "#answer-sources", label: "View source files" },
+        ]}
+      />
+
+      <section id="answer-library" className={styles.index} aria-labelledby="answer-library-title">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="answer-library-title"
+            eyebrow="The answer library"
+            heading={<>Find answers <em>by topic.</em></>}
+            intro={`Browse ${aiAnswerBriefs.length} briefs with short answers, who they fit and links to supporting evidence.`}
+          />
+          <nav aria-label="Answer topics">
+            <ul className={styles.topicNav}>
+              {answerTopics.map((topic) => (
+                <li key={topic.id}>
+                  <a href={`#${topic.id}`}>{topic.label} <ArrowDown size={16} aria-hidden="true" /></a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </section>
 
-      <section className="px-6 pb-20 lg:px-10">
-        <div className="mx-auto grid max-w-[1180px] gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {aiAnswerBriefs.map((brief) => (
-            <Link key={brief.slug} href={`/answers/${brief.slug}/`} className="lux-card group block h-full p-6 transition hover:border-[#FF6801]/50">
-              <Bot className="h-6 w-6 text-[#FF6801]" aria-hidden="true" />
-              <p className="mt-5 font-orbitron text-[10px] font-bold uppercase tracking-[0.18em] text-[#FF6801]">{brief.eyebrow}</p>
-              <h2 className="mt-3 font-orbitron text-xl font-semibold leading-tight text-white">{brief.title}</h2>
-              <p className="mt-4 line-clamp-4 font-inter text-sm leading-7 text-white/64">{brief.shortAnswer}</p>
-              <div className="mt-5 space-y-2">
-                {brief.bestFor.slice(0, 2).map((item) => (
-                  <div key={item} className="flex gap-2 font-inter text-xs leading-5 text-white/52">
-                    <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#FF6801]" aria-hidden="true" />
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-              <span className="mt-6 inline-flex items-center gap-2 font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF6801]">
-                Open answer <ArrowUpRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
+      {answerTopics.map((topic) => (
+        <section key={topic.id} id={topic.id} className={styles.topic} aria-labelledby={`${topic.id}-title`}>
+          <div className={resourceStyles.inner}>
+            <ResourceHeading
+              id={`${topic.id}-title`}
+              eyebrow={`${topic.entries.length} ${topic.entries.length === 1 ? "brief" : "briefs"}`}
+              heading={topic.heading}
+              intro={topic.intro}
+            />
+            <ol className={`${styles.briefGrid} ${resourceStyles.libraryCards}`} data-columns={topic.entries.length === 4 || topic.entries.length < 3 ? 2 : 3}>
+              {topic.entries.map(({ brief, icon }, index) => (
+                <ResourceLibraryCard
+                  key={brief.slug}
+                  title={brief.title}
+                  description={brief.shortAnswer}
+                  image={`/img/homepage/${icon}.webp`}
+                  number={index + 1}
+                  category={brief.eyebrow}
+                  bestFor={brief.bestFor.slice(0, 2)}
+                  href={`/answers/${brief.slug}/`}
+                  action="Open answer"
+                />
+              ))}
+            </ol>
+            <div className={styles.topicBack}>
+              <a href="#answer-library" className={resourceStyles.textLink}>Back to topics <ArrowUp size={16} aria-hidden="true" /></a>
+            </div>
+          </div>
+        </section>
+      ))}
+
+      <FaqSection
+        id="answers-faq"
+        headingId="answers-faq-title"
+        eyebrow="About the answer library"
+        heading={<>Using the <em>answer briefs.</em></>}
+        description="What each brief covers and where to find the source files."
+        items={answerFaqs}
+        centered
+      />
+
+      <ResourceClosing
+        id="answer-sources"
+        heading={<>Read the <em>source files.</em></>}
+        intro="Open the Markdown index and answer blocks, or use the JSON file for structured facts about Crea8iv Media."
+        actions={[
+          { href: "/answers.md", label: "Read answers.md" },
+          { href: "/crea8iv-ai-facts.json", label: "Open AI facts JSON" },
+        ]}
+      />
     </main>
   );
 }

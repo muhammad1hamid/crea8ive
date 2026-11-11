@@ -14,6 +14,7 @@ import ImageAltGuard from "@/components/ImageAltGuard";
 export default function SiteChrome({ children, tracking }: { children: ReactNode; tracking?: PublicTrackingConfig }) {
   const pathname = usePathname();
   const isAdmin = pathname?.startsWith("/admin");
+  const immersivePortfolio = pathname?.replace(/\/$/, '') === '/results';
   useEffect(() => { if (!isAdmin) getLeadAttribution(); }, [isAdmin]);
 
   if (isAdmin) {
@@ -23,16 +24,16 @@ export default function SiteChrome({ children, tracking }: { children: ReactNode
   return (
     <>
       <a className="skip-link" href="#main-content">Skip to content</a>
-      <ScrollProgress />
-      <Header />
+      {!immersivePortfolio && <ScrollProgress />}
+      <Header immersive={immersivePortfolio} ctaHref={immersivePortfolio ? '/contact/' : ''} />
       <div id="smooth-wrapper" className="relative z-[1]">
         <div id="smooth-content">
           <div id="main-content" className="min-h-screen" tabIndex={-1}>{children}</div>
-          <Footer />
+          {!immersivePortfolio && <Footer />}
         </div>
       </div>
       <ImageAltGuard />
-      <DeferredSiteWidgets />
+      {!immersivePortfolio && <DeferredSiteWidgets />}
       <DeferredAnalytics tracking={tracking} />
     </>
   );

@@ -1,0 +1,9 @@
+.header { transform: translateY(0); }
+.header[data-hidden="true"] { transform: translateY(calc(-100% - 20px)); pointer-events: none; }
+.header[data-immersive="true"] { padding-right: 112px; }
+.toggle { position: fixed; top: 22px; right: 24px; z-index: 1100; display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; padding: 0 18px; border: 1px solid #494740; border-radius: 999px; background: #171a18; color: #fff8f1; font: inherit; font-size: 13px; cursor: pointer; transition: border-color 180ms, background 180ms; }
+.toggle:hover { border-color: #ff6801; }
+.toggle:focus-visible { outline: 2px solid #ff6801; outline-offset: 4px; }
+:global(html[data-theme="light"]) .toggle { background: #fff8f1; color: #163c31; border-color: #dcccb2; }
+@media (max-width: 600px) { .toggle { top: 16px; right: 16px; width: 48px; padding: 0; } .toggle span { display: none; } .header[data-immersive="true"] { padding-right: 64px; } .header[data-immersive="true"] :global(.site-header-cta) { display: none; } }
+@media (prefers-reduced-motion: reduce) { .header, .toggle { transition: none !important; } }

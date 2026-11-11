@@ -2,22 +2,19 @@ import LogoCarousel from "@/components/LogoCarousel";
 import HowItWorks from "@/components/ui/how-it-works";
 import HomepageDeliveryProcess from "@/components/HomepageDeliveryProcess";
 import HomepageConnectedJourney from "@/components/HomepageConnectedJourney";
-import ConnectedJourneyMotion from "@/components/ConnectedJourneyMotion";
+import BuyerJourneyMotion from "@/components/BuyerJourneyMotion";
 import RadialOrbitalTimeline from "@/components/ui/radial-orbital-timeline";
-import buyerStyles from "@/components/ui/how-it-works.module.css";
+import { homeOrbitServices } from "./home-orbit-services";
+import buyerStyles from "@/components/homepage-buyer-journey.module.css";
 import Link from "next/link";
 import {
   ArrowUpRight,
   Building2,
   HeartPulse,
   MapPinned,
-  MessageSquareText,
   Store,
   Utensils,
-  ShieldCheck,
-  SearchCheck,
 } from "lucide-react";
-import { getServiceTone } from "@/lib/service-tones";
 import type { ReactNode } from "react";
 import HomepageFounderOffice from "@/components/HomepageFounderOffice";
 import HomepageFinalCTA from "./HomepageFinalCTA";
@@ -39,15 +36,6 @@ const selectedClientLogos = [
     href: "/case-studies/buildscape/",
   },
   ...CLIENT_LOGOS.filter(({ name }) => ["Home Studio", "The Smile Xperts", "Black Petals", "CO3 Premium"].includes(name)),
-];
-
-const services = [
-  { name: "Strategy", title: "Not sure what to fix first?", outcome: "Strategy, audits and measurement to find the highest-impact improvement before adding more spend.", specialties: ["Growth audits", "Marketing strategy", "Performance measurement"], iconSrc: "/img/homepage/service-orbit/01-strategy.webp", href: "/tools/", label: "Explore growth tools" },
-  { name: "SEO & AI", title: "Not getting found?", outcome: "SEO, Google Business Profile, local search and AI-search readiness to make your business easier to discover.", specialties: ["Local SEO", "Google Business Profile", "AI search visibility"], iconSrc: "/img/homepage/service-orbit/02-seo-ai.webp", href: "/ai-search-optimization/", label: "Explore SEO & AI visibility", primary: true },
-  { name: "Websites", title: "Getting visits but few enquiries?", outcome: "Website development, landing pages and conversion improvements built around clarity, speed and trust.", specialties: ["Website development", "Landing pages", "Conversion improvements"], iconSrc: "/img/homepage/service-orbit/03-websites.webp", href: "/website-development/", label: "Explore website development", primary: true },
-  { name: "Branding", title: "Your brand blends in?", outcome: "Brand identity, content creation, reels and social media that reflect the quality of your business.", specialties: ["Visual identity", "Social content", "Reels & video"], iconSrc: "/img/homepage/service-orbit/04-branding.webp", href: "/branding-and-creative/", label: "Explore branding & creative" },
-  { name: "Paid Ads", title: "Advertising without clear returns?", outcome: "Google Ads and Meta campaigns aligned with intent, landing pages and meaningful conversion tracking.", specialties: ["Google Ads", "Meta Ads", "Conversion tracking"], iconSrc: "/img/homepage/service-orbit/05-paid-ads.webp", href: "/google-ads/", label: "Explore Google Ads", primary: true },
-  { name: "Automation", title: "Losing leads after first contact?", outcome: "CRM workflows, WhatsApp automation and follow-up systems that reduce missed opportunities.", specialties: ["CRM workflows", "WhatsApp automation", "Lead follow-up"], iconSrc: "/img/homepage/service-orbit/06-automation.webp", href: "/marketing-automation/", label: "Explore lead follow-up" },
 ];
 
 const industries = [
@@ -104,9 +92,9 @@ const industries = [
 ];
 
 const customerSteps = [
-  { title: "They find you", body: "A search, map result, social post, recommendation or AI-generated answer introduces your brand.", icon: SearchCheck, tone: "search" },
-  { title: "They check you", body: "They look for clear services, genuine examples, credibility and straightforward information.", icon: ShieldCheck, tone: "web" },
-  { title: "They decide", body: "They reach out when the offer feels relevant and the next step is easy.", icon: MessageSquareText, tone: "local" },
+  { title: "They Find You", description: "People search for a solution, and your business shows up at the right time." },
+  { title: "They Check You", description: "They look for credibility, real reviews and proof that you're reliable." },
+  { title: "They Decide", description: "They choose the business that feels most relevant, trustworthy and easy to reach." },
 ];
 
 const visualSystemCards = [
@@ -183,13 +171,13 @@ function Ambient() {
 
 function IdentitySystems() {
   return (
-    <section id="home-client-logos" data-home-surface="light" className="home-logo-marquee relative border-y border-white/[0.08] px-6 py-16 sm:px-8 lg:px-10 lg:py-20">
+    <section id="home-client-logos" data-home-surface="light" className="home-logo-marquee relative border-y border-white/[0.08] px-4 sm:px-6 lg:px-7">
       <Ambient />
-      <div className="relative mx-auto max-w-[1440px]">
-        <SectionIntro eyebrow="Selected clients" title="Good company to be in." copy="Meet some of the businesses we work with—and the different challenges we help them solve." />
-        <div className="mt-8"><LogoCarousel compact logos={selectedClientLogos} /></div>
-        <div className="mt-8 flex justify-center">
-          <Link href="/case-studies/" className="home-lux-button">See Client Work <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link>
+      <div className="relative mx-auto max-w-[1480px]">
+        <SectionIntro eyebrow="Selected clients" title="Good company to be in." copy="Meet some of the businesses we work with and see what we help them solve." />
+        <div className="mt-5"><LogoCarousel compact logos={selectedClientLogos} /></div>
+        <div className="mt-4 flex justify-center">
+          <Link href="/case-studies/" className={`home-lux-button ${styles.clientWorkButton}`}>See Client Work <ArrowUpRight size={14} aria-hidden="true" /></Link>
         </div>
       </div>
     </section>
@@ -199,14 +187,14 @@ function IdentitySystems() {
 function CustomerReality() {
   return (
     <section id="home-buyers-decide" data-home-buyer className={buyerStyles.section} aria-labelledby="buyer-journey-title">
-      <ConnectedJourneyMotion className={buyerStyles.container}>
-        <div className={buyerStyles.heading} data-journey-heading>
-          <p className={buyerStyles.eyebrow}>HOW BUYERS DECIDE</p>
-          <h2 id="buyer-journey-title">People <em>form an opinion</em>{" "}<span>before they ever contact you.</span></h2>
-          <p className={buyerStyles.lead}>Your website, Google presence, reviews, content and campaigns shape whether a potential customer feels confident enough to take the next step.</p>
+      <BuyerJourneyMotion className={buyerStyles.container}>
+        <div className={buyerStyles.heading}>
+          <p className={buyerStyles.eyebrow} data-buyer-entrance="0">HOW BUYERS DECIDE</p>
+          <h2 id="buyer-journey-title" data-buyer-entrance="1">People <em>form an opinion</em>{" "}<span>before they ever contact you.</span></h2>
+          <p className={buyerStyles.lead} data-buyer-entrance="2">Your website, Google presence, reviews, content and campaigns shape whether a potential customer feels confident enough to take the next step.</p>
         </div>
-        <HowItWorks features={customerSteps.map((step) => ({ title: step.title, description: step.body }))} />
-      </ConnectedJourneyMotion>
+        <HowItWorks features={customerSteps} />
+      </BuyerJourneyMotion>
     </section>
   );
 }
@@ -216,10 +204,7 @@ function ProblemLedServices() {
     <section id="home-problem-services" data-home-orbit className={orbitStyles.section} aria-labelledby="home-core-services-title">
         <RadialOrbitalTimeline
           intro="You may need better visibility, a more convincing website or campaigns that attract the right enquiries. Start with the obstacle—not a long list of marketing terms."
-          timelineData={services.map((service) => ({
-            ...service,
-            tone: getServiceTone(service.href),
-          }))}
+          timelineData={homeOrbitServices}
         />
     </section>
   );

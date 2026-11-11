@@ -69,6 +69,9 @@
 .cardCopy { display: contents; }
 .number { display: inline-flex; align-items: center; justify-content: center; min-width: 38px; height: 31px; padding: 5px 9px; border-radius: 11px; background: var(--journey-orange); color: #190e04 !important; font-size: 14px; font-weight: 700 !important; line-height: 1; font-variant-numeric: tabular-nums; }
 .icon { position: absolute; top: -21px; right: -13px; width: 108px; height: 108px; max-width: none; object-fit: contain; transition: transform 450ms cubic-bezier(.22,1,.36,1); }
+.containedIcon .cardTop { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; height: auto; }
+.containedIcon .icon { position: static; width: 76px; height: 76px; margin-block-start: -6px; }
+.containedIcon:not(:has(.number)) { min-height: 0; }
 .card h3 { margin: 8px 0 0; font-size: 21px; font-weight: 700 !important; line-height: 1.22; }
 .accentLine { display: block; width: 38px; height: 3px; margin-top: 11px; background: var(--journey-orange); }
 .cardCopy > p { margin: 13px 0 0; font-size: 15px; line-height: 1.6; }
@@ -111,9 +114,9 @@
   .section.section.section { padding: 56px 32px 60px !important; }
   .journey { --journey-gap: 24px; }
   .cards { grid-template-columns: repeat(6, minmax(0, 1fr)); grid-auto-rows: 1fr; }
-  .card { grid-column: span 2; }
-  .card:nth-child(4) { grid-column: 2 / span 2; }
-  .card:nth-child(5) { grid-column: 4 / span 2; }
+  .cards > .card { grid-column: span 2; }
+  .cards > .card:nth-child(4) { grid-column: 2 / span 2; }
+  .cards > .card:nth-child(5) { grid-column: 4 / span 2; }
   .heading h2 { max-width: 860px; font-size: 33px; }
   .desktopLine { display: none; }
   .tabletLine { display: block; width: 100%; height: 100%; overflow: visible; fill: none; stroke: var(--journey-orange); stroke-width: 2; }
@@ -143,7 +146,7 @@
   .cardCopy > p { margin-top: 10px; font-size: 14px; line-height: 1.6; }
 
   /* The last step spans the grid, with its illustration beside the copy. */
-  .card:last-child {
+  .cards > .card:last-child {
     --journey-final-icon: 88px;
     --journey-final-padding: 16px;
     --journey-final-gap: 12px;
@@ -153,15 +156,15 @@
     gap: var(--journey-final-gap);
     padding: var(--journey-final-padding);
   }
-  .card:last-child .cardTop { position: static; flex: 0 0 var(--journey-final-icon); height: auto; }
-  .card:last-child .icon { position: static; display: block; width: 100%; height: auto; }
-  .card:last-child .number {
+  .cards > .card:last-child .cardTop { position: static; flex: 0 0 var(--journey-final-icon); height: auto; }
+  .cards > .card:last-child .icon { position: static; display: block; width: 100%; height: auto; }
+  .cards > .card:last-child .number {
     position: absolute;
     top: var(--journey-final-padding);
     left: calc(var(--journey-final-padding) + var(--journey-final-icon) + var(--journey-final-gap));
   }
-  .card:last-child .cardCopy { display: block; flex: 1; min-width: 0; padding-top: 36px; }
-  .card:last-child h3 { margin-top: 0; }
+  .cards > .card:last-child .cardCopy { display: block; flex: 1; min-width: 0; padding-top: 36px; }
+  .cards > .card:last-child h3 { margin-top: 0; }
   .track { transform-origin: center top; }
   .desktopLine { display: none; }
   .mobileLine { display: none; }

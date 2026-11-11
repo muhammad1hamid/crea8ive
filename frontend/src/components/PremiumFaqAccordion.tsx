@@ -1,15 +1,16 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import { ChevronDown, Layers2 } from "lucide-react";
 import styles from "./homepage-faq.module.css";
 
 type FaqItem = { question: string; answer: string };
 
-export default function PremiumFaqAccordion({ items, idPrefix, defaultOpenIndex }: {
+export default function PremiumFaqAccordion({ items, idPrefix, defaultOpenIndex, children }: {
   items: readonly FaqItem[];
   idPrefix: string;
   defaultOpenIndex?: number;
+  children?: ReactNode;
 }) {
   const root = useRef<HTMLDivElement>(null);
 
@@ -86,22 +87,38 @@ export default function PremiumFaqAccordion({ items, idPrefix, defaultOpenIndex 
       reduced.removeEventListener("change", stopMotion);
       reduced.removeEventListener("change", stopReveals);
     };
-  }, [items]);
+  }, [items, children]);
 
   return (
     <div ref={root} className={styles.accordion}>
       {items.map(({ question, answer }, index) => (
-        <details className={styles.item} key={question} open={index === defaultOpenIndex}>
-          <summary className={styles.trigger} aria-controls={`${idPrefix}-answer-${index}`} id={`${idPrefix}-question-${index}`}>
-            <span className={styles.questionIcon} aria-hidden="true"><Layers2 size={28} strokeWidth={1.5} /></span>
-            <span className={styles.question}>{question}</span>
-            <ChevronDown className={styles.chevron} size={20} strokeWidth={1.7} aria-hidden="true" />
-          </summary>
-          <div id={`${idPrefix}-answer-${index}`} className={styles.answer} role="region" aria-labelledby={`${idPrefix}-question-${index}`}>
-            <p>{answer}</p>
-          </div>
-        </details>
+        <FaqDisclosure key={question} question={question} questionId={`${idPrefix}-question-${index}`} answerId={`${idPrefix}-answer-${index}`} defaultOpen={index === defaultOpenIndex}>
+          <p>{answer}</p>
+        </FaqDisclosure>
       ))}
+      {children}
     </div>
+  );
+}
+
+export function FaqDisclosure({ question, questionId, answerId, defaultOpen = false, className, children }: {
+  question: string;
+  questionId: string;
+  answerId: string;
+  defaultOpen?: boolean;
+  className?: string;
+  children: ReactNode;
+}) {
+  return (
+    <details className={className ? `${styles.item} ${className}` : styles.item} open={defaultOpen}>
+      <summary className={styles.trigger} aria-controls={answerId} id={questionId}>
+        <span className={styles.questionIcon} aria-hidden="true"><Layers2 size={28} strokeWidth={1.5} /></span>
+        <span className={styles.question}>{question}</span>
+        <ChevronDown className={styles.chevron} size={20} strokeWidth={1.7} aria-hidden="true" />
+      </summary>
+      <div id={answerId} className={styles.answer} role="region" aria-labelledby={questionId}>
+        {children}
+      </div>
+    </details>
   );
 }

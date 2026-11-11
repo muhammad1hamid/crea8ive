@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import type { ReactNode } from "react";
 import ProcessCardReveal from "./ProcessCardReveal";
 import MobileProjectJourney from "./MobileProjectJourney";
 import styles from "./homepage-delivery-process.module.css";
@@ -34,12 +35,36 @@ const steps = [
 
 export default function HomepageDeliveryProcess() {
   return (
-    <section id="home-delivery-process" data-home-process className={styles.section} aria-labelledby="home-delivery-title">
+    <DeliveryProcess
+      id="home-delivery-process"
+      headingId="home-delivery-title"
+      eyebrow="A CLEAR WAY TO WORK"
+      heading={<>Good work shouldn’t feel <em>complicated.</em></>}
+      intro="From the first discussion to delivery, you should know what we are solving, what is being built and what happens next."
+      steps={steps}
+      showContact
+    />
+  );
+}
+
+export function DeliveryProcess({ id, headingId, eyebrow, heading, intro, steps, showContact, mobileSequence }: {
+  id: string;
+  headingId: string;
+  eyebrow: string;
+  heading: ReactNode;
+  intro?: string;
+  steps: readonly { title: string; description: string; image: string; alt: string }[];
+  showContact?: boolean;
+  mobileSequence?: { label: string; steps: readonly string[] };
+}) {
+  const isHome = id === "home-delivery-process";
+  return (
+    <section id={id} data-home-process={isHome ? "" : undefined} className={styles.section} aria-labelledby={headingId}>
       <div className={styles.inner}>
         <div className={styles.heading}>
-          <p className={styles.eyebrow}>A CLEAR WAY TO WORK</p>
-          <h2 id="home-delivery-title">Good work shouldn’t feel <em>complicated.</em></h2>
-          <p data-process-lead className={styles.lead}>From the first discussion to delivery, you should know what we are solving, what is being built and what happens next.</p>
+          <p className={styles.eyebrow}>{eyebrow}</p>
+          <h2 id={headingId}>{heading}</h2>
+          {intro && <p data-process-lead className={styles.lead}>{intro}</p>}
         </div>
         <ProcessCardReveal className={styles.grid}>
           {steps.map((step, index) => (
@@ -61,12 +86,16 @@ export default function HomepageDeliveryProcess() {
             </li>
           ))}
         </ProcessCardReveal>
-        <MobileProjectJourney stages={steps.map(({ title, description }) => ({ title, description }))} />
-        <div className={styles.action}>
+        <MobileProjectJourney
+          stages={steps.map(({ title, description }) => ({ title, description }))}
+          idPrefix={isHome ? undefined : id}
+          sequence={mobileSequence}
+        />
+        {showContact && <div className={styles.action}>
           <Link href="/contact/" prefetch={false} className={styles.cta}>
             Discuss Your Project <ArrowUpRight size={21} aria-hidden="true" />
           </Link>
-        </div>
+        </div>}
       </div>
     </section>
   );

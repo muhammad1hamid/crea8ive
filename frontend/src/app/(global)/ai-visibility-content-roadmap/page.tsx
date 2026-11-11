@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  ArrowUpRight,
-  BookOpenText,
-  CalendarDays,
-  CheckCircle2,
-  FileBarChart,
-  FileQuestion,
-  ListChecks,
-  SearchCheck,
-  Sparkles,
-} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { ConnectedJourneyCard } from "@/components/HomepageConnectedJourney";
+import { FaqSection } from "@/components/HomepageFaq";
+import { ResourceChecklist, ResourceClosing, ResourceDetails, ResourceHeading, ResourceHero } from "@/components/resource/ResourcePage";
+import resourceStyles from "@/components/resource/resource-page.module.css";
 import { SITE_URL } from "@/lib/site-config";
+import styles from "./roadmap.module.css";
 
 const PAGE_URL = `${SITE_URL}/ai-visibility-content-roadmap/`;
 const LAST_UPDATED = "2026-09-13";
@@ -128,11 +123,47 @@ const contentAssets = [
 ] as const;
 
 const contentTypes = [
-  { label: "Comparison articles", reason: "Good for X vs Y queries and buyer decisions.", icon: FileBarChart },
-  { label: "Definitive guides", reason: "Good for broad service and category definitions.", icon: BookOpenText },
-  { label: "How-to guides", reason: "Good for process, checklist and implementation questions.", icon: ListChecks },
-  { label: "Industry playbooks", reason: "Good for niche queries around clinics, restaurants and architects.", icon: FileQuestion },
+  { label: "Comparison articles", reason: "Compare options side by side to support buyer decisions.", icon: "connected-journey/03-trust" },
+  { label: "Definitive guides", reason: "Define a service or category and explain what to look for.", icon: "connected-journey/02-explore" },
+  { label: "How-to guides", reason: "Answer questions about processes, checklists and implementation.", icon: "service-orbit/01-strategy" },
+  { label: "Industry playbooks", reason: "Answer industry questions for clinics, restaurants and architects.", icon: "connected-journey/05-follow-through" },
 ] as const;
+
+const clusterIcons: Record<string, string> = {
+  "Local city growth": "connected-journey/01-discover",
+  "Website development": "service-orbit/03-websites",
+  "AI visibility": "service-orbit/02-seo-ai",
+  "Local SEO": "connected-journey/01-discover",
+  "Paid ads": "service-orbit/05-paid-ads",
+  Restaurants: "connected-journey/01-discover",
+  Healthcare: "connected-journey/03-trust",
+  "Software development": "service-orbit/06-automation",
+  Automation: "service-orbit/06-automation",
+  "AI visibility measurement": "connected-journey/05-follow-through",
+  "Technical SEO": "connected-journey/02-explore",
+};
+
+const publishingRules = [
+  "Lead with a direct 40-60 word answer block.",
+  "Add FAQ content only when it is visible and useful.",
+  "Link to one service page, one tool, one proof page and one consultation path.",
+  "Avoid fake proof, fake metrics, fake reviews and unsupported awards.",
+  "Show last updated date and author/entity context.",
+  "Use tables for comparisons and numbered lists for process content.",
+  "Keep schema aligned with visible page content.",
+  "Track impressions, clicks, AI citations and lead actions after publishing.",
+];
+
+const roadmapFaqs = [
+  {
+    question: "Which content types should Crea8iv Media prioritize for AI visibility?",
+    answer: "Crea8iv Media should prioritize comparison articles, definitive guides, how-to guides, industry playbooks, proof-backed portfolio pages and technical explainers because these formats are easier for AI systems to extract and cite.",
+  },
+  {
+    question: "How should the roadmap be used?",
+    answer: "Use the roadmap to publish, refresh and internally link content assets around priority query clusters. Each asset should connect to a service page, tool, answer brief, proof page and consultation path.",
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: "AI Visibility Content Roadmap | Crea8iv Media" },
@@ -196,24 +227,11 @@ function JsonLd() {
       {
         "@type": "FAQPage",
         "@id": `${PAGE_URL}#faq`,
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "Which content types should Crea8iv Media prioritize for AI visibility?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Crea8iv Media should prioritize comparison articles, definitive guides, how-to guides, industry playbooks, proof-backed portfolio pages and technical explainers because these formats are easier for AI systems to extract and cite.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How should the roadmap be used?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Use the roadmap to publish, refresh and internally link content assets around priority query clusters. Each asset should connect to a service page, tool, answer brief, proof page and consultation path.",
-            },
-          },
-        ],
+        mainEntity: roadmapFaqs.map(({ question, answer }) => ({
+          "@type": "Question",
+          name: question,
+          acceptedAnswer: { "@type": "Answer", text: answer },
+        })),
       },
     ],
   };
@@ -223,158 +241,131 @@ function JsonLd() {
 
 export default function AiVisibilityContentRoadmapPage() {
   return (
-    <main className="native-page relative isolate overflow-hidden bg-[#050505] text-white">
+    <main className={resourceStyles.page}>
       <JsonLd />
-      <section className="px-6 pb-14 pt-44 lg:px-10 lg:pb-20">
-        <div className="mx-auto max-w-[1180px]">
-          <nav className="mb-8 flex flex-wrap items-center gap-2 font-orbitron text-[10px] uppercase tracking-[0.16em] text-white/45" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-brand-300">Home</Link>
-            <span>/</span>
-            <span className="text-white/72">AI Visibility Content Roadmap</span>
-          </nav>
-          <p className="lux-eyebrow mb-5">
-            <Sparkles className="h-3.5 w-3.5" aria-hidden="true" /> Citation-ready content sprint
-          </p>
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
-            <div>
-              <h1 className="max-w-5xl font-orbitron text-[clamp(2.35rem,6vw,5.2rem)] font-bold leading-[1.03] tracking-normal text-white">
-                AI visibility content roadmap for search traffic growth.
-              </h1>
-              <p className="mt-6 max-w-3xl font-inter text-lg leading-8 text-white/70">
-                This roadmap organizes the next high-impact guides, comparisons, how-to pages and
-                industry playbooks Crea8iv Media should publish or refresh to earn more search
-                visibility, AI mentions, source citations and qualified enquiries.
-              </p>
-              <p className="mt-5 font-orbitron text-[11px] uppercase tracking-[0.16em] text-white/45">
-                Last updated: September 13, 2026
-              </p>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <Link href="/ai-visibility-content-roadmap.md" className="portfolio-button justify-center">
-                  Machine-readable roadmap <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-                <Link
-                  href="/ai-visibility-growth/"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801]/70 hover:text-[#FF6801]"
-                >
-                  Growth operating plan <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-              </div>
-            </div>
-            <aside className="lux-card p-6">
-              <p className="font-orbitron text-[11px] uppercase tracking-[0.18em] text-brand-300">Sprint focus</p>
-              <div className="mt-5 grid gap-3">
-                {contentTypes.map((type) => {
-                  const Icon = type.icon;
-                  return (
-                    <div key={type.label} className="rounded-[18px] border border-white/10 bg-white/[0.035] p-4">
-                      <div className="flex items-center gap-3">
-                        <Icon className="h-4 w-4 text-[#FF6801]" aria-hidden="true" />
-                        <p className="font-orbitron text-[11px] font-bold uppercase tracking-[0.14em] text-white/78">{type.label}</p>
-                      </div>
-                      <p className="mt-2 font-inter text-sm leading-6 text-white/60">{type.reason}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
+      <ResourceHero
+        id="visibility-roadmap-title"
+        breadcrumb="AI Visibility Content Roadmap"
+        eyebrow="Citation-ready content sprint"
+        heading={<>AI visibility content roadmap <em>for search growth.</em></>}
+        intro="See which guides, comparisons, how-to pages and industry playbooks Crea8iv Media plans to publish or refresh to improve search visibility, AI mentions, citations and qualified enquiries."
+        note={<>Last updated <time dateTime={LAST_UPDATED}>September 13, 2026</time></>}
+        art={{
+          src: "/img/services/ad-concepts/growth-system-ad-concept.webp",
+          alt: "Website, content, advertising and local search connected in one growth system",
+          width: 960,
+          height: 540,
+        }}
+        actions={[
+          { href: "#content-roadmap", label: "Browse planned assets" },
+          { href: "/ai-visibility-content-roadmap.md", label: "Read the Markdown roadmap" },
+        ]}
+      />
 
-      <section className="px-6 py-12 lg:px-10" aria-labelledby="roadmap-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-4">
-            <CalendarDays className="h-3.5 w-3.5" aria-hidden="true" /> 12-asset sprint
-          </p>
-          <h2 id="roadmap-heading" className="max-w-4xl font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-            Publish or refresh these assets in priority order.
-          </h2>
-          <div className="mt-8 grid gap-5">
-            {contentAssets.map((asset, index) => (
-              <article key={asset.title} className="lux-card p-6">
-                <div className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
-                  <div>
-                    <div className="flex flex-wrap items-center gap-3">
-                      <span className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-white/35">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="rounded-full border border-[#FF6801]/35 bg-[#FF6801]/10 px-3 py-1 font-orbitron text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF6801]">
-                        {asset.type}
-                      </span>
-                      <span className="font-orbitron text-[10px] uppercase tracking-[0.16em] text-white/35">{asset.cluster}</span>
-                    </div>
-                    <h3 className="mt-4 font-orbitron text-2xl font-semibold leading-tight text-white">{asset.title}</h3>
-                    <p className="mt-4 font-inter text-sm leading-7 text-white/66">{asset.citationGoal}</p>
-                    <Link href={asset.targetUrl} className="mt-6 inline-flex items-center gap-2 font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF6801]">
-                      Target page <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-                    </Link>
-                  </div>
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <div className="rounded-[18px] border border-white/10 bg-white/[0.035] p-4">
-                      <p className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-white/42">Target query</p>
-                      <p className="mt-4 font-inter text-sm leading-6 text-white/72">{asset.targetQuery}</p>
-                    </div>
-                    <div className="rounded-[18px] border border-white/10 bg-white/[0.035] p-4">
-                      <p className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-white/42">Supporting links</p>
-                      <ul className="mt-4 space-y-3">
-                        {asset.supportingUrls.map((url) => (
-                          <li key={url}>
-                            <Link href={url} className="inline-flex gap-2 font-inter text-sm leading-6 text-white/68 transition hover:text-[#FF6801]">
-                              <SearchCheck className="mt-1 h-3.5 w-3.5 shrink-0 text-[#FF6801]" aria-hidden="true" />
-                              <span>{url}</span>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </article>
+      <section className={`${resourceStyles.section} ${resourceStyles.band}`} aria-labelledby="sprint-formats-title">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="sprint-formats-title"
+            eyebrow="Sprint focus"
+            heading={<>Choose the format <em>that fits the question.</em></>}
+            intro="Compare options, define a service, explain a process or show how a plan applies to one industry."
+          />
+          <ol className={resourceStyles.cards} data-columns="4">
+            {contentTypes.map(({ label, reason, icon }, index) => (
+              <ConnectedJourneyCard
+                key={label}
+                title={label}
+                description={reason}
+                image={`/img/homepage/${icon}.webp`}
+                number={index + 1}
+                containedIcon
+              />
             ))}
+          </ol>
+        </div>
+      </section>
+
+      <section id="content-roadmap" className={resourceStyles.section} aria-labelledby="roadmap-heading">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="roadmap-heading"
+            eyebrow={`${contentAssets.length} planned assets`}
+            heading={<>What to publish or refresh <em>in priority order.</em></>}
+            intro="Each planned piece has a target query, a citation goal and links to the pages that can support it."
+          />
+          <ol className={`${resourceStyles.cards} ${styles.assets}`}>
+            {contentAssets.map((asset, index) => (
+              <ConnectedJourneyCard
+                key={asset.title}
+                title={asset.title}
+                description={asset.citationGoal}
+                image={`/img/homepage/${clusterIcons[asset.cluster] ?? "connected-journey/02-explore"}.webp`}
+                number={index + 1}
+                containedIcon
+              >
+                <div className={styles.assetContext}>
+                  <p className={styles.assetType}>{asset.type} · {asset.cluster}</p>
+                  <dl className={styles.query}>
+                    <dt>Target query</dt>
+                    <dd>{asset.targetQuery}</dd>
+                  </dl>
+                  <Link href={asset.targetUrl} className={resourceStyles.textLink}>
+                    Open target page <ArrowUpRight size={16} aria-hidden="true" />
+                  </Link>
+                </div>
+                <ResourceDetails label="Supporting links">
+                  <ul className={styles.supportLinks}>
+                    {asset.supportingUrls.map((url) => (
+                      <li key={url}>
+                        <Link href={url} className={resourceStyles.textLink}>
+                          <span>{url}</span> <ArrowUpRight size={15} aria-hidden="true" />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </ResourceDetails>
+              </ConnectedJourneyCard>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className={`${resourceStyles.section} ${resourceStyles.band}`} aria-labelledby="rules-heading">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="rules-heading"
+            eyebrow="Publishing rules"
+            heading={<>Write the answer, <em>then show the proof.</em></>}
+            intro="Use this checklist to make each piece easy to read, verify and act on."
+          />
+          <ResourceChecklist items={publishingRules} columns={2} />
+          <div className={styles.planLink}>
+            <Link href="/ai-visibility-growth/" className={resourceStyles.textLink}>
+              View growth operating plan <ArrowUpRight size={17} aria-hidden="true" />
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-14 lg:px-10" aria-labelledby="rules-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <div className="lux-card p-7 md:p-9">
-            <p className="lux-eyebrow mb-4">
-              <ListChecks className="h-3.5 w-3.5" aria-hidden="true" /> Publishing rules
-            </p>
-            <h2 id="rules-heading" className="max-w-4xl font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-              Every content asset should be answer-ready, proof-backed and conversion-aware.
-            </h2>
-            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-              {[
-                "Lead with a direct 40-60 word answer block.",
-                "Add FAQ content only when it is visible and useful.",
-                "Link to one service page, one tool, one proof page and one consultation path.",
-                "Avoid fake proof, fake metrics, fake reviews and unsupported awards.",
-                "Show last updated date and author/entity context.",
-                "Use tables for comparisons and numbered lists for process content.",
-                "Keep schema aligned with visible page content.",
-                "Track impressions, clicks, AI citations and lead actions after publishing.",
-              ].map((rule) => (
-                <div key={rule} className="flex gap-3 rounded-[18px] border border-white/10 bg-white/[0.035] p-4 font-inter text-sm leading-6 text-white/66">
-                  <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-[#FF6801]" aria-hidden="true" />
-                  <span>{rule}</span>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/ai-visibility-tracker-template.csv" className="portfolio-button justify-center">
-                Track published assets <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-              <Link
-                href="/consultation/"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801]/70 hover:text-[#FF6801]"
-              >
-                Book content audit <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FaqSection
+        id="visibility-roadmap-faq"
+        headingId="visibility-roadmap-faq-title"
+        eyebrow="Planning questions"
+        heading={<>Content roadmap <em>FAQs.</em></>}
+        description="Which formats to prioritise and how to use this roadmap."
+        items={roadmapFaqs}
+        centered
+      />
+
+      <ResourceClosing
+        id="roadmap-next-step"
+        heading={<>Track what you <em>publish and refresh.</em></>}
+        intro="Use the tracker to review published assets, or discuss your priorities in a content audit."
+        actions={[
+          { href: "/ai-visibility-tracker-template.csv", label: "Track published assets" },
+          { href: "/consultation/", label: "Book content audit" },
+        ]}
+      />
     </main>
   );
 }

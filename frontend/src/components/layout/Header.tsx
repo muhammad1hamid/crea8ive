@@ -43,6 +43,7 @@ import {
 } from 'lucide-react';
 import { useCallback } from 'react';
 import { getServiceTone } from '@/lib/service-tones';
+import navigationStyles from './navigation-motion.module.css';
 
 function MobileMenuIcon({label}:{label:string}) {
  const icons:Record<string,ComponentType<{className?:string}>>={Home:Globe2,Qatar:Globe2,Solutions:Sparkles,Results:BriefcaseBusiness,Platforms:LayoutDashboard,About:Users,Plans:FileChartColumn,Insights:FileChartColumn};
@@ -180,7 +181,7 @@ function ThemeToggle({
   );
 }
 
-export default function Header({ navItems=PRIMARY_NAV, homeHref='/', ctaHref='', utility, ar=false, showTheme=true }: { navItems?: readonly NavItem[]; homeHref?: string; ctaHref?: string; utility?: ReactNode; ar?: boolean; showTheme?: boolean }) {
+export default function Header({ navItems=PRIMARY_NAV, homeHref='/', ctaHref='', utility, ar=false, showTheme=true, immersive=false }: { navItems?: readonly NavItem[]; homeHref?: string; ctaHref?: string; utility?: ReactNode; ar?: boolean; showTheme?: boolean; immersive?: boolean }) {
   const startLead = () => { if(ctaHref) window.location.assign(ctaHref); else window.dispatchEvent(new Event('crea8iv:lead')); };
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -189,6 +190,58 @@ export default function Header({ navItems=PRIMARY_NAV, homeHref='/', ctaHref='',
   const pathname = usePathname();
   const closeMobile = useCallback(() => setMobileOpen(false), []);
   const closeTimerRef = useRef<number | null>(null);
+  const headerRef = useRef<HTMLElement>(null);
+  const navigationToggle = useRef<HTMLButtonElement>(null);
+  const [scrollHidden, setScrollHidden] = useState(false);
+  const [navigationOpen, setNavigationOpen] = useState(false);
+  const headerHidden = immersive ? !navigationOpen : scrollHidden && !mobileOpen && !openDropdown;
+
+  // Hold the last scroll direction until the user reverses it or reaches the top.
+  useEffect(() => {
+    if (immersive) return;
+    const root = document.scrollingElement ?? document.documentElement;
+    const getScrollY = () => Math.max(0, Math.min(window.scrollY, root.scrollHeight - root.clientHeight));
+    let previousY = getScrollY();
+    const onScroll = () => {
+      const y = getScrollY();
+      const delta = y - previousY;
+      if (y > 24 && Math.abs(delta) < 3) return;
+      previousY = y;
+      const focused = document.activeElement;
+      const keyboardInHeader = focused?.matches(':focus-visible') && headerRef.current?.contains(focused);
+      setScrollHidden(y > 24 && delta > 0 && !keyboardInHeader);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [immersive, pathname]);
+
+  const closeNavigation = useCallback(() => {
+    setNavigationOpen(false);
+    setMobileOpen(false);
+    setOpenDropdown(null);
+    navigationToggle.current?.focus();
+  }, []);
+
+  function togglePortfolioNavigation() {
+    if (navigationOpen || mobileOpen) closeNavigation();
+    else if (window.matchMedia('(min-width: 1280px)').matches) setNavigationOpen(true);
+    else setMobileOpen(true);
+  }
+
+  useEffect(() => {
+    if (!immersive) return;
+    const desktop = window.matchMedia('(min-width: 1280px)');
+    const resetMenu = () => { setMobileOpen(false); setNavigationOpen(false); };
+    desktop.addEventListener('change', resetMenu);
+    return () => desktop.removeEventListener('change', resetMenu);
+  }, [immersive]);
+
+  useEffect(() => {
+    if (!immersive || !navigationOpen) return;
+    const onKey = (event: KeyboardEvent) => { if (event.key === 'Escape') closeNavigation(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [immersive, navigationOpen, closeNavigation]);
 
   const applyTheme = useCallback((nextTheme: ThemeMode) => {
     setTheme(nextTheme);
@@ -236,7 +289,7 @@ export default function Header({ navItems=PRIMARY_NAV, homeHref='/', ctaHref='',
 
   // Route changes close transient navigation UI; pathname is the external router state.
   // eslint-disable-next-line react-hooks/set-state-in-effect
-  useEffect(() => { setOpenDropdown(null); setMobileOpen(false); }, [pathname]);
+  useEffect(() => { setOpenDropdown(null); setMobileOpen(false); setNavigationOpen(false); setScrollHidden(false); }, [pathname]);
 
   // Keyboard handler for dropdown
   const handleDropdownKeyDown = useCallback((e: React.KeyboardEvent, label: string) => {
@@ -271,9 +324,25 @@ export default function Header({ navItems=PRIMARY_NAV, homeHref='/', ctaHref='',
 
   return (
     <HeaderContext.Provider value={{navItems, ar, showTheme, ctaHref, startLead}}>
+      {immersive && (
+        <button ref={navigationToggle} type="button" className={navigationStyles.toggle}
+          aria-controls={mobileOpen ? 'mobile-navigation-drawer' : 'site-navigation'} aria-expanded={navigationOpen || mobileOpen}
+          aria-label={navigationOpen || mobileOpen ? 'Hide navigation' : 'Show navigation'}
+          onClick={togglePortfolioNavigation}>
+          {navigationOpen || mobileOpen ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
+          <span>{navigationOpen || mobileOpen ? 'Close' : 'Menu'}</span>
+        </button>
+      )}
       <header
-        data-market={ctaHref ? "qatar" : "global"}
+        id="site-navigation"
+        ref={headerRef}
+        data-hidden={headerHidden}
+        data-immersive={immersive || undefined}
+        inert={immersive && headerHidden ? true : undefined}
+        onFocusCapture={() => setScrollHidden(false)}
+        data-market={ctaHref && !immersive ? "qatar" : "global"}
         className={cn(
+          navigationStyles.header,
           "fixed top-0 left-0 right-0 z-[1000] border-b border-transparent py-2 transition-all duration-300 ease-out",
           scrolled
             ? "bg-[#030303]/72 border-[var(--border-soft)] shadow-[0_18px_60px_-34px_rgba(var(--decorative-rgb),.04),0_18px_55px_-24px_rgba(0,0,0,0.88)] backdrop-blur-xl"
@@ -388,7 +457,7 @@ export default function Header({ navItems=PRIMARY_NAV, homeHref='/', ctaHref='',
                 <button
                   type="button"
                   onClick={startLead}
-                  data-qa-event={ctaHref ? 'qatar_booking_click' : undefined}
+                  data-qa-event={ctaHref && !immersive ? 'qatar_booking_click' : undefined}
                   className="desktop-cta-lux glow-border group relative inline-flex h-[42px] items-center justify-center gap-1.5 overflow-hidden rounded-full border border-white/24 bg-white/[0.04] px-[16px] font-orbitron text-[9px] font-bold uppercase tracking-[0.14em] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_14px_36px_-28px_rgba(var(--decorative-rgb),.04)] backdrop-blur-xl transition-all duration-300 ease-lux hover:-translate-y-0.5 hover:border-[#FF6801]/55 hover:bg-white/[0.075] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_20px_46px_-28px_rgba(255,104,1,0.9)] xl:px-[18px]"
                 >
                   <span className="pointer-events-none absolute top-0 bottom-0 left-0 w-1/2 -translate-x-[180%] bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />

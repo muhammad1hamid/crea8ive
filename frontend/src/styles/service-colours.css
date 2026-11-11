@@ -20,7 +20,7 @@ html[data-theme="light"] [data-service-tone="content"] { --service-colour:#a33e3
 html[data-theme="light"] [data-service-tone="growth"] { --service-colour:#315e91; }
 
 [data-service-tone] { --icon-color:var(--service-colour); }
-html[data-theme] [data-service-tone] :is(.tone-icon,.home-service-icon,.home-industry-icon,.nav-service-icon,.footer-platform-icon) {
+html[data-theme] [data-service-tone] :is(.tone-icon,.home-service-icon,.home-industry-icon,.nav-service-icon) {
   color:var(--service-colour) !important;
   background:var(--service-tint) !important;
   border-color:color-mix(in srgb,var(--service-colour) 32%,transparent);
@@ -34,15 +34,6 @@ html[data-theme] [data-service-tone] :is(.tone-icon,.home-service-icon,.home-ind
 }
 [data-service-tone] .tone-link { color:var(--service-colour); }
 .tone-icon { display:inline-grid; place-items:center; width:40px; height:40px; flex:none; border:1px solid transparent; border-radius:8px; }
-
-.site-footer [data-platform="Instagram"] .footer-platform-icon { color:#e66aa3 !important; background:rgba(225,48,108,.1) !important; }
-.site-footer [data-platform="LinkedIn"] .footer-platform-icon { color:#67b6f4 !important; background:rgba(10,102,194,.1) !important; }
-.site-footer [data-platform="Pinterest"] .footer-platform-icon { color:#ff818b !important; background:rgba(230,0,35,.1) !important; }
-.site-footer [data-platform="Reddit"] .footer-platform-icon { color:#ff986f !important; background:rgba(255,69,0,.1) !important; }
-html[data-theme="light"] .site-footer [data-platform="Instagram"] .footer-platform-icon { color:#b52a68 !important; }
-html[data-theme="light"] .site-footer [data-platform="LinkedIn"] .footer-platform-icon { color:#0a66c2 !important; }
-html[data-theme="light"] .site-footer [data-platform="Pinterest"] .footer-platform-icon { color:#b8001c !important; }
-html[data-theme="light"] .site-footer [data-platform="Reddit"] .footer-platform-icon { color:#a6380e !important; }
 
 .home-luxury-story .home-premium-signal h3 { font-size:17px; line-height:1.35; font-weight:500 !important; }
 .home-luxury-story .home-premium-signal .tone-icon { width:40px; height:40px; border-radius:8px; }

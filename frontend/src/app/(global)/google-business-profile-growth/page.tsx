@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import SlugPage, { generateMetadata as generateSlugMetadata } from "../[slug]/page";
+import ServiceRevamp from "@/components/resource/ServiceRevamp";
+import { generateMetadata as generateSlugMetadata } from "../[slug]/page";
+import { businessProfileContent } from "./business-profile-content";
 
 const slug = "google-business-profile-growth";
 
@@ -8,5 +10,5 @@ export function generateMetadata(): Promise<Metadata> {
 }
 
 export default function GoogleBusinessProfileGrowthPage() {
-  return <SlugPage params={Promise.resolve({ slug })} />;
+  return <ServiceRevamp config={businessProfileContent} />;
 }

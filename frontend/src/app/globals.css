@@ -5313,27 +5313,6 @@ html[data-theme="light"] .post-details-content tr:hover {
   line-height: 1;
 }
 
-.footer-platform-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  flex: 0 0 2rem;
-  border: 1px solid var(--border-soft);
-  border-radius: 0.7rem;
-  color: var(--text-soft);
-  background: rgba(255, 104, 1, 0.08);
-  transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
-}
-
-.group:hover .footer-platform-icon,
-.group:focus-visible .footer-platform-icon {
-  border-color: rgba(255, 104, 1, 0.7);
-  background: rgba(255, 104, 1, 0.16);
-  transform: translateY(-1px);
-}
-
 @media (max-width: 767px) {
   .home-industry-number {
     display: none;
@@ -5422,18 +5401,6 @@ html[data-theme="light"] .home-social-index {
   border-color: rgba(12, 84, 70, 0.2);
   background: rgba(12, 84, 70, 0.06);
   color: rgba(12, 84, 70, 0.62) !important;
-}
-
-html[data-theme="light"] .footer-platform-icon {
-  border-color: rgba(12, 84, 70, 0.22);
-  background: rgba(12, 84, 70, 0.07);
-  color: #0c5446;
-}
-
-html[data-theme="light"] .group:hover .footer-platform-icon,
-html[data-theme="light"] .group:focus-visible .footer-platform-icon {
-  border-color: rgba(255, 104, 1, 0.58);
-  background: rgba(255, 104, 1, 0.12);
 }
 
 /* Mobile card rails: keep dense content browseable without turning every
@@ -5541,66 +5508,6 @@ html[data-theme="light"] .group:focus-visible .footer-platform-icon {
     bottom: auto;
   }
 
-  .footer-platform-links {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.55rem;
-  }
-
-  .footer-platform-link {
-    min-height: 4.1rem !important;
-    height: 4.1rem;
-    flex-direction: row !important;
-    align-items: center;
-    justify-content: flex-start !important;
-    gap: 0.55rem;
-    padding: 0.65rem !important;
-  }
-
-  .footer-platform-link > span:first-child {
-    min-width: 0;
-    gap: 0.5rem;
-  }
-
-  .footer-platform-label {
-    overflow: hidden;
-    font-size: 0.68rem !important;
-    line-height: 1.15;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .footer-platform-purpose {
-    display: none;
-  }
-
-  .footer-platform-icon {
-    width: 1.9rem;
-    height: 1.9rem;
-    flex-basis: 1.9rem;
-    border-radius: 0.6rem;
-  }
-}
-
-.footer-brand-letter {
-  display: inline-grid;
-  place-items: center;
-  min-width: 1rem;
-  color: currentColor;
-  font-family: var(--font-display), sans-serif;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 1;
-}
-
-.footer-brand-wide {
-  font-size: 0.65rem;
-  letter-spacing: -0.08em;
-}
-
-.footer-brand-medium {
-  font-family: Georgia, serif;
-  font-size: 1.05rem;
 }
 
 .home-social-index {
@@ -5631,19 +5538,6 @@ html[data-theme="light"] .home-instagram-preview-grid article h3 {
 
 html[data-theme="light"] .home-website-card-copy {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(252, 250, 238, 0.72));
-}
-
-html[data-theme="light"] .footer-platform-link {
-  border-color: rgba(12, 84, 70, 0.16) !important;
-  background: rgba(252, 250, 238, 0.72) !important;
-}
-
-html[data-theme="light"] .footer-platform-link .footer-platform-label {
-  color: #102f28 !important;
-}
-
-html[data-theme="light"] .footer-platform-link .footer-platform-purpose {
-  color: rgba(12, 84, 70, 0.62) !important;
 }
 
 /* Theme contract: adaptive surfaces inherit semantic tokens, while media and

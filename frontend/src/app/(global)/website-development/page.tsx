@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowDown, ArrowUp, ArrowUpRight, Check, MousePointer2, Plus, ShieldCheck, Smartphone } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpRight, Check, MousePointer2, ShieldCheck, Smartphone } from "lucide-react";
+import { ConnectedJourneyCard } from "@/components/HomepageConnectedJourney";
+import { DeliveryProcess } from "@/components/HomepageDeliveryProcess";
+import { InsightsSection } from "@/components/HomepageEditorial";
+import { FaqSection } from "@/components/HomepageFaq";
+import { FaqDisclosure } from "@/components/PremiumFaqAccordion";
 import LeadTriggerButton from "@/components/LeadTriggerButton";
 import PageSchema from "@/components/PageSchema";
 import PageSeoContent from "@/components/PageSeoContent";
 import ToolCard from "@/components/tools/ToolCard";
+import NotchedProjectCard from "@/components/ui/notched-project-card";
+import actionStyles from "@/components/homepage-final-cta.module.css";
 import { PAGE_SEO_CONTENT } from "@/lib/page-seo-content";
 import { serviceResources } from "@/lib/service-resources";
 import { BUSINESS_DETAILS } from "@/lib/site-config";
@@ -13,7 +20,7 @@ import { serviceToolMap, toolsBySlug } from "@/lib/tools";
 import { selectedWebsiteProof, websiteIndustryTargets } from "@/lib/website-service-proof";
 import { resolveContentBySlug } from "@/lib/wordpress";
 import { generateMetadata as generateSlugMetadata } from "../[slug]/page";
-import { articles, capabilities, features, packages, process, technical, timeline } from "./website-development-content";
+import { articles, capabilities, features, industryExamples, packages, process, technical, timeline, toolIcons } from "./website-development-content";
 import styles from "./website-development.module.css";
 
 const slug = "website-development";
@@ -43,28 +50,34 @@ export default async function WebsiteDevelopmentPage() {
       <PageSchema slug={slug} datePublished={resolved?.data.date} dateModified={resolved?.data.modified} />
       <PageSeoContent slug={slug} schemaOnly />
 
-      <section id="top" className={`${styles.inner} ${styles.hero}`} aria-labelledby="website-development-title">
-        <div>
-          <p className={styles.label}>Website Development</p>
-          <h1 id="website-development-title">Your website is either your best salesperson or your <em>biggest liability.</em></h1>
-          <p className={styles.lede}>We build fast, SEO-ready websites that help customers understand your offer and take the next step, from Rawalpindi and Islamabad to businesses across Pakistan.</p>
-          <div className={styles.actions}>
-            <a href="#cta" className={styles.primary}>Start Your Website <ArrowUpRight aria-hidden="true" /></a>
-            <a href="#pricing" className={styles.secondary}>See Pricing <ArrowDown aria-hidden="true" /></a>
+      <section id="top" className={styles.hero} aria-labelledby="website-development-title">
+        <div className={`${styles.inner} ${styles.heroLayout}`}>
+          <div className={styles.heroCopy}>
+            <p className={styles.label}>Website Development</p>
+            <h1 id="website-development-title">Your website is either your best salesperson or your <em>biggest liability.</em></h1>
+            <p className={styles.lede}>We build fast, SEO-ready websites that help customers understand your offer and take the next step, from Rawalpindi and Islamabad to businesses across Pakistan.</p>
+            <div className={styles.actions}>
+              <a href="#cta" className={actionStyles.primary}>Start Your Website <ArrowUpRight aria-hidden="true" /></a>
+              <a href="#pricing" className={actionStyles.secondary}>See Pricing <ArrowDown aria-hidden="true" /></a>
+            </div>
           </div>
+          <figure className={styles.heroFrame}>
+            <div className={styles.browserBar}>
+              <span aria-hidden="true"><i /><i /><i /></span>
+              <span>Buildscape website</span>
+            </div>
+            <Image src="/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp" alt="Buildscape’s construction website with architecture photography and a project enquiry button" width={720} height={500} sizes="(max-width: 639px) 92vw, (max-width: 899px) 640px, (max-width: 1399px) 46vw, 620px" preload />
+            <figcaption><span>Architecture &amp; construction</span><Link href="/case-studies/buildscape/" className={styles.textLink}>View case study <ArrowUpRight aria-hidden="true" /></Link></figcaption>
+          </figure>
         </div>
-        <figure className={styles.heroFrame}>
-          <div className={styles.browserBar}>
-            <span aria-hidden="true"><i /><i /><i /></span>
-            <span>Buildscape website</span>
-          </div>
-          <Image src="/img/portfolio/websites/buildscape/buildscape-production-card-20260927.webp" alt="Buildscape’s construction website with architecture photography and a project enquiry button" width={720} height={500} preload />
-          <figcaption><span>Architecture &amp; construction</span><Link href="/case-studies/buildscape/" className={styles.textLink}>View case study <ArrowUpRight aria-hidden="true" /></Link></figcaption>
-        </figure>
       </section>
 
       <section className={`${styles.section} ${styles.band}`} aria-labelledby="website-value">
-        <div className={`${styles.inner} ${styles.split}`}>
+        <div className={`${styles.inner} ${styles.split} ${styles.valueLayout}`}>
+          <figure className={styles.projectFrame}>
+            <Image src="/img/portfolio/websites/stw-movers/stw-desktop-20261019.webp" alt="STW Movers’ Barcelona chauffeur website with service navigation and booking actions" width={1440} height={1040} sizes="(max-width: 899px) 92vw, (max-width: 1399px) 50vw, 650px" />
+            <figcaption><span>STW Movers · Barcelona chauffeur website</span><Link href="/case-studies/stw-movers-barcelona/" className={styles.textLink}>View case study <ArrowUpRight aria-hidden="true" /></Link></figcaption>
+          </figure>
           <div className={styles.intro}>
             <h2 id="website-value">Give visitors a clear reason to enquire.</h2>
             <p>A good website makes your offer easy to understand, backs it up with relevant work and makes it easy to take action.</p>
@@ -74,10 +87,6 @@ export default async function WebsiteDevelopmentPage() {
               <li><MousePointer2 aria-hidden="true" /><div><h3>Make the next step obvious</h3><p>Put calls, forms, bookings and WhatsApp where visitors need them.</p></div></li>
             </ul>
           </div>
-          <figure className={styles.projectFrame}>
-            <Image src="/img/portfolio/websites/stw-movers/stw-desktop-20261019.webp" alt="STW Movers’ Barcelona chauffeur website with service navigation and booking actions" width={1440} height={1040} />
-            <figcaption><span>STW Movers · Barcelona chauffeur website</span><Link href="/case-studies/stw-movers-barcelona/" className={styles.textLink}>View case study <ArrowUpRight aria-hidden="true" /></Link></figcaption>
-          </figure>
         </div>
       </section>
 
@@ -89,7 +98,7 @@ export default async function WebsiteDevelopmentPage() {
               <h2 id="website-work">Different businesses. Different ways to enquire.</h2>
               <p>Explore how an interiors site presents its projects and how a drinks brand takes orders.</p>
             </div>
-            <Link href="/results/" className={styles.secondary}>Explore client work <ArrowUpRight aria-hidden="true" /></Link>
+            <Link href="/results/" className={`${actionStyles.secondary} ${styles.outlineAction}`}>Explore client work <ArrowUpRight aria-hidden="true" /></Link>
           </div>
           <div className={styles.projectGrid}>
             {selectedWebsiteProof.filter(({ slug }) => slug in screenshots).map((item) => {
@@ -109,14 +118,24 @@ export default async function WebsiteDevelopmentPage() {
           </div>
           <div className={styles.moreWork}>
             <h3>More projects and case studies</h3>
-            <ul className={styles.linkGrid}>
+            <div className={styles.moreProjectGrid}>
               {selectedWebsiteProof.filter(({ slug }) => !(slug in screenshots)).map((item) => (
-                <li key={item.slug}>
-                  <Link href={item.href} className={styles.textLink} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener noreferrer" : undefined}>
-                    {item.brand} · {item.title} <ArrowUpRight aria-hidden="true" />
-                  </Link>
-                </li>
+                <article key={item.slug}>
+                  <NotchedProjectCard
+                    href={item.href}
+                    title={item.brand}
+                    description={item.title}
+                    image={item.image}
+                    imageAlt={item.imageAlt}
+                    badge={item.slug === "patientflow-clinic-retention-software" ? "Website concept" : undefined}
+                    external={item.external}
+                    surface="var(--web-bg)"
+                    className={styles.projectPreview}
+                  />
+                </article>
               ))}
+            </div>
+            <ul className={styles.caseStudyLinks}>
               {caseLinks.filter(({ href }) => href !== "/case-studies/stw-movers-barcelona/").map(({ label, href }) => (
                 <li key={href}><Link href={href} className={styles.textLink}>{label} <ArrowUpRight aria-hidden="true" /></Link></li>
               ))}
@@ -126,23 +145,23 @@ export default async function WebsiteDevelopmentPage() {
       </section>
 
       <section className={styles.section} aria-labelledby="website-capabilities">
-        <div className={`${styles.inner} ${styles.split}`}>
-          <div className={styles.intro}>
+        <div className={styles.inner}>
+          <div className={`${styles.intro} ${styles.centered}`}>
             <p className={styles.label}>Development capabilities</p>
             <h2 id="website-capabilities">Build around how your business works.</h2>
             <p>Choose the site, pages and integrations around your actual goal, whether that’s enquiries, bookings, a portfolio or online sales.</p>
           </div>
-          <div className={styles.capabilityGrid}>
-            {capabilities.map(({ icon: Icon, title, copy }) => (
-              <article key={title}><Icon aria-hidden="true" /><h3>{title}</h3><p>{copy}</p></article>
+          <ol className={styles.capabilityGrid}>
+            {capabilities.map(({ image, title, copy }, index) => (
+              <ConnectedJourneyCard key={title} title={title} description={copy} image={`/img/homepage/${image}.webp`} number={index + 1} containedIcon />
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
       <section className={`${styles.section} ${styles.band}`} aria-labelledby="website-features">
         <div className={styles.inner}>
-          <div className={styles.intro}>
+          <div className={`${styles.intro} ${styles.centered}`}>
             <p className={styles.label}>Core website features</p>
             <h2 id="website-features">A site your team can use after launch.</h2>
             <p>Enquiry tools, tracking and support give your team a clear way to run the site and act on what it learns.</p>
@@ -155,30 +174,25 @@ export default async function WebsiteDevelopmentPage() {
         </div>
       </section>
 
-      <section className={styles.section} aria-labelledby="website-process">
-        <div className={styles.inner}>
-          <div className={styles.intro}>
-            <p className={styles.label}>How the work happens</p>
-            <h2 id="website-process">From the brief to a working site.</h2>
-          </div>
-          <ol className={styles.process}>
-            {process.map(({ icon: Icon, title, copy }, index) => (
-              <li key={title}><div className={styles.step}><span>0{index + 1}</span><Icon aria-hidden="true" /></div><h3>{title}</h3><p>{copy}</p></li>
-            ))}
-          </ol>
-        </div>
-      </section>
+      <DeliveryProcess
+        id="website-build-process"
+        headingId="website-process"
+        eyebrow="How the work happens"
+        heading={<>From the brief <em>to a working site.</em></>}
+        steps={process}
+        mobileSequence={{ label: "Website build and test sequence", steps: ["Build pages", "Check speed", "Test forms", "Check integrations"] }}
+      />
 
       <section className={`${styles.section} ${styles.band}`} aria-labelledby="website-technical">
-        <div className={`${styles.inner} ${styles.split}`}>
-          <div className={styles.intro}>
+        <div className={styles.inner}>
+          <div className={`${styles.intro} ${styles.centered}`}>
             <p className={styles.label}>Technical foundations</p>
-            <h2 id="website-technical">Ready to use, find and maintain.</h2>
+            <h2 id="website-technical">Ready to use, <em>find and maintain.</em></h2>
             <p>We plan technical requirements with the design so the site can support buyers on mobile, organic search and paid traffic.</p>
           </div>
           <ul className={styles.technical}>
-            {technical.map(({ icon: Icon, title, copy }) => (
-              <li key={title}><Icon aria-hidden="true" /><div><h3>{title}</h3><p>{copy}</p></div></li>
+            {technical.map(({ image, title, copy }, index) => (
+              <ConnectedJourneyCard key={title} title={title} description={copy} image={`/img/homepage/connected-journey/${image}.webp`} number={index + 1} containedIcon />
             ))}
           </ul>
         </div>
@@ -186,113 +200,125 @@ export default async function WebsiteDevelopmentPage() {
 
       <section id="pricing" className={styles.section} aria-labelledby="website-pricing">
         <div className={styles.inner}>
-          <div className={styles.sectionHead}>
-            <div className={styles.intro}>
-              <p className={styles.label}>Pricing and scope</p>
-              <h2 id="website-pricing">Clear starting points for your build.</h2>
-              <p>Page count, content, booking and other integrations shape the final proposal.</p>
-            </div>
-            <Link href="/pricing/" className={styles.secondary}>View pricing <ArrowUpRight aria-hidden="true" /></Link>
+          <div className={`${styles.intro} ${styles.centered}`}>
+            <p className={styles.label}>Pricing and scope</p>
+            <h2 id="website-pricing">Clear starting points <em>for your build.</em></h2>
+            <p>Page count, content, booking and other integrations shape the final proposal.</p>
           </div>
           <div className={styles.pricing}>
-            {packages.map(({ title, price, copy, includes }) => (
-              <article key={title}>
+            {packages.map(({ title, price, copy, includes, custom }, index) => (
+              <article key={title} className={styles.priceCard} data-custom={custom || undefined}>
+                <span className={styles.packageNumber} aria-hidden="true">0{index + 1}</span>
                 <h3>{title}</h3>
-                <strong className={styles.price}>{price}</strong>
+                <div className={styles.price}>
+                  <span>{custom ? "Project pricing" : "Starting price"}</span>
+                  <strong>{price}</strong>
+                </div>
                 <p>{copy}</p>
                 <ul>{includes.map(item => <li key={item}><Check aria-hidden="true" />{item}</li>)}</ul>
+                <a href="#cta" className={`${actionStyles.secondary} ${styles.packageAction}`}>
+                  <span>{custom ? "Request a quote" : "Discuss your build"}<span className="sr-only"> for {title}</span></span>
+                  <ArrowUpRight size={18} aria-hidden="true" />
+                </a>
               </article>
             ))}
           </div>
+          <Link href="/pricing/" className={`${styles.textLink} ${styles.allPricing}`}>View full pricing <ArrowUpRight aria-hidden="true" /></Link>
           <div className={styles.scopeNote}>
             <div><h3>Already have a website?</h3><p>We can audit the current site, map conversion and search gaps, and define the homepage and service-page structure before a rebuild.</p></div>
-            <LeadTriggerButton className={styles.secondary} eventLabel="service-decision-Website system">Start Free Audit</LeadTriggerButton>
+            <LeadTriggerButton className={`${actionStyles.secondary} ${styles.outlineAction}`} eventLabel="service-decision-Website system">Start Free Audit</LeadTriggerButton>
           </div>
         </div>
       </section>
 
       <section className={`${styles.section} ${styles.band} ${styles.tools}`} aria-labelledby="website-tools">
         <div className={styles.inner}>
-          <div className={styles.intro}><p className={styles.label}>Free growth tools</p><h2 id="website-tools">Find out what needs attention first.</h2><p>Check speed, search foundations and the potential value of more enquiries before planning a rebuild.</p></div>
-          <div className={styles.toolGrid}>{tools.map(tool => <ToolCard key={tool} tool={toolsBySlug[tool]} compact />)}</div>
+          <div className={`${styles.intro} ${styles.centered}`}><p className={styles.label}>Free growth tools</p><h2 id="website-tools">Find out what needs <em>attention first.</em></h2><p>Check speed, search foundations and the potential value of more enquiries before planning a rebuild.</p></div>
+          <div className={styles.toolGrid}>
+            {tools.map(tool => <ToolCard key={tool} tool={toolsBySlug[tool]} iconImage={toolIcons[tool]} compact />)}
+          </div>
         </div>
       </section>
 
-      <section className={styles.section} aria-labelledby="website-articles">
-        <div className={styles.inner}>
-          <div className={styles.sectionHead}>
-            <div className={styles.intro}><p className={styles.label}>Recommended reading</p><h2 id="website-articles">Guides for planning your website.</h2></div>
-            <Link href="/blog/" className={styles.textLink}>View all articles <ArrowUpRight aria-hidden="true" /></Link>
-          </div>
-          <div className={styles.articleGrid}>
-            {articles.map(({ title, href, image, category, description }) => (
-              <article key={href} className={styles.card}>
-                <div className={styles.articleMedia}><Image src={image} alt="" width={640} height={360} /></div>
-                <div className={styles.cardCopy}>
-                  <p className={styles.label}>{category}</p><h3>{title}</h3><p>{description}</p>
-                  <Link href={href} className={styles.textLink} aria-label={`Read article: ${title}`}>Read article <ArrowUpRight aria-hidden="true" /></Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <InsightsSection
+        id="website-articles"
+        eyebrow="Recommended reading"
+        issue="Websites"
+        heading={<>Guides for planning <em>your website.</em></>}
+        intro="Explore how to choose a website partner, plan for enquiries and budget for search visibility."
+        linkLabel="View all articles"
+        articles={articles.map(({ category, ...article }) => ({ ...article, topic: category }))}
+      />
 
       <section className={`${styles.section} ${styles.band}`} aria-labelledby="website-development-pakistan">
-        <div className={`${styles.inner} ${styles.split}`}>
-          <div className={styles.intro}>
+        <div className={styles.inner}>
+          <div className={`${styles.intro} ${styles.centered} ${styles.industryIntro}`}>
             <h2 id="website-development-pakistan">{seo.heading}</h2>
             <p>{seo.intro}</p>
             <p className={styles.byline}>Strategy &amp; content by Syed Qamar Abbas<span>Founder &amp; CEO, Crea8iv Media</span></p>
           </div>
           <div className={styles.industries}>
             <h3>Website development by industry</h3>
-            <ul>{websiteIndustryTargets.map(({ title, description, href }) => (
-              <li key={href}>
-                <Link href={href} className={styles.textLink}>{title} <ArrowUpRight aria-hidden="true" /></Link>
-                <p>{description}</p>
-              </li>
-            ))}</ul>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.section} aria-labelledby="website-faq">
-        <div className={`${styles.inner} ${styles.split}`}>
-          <div className={styles.intro}><h2 id="website-faq">Frequently asked questions.</h2><p>Find answers about price, platform choices, project timelines and redesigns.</p></div>
-          <div className={styles.disclosures}>
-            {[timeline, ...seo.faqs].map(({ q, a }) => (
-              <details key={q} name="website-development-faq">
-                <summary>{q}<Plus aria-hidden="true" /></summary><p>{a}</p>
-              </details>
-            ))}
-          </div>
-          <details className={styles.guideList}>
-            <summary>More guides, comparisons and next steps <Plus aria-hidden="true" /></summary>
-            <ul className={styles.linkGrid}>
-              {guides.map((guide) => (
-                <li key={guide.href}>
-                  <Link href={guide.href} className={styles.textLink}>{guide.label} <ArrowUpRight aria-hidden="true" /></Link>
-                  {guide.description && <p>{guide.description}</p>}
-                </li>
+            <div className={styles.industryGrid}>
+              {websiteIndustryTargets.map(({ title, description, href }) => (
+                <article key={href}>
+                  <NotchedProjectCard
+                    href={href}
+                    title={title}
+                    description={description}
+                    image={industryExamples[href].image}
+                    imageAlt={industryExamples[href].alt}
+                    tags={[industryExamples[href].label]}
+                    surface="var(--web-raised)"
+                    className={styles.industryPreview}
+                  />
+                </article>
               ))}
-              <li><Link href="/consultation/" className={styles.textLink}>Discuss strategy <ArrowUpRight aria-hidden="true" /></Link></li>
-            </ul>
-          </details>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="cta" className={styles.section} aria-labelledby="website-cta">
-        <div className={`${styles.inner} ${styles.closing}`}>
-          <div className={styles.intro}>
-            <h2 id="website-cta">Ready to build a website that converts?</h2>
-            <p>Tell us what you sell, who your site needs to reach and what you want visitors to do. We’ll use that to discuss the right project scope.</p>
-            <a href="#top" className={styles.textLink}>Back to top <ArrowUp aria-hidden="true" /></a>
+      <FaqSection
+        id="website-questions"
+        headingId="website-faq"
+        eyebrow="Before we begin"
+        heading={<>Frequently <em>asked questions.</em></>}
+        description="Find answers about price, platform choices, project timelines and redesigns."
+        items={[timeline, ...seo.faqs].map(({ q, a }) => ({ question: q, answer: a }))}
+        centered
+      >
+        <FaqDisclosure
+          question="More guides, comparisons and next steps"
+          questionId="website-guides-question"
+          answerId="website-guides-answer"
+          className={styles.guideList}
+        >
+          <ul className={styles.linkGrid}>
+            {guides.map((guide) => (
+              <li key={guide.href}>
+                <Link href={guide.href} className={styles.textLink}>{guide.label} <ArrowUpRight aria-hidden="true" /></Link>
+                {guide.description && <p>{guide.description}</p>}
+              </li>
+            ))}
+            <li><Link href="/consultation/" className={styles.textLink}>Discuss strategy <ArrowUpRight aria-hidden="true" /></Link></li>
+          </ul>
+        </FaqDisclosure>
+      </FaqSection>
+
+      <section id="cta" className={actionStyles.section} aria-labelledby="website-cta">
+        <div className={`${actionStyles.card} ${styles.closing}`}>
+          <div className={`${actionStyles.copy} ${styles.closingCopy}`}>
+            <h2 id="website-cta">Ready to build <em>a website that converts?</em></h2>
+            <p className={actionStyles.intro}>Tell us what you sell, who your site needs to reach and what you want visitors to do. We’ll use that to discuss the right project scope.</p>
           </div>
-          <div className={styles.actions}>
-            <Link href="/contact/" className={styles.primary}>Discuss My Website <ArrowUpRight aria-hidden="true" /></Link>
-            <a href={whatsappHref} className={styles.secondary} target="_blank" rel="noopener noreferrer">WhatsApp the Team <ArrowUpRight aria-hidden="true" /></a>
+          <div className={`${styles.actions} ${styles.closingActions}`}>
+            <Link href="/contact/" className={actionStyles.primary}>Discuss My Website <ArrowUpRight aria-hidden="true" /></Link>
+            <a href={whatsappHref} className={actionStyles.secondary} target="_blank" rel="noopener noreferrer">WhatsApp the Team <ArrowUpRight aria-hidden="true" /></a>
+          </div>
+          <div className={styles.closingLinks}>
             <LeadTriggerButton className={styles.textLink} eventLabel="service-conversion-website-development">Request Service Audit</LeadTriggerButton>
+            <a href="#top" className={styles.textLink}>Back to top <ArrowUp aria-hidden="true" /></a>
           </div>
         </div>
       </section>

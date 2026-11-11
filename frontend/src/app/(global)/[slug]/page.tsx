@@ -33,7 +33,8 @@ import { PAGE_METADATA, pageUrl } from "@/lib/seo-metadata";
 import { SOCIAL_LINKS } from "@/lib/social-links";
 import type { WPPost } from "@/types/wordpress";
 import detailStyles from "@/components/service-body.module.css";
-import GrowthSystemsIntro from "../growth-systems/GrowthSystemsIntro";
+import { InsightsSection } from "@/components/HomepageEditorial";
+import GrowthSystemsIntro, { GrowthSystemsContact } from "../growth-systems/GrowthSystemsIntro";
 import growthStyles from "../growth-systems/growth-systems.module.css";
 
 export const revalidate = 3600;
@@ -1311,8 +1312,18 @@ export default async function SlugPage({ params }: SlugPageProps) {
           {serviceVisual ? <ServiceConversionSystem slug={slug} serviceTitle={isGrowthSystems ? "Growth Systems" : plainTitle} /> : null}
           <ServiceToolsPanel slug={slug} />
           <ServiceResources slug={slug} />
-          {suggestedReading.length ? (
-            <section className={isGrowthSystems ? growthStyles.reading : "mx-auto mt-14 max-w-[1180px] px-5 sm:px-8 lg:px-10"}>
+          {isGrowthSystems ? (
+            <InsightsSection
+              id="growth-insights"
+              eyebrow="Recommended reading"
+              issue="Growth systems"
+              heading={<>Practical insights on <em>building growth systems.</em></>}
+              intro="See how lead generation, marketing strategy and follow-up work in practice."
+              linkLabel="View all articles"
+              articles={suggestedReading.map((item) => ({ ...item, topic: item.category }))}
+            />
+          ) : suggestedReading.length ? (
+            <section className="mx-auto mt-14 max-w-[1180px] px-5 sm:px-8 lg:px-10">
               <div className="mb-6 flex items-end justify-between gap-4">
                 <div>
                   <p className="font-orbitron text-[11px] uppercase tracking-[0.18em] text-brand-300">Recommended Reading</p>
@@ -1347,6 +1358,7 @@ export default async function SlugPage({ params }: SlugPageProps) {
           ) : null}
           {/* AEO/SEO content appended below the Elementor design (design untouched) */}
           <PageSeoContent slug={slug} />
+          {isGrowthSystems && <GrowthSystemsContact />}
         </>
         )}
       </ContentShell>

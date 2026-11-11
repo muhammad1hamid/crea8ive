@@ -4,13 +4,59 @@ import { COMPANY } from "@/data/company";
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowUpRight, Globe2, Palette } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { BUSINESS_DETAILS, GOOGLE_MAPS_PLACE_URL } from '@/lib/site-config';
 import { PLATFORM_LINKS, SOCIAL_LINKS } from '@/lib/social-links';
 import FooterDisclosure from './FooterDisclosure';
 import FooterMobileNavigation from './FooterMobileNavigation';
 import { FOOTER_COMPANY_LINKS } from './footer-navigation';
 import styles from './footer.module.css';
+
+const PLATFORM_LOGOS = {
+  "Website": "/icon.png",
+  "Instagram": "/img/platform-logos/instagram.webp",
+  "TikTok": "/img/platform-logos/tiktok.webp",
+  "LinkedIn": "/img/platform-logos/linkedin.webp",
+  "X / Twitter": "/img/platform-logos/x.webp",
+  "Pinterest": "/img/platform-logos/pinterest.webp",
+  "Clutch": "/img/platform-logos/clutch.webp",
+  "Reddit": "/img/platform-logos/reddit.webp",
+  "GoodFirms": "/img/platform-logos/goodfirms.webp",
+  "Linktree": "/img/platform-logos/linktree.webp",
+  "Threads": "/img/platform-logos/threads.webp",
+  "Medium": "/img/platform-logos/medium.webp",
+  "Behance": "/img/platform-logos/behance.webp",
+  "Snapchat": "/img/platform-logos/snapchat.webp",
+} satisfies Record<(typeof PLATFORM_LINKS)[number]['label'], string>;
+
+const PLATFORM_GROUP_TITLES = {
+  social: 'Social profiles',
+  creative: 'Creative & community',
+  website: 'Website & reviews',
+} as const;
+
+const PLATFORM_GROUP_BY_LABEL = {
+  Website: 'website',
+  Instagram: 'social',
+  TikTok: 'social',
+  LinkedIn: 'social',
+  'X / Twitter': 'social',
+  Pinterest: 'creative',
+  Clutch: 'website',
+  Reddit: 'creative',
+  GoodFirms: 'website',
+  Linktree: 'website',
+  Threads: 'social',
+  Medium: 'creative',
+  Behance: 'creative',
+  Snapchat: 'social',
+} satisfies Record<(typeof PLATFORM_LINKS)[number]['label'], keyof typeof PLATFORM_GROUP_TITLES>;
+
+const footerPlatformGroups = Object.entries(PLATFORM_GROUP_TITLES).map(([id, title]) => ({
+  id,
+  title,
+  platforms: PLATFORM_LINKS.filter(({ label }) => PLATFORM_GROUP_BY_LABEL[label] === id),
+}));
 
 function subscribeFooterViewport(onChange: () => void) {
   const query = window.matchMedia('(max-width: 767px)');
@@ -210,51 +256,48 @@ export default function Footer() {
               <Link href="/clients/" className="inline-flex min-h-11 items-center text-sm text-white/75 hover:text-[#FF6801]">Explore client identities and selected work →</Link>
             </div>
 
-        <div className={`${styles.platforms} mt-14 border-t border-white/[0.08] pt-8`}>
+        <div id="official-platforms" className={styles.platforms}>
           <FooterDisclosure title="Official platforms" id="footer-platforms" mobile={mobile} ready={ready}>
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <h3 className={`${styles.platformHeading} text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--icon-color)]`}>
-                Official platforms
-              </h3>
-              <p className="mt-3 max-w-2xl font-inter text-sm leading-6 text-white/70">
-                All Crea8iv Media social profiles, review pages, publishing channels, design portfolios, and community links in one place.
-              </p>
+            <div className={styles.platformPanel}>
+              <div className={styles.platformHeader}>
+                <div>
+                  <h3 className={styles.platformHeading}>Official platforms</h3>
+                  <p className={styles.platformIntro}>Find Crea8iv Media’s social profiles, reviews, articles, design portfolios and community links.</p>
+                </div>
+                <a href="https://linktr.ee/crea8ivmedia" target="_blank" rel="me noopener noreferrer" className={styles.platformHub}>
+                  Open all links <ArrowUpRight size={16} aria-hidden="true" />
+                </a>
+              </div>
+              <div className={styles.platformGroups}>
+                {footerPlatformGroups.map(({ id, title, platforms }) => (
+                  <div key={id} className={styles.platformGroup}>
+                    <h4 id={`footer-platform-group-${id}`} className={styles.platformGroupTitle}>{title}</h4>
+                    <ul className={styles.platformLinks} aria-labelledby={`footer-platform-group-${id}`} role="list">
+                      {platforms.map(({ label, href, purpose }) => (
+                        <li key={label}>
+                          <a
+                            href={href}
+                            target="_blank"
+                            rel="me noopener noreferrer"
+                            className={styles.platformLink}
+                            aria-label={`Open Crea8iv Media on ${label}`}
+                            data-platform={label}
+                          >
+                            <span className={styles.platformLogo} aria-hidden="true">
+                              <Image src={PLATFORM_LOGOS[label]} alt="" width={28} height={28} loading="lazy" />
+                            </span>
+                            <span className={styles.platformCopy}>
+                              <span className={styles.platformName}>{label}</span>
+                              <span className={styles.platformPurpose}>{purpose}</span>
+                            </span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
             </div>
-            <a
-              href="https://linktr.ee/crea8ivmedia"
-              target="_blank"
-              rel="me noopener noreferrer"
-              className="font-inter text-sm font-semibold text-white transition-colors hover:text-[#FF6801]"
-            >
-              Open all links
-            </a>
-          </div>
-          <div className="footer-platform-links mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
-            {PLATFORM_LINKS.map((platform) => (
-              <a
-                key={platform.label}
-                href={platform.href}
-                target="_blank"
-                rel="me noopener noreferrer"
-                className="footer-platform-link group flex min-h-[86px] flex-col justify-between rounded-xl border border-white/10 bg-white/[0.035] p-4 transition-all duration-200 hover:border-[#FF6801]/70 hover:bg-[#FF6801]/10"
-                aria-label={`Open Crea8iv Media on ${platform.label}`}
-                data-platform={platform.label}
-              >
-                <span className="flex items-center gap-3">
-                  <span className="footer-platform-icon" aria-hidden="true">
-                    <PlatformIcon label={platform.label} />
-                  </span>
-                  <span className="footer-platform-label font-inter text-sm font-semibold text-white transition-colors group-hover:text-[#FF6801]">
-                    {platform.label}
-                  </span>
-                </span>
-                <span className="footer-platform-purpose mt-3 font-inter text-xs text-white/50">
-                  {platform.purpose}
-                </span>
-              </a>
-            ))}
-          </div>
           </FooterDisclosure>
         </div>
       </div>
@@ -286,25 +329,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
-
-function PlatformIcon({ label }: { label: string }) {
-  const className = "h-4 w-4";
-  if (label === "Instagram") return <svg className={className} viewBox="0 0 24 24" fill="none"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" stroke="currentColor" strokeWidth="2" /><circle cx="12" cy="12" r="4.1" stroke="currentColor" strokeWidth="2" /><circle cx="17.6" cy="6.6" r="1.1" fill="currentColor" /></svg>;
-  if (label === "TikTok") return <svg className={className} viewBox="0 0 24 24" fill="currentColor"><path d="M14.3 3h3c.25 1.8 1.3 3.2 3 3.9V10a8.6 8.6 0 0 1-3-.9v5.7a5.2 5.2 0 1 1-4.5-5.15v3.12a2.2 2.2 0 1 0 1.5 2.03V3Z" /></svg>;
-  if (label === "LinkedIn") return <svg className={className} viewBox="0 0 24 24" fill="currentColor"><path d="M5.2 7.1A2.1 2.1 0 1 0 5.2 3a2.1 2.1 0 0 0 0 4.1ZM3.4 20.7h3.6V9H3.4v11.7Zm5.9 0h3.6v-6.1c0-1.6.3-3.2 2.3-3.2s2 1.9 2 3.3v6h3.6v-6.8c0-3.3-.7-5.8-4.6-5.8-1.9 0-3.1 1-3.6 1.9h-.1V9H9.3v11.7Z" /></svg>;
-  if (label === "X / Twitter") return <svg className={className} viewBox="0 0 24 24" fill="currentColor"><path d="M5 4h3.7l4 5.3L17.2 4H19l-5.5 6.4L19.2 20h-3.7l-4.4-5.8L6.8 20H5l5.6-6.6L5 4Zm3.1 1.6H7.1l7.9 12.8h1L8.1 5.6Z" /></svg>;
-  if (label === "Pinterest") return <svg className={className} viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.2a8.8 8.8 0 0 0-3.2 17c-.1-1.4 0-3 .4-4.3l1-4.2s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.4-.9 3.7-.3 1.1.6 2 1.7 2 2 0 3.4-2.1 3.4-5.1 0-2.7-1.9-4.5-4.7-4.5-3.2 0-5.1 2.4-5.1 4.9 0 1 .4 2.1.8 2.7.1.1.1.2.1.4l-.3 1.1c-.1.4-.4.5-.7.3-1.3-.6-2.1-2.6-2.1-4.2 0-3.4 2.5-6.6 7.2-6.6 3.8 0 6.7 2.7 6.7 6.2 0 3.7-2.3 6.7-5.5 6.7-1.1 0-2.2-.6-2.6-1.3l-.7 2.5c-.3 1.3-1.2 2.8-1.8 3.8.8.2 1.7.4 2.6.4a8.8 8.8 0 1 0 0-17.6Z" /></svg>;
-  if (label === "Threads") return <svg className={className} viewBox="0 0 24 24" fill="none"><path d="M17.8 11.2c-.3-2.8-2.3-4.4-5.5-4.4-3.5 0-5.7 2-5.7 5.3 0 3.5 2.2 5.5 5.8 5.5 2.3 0 4.1-.9 5.1-2.6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /><path d="M7.2 3.9c1.4-1 3.1-1.5 4.9-1.5 4.9 0 8.7 3.4 8.7 9.2 0 5.9-3.8 9.9-9.4 9.9-5.8 0-9.9-4-9.9-9.7 0-5.7 3.8-9.6 9.6-9.6 4.5 0 7.7 2.1 8.8 5.4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>;
-  if (label === "Website") return <Globe2 className={className} strokeWidth={1.7} />;
-  if (label === "Clutch") return <span className="footer-brand-letter">C</span>;
-  if (label === "GoodFirms") return <span className="footer-brand-letter">G</span>;
-  if (label === "Linktree") return <span className="footer-brand-letter">L</span>;
-  if (label === "Medium") return <span className="footer-brand-letter footer-brand-medium">M</span>;
-  if (label === "Blogger") return <span className="footer-brand-letter">B</span>;
-  if (label === "Behance") return <span className="footer-brand-letter footer-brand-wide">Be</span>;
-  if (label === "Dribbble") return <span className="footer-brand-letter">D</span>;
-  if (label === "Snapchat") return <span className="footer-brand-letter">S</span>;
-  if (label === "Reddit") return <span className="footer-brand-letter">r/</span>;
-  return <Palette className={className} strokeWidth={1.7} />;
 }

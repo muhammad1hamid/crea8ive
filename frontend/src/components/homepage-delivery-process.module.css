@@ -64,7 +64,7 @@
   transition: border-color 240ms ease, box-shadow 240ms ease;
 }
 .copy { position: relative; z-index: 2; width: 48%; padding: 30px 0 30px 30px; }
-.number { display: block; color: var(--process-accent) !important; font-size: 42px; font-weight: 700 !important; font-variant-numeric: tabular-nums; line-height: 1; }
+.number { display: block; color: var(--process-text-accent, var(--process-accent)) !important; font-size: 42px; font-weight: 700 !important; font-variant-numeric: tabular-nums; line-height: 1; }
 .copy h3 { margin: 10px 0 0; font-size: 29px; font-weight: 700 !important; line-height: 1.15; }
 .copy h3::after { content: ""; display: block; width: 58px; height: 3px; margin-top: 13px; background: var(--process-accent); }
 .copy p { margin: 15px 0 0; font-size: 16px; line-height: 1.55; }
@@ -93,7 +93,7 @@
 }
 .cta:focus-visible { outline: 3px solid var(--process-accent); outline-offset: 5px; }
 
-:global(html[data-theme="light"]) .heading .eyebrow { color: var(--process-accent) !important; }
+:global(html[data-theme="light"]) .heading .eyebrow { color: var(--process-text-accent, var(--process-accent)) !important; }
 :global(html[data-theme="light"]) .eyebrow::before,
 :global(html[data-theme="light"]) .eyebrow::after,
 :global(html[data-theme="light"]) .heading em::after,

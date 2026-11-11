@@ -6,7 +6,7 @@ import ConnectedJourneyMotion from "./ConnectedJourneyMotion";
 import styles from "./mobile-project-journey.module.css";
 
 type Stage = { title: string; description: string };
-const buildSequence = ["Design", "Create", "Implement", "Test", "Release"];
+const buildSequence = { label: "Build and launch sequence", steps: ["Design", "Create", "Implement", "Test", "Release"] };
 
 function StageArtwork({ index }: { index: number }) {
   return <div className={styles.art} aria-hidden="true">
@@ -42,7 +42,11 @@ function StageArtwork({ index }: { index: number }) {
   </div>;
 }
 
-export default function MobileProjectJourney({ stages }: { stages: Stage[] }) {
+export default function MobileProjectJourney({ stages, idPrefix = "project-stage", sequence = buildSequence }: {
+  stages: Stage[];
+  idPrefix?: string;
+  sequence?: { label: string; steps: readonly string[] };
+}) {
   const root = useRef<HTMLDivElement>(null);
   const animations = useRef(new Map<HTMLDetailsElement, Animation>());
   const activeRef = useRef(0);
@@ -112,21 +116,21 @@ export default function MobileProjectJourney({ stages }: { stages: Stage[] }) {
       </div>
       <div className={styles.progress} data-enhanced={enhanced} aria-hidden={!enhanced} style={{ "--journey-position": active / Math.max(1, stages.length - 1) } as CSSProperties}>
         <div className={styles.progressLine} aria-hidden="true"><span /></div>
-        {stages.map((stage, index) => <button key={stage.title} type="button" aria-label={`Open stage ${index + 1}: ${stage.title}`} aria-controls={`project-stage-content-${index}`} aria-current={active === index ? "step" : undefined} disabled={!enhanced} onClick={() => setActive(index)}><span>{String(index + 1).padStart(2, "0")}</span></button>)}
+        {stages.map((stage, index) => <button key={stage.title} type="button" aria-label={`Open stage ${index + 1}: ${stage.title}`} aria-controls={`${idPrefix}-content-${index}`} aria-current={active === index ? "step" : undefined} disabled={!enhanced} onClick={() => setActive(index)}><span>{String(index + 1).padStart(2, "0")}</span></button>)}
       </div>
       <p className="sr-only" role="status" aria-live="polite" aria-atomic="true" hidden={!enhanced}>Stage {active + 1} of {stages.length}: {stages[active]?.title}</p>
       <ol className={styles.panels} aria-label="Project journey milestones">
         {stages.map((stage, index) => <li key={stage.title} data-journey-card data-selected={index === active}>
-          <details className={styles.panel} data-stage={index + 1} name={enhanced ? undefined : "mobile-project-journey"} open={index === 0}>
-            <summary id={`project-stage-toggle-${index}`} className={styles.toggle} aria-controls={`project-stage-content-${index}`} aria-expanded={enhanced ? index === active : undefined} aria-disabled={enhanced && index === active ? true : undefined} onClick={event => { if (enhanced) { event.preventDefault(); setActive(index); } }} onKeyDown={event => moveFocus(event, index)}>
+          <details className={styles.panel} data-stage={index + 1} name={enhanced ? undefined : idPrefix === "project-stage" ? "mobile-project-journey" : idPrefix} open={index === 0}>
+            <summary id={`${idPrefix}-toggle-${index}`} className={styles.toggle} aria-controls={`${idPrefix}-content-${index}`} aria-expanded={enhanced ? index === active : undefined} aria-disabled={enhanced && index === active ? true : undefined} onClick={event => { if (enhanced) { event.preventDefault(); setActive(index); } }} onKeyDown={event => moveFocus(event, index)}>
               <span className={styles.number} aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
               <h3 className={styles.title}>{stage.title}</h3>
               <span className={styles.sign} aria-hidden="true"><Plus size={20} /></span>
             </summary>
-            <div id={`project-stage-content-${index}`} className={styles.body} role="region" aria-labelledby={`project-stage-toggle-${index}`} aria-hidden={enhanced ? index !== active : undefined} inert={enhanced && index !== active}>
+            <div id={`${idPrefix}-content-${index}`} className={styles.body} role="region" aria-labelledby={`${idPrefix}-toggle-${index}`} aria-hidden={enhanced ? index !== active : undefined} inert={enhanced && index !== active}>
               <div className={styles.bodyContent}>
                 <p>{stage.description}</p>
-                {index === 2 ? <ol className={styles.buildFlow} aria-label="Build and launch sequence">{buildSequence.map((step, position) => <li key={step}><span>{step}</span>{position < buildSequence.length - 1 && <ArrowRight size={14} aria-hidden="true" />}</li>)}</ol> : <StageArtwork index={index} />}
+                {index === 2 ? <ol className={styles.buildFlow} aria-label={sequence.label}>{sequence.steps.map((step, position) => <li key={step}><span>{step}</span>{position < sequence.steps.length - 1 && <ArrowRight size={14} aria-hidden="true" />}</li>)}</ol> : <StageArtwork index={index} />}
               </div>
             </div>
           </details>

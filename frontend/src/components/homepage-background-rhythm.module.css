@@ -9,7 +9,6 @@
    showcase. Insights and FAQs likewise form one continuous colour chapter. */
 :global(html[data-theme="light"]) .homepage :global(:is(
   #home-client-logos,
-  #home-problem-services,
   #home-selected-work,
   #home-work-library,
   #home-creative-work,
@@ -22,7 +21,6 @@
 }
 
 :global(html[data-theme="light"]) .homepage > :global(:is(
-  #home-buyers-decide,
   #featured-case-studies,
   #home-how-it-connects,
   #home-founder-office,

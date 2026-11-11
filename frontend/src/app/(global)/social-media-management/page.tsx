@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import SlugPage, { generateMetadata as generateSlugMetadata } from "../[slug]/page";
+import ServiceRevamp from "@/components/resource/ServiceRevamp";
+import { generateMetadata as generateSlugMetadata } from "../[slug]/page";
+import { socialMediaContent } from "./social-media-content";
 
 const slug = "social-media-management";
 
@@ -8,5 +10,5 @@ export function generateMetadata(): Promise<Metadata> {
 }
 
 export default function SocialMediaManagementPage() {
-  return <SlugPage params={Promise.resolve({ slug })} />;
+  return <ServiceRevamp config={socialMediaContent} />;
 }

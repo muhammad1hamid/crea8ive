@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  ArrowUpRight,
-  BarChart3,
-  CheckCircle2,
-  FileSearch,
-  Globe2,
-  Link2,
-  RefreshCcw,
-  Sparkles,
-} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { ConnectedJourneyCard } from "@/components/HomepageConnectedJourney";
+import { FaqSection } from "@/components/HomepageFaq";
+import actionStyles from "@/components/homepage-final-cta.module.css";
+import { ResourceChecklist, ResourceClosing, ResourceHeading, ResourceHero } from "@/components/resource/ResourcePage";
+import resource from "@/components/resource/resource-page.module.css";
+import { NotchedProjectCard } from "@/components/ui/notched-project-card";
 import { aiVisibilityTargets } from "@/lib/ai-visibility-targets";
 import { BUSINESS_DETAILS, SITE_URL } from "@/lib/site-config";
+import styles from "./growth-plan.module.css";
 
 const PAGE_URL = `${SITE_URL}/ai-visibility-growth/`;
 const LAST_UPDATED = "2026-09-13";
@@ -31,22 +29,18 @@ const operatingCadence = [
   {
     title: "Weekly AI citation check",
     body: "Run the priority query set in Google Search, visible AI results, ChatGPT with search, Perplexity and Gemini. Log whether Crea8iv Media is cited, mentioned, absent or described incorrectly.",
-    icon: FileSearch,
   },
   {
     title: "Monthly page refresh",
     body: "Update pages with weak clicks or weak AI visibility by improving direct answer blocks, proof links, FAQ depth, schema alignment and internal links.",
-    icon: RefreshCcw,
   },
   {
     title: "Authority distribution",
     body: "Create off-site signals through Google Business Profile posts, founder LinkedIn content, YouTube transcripts, partner mentions, directory consistency and useful community answers.",
-    icon: Link2,
   },
   {
     title: "Traffic to lead capture",
     body: "Measure WhatsApp clicks, call clicks, form starts, consultation visits and tool usage so AI and organic visibility turns into qualified enquiries.",
-    icon: BarChart3,
   },
 ] as const;
 
@@ -109,6 +103,15 @@ const trackerFields = [
   "Lead actions",
   "Next action and owner",
 ] as const;
+
+const cadenceIcons = ["connected-journey/01-discover", "connected-journey/02-explore", "connected-journey/03-trust", "connected-journey/05-follow-through"];
+const phaseIcons = ["service-orbit/02-seo-ai", "service-orbit/03-websites", "service-orbit/04-branding", "connected-journey/05-follow-through"];
+const clusterIcons = ["03-websites", "02-seo-ai", "01-strategy", "06-automation", "02-seo-ai", "05-paid-ads", "04-branding", "01-strategy"];
+
+const growthFaqs = [
+  { question: "How can Crea8iv Media improve AI visibility?", answer: "Crea8iv Media can improve AI visibility by tracking priority queries, publishing extractable answer blocks, keeping schema aligned with visible content, strengthening real proof pages and building consistent third-party entity signals." },
+  { question: "Which traffic signals should be monitored?", answer: "The most useful signals are AI mentions, source citations, Search Console impressions and clicks, WhatsApp clicks, call clicks, form submissions, tool completions and consultation page visits." },
+];
 
 export const metadata: Metadata = {
   title: { absolute: "AI Visibility Growth Plan for Crea8iv Media" },
@@ -185,24 +188,11 @@ function JsonLd() {
       {
         "@type": "FAQPage",
         "@id": `${PAGE_URL}#faq`,
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "How can Crea8iv Media improve AI visibility?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Crea8iv Media can improve AI visibility by tracking priority queries, publishing extractable answer blocks, keeping schema aligned with visible content, strengthening real proof pages and building consistent third-party entity signals.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Which traffic signals should be monitored?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "The most useful signals are AI mentions, source citations, Search Console impressions and clicks, WhatsApp clicks, call clicks, form submissions, tool completions and consultation page visits.",
-            },
-          },
-        ],
+        mainEntity: growthFaqs.map(({ question, answer }) => ({
+          "@type": "Question",
+          name: question,
+          acceptedAnswer: { "@type": "Answer", text: answer },
+        })),
       },
     ],
   };
@@ -212,235 +202,114 @@ function JsonLd() {
 
 export default function AiVisibilityGrowthPage() {
   return (
-    <main className="native-page relative isolate overflow-hidden bg-[#050505] text-white">
+    <main className={resource.page}>
       <JsonLd />
-      <section className="px-6 pb-14 pt-44 lg:px-10 lg:pb-20">
-        <div className="mx-auto max-w-[1180px]">
-          <nav className="mb-8 flex flex-wrap items-center gap-2 font-orbitron text-[10px] uppercase tracking-[0.16em] text-white/45" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-brand-300">Home</Link>
-            <span>/</span>
-            <span className="text-white/72">AI Visibility Growth</span>
-          </nav>
-          <p className="lux-eyebrow mb-5">
-            <Sparkles className="h-3.5 w-3.5" aria-hidden="true" /> AI visibility and traffic gain
-          </p>
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
-            <div>
-              <h1 className="max-w-5xl font-orbitron text-[clamp(2.35rem,6vw,5.25rem)] font-bold leading-[1.03] tracking-normal text-white">
-                AI visibility growth plan for Crea8iv Media.
-              </h1>
-              <p className="mt-6 max-w-3xl font-inter text-lg leading-8 text-white/70">
-                This page turns AI SEO into an operating system: priority query tracking, answer-ready
-                content, schema-safe pages, real proof, third-party authority and traffic-to-lead
-                measurement for {BUSINESS_DETAILS.brandName}.
-              </p>
-              <p className="mt-5 font-orbitron text-[11px] uppercase tracking-[0.16em] text-white/45">
-                Last updated: September 13, 2026
-              </p>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <Link href="/ai-visibility-growth-plan.md" className="portfolio-button justify-center">
-                  Machine-readable plan <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-                <Link
-                  href="/ai-visibility-content-roadmap/"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-[#FF6801]/45 bg-[#1a0b02]/60 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801] hover:text-[#FF6801]"
-                >
-                  Content roadmap <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-                <Link
-                  href="/ai-citation-sources/"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-[#FF6801]/45 bg-[#1a0b02]/60 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801] hover:text-[#FF6801]"
-                >
-                  Citation sources <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-                <Link
-                  href="/ai-visibility-tracker-template.csv"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801]/70 hover:text-[#FF6801]"
-                >
-                  Download tracker CSV <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-                <Link
-                  href="/tools/ai-visibility-checker/"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801]/70 hover:text-[#FF6801]"
-                >
-                  Run AI visibility checker <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-              </div>
-            </div>
-            <aside className="lux-card p-6">
-              <p className="font-orbitron text-[11px] uppercase tracking-[0.18em] text-brand-300">Priority query set</p>
-              <ul className="mt-5 space-y-3">
-                {priorityQueries.map((query) => (
-                  <li key={query} className="flex gap-3 font-inter text-sm leading-6 text-white/72">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#FF6801]" />
-                    <span>{query}</span>
-                  </li>
-                ))}
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </section>
+      <ResourceHero
+        id="ai-growth-title"
+        breadcrumb="AI Visibility Growth"
+        eyebrow="AI visibility and organic traffic"
+        heading={<>AI visibility growth plan <em>for Crea8iv Media.</em></>}
+        intro={`Track priority queries, publish clear answers, align schema with visible facts and connect verifiable evidence to qualified enquiries. This is the 90-day operating plan for ${BUSINESS_DETAILS.brandName}.`}
+        note={<>Last updated <time dateTime={LAST_UPDATED}>September 13, 2026</time></>}
+        art={{ src: "/img/services/ad-concepts/ai-automation-ad-concept.webp", alt: "A central AI system linking messages, planning, qualification and measurement", width: 960, height: 540 }}
+        actions={[
+          { href: "#ninety-day-plan", label: "View the 90-day plan" },
+          { href: "/ai-visibility-tracker-template.csv", label: "Open tracker CSV" },
+        ]}
+      />
 
-      <section className="px-6 py-12 lg:px-10" aria-labelledby="cadence-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-4">Operating cadence</p>
-          <h2 id="cadence-heading" className="max-w-4xl font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-            What should be checked, improved and measured every week.
-          </h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {operatingCadence.map((item) => {
-              const Icon = item.icon;
-              return (
-                <article key={item.title} className="lux-card p-5">
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-[#FF6801]/30 bg-[#FF6801]/10 text-[#FF6801]">
-                    <Icon className="h-5 w-5" aria-hidden="true" />
-                  </span>
-                  <h3 className="mt-5 font-orbitron text-lg font-semibold leading-tight text-white">{item.title}</h3>
-                  <p className="mt-3 font-inter text-sm leading-6 text-white/64">{item.body}</p>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-12 lg:px-10" aria-labelledby="template-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <div className="lux-card p-7 md:p-9">
-            <p className="lux-eyebrow mb-4">
-              <FileSearch className="h-3.5 w-3.5" aria-hidden="true" /> Tracking template
-            </p>
-            <div className="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
-              <div>
-                <h2 id="template-heading" className="font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-                  Use one format to monitor AI citations, competitors and lead actions.
-                </h2>
-                <p className="mt-4 font-inter text-base leading-7 text-white/68">
-                  The tracker template turns weekly AI visibility checks into a repeatable process.
-                  It records whether Crea8iv Media is mentioned, cited, described correctly, losing
-                  to competitors, or missing conversion opportunities.
-                </p>
-                <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                  <Link href="/ai-visibility-tracker-template.csv" className="portfolio-button justify-center">
-                    Open CSV template <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                  </Link>
-                  <Link
-                    href="/ai-visibility-tracker-template.md"
-                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801]/70 hover:text-[#FF6801]"
-                  >
-                    Read tracker guide <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                  </Link>
-                </div>
-              </div>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {trackerFields.map((field) => (
-                  <div key={field} className="rounded-[18px] border border-white/10 bg-white/[0.035] p-4 font-inter text-sm leading-6 text-white/66">
-                    {field}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-12 lg:px-10" aria-labelledby="ninety-day-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-4">90-day action plan</p>
-          <h2 id="ninety-day-heading" className="max-w-4xl font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-            A focused rollout for more AI mentions, organic traffic and qualified leads.
-          </h2>
-          <div className="mt-8 grid gap-5">
-            {ninetyDayPlan.map((phase, index) => (
-              <article key={phase.phase} className="lux-card p-6">
-                <div className="grid gap-6 lg:grid-cols-[260px_minmax(0,1fr)]">
-                  <div>
-                    <p className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-white/35">
-                      {String(index + 1).padStart(2, "0")}
-                    </p>
-                    <p className="mt-3 font-orbitron text-[12px] font-bold uppercase tracking-[0.16em] text-[#FF6801]">{phase.phase}</p>
-                    <h3 className="mt-3 font-orbitron text-2xl font-semibold leading-tight text-white">{phase.title}</h3>
-                  </div>
-                  <ul className="grid gap-3 md:grid-cols-3">
-                    {phase.actions.map((action) => (
-                      <li key={action} className="flex gap-3 rounded-[18px] border border-white/10 bg-white/[0.035] p-4 font-inter text-sm leading-6 text-white/66">
-                        <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-[#FF6801]" aria-hidden="true" />
-                        <span>{action}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </article>
+      <section id="ninety-day-plan" className={`${resource.section} ${resource.band}`} aria-labelledby="ninety-day-heading">
+        <div className={resource.inner}>
+          <ResourceHeading id="ninety-day-heading" eyebrow="90-day action plan" heading={<>Measure, improve <em>and distribute.</em></>} intro="Start with tracking and reliable business facts. Then refresh key service pages, publish supporting content and review what earns useful visibility." />
+          <ol className={resource.cards}>
+            {ninetyDayPlan.map(({ phase, title, actions }, index) => (
+              <ConnectedJourneyCard key={phase} title={title} description={phase} image={`/img/homepage/${phaseIcons[index]}.webp`} number={index + 1} containedIcon>
+                <ResourceChecklist items={actions} />
+              </ConnectedJourneyCard>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
-      <section className="px-6 py-12 lg:px-10" aria-labelledby="clusters-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-4">Traffic clusters</p>
-          <h2 id="clusters-heading" className="max-w-4xl font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-            Connect every query cluster to a service page, proof page, tool and next step.
-          </h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {aiVisibilityTargets.slice(0, 8).map((target) => (
-              <article key={target.slug} className="lux-card p-5">
-                <div className="flex flex-wrap items-center gap-3">
-                  <span className="rounded-full border border-[#FF6801]/35 bg-[#FF6801]/10 px-3 py-1 font-orbitron text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF6801]">
-                    {target.priority}
-                  </span>
-                  <span className="font-orbitron text-[10px] uppercase tracking-[0.16em] text-white/35">{target.theme}</span>
-                </div>
-                <p className="mt-4 font-inter text-sm leading-7 text-white/66">{target.directAnswer}</p>
-                <div className="mt-5 flex flex-wrap gap-3">
-                  <Link href={target.primaryUrl} className="inline-flex items-center gap-2 font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF6801]">
-                    Primary page <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-                  </Link>
-                  <Link href="/ai-visibility-targets/" className="inline-flex items-center gap-2 font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-white/50 hover:text-[#FF6801]">
-                    Full target map <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-                  </Link>
-                </div>
-              </article>
+      <section className={resource.section} aria-labelledby="cadence-heading">
+        <div className={resource.inner}>
+          <ResourceHeading id="cadence-heading" eyebrow="Operating cadence" heading={<>Check what changed. <em>Decide what to do next.</em></>} intro="Use the weekly citation checks and monthly page refreshes to guide distribution and lead measurement." />
+          <ol className={resource.cards} data-columns="4">
+            {operatingCadence.map(({ title, body }, index) => (
+              <ConnectedJourneyCard key={title} title={title} description={body} image={`/img/homepage/${cadenceIcons[index]}.webp`} number={index + 1} containedIcon />
             ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className={`${resource.section} ${resource.band}`} aria-labelledby="template-heading">
+        <div className={resource.inner}>
+          <ResourceHeading id="template-heading" eyebrow="Tracking template" heading={<>One record for queries, <em>citations and lead actions.</em></>} intro="Keep each review comparable. Record who is cited, which sources are used, how accurately the business is described and what needs attention next." />
+          <div className={styles.split}>
+            <div><h3>Priority query set</h3><ResourceChecklist items={priorityQueries} /></div>
+            <div><h3>Tracker fields</h3><ResourceChecklist items={trackerFields} /></div>
+          </div>
+          <div className={styles.actions}>
+            <Link href="/ai-visibility-tracker-template.csv" className={actionStyles.primary}>Open CSV template <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <Link href="/ai-visibility-tracker-template.md" className={resource.textLink}>Read tracker guide <ArrowUpRight size={17} aria-hidden="true" /></Link>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-14 lg:px-10" aria-labelledby="measurement-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <div className="lux-card p-7 md:p-9">
-            <p className="lux-eyebrow mb-4">
-              <Globe2 className="h-3.5 w-3.5" aria-hidden="true" /> Lead measurement
-            </p>
-            <h2 id="measurement-heading" className="max-w-3xl font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-              AI visibility should be judged by useful traffic and qualified enquiries.
-            </h2>
-            <p className="mt-5 max-w-3xl font-inter text-base leading-7 text-white/70">
-              See how search architecture, traveller answers and enquiry preparation connect in our{" "}
-              <Link href="/case-studies/stw-movers-barcelona/" className="inline-flex min-h-11 items-center text-[var(--icon-color)] underline underline-offset-4">STW Movers Barcelona case study</Link>.
-            </p>
-            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {conversionSignals.map((signal) => (
-                <div key={signal} className="rounded-[18px] border border-white/10 bg-white/[0.035] p-4 font-inter text-sm leading-7 text-white/66">
-                  {signal}
+      <section className={resource.section} aria-labelledby="clusters-heading">
+        <div className={resource.inner}>
+          <ResourceHeading id="clusters-heading" eyebrow="Traffic clusters" heading={<>Give every query cluster <em>a useful destination.</em></>} intro="Pair the main service page with supporting proof, a relevant tool and a clear next step. Use the target map to see the full set of queries and supporting pages." />
+          <ol className={`${resource.cards} ${styles.clusters}`} data-columns="4">
+            {aiVisibilityTargets.slice(0, 8).map(({ slug, theme, directAnswer, priority, primaryUrl }, index) => (
+              <ConnectedJourneyCard key={slug} title={theme} description={directAnswer} image={`/img/homepage/service-orbit/${clusterIcons[index]}.webp`} number={index + 1} containedIcon>
+                <div className={styles.clusterFoot}>
+                  <span>{priority} priority</span>
+                  <Link href={primaryUrl} className={resource.textLink}>Open primary page <ArrowUpRight size={16} aria-hidden="true" /></Link>
                 </div>
-              ))}
-            </div>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/consultation/" className="portfolio-button justify-center">
-                Book AI visibility audit <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-              <Link
-                href="/tools/"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801]/70 hover:text-[#FF6801]"
-              >
-                View free tools <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            </div>
+              </ConnectedJourneyCard>
+            ))}
+          </ol>
+          <div className={styles.actions}>
+            <Link href="/ai-visibility-targets/" className={resource.textLink}>Full target map <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <Link href="/ai-visibility-content-roadmap/" className={resource.textLink}>Content roadmap <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <Link href="/ai-citation-sources/" className={resource.textLink}>Citation sources <ArrowUpRight size={17} aria-hidden="true" /></Link>
           </div>
         </div>
       </section>
+
+      <section className={`${resource.section} ${resource.band}`} aria-labelledby="measurement-heading">
+        <div className={resource.inner}>
+          <ResourceHeading id="measurement-heading" eyebrow="Lead measurement" heading={<>Track useful traffic <em>and qualified enquiries.</em></>} intro="Review what people do after they discover a page. Use that evidence to decide which content, offers and enquiry paths to improve." />
+          <div className={styles.split}>
+            <div><h3>Conversion signals</h3><ResourceChecklist items={conversionSignals} /></div>
+            <NotchedProjectCard
+              href="/case-studies/stw-movers-barcelona/"
+              title="STW Movers Barcelona case study"
+              description="See how search architecture, traveller answers and enquiry preparation work together."
+              image="/img/portfolio/websites/stw-movers/stw-desktop-20261019.webp"
+              imageAlt="STW Movers Barcelona chauffeur website"
+              surface="var(--resource-band)"
+              tags={["Search architecture"]}
+              className={styles.evidence}
+            />
+          </div>
+          <div className={styles.actions}>
+            <Link href="/tools/ai-visibility-checker/" className={resource.textLink}>Run AI visibility checker <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <Link href="/tools/" className={resource.textLink}>View free tools <ArrowUpRight size={17} aria-hidden="true" /></Link>
+          </div>
+        </div>
+      </section>
+
+      <FaqSection id="ai-growth-faq" headingId="ai-growth-faq-title" eyebrow="Monitoring questions" heading={<>AI visibility growth <em>FAQs.</em></>} description="What to improve and how to measure the response." items={growthFaqs} centered />
+      <ResourceClosing
+        id="ai-growth-next-step"
+        heading={<>Start with a baseline <em>you can track.</em></>}
+        intro="Use the plan to review current visibility and agree which gaps to address first."
+        actions={[
+          { href: "/consultation/", label: "Book AI visibility audit" },
+          { href: "/ai-visibility-growth-plan.md", label: "Read machine-readable plan" },
+        ]}
+      />
     </main>
   );
 }

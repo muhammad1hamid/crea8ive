@@ -1,59 +1,64 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  ArrowUpRight,
-  BarChart3,
-  BookOpenCheck,
-  FileCheck2,
-  LineChart,
-  Search,
-  ShieldCheck,
-  Sparkles,
-} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { ConnectedJourneyCard } from "@/components/HomepageConnectedJourney";
+import { FaqSection } from "@/components/HomepageFaq";
+import { ResourceChecklist, ResourceClosing, ResourceHeading, ResourceHero } from "@/components/resource/ResourcePage";
+import resourceStyles from "@/components/resource/resource-page.module.css";
 import { BUSINESS_DETAILS, SITE_URL } from "@/lib/site-config";
+import styles from "./research.module.css";
 
 const PAGE_URL = `${SITE_URL}/research/`;
 const LAST_UPDATED = "2026-10-08";
+
+const researchObjectives = ["Authority", "Rankings", "AI citations", "Branded demand", "Qualified leads", "Revenue"];
 
 const authorityPillars = [
   {
     title: "Website Development",
     body: "Performance, conversion paths, technical SEO, redesign risk, Next.js versus WordPress decisions and international delivery models.",
     href: "/website-development/",
+    icon: "03-websites",
   },
   {
     title: "SEO and AI Visibility",
     body: "Search architecture, local SEO, AI citation readiness, entity clarity, structured data, answer blocks and content evidence.",
     href: "/ai-search-optimization/",
+    icon: "02-seo-ai",
   },
   {
     title: "Google Ads and Acquisition",
     body: "Search intent, landing pages, tracking, lead quality, campaign waste, conversion feedback and customer acquisition economics.",
     href: "/google-ads/",
+    icon: "05-paid-ads",
   },
 ] as const;
 
 const researchPrograms = [
   {
     title: "AI Search Visibility Benchmark",
+    icon: "service-orbit/02-seo-ai",
     status: "Planned study",
     question: "How often do Pakistani service businesses appear in ChatGPT, Gemini, Perplexity and Google AI results for commercial discovery prompts?",
     method: "Fixed prompt set, recorded platform, date, market context, visible sources, cited URLs and mention quality.",
   },
   {
     title: "Website Conversion Benchmark",
+    icon: "service-orbit/03-websites",
     status: "Planned study",
     question: "What separates high-trust service websites from sites that look good but fail to generate qualified enquiries?",
     method: "Review a defined sample against mobile UX, page speed, content clarity, proof, forms, WhatsApp paths and analytics readiness.",
   },
   {
     title: "Local SEO and Maps Evidence Review",
+    icon: "connected-journey/01-discover",
     status: "Planned study",
     question: "Which public signals are consistently present for businesses appearing strongly in local search and Google Maps?",
     method: "Track categories, service wording, profile completeness, review signals, landing pages, NAP consistency and visible proof.",
   },
   {
     title: "Google Ads Waste and Lead Quality Review",
+    icon: "service-orbit/05-paid-ads",
     status: "Planned study",
     question: "Where do small and mid-sized service businesses lose budget before a lead becomes sales-ready?",
     method: "Compare search intent, negatives, landing-page fit, conversion tracking, call handling, CRM stages and qualified lead feedback.",
@@ -190,161 +195,141 @@ function JsonLd() {
 
 export default function ResearchPage() {
   return (
-    <main className="native-page relative isolate overflow-hidden bg-[#050505] text-white">
+    <main className={resourceStyles.page}>
       <JsonLd />
-      <section className="px-6 pb-14 pt-44 lg:px-10 lg:pb-20">
-        <div className="mx-auto max-w-[1180px]">
-          <nav className="mb-8 flex flex-wrap items-center gap-2 font-orbitron text-[10px] uppercase tracking-[0.16em] text-white/45" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-brand-300">Home</Link>
-            <span>/</span>
-            <span className="text-white/72">Research</span>
-          </nav>
-          <p className="lux-eyebrow mb-5">
-            <Sparkles className="h-3.5 w-3.5" aria-hidden="true" /> Authority research
-          </p>
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
-            <div>
-              <h1 className="max-w-5xl font-orbitron text-[clamp(2.35rem,6vw,5.2rem)] font-bold leading-[1.03] tracking-normal text-white">
-                Research should make growth decisions easier to verify.
-              </h1>
-              <p className="mt-6 max-w-3xl font-inter text-lg leading-8 text-white/70">
-                Crea8iv Media Research is a methodology-first hub for website development, SEO, AI visibility and Google Ads acquisition. The purpose is to turn real observations, client proof and public benchmarks into useful decision assets without inventing results.
-              </p>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <Link href="/research.md" className="portfolio-button justify-center">
-                  Read research brief <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-                <Link
-                  href="/ai-visibility-growth/"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-[#FF6801]/70 hover:text-[#FF6801]"
-                >
-                  AI visibility plan <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-              </div>
-            </div>
-            <aside className="lux-card p-6">
-              <p className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF6801]">Primary objective</p>
-              <p className="mt-5 font-inter text-xl leading-8 text-white">
-                Authority -&gt; rankings -&gt; AI citations -&gt; branded demand -&gt; qualified leads -&gt; revenue.
-              </p>
-              <p className="mt-5 font-inter text-sm leading-7 text-white/62">
-                DR and DA are tracked as secondary indicators. They are not treated as the main business outcome.
-              </p>
-            </aside>
-          </div>
-        </div>
-      </section>
+      <ResourceHero
+        id="research-title"
+        breadcrumb="Research"
+        eyebrow="Crea8iv Media · Research"
+        heading={<>Research to help you <em>verify growth decisions.</em></>}
+        intro="We document how we study websites, SEO, AI visibility and Google Ads acquisition. Our research draws on recorded observations, client proof and public benchmarks to help businesses compare their options."
+        art={{
+          src: "/img/homepage/buyer-journey/02-check-brand-v2.webp",
+          alt: "A magnifying glass and a checkmark shield beside evidence cards",
+          width: 1120,
+          height: 800,
+        }}
+        actions={[
+          { href: "#planned-studies", label: "Browse planned studies" },
+          { href: "/research.md", label: "Read research brief" },
+        ]}
+      />
 
-      <section className="px-6 py-12 lg:px-10" aria-labelledby="pillars-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-4">
-            <BookOpenCheck className="h-3.5 w-3.5" aria-hidden="true" /> Authority pillars
-          </p>
-          <h2 id="pillars-heading" className="max-w-4xl font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-            Three clusters keep authority concentrated.
-          </h2>
-          <div className="mt-8 grid gap-5 lg:grid-cols-3">
-            {authorityPillars.map((pillar) => (
-              <article key={pillar.title} className="lux-card p-6">
-                <h3 className="font-orbitron text-xl font-semibold text-white">{pillar.title}</h3>
-                <p className="mt-4 font-inter text-sm leading-7 text-white/66">{pillar.body}</p>
-                <Link href={pillar.href} className="mt-6 inline-flex items-center gap-2 font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF6801]">
-                  View cluster <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-                </Link>
-              </article>
+      <section className={`${resourceStyles.section} ${resourceStyles.band}`} aria-labelledby="research-objective-title">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="research-objective-title"
+            eyebrow="Primary objective"
+            heading={<>How research supports <em>business growth.</em></>}
+            intro="DR and DA are tracked as secondary indicators."
+          />
+          <ol className={styles.objective}>
+            {researchObjectives.map((objective, index) => (
+              <li key={objective}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{objective}</li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
-      <section className="px-6 py-12 lg:px-10" aria-labelledby="programs-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-4">
-            <BarChart3 className="h-3.5 w-3.5" aria-hidden="true" /> Research programs
-          </p>
-          <h2 id="programs-heading" className="max-w-4xl font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-            Planned studies are labeled before findings are published.
-          </h2>
-          <div className="mt-8 grid gap-5">
-            {researchPrograms.map((program, index) => (
-              <article key={program.title} className="lux-card p-6">
-                <div className="grid gap-6 lg:grid-cols-[220px_minmax(0,1fr)]">
-                  <div>
-                    <span className="font-orbitron text-[10px] font-bold uppercase tracking-[0.16em] text-white/35">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <p className="mt-3 rounded-full border border-[#FF6801]/35 bg-[#FF6801]/10 px-3 py-1 text-center font-orbitron text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF6801]">
-                      {program.status}
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-orbitron text-2xl font-semibold text-white">{program.title}</h3>
-                    <p className="mt-4 font-inter text-base leading-8 text-white/74">{program.question}</p>
-                    <p className="mt-4 font-inter text-sm leading-7 text-white/54">
-                      <strong className="text-white/82">Method:</strong> {program.method}
-                    </p>
-                  </div>
+      <section className={resourceStyles.section} aria-labelledby="pillars-heading">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="pillars-heading"
+            eyebrow="Authority pillars"
+            heading={<>Three areas <em>we study.</em></>}
+          />
+          <ol className={`${resourceStyles.cards} ${styles.pillars}`} data-columns="3">
+            {authorityPillars.map(({ title, body, href, icon }, index) => (
+              <ConnectedJourneyCard
+                key={title}
+                title={title}
+                description={body}
+                image={`/img/homepage/service-orbit/${icon}.webp`}
+                number={index + 1}
+                containedIcon
+              >
+                <Link href={href} className={resourceStyles.textLink}>
+                  View cluster <ArrowUpRight size={17} aria-hidden="true" />
+                </Link>
+              </ConnectedJourneyCard>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section id="planned-studies" className={`${resourceStyles.section} ${resourceStyles.band}`} aria-labelledby="programs-heading">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="programs-heading"
+            eyebrow="Research programs"
+            heading={<>Planned studies <em>and their methods.</em></>}
+            intro="Each card states the research question and how we plan to study it. Findings will follow once the data and limitations are documented."
+          />
+          <ol className={resourceStyles.cards}>
+            {researchPrograms.map(({ title, status, question, method, icon }, index) => (
+              <ConnectedJourneyCard
+                key={title}
+                title={title}
+                description={question}
+                image={`/img/homepage/${icon}.webp`}
+                number={index + 1}
+                containedIcon
+              >
+                <div className={styles.studyDetails}>
+                  <span className={styles.studyStatus}>{status}</span>
+                  <p><strong>Method</strong> {method}</p>
                 </div>
-              </article>
+              </ConnectedJourneyCard>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
-      <section className="px-6 py-12 lg:px-10" aria-labelledby="rules-heading">
-        <div className="mx-auto grid max-w-[1180px] gap-5 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
-          <div className="lux-card p-7">
-            <p className="lux-eyebrow mb-4">
-              <ShieldCheck className="h-3.5 w-3.5" aria-hidden="true" /> Evidence rules
-            </p>
-            <h2 id="rules-heading" className="font-orbitron text-3xl font-bold leading-tight text-white">
-              Useful research has boundaries.
-            </h2>
-            <ul className="mt-6 space-y-4">
-              {operatingRules.map((rule) => (
-                <li key={rule} className="flex gap-3 font-inter text-sm leading-7 text-white/68">
-                  <FileCheck2 className="mt-1 h-4 w-4 shrink-0 text-[#FF6801]" aria-hidden="true" />
-                  <span>{rule}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="lux-card p-7">
-            <p className="lux-eyebrow mb-4">
-              <Search className="h-3.5 w-3.5" aria-hidden="true" /> Connected assets
-            </p>
-            <h2 className="font-orbitron text-3xl font-bold leading-tight text-white">
-              Evidence should connect to decisions.
-            </h2>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              {flagshipAssets.map((asset) => (
-                <Link key={asset.href} href={asset.href} className="rounded-[18px] border border-white/10 bg-white/[0.035] p-4 font-inter text-sm leading-6 text-white/72 transition hover:border-[#FF6801]/45 hover:text-white">
-                  {asset.label}
-                </Link>
-              ))}
+      <section className={resourceStyles.section} aria-labelledby="rules-heading">
+        <div className={resourceStyles.inner}>
+          <ResourceHeading
+            id="rules-heading"
+            eyebrow="Evidence standards"
+            heading={<>How we collect <em>and use evidence.</em></>}
+          />
+          <div className={styles.evidenceLayout}>
+            <div>
+              <h3>Evidence rules</h3>
+              <ResourceChecklist items={operatingRules} />
+            </div>
+            <div>
+              <h3>Connected resources</h3>
+              <ul className={styles.assetLinks}>
+                {flagshipAssets.map(({ href, label }) => (
+                  <li key={href}>
+                    <Link href={href} className={resourceStyles.textLink}>{label} <ArrowUpRight size={16} aria-hidden="true" /></Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-14 lg:px-10" aria-labelledby="faq-heading">
-        <div className="mx-auto max-w-[1180px]">
-          <p className="lux-eyebrow mb-4">
-            <LineChart className="h-3.5 w-3.5" aria-hidden="true" /> Research FAQ
-          </p>
-          <h2 id="faq-heading" className="max-w-4xl font-orbitron text-[clamp(1.8rem,4vw,3rem)] font-bold leading-tight text-white">
-            Clear answers before deeper studies.
-          </h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {faqs.map((faq) => (
-              <article key={faq.question} className="lux-card p-6">
-                <h3 className="font-orbitron text-lg font-semibold text-white">{faq.question}</h3>
-                <p className="mt-4 font-inter text-sm leading-7 text-white/66">{faq.answer}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FaqSection
+        id="research-faq"
+        headingId="faq-heading"
+        eyebrow="Research FAQ"
+        heading={<>Questions about <em>our research.</em></>}
+        description="How we plan studies, use evidence and connect findings to client decisions."
+        items={faqs}
+        centered
+      />
+
+      <ResourceClosing
+        id="research-next-step"
+        heading={<>Read the method <em>behind the work.</em></>}
+        intro="Open the research brief or see how the AI visibility plan puts monitoring and evidence into practice."
+        actions={[
+          { href: "/research.md", label: "Read research brief" },
+          { href: "/ai-visibility-growth/", label: "AI visibility plan" },
+        ]}
+      />
     </main>
   );
 }
