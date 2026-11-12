@@ -70,7 +70,7 @@
   line-height: 1.65;
   text-wrap: pretty;
 }
-.board { max-width: 1340px; margin: 36px auto 0; }
+.board { max-width: 1140px; margin: 36px auto 0; }
 .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 64px; margin: 0; padding: 0; list-style: none; }
 .step { position: relative; min-width: 0; }
 .card {
@@ -124,7 +124,7 @@
 @media (max-width: 1023px) {
   .section.section.section { padding: 48px 32px 56px !important; }
   .heading h2 { font-size: 40px; }
-  .steps { grid-template-columns: minmax(0, 1fr); gap: 64px; max-width: 420px; margin-inline: auto; }
+  .steps { grid-template-columns: minmax(0, 1fr); gap: 64px; max-width: 360px; margin-inline: auto; }
   .connector { inset: auto auto -50px 50%; width: 58px; height: 32px; transform: translateX(-50%) rotate(90deg); }
 }
 @media (max-width: 767px) {
@@ -137,6 +137,7 @@
   .heading h2 em::after { bottom: -1px; height: 2px; }
   .heading .lead { margin-top: 21px; font-size: 16px; line-height: 1.6; }
   .board { margin-top: 28px; }
+  .steps { max-width: 320px; }
   .card { border-radius: 28px; }
 }
 @media (max-width: 359px) {

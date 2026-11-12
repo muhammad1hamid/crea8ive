@@ -30,7 +30,7 @@ export default function HowItWorks({ features, className }: HowItWorksProps) {
             <li key={stage.id} className={styles.step} data-buyer-stage={stage.id} data-buyer-entrance={index}>
               <div className={styles.card}>
                 <Image className={styles.artwork} src={`/img/homepage/buyer-journey/reference-${stage.id}-v1.webp`}
-                  alt={stage.alt} fill sizes="(min-width: 1440px) 430px, (min-width: 1024px) 30vw, (min-width: 700px) 420px, calc(100vw - 48px)" loading="lazy" />
+                  alt={stage.alt} fill sizes="(min-width: 1280px) 338px, (min-width: 1024px) calc((100vw - 152px) / 3), (min-width: 768px) 360px, (min-width: 368px) 320px, (min-width: 360px) calc(100vw - 48px), calc(100vw - 40px)" loading="lazy" />
                 <div className={styles.cardCopy}>
                   <span className={styles.number} aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
                   <h3 className={styles.cardTitle}><span>They</span>{" "}<span className={styles.action}>{step.title.replace(/^They\s+/i, "")}</span></h3>

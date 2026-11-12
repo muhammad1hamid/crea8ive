@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { registerScrollController } from '@/lib/scroll-controller';
 
 /**
  * Apple-style buttery momentum scrolling for the whole document.
@@ -24,6 +25,7 @@ export default function SmoothScroll() {
       touchMultiplier: 1,
       lerp: 0.14,
     });
+    registerScrollController(lenis);
 
     let rafId = 0;
     const raf = (time: number) => {
@@ -50,6 +52,7 @@ export default function SmoothScroll() {
       cancelAnimationFrame(rafId);
       document.removeEventListener("click", onClick);
       lenis.destroy();
+      registerScrollController(null);
     };
   }, []);
 
